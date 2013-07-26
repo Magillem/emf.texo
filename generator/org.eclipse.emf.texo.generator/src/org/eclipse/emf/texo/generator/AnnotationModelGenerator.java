@@ -24,7 +24,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.eclipse.core.resources.IFile;
-import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
@@ -64,14 +63,16 @@ public class AnnotationModelGenerator {
   public void createStoreAnnotationModel(EPackage ePackage, String suffix, EPackage annotationEPackage, IFile modelFile) {
     try {
       final ResourceSet resourceSet = ePackage.eResource().getResourceSet();
-      final URI fileUri = URI.createURI(modelFile.getLocation().toOSString());
-      final File file = new File(AnnotationModelSuffixHandler.createAnnotationsModelURIWithSuffix(fileUri, suffix)
-          .toFileString());
+      final org.eclipse.emf.common.util.URI fileUri = org.eclipse.emf.common.util.URI.createFileURI(modelFile
+          .getLocation().toOSString());
+      final org.eclipse.emf.common.util.URI fileAnnotationModelUri = AnnotationModelSuffixHandler
+          .createAnnotationsModelURIWithSuffix(fileUri, suffix);
+      final File file = new File(fileAnnotationModelUri.toFileString());
       final Resource resource;
       if (file.exists()) {
-        resource = resourceSet.getResource(fileUri, true);
+        resource = resourceSet.getResource(fileAnnotationModelUri, true);
       } else {
-        resource = resourceSet.createResource(fileUri);
+        resource = resourceSet.createResource(fileAnnotationModelUri);
         final String encoding = ((XMLResource) ePackage.eResource()).getEncoding();
         ((XMLResource) resource).setEncoding(encoding);
       }
@@ -90,8 +91,9 @@ public class AnnotationModelGenerator {
       }
       resource.save(Collections.emptyMap());
     } catch (Exception e) {
-      throw new IllegalStateException("Exception for modelFile: " + modelFile.getFullPath().toString() + " epackage " //$NON-NLS-1$ //$NON-NLS-2$
-          + ePackage.getName() + " epackage uri : " + ePackage.eResource().getURI(), e); //$NON-NLS-1$
+      throw new IllegalStateException(
+          "Exception (" + e.getMessage() + ") for modelFile: " + modelFile.getFullPath().toString() + " epackage " //$NON-NLS-1$ //$NON-NLS-2$
+              + ePackage.getName() + " epackage uri : " + ePackage.eResource().getURI(), e); //$NON-NLS-1$
     }
   }
 
