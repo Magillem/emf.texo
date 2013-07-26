@@ -269,6 +269,10 @@ public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implemen
           }
         }
         for (final EAttribute eattr : eClass.getEAttributes()) {
+          // incomplete model not caught by model validation
+          if (eattr.getEType() == null) {
+            continue;
+          }
           final EPackage refEPackage = eattr.getEType().getEPackage();
           if (refEPackage != ePackage && !epacks.contains(refEPackage)) {
             epacks.add(refEPackage);

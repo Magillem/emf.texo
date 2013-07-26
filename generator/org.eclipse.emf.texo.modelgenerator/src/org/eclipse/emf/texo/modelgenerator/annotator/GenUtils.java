@@ -630,6 +630,10 @@ public class GenUtils {
    * unfortunately not so great, but required for backwards compatibility.
    */
   public static EDataType getEcoreXMLDataType(EDataType eDataType) {
+    // incomplete model not caught by model validation
+    if (eDataType == null) {
+      return null;
+    }
     final ExtendedMetaData extendedMetaData = ExtendedMetaData.INSTANCE;
     for (EDataType ecoreDataType = eDataType; ecoreDataType != null; ecoreDataType = extendedMetaData
         .getBaseType(ecoreDataType)) {

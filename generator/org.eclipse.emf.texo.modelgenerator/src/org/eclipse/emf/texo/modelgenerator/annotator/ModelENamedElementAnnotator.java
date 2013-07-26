@@ -133,6 +133,9 @@ public abstract class ModelENamedElementAnnotator {
   }
 
   protected EDataTypeModelGenAnnotationDefinition getEDataTypeModelGenAnnotation(EDataType eDataType) {
+    if (eDataType == null) {
+      throw new IllegalStateException("The EDataType of one of the model elements in your model is not set, it is null"); //$NON-NLS-1$
+    }
     if (eDataType instanceof EEnum) {
       return getEEnumModelGenAnnotation((EEnum) eDataType);
     }

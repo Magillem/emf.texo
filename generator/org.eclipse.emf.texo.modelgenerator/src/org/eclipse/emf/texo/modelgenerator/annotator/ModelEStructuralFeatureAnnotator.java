@@ -52,6 +52,12 @@ public abstract class ModelEStructuralFeatureAnnotator extends ModelENamedElemen
     super.annotate(annotation);
 
     final EStructuralFeature eFeature = annotation.getEStructuralFeature();
+
+    if (eFeature.getEType() == null) {
+      throw new IllegalStateException(
+          "The EType of the model element " + eFeature.getEContainingClass().getName() + "." + eFeature.getName() + " is not set, it is null"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    }
+
     if (GeneratorUtils.isEmptyOrNull(annotation.getValidJavaMemberName())) {
       final String memberName = getValidJavaMemberName(eFeature);
       annotation.setValidJavaMemberName(memberName);
