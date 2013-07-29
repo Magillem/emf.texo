@@ -188,7 +188,7 @@ public class ORMGenerator extends BaseGenerateAction {
       final List<EPackage> ePackages = GeneratorUtils.readEPackages(Collections.singletonList(uri),
           GeneratorUtils.createEPackageRegistry(), true);
 
-      final URI parentUri = URI.createURI(modelFile.getLocation().toString()).trimSegments(1);
+      final URI parentUri = URI.createFileURI(modelFile.getLocation().toString()).trimSegments(1);
       final URI ormUri = parentUri.appendSegment(ORM_FILE_NAME);
       generateStoreORM(ePackages, ormUri);
     } catch (Exception e) {
