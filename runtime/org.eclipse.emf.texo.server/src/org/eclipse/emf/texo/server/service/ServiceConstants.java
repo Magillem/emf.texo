@@ -37,4 +37,12 @@ public class ServiceConstants {
   public static final String PARAM_NAMEDQUERY = "namedQuery"; //$NON-NLS-1$
   public static final String PARAM_NO_COUNT = "noCount"; //$NON-NLS-1$
   public static final String STATUS_SUCCESS = "success"; //$NON-NLS-1$
+  public static final String SEGMENT_MODEL = "model"; //$NON-NLS-1$
+  public static final String SEGMENT_ECLASS = "eclass"; //$NON-NLS-1$
+  public static final String SEGMENT_ECLASSIFIER = "eclassifier"; //$NON-NLS-1$
+  public static final String SEGMENT_EPACKAGE = "epackage"; //$NON-NLS-1$
+  public static final String MODEL_NAME_PARAMETER = "name"; //$NON-NLS-1$
+  public static final String MODEL_ID_PARAMETER = "id"; //$NON-NLS-1$
+  public static final String MODEL_URI_PARAMETER = "uri"; //$NON-NLS-1$
+  public static final String MODEL_EPACKAGE_PARAMETER = "epackage"; //$NON-NLS-1$
 }

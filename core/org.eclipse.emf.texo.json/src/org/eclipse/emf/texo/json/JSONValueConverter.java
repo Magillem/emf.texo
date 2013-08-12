@@ -58,8 +58,12 @@ public class JSONValueConverter implements TexoComponent {
    *          its EDataType
    * @return the converted value
    */
-  protected Object toJSON(Object target, final Object value, final EDataType eDataType) {
-    if (target instanceof EObject && ModelUtils.isEEnum(eDataType)) {
+  protected Object toJSON(Object source, final Object value, final EDataType eDataType) {
+    if (value instanceof EEnumLiteral) {
+      return ((EEnumLiteral) value).getName();
+    }
+
+    if (source instanceof EObject && ModelUtils.isEEnum(eDataType)) {
       return eDataType.getEPackage().getEFactoryInstance().convertToString(eDataType, value);
     }
 

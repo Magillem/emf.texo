@@ -22,10 +22,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.texo.provider.IdProvider;
 import org.eclipse.emf.texo.server.model.request.QueryType;
 import org.eclipse.emf.texo.server.model.response.ResponseModelPackage;
 import org.eclipse.emf.texo.server.model.response.ResponseType;
+import org.eclipse.emf.texo.utils.Check;
 import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
@@ -39,6 +43,8 @@ import org.eclipse.emf.texo.utils.ModelUtils;
  * <li>http://www.test.com/XMLService?id=http://www.test.com/XMLService/Order/123 an uri with an id parameter
  * <li>http://www.test.com/XMLService/Order/123 a direct uri with a type and id</li>
  * <li>http://www.test.com/XMLService/Order an uri with just a type (and optional page parameters).</li>
+ * <li>http://www.test.com/XMLService/model/eclass?id=Library</li>
+ * <li>http://www.test.com/XMLService/model/epackage?id=</li>
  * </ul>
  * 
  * The response of this web service is an instance of the {@link ResponseType}.
@@ -53,6 +59,8 @@ public class RetrieveModelOperation extends ModelOperation {
   @SuppressWarnings("unchecked")
   @Override
   protected void internalExecute() {
+
+    final String[] segments = ServiceUtils.getSegments(getServiceContext().getServiceRequestURI());
 
     // 0) a post with a json object or 1) a query
     QueryType queryType = getQueryType();
@@ -104,61 +112,64 @@ public class RetrieveModelOperation extends ModelOperation {
         responseObject = getResponse(resultList, startRow, startRow + resultList.size() - 1, cnt);
       }
       getServiceContext().setResultInResponse(responseObject);
-    } else if (getServiceContext().getRequestParameters().containsKey(ServiceConstants.PARAM_ID)) {
+    } else if (segments.length < 2 && getServiceContext().getRequestParameters().containsKey(ServiceConstants.PARAM_ID)) {
       // an id which must be a uri
       final URI uri = URI.createURI((String) getServiceContext().getRequestParameters().get(ServiceConstants.PARAM_ID));
       final Object object = getObjectStore().fromUri(uri);
       getServiceContext().setResultInResponse(object);
-    } else {
-      final String[] segments = ServiceUtils.getSegments(getServiceContext().getServiceRequestURI());
-      if (segments.length == 0) {
-        throw new IllegalArgumentException("Service path " + getServiceContext().getServiceRequestURI() //$NON-NLS-1$
-            + " not supported, uri " + getServiceContext().getRequestURI()); //$NON-NLS-1$
-      } else if (segments.length == 1) {
-        // 2) there is a specific type without an id, return all instances
-        final EClass eClass = ModelUtils.getEClassFromQualifiedName(segments[0]);
-        final QueryBuilder queryBuilder = QueryBuilder.getQueryBuilder(getObjectStore().getEntityName(eClass), eClass,
-            getServiceContext().getRequestParameters());
+    } else if (segments.length == 0) {
+      throw new IllegalArgumentException("Service path " + getServiceContext().getServiceRequestURI() //$NON-NLS-1$
+          + " not supported, uri " + getServiceContext().getRequestURI()); //$NON-NLS-1$
+    } else if (segments.length == 1) {
+      // 2) there is a specific type without an id, return all instances
+      final EClass eClass = ModelUtils.getEClassFromQualifiedName(segments[0]);
+      final QueryBuilder queryBuilder = QueryBuilder.getQueryBuilder(getObjectStore().getEntityName(eClass), eClass,
+          getServiceContext().getRequestParameters());
 
-        final List<Object> resultList = (List<Object>) getObjectStore().query(queryBuilder.getSelectQuery(),
-            Collections.<String, Object> emptyMap(), getFirstResult(), getMaxResults());
+      final List<Object> resultList = (List<Object>) getObjectStore().query(queryBuilder.getSelectQuery(),
+          Collections.<String, Object> emptyMap(), getFirstResult(), getMaxResults());
 
-        int maxResults = getMaxResults();
-        int startRow = getFirstResult() == -1 ? 0 : getFirstResult();
+      int maxResults = getMaxResults();
+      int startRow = getFirstResult() == -1 ? 0 : getFirstResult();
 
-        final String noCountParam = (String) getServiceContext().getRequestParameters().get(
-            ServiceConstants.PARAM_NO_COUNT);
-        boolean doCount = maxResults != -1 && (noCountParam == null || FALSE.equals(noCountParam));
+      final String noCountParam = (String) getServiceContext().getRequestParameters().get(
+          ServiceConstants.PARAM_NO_COUNT);
+      boolean doCount = maxResults != -1 && (noCountParam == null || FALSE.equals(noCountParam));
 
-        if (!doCount && maxResults != -1) {
-          // try to get one more than the requested result size
-          // if we should not do count
-          maxResults++;
-        }
+      if (!doCount && maxResults != -1) {
+        // try to get one more than the requested result size
+        // if we should not do count
+        maxResults++;
+      }
 
-        // now do smart things, to prevent unnecessary count operations
-        long cnt;
-        if (resultList.size() < maxResults) {
-          // we did not get everything so we reached the end anyway
-          cnt = resultList.size() + startRow;
-        } else if (maxResults == -1) {
-          // if there were no paging limitations then this is the size
-          cnt = resultList.size() + startRow;
-        } else if (doCount) {
-          cnt = getObjectStore().count(queryBuilder.getCountQuery(), Collections.<String, Object> emptyMap());
-        } else {
-          // okay then the count is one more than the original maxresults
-          cnt = maxResults;
-          // remove the last result from the result
-          resultList.remove(resultList.size() - 1);
-        }
+      // now do smart things, to prevent unnecessary count operations
+      long cnt;
+      if (resultList.size() < maxResults) {
+        // we did not get everything so we reached the end anyway
+        cnt = resultList.size() + startRow;
+      } else if (maxResults == -1) {
+        // if there were no paging limitations then this is the size
+        cnt = resultList.size() + startRow;
+      } else if (doCount) {
+        cnt = getObjectStore().count(queryBuilder.getCountQuery(), Collections.<String, Object> emptyMap());
+      } else {
+        // okay then the count is one more than the original maxresults
+        cnt = maxResults;
+        // remove the last result from the result
+        resultList.remove(resultList.size() - 1);
+      }
 
-        final Object responseObject = getResponse(resultList, startRow, startRow + resultList.size() - 1, cnt);
-        getServiceContext().setResultInResponse(responseObject);
-      } else if (segments.length == 2) {
-        // 3) there is specific type with an id
-        final EClass eClass = ModelUtils.getEClassFromQualifiedName(segments[0]);
+      final Object responseObject = getResponse(resultList, startRow, startRow + resultList.size() - 1, cnt);
+      getServiceContext().setResultInResponse(responseObject);
+    } else if (segments.length == 2) {
+      // 3) there is specific type with an id, or
+      // 4) a model request: model/eclass?id= or model/eclassifier?id= or model/epackage?id=
+      if (ServiceConstants.SEGMENT_MODEL.equals(segments[0])) {
+        final EObject modelElement = retrieveModelInformation(segments[1]);
+        getServiceContext().setResultInResponse(modelElement);
+      } else {
         final String idString = segments[1];
+        final EClass eClass = ModelUtils.getEClassFromQualifiedName(segments[0]);
         final Object id = IdProvider.getInstance().convertIdStringToId(eClass, idString);
         final Object object = getObjectStore().get(eClass, id);
         if (object == null) {
@@ -166,11 +177,46 @@ public class RetrieveModelOperation extends ModelOperation {
         } else {
           getServiceContext().setResultInResponse(object);
         }
-      } else {
-        throw new IllegalArgumentException("Service path " + getServiceContext().getServiceRequestURI() //$NON-NLS-1$
-            + " not supported, uri " + getServiceContext().getRequestURI()); //$NON-NLS-1$
+      }
+    } else {
+      throw new IllegalArgumentException("Service path " + getServiceContext().getServiceRequestURI() //$NON-NLS-1$
+          + " not supported, uri " + getServiceContext().getRequestURI()); //$NON-NLS-1$
+    }
+
+  }
+
+  protected EObject retrieveModelInformation(String modelType) {
+    if (ServiceConstants.SEGMENT_ECLASS.equals(modelType) || ServiceConstants.SEGMENT_ECLASSIFIER.equals(modelType)) {
+      final boolean isRetrieveEClass = ServiceConstants.SEGMENT_ECLASS.equals(modelType);
+      // eclass of eclassifier
+      final String ePackageidentifier = (String) getServiceContext().getRequestParameters().get(
+          ServiceConstants.MODEL_EPACKAGE_PARAMETER);
+      final String name = (String) getServiceContext().getRequestParameters()
+          .get(ServiceConstants.MODEL_NAME_PARAMETER);
+      final String id = (String) getServiceContext().getRequestParameters().get(ServiceConstants.MODEL_ID_PARAMETER);
+      if (id != null) {
+        return ModelUtils.getEClassFromQualifiedName(id);
+      }
+
+      Check.isNotNull(name, "name parameter should be set when retrieving an eclass(ifier)"); //$NON-NLS-1$
+      Check.isNotNull(ePackageidentifier, "epackage parameter should be set when retrieving an eclass(ifier)"); //$NON-NLS-1$
+      final EPackage ePackage = ModelUtils.getEPackageFromNameUriOrPrefix(ePackageidentifier);
+      for (EClassifier eClassifier : ePackage.getEClassifiers()) {
+        if (name.equals(eClassifier.getName())) {
+          if (isRetrieveEClass) {
+            // force a cast to throw an exception if not correct
+            final EClass eClass = (EClass) eClassifier;
+            return eClass;
+          }
+          return eClassifier;
+        }
       }
     }
+    Check.isTrue(ServiceConstants.SEGMENT_EPACKAGE.equals(modelType),
+        "Excepted uri segment of eclass, eclassifier or epackage but found " + modelType); //$NON-NLS-1$
+    final String id = (String) getServiceContext().getRequestParameters().get(ServiceConstants.MODEL_ID_PARAMETER);
+    Check.isNotNull(id, "id parameter should be set when retrieving an epackage"); //$NON-NLS-1$
+    return ModelUtils.getEPackageFromNameUriOrPrefix(id);
   }
 
   protected ResponseType getResponse(List<Object> objects, int startRow, int endRow, long totalRows) {

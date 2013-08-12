@@ -20,7 +20,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.texo.component.ComponentProvider;
+import org.eclipse.emf.texo.json.EMFJSONConverter;
 import org.eclipse.emf.texo.json.JSONModelConverter;
 import org.eclipse.emf.texo.json.JSONWebServiceObjectResolver;
 import org.eclipse.emf.texo.json.ModelJSONConverter;
@@ -66,6 +68,25 @@ public class JSONServiceContext extends ServiceContext {
     }
     converter.setObjectResolver(getObjectStore());
     final Object jsonObject = converter.convert(object);
+    return jsonObject.toString();
+  }
+
+  @Override
+  protected String convertToResultFormat(EObject eObject) {
+    final EMFJSONConverter converter = ComponentProvider.getInstance().newInstance(EMFJSONConverter.class);
+    if (getRequestParameters().containsKey(ServiceConstants.PARAM_CHILD_LEVELS)) {
+      try {
+        converter.setMaxChildLevelsToConvert(Integer.parseInt((String) getRequestParameters().get(
+            ServiceConstants.PARAM_CHILD_LEVELS)));
+      } catch (NumberFormatException e) {
+        // ignore on purpose...
+        converter.setMaxChildLevelsToConvert(2);
+      }
+    } else {
+      converter.setMaxChildLevelsToConvert(2);
+    }
+    converter.setObjectResolver(getObjectStore());
+    final Object jsonObject = converter.convert(eObject);
     return jsonObject.toString();
   }
 

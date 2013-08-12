@@ -72,6 +72,11 @@ public class ModelXMLSaver implements TexoComponent {
   private ModelEMFConverter modelEMFConverter = ComponentProvider.getInstance().newInstance(ModelEMFConverter.class);
   private boolean saveAsXMI = false;
 
+  /**
+   * Makes this class also capable of supporting serializing {@link EObject} instances.
+   */
+  private boolean objectsAreAlreadyEObjects = false;
+
   // output id and title attributes for each entity
   private boolean outputExtensionAttributes = false;
 
@@ -82,7 +87,15 @@ public class ModelXMLSaver implements TexoComponent {
   public void write() {
     try {
       final XMLResource localXMLResource = getXmlResource();
-      final List<EObject> eObjects = getModelEMFConverter().convert(getObjects());
+      final List<EObject> eObjects;
+      if (isObjectsAreAlreadyEObjects()) {
+        eObjects = new ArrayList<EObject>();
+        for (Object o : getObjects()) {
+          eObjects.add((EObject) o);
+        }
+      } else {
+        eObjects = getModelEMFConverter().convert(getObjects());
+      }
 
       // now do a special method to find all objects without container
       // which are not
@@ -248,6 +261,14 @@ public class ModelXMLSaver implements TexoComponent {
 
   public void setOutputExtensionAttributes(boolean outputExtensionAttributes) {
     this.outputExtensionAttributes = outputExtensionAttributes;
+  }
+
+  protected boolean isObjectsAreAlreadyEObjects() {
+    return objectsAreAlreadyEObjects;
+  }
+
+  public void setObjectsAreAlreadyEObjects(boolean objectsAreAlreadyEObjects) {
+    this.objectsAreAlreadyEObjects = objectsAreAlreadyEObjects;
   }
 
 }

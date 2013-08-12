@@ -18,9 +18,11 @@ package org.eclipse.emf.texo.server.service.xml;
 
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.server.service.ServiceConstants;
 import org.eclipse.emf.texo.server.service.ServiceContext;
@@ -67,6 +69,20 @@ public class XMLServiceContext extends ServiceContext {
     return toXML(Collections.singletonList(object), isXmi(), childLevels);
   }
 
+  @Override
+  protected String convertToResultFormat(EObject eObject) {
+    int childLevels = 2;
+    if (getRequestParameters().containsKey(ServiceConstants.PARAM_CHILD_LEVELS)) {
+      try {
+        childLevels = Integer.parseInt((String) getRequestParameters().get(ServiceConstants.PARAM_CHILD_LEVELS));
+      } catch (NumberFormatException e) {
+        // ignore on purpose...
+      }
+    }
+
+    return toXMLFromEObjects(Collections.singletonList(eObject), isXmi(), childLevels);
+  }
+
   public boolean isXmi() {
     final String xmiString = (String) getRequestParameters().get(ServiceConstants.PARAM_XMI);
     if (xmiString != null && xmiString.equals(TRUE_STRING)) {
@@ -88,6 +104,25 @@ public class XMLServiceContext extends ServiceContext {
     final ModelXMLSaver xmlSaver = ComponentProvider.getInstance().newInstance(ModelXMLSaver.class);
     xmlSaver.setOutputExtensionAttributes(true);
     xmlSaver.setSaveAsXMI(asXMI);
+    xmlSaver.setObjects(objects);
+    xmlSaver.getModelEMFConverter().setConvertNonContainedReferencedObjects(false);
+    xmlSaver.getModelEMFConverter().setMaxChildLevelsToConvert(childLevels);
+    xmlSaver.getModelEMFConverter().setObjectResolver(getObjectStore());
+    final StringWriter sw = new StringWriter();
+    xmlSaver.setWriter(sw);
+    xmlSaver.write();
+    return sw.toString();
+  }
+
+  private String toXMLFromEObjects(List<EObject> eObjects, boolean asXMI, int childLevels) {
+    final ModelXMLSaver xmlSaver = ComponentProvider.getInstance().newInstance(ModelXMLSaver.class);
+    xmlSaver.setOutputExtensionAttributes(true);
+    xmlSaver.setSaveAsXMI(asXMI);
+    final List<Object> objects = new ArrayList<Object>();
+    for (EObject eObject : eObjects) {
+      objects.add(eObject);
+    }
+    xmlSaver.setObjectsAreAlreadyEObjects(true);
     xmlSaver.setObjects(objects);
     xmlSaver.getModelEMFConverter().setConvertNonContainedReferencedObjects(false);
     xmlSaver.getModelEMFConverter().setMaxChildLevelsToConvert(childLevels);

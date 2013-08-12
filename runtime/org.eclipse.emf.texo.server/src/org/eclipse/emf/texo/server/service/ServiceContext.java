@@ -25,6 +25,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.component.TexoComponent;
 import org.eclipse.emf.texo.server.model.request.RequestModelPackage;
@@ -215,6 +216,15 @@ public abstract class ServiceContext implements TexoComponent {
   protected abstract String convertToResultFormat(Object object);
 
   /**
+   * Convert a single object to the format supported by the implementing service, for example to json or to xml.
+   * 
+   * @param object
+   *          the object to convert, should typically be a Texo generated object
+   * @return a string representing the format returned by the webservice.
+   */
+  protected abstract String convertToResultFormat(EObject eObject);
+
+  /**
    * Convert the passed object to the format expected (xml or json for example) and place the result in the response
    * content.
    * 
@@ -224,6 +234,18 @@ public abstract class ServiceContext implements TexoComponent {
    */
   public void setResultInResponse(Object object) {
     setResponseContent(convertToResultFormat(object));
+  }
+
+  /**
+   * Convert the passed object to the format expected (xml or json for example) and place the result in the response
+   * content.
+   * 
+   * @param eObject
+   *          the {@link EObject} to convert
+   * @see ServiceContext#setResponseContent(String)
+   */
+  public void setResultInResponse(EObject eObject) {
+    setResponseContent(convertToResultFormat(eObject));
   }
 
   /**

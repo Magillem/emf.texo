@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
@@ -206,7 +207,31 @@ public class ModelUtils {
    * @throws IllegalArgumentException
    *           if not EClass was found
    */
+
+  /**
+   * Searches all the eclassifiers of the {@link ModelPackage} instances that have been registered with the
+   * {@link ModelResolver}.
+   * 
+   * Note, can handle qualified as well as unqualified names. The qualified names will have the epackage ns prefix
+   * prepended separated by the {@link #QUALIFIERSEPARATOR}, for example: library|Book
+   * 
+   * But also unqualified names are handled, although then if different epackages have eclasses with the same name then
+   * the wrong eclass can be returned.
+   * 
+   * @param name
+   *          the (qualified) name of the EClass
+   * @return an EClass
+   * @throws IllegalArgumentException
+   *           if no EClass was found
+   */
   public static EClass getEClassFromQualifiedName(String name) {
+    return (EClass) getEClassifierFromQualifiedName(name);
+  }
+
+  /**
+   * @see #getEClassFromQualifiedName(String)
+   */
+  public static EClassifier getEClassifierFromQualifiedName(String name) {
     String nameSpacePrefix = null;
     String eClassName = name;
     if (eClassName.contains(QUALIFIERSEPARATOR)) {
@@ -221,7 +246,7 @@ public class ModelUtils {
       }
       for (EClassifier eClassifier : ePackage.getEClassifiers()) {
         if (eClassifier.getName().equals(eClassName)) {
-          return (EClass) eClassifier;
+          return eClassifier;
         }
       }
     }
@@ -229,7 +254,7 @@ public class ModelUtils {
       final EPackage ePackage = ModelResolver.getInstance().getEPackageRegistry().getEPackage((String) key);
       for (EClassifier eClassifier : ePackage.getEClassifiers()) {
         if (eClassifier.getName().equals(eClassName)) {
-          return (EClass) eClassifier;
+          return eClassifier;
         }
       }
     }
@@ -243,13 +268,50 @@ public class ModelUtils {
       if (otherEPackage != null) {
         for (EClassifier eClassifier : otherEPackage.getEClassifiers()) {
           if (eClassifier.getName().equals(eClassName)) {
-            return (EClass) eClassifier;
+            return eClassifier;
           }
         }
       }
     }
 
-    throw new IllegalArgumentException("No EClass found using name " + name); //$NON-NLS-1$
+    throw new IllegalArgumentException("No EClass(ifier) found using name " + name); //$NON-NLS-1$
+  }
+
+  /**
+   * Searches for an {@link EPackage} available in the {@link ModelResolver} or the {@link XMLTypePackage} or the
+   * {@link EcorePackage}. It first tries to match the namespace uri, then the name and finally the namespace prefix.
+   * 
+   * @param identifier
+   *          , the uri, name or namespace prefix of the {@link EPackage} to search for
+   * @return a found {@link EPackage}
+   * @throws IllegalArgumentException
+   *           if no {@link EPackage} can be found
+   */
+  public static EPackage getEPackageFromNameUriOrPrefix(String identifier) {
+    final List<EPackage> toSearch = new ArrayList<EPackage>();
+    toSearch.add(XMLTypePackage.eINSTANCE);
+    toSearch.add(EcorePackage.eINSTANCE);
+    for (ModelPackage modelPackage : ModelResolver.getInstance().getModelPackages()) {
+      final EPackage ePackage = modelPackage.getEPackage();
+      toSearch.add(ePackage);
+    }
+    for (EPackage ePackage : toSearch) {
+      if (identifier.equals(ePackage.getNsURI())) {
+        return ePackage;
+      }
+    }
+    for (EPackage ePackage : toSearch) {
+      if (identifier.equals(ePackage.getName())) {
+        return ePackage;
+      }
+    }
+    for (EPackage ePackage : toSearch) {
+      if (identifier.equals(ePackage.getNsPrefix())) {
+        return ePackage;
+      }
+    }
+
+    throw new IllegalArgumentException("No EPackage found using identifier " + identifier); //$NON-NLS-1$
   }
 
   /** Returns the lower case version of the string converted with English Locale **/

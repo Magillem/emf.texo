@@ -26,6 +26,8 @@ import javax.servlet.http.HttpServletResponse;
 import junit.framework.Assert;
 
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.emf.texo.model.DynamicModelObject;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.server.model.request.Parameter;
@@ -68,6 +70,53 @@ public class WSMainTest extends BaseWSWebTest {
     final Writer w = lib.getWriters().get(0);
     final Book bk = lib.getBooks().get(0);
 
+    // get model information
+    if (!isXmlTest()) {
+      {
+        final String content = doGetRequest("model/epackage?id=library", null, HttpServletResponse.SC_OK);
+        final List<Object> objects = deserialize(content);
+        Assert.assertEquals(1, objects.size());
+        Assert.assertTrue(objects.get(0) instanceof DynamicModelObject);
+        final DynamicModelObject dmo = (DynamicModelObject) objects.get(0);
+        Assert.assertTrue(dmo.eClass() == EcorePackage.eINSTANCE.getEPackage());
+        Assert.assertEquals("library", dmo.eGet(EcorePackage.eINSTANCE.getENamedElement_Name()));
+        Assert.assertEquals(LibraryModelPackage.NS_URI, dmo.eGet(EcorePackage.eINSTANCE.getEPackage_NsURI()));
+      }
+
+      {
+        final String content = doGetRequest("model/epackage?id=" + LibraryModelPackage.NS_URI, null,
+            HttpServletResponse.SC_OK);
+        final List<Object> objects = deserialize(content);
+        Assert.assertEquals(1, objects.size());
+        Assert.assertTrue(objects.get(0) instanceof DynamicModelObject);
+        final DynamicModelObject dmo = (DynamicModelObject) objects.get(0);
+        Assert.assertTrue(dmo.eClass() == EcorePackage.eINSTANCE.getEPackage());
+        Assert.assertEquals("library", dmo.eGet(EcorePackage.eINSTANCE.getENamedElement_Name()));
+        Assert.assertEquals(LibraryModelPackage.NS_URI, dmo.eGet(EcorePackage.eINSTANCE.getEPackage_NsURI()));
+      }
+
+      {
+        final String content = doGetRequest("model/eclass?name=Book&epackage=" + LibraryModelPackage.NS_URI, null,
+            HttpServletResponse.SC_OK);
+        final List<Object> objects = deserialize(content);
+        Assert.assertEquals(1, objects.size());
+        Assert.assertTrue(objects.get(0) instanceof DynamicModelObject);
+        final DynamicModelObject dmo = (DynamicModelObject) objects.get(0);
+        Assert.assertTrue(dmo.eClass() == EcorePackage.eINSTANCE.getEClass());
+        Assert.assertEquals("Book", dmo.eGet(EcorePackage.eINSTANCE.getENamedElement_Name()));
+      }
+
+      {
+        final String content = doGetRequest("model/eclassifier?name=BookCategory&epackage="
+            + LibraryModelPackage.NS_URI, null, HttpServletResponse.SC_OK);
+        final List<Object> objects = deserialize(content);
+        Assert.assertEquals(1, objects.size());
+        Assert.assertTrue(objects.get(0) instanceof DynamicModelObject);
+        final DynamicModelObject dmo = (DynamicModelObject) objects.get(0);
+        Assert.assertTrue(dmo.eClass() == EcorePackage.eINSTANCE.getEEnum());
+        Assert.assertEquals("BookCategory", dmo.eGet(EcorePackage.eINSTANCE.getENamedElement_Name()));
+      }
+    }
     // get all libraries
     {
       final String content = doGetRequest(LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,

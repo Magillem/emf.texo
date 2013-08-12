@@ -164,7 +164,7 @@ public abstract class BaseModelJSONConverter<T extends Object> extends BaseModel
     }
 
     for (final EStructuralFeature eStructuralFeature : eClass(source).getEAllStructuralFeatures()) {
-      if (!eStructuralFeature.isChangeable() || eStructuralFeature.isVolatile()) {
+      if (!eStructuralFeature.isChangeable() || eStructuralFeature.isVolatile() || eStructuralFeature.isTransient()) {
         continue;
       }
 
