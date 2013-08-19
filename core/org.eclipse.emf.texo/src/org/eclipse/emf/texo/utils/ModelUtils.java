@@ -252,6 +252,9 @@ public class ModelUtils {
     }
     for (Object key : new HashSet<Object>(ModelResolver.getInstance().getEPackageRegistry().keySet())) {
       final EPackage ePackage = ModelResolver.getInstance().getEPackageRegistry().getEPackage((String) key);
+      if (nameSpacePrefix != null && !ePackage.getNsPrefix().equals(nameSpacePrefix)) {
+        continue;
+      }
       for (EClassifier eClassifier : ePackage.getEClassifiers()) {
         if (eClassifier.getName().equals(eClassName)) {
           return eClassifier;
