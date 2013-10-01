@@ -100,9 +100,6 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
 
     final boolean proxyChildObjects = level == maxChildLevelsToConvert;
     for (EReference eReference : eClass(object).getEAllReferences()) {
-      if (eReference.isVolatile() || eReference.isTransient()) {
-        continue;
-      }
       final T value = (T) eGet(object, eReference);
       if (value == null) {
         continue;
