@@ -102,6 +102,7 @@ public class JSONTest extends BaseJSONTest {
     toJsonConverter.setMaxChildLevelsToConvert(1);
     toJsonConverter.setPreSortManyValues(true);
     toJsonConverter.setSerializeTitleProperty(false);
+    toJsonConverter.setSkipVolatileEFeatures(true);
     return toJsonConverter;
   }
 }

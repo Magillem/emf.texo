@@ -185,6 +185,7 @@ public class CopyCompareTest extends TestCase {
     toJsonConverter.setMaxChildLevelsToConvert(1);
     toJsonConverter.setPreSortManyValues(true);
     toJsonConverter.setSerializeTitleProperty(false);
+    toJsonConverter.setSkipVolatileEFeatures(true);
     return toJsonConverter;
   }
 

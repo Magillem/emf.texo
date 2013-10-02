@@ -46,6 +46,8 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
   private List<T> proxyObjects = new ArrayList<T>();
   private List<T> nonProxiedObjects = new ArrayList<T>();
 
+  private boolean skipVolatileEFeatures = false;
+
   /**
    * If true then referenced non contained objects are also converted and added to the conversion stack.
    */
@@ -100,6 +102,9 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
 
     final boolean proxyChildObjects = level == maxChildLevelsToConvert;
     for (EReference eReference : eClass(object).getEAllReferences()) {
+      if (isSkipVolatileEFeatures() && eReference.isVolatile()) {
+        continue;
+      }
       final T value = (T) eGet(object, eReference);
       if (value == null) {
         continue;
@@ -230,6 +235,14 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
 
   public void setNonProxiedObjects(List<T> nonProxiedObjects) {
     this.nonProxiedObjects = nonProxiedObjects;
+  }
+
+  public boolean isSkipVolatileEFeatures() {
+    return skipVolatileEFeatures;
+  }
+
+  public void setSkipVolatileEFeatures(boolean skipVolatileEFeatures) {
+    this.skipVolatileEFeatures = skipVolatileEFeatures;
   }
 
 }

@@ -164,6 +164,9 @@ public abstract class BaseModelJSONConverter<T extends Object> extends BaseModel
     }
 
     for (final EStructuralFeature eStructuralFeature : eClass(source).getEAllStructuralFeatures()) {
+      if (isSkipVolatileEFeatures() && eStructuralFeature.isVolatile()) {
+        continue;
+      }
       if (FeatureMapUtil.isFeatureMap(eStructuralFeature)) {
         convertFeatureMap(source, target, eStructuralFeature);
       } else if (eStructuralFeature.isMany()) {
@@ -550,5 +553,4 @@ public abstract class BaseModelJSONConverter<T extends Object> extends BaseModel
   public void setSerializeTitleProperty(boolean serializeTitleProperty) {
     this.serializeTitleProperty = serializeTitleProperty;
   }
-
 }
