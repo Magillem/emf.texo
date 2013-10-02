@@ -26,6 +26,7 @@ import javax.servlet.DispatcherType;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.texo.resolver.DefaultObjectResolver;
+import org.eclipse.emf.texo.server.service.ServiceContext;
 import org.eclipse.emf.texo.server.store.CurrentEntityManagerRequestFilter;
 import org.eclipse.emf.texo.server.store.EntityManagerObjectStore;
 import org.eclipse.emf.texo.server.store.EntityManagerProvider;
@@ -75,6 +76,8 @@ public abstract class BaseTest {
     DefaultObjectResolver.setServerUri(getBaseURL());
 
     server = new Server(PORT);
+
+    ServiceContext.setInTexoTestRun();
 
     ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
     context.setContextPath("/" + CONTEXTNAME); //$NON-NLS-1$

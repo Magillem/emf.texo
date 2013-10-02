@@ -55,6 +55,9 @@ public class JSONServiceContext extends ServiceContext {
   @Override
   protected String convertToResultFormat(Object object) {
     final ModelJSONConverter converter = ComponentProvider.getInstance().newInstance(ModelJSONConverter.class);
+    if (isInTexoTestRun()) {
+      converter.setSkipVolatileEFeatures(true);
+    }
     if (getRequestParameters().containsKey(ServiceConstants.PARAM_CHILD_LEVELS)) {
       try {
         converter.setMaxChildLevelsToConvert(Integer.parseInt((String) getRequestParameters().get(

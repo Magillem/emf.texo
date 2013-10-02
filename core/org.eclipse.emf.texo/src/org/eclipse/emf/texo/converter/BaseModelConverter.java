@@ -105,6 +105,9 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
       if (isSkipVolatileEFeatures() && eReference.isVolatile()) {
         continue;
       }
+      if (doSkipNotChangeAbleFeatures() && !eReference.isChangeable()) {
+        continue;
+      }
       final T value = (T) eGet(object, eReference);
       if (value == null) {
         continue;
@@ -243,6 +246,10 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
 
   public void setSkipVolatileEFeatures(boolean skipVolatileEFeatures) {
     this.skipVolatileEFeatures = skipVolatileEFeatures;
+  }
+
+  protected boolean doSkipNotChangeAbleFeatures() {
+    return false;
   }
 
 }

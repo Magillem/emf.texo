@@ -50,6 +50,17 @@ public abstract class ServiceContext implements TexoComponent {
   protected static final String RESPONSE_HEADER_CACHE_CONTROL = "Cache-Control"; //$NON-NLS-1$
   protected static final String RESPONSE_NO_CACHE = "no-cache"; //$NON-NLS-1$
 
+  // flag set when running texo testcases, not used in other cases
+  private static boolean isInTexoTestRun = false;
+
+  public static void setInTexoTestRun() {
+    isInTexoTestRun = true;
+  }
+
+  protected static boolean isInTexoTestRun() {
+    return isInTexoTestRun;
+  }
+
   private String requestContent;
   private Map<String, Object> requestParameters = new HashMap<String, Object>();
   private String requestURI;

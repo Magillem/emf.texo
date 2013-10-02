@@ -87,6 +87,9 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
    * @return the created EObjects
    */
   public List<EObject> convert(final List<Object> objects) {
+    // when converting to EMF we can ignore volatile or not-changeable
+    // efeatures
+    setSkipVolatileEFeatures(true);
     doBaseActions(objects);
 
     // the process creates the new target objects and then converts the content
@@ -588,6 +591,17 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
   @Override
   protected boolean isModelEnabled(Object target) {
     return ModelResolver.getInstance().isModelEnabled(target);
+  }
+
+  @Override
+  protected boolean doSkipNotChangeAbleFeatures() {
+    return true;
+  }
+
+  // always skip volatile when converting to EMF
+  @Override
+  public boolean isSkipVolatileEFeatures() {
+    return true;
   }
 
 }
