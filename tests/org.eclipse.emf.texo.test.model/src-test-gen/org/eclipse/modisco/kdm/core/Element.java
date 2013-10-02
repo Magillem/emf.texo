@@ -63,13 +63,15 @@ public abstract class Element extends Identifiable {
    * 
    * @param attributeValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAttribute(Attribute attributeValue) {
+  public boolean addToAttribute(Attribute attributeValue) {
     if (!attribute.contains(attributeValue)) {
       attribute.add(attributeValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -77,13 +79,17 @@ public abstract class Element extends Identifiable {
    * 
    * @param attributeValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAttribute(Attribute attributeValue) {
+  public boolean removeFromAttribute(Attribute attributeValue) {
     if (attribute.contains(attributeValue)) {
       attribute.remove(attributeValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -129,13 +135,15 @@ public abstract class Element extends Identifiable {
    * 
    * @param annotationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAnnotation(Annotation annotationValue) {
+  public boolean addToAnnotation(Annotation annotationValue) {
     if (!annotation.contains(annotationValue)) {
       annotation.add(annotationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -143,13 +151,17 @@ public abstract class Element extends Identifiable {
    * 
    * @param annotationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAnnotation(Annotation annotationValue) {
+  public boolean removeFromAnnotation(Annotation annotationValue) {
     if (annotation.contains(annotationValue)) {
       annotation.remove(annotationValue);
+      return true;
     }
+    return false;
   }
 
   /**

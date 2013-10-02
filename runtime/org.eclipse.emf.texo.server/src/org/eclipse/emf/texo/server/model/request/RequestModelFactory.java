@@ -262,46 +262,40 @@ public class RequestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case RequestModelPackage.ACTIONTYPE_UPDATE_FEATURE_ID:
-        getTarget().getUpdate().add((Object) value);
-        return;
+        return getTarget().getUpdate().add(value);
 
       case RequestModelPackage.ACTIONTYPE_INSERT_FEATURE_ID:
-        getTarget().getInsert().add((Object) value);
-        return;
+        return getTarget().getInsert().add(value);
 
       case RequestModelPackage.ACTIONTYPE_DELETE_FEATURE_ID:
-        getTarget().getDelete().add((Object) value);
-        return;
+        return getTarget().getDelete().add(value);
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case RequestModelPackage.ACTIONTYPE_UPDATE_FEATURE_ID:
-        getTarget().getUpdate().remove(value);
-        return;
+        return getTarget().getUpdate().remove(value);
 
       case RequestModelPackage.ACTIONTYPE_INSERT_FEATURE_ID:
-        getTarget().getInsert().remove(value);
-        return;
+        return getTarget().getInsert().remove(value);
 
       case RequestModelPackage.ACTIONTYPE_DELETE_FEATURE_ID:
-        getTarget().getDelete().remove(value);
-        return;
+        return getTarget().getDelete().remove(value);
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 
@@ -382,32 +376,30 @@ public class RequestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case RequestModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
-        return;
+        return getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case RequestModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().remove(value);
-        return;
+        return getTarget().getMixed().remove(value);
 
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 
@@ -493,32 +485,30 @@ public class RequestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case RequestModelPackage.QUERYTYPE_PARAMETERS_FEATURE_ID:
-        getTarget().getParameters().add((Parameter) value);
-        return;
+        return getTarget().getParameters().add((Parameter) value);
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case RequestModelPackage.QUERYTYPE_PARAMETERS_FEATURE_ID:
-        getTarget().getParameters().remove(value);
-        return;
+        return getTarget().getParameters().remove(value);
 
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 
@@ -585,24 +575,24 @@ public class RequestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 
@@ -654,7 +644,7 @@ public class RequestModelFactory implements ModelFactory {
         getTarget().setName((String) value);
         return;
       case RequestModelPackage.PARAMETER_VALUE_FEATURE_ID:
-        getTarget().setValue((Object) value);
+        getTarget().setValue(value);
         return;
       case RequestModelPackage.PARAMETER_TYPE_FEATURE_ID:
         getTarget().setType((String) value);
@@ -667,24 +657,24 @@ public class RequestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 

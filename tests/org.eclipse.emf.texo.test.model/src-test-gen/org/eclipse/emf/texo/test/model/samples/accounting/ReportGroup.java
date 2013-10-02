@@ -103,13 +103,15 @@ public class ReportGroup extends Identifiable {
    * 
    * @param reportGroupValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToReportGroup(ReportGroup reportGroupValue) {
+  public boolean addToReportGroup(ReportGroup reportGroupValue) {
     if (!reportGroup.contains(reportGroupValue)) {
       reportGroup.add(reportGroupValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -117,13 +119,17 @@ public class ReportGroup extends Identifiable {
    * 
    * @param reportGroupValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromReportGroup(ReportGroup reportGroupValue) {
+  public boolean removeFromReportGroup(ReportGroup reportGroupValue) {
     if (reportGroup.contains(reportGroupValue)) {
       reportGroup.remove(reportGroupValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -167,13 +173,15 @@ public class ReportGroup extends Identifiable {
    * 
    * @param accountValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAccount(BalanceAccount accountValue) {
+  public boolean addToAccount(BalanceAccount accountValue) {
     if (!account.contains(accountValue)) {
       account.add(accountValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -181,13 +189,17 @@ public class ReportGroup extends Identifiable {
    * 
    * @param accountValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAccount(BalanceAccount accountValue) {
+  public boolean removeFromAccount(BalanceAccount accountValue) {
     if (account.contains(accountValue)) {
       account.remove(accountValue);
+      return true;
     }
+    return false;
   }
 
   /**

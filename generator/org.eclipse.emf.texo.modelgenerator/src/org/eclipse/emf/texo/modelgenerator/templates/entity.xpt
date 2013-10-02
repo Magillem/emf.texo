@@ -114,7 +114,7 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 			 *
 			 * @generated
 			 */
-			public void addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
+			public boolean addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
 				«IF !featureAnnotation.EStructuralFeature.volatile-»
 				«IF featureAnnotation.EStructuralFeature.unique-»
 				if (!«featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
@@ -133,7 +133,10 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 					«ENDIF-»
 					«ENDLET-»
 					«ENDIF-»
+					return true;
 				«IF featureAnnotation.EStructuralFeature.unique-»
+				} else {
+					return false;
 				}
 				«ENDIF-»
 				«ELSE-»
@@ -150,7 +153,7 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 			 *
 			 * @generated
 			 */
-			public void removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
+			public boolean removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
 				«IF !featureAnnotation.EStructuralFeature.volatile-»
 				if («featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
 					«featureAnnotation.validJavaMemberName».remove(«featureAnnotation.validJavaMemberName»Value);
@@ -167,6 +170,9 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 					«ENDIF-»
 					«ENDLET-»
 					«ENDIF-»
+					return true;
+				} else {
+					return false;
 				}
 				«ELSE-»
 		    	// Volatile feature

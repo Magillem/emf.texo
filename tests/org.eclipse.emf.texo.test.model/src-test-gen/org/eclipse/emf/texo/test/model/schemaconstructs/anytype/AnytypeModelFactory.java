@@ -280,12 +280,12 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -293,12 +293,12 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -373,12 +373,12 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -386,12 +386,12 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -461,11 +461,11 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -473,11 +473,11 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -578,23 +578,20 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AnytypeModelPackage.TESTANY_MULTIANYTYPE_FEATURE_ID:
-        getTarget().getMultiAnyType().add(value);
-        return;
+        return getTarget().addToMultiAnyType(value);
 
       case AnytypeModelPackage.TESTANY_MYANY_FEATURE_ID:
-        getTarget().getMyAny().add((TestAnyMyAnyFeatureGroup) value);
-        return;
+        return getTarget().getMyAny().add((TestAnyMyAnyFeatureGroup) value);
 
       case AnytypeModelPackage.TESTANY_ANY_FEATURE_ID:
-        getTarget().getAny().add((TestAnyAnyFeatureGroup) value);
-        return;
+        return getTarget().getAny().add((TestAnyAnyFeatureGroup) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -602,23 +599,20 @@ public class AnytypeModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AnytypeModelPackage.TESTANY_MULTIANYTYPE_FEATURE_ID:
-        getTarget().getMultiAnyType().remove(value);
-        return;
+        return getTarget().removeFromMultiAnyType((Object) value);
 
       case AnytypeModelPackage.TESTANY_MYANY_FEATURE_ID:
-        getTarget().getMyAny().remove(value);
-        return;
+        return getTarget().getMyAny().remove(value);
 
       case AnytypeModelPackage.TESTANY_ANY_FEATURE_ID:
-        getTarget().getAny().remove(value);
-        return;
+        return getTarget().getAny().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

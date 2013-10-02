@@ -54,13 +54,15 @@ public class BalanceAccount extends Account {
    * 
    * @param reportValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToReport(ReportGroup reportValue) {
+  public boolean addToReport(ReportGroup reportValue) {
     if (!report.contains(reportValue)) {
       report.add(reportValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -68,13 +70,17 @@ public class BalanceAccount extends Account {
    * 
    * @param reportValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromReport(ReportGroup reportValue) {
+  public boolean removeFromReport(ReportGroup reportValue) {
     if (report.contains(reportValue)) {
       report.remove(reportValue);
+      return true;
     }
+    return false;
   }
 
   /**

@@ -45,13 +45,13 @@ public interface «this.simpleClassName-»
 			 * Adds to the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
 			 * @generated
 			 */
-			public void addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
+			public boolean addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
 
 			/**
 			 * Removes from the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
 			 * @generated
 			 */
-			public void removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
+			public boolean removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
 
 			/**
 			 * Clears the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.

@@ -63,13 +63,15 @@ public class BuildResource extends AbstractBuildElement {
    * 
    * @param implementationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToImplementation(KDMEntity implementationValue) {
+  public boolean addToImplementation(KDMEntity implementationValue) {
     if (!implementation.contains(implementationValue)) {
       implementation.add(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -77,13 +79,17 @@ public class BuildResource extends AbstractBuildElement {
    * 
    * @param implementationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromImplementation(KDMEntity implementationValue) {
+  public boolean removeFromImplementation(KDMEntity implementationValue) {
     if (implementation.contains(implementationValue)) {
       implementation.remove(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -127,13 +133,15 @@ public class BuildResource extends AbstractBuildElement {
    * 
    * @param groupedBuildValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToGroupedBuild(AbstractBuildElement groupedBuildValue) {
+  public boolean addToGroupedBuild(AbstractBuildElement groupedBuildValue) {
     if (!groupedBuild.contains(groupedBuildValue)) {
       groupedBuild.add(groupedBuildValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -141,13 +149,17 @@ public class BuildResource extends AbstractBuildElement {
    * 
    * @param groupedBuildValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromGroupedBuild(AbstractBuildElement groupedBuildValue) {
+  public boolean removeFromGroupedBuild(AbstractBuildElement groupedBuildValue) {
     if (groupedBuild.contains(groupedBuildValue)) {
       groupedBuild.remove(groupedBuildValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -191,13 +203,15 @@ public class BuildResource extends AbstractBuildElement {
    * 
    * @param buildElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBuildElement(AbstractBuildElement buildElementValue) {
+  public boolean addToBuildElement(AbstractBuildElement buildElementValue) {
     if (!buildElement.contains(buildElementValue)) {
       buildElement.add(buildElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -205,13 +219,17 @@ public class BuildResource extends AbstractBuildElement {
    * 
    * @param buildElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBuildElement(AbstractBuildElement buildElementValue) {
+  public boolean removeFromBuildElement(AbstractBuildElement buildElementValue) {
     if (buildElement.contains(buildElementValue)) {
       buildElement.remove(buildElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

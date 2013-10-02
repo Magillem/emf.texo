@@ -48,13 +48,15 @@ public class Polyline extends GraphicsAlgorithm {
    * 
    * @param pointsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToPoints(Point pointsValue) {
+  public boolean addToPoints(Point pointsValue) {
     if (!points.contains(pointsValue)) {
       points.add(pointsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -62,13 +64,17 @@ public class Polyline extends GraphicsAlgorithm {
    * 
    * @param pointsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromPoints(Point pointsValue) {
+  public boolean removeFromPoints(Point pointsValue) {
     if (points.contains(pointsValue)) {
       points.remove(pointsValue);
+      return true;
     }
+    return false;
   }
 
   /**

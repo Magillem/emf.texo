@@ -129,7 +129,7 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
      * @generated
      */
     @Override
-    public void eAddTo(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
         final int featureID = eClass().getFeatureID(eStructuralFeature);
         switch (featureID) {
         «FOR featureAnnotation : eClassModelGenAnnotation.EStructuralFeatureModelGenAnnotations»
@@ -137,19 +137,17 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
                 The check !featureAnnotation.itemType.contains(",") prevents maps to be handled here
             */»
             «IF featureAnnotation.EStructuralFeature.changeable && featureAnnotation.many && !featureAnnotation.itemType.contains(",")»
-            «IF featureAnnotation.reference && featureAnnotation.featureMapFeature == null && (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»
+            «IF featureAnnotation.reference && featureAnnotation.featureMapFeature == null && ((featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport || (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess)»
             case «ePackageAnnotation.qualifiedClassName».«TemplateUtil::toUpperCase(eClassModelGenAnnotation.name)»_«TemplateUtil::toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-                getTarget().addTo«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«TemplateUtil::cast(featureAnnotation.itemType)»value);
-                return;
+                return getTarget().addTo«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«TemplateUtil::cast(featureAnnotation.itemType)»value);
             «ELSE»
             case «ePackageAnnotation.qualifiedClassName».«TemplateUtil::toUpperCase(eClassModelGenAnnotation.name)»_«TemplateUtil::toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-                getTarget().«featureAnnotation.getter»().add(«TemplateUtil::cast(featureAnnotation.itemType)»value);
-                return;
+                return getTarget().«featureAnnotation.getter»().add(«TemplateUtil::cast(featureAnnotation.itemType)»value);
             «ENDIF»
             «ENDIF»
         «ENDFOR»
             default:
-                super.eAddTo(eStructuralFeature, value);
+                return super.eAddTo(eStructuralFeature, value);
         }
     }
 
@@ -157,7 +155,7 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
      * @generated
      */
     @Override
-    public void eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
         final int featureID = eClass().getFeatureID(eStructuralFeature);
         switch (featureID) {
         «FOR featureAnnotation : eClassModelGenAnnotation.EStructuralFeatureModelGenAnnotations»
@@ -165,19 +163,17 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
                 The check !featureAnnotation.itemType.contains(",") prevents maps to be handled here
             */»
             «IF featureAnnotation.EStructuralFeature.changeable && featureAnnotation.many && !featureAnnotation.itemType.contains(",")»
-            «IF featureAnnotation.reference && featureAnnotation.featureMapFeature == null && (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»
+            «IF featureAnnotation.reference && featureAnnotation.featureMapFeature == null && ((featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport || (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess)»
             case «ePackageAnnotation.qualifiedClassName».«TemplateUtil::toUpperCase(eClassModelGenAnnotation.name)»_«TemplateUtil::toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-                getTarget().removeFrom«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»((«featureAnnotation.itemType»)value);
-                return;
+                return getTarget().removeFrom«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»((«featureAnnotation.itemType»)value);
             «ELSE»
             case «ePackageAnnotation.qualifiedClassName».«TemplateUtil::toUpperCase(eClassModelGenAnnotation.name)»_«TemplateUtil::toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-                getTarget().«featureAnnotation.getter»().remove(value);
-                return;
+                return getTarget().«featureAnnotation.getter»().remove(value);
             «ENDIF»
             «ENDIF»
         «ENDFOR»
             default:
-                super.eRemoveFrom(eStructuralFeature, value);
+                return super.eRemoveFrom(eStructuralFeature, value);
         }
     }
 }

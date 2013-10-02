@@ -402,12 +402,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -415,12 +415,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -495,12 +495,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -508,12 +508,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -582,15 +582,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.LENDABLE_BORROWERS_FEATURE_ID:
-        getTarget().getBorrowers().add((Borrower) value);
-        return;
+        return getTarget().addToBorrowers((Borrower) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -598,15 +597,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.LENDABLE_BORROWERS_FEATURE_ID:
-        getTarget().getBorrowers().remove(value);
-        return;
+        return getTarget().removeFromBorrowers((Borrower) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -692,15 +690,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.CIRCULATINGITEM_BORROWERS_FEATURE_ID:
-        getTarget().getBorrowers().add((Borrower) value);
-        return;
+        return getTarget().addToBorrowers((Borrower) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -708,15 +705,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.CIRCULATINGITEM_BORROWERS_FEATURE_ID:
-        getTarget().getBorrowers().remove(value);
-        return;
+        return getTarget().removeFromBorrowers((Borrower) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -812,15 +808,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        getTarget().getBooks().add((Book) value);
-        return;
+        return getTarget().addToBooks((Book) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -828,15 +823,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        getTarget().getBooks().remove(value);
-        return;
+        return getTarget().removeFromBooks((Book) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -899,12 +893,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -912,12 +906,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1002,12 +996,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1015,12 +1009,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1141,40 +1135,33 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.LIBRARY_WRITERS_FEATURE_ID:
-        getTarget().getWriters().add((Writer) value);
-        return;
+        return getTarget().getWriters().add((Writer) value);
 
       case ExtlibraryModelPackage.LIBRARY_EMPLOYEES_FEATURE_ID:
-        getTarget().getEmployees().add((Employee) value);
-        return;
+        return getTarget().getEmployees().add((Employee) value);
 
       case ExtlibraryModelPackage.LIBRARY_BORROWERS_FEATURE_ID:
-        getTarget().getBorrowers().add((Borrower) value);
-        return;
+        return getTarget().getBorrowers().add((Borrower) value);
 
       case ExtlibraryModelPackage.LIBRARY_STOCK_FEATURE_ID:
-        getTarget().getStock().add((Item) value);
-        return;
+        return getTarget().addToStock((Item) value);
 
       case ExtlibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        getTarget().getBooks().add((Book) value);
-        return;
+        return getTarget().addToBooks((Book) value);
 
       case ExtlibraryModelPackage.LIBRARY_BRANCHES_FEATURE_ID:
-        getTarget().getBranches().add((Library) value);
-        return;
+        return getTarget().addToBranches((Library) value);
 
       case ExtlibraryModelPackage.LIBRARY_PEOPLE_FEATURE_ID:
-        getTarget().getPeople().add((LibraryPeopleFeatureGroup) value);
-        return;
+        return getTarget().getPeople().add((LibraryPeopleFeatureGroup) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1182,40 +1169,33 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.LIBRARY_WRITERS_FEATURE_ID:
-        getTarget().getWriters().remove(value);
-        return;
+        return getTarget().getWriters().remove(value);
 
       case ExtlibraryModelPackage.LIBRARY_EMPLOYEES_FEATURE_ID:
-        getTarget().getEmployees().remove(value);
-        return;
+        return getTarget().getEmployees().remove(value);
 
       case ExtlibraryModelPackage.LIBRARY_BORROWERS_FEATURE_ID:
-        getTarget().getBorrowers().remove(value);
-        return;
+        return getTarget().getBorrowers().remove(value);
 
       case ExtlibraryModelPackage.LIBRARY_STOCK_FEATURE_ID:
-        getTarget().getStock().remove(value);
-        return;
+        return getTarget().removeFromStock((Item) value);
 
       case ExtlibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        getTarget().getBooks().remove(value);
-        return;
+        return getTarget().removeFromBooks((Book) value);
 
       case ExtlibraryModelPackage.LIBRARY_BRANCHES_FEATURE_ID:
-        getTarget().getBranches().remove(value);
-        return;
+        return getTarget().removeFromBranches((Library) value);
 
       case ExtlibraryModelPackage.LIBRARY_PEOPLE_FEATURE_ID:
-        getTarget().getPeople().remove(value);
-        return;
+        return getTarget().getPeople().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1305,12 +1285,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1318,12 +1298,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1414,15 +1394,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.BORROWER_BORROWED_FEATURE_ID:
-        getTarget().getBorrowed().add((Lendable) value);
-        return;
+        return getTarget().addToBorrowed((Lendable) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1430,15 +1409,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.BORROWER_BORROWED_FEATURE_ID:
-        getTarget().getBorrowed().remove(value);
-        return;
+        return getTarget().removeFromBorrowed((Lendable) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1523,12 +1501,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1536,12 +1514,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1642,12 +1620,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1655,12 +1633,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1771,12 +1749,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1784,12 +1762,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1895,15 +1873,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.VIDEOCASSETTE_CAST_FEATURE_ID:
-        getTarget().getCast().add((Person) value);
-        return;
+        return getTarget().addToCast((Person) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1911,15 +1888,14 @@ public class ExtlibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ExtlibraryModelPackage.VIDEOCASSETTE_CAST_FEATURE_ID:
-        getTarget().getCast().remove(value);
-        return;
+        return getTarget().removeFromCast((Person) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

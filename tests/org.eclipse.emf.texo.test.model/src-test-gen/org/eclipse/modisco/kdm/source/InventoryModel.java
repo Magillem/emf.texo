@@ -52,13 +52,15 @@ public class InventoryModel extends KDMModel {
    * 
    * @param inventoryElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToInventoryElement(AbstractInventoryElement inventoryElementValue) {
+  public boolean addToInventoryElement(AbstractInventoryElement inventoryElementValue) {
     if (!inventoryElement.contains(inventoryElementValue)) {
       inventoryElement.add(inventoryElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -66,13 +68,17 @@ public class InventoryModel extends KDMModel {
    * 
    * @param inventoryElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromInventoryElement(AbstractInventoryElement inventoryElementValue) {
+  public boolean removeFromInventoryElement(AbstractInventoryElement inventoryElementValue) {
     if (inventoryElement.contains(inventoryElementValue)) {
       inventoryElement.remove(inventoryElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

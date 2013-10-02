@@ -127,13 +127,15 @@ public class CatalogType extends Identifiable {
    * 
    * @param subCatalogValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSubCatalog(CatalogType subCatalogValue) {
+  public boolean addToSubCatalog(CatalogType subCatalogValue) {
     if (!subCatalog.contains(subCatalogValue)) {
       subCatalog.add(subCatalogValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -141,13 +143,17 @@ public class CatalogType extends Identifiable {
    * 
    * @param subCatalogValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSubCatalog(CatalogType subCatalogValue) {
+  public boolean removeFromSubCatalog(CatalogType subCatalogValue) {
     if (subCatalog.contains(subCatalogValue)) {
       subCatalog.remove(subCatalogValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -192,13 +198,15 @@ public class CatalogType extends Identifiable {
    * 
    * @param productValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToProduct(ProductType productValue) {
+  public boolean addToProduct(ProductType productValue) {
     if (!product.contains(productValue)) {
       product.add(productValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -206,13 +214,17 @@ public class CatalogType extends Identifiable {
    * 
    * @param productValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromProduct(ProductType productValue) {
+  public boolean removeFromProduct(ProductType productValue) {
     if (product.contains(productValue)) {
       product.remove(productValue);
+      return true;
     }
+    return false;
   }
 
   /**

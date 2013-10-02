@@ -117,13 +117,15 @@ public class Machine extends Identifiable {
    * 
    * @param tasksValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToTasks(Task tasksValue) {
+  public boolean addToTasks(Task tasksValue) {
     if (!tasks.contains(tasksValue)) {
       tasks.add(tasksValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -131,13 +133,17 @@ public class Machine extends Identifiable {
    * 
    * @param tasksValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromTasks(Task tasksValue) {
+  public boolean removeFromTasks(Task tasksValue) {
     if (tasks.contains(tasksValue)) {
       tasks.remove(tasksValue);
+      return true;
     }
+    return false;
   }
 
   /**

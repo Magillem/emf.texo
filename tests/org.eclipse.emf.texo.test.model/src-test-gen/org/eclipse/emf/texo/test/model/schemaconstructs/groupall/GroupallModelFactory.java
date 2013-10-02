@@ -328,12 +328,12 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -341,12 +341,12 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -433,23 +433,20 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.ADDRESSTYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().add((AddressTypeGroupFeatureGroup) value);
-        return;
+        return getTarget().getGroup().add((AddressTypeGroupFeatureGroup) value);
 
       case GroupallModelPackage.ADDRESSTYPE_NAME_FEATURE_ID:
-        getTarget().getName().add((String) value);
-        return;
+        return getTarget().getName().add((String) value);
 
       case GroupallModelPackage.ADDRESSTYPE_LONGNAME_FEATURE_ID:
-        getTarget().getLongName().add((String) value);
-        return;
+        return getTarget().getLongName().add((String) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -457,23 +454,20 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.ADDRESSTYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().remove(value);
-        return;
+        return getTarget().getGroup().remove(value);
 
       case GroupallModelPackage.ADDRESSTYPE_NAME_FEATURE_ID:
-        getTarget().getName().remove(value);
-        return;
+        return getTarget().getName().remove(value);
 
       case GroupallModelPackage.ADDRESSTYPE_LONGNAME_FEATURE_ID:
-        getTarget().getLongName().remove(value);
-        return;
+        return getTarget().getLongName().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -565,23 +559,20 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.ADDRESSLIST_ADDRS_FEATURE_ID:
-        getTarget().getAddrs().add((AddressListAddrsFeatureGroup) value);
-        return;
+        return getTarget().getAddrs().add((AddressListAddrsFeatureGroup) value);
 
       case GroupallModelPackage.ADDRESSLIST_SHIPTO_FEATURE_ID:
-        getTarget().getShipTo().add((AddressType) value);
-        return;
+        return getTarget().getShipTo().add((AddressType) value);
 
       case GroupallModelPackage.ADDRESSLIST_BILLTO_FEATURE_ID:
-        getTarget().getBillTo().add((AddressType) value);
-        return;
+        return getTarget().getBillTo().add((AddressType) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -589,23 +580,20 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.ADDRESSLIST_ADDRS_FEATURE_ID:
-        getTarget().getAddrs().remove(value);
-        return;
+        return getTarget().getAddrs().remove(value);
 
       case GroupallModelPackage.ADDRESSLIST_SHIPTO_FEATURE_ID:
-        getTarget().getShipTo().remove(value);
-        return;
+        return getTarget().getShipTo().remove(value);
 
       case GroupallModelPackage.ADDRESSLIST_BILLTO_FEATURE_ID:
-        getTarget().getBillTo().remove(value);
-        return;
+        return getTarget().getBillTo().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -712,16 +700,15 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
-        return;
+        return getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -729,16 +716,15 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().remove(value);
-        return;
+        return getTarget().getMixed().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -824,12 +810,12 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -837,12 +823,12 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -933,16 +919,15 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.SIMPLEALLMAPTYPE_ALLMAP_FEATURE_ID:
-        getTarget().getAllMap().add((SimpleAllMapTypeAllMapFeatureGroup) value);
-        return;
+        return getTarget().getAllMap().add((SimpleAllMapTypeAllMapFeatureGroup) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -950,16 +935,15 @@ public class GroupallModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case GroupallModelPackage.SIMPLEALLMAPTYPE_ALLMAP_FEATURE_ID:
-        getTarget().getAllMap().remove(value);
-        return;
+        return getTarget().getAllMap().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

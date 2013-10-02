@@ -482,15 +482,14 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.INVENTORYMODEL_INVENTORYELEMENT_FEATURE_ID:
-        getTarget().getInventoryElement().add((AbstractInventoryElement) value);
-        return;
+        return getTarget().addToInventoryElement((AbstractInventoryElement) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -498,15 +497,14 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.INVENTORYMODEL_INVENTORYELEMENT_FEATURE_ID:
-        getTarget().getInventoryElement().remove(value);
-        return;
+        return getTarget().removeFromInventoryElement((AbstractInventoryElement) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -628,15 +626,14 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.ABSTRACTINVENTORYELEMENT_INVENTORYRELATIONSHIP_FEATURE_ID:
-        getTarget().getInventoryRelationship().add((AbstractInventoryRelationship) value);
-        return;
+        return getTarget().addToInventoryRelationship((AbstractInventoryRelationship) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -644,15 +641,14 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.ABSTRACTINVENTORYELEMENT_INVENTORYRELATIONSHIP_FEATURE_ID:
-        getTarget().getInventoryRelationship().remove(value);
-        return;
+        return getTarget().removeFromInventoryRelationship((AbstractInventoryRelationship) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -744,11 +740,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -756,11 +752,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -891,12 +887,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -904,12 +900,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1050,12 +1046,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1063,12 +1059,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1199,11 +1195,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1211,11 +1207,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1346,11 +1342,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1358,18 +1354,19 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>ResourceDescription</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>ResourceDescription</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -1492,11 +1489,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1504,11 +1501,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1639,11 +1636,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1651,11 +1648,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1786,11 +1783,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1798,18 +1795,19 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>InventoryContainer</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>InventoryContainer</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -1928,15 +1926,14 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.INVENTORYCONTAINER_INVENTORYELEMENT_FEATURE_ID:
-        getTarget().getInventoryElement().add((AbstractInventoryElement) value);
-        return;
+        return getTarget().addToInventoryElement((AbstractInventoryElement) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1944,15 +1941,14 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.INVENTORYCONTAINER_INVENTORYELEMENT_FEATURE_ID:
-        getTarget().getInventoryElement().remove(value);
-        return;
+        return getTarget().removeFromInventoryElement((AbstractInventoryElement) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -2083,12 +2079,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2096,12 +2092,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -2227,11 +2223,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2239,11 +2235,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -2344,12 +2340,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2357,12 +2353,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -2458,16 +2454,15 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.SOURCEREF_REGION_FEATURE_ID:
-        getTarget().getRegion().add((SourceRegion) value);
-        return;
+        return getTarget().addToRegion((SourceRegion) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2475,16 +2470,15 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SourceModelPackage.SOURCEREF_REGION_FEATURE_ID:
-        getTarget().getRegion().remove(value);
-        return;
+        return getTarget().removeFromRegion((SourceRegion) value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -2600,12 +2594,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2613,19 +2607,20 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>InventoryElement</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>InventoryElement</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -2739,11 +2734,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2751,11 +2746,11 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -2857,12 +2852,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2870,12 +2865,12 @@ public class SourceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

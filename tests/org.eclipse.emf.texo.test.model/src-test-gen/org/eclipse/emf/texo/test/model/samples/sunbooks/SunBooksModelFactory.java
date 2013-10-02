@@ -430,15 +430,14 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SunBooksModelPackage.AUTHORSTYPE_AUTHORNAME_FEATURE_ID:
-        getTarget().getAuthorName().add((String) value);
-        return;
+        return getTarget().getAuthorName().add((String) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -446,15 +445,14 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SunBooksModelPackage.AUTHORSTYPE_AUTHORNAME_FEATURE_ID:
-        getTarget().getAuthorName().remove(value);
-        return;
+        return getTarget().getAuthorName().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -531,15 +529,14 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SunBooksModelPackage.BOOKSTYPE_BOOK_FEATURE_ID:
-        getTarget().getBook().add((BookType) value);
-        return;
+        return getTarget().addToBook((BookType) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -547,15 +544,14 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SunBooksModelPackage.BOOKSTYPE_BOOK_FEATURE_ID:
-        getTarget().getBook().remove(value);
-        return;
+        return getTarget().removeFromBook((BookType) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -671,12 +667,12 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -684,12 +680,12 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -770,12 +766,12 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -783,12 +779,12 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -864,12 +860,12 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -877,12 +873,12 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -974,16 +970,15 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SunBooksModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
-        return;
+        return getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -991,16 +986,15 @@ public class SunBooksModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SunBooksModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().remove(value);
-        return;
+        return getTarget().getMixed().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

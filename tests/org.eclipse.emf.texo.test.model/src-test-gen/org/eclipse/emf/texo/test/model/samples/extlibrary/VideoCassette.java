@@ -47,13 +47,15 @@ public class VideoCassette extends AudioVisualItem {
    * 
    * @param castValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToCast(Person castValue) {
+  public boolean addToCast(Person castValue) {
     if (!cast.contains(castValue)) {
       cast.add(castValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -61,13 +63,17 @@ public class VideoCassette extends AudioVisualItem {
    * 
    * @param castValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromCast(Person castValue) {
+  public boolean removeFromCast(Person castValue) {
     if (cast.contains(castValue)) {
       cast.remove(castValue);
+      return true;
     }
+    return false;
   }
 
   /**

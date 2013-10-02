@@ -63,13 +63,15 @@ public abstract class KDMFramework extends ModelElement {
    * 
    * @param auditValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAudit(Audit auditValue) {
+  public boolean addToAudit(Audit auditValue) {
     if (!audit.contains(auditValue)) {
       audit.add(auditValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -77,13 +79,17 @@ public abstract class KDMFramework extends ModelElement {
    * 
    * @param auditValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAudit(Audit auditValue) {
+  public boolean removeFromAudit(Audit auditValue) {
     if (audit.contains(auditValue)) {
       audit.remove(auditValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -127,13 +133,15 @@ public abstract class KDMFramework extends ModelElement {
    * 
    * @param extensionValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToExtension(ExtensionFamily extensionValue) {
+  public boolean addToExtension(ExtensionFamily extensionValue) {
     if (!extension.contains(extensionValue)) {
       extension.add(extensionValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -141,13 +149,17 @@ public abstract class KDMFramework extends ModelElement {
    * 
    * @param extensionValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromExtension(ExtensionFamily extensionValue) {
+  public boolean removeFromExtension(ExtensionFamily extensionValue) {
     if (extension.contains(extensionValue)) {
       extension.remove(extensionValue);
+      return true;
     }
+    return false;
   }
 
   /**

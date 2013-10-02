@@ -49,13 +49,15 @@ public class Book extends Identifiable {
    * 
    * @param authorsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAuthors(Author authorsValue) {
+  public boolean addToAuthors(Author authorsValue) {
     if (!authors.contains(authorsValue)) {
       authors.add(authorsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -63,13 +65,17 @@ public class Book extends Identifiable {
    * 
    * @param authorsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAuthors(Author authorsValue) {
+  public boolean removeFromAuthors(Author authorsValue) {
     if (authors.contains(authorsValue)) {
       authors.remove(authorsValue);
+      return true;
     }
+    return false;
   }
 
   /**

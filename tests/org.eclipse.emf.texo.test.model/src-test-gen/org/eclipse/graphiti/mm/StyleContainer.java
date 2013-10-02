@@ -49,13 +49,15 @@ public abstract class StyleContainer extends Identifiable {
    * 
    * @param stylesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToStyles(Style stylesValue) {
+  public boolean addToStyles(Style stylesValue) {
     if (!styles.contains(stylesValue)) {
       styles.add(stylesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -63,13 +65,17 @@ public abstract class StyleContainer extends Identifiable {
    * 
    * @param stylesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromStyles(Style stylesValue) {
+  public boolean removeFromStyles(Style stylesValue) {
     if (styles.contains(stylesValue)) {
       styles.remove(stylesValue);
+      return true;
     }
+    return false;
   }
 
   /**

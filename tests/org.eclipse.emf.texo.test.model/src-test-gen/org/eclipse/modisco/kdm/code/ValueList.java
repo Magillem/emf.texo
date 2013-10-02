@@ -47,13 +47,15 @@ public class ValueList extends ValueElement {
    * 
    * @param valueElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToValueElement(ValueElement valueElementValue) {
+  public boolean addToValueElement(ValueElement valueElementValue) {
     if (!valueElement.contains(valueElementValue)) {
       valueElement.add(valueElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -61,13 +63,17 @@ public class ValueList extends ValueElement {
    * 
    * @param valueElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromValueElement(ValueElement valueElementValue) {
+  public boolean removeFromValueElement(ValueElement valueElementValue) {
     if (valueElement.contains(valueElementValue)) {
       valueElement.remove(valueElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

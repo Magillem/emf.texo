@@ -389,23 +389,20 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTING_ACCOUNTGROUP_FEATURE_ID:
-        getTarget().getAccountGroup().add((AccountGroup) value);
-        return;
+        return getTarget().addToAccountGroup((AccountGroup) value);
 
       case AccountingModelPackage.ACCOUNTING_VAT_FEATURE_ID:
-        getTarget().getVat().add((Vat) value);
-        return;
+        return getTarget().addToVat((Vat) value);
 
       case AccountingModelPackage.ACCOUNTING_JOURNALGROUP_FEATURE_ID:
-        getTarget().getJournalGroup().add((JournalGroup) value);
-        return;
+        return getTarget().addToJournalGroup((JournalGroup) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -413,23 +410,20 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTING_ACCOUNTGROUP_FEATURE_ID:
-        getTarget().getAccountGroup().remove(value);
-        return;
+        return getTarget().removeFromAccountGroup((AccountGroup) value);
 
       case AccountingModelPackage.ACCOUNTING_VAT_FEATURE_ID:
-        getTarget().getVat().remove(value);
-        return;
+        return getTarget().removeFromVat((Vat) value);
 
       case AccountingModelPackage.ACCOUNTING_JOURNALGROUP_FEATURE_ID:
-        getTarget().getJournalGroup().remove(value);
-        return;
+        return getTarget().removeFromJournalGroup((JournalGroup) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -504,12 +498,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -517,12 +511,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -604,15 +598,14 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTGROUP_ACCOUNT_FEATURE_ID:
-        getTarget().getAccount().add((Account) value);
-        return;
+        return getTarget().addToAccount((Account) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -620,15 +613,14 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTGROUP_ACCOUNT_FEATURE_ID:
-        getTarget().getAccount().remove(value);
-        return;
+        return getTarget().removeFromAccount((Account) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -708,12 +700,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -721,12 +713,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -807,15 +799,14 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.BALANCEACCOUNT_REPORT_FEATURE_ID:
-        getTarget().getReport().add((ReportGroup) value);
-        return;
+        return getTarget().addToReport((ReportGroup) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -823,15 +814,14 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.BALANCEACCOUNT_REPORT_FEATURE_ID:
-        getTarget().getReport().remove(value);
-        return;
+        return getTarget().removeFromReport((ReportGroup) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -916,12 +906,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -929,12 +919,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1021,19 +1011,17 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALGROUPS_FEATURE_ID:
-        getTarget().getJournalGroups().add((JournalGroup) value);
-        return;
+        return getTarget().addToJournalGroups((JournalGroup) value);
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALSTATEMENTS_FEATURE_ID:
-        getTarget().getJournalStatements().add((JournalStatement) value);
-        return;
+        return getTarget().addToJournalStatements((JournalStatement) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1041,19 +1029,17 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALGROUPS_FEATURE_ID:
-        getTarget().getJournalGroups().remove(value);
-        return;
+        return getTarget().removeFromJournalGroups((JournalGroup) value);
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALSTATEMENTS_FEATURE_ID:
-        getTarget().getJournalStatements().remove(value);
-        return;
+        return getTarget().removeFromJournalStatements((JournalStatement) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1140,19 +1126,17 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.REPORTGROUP_REPORTGROUP_FEATURE_ID:
-        getTarget().getReportGroup().add((ReportGroup) value);
-        return;
+        return getTarget().addToReportGroup((ReportGroup) value);
 
       case AccountingModelPackage.REPORTGROUP_ACCOUNT_FEATURE_ID:
-        getTarget().getAccount().add((BalanceAccount) value);
-        return;
+        return getTarget().addToAccount((BalanceAccount) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1160,19 +1144,17 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case AccountingModelPackage.REPORTGROUP_REPORTGROUP_FEATURE_ID:
-        getTarget().getReportGroup().remove(value);
-        return;
+        return getTarget().removeFromReportGroup((ReportGroup) value);
 
       case AccountingModelPackage.REPORTGROUP_ACCOUNT_FEATURE_ID:
-        getTarget().getAccount().remove(value);
-        return;
+        return getTarget().removeFromAccount((BalanceAccount) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1272,12 +1254,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1285,12 +1267,12 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1365,11 +1347,11 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1377,11 +1359,11 @@ public class AccountingModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

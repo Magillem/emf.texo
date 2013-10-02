@@ -63,13 +63,15 @@ public abstract class ModelElement extends Element {
    * 
    * @param stereotypeValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToStereotype(Stereotype stereotypeValue) {
+  public boolean addToStereotype(Stereotype stereotypeValue) {
     if (!stereotype.contains(stereotypeValue)) {
       stereotype.add(stereotypeValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -77,13 +79,17 @@ public abstract class ModelElement extends Element {
    * 
    * @param stereotypeValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromStereotype(Stereotype stereotypeValue) {
+  public boolean removeFromStereotype(Stereotype stereotypeValue) {
     if (stereotype.contains(stereotypeValue)) {
       stereotype.remove(stereotypeValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -129,13 +135,15 @@ public abstract class ModelElement extends Element {
    * 
    * @param taggedValueValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToTaggedValue(ExtendedValue taggedValueValue) {
+  public boolean addToTaggedValue(ExtendedValue taggedValueValue) {
     if (!taggedValue.contains(taggedValueValue)) {
       taggedValue.add(taggedValueValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -143,13 +151,17 @@ public abstract class ModelElement extends Element {
    * 
    * @param taggedValueValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromTaggedValue(ExtendedValue taggedValueValue) {
+  public boolean removeFromTaggedValue(ExtendedValue taggedValueValue) {
     if (taggedValue.contains(taggedValueValue)) {
       taggedValue.remove(taggedValueValue);
+      return true;
     }
+    return false;
   }
 
   /**

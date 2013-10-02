@@ -97,14 +97,16 @@ public class EClass0 extends Identifiable {
    * 
    * @param manyValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToMany(EClass1 manyValue) {
+  public boolean addToMany(EClass1 manyValue) {
     if (!many.contains(manyValue)) {
       many.add(manyValue);
       manyValue.addToMany(this);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -112,14 +114,18 @@ public class EClass0 extends Identifiable {
    * 
    * @param manyValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromMany(EClass1 manyValue) {
+  public boolean removeFromMany(EClass1 manyValue) {
     if (many.contains(manyValue)) {
       many.remove(manyValue);
       manyValue.removeFromMany(this);
+      return true;
     }
+    return false;
   }
 
   /**

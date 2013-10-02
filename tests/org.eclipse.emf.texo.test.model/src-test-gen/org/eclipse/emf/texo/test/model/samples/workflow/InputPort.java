@@ -86,13 +86,15 @@ public class InputPort extends Port {
    * 
    * @param edgesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToEdges(Edge edgesValue) {
+  public boolean addToEdges(Edge edgesValue) {
     if (!edges.contains(edgesValue)) {
       edges.add(edgesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -100,13 +102,17 @@ public class InputPort extends Port {
    * 
    * @param edgesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromEdges(Edge edgesValue) {
+  public boolean removeFromEdges(Edge edgesValue) {
     if (edges.contains(edgesValue)) {
       edges.remove(edgesValue);
+      return true;
     }
+    return false;
   }
 
   /**

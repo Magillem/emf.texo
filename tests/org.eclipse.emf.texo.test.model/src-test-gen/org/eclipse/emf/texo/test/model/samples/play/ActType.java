@@ -67,13 +67,15 @@ public class ActType extends Identifiable {
    * 
    * @param sceneValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToScene(SceneType sceneValue) {
+  public boolean addToScene(SceneType sceneValue) {
     if (!scene.contains(sceneValue)) {
       scene.add(sceneValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -81,13 +83,17 @@ public class ActType extends Identifiable {
    * 
    * @param sceneValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromScene(SceneType sceneValue) {
+  public boolean removeFromScene(SceneType sceneValue) {
     if (scene.contains(sceneValue)) {
       scene.remove(sceneValue);
+      return true;
     }
+    return false;
   }
 
   /**

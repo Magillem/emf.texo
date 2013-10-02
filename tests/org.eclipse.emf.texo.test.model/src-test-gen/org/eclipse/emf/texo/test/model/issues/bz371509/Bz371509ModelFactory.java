@@ -225,15 +225,14 @@ public class Bz371509ModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case Bz371509ModelPackage.ECLASS0_MANY_FEATURE_ID:
-        getTarget().addToMany((EClass1) value);
-        return;
+        return getTarget().addToMany((EClass1) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -241,15 +240,14 @@ public class Bz371509ModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case Bz371509ModelPackage.ECLASS0_MANY_FEATURE_ID:
-        getTarget().removeFromMany((EClass1) value);
-        return;
+        return getTarget().removeFromMany((EClass1) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -330,19 +328,17 @@ public class Bz371509ModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case Bz371509ModelPackage.ECLASS1_TOCLASS0_FEATURE_ID:
-        getTarget().addToToClass0((EClass0) value);
-        return;
+        return getTarget().addToToClass0((EClass0) value);
 
       case Bz371509ModelPackage.ECLASS1_MANY_FEATURE_ID:
-        getTarget().addToMany((EClass0) value);
-        return;
+        return getTarget().addToMany((EClass0) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -350,19 +346,17 @@ public class Bz371509ModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case Bz371509ModelPackage.ECLASS1_TOCLASS0_FEATURE_ID:
-        getTarget().removeFromToClass0((EClass0) value);
-        return;
+        return getTarget().removeFromToClass0((EClass0) value);
 
       case Bz371509ModelPackage.ECLASS1_MANY_FEATURE_ID:
-        getTarget().removeFromMany((EClass0) value);
-        return;
+        return getTarget().removeFromMany((EClass0) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

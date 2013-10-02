@@ -89,13 +89,15 @@ public class DataAction extends AbstractDataElement {
    * 
    * @param implementationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToImplementation(ActionElement implementationValue) {
+  public boolean addToImplementation(ActionElement implementationValue) {
     if (!implementation.contains(implementationValue)) {
       implementation.add(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -103,13 +105,17 @@ public class DataAction extends AbstractDataElement {
    * 
    * @param implementationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromImplementation(ActionElement implementationValue) {
+  public boolean removeFromImplementation(ActionElement implementationValue) {
     if (implementation.contains(implementationValue)) {
       implementation.remove(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -153,13 +159,15 @@ public class DataAction extends AbstractDataElement {
    * 
    * @param dataElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToDataElement(DataEvent dataElementValue) {
+  public boolean addToDataElement(DataEvent dataElementValue) {
     if (!dataElement.contains(dataElementValue)) {
       dataElement.add(dataElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -167,13 +175,17 @@ public class DataAction extends AbstractDataElement {
    * 
    * @param dataElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromDataElement(DataEvent dataElementValue) {
+  public boolean removeFromDataElement(DataEvent dataElementValue) {
     if (dataElement.contains(dataElementValue)) {
       dataElement.remove(dataElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

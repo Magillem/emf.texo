@@ -59,13 +59,15 @@ public class WorkWeek extends Identifiable {
    * 
    * @param daysValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToDays(WorkDay daysValue) {
+  public boolean addToDays(WorkDay daysValue) {
     if (!days.contains(daysValue)) {
       days.add(daysValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -73,13 +75,17 @@ public class WorkWeek extends Identifiable {
    * 
    * @param daysValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromDays(WorkDay daysValue) {
+  public boolean removeFromDays(WorkDay daysValue) {
     if (days.contains(daysValue)) {
       days.remove(daysValue);
+      return true;
     }
+    return false;
   }
 
   /**

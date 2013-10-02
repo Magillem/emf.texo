@@ -93,13 +93,15 @@ public class AdaptedGradientColoredAreas extends Identifiable {
    * 
    * @param adaptedGradientColoredAreasValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
+  public boolean addToAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
     if (!adaptedGradientColoredAreas.contains(adaptedGradientColoredAreasValue)) {
       adaptedGradientColoredAreas.add(adaptedGradientColoredAreasValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -107,13 +109,17 @@ public class AdaptedGradientColoredAreas extends Identifiable {
    * 
    * @param adaptedGradientColoredAreasValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
+  public boolean removeFromAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
     if (adaptedGradientColoredAreas.contains(adaptedGradientColoredAreasValue)) {
       adaptedGradientColoredAreas.remove(adaptedGradientColoredAreasValue);
+      return true;
     }
+    return false;
   }
 
   /**

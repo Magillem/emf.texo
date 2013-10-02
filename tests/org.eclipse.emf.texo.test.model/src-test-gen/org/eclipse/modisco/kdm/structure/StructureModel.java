@@ -46,13 +46,15 @@ public class StructureModel extends KDMModel {
    * 
    * @param structureElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToStructureElement(AbstractStructureElement structureElementValue) {
+  public boolean addToStructureElement(AbstractStructureElement structureElementValue) {
     if (!structureElement.contains(structureElementValue)) {
       structureElement.add(structureElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -60,13 +62,17 @@ public class StructureModel extends KDMModel {
    * 
    * @param structureElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromStructureElement(AbstractStructureElement structureElementValue) {
+  public boolean removeFromStructureElement(AbstractStructureElement structureElementValue) {
     if (structureElement.contains(structureElementValue)) {
       structureElement.remove(structureElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

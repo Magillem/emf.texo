@@ -191,13 +191,15 @@ public class Claim extends Identifiable {
    * 
    * @param claimLineValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToClaimLine(ClaimLine claimLineValue) {
+  public boolean addToClaimLine(ClaimLine claimLineValue) {
     if (!claimLine.contains(claimLineValue)) {
       claimLine.add(claimLineValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -205,13 +207,17 @@ public class Claim extends Identifiable {
    * 
    * @param claimLineValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromClaimLine(ClaimLine claimLineValue) {
+  public boolean removeFromClaimLine(ClaimLine claimLineValue) {
     if (claimLine.contains(claimLineValue)) {
       claimLine.remove(claimLineValue);
+      return true;
     }
+    return false;
   }
 
   /**

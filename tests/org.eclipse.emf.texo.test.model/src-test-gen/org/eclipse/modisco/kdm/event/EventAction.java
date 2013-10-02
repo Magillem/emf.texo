@@ -79,13 +79,15 @@ public class EventAction extends AbstractEventElement {
    * 
    * @param eventElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToEventElement(Event eventElementValue) {
+  public boolean addToEventElement(Event eventElementValue) {
     if (!eventElement.contains(eventElementValue)) {
       eventElement.add(eventElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -93,13 +95,17 @@ public class EventAction extends AbstractEventElement {
    * 
    * @param eventElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromEventElement(Event eventElementValue) {
+  public boolean removeFromEventElement(Event eventElementValue) {
     if (eventElement.contains(eventElementValue)) {
       eventElement.remove(eventElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

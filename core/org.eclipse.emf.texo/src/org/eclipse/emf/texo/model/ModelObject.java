@@ -76,8 +76,10 @@ public interface ModelObject<E extends Object> {
    *          the feature to add
    * @param value
    *          the value to add
+   * @return true if the object gets added to the list, normally an object is only added if it is not already in the
+   *         list
    */
-  void eAddTo(EStructuralFeature eStructuralFeature, Object value);
+  boolean eAddTo(EStructuralFeature eStructuralFeature, Object value);
 
   /**
    * Removes the value from an {@link EStructuralFeature} of the target object.
@@ -86,7 +88,9 @@ public interface ModelObject<E extends Object> {
    *          the feature to add
    * @param value
    *          the value to add
+   * @return true if the object got removed, if it was present in the list.
+   * 
    */
-  void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value);
+  boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value);
 
 }

@@ -2,6 +2,7 @@ package org.eclipse.emf.texo.xml.model.texoextensions;
 
 import java.util.List;
 import java.util.Map;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -14,19 +15,19 @@ import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 
 /**
- * The <b>{@link ModelFactory}</b> for the types of this model: org.eclipse.emf.texo.xml.model.texoExtensions.
- * It contains code to create instances {@link ModelObject} wrappers and instances for EClasses and convert objects back and forth from their String (XML) representation.
- * <!-- begin-user-doc -->
- * <!-- end-user-doc -->
+ * The <b>{@link ModelFactory}</b> for the types of this model: org.eclipse.emf.texo.xml.model.texoExtensions. It
+ * contains code to create instances {@link ModelObject} wrappers and instances for EClasses and convert objects back
+ * and forth from their String (XML) representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+ * 
  * @generated
  */
 public class TexoExtensionsModelFactory implements ModelFactory {
 
   /**
-   * Creates an instance for an {@link EClass}
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param eClass creates a Object instance for this EClass
+   * Creates an instance for an {@link EClass} <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param eClass
+   *          creates a Object instance for this EClass
    * @return an object representing the eClass
    * @generated
    */
@@ -39,14 +40,12 @@ public class TexoExtensionsModelFactory implements ModelFactory {
   }
 
   /**
-   * Wraps an object in a {@link ModelObject}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   *
+   * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @param eClass
-   *            the EClass of the object
+   *          the EClass of the object
    * @param adaptee
-   *            the object being wrapped/adapted
+   *          the object being wrapped/adapted
    * @return the wrapper {@link ModelObject}
    * @generated
    */
@@ -81,8 +80,8 @@ public class TexoExtensionsModelFactory implements ModelFactory {
   }
 
   /**
-   * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map
-   * entry is null then a new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
+   * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
+   * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param eStructuralFeature
    *          the feature map feature of the object
@@ -102,8 +101,8 @@ public class TexoExtensionsModelFactory implements ModelFactory {
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @return an instance of the model object representing the EClass DocumentRoot
    * @generated
    */
@@ -112,11 +111,12 @@ public class TexoExtensionsModelFactory implements ModelFactory {
   }
 
   /**
-   * Converts an instance of an {@link EDataType} to a String.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param eDataType the {@link EDataType} defining the type
-   * @param value the object to convert, if the value is null then null is returned.
+   * Converts an instance of an {@link EDataType} to a String. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param eDataType
+   *          the {@link EDataType} defining the type
+   * @param value
+   *          the object to convert, if the value is null then null is returned.
    * @generated
    */
   public Object createFromString(EDataType eDataType, String value) {
@@ -126,11 +126,12 @@ public class TexoExtensionsModelFactory implements ModelFactory {
   }
 
   /**
-   * Converts an instance of an {@link EDataType} to a String.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param eDataType the {@link EDataType} defining the type
-   * @param value the object to convert, if value == null then null is returned
+   * Converts an instance of an {@link EDataType} to a String. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param eDataType
+   *          the {@link EDataType} defining the type
+   * @param value
+   *          the object to convert, if value == null then null is returned
    * @generated
    */
   public String convertToString(EDataType eDataType, Object value) {
@@ -139,11 +140,10 @@ public class TexoExtensionsModelFactory implements ModelFactory {
     throw new IllegalArgumentException("The EDatatype '" + eDataType + "' is not defined in this EPackage.");
   }
 
-  /** 
-   * The adapter/wrapper for the EClass '<em><b>DocumentRoot</b></em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated 
+  /**
+   * The adapter/wrapper for the EClass '<em><b>DocumentRoot</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
    */
   public static class DocumentRootModelObject<E extends DocumentRoot> extends AbstractModelObject<E> {
     /**
@@ -217,30 +217,31 @@ public class TexoExtensionsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
   }
 
-  /** 
+  /**
    * The wrapper/adapter for the Feature Group '<em><b>DocumentRoot.mixed</b></em>'.
-   * @generated 
+   * 
+   * @generated
    */
   public static class DocumentRootMixedFeatureGroupModelFeatureMapEntry<E extends DocumentRootMixedFeatureGroup>
       extends AbstractModelFeatureMapEntry<DocumentRootMixedFeatureGroup> {

@@ -46,13 +46,15 @@ public class ConceptualContainer extends AbstractConceptualElement {
    * 
    * @param conceptualElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToConceptualElement(AbstractConceptualElement conceptualElementValue) {
+  public boolean addToConceptualElement(AbstractConceptualElement conceptualElementValue) {
     if (!conceptualElement.contains(conceptualElementValue)) {
       conceptualElement.add(conceptualElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -60,13 +62,17 @@ public class ConceptualContainer extends AbstractConceptualElement {
    * 
    * @param conceptualElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromConceptualElement(AbstractConceptualElement conceptualElementValue) {
+  public boolean removeFromConceptualElement(AbstractConceptualElement conceptualElementValue) {
     if (conceptualElement.contains(conceptualElementValue)) {
       conceptualElement.remove(conceptualElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

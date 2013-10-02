@@ -79,13 +79,15 @@ public class PlatformAction extends AbstractPlatformElement {
    * 
    * @param platformElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToPlatformElement(PlatformEvent platformElementValue) {
+  public boolean addToPlatformElement(PlatformEvent platformElementValue) {
     if (!platformElement.contains(platformElementValue)) {
       platformElement.add(platformElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -93,13 +95,17 @@ public class PlatformAction extends AbstractPlatformElement {
    * 
    * @param platformElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromPlatformElement(PlatformEvent platformElementValue) {
+  public boolean removeFromPlatformElement(PlatformEvent platformElementValue) {
     if (platformElement.contains(platformElementValue)) {
       platformElement.remove(platformElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

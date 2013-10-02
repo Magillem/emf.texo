@@ -69,13 +69,15 @@ public abstract class AbstractDataElement extends KDMEntity {
    * 
    * @param sourceValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSource(SourceRef sourceValue) {
+  public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
       source.add(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -83,13 +85,17 @@ public abstract class AbstractDataElement extends KDMEntity {
    * 
    * @param sourceValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSource(SourceRef sourceValue) {
+  public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
       source.remove(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -133,13 +139,15 @@ public abstract class AbstractDataElement extends KDMEntity {
    * 
    * @param dataRelationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToDataRelation(AbstractDataRelationship dataRelationValue) {
+  public boolean addToDataRelation(AbstractDataRelationship dataRelationValue) {
     if (!dataRelation.contains(dataRelationValue)) {
       dataRelation.add(dataRelationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -147,13 +155,17 @@ public abstract class AbstractDataElement extends KDMEntity {
    * 
    * @param dataRelationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromDataRelation(AbstractDataRelationship dataRelationValue) {
+  public boolean removeFromDataRelation(AbstractDataRelationship dataRelationValue) {
     if (dataRelation.contains(dataRelationValue)) {
       dataRelation.remove(dataRelationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -197,13 +209,15 @@ public abstract class AbstractDataElement extends KDMEntity {
    * 
    * @param abstractionValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAbstraction(ActionElement abstractionValue) {
+  public boolean addToAbstraction(ActionElement abstractionValue) {
     if (!abstraction.contains(abstractionValue)) {
       abstraction.add(abstractionValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -211,13 +225,17 @@ public abstract class AbstractDataElement extends KDMEntity {
    * 
    * @param abstractionValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAbstraction(ActionElement abstractionValue) {
+  public boolean removeFromAbstraction(ActionElement abstractionValue) {
     if (abstraction.contains(abstractionValue)) {
       abstraction.remove(abstractionValue);
+      return true;
     }
+    return false;
   }
 
   /**

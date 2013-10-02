@@ -117,7 +117,7 @@ public class DynamicModelObject implements ModelObject<DynamicModelObject>, Texo
    * 
    * @see org.eclipse.emf.texo.model.ModelObject#eSet(org.eclipse.emf.ecore.EStructuralFeature, java.lang.Object)
    */
-  public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+  public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
     final int featureId = eClass().getFeatureID(eStructuralFeature);
     if (featureId > values.size() - 1) {
       checkIncreaseValues(featureId);
@@ -125,8 +125,9 @@ public class DynamicModelObject implements ModelObject<DynamicModelObject>, Texo
     @SuppressWarnings("unchecked")
     final Collection<Object> localValues = (Collection<Object>) eGet(eStructuralFeature);
     if (!localValues.contains(value)) {
-      localValues.add(value);
+      return localValues.add(value);
     }
+    return false;
   }
 
   /*
@@ -134,7 +135,7 @@ public class DynamicModelObject implements ModelObject<DynamicModelObject>, Texo
    * 
    * @see org.eclipse.emf.texo.model.ModelObject#eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature, java.lang.Object)
    */
-  public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+  public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
     final int featureId = eClass().getFeatureID(eStructuralFeature);
     if (featureId > values.size() - 1) {
       checkIncreaseValues(featureId);
@@ -142,8 +143,9 @@ public class DynamicModelObject implements ModelObject<DynamicModelObject>, Texo
     @SuppressWarnings("unchecked")
     final Collection<Object> localValues = (Collection<Object>) eGet(eStructuralFeature);
     if (localValues.contains(value)) {
-      localValues.remove(value);
+      return localValues.remove(value);
     }
+    return false;
   }
 
   private synchronized void checkIncreaseValues(int featureId) {

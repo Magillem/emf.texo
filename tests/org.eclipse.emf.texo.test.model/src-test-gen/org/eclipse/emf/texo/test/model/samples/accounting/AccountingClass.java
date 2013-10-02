@@ -135,13 +135,15 @@ public class AccountingClass extends Identifiable implements Serializable {
    * 
    * @param accountGroupValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAccountGroup(AccountGroup accountGroupValue) {
+  public boolean addToAccountGroup(AccountGroup accountGroupValue) {
     if (!accountGroup.contains(accountGroupValue)) {
       accountGroup.add(accountGroupValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -149,13 +151,17 @@ public class AccountingClass extends Identifiable implements Serializable {
    * 
    * @param accountGroupValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAccountGroup(AccountGroup accountGroupValue) {
+  public boolean removeFromAccountGroup(AccountGroup accountGroupValue) {
     if (accountGroup.contains(accountGroupValue)) {
       accountGroup.remove(accountGroupValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -199,13 +205,15 @@ public class AccountingClass extends Identifiable implements Serializable {
    * 
    * @param vatValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToVat(Vat vatValue) {
+  public boolean addToVat(Vat vatValue) {
     if (!vat.contains(vatValue)) {
       vat.add(vatValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -213,13 +221,17 @@ public class AccountingClass extends Identifiable implements Serializable {
    * 
    * @param vatValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromVat(Vat vatValue) {
+  public boolean removeFromVat(Vat vatValue) {
     if (vat.contains(vatValue)) {
       vat.remove(vatValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -313,13 +325,15 @@ public class AccountingClass extends Identifiable implements Serializable {
    * 
    * @param journalGroupValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToJournalGroup(JournalGroup journalGroupValue) {
+  public boolean addToJournalGroup(JournalGroup journalGroupValue) {
     if (!journalGroup.contains(journalGroupValue)) {
       journalGroup.add(journalGroupValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -327,13 +341,17 @@ public class AccountingClass extends Identifiable implements Serializable {
    * 
    * @param journalGroupValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromJournalGroup(JournalGroup journalGroupValue) {
+  public boolean removeFromJournalGroup(JournalGroup journalGroupValue) {
     if (journalGroup.contains(journalGroupValue)) {
       journalGroup.remove(journalGroupValue);
+      return true;
     }
+    return false;
   }
 
   /**

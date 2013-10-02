@@ -91,7 +91,7 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
 	 * @generated
 	 */
 	@Override
-	public void eAddTo(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
+	public boolean eAddTo(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
 		final int featureID = eClass().getFeatureID(eStructuralFeature);
 		switch (featureID) {
 		«FOREACH this.EStructuralFeatureModelGenAnnotations AS featureAnnotation-»
@@ -101,24 +101,22 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
 			«IF featureAnnotation.EStructuralFeature.changeable && featureAnnotation.many && !featureAnnotation.itemType.contains(",")»
 			«IF featureAnnotation.reference && featureAnnotation.featureMapFeature == null && ((EReferenceModelGenAnnotation)featureAnnotation).generateSafeManyAccess-»
 			case «ePackageAnnotation.qualifiedClassName».«toUpperCase(this.name)»_«toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-				getTarget().addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«cast(featureAnnotation.itemType)»value);
-				return;
+				return getTarget().addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«cast(featureAnnotation.itemType)»value);
 			«ELSE-»
 			case «ePackageAnnotation.qualifiedClassName».«toUpperCase(this.name)»_«toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-				getTarget().«featureAnnotation.getter»().add(«(featureAnnotation.itemType)»value);
-				return;
+				return getTarget().«featureAnnotation.getter»().add(«(featureAnnotation.itemType)»value);
 			«ENDIF-»
 			«ENDIF-»
 		«ENDFOREACH-»
 		}
-		super.eAddTo(eStructuralFeature, value);
+		return super.eAddTo(eStructuralFeature, value);
 	}
 
 	/**
 	 * @generated
 	 */
 	@Override
-	public void eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
+	public boolean eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
 		final int featureID = eClass().getFeatureID(eStructuralFeature);
 		switch (featureID) {
 		«FOREACH this.EStructuralFeatureModelGenAnnotations AS featureAnnotation-»
@@ -128,17 +126,15 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
 			«IF featureAnnotation.EStructuralFeature.changeable && featureAnnotation.many && !featureAnnotation.itemType.contains(",")»
 			«IF featureAnnotation.reference && featureAnnotation.featureMapFeature == null && ((EReferenceModelGenAnnotation)featureAnnotation).generateSafeManyAccess-»
 			case «ePackageAnnotation.qualifiedClassName».«toUpperCase(this.name)»_«toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-				getTarget().removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«cast(featureAnnotation.itemType)»value);
-				return;
+				return getTarget().removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«cast(featureAnnotation.itemType)»value);
 			«ELSE-»
 			case «ePackageAnnotation.qualifiedClassName».«toUpperCase(this.name)»_«toUpperCase(featureAnnotation.name)»_FEATURE_ID:
-				getTarget().«featureAnnotation.getter»().remove(value);
-				return;
+				return getTarget().«featureAnnotation.getter»().remove(value);
 			«ENDIF-»
 			«ENDIF-»
 		«ENDFOREACH-»
 		}
-		super.eRemoveFrom(eStructuralFeature, value);
+		return super.eRemoveFrom(eStructuralFeature, value);
 	}
 }
 «ENDLET-»

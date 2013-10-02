@@ -246,16 +246,15 @@ public class QnameModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case QnameModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
-        return;
+        return getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -263,16 +262,15 @@ public class QnameModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case QnameModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().remove(value);
-        return;
+        return getTarget().getMixed().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -358,15 +356,14 @@ public class QnameModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case QnameModelPackage.MYTEST_NAMES_FEATURE_ID:
-        getTarget().getNames().add((QName) value);
-        return;
+        return getTarget().getNames().add((QName) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -374,15 +371,14 @@ public class QnameModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case QnameModelPackage.MYTEST_NAMES_FEATURE_ID:
-        getTarget().getNames().remove(value);
-        return;
+        return getTarget().getNames().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

@@ -228,23 +228,20 @@ public class SimplechoiceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SimplechoiceModelPackage.PERSON_GROUP_FEATURE_ID:
-        getTarget().getGroup().add((PersonGroupFeatureGroup) value);
-        return;
+        return getTarget().getGroup().add((PersonGroupFeatureGroup) value);
 
       case SimplechoiceModelPackage.PERSON_AGE_FEATURE_ID:
-        getTarget().getAge().add((Integer) value);
-        return;
+        return getTarget().getAge().add((Integer) value);
 
       case SimplechoiceModelPackage.PERSON_LENGTH_FEATURE_ID:
-        getTarget().getLength().add((Integer) value);
-        return;
+        return getTarget().getLength().add((Integer) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -252,23 +249,20 @@ public class SimplechoiceModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SimplechoiceModelPackage.PERSON_GROUP_FEATURE_ID:
-        getTarget().getGroup().remove(value);
-        return;
+        return getTarget().getGroup().remove(value);
 
       case SimplechoiceModelPackage.PERSON_AGE_FEATURE_ID:
-        getTarget().getAge().remove(value);
-        return;
+        return getTarget().getAge().remove(value);
 
       case SimplechoiceModelPackage.PERSON_LENGTH_FEATURE_ID:
-        getTarget().getLength().remove(value);
-        return;
+        return getTarget().getLength().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

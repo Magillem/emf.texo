@@ -540,7 +540,7 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append("Value the value to add");
                     _builder.newLineIfNotEmpty();
                     _builder.append(" ");
-                    _builder.append("*");
+                    _builder.append("* @return true if the value is added to the collection (it was not yet present in the collection), false otherwise");
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* @generated");
@@ -548,7 +548,7 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append(" ");
                     _builder.append("*/");
                     _builder.newLine();
-                    _builder.append("public void addTo");
+                    _builder.append("public boolean addTo");
                     String _validJavaMemberName_7 = featureAnnotation_1.getValidJavaMemberName();
                     String _firstUpper_2 = TemplateUtil.toFirstUpper(_validJavaMemberName_7);
                     _builder.append(_firstUpper_2, "");
@@ -643,12 +643,19 @@ public class EntityTemplate extends BaseTemplate {
                             }
                           }
                         }
+                        _builder.append("    ");
+                        _builder.append("    ");
+                        _builder.append("return true;");
+                        _builder.newLine();
                         {
                           EStructuralFeature _eStructuralFeature_12 = featureAnnotation_1.getEStructuralFeature();
                           boolean _isUnique_1 = _eStructuralFeature_12.isUnique();
                           if (_isUnique_1) {
                             _builder.append("    ");
                             _builder.append("}");
+                            _builder.newLine();
+                            _builder.append("    ");
+                            _builder.append("return false;");
                             _builder.newLine();
                           }
                         }
@@ -686,6 +693,9 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append("Value the value to remove");
                     _builder.newLineIfNotEmpty();
                     _builder.append(" ");
+                    _builder.append("* @return true if the value is removed from the collection (it existed in the collection before removing), false otherwise");
+                    _builder.newLine();
+                    _builder.append(" ");
                     _builder.append("*");
                     _builder.newLine();
                     _builder.append(" ");
@@ -694,7 +704,7 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append(" ");
                     _builder.append("*/");
                     _builder.newLine();
-                    _builder.append("public void removeFrom");
+                    _builder.append("public boolean removeFrom");
                     String _validJavaMemberName_18 = featureAnnotation_1.getValidJavaMemberName();
                     String _firstUpper_4 = TemplateUtil.toFirstUpper(_validJavaMemberName_18);
                     _builder.append(_firstUpper_4, "");
@@ -784,7 +794,14 @@ public class EntityTemplate extends BaseTemplate {
                           }
                         }
                         _builder.append("    ");
+                        _builder.append("    ");
+                        _builder.append("return true;");
+                        _builder.newLine();
+                        _builder.append("    ");
                         _builder.append("}");
+                        _builder.newLine();
+                        _builder.append("               \t");
+                        _builder.append("return false;");
                         _builder.newLine();
                       } else {
                         _builder.append("    ");

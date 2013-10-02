@@ -75,7 +75,7 @@ public abstract class AbstractModelObject<E extends Object> implements ModelObje
    * 
    * @see org.eclipse.emf.texo.model.ModelObject#eAddTo(org.eclipse.emf.ecore.EStructuralFeature, java.lang.Object)
    */
-  public void eAddTo(final EStructuralFeature eStructuralFeature, final Object value) {
+  public boolean eAddTo(final EStructuralFeature eStructuralFeature, final Object value) {
     throw new IllegalArgumentException(
         "EStructuralFeature: " + eStructuralFeature + " not found in EClass or feature is not a Many feature " //$NON-NLS-1$ //$NON-NLS-2$
             + eClass() + " when adding value " + value); //$NON-NLS-1$
@@ -86,7 +86,7 @@ public abstract class AbstractModelObject<E extends Object> implements ModelObje
    * 
    * @see org.eclipse.emf.texo.model.ModelObject#eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature, java.lang.Object)
    */
-  public void eRemoveFrom(final EStructuralFeature eStructuralFeature, final Object value) {
+  public boolean eRemoveFrom(final EStructuralFeature eStructuralFeature, final Object value) {
     throw new IllegalArgumentException(
         "EStructuralFeature: " + eStructuralFeature + " not found in EClass or feature is not a Many feature " //$NON-NLS-1$ //$NON-NLS-2$
             + eClass() + " when removing value " + value); //$NON-NLS-1$

@@ -84,13 +84,15 @@ public class PictogramLink extends PropertyContainer {
    * 
    * @param businessObjectsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBusinessObjects(Object businessObjectsValue) {
+  public boolean addToBusinessObjects(Object businessObjectsValue) {
     if (!businessObjects.contains(businessObjectsValue)) {
       businessObjects.add(businessObjectsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -98,13 +100,17 @@ public class PictogramLink extends PropertyContainer {
    * 
    * @param businessObjectsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBusinessObjects(Object businessObjectsValue) {
+  public boolean removeFromBusinessObjects(Object businessObjectsValue) {
     if (businessObjects.contains(businessObjectsValue)) {
       businessObjects.remove(businessObjectsValue);
+      return true;
     }
+    return false;
   }
 
   /**

@@ -59,13 +59,13 @@ public class ModelEObject implements ModelObject<EObject>, TexoComponent {
   }
 
   @SuppressWarnings("unchecked")
-  public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
-    ((Collection<Object>) eGet(eStructuralFeature)).add(value);
+  public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    return ((Collection<Object>) eGet(eStructuralFeature)).add(value);
   }
 
   @SuppressWarnings("unchecked")
-  public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
-    ((Collection<Object>) eGet(eStructuralFeature)).remove(value);
+  public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    return ((Collection<Object>) eGet(eStructuralFeature)).remove(value);
   }
 
 }

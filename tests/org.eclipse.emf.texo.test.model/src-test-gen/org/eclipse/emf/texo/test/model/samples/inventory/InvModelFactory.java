@@ -245,23 +245,20 @@ public class InvModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case InvModelPackage.PTYPE_SUBTYPES_FEATURE_ID:
-        getTarget().getSubTypes().add((PType) value);
-        return;
+        return getTarget().addToSubTypes((PType) value);
 
       case InvModelPackage.PTYPE_SUBNOTYPES_FEATURE_ID:
-        getTarget().getSubNOTypes().add((PType) value);
-        return;
+        return getTarget().addToSubNOTypes((PType) value);
 
       case InvModelPackage.PTYPE_INFOREFERENCES_FEATURE_ID:
-        getTarget().getInfoReferences().add((PDeclaration) value);
-        return;
+        return getTarget().addToInfoReferences((PDeclaration) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -269,23 +266,20 @@ public class InvModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case InvModelPackage.PTYPE_SUBTYPES_FEATURE_ID:
-        getTarget().getSubTypes().remove(value);
-        return;
+        return getTarget().removeFromSubTypes((PType) value);
 
       case InvModelPackage.PTYPE_SUBNOTYPES_FEATURE_ID:
-        getTarget().getSubNOTypes().remove(value);
-        return;
+        return getTarget().removeFromSubNOTypes((PType) value);
 
       case InvModelPackage.PTYPE_INFOREFERENCES_FEATURE_ID:
-        getTarget().getInfoReferences().remove(value);
-        return;
+        return getTarget().removeFromInfoReferences((PDeclaration) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -366,12 +360,12 @@ public class InvModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -379,12 +373,12 @@ public class InvModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

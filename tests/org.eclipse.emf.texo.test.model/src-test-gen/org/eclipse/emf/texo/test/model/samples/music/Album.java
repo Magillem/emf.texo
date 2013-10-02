@@ -246,13 +246,15 @@ public class Album extends Identifiable {
    * 
    * @param genresValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToGenres(Genre genresValue) {
+  public boolean addToGenres(Genre genresValue) {
     if (!genres.contains(genresValue)) {
       genres.add(genresValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -260,13 +262,17 @@ public class Album extends Identifiable {
    * 
    * @param genresValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromGenres(Genre genresValue) {
+  public boolean removeFromGenres(Genre genresValue) {
     if (genres.contains(genresValue)) {
       genres.remove(genresValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -310,13 +316,15 @@ public class Album extends Identifiable {
    * 
    * @param songsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSongs(Song songsValue) {
+  public boolean addToSongs(Song songsValue) {
     if (!songs.contains(songsValue)) {
       songs.add(songsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -324,13 +332,17 @@ public class Album extends Identifiable {
    * 
    * @param songsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSongs(Song songsValue) {
+  public boolean removeFromSongs(Song songsValue) {
     if (songs.contains(songsValue)) {
       songs.remove(songsValue);
+      return true;
     }
+    return false;
   }
 
   /**

@@ -45,13 +45,15 @@ public class ResourceType extends AbstractPlatformElement {
    * 
    * @param platformElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToPlatformElement(AbstractPlatformElement platformElementValue) {
+  public boolean addToPlatformElement(AbstractPlatformElement platformElementValue) {
     if (!platformElement.contains(platformElementValue)) {
       platformElement.add(platformElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -59,13 +61,17 @@ public class ResourceType extends AbstractPlatformElement {
    * 
    * @param platformElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromPlatformElement(AbstractPlatformElement platformElementValue) {
+  public boolean removeFromPlatformElement(AbstractPlatformElement platformElementValue) {
     if (platformElement.contains(platformElementValue)) {
       platformElement.remove(platformElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

@@ -216,15 +216,14 @@ public class DurationModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case DurationModelPackage.DURATIONTEST_DURATIONS_FEATURE_ID:
-        getTarget().getDurations().add((Duration) value);
-        return;
+        return getTarget().getDurations().add((Duration) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -232,15 +231,14 @@ public class DurationModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case DurationModelPackage.DURATIONTEST_DURATIONS_FEATURE_ID:
-        getTarget().getDurations().remove(value);
-        return;
+        return getTarget().getDurations().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

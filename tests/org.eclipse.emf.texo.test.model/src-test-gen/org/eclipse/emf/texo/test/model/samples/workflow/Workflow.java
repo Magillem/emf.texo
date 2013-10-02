@@ -70,13 +70,15 @@ public class Workflow extends WorkflowElement {
    * 
    * @param nodesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToNodes(WorkflowNode nodesValue) {
+  public boolean addToNodes(WorkflowNode nodesValue) {
     if (!nodes.contains(nodesValue)) {
       nodes.add(nodesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -84,13 +86,17 @@ public class Workflow extends WorkflowElement {
    * 
    * @param nodesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromNodes(WorkflowNode nodesValue) {
+  public boolean removeFromNodes(WorkflowNode nodesValue) {
     if (nodes.contains(nodesValue)) {
       nodes.remove(nodesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -134,13 +140,15 @@ public class Workflow extends WorkflowElement {
    * 
    * @param edgesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToEdges(Edge edgesValue) {
+  public boolean addToEdges(Edge edgesValue) {
     if (!edges.contains(edgesValue)) {
       edges.add(edgesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -148,13 +156,17 @@ public class Workflow extends WorkflowElement {
    * 
    * @param edgesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromEdges(Edge edgesValue) {
+  public boolean removeFromEdges(Edge edgesValue) {
     if (edges.contains(edgesValue)) {
       edges.remove(edgesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -198,13 +210,15 @@ public class Workflow extends WorkflowElement {
    * 
    * @param commentsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToComments(Comment commentsValue) {
+  public boolean addToComments(Comment commentsValue) {
     if (!comments.contains(commentsValue)) {
       comments.add(commentsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -212,13 +226,17 @@ public class Workflow extends WorkflowElement {
    * 
    * @param commentsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromComments(Comment commentsValue) {
+  public boolean removeFromComments(Comment commentsValue) {
     if (comments.contains(commentsValue)) {
       comments.remove(commentsValue);
+      return true;
     }
+    return false;
   }
 
   /**

@@ -180,11 +180,12 @@ public class PType extends Identifiable {
    * 
    * @param subTypesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSubTypes(PType subTypesValue) {
+  public boolean addToSubTypes(PType subTypesValue) {
     subTypes.add(subTypesValue);
+    return true;
   }
 
   /**
@@ -192,13 +193,17 @@ public class PType extends Identifiable {
    * 
    * @param subTypesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSubTypes(PType subTypesValue) {
+  public boolean removeFromSubTypes(PType subTypesValue) {
     if (subTypes.contains(subTypesValue)) {
       subTypes.remove(subTypesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -242,11 +247,12 @@ public class PType extends Identifiable {
    * 
    * @param subNOTypesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSubNOTypes(PType subNOTypesValue) {
+  public boolean addToSubNOTypes(PType subNOTypesValue) {
     subNOTypes.add(subNOTypesValue);
+    return true;
   }
 
   /**
@@ -254,13 +260,17 @@ public class PType extends Identifiable {
    * 
    * @param subNOTypesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSubNOTypes(PType subNOTypesValue) {
+  public boolean removeFromSubNOTypes(PType subNOTypesValue) {
     if (subNOTypes.contains(subNOTypesValue)) {
       subNOTypes.remove(subNOTypesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -304,11 +314,12 @@ public class PType extends Identifiable {
    * 
    * @param infoReferencesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToInfoReferences(PDeclaration infoReferencesValue) {
+  public boolean addToInfoReferences(PDeclaration infoReferencesValue) {
     infoReferences.add(infoReferencesValue);
+    return true;
   }
 
   /**
@@ -316,13 +327,17 @@ public class PType extends Identifiable {
    * 
    * @param infoReferencesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromInfoReferences(PDeclaration infoReferencesValue) {
+  public boolean removeFromInfoReferences(PDeclaration infoReferencesValue) {
     if (infoReferences.contains(infoReferencesValue)) {
       infoReferences.remove(infoReferencesValue);
+      return true;
     }
+    return false;
   }
 
   /**

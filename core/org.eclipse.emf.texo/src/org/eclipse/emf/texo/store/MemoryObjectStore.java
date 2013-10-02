@@ -190,7 +190,6 @@ public class MemoryObjectStore extends ObjectStore {
    */
   @Override
   public List<Object> getReferingObjects(Object target, int maxResult, boolean includeContainmentReferences) {
-    // TODO Auto-generated method stub
     return null;
   }
 

@@ -79,13 +79,15 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param sourceValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSource(SourceRef sourceValue) {
+  public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
       source.add(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -93,13 +95,17 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param sourceValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSource(SourceRef sourceValue) {
+  public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
       source.remove(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -143,13 +149,15 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param uIRelationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToUIRelation(AbstractUIRelationship uIRelationValue) {
+  public boolean addToUIRelation(AbstractUIRelationship uIRelationValue) {
     if (!uIRelation.contains(uIRelationValue)) {
       uIRelation.add(uIRelationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -157,13 +165,17 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param uIRelationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromUIRelation(AbstractUIRelationship uIRelationValue) {
+  public boolean removeFromUIRelation(AbstractUIRelationship uIRelationValue) {
     if (uIRelation.contains(uIRelationValue)) {
       uIRelation.remove(uIRelationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -207,13 +219,15 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param implementationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToImplementation(AbstractCodeElement implementationValue) {
+  public boolean addToImplementation(AbstractCodeElement implementationValue) {
     if (!implementation.contains(implementationValue)) {
       implementation.add(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -221,13 +235,17 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param implementationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromImplementation(AbstractCodeElement implementationValue) {
+  public boolean removeFromImplementation(AbstractCodeElement implementationValue) {
     if (implementation.contains(implementationValue)) {
       implementation.remove(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -271,13 +289,15 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param abstractionValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAbstraction(ActionElement abstractionValue) {
+  public boolean addToAbstraction(ActionElement abstractionValue) {
     if (!abstraction.contains(abstractionValue)) {
       abstraction.add(abstractionValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -285,13 +305,17 @@ public abstract class AbstractUIElement extends KDMEntity {
    * 
    * @param abstractionValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAbstraction(ActionElement abstractionValue) {
+  public boolean removeFromAbstraction(ActionElement abstractionValue) {
     if (abstraction.contains(abstractionValue)) {
       abstraction.remove(abstractionValue);
+      return true;
     }
+    return false;
   }
 
   /**

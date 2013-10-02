@@ -111,10 +111,11 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 			 * Adds to the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
 			 *
 			 * @param «featureAnnotation.validJavaMemberName»Value value to add
+			 * @return true if added, false otherwise
 			 *
 			 * @generated
 			 */
-			public void addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
+			public boolean addTo«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
 				«IF !featureAnnotation.EStructuralFeature.volatile-»
 				«IF featureAnnotation.EStructuralFeature.unique-»
 				if (!«featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
@@ -134,7 +135,9 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 					«ENDLET-»
 					«ENDIF-»
 				«IF featureAnnotation.EStructuralFeature.unique-»
+					return true;
 				}
+				return false;
 				«ENDIF-»
 				«ELSE-»
 		    	// Volatile feature
@@ -147,10 +150,10 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 			 * Removes from the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
 			 *
 			 * @param «featureAnnotation.validJavaMemberName»Value value to remove
-			 *
+			 * @return true if removed, false otherwise
 			 * @generated
 			 */
-			public void removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
+			public boolean removeFrom«toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
 				«IF !featureAnnotation.EStructuralFeature.volatile-»
 				if («featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
 					«featureAnnotation.validJavaMemberName».remove(«featureAnnotation.validJavaMemberName»Value);
@@ -167,7 +170,9 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 					«ENDIF-»
 					«ENDLET-»
 					«ENDIF-»
+					return true;
 				}
+				return false;
 				«ELSE-»
 		    	// Volatile feature
 				// Ensure that you remove @generated or mark it @generated NOT

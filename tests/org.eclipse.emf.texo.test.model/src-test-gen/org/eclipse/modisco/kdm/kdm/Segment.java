@@ -53,13 +53,15 @@ public class Segment extends KDMFramework {
    * 
    * @param segmentValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSegment(Segment segmentValue) {
+  public boolean addToSegment(Segment segmentValue) {
     if (!segment.contains(segmentValue)) {
       segment.add(segmentValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -67,13 +69,17 @@ public class Segment extends KDMFramework {
    * 
    * @param segmentValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSegment(Segment segmentValue) {
+  public boolean removeFromSegment(Segment segmentValue) {
     if (segment.contains(segmentValue)) {
       segment.remove(segmentValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -117,13 +123,15 @@ public class Segment extends KDMFramework {
    * 
    * @param modelValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToModel(KDMModel modelValue) {
+  public boolean addToModel(KDMModel modelValue) {
     if (!model.contains(modelValue)) {
       model.add(modelValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -131,13 +139,17 @@ public class Segment extends KDMFramework {
    * 
    * @param modelValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromModel(KDMModel modelValue) {
+  public boolean removeFromModel(KDMModel modelValue) {
     if (model.contains(modelValue)) {
       model.remove(modelValue);
+      return true;
     }
+    return false;
   }
 
   /**

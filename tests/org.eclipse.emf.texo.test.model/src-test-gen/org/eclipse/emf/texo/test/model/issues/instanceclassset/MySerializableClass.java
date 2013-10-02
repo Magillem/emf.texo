@@ -125,13 +125,15 @@ public class MySerializableClass extends Identifiable implements Serializable {
    * 
    * @param nonEMFsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToNonEMFs(NonEMF nonEMFsValue) {
+  public boolean addToNonEMFs(NonEMF nonEMFsValue) {
     if (!nonEMFs.contains(nonEMFsValue)) {
       nonEMFs.add(nonEMFsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -139,13 +141,17 @@ public class MySerializableClass extends Identifiable implements Serializable {
    * 
    * @param nonEMFsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromNonEMFs(NonEMF nonEMFsValue) {
+  public boolean removeFromNonEMFs(NonEMF nonEMFsValue) {
     if (nonEMFs.contains(nonEMFsValue)) {
       nonEMFs.remove(nonEMFsValue);
+      return true;
     }
+    return false;
   }
 
   /**

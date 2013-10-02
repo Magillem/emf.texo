@@ -56,13 +56,15 @@ public class BuildDescription extends BuildResource {
    * 
    * @param sourceValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSource(SourceRef sourceValue) {
+  public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
       source.add(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -70,13 +72,17 @@ public class BuildDescription extends BuildResource {
    * 
    * @param sourceValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSource(SourceRef sourceValue) {
+  public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
       source.remove(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**

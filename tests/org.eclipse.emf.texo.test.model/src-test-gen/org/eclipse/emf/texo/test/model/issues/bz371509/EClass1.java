@@ -66,14 +66,16 @@ public class EClass1 extends Identifiable {
    * 
    * @param toClass0Value
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToToClass0(EClass0 toClass0Value) {
+  public boolean addToToClass0(EClass0 toClass0Value) {
     if (!toClass0.contains(toClass0Value)) {
       toClass0.add(toClass0Value);
       toClass0Value.setToClass1(this);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -81,14 +83,18 @@ public class EClass1 extends Identifiable {
    * 
    * @param toClass0Value
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromToClass0(EClass0 toClass0Value) {
+  public boolean removeFromToClass0(EClass0 toClass0Value) {
     if (toClass0.contains(toClass0Value)) {
       toClass0.remove(toClass0Value);
       toClass0Value.setToClass1(null);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -137,14 +143,16 @@ public class EClass1 extends Identifiable {
    * 
    * @param manyValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToMany(EClass0 manyValue) {
+  public boolean addToMany(EClass0 manyValue) {
     if (!many.contains(manyValue)) {
       many.add(manyValue);
       manyValue.addToMany(this);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -152,14 +160,18 @@ public class EClass1 extends Identifiable {
    * 
    * @param manyValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromMany(EClass0 manyValue) {
+  public boolean removeFromMany(EClass0 manyValue) {
     if (many.contains(manyValue)) {
       many.remove(manyValue);
       manyValue.removeFromMany(this);
+      return true;
     }
+    return false;
   }
 
   /**

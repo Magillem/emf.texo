@@ -49,13 +49,15 @@ public class FreeFormConnection extends Connection {
    * 
    * @param bendpointsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBendpoints(Point bendpointsValue) {
+  public boolean addToBendpoints(Point bendpointsValue) {
     if (!bendpoints.contains(bendpointsValue)) {
       bendpoints.add(bendpointsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -63,13 +65,17 @@ public class FreeFormConnection extends Connection {
    * 
    * @param bendpointsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBendpoints(Point bendpointsValue) {
+  public boolean removeFromBendpoints(Point bendpointsValue) {
     if (bendpoints.contains(bendpointsValue)) {
       bendpoints.remove(bendpointsValue);
+      return true;
     }
+    return false;
   }
 
   /**

@@ -205,8 +205,15 @@ public class InterfaceTemplate extends BaseTemplate {
                   if (!_and_2) {
                     _and_1 = false;
                   } else {
-                    boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation).isGenerateSafeManyAccess();
-                    _and_1 = (_and_2 && _isGenerateSafeManyAccess);
+                    boolean _or_1 = false;
+                    boolean _isGenerateBidirectionalAssociationSupport = ((EReferenceModelGenAnnotation) featureAnnotation).isGenerateBidirectionalAssociationSupport();
+                    if (_isGenerateBidirectionalAssociationSupport) {
+                      _or_1 = true;
+                    } else {
+                      boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation).isGenerateSafeManyAccess();
+                      _or_1 = (_isGenerateBidirectionalAssociationSupport || _isGenerateSafeManyAccess);
+                    }
+                    _and_1 = (_and_2 && _or_1);
                   }
                   if (_and_1) {
                     _builder.append("/**");
@@ -225,6 +232,9 @@ public class InterfaceTemplate extends BaseTemplate {
                     _builder.append("* @param value the value to add");
                     _builder.newLine();
                     _builder.append(" ");
+                    _builder.append("* @return true if the value is added to the collection (it was not yet present in the collection), false otherwise");
+                    _builder.newLine();
+                    _builder.append(" ");
                     _builder.append("*");
                     _builder.newLine();
                     _builder.append(" ");
@@ -233,7 +243,7 @@ public class InterfaceTemplate extends BaseTemplate {
                     _builder.append(" ");
                     _builder.append("*/");
                     _builder.newLine();
-                    _builder.append("public void addTo");
+                    _builder.append("public boolean addTo");
                     String _validJavaMemberName = featureAnnotation.getValidJavaMemberName();
                     String _firstUpper = TemplateUtil.toFirstUpper(_validJavaMemberName);
                     _builder.append(_firstUpper, "");
@@ -259,6 +269,9 @@ public class InterfaceTemplate extends BaseTemplate {
                     _builder.append("* @param value the value to remove");
                     _builder.newLine();
                     _builder.append(" ");
+                    _builder.append("* @return true if the value is removed from the collection (it was present in the collection), false otherwise");
+                    _builder.newLine();
+                    _builder.append(" ");
                     _builder.append("*");
                     _builder.newLine();
                     _builder.append(" ");
@@ -267,7 +280,7 @@ public class InterfaceTemplate extends BaseTemplate {
                     _builder.append(" ");
                     _builder.append("*/");
                     _builder.newLine();
-                    _builder.append("public void removeFrom");
+                    _builder.append("public boolean removeFrom");
                     String _validJavaMemberName_1 = featureAnnotation.getValidJavaMemberName();
                     String _firstUpper_1 = TemplateUtil.toFirstUpper(_validJavaMemberName_1);
                     _builder.append(_firstUpper_1, "");

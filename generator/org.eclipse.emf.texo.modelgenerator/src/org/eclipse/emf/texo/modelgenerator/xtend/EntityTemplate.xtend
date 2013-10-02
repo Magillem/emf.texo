@@ -150,10 +150,10 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
              * Adds to the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
              *
              * @param «featureAnnotation.validJavaMemberName»Value the value to add
-             *
+             * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
              * @generated
              */
-            public void addTo«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
+            public boolean addTo«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
                 «IF !featureAnnotation.EStructuralFeature.volatile»
                 «IF featureAnnotation.EStructuralFeature.unique»
                 if (!«featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
@@ -171,8 +171,10 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                         «featureAnnotation.validJavaMemberName»Value.«oppositeAnnotation.setter»(this);
                     «ENDIF»
                     «ENDIF»
+                    return true;
                 «IF featureAnnotation.EStructuralFeature.unique»
                 }
+                return false;
                 «ENDIF»
                 «ELSE»
                 // Volatile feature
@@ -185,10 +187,11 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
              * Removes from the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
              *
              * @param «featureAnnotation.validJavaMemberName»Value the value to remove
+             * @return true if the value is removed from the collection (it existed in the collection before removing), false otherwise
              *
              * @generated
              */
-            public void removeFrom«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
+            public boolean removeFrom«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
                 «IF !featureAnnotation.EStructuralFeature.volatile»
                 if («featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
                     «featureAnnotation.validJavaMemberName».remove(«featureAnnotation.validJavaMemberName»Value);
@@ -204,7 +207,9 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                         «featureAnnotation.validJavaMemberName»Value.«oppositeAnnotation.setter»(null);
                     «ENDIF»
                     «ENDIF»
+                    return true;
                 }
+               	return false;
                 «ELSE»
                 // Volatile feature
                 // Ensure that you remove @generated or mark it @generated NOT

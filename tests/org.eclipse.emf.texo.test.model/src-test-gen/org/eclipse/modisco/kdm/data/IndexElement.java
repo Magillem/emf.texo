@@ -46,13 +46,15 @@ public class IndexElement extends DataResource {
    * 
    * @param implementationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToImplementation(ItemUnit implementationValue) {
+  public boolean addToImplementation(ItemUnit implementationValue) {
     if (!implementation.contains(implementationValue)) {
       implementation.add(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -60,13 +62,17 @@ public class IndexElement extends DataResource {
    * 
    * @param implementationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromImplementation(ItemUnit implementationValue) {
+  public boolean removeFromImplementation(ItemUnit implementationValue) {
     if (implementation.contains(implementationValue)) {
       implementation.remove(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**

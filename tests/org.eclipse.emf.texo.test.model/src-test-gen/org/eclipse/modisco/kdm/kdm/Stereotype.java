@@ -63,13 +63,15 @@ public class Stereotype extends Element {
    * 
    * @param tagValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToTag(TagDefinition tagValue) {
+  public boolean addToTag(TagDefinition tagValue) {
     if (!tag.contains(tagValue)) {
       tag.add(tagValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -77,13 +79,17 @@ public class Stereotype extends Element {
    * 
    * @param tagValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromTag(TagDefinition tagValue) {
+  public boolean removeFromTag(TagDefinition tagValue) {
     if (tag.contains(tagValue)) {
       tag.remove(tagValue);
+      return true;
     }
+    return false;
   }
 
   /**

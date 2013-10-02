@@ -73,13 +73,15 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param aggregatedValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAggregated(AggregatedRelationship aggregatedValue) {
+  public boolean addToAggregated(AggregatedRelationship aggregatedValue) {
     if (!aggregated.contains(aggregatedValue)) {
       aggregated.add(aggregatedValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -87,13 +89,17 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param aggregatedValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAggregated(AggregatedRelationship aggregatedValue) {
+  public boolean removeFromAggregated(AggregatedRelationship aggregatedValue) {
     if (aggregated.contains(aggregatedValue)) {
       aggregated.remove(aggregatedValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -137,13 +143,15 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param implementationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToImplementation(KDMEntity implementationValue) {
+  public boolean addToImplementation(KDMEntity implementationValue) {
     if (!implementation.contains(implementationValue)) {
       implementation.add(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -151,13 +159,17 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param implementationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromImplementation(KDMEntity implementationValue) {
+  public boolean removeFromImplementation(KDMEntity implementationValue) {
     if (implementation.contains(implementationValue)) {
       implementation.remove(implementationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -201,13 +213,15 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param structureElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToStructureElement(AbstractStructureElement structureElementValue) {
+  public boolean addToStructureElement(AbstractStructureElement structureElementValue) {
     if (!structureElement.contains(structureElementValue)) {
       structureElement.add(structureElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -215,13 +229,17 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param structureElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromStructureElement(AbstractStructureElement structureElementValue) {
+  public boolean removeFromStructureElement(AbstractStructureElement structureElementValue) {
     if (structureElement.contains(structureElementValue)) {
       structureElement.remove(structureElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -265,13 +283,15 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param structureRelationshipValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
+  public boolean addToStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
     if (!structureRelationship.contains(structureRelationshipValue)) {
       structureRelationship.add(structureRelationshipValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -279,13 +299,17 @@ public abstract class AbstractStructureElement extends KDMEntity {
    * 
    * @param structureRelationshipValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
+  public boolean removeFromStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
     if (structureRelationship.contains(structureRelationshipValue)) {
       structureRelationship.remove(structureRelationshipValue);
+      return true;
     }
+    return false;
   }
 
   /**

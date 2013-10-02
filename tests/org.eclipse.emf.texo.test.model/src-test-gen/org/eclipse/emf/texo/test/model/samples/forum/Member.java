@@ -96,13 +96,15 @@ public class Member extends Identifiable {
    * 
    * @param postsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToPosts(Post postsValue) {
+  public boolean addToPosts(Post postsValue) {
     if (!posts.contains(postsValue)) {
       posts.add(postsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -110,13 +112,17 @@ public class Member extends Identifiable {
    * 
    * @param postsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromPosts(Post postsValue) {
+  public boolean removeFromPosts(Post postsValue) {
     if (posts.contains(postsValue)) {
       posts.remove(postsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -160,13 +166,15 @@ public class Member extends Identifiable {
    * 
    * @param createdValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToCreated(Topic createdValue) {
+  public boolean addToCreated(Topic createdValue) {
     if (!created.contains(createdValue)) {
       created.add(createdValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -174,13 +182,17 @@ public class Member extends Identifiable {
    * 
    * @param createdValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromCreated(Topic createdValue) {
+  public boolean removeFromCreated(Topic createdValue) {
     if (created.contains(createdValue)) {
       created.remove(createdValue);
+      return true;
     }
+    return false;
   }
 
   /**

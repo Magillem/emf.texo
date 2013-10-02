@@ -575,7 +575,6 @@ public class ImportResolver {
   protected class ImportDeclarationComparator implements Comparator<ImportDeclaration> {
 
     public int compare(final ImportDeclaration id0, final ImportDeclaration id1) {
-      // TODO Auto-generated method stub
       return id0.getName().getFullyQualifiedName().compareTo(id1.getName().getFullyQualifiedName());
     }
 

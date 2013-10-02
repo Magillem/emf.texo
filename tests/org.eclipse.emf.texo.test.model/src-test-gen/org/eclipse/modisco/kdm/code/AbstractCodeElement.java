@@ -78,13 +78,15 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param sourceValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToSource(SourceRef sourceValue) {
+  public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
       source.add(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -92,13 +94,17 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param sourceValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromSource(SourceRef sourceValue) {
+  public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
       source.remove(sourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -142,13 +148,15 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param commentValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToComment(CommentUnit commentValue) {
+  public boolean addToComment(CommentUnit commentValue) {
     if (!comment.contains(commentValue)) {
       comment.add(commentValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -156,13 +164,17 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param commentValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromComment(CommentUnit commentValue) {
+  public boolean removeFromComment(CommentUnit commentValue) {
     if (comment.contains(commentValue)) {
       comment.remove(commentValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -206,13 +218,15 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param codeRelationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToCodeRelation(AbstractCodeRelationship codeRelationValue) {
+  public boolean addToCodeRelation(AbstractCodeRelationship codeRelationValue) {
     if (!codeRelation.contains(codeRelationValue)) {
       codeRelation.add(codeRelationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -220,13 +234,17 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param codeRelationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromCodeRelation(AbstractCodeRelationship codeRelationValue) {
+  public boolean removeFromCodeRelation(AbstractCodeRelationship codeRelationValue) {
     if (codeRelation.contains(codeRelationValue)) {
       codeRelation.remove(codeRelationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -270,13 +288,15 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param entryFlowValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToEntryFlow(EntryFlow entryFlowValue) {
+  public boolean addToEntryFlow(EntryFlow entryFlowValue) {
     if (!entryFlow.contains(entryFlowValue)) {
       entryFlow.add(entryFlowValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -284,13 +304,17 @@ public abstract class AbstractCodeElement extends KDMEntity {
    * 
    * @param entryFlowValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromEntryFlow(EntryFlow entryFlowValue) {
+  public boolean removeFromEntryFlow(EntryFlow entryFlowValue) {
     if (entryFlow.contains(entryFlowValue)) {
       entryFlow.remove(entryFlowValue);
+      return true;
     }
+    return false;
   }
 
   /**

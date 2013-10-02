@@ -434,12 +434,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -447,19 +447,20 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>PictogramElement</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>PictogramElement</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -548,12 +549,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -561,12 +562,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -667,15 +668,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.ANCHORCONTAINER_ANCHORS_FEATURE_ID:
-        getTarget().getAnchors().add((Anchor) value);
-        return;
+        return getTarget().addToAnchors((Anchor) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -683,15 +683,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.ANCHORCONTAINER_ANCHORS_FEATURE_ID:
-        getTarget().getAnchors().remove(value);
-        return;
+        return getTarget().removeFromAnchors((Anchor) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -802,15 +801,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.CONTAINERSHAPE_CHILDREN_FEATURE_ID:
-        getTarget().getChildren().add((Shape) value);
-        return;
+        return getTarget().addToChildren((Shape) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -818,15 +816,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.CONTAINERSHAPE_CHILDREN_FEATURE_ID:
-        getTarget().getChildren().remove(value);
-        return;
+        return getTarget().removeFromChildren((Shape) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -859,13 +856,32 @@ public class PictogramsModelFactory implements ModelFactory {
     }
 
     /**
-     * @generatedNOT
+     * @generated
      */
-    @SuppressWarnings("deprecation")
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PictogramsModelPackage.DIAGRAM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PictogramsModelPackage.DIAGRAM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PictogramsModelPackage.DIAGRAM_PROPERTIES_FEATURE_ID:
+        return getTarget().getProperties();
+      case PictogramsModelPackage.DIAGRAM_VISIBLE_FEATURE_ID:
+        return getTarget().isVisible();
+      case PictogramsModelPackage.DIAGRAM_GRAPHICSALGORITHM_FEATURE_ID:
+        return getTarget().getGraphicsAlgorithm();
+      case PictogramsModelPackage.DIAGRAM_ACTIVE_FEATURE_ID:
+        return getTarget().isActive();
+      case PictogramsModelPackage.DIAGRAM_LINK_FEATURE_ID:
+        return getTarget().getLink();
+      case PictogramsModelPackage.DIAGRAM_ANCHORS_FEATURE_ID:
+        return getTarget().getAnchors();
+      case PictogramsModelPackage.DIAGRAM_CONTAINER_FEATURE_ID:
+        return getTarget().getContainer();
+      case PictogramsModelPackage.DIAGRAM_CHILDREN_FEATURE_ID:
+        return getTarget().getChildren();
       case PictogramsModelPackage.DIAGRAM_GRIDUNIT_FEATURE_ID:
         return getTarget().getGridUnit();
       case PictogramsModelPackage.DIAGRAM_DIAGRAMTYPEID_FEATURE_ID:
@@ -896,13 +912,43 @@ public class PictogramsModelFactory implements ModelFactory {
     }
 
     /**
-     * @generatedNOT
+     * @generated
      */
-    @SuppressWarnings({ "unchecked", "deprecation" })
+    @SuppressWarnings("unchecked")
     @Override
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PictogramsModelPackage.DIAGRAM_DB_ID_FEATURE_ID:
+        getTarget().setDb_Id((Long) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_DB_VERSION_FEATURE_ID:
+        getTarget().setDb_version((Integer) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_PROPERTIES_FEATURE_ID:
+        getTarget().setProperties((Set<Property>) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_VISIBLE_FEATURE_ID:
+        getTarget().setVisible((Boolean) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_GRAPHICSALGORITHM_FEATURE_ID:
+        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_ACTIVE_FEATURE_ID:
+        getTarget().setActive((Boolean) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_LINK_FEATURE_ID:
+        getTarget().setLink((PictogramLink) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_ANCHORS_FEATURE_ID:
+        getTarget().setAnchors((Set<Anchor>) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_CONTAINER_FEATURE_ID:
+        getTarget().setContainer((ContainerShape) value);
+        return;
+      case PictogramsModelPackage.DIAGRAM_CHILDREN_FEATURE_ID:
+        getTarget().setChildren((List<Shape>) value);
+        return;
       case PictogramsModelPackage.DIAGRAM_GRIDUNIT_FEATURE_ID:
         getTarget().setGridUnit((Integer) value);
         return;
@@ -948,31 +994,26 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.DIAGRAM_CONNECTIONS_FEATURE_ID:
-        getTarget().getConnections().add((Connection) value);
-        return;
+        return getTarget().addToConnections((Connection) value);
 
       case PictogramsModelPackage.DIAGRAM_COLORS_FEATURE_ID:
-        getTarget().getColors().add((Color) value);
-        return;
+        return getTarget().addToColors((Color) value);
 
       case PictogramsModelPackage.DIAGRAM_FONTS_FEATURE_ID:
-        getTarget().getFonts().add((Font) value);
-        return;
+        return getTarget().addToFonts((Font) value);
 
       case PictogramsModelPackage.DIAGRAM_PICTOGRAMLINKS_FEATURE_ID:
-        getTarget().getPictogramLinks().add((PictogramLink) value);
-        return;
+        return getTarget().addToPictogramLinks((PictogramLink) value);
 
       case PictogramsModelPackage.DIAGRAM_STYLES_FEATURE_ID:
-        getTarget().getStyles().add((Style) value);
-        return;
+        return getTarget().addToStyles((Style) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -980,31 +1021,26 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.DIAGRAM_CONNECTIONS_FEATURE_ID:
-        getTarget().getConnections().remove(value);
-        return;
+        return getTarget().removeFromConnections((Connection) value);
 
       case PictogramsModelPackage.DIAGRAM_COLORS_FEATURE_ID:
-        getTarget().getColors().remove(value);
-        return;
+        return getTarget().removeFromColors((Color) value);
 
       case PictogramsModelPackage.DIAGRAM_FONTS_FEATURE_ID:
-        getTarget().getFonts().remove(value);
-        return;
+        return getTarget().removeFromFonts((Font) value);
 
       case PictogramsModelPackage.DIAGRAM_PICTOGRAMLINKS_FEATURE_ID:
-        getTarget().getPictogramLinks().remove(value);
-        return;
+        return getTarget().removeFromPictogramLinks((PictogramLink) value);
 
       case PictogramsModelPackage.DIAGRAM_STYLES_FEATURE_ID:
-        getTarget().getStyles().remove(value);
-        return;
+        return getTarget().removeFromStyles((Style) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1125,15 +1161,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.CONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        getTarget().getConnectionDecorators().add((ConnectionDecorator) value);
-        return;
+        return getTarget().addToConnectionDecorators((ConnectionDecorator) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1141,15 +1176,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.CONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        getTarget().getConnectionDecorators().remove(value);
-        return;
+        return getTarget().removeFromConnectionDecorators((ConnectionDecorator) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1236,15 +1270,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.PICTOGRAMLINK_BUSINESSOBJECTS_FEATURE_ID:
-        getTarget().getBusinessObjects().add(value);
-        return;
+        return getTarget().addToBusinessObjects(value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1252,15 +1285,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.PICTOGRAMLINK_BUSINESSOBJECTS_FEATURE_ID:
-        getTarget().getBusinessObjects().remove(value);
-        return;
+        return getTarget().removeFromBusinessObjects((Object) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1376,20 +1408,18 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.ANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        getTarget().getOutgoingConnections().add((Connection) value);
-        return;
+        return getTarget().addToOutgoingConnections((Connection) value);
 
       case PictogramsModelPackage.ANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        getTarget().getIncomingConnections().add((Connection) value);
-        return;
+        return getTarget().addToIncomingConnections((Connection) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1397,27 +1427,26 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.ANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        getTarget().getOutgoingConnections().remove(value);
-        return;
+        return getTarget().removeFromOutgoingConnections((Connection) value);
 
       case PictogramsModelPackage.ANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        getTarget().getIncomingConnections().remove(value);
-        return;
+        return getTarget().removeFromIncomingConnections((Connection) value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>ConnectionDecorator</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>ConnectionDecorator</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -1530,12 +1559,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1543,12 +1572,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1674,12 +1703,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1687,12 +1716,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1813,12 +1842,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1826,19 +1855,20 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>BoxRelativeAnchor</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>BoxRelativeAnchor</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -1961,12 +1991,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1974,12 +2004,12 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -2095,11 +2125,11 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2107,18 +2137,19 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>FreeFormConnection</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>FreeFormConnection</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -2236,15 +2267,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.FREEFORMCONNECTION_BENDPOINTS_FEATURE_ID:
-        getTarget().getBendpoints().add((Point) value);
-        return;
+        return getTarget().addToBendpoints((Point) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2252,22 +2282,22 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.FREEFORMCONNECTION_BENDPOINTS_FEATURE_ID:
-        getTarget().getBendpoints().remove(value);
-        return;
+        return getTarget().removeFromBendpoints((Point) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>ManhattanConnection</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>ManhattanConnection</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -2380,11 +2410,11 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2392,18 +2422,19 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>CurvedConnection</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>CurvedConnection</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -2521,15 +2552,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.CURVEDCONNECTION_CONTROLPOINTS_FEATURE_ID:
-        getTarget().getControlPoints().add((PrecisionPoint) value);
-        return;
+        return getTarget().addToControlPoints((PrecisionPoint) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2537,22 +2567,22 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.CURVEDCONNECTION_CONTROLPOINTS_FEATURE_ID:
-        getTarget().getControlPoints().remove(value);
-        return;
+        return getTarget().removeFromControlPoints((PrecisionPoint) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
 
   /**
-   * The adapter/wrapper for the EClass '<em><b>CompositeConnection</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
-   * -->
+   * The adapter/wrapper for the EClass '<em><b>CompositeConnection</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param <E>
    *          the domain model java class
@@ -2670,15 +2700,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.COMPOSITECONNECTION_CHILDREN_FEATURE_ID:
-        getTarget().getChildren().add((CurvedConnection) value);
-        return;
+        return getTarget().addToChildren((CurvedConnection) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -2686,15 +2715,14 @@ public class PictogramsModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PictogramsModelPackage.COMPOSITECONNECTION_CHILDREN_FEATURE_ID:
-        getTarget().getChildren().remove(value);
-        return;
+        return getTarget().removeFromChildren((CurvedConnection) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

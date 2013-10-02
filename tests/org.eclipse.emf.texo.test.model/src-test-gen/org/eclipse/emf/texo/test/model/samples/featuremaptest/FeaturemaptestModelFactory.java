@@ -227,12 +227,12 @@ public class FeaturemaptestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -240,12 +240,12 @@ public class FeaturemaptestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -347,31 +347,26 @@ public class FeaturemaptestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case FeaturemaptestModelPackage.SUPPLIER_ORDERS_FEATURE_ID:
-        getTarget().getOrders().add((SupplierOrdersFeatureGroup) value);
-        return;
+        return getTarget().getOrders().add((SupplierOrdersFeatureGroup) value);
 
       case FeaturemaptestModelPackage.SUPPLIER_HARDCOPYORDERREFERENCE_FEATURE_ID:
-        getTarget().getHardCopyOrderReference().add((String) value);
-        return;
+        return getTarget().getHardCopyOrderReference().add((String) value);
 
       case FeaturemaptestModelPackage.SUPPLIER_HARDCOPYORDERNUMBER_FEATURE_ID:
-        getTarget().getHardCopyOrderNumber().add((Long) value);
-        return;
+        return getTarget().getHardCopyOrderNumber().add((Long) value);
 
       case FeaturemaptestModelPackage.SUPPLIER_PREFERREDORDERS_FEATURE_ID:
-        getTarget().getPreferredOrders().add((PurchaseOrder) value);
-        return;
+        return getTarget().getPreferredOrders().add((PurchaseOrder) value);
 
       case FeaturemaptestModelPackage.SUPPLIER_STANDARDORDERS_FEATURE_ID:
-        getTarget().getStandardOrders().add((PurchaseOrder) value);
-        return;
+        return getTarget().getStandardOrders().add((PurchaseOrder) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -379,31 +374,26 @@ public class FeaturemaptestModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case FeaturemaptestModelPackage.SUPPLIER_ORDERS_FEATURE_ID:
-        getTarget().getOrders().remove(value);
-        return;
+        return getTarget().getOrders().remove(value);
 
       case FeaturemaptestModelPackage.SUPPLIER_HARDCOPYORDERREFERENCE_FEATURE_ID:
-        getTarget().getHardCopyOrderReference().remove(value);
-        return;
+        return getTarget().getHardCopyOrderReference().remove(value);
 
       case FeaturemaptestModelPackage.SUPPLIER_HARDCOPYORDERNUMBER_FEATURE_ID:
-        getTarget().getHardCopyOrderNumber().remove(value);
-        return;
+        return getTarget().getHardCopyOrderNumber().remove(value);
 
       case FeaturemaptestModelPackage.SUPPLIER_PREFERREDORDERS_FEATURE_ID:
-        getTarget().getPreferredOrders().remove(value);
-        return;
+        return getTarget().getPreferredOrders().remove(value);
 
       case FeaturemaptestModelPackage.SUPPLIER_STANDARDORDERS_FEATURE_ID:
-        getTarget().getStandardOrders().remove(value);
-        return;
+        return getTarget().getStandardOrders().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

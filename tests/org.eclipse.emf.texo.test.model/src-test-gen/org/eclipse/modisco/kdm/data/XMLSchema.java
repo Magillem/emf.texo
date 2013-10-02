@@ -45,13 +45,15 @@ public class XMLSchema extends AbstractDataElement {
    * 
    * @param contentElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToContentElement(AbstractContentElement contentElementValue) {
+  public boolean addToContentElement(AbstractContentElement contentElementValue) {
     if (!contentElement.contains(contentElementValue)) {
       contentElement.add(contentElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -59,13 +61,17 @@ public class XMLSchema extends AbstractDataElement {
    * 
    * @param contentElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromContentElement(AbstractContentElement contentElementValue) {
+  public boolean removeFromContentElement(AbstractContentElement contentElementValue) {
     if (contentElement.contains(contentElementValue)) {
       contentElement.remove(contentElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

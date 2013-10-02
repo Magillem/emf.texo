@@ -213,13 +213,15 @@ public class Library extends Identifiable implements Addressable {
    * 
    * @param stockValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToStock(Item stockValue) {
+  public boolean addToStock(Item stockValue) {
     if (!stock.contains(stockValue)) {
       stock.add(stockValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -227,13 +229,17 @@ public class Library extends Identifiable implements Addressable {
    * 
    * @param stockValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromStock(Item stockValue) {
+  public boolean removeFromStock(Item stockValue) {
     if (stock.contains(stockValue)) {
       stock.remove(stockValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -277,13 +283,15 @@ public class Library extends Identifiable implements Addressable {
    * 
    * @param booksValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBooks(Book booksValue) {
+  public boolean addToBooks(Book booksValue) {
     if (!books.contains(booksValue)) {
       books.add(booksValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -291,13 +299,17 @@ public class Library extends Identifiable implements Addressable {
    * 
    * @param booksValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBooks(Book booksValue) {
+  public boolean removeFromBooks(Book booksValue) {
     if (books.contains(booksValue)) {
       books.remove(booksValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -341,13 +353,15 @@ public class Library extends Identifiable implements Addressable {
    * 
    * @param branchesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBranches(Library branchesValue) {
+  public boolean addToBranches(Library branchesValue) {
     if (!branches.contains(branchesValue)) {
       branches.add(branchesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -355,13 +369,17 @@ public class Library extends Identifiable implements Addressable {
    * 
    * @param branchesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBranches(Library branchesValue) {
+  public boolean removeFromBranches(Library branchesValue) {
     if (branches.contains(branchesValue)) {
       branches.remove(branchesValue);
+      return true;
     }
+    return false;
   }
 
   /**

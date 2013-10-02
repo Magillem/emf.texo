@@ -50,13 +50,15 @@ public class BooksType extends Identifiable {
    * 
    * @param bookValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBook(BookType bookValue) {
+  public boolean addToBook(BookType bookValue) {
     if (!book.contains(bookValue)) {
       book.add(bookValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -64,13 +66,17 @@ public class BooksType extends Identifiable {
    * 
    * @param bookValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBook(BookType bookValue) {
+  public boolean removeFromBook(BookType bookValue) {
     if (book.contains(bookValue)) {
       book.remove(bookValue);
+      return true;
     }
+    return false;
   }
 
   /**

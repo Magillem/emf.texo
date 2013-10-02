@@ -387,7 +387,7 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("@Override");
     _builder.newLine();
     _builder.append("    ");
-    _builder.append("public void eAddTo(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {");
+    _builder.append("public boolean eAddTo(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {");
     _builder.newLine();
     _builder.append("        ");
     _builder.append("final int featureID = eClass().getFeatureID(eStructuralFeature);");
@@ -434,8 +434,15 @@ public class ModelObjectTemplate extends BaseTemplate {
               if (!_and_4) {
                 _and_3 = false;
               } else {
-                boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation_2).isGenerateSafeManyAccess();
-                _and_3 = (_and_4 && _isGenerateSafeManyAccess);
+                boolean _or_1 = false;
+                boolean _isGenerateBidirectionalAssociationSupport = ((EReferenceModelGenAnnotation) featureAnnotation_2).isGenerateBidirectionalAssociationSupport();
+                if (_isGenerateBidirectionalAssociationSupport) {
+                  _or_1 = true;
+                } else {
+                  boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation_2).isGenerateSafeManyAccess();
+                  _or_1 = (_isGenerateBidirectionalAssociationSupport || _isGenerateSafeManyAccess);
+                }
+                _and_3 = (_and_4 && _or_1);
               }
               if (_and_3) {
                 _builder.append("        ");
@@ -454,7 +461,7 @@ public class ModelObjectTemplate extends BaseTemplate {
                 _builder.newLineIfNotEmpty();
                 _builder.append("        ");
                 _builder.append("    ");
-                _builder.append("getTarget().addTo");
+                _builder.append("return getTarget().addTo");
                 String _validJavaMemberName = featureAnnotation_2.getValidJavaMemberName();
                 String _firstUpper_1 = TemplateUtil.toFirstUpper(_validJavaMemberName);
                 _builder.append(_firstUpper_1, "            ");
@@ -464,10 +471,6 @@ public class ModelObjectTemplate extends BaseTemplate {
                 _builder.append(_cast_1, "            ");
                 _builder.append("value);");
                 _builder.newLineIfNotEmpty();
-                _builder.append("        ");
-                _builder.append("    ");
-                _builder.append("return;");
-                _builder.newLine();
               } else {
                 _builder.append("        ");
                 _builder.append("case ");
@@ -485,7 +488,7 @@ public class ModelObjectTemplate extends BaseTemplate {
                 _builder.newLineIfNotEmpty();
                 _builder.append("        ");
                 _builder.append("    ");
-                _builder.append("getTarget().");
+                _builder.append("return getTarget().");
                 String _getter_1 = featureAnnotation_2.getGetter();
                 _builder.append(_getter_1, "            ");
                 _builder.append("().add(");
@@ -494,10 +497,6 @@ public class ModelObjectTemplate extends BaseTemplate {
                 _builder.append(_cast_2, "            ");
                 _builder.append("value);");
                 _builder.newLineIfNotEmpty();
-                _builder.append("        ");
-                _builder.append("    ");
-                _builder.append("return;");
-                _builder.newLine();
               }
             }
           }
@@ -508,7 +507,7 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("default:");
     _builder.newLine();
     _builder.append("                ");
-    _builder.append("super.eAddTo(eStructuralFeature, value);");
+    _builder.append("return super.eAddTo(eStructuralFeature, value);");
     _builder.newLine();
     _builder.append("        ");
     _builder.append("}");
@@ -530,7 +529,7 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("@Override");
     _builder.newLine();
     _builder.append("    ");
-    _builder.append("public void eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {");
+    _builder.append("public boolean eRemoveFrom(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {");
     _builder.newLine();
     _builder.append("        ");
     _builder.append("final int featureID = eClass().getFeatureID(eStructuralFeature);");
@@ -577,8 +576,15 @@ public class ModelObjectTemplate extends BaseTemplate {
               if (!_and_8) {
                 _and_7 = false;
               } else {
-                boolean _isGenerateSafeManyAccess_1 = ((EReferenceModelGenAnnotation) featureAnnotation_3).isGenerateSafeManyAccess();
-                _and_7 = (_and_8 && _isGenerateSafeManyAccess_1);
+                boolean _or_2 = false;
+                boolean _isGenerateBidirectionalAssociationSupport_1 = ((EReferenceModelGenAnnotation) featureAnnotation_3).isGenerateBidirectionalAssociationSupport();
+                if (_isGenerateBidirectionalAssociationSupport_1) {
+                  _or_2 = true;
+                } else {
+                  boolean _isGenerateSafeManyAccess_1 = ((EReferenceModelGenAnnotation) featureAnnotation_3).isGenerateSafeManyAccess();
+                  _or_2 = (_isGenerateBidirectionalAssociationSupport_1 || _isGenerateSafeManyAccess_1);
+                }
+                _and_7 = (_and_8 && _or_2);
               }
               if (_and_7) {
                 _builder.append("        ");
@@ -597,7 +603,7 @@ public class ModelObjectTemplate extends BaseTemplate {
                 _builder.newLineIfNotEmpty();
                 _builder.append("        ");
                 _builder.append("    ");
-                _builder.append("getTarget().removeFrom");
+                _builder.append("return getTarget().removeFrom");
                 String _validJavaMemberName_1 = featureAnnotation_3.getValidJavaMemberName();
                 String _firstUpper_2 = TemplateUtil.toFirstUpper(_validJavaMemberName_1);
                 _builder.append(_firstUpper_2, "            ");
@@ -606,10 +612,6 @@ public class ModelObjectTemplate extends BaseTemplate {
                 _builder.append(_itemType_4, "            ");
                 _builder.append(")value);");
                 _builder.newLineIfNotEmpty();
-                _builder.append("        ");
-                _builder.append("    ");
-                _builder.append("return;");
-                _builder.newLine();
               } else {
                 _builder.append("        ");
                 _builder.append("case ");
@@ -627,15 +629,11 @@ public class ModelObjectTemplate extends BaseTemplate {
                 _builder.newLineIfNotEmpty();
                 _builder.append("        ");
                 _builder.append("    ");
-                _builder.append("getTarget().");
+                _builder.append("return getTarget().");
                 String _getter_2 = featureAnnotation_3.getGetter();
                 _builder.append(_getter_2, "            ");
                 _builder.append("().remove(value);");
                 _builder.newLineIfNotEmpty();
-                _builder.append("        ");
-                _builder.append("    ");
-                _builder.append("return;");
-                _builder.newLine();
               }
             }
           }
@@ -646,7 +644,7 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("default:");
     _builder.newLine();
     _builder.append("                ");
-    _builder.append("super.eRemoveFrom(eStructuralFeature, value);");
+    _builder.append("return super.eRemoveFrom(eStructuralFeature, value);");
     _builder.newLine();
     _builder.append("        ");
     _builder.append("}");

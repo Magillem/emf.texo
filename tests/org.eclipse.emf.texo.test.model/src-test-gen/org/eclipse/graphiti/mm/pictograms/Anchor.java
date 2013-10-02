@@ -96,13 +96,15 @@ public abstract class Anchor extends PictogramElement {
    * 
    * @param outgoingConnectionsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToOutgoingConnections(Connection outgoingConnectionsValue) {
+  public boolean addToOutgoingConnections(Connection outgoingConnectionsValue) {
     if (!outgoingConnections.contains(outgoingConnectionsValue)) {
       outgoingConnections.add(outgoingConnectionsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -110,13 +112,17 @@ public abstract class Anchor extends PictogramElement {
    * 
    * @param outgoingConnectionsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromOutgoingConnections(Connection outgoingConnectionsValue) {
+  public boolean removeFromOutgoingConnections(Connection outgoingConnectionsValue) {
     if (outgoingConnections.contains(outgoingConnectionsValue)) {
       outgoingConnections.remove(outgoingConnectionsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -160,13 +166,15 @@ public abstract class Anchor extends PictogramElement {
    * 
    * @param incomingConnectionsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToIncomingConnections(Connection incomingConnectionsValue) {
+  public boolean addToIncomingConnections(Connection incomingConnectionsValue) {
     if (!incomingConnections.contains(incomingConnectionsValue)) {
       incomingConnections.add(incomingConnectionsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -174,13 +182,17 @@ public abstract class Anchor extends PictogramElement {
    * 
    * @param incomingConnectionsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromIncomingConnections(Connection incomingConnectionsValue) {
+  public boolean removeFromIncomingConnections(Connection incomingConnectionsValue) {
     if (incomingConnections.contains(incomingConnectionsValue)) {
       incomingConnections.remove(incomingConnectionsValue);
+      return true;
     }
+    return false;
   }
 
   /**

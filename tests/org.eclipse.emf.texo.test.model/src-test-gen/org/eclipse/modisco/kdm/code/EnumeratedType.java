@@ -56,13 +56,15 @@ public class EnumeratedType extends Datatype {
    * 
    * @param valueValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToValue(Value valueValue) {
+  public boolean addToValue(Value valueValue) {
     if (!value.contains(valueValue)) {
       value.add(valueValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -70,13 +72,17 @@ public class EnumeratedType extends Datatype {
    * 
    * @param valueValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromValue(Value valueValue) {
+  public boolean removeFromValue(Value valueValue) {
     if (value.contains(valueValue)) {
       value.remove(valueValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -120,13 +126,15 @@ public class EnumeratedType extends Datatype {
    * 
    * @param codeElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToCodeElement(CodeItem codeElementValue) {
+  public boolean addToCodeElement(CodeItem codeElementValue) {
     if (!codeElement.contains(codeElementValue)) {
       codeElement.add(codeElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -134,13 +142,17 @@ public class EnumeratedType extends Datatype {
    * 
    * @param codeElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromCodeElement(CodeItem codeElementValue) {
+  public boolean removeFromCodeElement(CodeItem codeElementValue) {
     if (codeElement.contains(codeElementValue)) {
       codeElement.remove(codeElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

@@ -149,13 +149,15 @@ public class QueryType extends Identifiable {
    * 
    * @param parametersValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToParameters(Parameter parametersValue) {
+  public boolean addToParameters(Parameter parametersValue) {
     if (!parameters.contains(parametersValue)) {
       parameters.add(parametersValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -163,13 +165,17 @@ public class QueryType extends Identifiable {
    * 
    * @param parametersValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromParameters(Parameter parametersValue) {
+  public boolean removeFromParameters(Parameter parametersValue) {
     if (parameters.contains(parametersValue)) {
       parameters.remove(parametersValue);
+      return true;
     }
+    return false;
   }
 
   /**

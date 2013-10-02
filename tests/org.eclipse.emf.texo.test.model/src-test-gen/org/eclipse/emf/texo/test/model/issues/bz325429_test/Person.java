@@ -151,13 +151,15 @@ public class Person extends Identifiable {
    * 
    * @param contactsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToContacts(Contact contactsValue) {
+  public boolean addToContacts(Contact contactsValue) {
     if (!contacts.contains(contactsValue)) {
       contacts.add(contactsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -165,13 +167,17 @@ public class Person extends Identifiable {
    * 
    * @param contactsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromContacts(Contact contactsValue) {
+  public boolean removeFromContacts(Contact contactsValue) {
     if (contacts.contains(contactsValue)) {
       contacts.remove(contactsValue);
+      return true;
     }
+    return false;
   }
 
   /**

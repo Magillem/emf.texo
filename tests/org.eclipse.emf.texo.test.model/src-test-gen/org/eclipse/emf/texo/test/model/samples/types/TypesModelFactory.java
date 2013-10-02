@@ -440,63 +440,50 @@ public class TypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case TypesModelPackage.MANYTYPES_STRING_FEATURE_ID:
-        getTarget().getString().add((String) value);
-        return;
+        return getTarget().getString().add((String) value);
 
       case TypesModelPackage.MANYTYPES_INTEGEROBJECT_FEATURE_ID:
-        getTarget().getIntegerObject().add((Integer) value);
-        return;
+        return getTarget().getIntegerObject().add((Integer) value);
 
       case TypesModelPackage.MANYTYPES_LONG__FEATURE_ID:
-        getTarget().getLong_().add((Long) value);
-        return;
+        return getTarget().getLong_().add((Long) value);
 
       case TypesModelPackage.MANYTYPES_DOUBLEOBJECT_FEATURE_ID:
-        getTarget().getDoubleObject().add((Double) value);
-        return;
+        return getTarget().getDoubleObject().add((Double) value);
 
       case TypesModelPackage.MANYTYPES_FLOATOBJECT_FEATURE_ID:
-        getTarget().getFloatObject().add((Float) value);
-        return;
+        return getTarget().getFloatObject().add((Float) value);
 
       case TypesModelPackage.MANYTYPES_CLAZZ_FEATURE_ID:
-        getTarget().getClazz().add((Class<?>) value);
-        return;
+        return getTarget().getClazz().add((Class<?>) value);
 
       case TypesModelPackage.MANYTYPES_CHAROBJECT_FEATURE_ID:
-        getTarget().getCharObject().add((Character) value);
-        return;
+        return getTarget().getCharObject().add((Character) value);
 
       case TypesModelPackage.MANYTYPES_BYTEOBJECT_FEATURE_ID:
-        getTarget().getByteObject().add((Byte) value);
-        return;
+        return getTarget().getByteObject().add((Byte) value);
 
       case TypesModelPackage.MANYTYPES_BYTEARRAY_FEATURE_ID:
-        getTarget().getByteArray().add((byte[]) value);
-        return;
+        return getTarget().getByteArray().add((byte[]) value);
 
       case TypesModelPackage.MANYTYPES_BIGDECIMAL_FEATURE_ID:
-        getTarget().getBigDecimal().add((BigDecimal) value);
-        return;
+        return getTarget().getBigDecimal().add((BigDecimal) value);
 
       case TypesModelPackage.MANYTYPES_BIGINTEGER_FEATURE_ID:
-        getTarget().getBigInteger().add((BigInteger) value);
-        return;
+        return getTarget().getBigInteger().add((BigInteger) value);
 
       case TypesModelPackage.MANYTYPES_ENUM__FEATURE_ID:
-        getTarget().getEnum_().add((TestEnum) value);
-        return;
+        return getTarget().getEnum_().add((TestEnum) value);
 
       case TypesModelPackage.MANYTYPES_DATE_FEATURE_ID:
-        getTarget().getDate().add((Date) value);
-        return;
+        return getTarget().getDate().add((Date) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -504,63 +491,50 @@ public class TypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case TypesModelPackage.MANYTYPES_STRING_FEATURE_ID:
-        getTarget().getString().remove(value);
-        return;
+        return getTarget().getString().remove(value);
 
       case TypesModelPackage.MANYTYPES_INTEGEROBJECT_FEATURE_ID:
-        getTarget().getIntegerObject().remove(value);
-        return;
+        return getTarget().getIntegerObject().remove(value);
 
       case TypesModelPackage.MANYTYPES_LONG__FEATURE_ID:
-        getTarget().getLong_().remove(value);
-        return;
+        return getTarget().getLong_().remove(value);
 
       case TypesModelPackage.MANYTYPES_DOUBLEOBJECT_FEATURE_ID:
-        getTarget().getDoubleObject().remove(value);
-        return;
+        return getTarget().getDoubleObject().remove(value);
 
       case TypesModelPackage.MANYTYPES_FLOATOBJECT_FEATURE_ID:
-        getTarget().getFloatObject().remove(value);
-        return;
+        return getTarget().getFloatObject().remove(value);
 
       case TypesModelPackage.MANYTYPES_CLAZZ_FEATURE_ID:
-        getTarget().getClazz().remove(value);
-        return;
+        return getTarget().getClazz().remove(value);
 
       case TypesModelPackage.MANYTYPES_CHAROBJECT_FEATURE_ID:
-        getTarget().getCharObject().remove(value);
-        return;
+        return getTarget().getCharObject().remove(value);
 
       case TypesModelPackage.MANYTYPES_BYTEOBJECT_FEATURE_ID:
-        getTarget().getByteObject().remove(value);
-        return;
+        return getTarget().getByteObject().remove(value);
 
       case TypesModelPackage.MANYTYPES_BYTEARRAY_FEATURE_ID:
-        getTarget().getByteArray().remove(value);
-        return;
+        return getTarget().getByteArray().remove(value);
 
       case TypesModelPackage.MANYTYPES_BIGDECIMAL_FEATURE_ID:
-        getTarget().getBigDecimal().remove(value);
-        return;
+        return getTarget().getBigDecimal().remove(value);
 
       case TypesModelPackage.MANYTYPES_BIGINTEGER_FEATURE_ID:
-        getTarget().getBigInteger().remove(value);
-        return;
+        return getTarget().getBigInteger().remove(value);
 
       case TypesModelPackage.MANYTYPES_ENUM__FEATURE_ID:
-        getTarget().getEnum_().remove(value);
-        return;
+        return getTarget().getEnum_().remove(value);
 
       case TypesModelPackage.MANYTYPES_DATE_FEATURE_ID:
-        getTarget().getDate().remove(value);
-        return;
+        return getTarget().getDate().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -741,12 +715,12 @@ public class TypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -754,12 +728,12 @@ public class TypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

@@ -79,13 +79,15 @@ public abstract class CirculatingItem extends Item implements Lendable {
    * 
    * @param borrowersValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBorrowers(Borrower borrowersValue) {
+  public boolean addToBorrowers(Borrower borrowersValue) {
     if (!borrowers.contains(borrowersValue)) {
       borrowers.add(borrowersValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -93,13 +95,17 @@ public abstract class CirculatingItem extends Item implements Lendable {
    * 
    * @param borrowersValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBorrowers(Borrower borrowersValue) {
+  public boolean removeFromBorrowers(Borrower borrowersValue) {
     if (borrowers.contains(borrowersValue)) {
       borrowers.remove(borrowersValue);
+      return true;
     }
+    return false;
   }
 
   /**

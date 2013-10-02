@@ -410,56 +410,45 @@ public class SimpletypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SimpletypesModelPackage.SIMPLELIST_BOO_FEATURE_ID:
-        getTarget().getBoo().add((Boolean) value);
-        return;
+        return getTarget().getBoo().add((Boolean) value);
 
       case SimpletypesModelPackage.SIMPLELIST_BYT_FEATURE_ID:
-        getTarget().getByt().add((Byte) value);
-        return;
+        return getTarget().getByt().add((Byte) value);
 
       case SimpletypesModelPackage.SIMPLELIST_DOUBL_FEATURE_ID:
-        getTarget().getDoubl().add((Double) value);
-        return;
+        return getTarget().getDoubl().add((Double) value);
 
       case SimpletypesModelPackage.SIMPLELIST_FLOA_FEATURE_ID:
-        getTarget().getFloa().add((Float) value);
-        return;
+        return getTarget().getFloa().add((Float) value);
 
       case SimpletypesModelPackage.SIMPLELIST_INTE_FEATURE_ID:
-        getTarget().getInte().add((Integer) value);
-        return;
+        return getTarget().getInte().add((Integer) value);
 
       case SimpletypesModelPackage.SIMPLELIST_LONG__FEATURE_ID:
-        getTarget().getLong_().add((Long) value);
-        return;
+        return getTarget().getLong_().add((Long) value);
 
       case SimpletypesModelPackage.SIMPLELIST_SHOR_FEATURE_ID:
-        getTarget().getShor().add((Short) value);
-        return;
+        return getTarget().getShor().add((Short) value);
 
       case SimpletypesModelPackage.SIMPLELIST_ENU_FEATURE_ID:
-        getTarget().getEnu().add((SimpleEnum) value);
-        return;
+        return getTarget().getEnu().add((SimpleEnum) value);
 
       case SimpletypesModelPackage.SIMPLELIST_DAT_FEATURE_ID:
-        getTarget().getDat().add((Date) value);
-        return;
+        return getTarget().getDat().add((Date) value);
 
       case SimpletypesModelPackage.SIMPLELIST_LIMITEDSTRING_FEATURE_ID:
-        getTarget().getLimitedstring().add((String) value);
-        return;
+        return getTarget().getLimitedstring().add((String) value);
 
       case SimpletypesModelPackage.SIMPLELIST_STRI_FEATURE_ID:
-        getTarget().getStri().add((String) value);
-        return;
+        return getTarget().getStri().add((String) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -467,56 +456,45 @@ public class SimpletypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case SimpletypesModelPackage.SIMPLELIST_BOO_FEATURE_ID:
-        getTarget().getBoo().remove(value);
-        return;
+        return getTarget().getBoo().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_BYT_FEATURE_ID:
-        getTarget().getByt().remove(value);
-        return;
+        return getTarget().getByt().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_DOUBL_FEATURE_ID:
-        getTarget().getDoubl().remove(value);
-        return;
+        return getTarget().getDoubl().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_FLOA_FEATURE_ID:
-        getTarget().getFloa().remove(value);
-        return;
+        return getTarget().getFloa().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_INTE_FEATURE_ID:
-        getTarget().getInte().remove(value);
-        return;
+        return getTarget().getInte().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_LONG__FEATURE_ID:
-        getTarget().getLong_().remove(value);
-        return;
+        return getTarget().getLong_().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_SHOR_FEATURE_ID:
-        getTarget().getShor().remove(value);
-        return;
+        return getTarget().getShor().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_ENU_FEATURE_ID:
-        getTarget().getEnu().remove(value);
-        return;
+        return getTarget().getEnu().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_DAT_FEATURE_ID:
-        getTarget().getDat().remove(value);
-        return;
+        return getTarget().getDat().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_LIMITEDSTRING_FEATURE_ID:
-        getTarget().getLimitedstring().remove(value);
-        return;
+        return getTarget().getLimitedstring().remove(value);
 
       case SimpletypesModelPackage.SIMPLELIST_STRI_FEATURE_ID:
-        getTarget().getStri().remove(value);
-        return;
+        return getTarget().getStri().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -652,12 +630,12 @@ public class SimpletypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -665,12 +643,12 @@ public class SimpletypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -789,12 +767,12 @@ public class SimpletypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -802,12 +780,12 @@ public class SimpletypesModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

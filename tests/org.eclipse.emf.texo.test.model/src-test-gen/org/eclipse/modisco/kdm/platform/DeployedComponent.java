@@ -47,13 +47,15 @@ public class DeployedComponent extends AbstractPlatformElement {
    * 
    * @param groupedCodeValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToGroupedCode(Module groupedCodeValue) {
+  public boolean addToGroupedCode(Module groupedCodeValue) {
     if (!groupedCode.contains(groupedCodeValue)) {
       groupedCode.add(groupedCodeValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -61,13 +63,17 @@ public class DeployedComponent extends AbstractPlatformElement {
    * 
    * @param groupedCodeValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromGroupedCode(Module groupedCodeValue) {
+  public boolean removeFromGroupedCode(Module groupedCodeValue) {
     if (groupedCode.contains(groupedCodeValue)) {
       groupedCode.remove(groupedCodeValue);
+      return true;
     }
+    return false;
   }
 
   /**

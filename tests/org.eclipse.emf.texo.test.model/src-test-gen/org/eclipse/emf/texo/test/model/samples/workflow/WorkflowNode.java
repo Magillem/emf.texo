@@ -115,13 +115,15 @@ public abstract class WorkflowNode extends WorkflowElement {
    * 
    * @param outputsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToOutputs(OutputPort outputsValue) {
+  public boolean addToOutputs(OutputPort outputsValue) {
     if (!outputs.contains(outputsValue)) {
       outputs.add(outputsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -129,13 +131,17 @@ public abstract class WorkflowNode extends WorkflowElement {
    * 
    * @param outputsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromOutputs(OutputPort outputsValue) {
+  public boolean removeFromOutputs(OutputPort outputsValue) {
     if (outputs.contains(outputsValue)) {
       outputs.remove(outputsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -179,13 +185,15 @@ public abstract class WorkflowNode extends WorkflowElement {
    * 
    * @param inputsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToInputs(InputPort inputsValue) {
+  public boolean addToInputs(InputPort inputsValue) {
     if (!inputs.contains(inputsValue)) {
       inputs.add(inputsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -193,13 +201,17 @@ public abstract class WorkflowNode extends WorkflowElement {
    * 
    * @param inputsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromInputs(InputPort inputsValue) {
+  public boolean removeFromInputs(InputPort inputsValue) {
     if (inputs.contains(inputsValue)) {
       inputs.remove(inputsValue);
+      return true;
     }
+    return false;
   }
 
   /**

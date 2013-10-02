@@ -163,13 +163,15 @@ public class PurchaseOrder extends Identifiable {
    * 
    * @param itemsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToItems(Item itemsValue) {
+  public boolean addToItems(Item itemsValue) {
     if (!items.contains(itemsValue)) {
       items.add(itemsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -177,13 +179,17 @@ public class PurchaseOrder extends Identifiable {
    * 
    * @param itemsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromItems(Item itemsValue) {
+  public boolean removeFromItems(Item itemsValue) {
     if (items.contains(itemsValue)) {
       items.remove(itemsValue);
+      return true;
     }
+    return false;
   }
 
   /**

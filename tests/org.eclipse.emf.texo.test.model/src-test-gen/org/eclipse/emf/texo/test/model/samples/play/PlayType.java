@@ -217,13 +217,15 @@ public class PlayType extends Identifiable {
    * 
    * @param actValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAct(ActType actValue) {
+  public boolean addToAct(ActType actValue) {
     if (!act.contains(actValue)) {
       act.add(actValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -231,13 +233,17 @@ public class PlayType extends Identifiable {
    * 
    * @param actValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAct(ActType actValue) {
+  public boolean removeFromAct(ActType actValue) {
     if (act.contains(actValue)) {
       act.remove(actValue);
+      return true;
     }
+    return false;
   }
 
   /**

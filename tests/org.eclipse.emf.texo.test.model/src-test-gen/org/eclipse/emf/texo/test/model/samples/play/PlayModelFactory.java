@@ -421,16 +421,15 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.ACTTYPE_SCENE_FEATURE_ID:
-        getTarget().getScene().add((SceneType) value);
-        return;
+        return getTarget().addToScene((SceneType) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -438,16 +437,15 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.ACTTYPE_SCENE_FEATURE_ID:
-        getTarget().getScene().remove(value);
-        return;
+        return getTarget().removeFromScene((SceneType) value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -544,24 +542,21 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.SCENETYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().add((SceneTypeGroupFeatureGroup) value);
-        return;
+        return getTarget().getGroup().add((SceneTypeGroupFeatureGroup) value);
 
       case PlayModelPackage.SCENETYPE_STAGEDIRECTIONS_FEATURE_ID:
-        getTarget().getStageDirections().add((String) value);
-        return;
+        return getTarget().getStageDirections().add((String) value);
 
       case PlayModelPackage.SCENETYPE_SPEECH_FEATURE_ID:
-        getTarget().getSpeech().add((SpeechType) value);
-        return;
+        return getTarget().getSpeech().add((SpeechType) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -569,24 +564,21 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.SCENETYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().remove(value);
-        return;
+        return getTarget().getGroup().remove(value);
 
       case PlayModelPackage.SCENETYPE_STAGEDIRECTIONS_FEATURE_ID:
-        getTarget().getStageDirections().remove(value);
-        return;
+        return getTarget().getStageDirections().remove(value);
 
       case PlayModelPackage.SCENETYPE_SPEECH_FEATURE_ID:
-        getTarget().getSpeech().remove(value);
-        return;
+        return getTarget().getSpeech().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -753,16 +745,15 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
-        return;
+        return getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -770,16 +761,15 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().remove(value);
-        return;
+        return getTarget().getMixed().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -855,15 +845,14 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.FMTYPE_P_FEATURE_ID:
-        getTarget().getP().add((String) value);
-        return;
+        return getTarget().getP().add((String) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -871,15 +860,14 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.FMTYPE_P_FEATURE_ID:
-        getTarget().getP().remove(value);
-        return;
+        return getTarget().getP().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -971,27 +959,23 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.PERSONAETYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().add((PersonaeTypeGroupFeatureGroup) value);
-        return;
+        return getTarget().getGroup().add((PersonaeTypeGroupFeatureGroup) value);
 
       case PlayModelPackage.PERSONAETYPE_TITLE_FEATURE_ID:
-        getTarget().getTitle().add((String) value);
-        return;
+        return getTarget().getTitle().add((String) value);
 
       case PlayModelPackage.PERSONAETYPE_PERSONA_FEATURE_ID:
-        getTarget().getPersona().add((String) value);
-        return;
+        return getTarget().getPersona().add((String) value);
 
       case PlayModelPackage.PERSONAETYPE_PERSONAGROUP_FEATURE_ID:
-        getTarget().getPersonaGroup().add((PersonaGroupType) value);
-        return;
+        return getTarget().getPersonaGroup().add((PersonaGroupType) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -999,27 +983,23 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.PERSONAETYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().remove(value);
-        return;
+        return getTarget().getGroup().remove(value);
 
       case PlayModelPackage.PERSONAETYPE_TITLE_FEATURE_ID:
-        getTarget().getTitle().remove(value);
-        return;
+        return getTarget().getTitle().remove(value);
 
       case PlayModelPackage.PERSONAETYPE_PERSONA_FEATURE_ID:
-        getTarget().getPersona().remove(value);
-        return;
+        return getTarget().getPersona().remove(value);
 
       case PlayModelPackage.PERSONAETYPE_PERSONAGROUP_FEATURE_ID:
-        getTarget().getPersonaGroup().remove(value);
-        return;
+        return getTarget().getPersonaGroup().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1100,16 +1080,15 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.PERSONAGROUPTYPE_PERSONA_FEATURE_ID:
-        getTarget().getPersona().add((String) value);
-        return;
+        return getTarget().getPersona().add((String) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1117,16 +1096,15 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.PERSONAGROUPTYPE_PERSONA_FEATURE_ID:
-        getTarget().getPersona().remove(value);
-        return;
+        return getTarget().getPersona().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1228,15 +1206,14 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.PLAYTYPE_ACT_FEATURE_ID:
-        getTarget().getAct().add((ActType) value);
-        return;
+        return getTarget().addToAct((ActType) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1244,15 +1221,14 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.PLAYTYPE_ACT_FEATURE_ID:
-        getTarget().getAct().remove(value);
-        return;
+        return getTarget().removeFromAct((ActType) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -1344,27 +1320,23 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.SPEECHTYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().add((SpeechTypeGroupFeatureGroup) value);
-        return;
+        return getTarget().getGroup().add((SpeechTypeGroupFeatureGroup) value);
 
       case PlayModelPackage.SPEECHTYPE_SPEAKER_FEATURE_ID:
-        getTarget().getSpeaker().add((String) value);
-        return;
+        return getTarget().getSpeaker().add((String) value);
 
       case PlayModelPackage.SPEECHTYPE_LINE_FEATURE_ID:
-        getTarget().getLine().add((String) value);
-        return;
+        return getTarget().getLine().add((String) value);
 
       case PlayModelPackage.SPEECHTYPE_STAGEDIRECTIONS_FEATURE_ID:
-        getTarget().getStageDirections().add((String) value);
-        return;
+        return getTarget().getStageDirections().add((String) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -1372,27 +1344,23 @@ public class PlayModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case PlayModelPackage.SPEECHTYPE_GROUP_FEATURE_ID:
-        getTarget().getGroup().remove(value);
-        return;
+        return getTarget().getGroup().remove(value);
 
       case PlayModelPackage.SPEECHTYPE_SPEAKER_FEATURE_ID:
-        getTarget().getSpeaker().remove(value);
-        return;
+        return getTarget().getSpeaker().remove(value);
 
       case PlayModelPackage.SPEECHTYPE_LINE_FEATURE_ID:
-        getTarget().getLine().remove(value);
-        return;
+        return getTarget().getLine().remove(value);
 
       case PlayModelPackage.SPEECHTYPE_STAGEDIRECTIONS_FEATURE_ID:
-        getTarget().getStageDirections().remove(value);
-        return;
+        return getTarget().getStageDirections().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

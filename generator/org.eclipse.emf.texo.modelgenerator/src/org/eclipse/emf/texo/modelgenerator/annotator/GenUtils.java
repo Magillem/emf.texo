@@ -424,8 +424,6 @@ public class GenUtils {
     final EPackageModelGenAnnotation annotation = getEPackageModelGenAnnotation(annotationManager,
         eDataType.getEPackage());
     final String pkgClassName = annotation.getQualifiedClassName();
-    // TODO: the MODELFACTORY and INSTANCE hard coded strings are set in the
-    // package.xpt.
     final StringBuilder result = new StringBuilder("(" //$NON-NLS-1$
         + getInstanceClassName(eDataType) + ")"); //$NON-NLS-1$
     result.append(pkgClassName + "." + GenConstants.MODELFACTORY_CONSTANT); //$NON-NLS-1$

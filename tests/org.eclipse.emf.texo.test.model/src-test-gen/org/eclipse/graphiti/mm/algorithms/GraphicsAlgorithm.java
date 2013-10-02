@@ -183,13 +183,15 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * 
    * @param graphicsAlgorithmChildrenValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
+  public boolean addToGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
     if (!graphicsAlgorithmChildren.contains(graphicsAlgorithmChildrenValue)) {
       graphicsAlgorithmChildren.add(graphicsAlgorithmChildrenValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -197,13 +199,17 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * 
    * @param graphicsAlgorithmChildrenValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
+  public boolean removeFromGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
     if (graphicsAlgorithmChildren.contains(graphicsAlgorithmChildrenValue)) {
       graphicsAlgorithmChildren.remove(graphicsAlgorithmChildrenValue);
+      return true;
     }
+    return false;
   }
 
   /**

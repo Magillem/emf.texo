@@ -767,23 +767,20 @@ public class ListunionModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ListunionModelPackage.STATESBYCOUNTRY_ZIPUNIONS_FEATURE_ID:
-        getTarget().getZipUnions().add((String) value);
-        return;
+        return getTarget().getZipUnions().add((String) value);
 
       case ListunionModelPackage.STATESBYCOUNTRY_SIMPLEUNIONS_FEATURE_ID:
-        getTarget().getSimpleUnions().add(value);
-        return;
+        return getTarget().getSimpleUnions().add(value);
 
       case ListunionModelPackage.STATESBYCOUNTRY_SIMPLESTRINGUNIONS_FEATURE_ID:
-        getTarget().getSimpleStringUnions().add((String) value);
-        return;
+        return getTarget().getSimpleStringUnions().add((String) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -791,23 +788,20 @@ public class ListunionModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ListunionModelPackage.STATESBYCOUNTRY_ZIPUNIONS_FEATURE_ID:
-        getTarget().getZipUnions().remove(value);
-        return;
+        return getTarget().getZipUnions().remove(value);
 
       case ListunionModelPackage.STATESBYCOUNTRY_SIMPLEUNIONS_FEATURE_ID:
-        getTarget().getSimpleUnions().remove(value);
-        return;
+        return getTarget().getSimpleUnions().remove(value);
 
       case ListunionModelPackage.STATESBYCOUNTRY_SIMPLESTRINGUNIONS_FEATURE_ID:
-        getTarget().getSimpleStringUnions().remove(value);
-        return;
+        return getTarget().getSimpleStringUnions().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

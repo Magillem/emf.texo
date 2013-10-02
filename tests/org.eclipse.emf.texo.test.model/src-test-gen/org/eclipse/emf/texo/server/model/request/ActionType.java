@@ -71,13 +71,15 @@ public class ActionType extends Identifiable {
    * 
    * @param updateValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToUpdate(Object updateValue) {
+  public boolean addToUpdate(Object updateValue) {
     if (!update.contains(updateValue)) {
       update.add(updateValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -85,13 +87,17 @@ public class ActionType extends Identifiable {
    * 
    * @param updateValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromUpdate(Object updateValue) {
+  public boolean removeFromUpdate(Object updateValue) {
     if (update.contains(updateValue)) {
       update.remove(updateValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -135,13 +141,15 @@ public class ActionType extends Identifiable {
    * 
    * @param insertValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToInsert(Object insertValue) {
+  public boolean addToInsert(Object insertValue) {
     if (!insert.contains(insertValue)) {
       insert.add(insertValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -149,13 +157,17 @@ public class ActionType extends Identifiable {
    * 
    * @param insertValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromInsert(Object insertValue) {
+  public boolean removeFromInsert(Object insertValue) {
     if (insert.contains(insertValue)) {
       insert.remove(insertValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -199,13 +211,15 @@ public class ActionType extends Identifiable {
    * 
    * @param deleteValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToDelete(Object deleteValue) {
+  public boolean addToDelete(Object deleteValue) {
     if (!delete.contains(deleteValue)) {
       delete.add(deleteValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -213,13 +227,17 @@ public class ActionType extends Identifiable {
    * 
    * @param deleteValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromDelete(Object deleteValue) {
+  public boolean removeFromDelete(Object deleteValue) {
     if (delete.contains(deleteValue)) {
       delete.remove(deleteValue);
+      return true;
     }
+    return false;
   }
 
   /**

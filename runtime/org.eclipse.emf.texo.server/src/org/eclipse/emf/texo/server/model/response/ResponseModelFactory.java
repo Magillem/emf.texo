@@ -262,32 +262,30 @@ public class ResponseModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ResponseModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
-        return;
+        return getTarget().getMixed().add((DocumentRootMixedFeatureGroup) value);
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ResponseModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
-        getTarget().getMixed().remove(value);
-        return;
+        return getTarget().getMixed().remove(value);
 
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 
@@ -357,24 +355,24 @@ public class ResponseModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 
@@ -450,30 +448,28 @@ public class ResponseModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ResponseModelPackage.RESPONSETYPE_DATA_FEATURE_ID:
-        getTarget().getData().add((Object) value);
-        return;
+        return getTarget().getData().add(value);
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ResponseModelPackage.RESPONSETYPE_DATA_FEATURE_ID:
-        getTarget().getData().remove(value);
-        return;
+        return getTarget().getData().remove(value);
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 
@@ -539,46 +535,40 @@ public class ResponseModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ResponseModelPackage.RESULTTYPE_UPDATED_FEATURE_ID:
-        getTarget().getUpdated().add((Object) value);
-        return;
+        return getTarget().getUpdated().add(value);
 
       case ResponseModelPackage.RESULTTYPE_INSERTED_FEATURE_ID:
-        getTarget().getInserted().add((Object) value);
-        return;
+        return getTarget().getInserted().add(value);
 
       case ResponseModelPackage.RESULTTYPE_DELETED_FEATURE_ID:
-        getTarget().getDeleted().add((Object) value);
-        return;
+        return getTarget().getDeleted().add(value);
       }
-      super.eAddTo(eStructuralFeature, value);
+      return super.eAddTo(eStructuralFeature, value);
     }
 
     /**
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case ResponseModelPackage.RESULTTYPE_UPDATED_FEATURE_ID:
-        getTarget().getUpdated().remove(value);
-        return;
+        return getTarget().getUpdated().remove(value);
 
       case ResponseModelPackage.RESULTTYPE_INSERTED_FEATURE_ID:
-        getTarget().getInserted().remove(value);
-        return;
+        return getTarget().getInserted().remove(value);
 
       case ResponseModelPackage.RESULTTYPE_DELETED_FEATURE_ID:
-        getTarget().getDeleted().remove(value);
-        return;
+        return getTarget().getDeleted().remove(value);
       }
-      super.eRemoveFrom(eStructuralFeature, value);
+      return super.eRemoveFrom(eStructuralFeature, value);
     }
   }
 

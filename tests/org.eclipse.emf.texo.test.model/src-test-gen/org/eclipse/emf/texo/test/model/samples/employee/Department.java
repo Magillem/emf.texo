@@ -93,13 +93,16 @@ public class Department extends Identifiable {
    * 
    * @param employeesValue
    *          value to add
+   * @return true if added, false otherwise
    * 
    * @generated
    */
-  public void addToEmployees(Employee employeesValue) {
+  public boolean addToEmployees(Employee employeesValue) {
     if (!employees.contains(employeesValue)) {
       employees.add(employeesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -107,13 +110,15 @@ public class Department extends Identifiable {
    * 
    * @param employeesValue
    *          value to remove
-   * 
+   * @return true if removed, false otherwise
    * @generated
    */
-  public void removeFromEmployees(Employee employeesValue) {
+  public boolean removeFromEmployees(Employee employeesValue) {
     if (employees.contains(employeesValue)) {
       employees.remove(employeesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -152,7 +157,7 @@ public class Department extends Identifiable {
   }
 
   /**
-   * @return the value
+   * @return the boolean value
    * @generated
    */
   public boolean templateIsOverridden() {

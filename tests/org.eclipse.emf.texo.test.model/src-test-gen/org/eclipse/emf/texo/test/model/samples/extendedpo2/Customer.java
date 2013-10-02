@@ -86,13 +86,15 @@ public class Customer extends Identifiable {
    * 
    * @param ordersValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToOrders(PurchaseOrder ordersValue) {
+  public boolean addToOrders(PurchaseOrder ordersValue) {
     if (!orders.contains(ordersValue)) {
       orders.add(ordersValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -100,13 +102,17 @@ public class Customer extends Identifiable {
    * 
    * @param ordersValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromOrders(PurchaseOrder ordersValue) {
+  public boolean removeFromOrders(PurchaseOrder ordersValue) {
     if (orders.contains(ordersValue)) {
       orders.remove(ordersValue);
+      return true;
     }
+    return false;
   }
 
   /**

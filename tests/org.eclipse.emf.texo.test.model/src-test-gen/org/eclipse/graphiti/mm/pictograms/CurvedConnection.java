@@ -49,13 +49,15 @@ public class CurvedConnection extends Connection {
    * 
    * @param controlPointsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToControlPoints(PrecisionPoint controlPointsValue) {
+  public boolean addToControlPoints(PrecisionPoint controlPointsValue) {
     if (!controlPoints.contains(controlPointsValue)) {
       controlPoints.add(controlPointsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -63,13 +65,17 @@ public class CurvedConnection extends Connection {
    * 
    * @param controlPointsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromControlPoints(PrecisionPoint controlPointsValue) {
+  public boolean removeFromControlPoints(PrecisionPoint controlPointsValue) {
     if (controlPoints.contains(controlPointsValue)) {
       controlPoints.remove(controlPointsValue);
+      return true;
     }
+    return false;
   }
 
   /**

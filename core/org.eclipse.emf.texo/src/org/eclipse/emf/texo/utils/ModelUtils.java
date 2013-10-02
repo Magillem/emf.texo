@@ -505,6 +505,10 @@ public class ModelUtils {
    * True if the eDataType is an EEnum or has as instance class the {@link Enumerator}.
    */
   public static boolean isEEnum(EDataType eDataType) {
+    // special case happens when (de-)serializing ecore models
+    if (eDataType == EcorePackage.eINSTANCE.getEEnumerator()) {
+      return false;
+    }
     return eDataType instanceof EEnum || Enumerator.class.getName().equals(eDataType.getInstanceClassName());
   }
 

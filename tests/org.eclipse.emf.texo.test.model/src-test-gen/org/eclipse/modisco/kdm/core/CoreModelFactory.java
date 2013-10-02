@@ -330,19 +330,17 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case CoreModelPackage.ELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().getAttribute().add((Attribute) value);
-        return;
+        return getTarget().addToAttribute((Attribute) value);
 
       case CoreModelPackage.ELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().getAnnotation().add((Annotation) value);
-        return;
+        return getTarget().addToAnnotation((Annotation) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -350,19 +348,17 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case CoreModelPackage.ELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().getAttribute().remove(value);
-        return;
+        return getTarget().removeFromAttribute((Attribute) value);
 
       case CoreModelPackage.ELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().getAnnotation().remove(value);
-        return;
+        return getTarget().removeFromAnnotation((Annotation) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -453,19 +449,17 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case CoreModelPackage.MODELELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().getStereotype().add((Stereotype) value);
-        return;
+        return getTarget().addToStereotype((Stereotype) value);
 
       case CoreModelPackage.MODELELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().getTaggedValue().add((ExtendedValue) value);
-        return;
+        return getTarget().addToTaggedValue((ExtendedValue) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -473,19 +467,17 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case CoreModelPackage.MODELELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().getStereotype().remove(value);
-        return;
+        return getTarget().removeFromStereotype((Stereotype) value);
 
       case CoreModelPackage.MODELELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().getTaggedValue().remove(value);
-        return;
+        return getTarget().removeFromTaggedValue((ExtendedValue) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -601,12 +593,12 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -614,12 +606,12 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -710,11 +702,11 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -722,11 +714,11 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -838,16 +830,15 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case CoreModelPackage.AGGREGATEDRELATIONSHIP_RELATION_FEATURE_ID:
-        getTarget().getRelation().add((KDMRelationship) value);
-        return;
+        return getTarget().addToRelation((KDMRelationship) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -855,16 +846,15 @@ public class CoreModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case CoreModelPackage.AGGREGATEDRELATIONSHIP_RELATION_FEATURE_ID:
-        getTarget().getRelation().remove(value);
-        return;
+        return getTarget().removeFromRelation((KDMRelationship) value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

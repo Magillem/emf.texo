@@ -60,7 +60,6 @@ public class ORMNameTruncationTest extends TestCase {
 
     @Override
     public String processName(String name, String prefix) {
-      // TODO Auto-generated method stub
       return super.processName(name, prefix);
     }
 

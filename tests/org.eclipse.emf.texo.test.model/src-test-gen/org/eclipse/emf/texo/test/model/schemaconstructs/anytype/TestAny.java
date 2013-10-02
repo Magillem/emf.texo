@@ -148,13 +148,15 @@ public class TestAny extends Identifiable {
    * 
    * @param multiAnyTypeValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToMultiAnyType(Object multiAnyTypeValue) {
+  public boolean addToMultiAnyType(Object multiAnyTypeValue) {
     if (!multiAnyType.contains(multiAnyTypeValue)) {
       multiAnyType.add(multiAnyTypeValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -162,13 +164,17 @@ public class TestAny extends Identifiable {
    * 
    * @param multiAnyTypeValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromMultiAnyType(Object multiAnyTypeValue) {
+  public boolean removeFromMultiAnyType(Object multiAnyTypeValue) {
     if (multiAnyType.contains(multiAnyTypeValue)) {
       multiAnyType.remove(multiAnyTypeValue);
+      return true;
     }
+    return false;
   }
 
   /**

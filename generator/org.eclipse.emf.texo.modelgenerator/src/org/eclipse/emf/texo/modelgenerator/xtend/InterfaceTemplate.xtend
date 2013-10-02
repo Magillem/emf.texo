@@ -79,24 +79,26 @@ public interface «eClassModelGenAnnotation.simpleClassName»
         public «featureAnnotation.type» «featureAnnotation.getter»();
 
         «IF featureAnnotation.EStructuralFeature.changeable || (featureAnnotation.reference && (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation != null)»
-            «IF featureAnnotation.featureMapFeature == null && featureAnnotation.many && featureAnnotation.reference && (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»
+            «IF featureAnnotation.featureMapFeature == null && featureAnnotation.many && featureAnnotation.reference && ((featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport || (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess)»
             /**
              * Adds to the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
              *
              * @param value the value to add
+             * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
              *
              * @generated
              */
-            public void addTo«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
+            public boolean addTo«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
 
             /**
              * Removes from the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.
              *
              * @param value the value to remove
+             * @return true if the value is removed from the collection (it was present in the collection), false otherwise
              *
              * @generated
              */
-            public void removeFrom«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
+            public boolean removeFrom«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» value);
 
             /**
              * Clears the <em>«featureAnnotation.EStructuralFeature.name»</em> feature.

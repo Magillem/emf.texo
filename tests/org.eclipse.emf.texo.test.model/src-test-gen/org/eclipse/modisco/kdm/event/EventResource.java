@@ -45,13 +45,15 @@ public class EventResource extends AbstractEventElement {
    * 
    * @param eventElementValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToEventElement(AbstractEventElement eventElementValue) {
+  public boolean addToEventElement(AbstractEventElement eventElementValue) {
     if (!eventElement.contains(eventElementValue)) {
       eventElement.add(eventElementValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -59,13 +61,17 @@ public class EventResource extends AbstractEventElement {
    * 
    * @param eventElementValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromEventElement(AbstractEventElement eventElementValue) {
+  public boolean removeFromEventElement(AbstractEventElement eventElementValue) {
     if (eventElement.contains(eventElementValue)) {
       eventElement.remove(eventElementValue);
+      return true;
     }
+    return false;
   }
 
   /**

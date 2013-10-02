@@ -71,9 +71,8 @@ public class Diagram extends ContainerShape {
    * @deprecated This attribute simply exists because of compatibility (after removing it old diagrams would not be
    *             readable any more). It is never evaluated, instead the Graphiti framework queries the tool behaviour
    *             provider if guides shall be shown in a diagram editor. <!-- end-model-doc -->
-   * @generatedNOT
+   * @generated
    */
-  @Deprecated
   @Basic(optional = false)
   private boolean showGuides = false;
 
@@ -192,13 +191,15 @@ public class Diagram extends ContainerShape {
    * 
    * @param connectionsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToConnections(Connection connectionsValue) {
+  public boolean addToConnections(Connection connectionsValue) {
     if (!connections.contains(connectionsValue)) {
       connections.add(connectionsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -206,13 +207,17 @@ public class Diagram extends ContainerShape {
    * 
    * @param connectionsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromConnections(Connection connectionsValue) {
+  public boolean removeFromConnections(Connection connectionsValue) {
     if (connections.contains(connectionsValue)) {
       connections.remove(connectionsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -337,13 +342,15 @@ public class Diagram extends ContainerShape {
    * 
    * @param colorsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToColors(Color colorsValue) {
+  public boolean addToColors(Color colorsValue) {
     if (!colors.contains(colorsValue)) {
       colors.add(colorsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -351,13 +358,17 @@ public class Diagram extends ContainerShape {
    * 
    * @param colorsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromColors(Color colorsValue) {
+  public boolean removeFromColors(Color colorsValue) {
     if (colors.contains(colorsValue)) {
       colors.remove(colorsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -401,13 +412,15 @@ public class Diagram extends ContainerShape {
    * 
    * @param fontsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToFonts(Font fontsValue) {
+  public boolean addToFonts(Font fontsValue) {
     if (!fonts.contains(fontsValue)) {
       fonts.add(fontsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -415,13 +428,17 @@ public class Diagram extends ContainerShape {
    * 
    * @param fontsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromFonts(Font fontsValue) {
+  public boolean removeFromFonts(Font fontsValue) {
     if (fonts.contains(fontsValue)) {
       fonts.remove(fontsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -465,13 +482,15 @@ public class Diagram extends ContainerShape {
    * 
    * @param pictogramLinksValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToPictogramLinks(PictogramLink pictogramLinksValue) {
+  public boolean addToPictogramLinks(PictogramLink pictogramLinksValue) {
     if (!pictogramLinks.contains(pictogramLinksValue)) {
       pictogramLinks.add(pictogramLinksValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -479,13 +498,17 @@ public class Diagram extends ContainerShape {
    * 
    * @param pictogramLinksValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromPictogramLinks(PictogramLink pictogramLinksValue) {
+  public boolean removeFromPictogramLinks(PictogramLink pictogramLinksValue) {
     if (pictogramLinks.contains(pictogramLinksValue)) {
       pictogramLinks.remove(pictogramLinksValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -579,13 +602,15 @@ public class Diagram extends ContainerShape {
    * 
    * @param stylesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToStyles(Style stylesValue) {
+  public boolean addToStyles(Style stylesValue) {
     if (!styles.contains(stylesValue)) {
       styles.add(stylesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -593,13 +618,17 @@ public class Diagram extends ContainerShape {
    * 
    * @param stylesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromStyles(Style stylesValue) {
+  public boolean removeFromStyles(Style stylesValue) {
     if (styles.contains(stylesValue)) {
       styles.remove(stylesValue);
+      return true;
     }
+    return false;
   }
 
   /**

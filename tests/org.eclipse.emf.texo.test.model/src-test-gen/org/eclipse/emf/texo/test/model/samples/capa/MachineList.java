@@ -50,13 +50,15 @@ public class MachineList extends Identifiable {
    * 
    * @param machinesValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToMachines(Machine machinesValue) {
+  public boolean addToMachines(Machine machinesValue) {
     if (!machines.contains(machinesValue)) {
       machines.add(machinesValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -64,13 +66,17 @@ public class MachineList extends Identifiable {
    * 
    * @param machinesValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromMachines(Machine machinesValue) {
+  public boolean removeFromMachines(Machine machinesValue) {
     if (machines.contains(machinesValue)) {
       machines.remove(machinesValue);
+      return true;
     }
+    return false;
   }
 
   /**

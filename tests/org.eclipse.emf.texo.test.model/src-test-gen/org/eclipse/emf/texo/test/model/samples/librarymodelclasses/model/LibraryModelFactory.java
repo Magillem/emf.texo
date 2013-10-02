@@ -287,12 +287,12 @@ public class LibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -300,12 +300,12 @@ public class LibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -391,19 +391,17 @@ public class LibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case LibraryModelPackage.LIBRARY_WRITERS_FEATURE_ID:
-        getTarget().getWriters().add((Writer) value);
-        return;
+        return getTarget().addToWriters((Writer) value);
 
       case LibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        getTarget().getBooks().add((Book) value);
-        return;
+        return getTarget().addToBooks((Book) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -411,19 +409,17 @@ public class LibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case LibraryModelPackage.LIBRARY_WRITERS_FEATURE_ID:
-        getTarget().getWriters().remove(value);
-        return;
+        return getTarget().removeFromWriters((Writer) value);
 
       case LibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        getTarget().getBooks().remove(value);
-        return;
+        return getTarget().removeFromBooks((Book) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -504,15 +500,14 @@ public class LibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case LibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        getTarget().getBooks().add((Book) value);
-        return;
+        return getTarget().addToBooks((Book) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -520,15 +515,14 @@ public class LibraryModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case LibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        getTarget().getBooks().remove(value);
-        return;
+        return getTarget().removeFromBooks((Book) value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

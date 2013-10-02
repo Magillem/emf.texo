@@ -89,13 +89,15 @@ public class Writer extends Identifiable {
    * 
    * @param booksValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToBooks(Book booksValue) {
+  public boolean addToBooks(Book booksValue) {
     if (!books.contains(booksValue)) {
       books.add(booksValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -103,13 +105,17 @@ public class Writer extends Identifiable {
    * 
    * @param booksValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromBooks(Book booksValue) {
+  public boolean removeFromBooks(Book booksValue) {
     if (books.contains(booksValue)) {
       books.remove(booksValue);
+      return true;
     }
+    return false;
   }
 
   /**

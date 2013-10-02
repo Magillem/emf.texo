@@ -53,13 +53,15 @@ public class Machine extends AbstractPlatformElement {
    * 
    * @param deployedComponentValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToDeployedComponent(DeployedComponent deployedComponentValue) {
+  public boolean addToDeployedComponent(DeployedComponent deployedComponentValue) {
     if (!deployedComponent.contains(deployedComponentValue)) {
       deployedComponent.add(deployedComponentValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -67,13 +69,17 @@ public class Machine extends AbstractPlatformElement {
    * 
    * @param deployedComponentValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromDeployedComponent(DeployedComponent deployedComponentValue) {
+  public boolean removeFromDeployedComponent(DeployedComponent deployedComponentValue) {
     if (deployedComponent.contains(deployedComponentValue)) {
       deployedComponent.remove(deployedComponentValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -117,13 +123,15 @@ public class Machine extends AbstractPlatformElement {
    * 
    * @param deployedResourceValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToDeployedResource(DeployedResource deployedResourceValue) {
+  public boolean addToDeployedResource(DeployedResource deployedResourceValue) {
     if (!deployedResource.contains(deployedResourceValue)) {
       deployedResource.add(deployedResourceValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -131,13 +139,17 @@ public class Machine extends AbstractPlatformElement {
    * 
    * @param deployedResourceValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromDeployedResource(DeployedResource deployedResourceValue) {
+  public boolean removeFromDeployedResource(DeployedResource deployedResourceValue) {
     if (deployedResource.contains(deployedResourceValue)) {
       deployedResource.remove(deployedResourceValue);
+      return true;
     }
+    return false;
   }
 
   /**

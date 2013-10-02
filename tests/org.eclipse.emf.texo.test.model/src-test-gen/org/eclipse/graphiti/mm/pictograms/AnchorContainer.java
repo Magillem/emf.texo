@@ -45,13 +45,15 @@ public abstract class AnchorContainer extends PictogramElement {
    * 
    * @param anchorsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToAnchors(Anchor anchorsValue) {
+  public boolean addToAnchors(Anchor anchorsValue) {
     if (!anchors.contains(anchorsValue)) {
       anchors.add(anchorsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -59,13 +61,17 @@ public abstract class AnchorContainer extends PictogramElement {
    * 
    * @param anchorsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromAnchors(Anchor anchorsValue) {
+  public boolean removeFromAnchors(Anchor anchorsValue) {
     if (anchors.contains(anchorsValue)) {
       anchors.remove(anchorsValue);
+      return true;
     }
+    return false;
   }
 
   /**

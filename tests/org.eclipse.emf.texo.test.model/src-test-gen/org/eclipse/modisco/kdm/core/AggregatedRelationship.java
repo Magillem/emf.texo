@@ -145,13 +145,15 @@ public class AggregatedRelationship extends ModelElement {
    * 
    * @param relationValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToRelation(KDMRelationship relationValue) {
+  public boolean addToRelation(KDMRelationship relationValue) {
     if (!relation.contains(relationValue)) {
       relation.add(relationValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -159,13 +161,17 @@ public class AggregatedRelationship extends ModelElement {
    * 
    * @param relationValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromRelation(KDMRelationship relationValue) {
+  public boolean removeFromRelation(KDMRelationship relationValue) {
     if (relation.contains(relationValue)) {
       relation.remove(relationValue);
+      return true;
     }
+    return false;
   }
 
   /**

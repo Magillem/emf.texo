@@ -275,23 +275,20 @@ public class NestedgroupModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case NestedgroupModelPackage.A_GROUP_FEATURE_ID:
-        getTarget().getGroup().add((AGroupFeatureGroup) value);
-        return;
+        return getTarget().getGroup().add((AGroupFeatureGroup) value);
 
       case NestedgroupModelPackage.A_B_FEATURE_ID:
-        getTarget().getB().add((String) value);
-        return;
+        return getTarget().getB().add((String) value);
 
       case NestedgroupModelPackage.A_C_FEATURE_ID:
-        getTarget().getC().add((CType) value);
-        return;
+        return getTarget().getC().add((CType) value);
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -299,23 +296,20 @@ public class NestedgroupModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case NestedgroupModelPackage.A_GROUP_FEATURE_ID:
-        getTarget().getGroup().remove(value);
-        return;
+        return getTarget().getGroup().remove(value);
 
       case NestedgroupModelPackage.A_B_FEATURE_ID:
-        getTarget().getB().remove(value);
-        return;
+        return getTarget().getB().remove(value);
 
       case NestedgroupModelPackage.A_C_FEATURE_ID:
-        getTarget().getC().remove(value);
-        return;
+        return getTarget().getC().remove(value);
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -395,12 +389,12 @@ public class NestedgroupModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -408,12 +402,12 @@ public class NestedgroupModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }
@@ -509,24 +503,21 @@ public class NestedgroupModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case NestedgroupModelPackage.ELEMENT_MIXED_FEATURE_ID:
-        getTarget().getMixed().add((ElementMixedFeatureGroup) value);
-        return;
+        return getTarget().getMixed().add((ElementMixedFeatureGroup) value);
 
       case NestedgroupModelPackage.ELEMENT_TRUE__FEATURE_ID:
-        getTarget().getTrue_().add((ElementTrue_FeatureGroup) value);
-        return;
+        return getTarget().getTrue_().add((ElementTrue_FeatureGroup) value);
 
       case NestedgroupModelPackage.ELEMENT_C_FEATURE_ID:
-        getTarget().getC().add((CType) value);
-        return;
+        return getTarget().getC().add((CType) value);
 
       default:
-        super.eAddTo(eStructuralFeature, value);
+        return super.eAddTo(eStructuralFeature, value);
       }
     }
 
@@ -534,24 +525,21 @@ public class NestedgroupModelFactory implements ModelFactory {
      * @generated
      */
     @Override
-    public void eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
       case NestedgroupModelPackage.ELEMENT_MIXED_FEATURE_ID:
-        getTarget().getMixed().remove(value);
-        return;
+        return getTarget().getMixed().remove(value);
 
       case NestedgroupModelPackage.ELEMENT_TRUE__FEATURE_ID:
-        getTarget().getTrue_().remove(value);
-        return;
+        return getTarget().getTrue_().remove(value);
 
       case NestedgroupModelPackage.ELEMENT_C_FEATURE_ID:
-        getTarget().getC().remove(value);
-        return;
+        return getTarget().getC().remove(value);
 
       default:
-        super.eRemoveFrom(eStructuralFeature, value);
+        return super.eRemoveFrom(eStructuralFeature, value);
       }
     }
   }

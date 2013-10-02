@@ -101,13 +101,15 @@ public class JournalGroup extends Identifiable {
    * 
    * @param journalGroupsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToJournalGroups(JournalGroup journalGroupsValue) {
+  public boolean addToJournalGroups(JournalGroup journalGroupsValue) {
     if (!journalGroups.contains(journalGroupsValue)) {
       journalGroups.add(journalGroupsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -115,13 +117,17 @@ public class JournalGroup extends Identifiable {
    * 
    * @param journalGroupsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromJournalGroups(JournalGroup journalGroupsValue) {
+  public boolean removeFromJournalGroups(JournalGroup journalGroupsValue) {
     if (journalGroups.contains(journalGroupsValue)) {
       journalGroups.remove(journalGroupsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -165,13 +171,15 @@ public class JournalGroup extends Identifiable {
    * 
    * @param journalStatementsValue
    *          the value to add
-   * 
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
    * @generated
    */
-  public void addToJournalStatements(JournalStatement journalStatementsValue) {
+  public boolean addToJournalStatements(JournalStatement journalStatementsValue) {
     if (!journalStatements.contains(journalStatementsValue)) {
       journalStatements.add(journalStatementsValue);
+      return true;
     }
+    return false;
   }
 
   /**
@@ -179,13 +187,17 @@ public class JournalGroup extends Identifiable {
    * 
    * @param journalStatementsValue
    *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
    * 
    * @generated
    */
-  public void removeFromJournalStatements(JournalStatement journalStatementsValue) {
+  public boolean removeFromJournalStatements(JournalStatement journalStatementsValue) {
     if (journalStatements.contains(journalStatementsValue)) {
       journalStatements.remove(journalStatementsValue);
+      return true;
     }
+    return false;
   }
 
   /**
