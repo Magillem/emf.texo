@@ -89,8 +89,8 @@ public class PictogramLink extends PropertyContainer {
    */
   public boolean addToBusinessObjects(Object businessObjectsValue) {
     if (!businessObjects.contains(businessObjectsValue)) {
-      businessObjects.add(businessObjectsValue);
-      return true;
+      boolean result = businessObjects.add(businessObjectsValue);
+      return result;
     }
     return false;
   }
@@ -107,8 +107,8 @@ public class PictogramLink extends PropertyContainer {
    */
   public boolean removeFromBusinessObjects(Object businessObjectsValue) {
     if (businessObjects.contains(businessObjectsValue)) {
-      businessObjects.remove(businessObjectsValue);
-      return true;
+      boolean result = businessObjects.remove(businessObjectsValue);
+      return result;
     }
     return false;
   }

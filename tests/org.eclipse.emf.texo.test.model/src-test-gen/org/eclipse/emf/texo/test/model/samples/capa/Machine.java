@@ -122,8 +122,8 @@ public class Machine extends Identifiable {
    */
   public boolean addToTasks(Task tasksValue) {
     if (!tasks.contains(tasksValue)) {
-      tasks.add(tasksValue);
-      return true;
+      boolean result = tasks.add(tasksValue);
+      return result;
     }
     return false;
   }
@@ -140,8 +140,8 @@ public class Machine extends Identifiable {
    */
   public boolean removeFromTasks(Task tasksValue) {
     if (tasks.contains(tasksValue)) {
-      tasks.remove(tasksValue);
-      return true;
+      boolean result = tasks.remove(tasksValue);
+      return result;
     }
     return false;
   }

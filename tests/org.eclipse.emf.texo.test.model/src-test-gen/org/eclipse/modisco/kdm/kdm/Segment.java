@@ -58,8 +58,8 @@ public class Segment extends KDMFramework {
    */
   public boolean addToSegment(Segment segmentValue) {
     if (!segment.contains(segmentValue)) {
-      segment.add(segmentValue);
-      return true;
+      boolean result = segment.add(segmentValue);
+      return result;
     }
     return false;
   }
@@ -76,8 +76,8 @@ public class Segment extends KDMFramework {
    */
   public boolean removeFromSegment(Segment segmentValue) {
     if (segment.contains(segmentValue)) {
-      segment.remove(segmentValue);
-      return true;
+      boolean result = segment.remove(segmentValue);
+      return result;
     }
     return false;
   }
@@ -128,8 +128,8 @@ public class Segment extends KDMFramework {
    */
   public boolean addToModel(KDMModel modelValue) {
     if (!model.contains(modelValue)) {
-      model.add(modelValue);
-      return true;
+      boolean result = model.add(modelValue);
+      return result;
     }
     return false;
   }
@@ -146,8 +146,8 @@ public class Segment extends KDMFramework {
    */
   public boolean removeFromModel(KDMModel modelValue) {
     if (model.contains(modelValue)) {
-      model.remove(modelValue);
-      return true;
+      boolean result = model.remove(modelValue);
+      return result;
     }
     return false;
   }

@@ -64,8 +64,8 @@ public class WorkWeek extends Identifiable {
    */
   public boolean addToDays(WorkDay daysValue) {
     if (!days.contains(daysValue)) {
-      days.add(daysValue);
-      return true;
+      boolean result = days.add(daysValue);
+      return result;
     }
     return false;
   }
@@ -82,8 +82,8 @@ public class WorkWeek extends Identifiable {
    */
   public boolean removeFromDays(WorkDay daysValue) {
     if (days.contains(daysValue)) {
-      days.remove(daysValue);
-      return true;
+      boolean result = days.remove(daysValue);
+      return result;
     }
     return false;
   }

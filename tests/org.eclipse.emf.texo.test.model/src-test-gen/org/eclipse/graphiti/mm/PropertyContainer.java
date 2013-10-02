@@ -54,8 +54,8 @@ public abstract class PropertyContainer extends Identifiable {
    */
   public boolean addToProperties(Property propertiesValue) {
     if (!properties.contains(propertiesValue)) {
-      properties.add(propertiesValue);
-      return true;
+      boolean result = properties.add(propertiesValue);
+      return result;
     }
     return false;
   }
@@ -72,8 +72,8 @@ public abstract class PropertyContainer extends Identifiable {
    */
   public boolean removeFromProperties(Property propertiesValue) {
     if (properties.contains(propertiesValue)) {
-      properties.remove(propertiesValue);
-      return true;
+      boolean result = properties.remove(propertiesValue);
+      return result;
     }
     return false;
   }

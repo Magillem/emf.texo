@@ -65,8 +65,8 @@ public class GradientColoredAreas extends Identifiable {
    */
   public boolean addToGradientColor(GradientColoredArea gradientColorValue) {
     if (!gradientColor.contains(gradientColorValue)) {
-      gradientColor.add(gradientColorValue);
-      return true;
+      boolean result = gradientColor.add(gradientColorValue);
+      return result;
     }
     return false;
   }
@@ -83,8 +83,8 @@ public class GradientColoredAreas extends Identifiable {
    */
   public boolean removeFromGradientColor(GradientColoredArea gradientColorValue) {
     if (gradientColor.contains(gradientColorValue)) {
-      gradientColor.remove(gradientColorValue);
-      return true;
+      boolean result = gradientColor.remove(gradientColorValue);
+      return result;
     }
     return false;
   }

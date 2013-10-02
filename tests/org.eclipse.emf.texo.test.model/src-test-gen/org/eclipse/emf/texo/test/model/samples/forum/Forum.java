@@ -98,8 +98,8 @@ public class Forum extends Identifiable {
    */
   public boolean addToMembers(Member membersValue) {
     if (!members.contains(membersValue)) {
-      members.add(membersValue);
-      return true;
+      boolean result = members.add(membersValue);
+      return result;
     }
     return false;
   }
@@ -116,8 +116,8 @@ public class Forum extends Identifiable {
    */
   public boolean removeFromMembers(Member membersValue) {
     if (members.contains(membersValue)) {
-      members.remove(membersValue);
-      return true;
+      boolean result = members.remove(membersValue);
+      return result;
     }
     return false;
   }
@@ -168,8 +168,8 @@ public class Forum extends Identifiable {
    */
   public boolean addToTopics(Topic topicsValue) {
     if (!topics.contains(topicsValue)) {
-      topics.add(topicsValue);
-      return true;
+      boolean result = topics.add(topicsValue);
+      return result;
     }
     return false;
   }
@@ -186,8 +186,8 @@ public class Forum extends Identifiable {
    */
   public boolean removeFromTopics(Topic topicsValue) {
     if (topics.contains(topicsValue)) {
-      topics.remove(topicsValue);
-      return true;
+      boolean result = topics.remove(topicsValue);
+      return result;
     }
     return false;
   }

@@ -71,9 +71,9 @@ public class EClass1 extends Identifiable {
    */
   public boolean addToToClass0(EClass0 toClass0Value) {
     if (!toClass0.contains(toClass0Value)) {
-      toClass0.add(toClass0Value);
+      boolean result = toClass0.add(toClass0Value);
       toClass0Value.setToClass1(this);
-      return true;
+      return result;
     }
     return false;
   }
@@ -90,9 +90,9 @@ public class EClass1 extends Identifiable {
    */
   public boolean removeFromToClass0(EClass0 toClass0Value) {
     if (toClass0.contains(toClass0Value)) {
-      toClass0.remove(toClass0Value);
+      boolean result = toClass0.remove(toClass0Value);
       toClass0Value.setToClass1(null);
-      return true;
+      return result;
     }
     return false;
   }
@@ -148,9 +148,9 @@ public class EClass1 extends Identifiable {
    */
   public boolean addToMany(EClass0 manyValue) {
     if (!many.contains(manyValue)) {
-      many.add(manyValue);
+      boolean result = many.add(manyValue);
       manyValue.addToMany(this);
-      return true;
+      return result;
     }
     return false;
   }
@@ -167,9 +167,9 @@ public class EClass1 extends Identifiable {
    */
   public boolean removeFromMany(EClass0 manyValue) {
     if (many.contains(manyValue)) {
-      many.remove(manyValue);
+      boolean result = many.remove(manyValue);
       manyValue.removeFromMany(this);
-      return true;
+      return result;
     }
     return false;
   }

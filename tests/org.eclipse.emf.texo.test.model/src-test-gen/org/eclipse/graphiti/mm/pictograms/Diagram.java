@@ -196,8 +196,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean addToConnections(Connection connectionsValue) {
     if (!connections.contains(connectionsValue)) {
-      connections.add(connectionsValue);
-      return true;
+      boolean result = connections.add(connectionsValue);
+      return result;
     }
     return false;
   }
@@ -214,8 +214,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean removeFromConnections(Connection connectionsValue) {
     if (connections.contains(connectionsValue)) {
-      connections.remove(connectionsValue);
-      return true;
+      boolean result = connections.remove(connectionsValue);
+      return result;
     }
     return false;
   }
@@ -347,8 +347,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean addToColors(Color colorsValue) {
     if (!colors.contains(colorsValue)) {
-      colors.add(colorsValue);
-      return true;
+      boolean result = colors.add(colorsValue);
+      return result;
     }
     return false;
   }
@@ -365,8 +365,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean removeFromColors(Color colorsValue) {
     if (colors.contains(colorsValue)) {
-      colors.remove(colorsValue);
-      return true;
+      boolean result = colors.remove(colorsValue);
+      return result;
     }
     return false;
   }
@@ -417,8 +417,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean addToFonts(Font fontsValue) {
     if (!fonts.contains(fontsValue)) {
-      fonts.add(fontsValue);
-      return true;
+      boolean result = fonts.add(fontsValue);
+      return result;
     }
     return false;
   }
@@ -435,8 +435,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean removeFromFonts(Font fontsValue) {
     if (fonts.contains(fontsValue)) {
-      fonts.remove(fontsValue);
-      return true;
+      boolean result = fonts.remove(fontsValue);
+      return result;
     }
     return false;
   }
@@ -487,8 +487,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean addToPictogramLinks(PictogramLink pictogramLinksValue) {
     if (!pictogramLinks.contains(pictogramLinksValue)) {
-      pictogramLinks.add(pictogramLinksValue);
-      return true;
+      boolean result = pictogramLinks.add(pictogramLinksValue);
+      return result;
     }
     return false;
   }
@@ -505,8 +505,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean removeFromPictogramLinks(PictogramLink pictogramLinksValue) {
     if (pictogramLinks.contains(pictogramLinksValue)) {
-      pictogramLinks.remove(pictogramLinksValue);
-      return true;
+      boolean result = pictogramLinks.remove(pictogramLinksValue);
+      return result;
     }
     return false;
   }
@@ -607,8 +607,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean addToStyles(Style stylesValue) {
     if (!styles.contains(stylesValue)) {
-      styles.add(stylesValue);
-      return true;
+      boolean result = styles.add(stylesValue);
+      return result;
     }
     return false;
   }
@@ -625,8 +625,8 @@ public class Diagram extends ContainerShape {
    */
   public boolean removeFromStyles(Style stylesValue) {
     if (styles.contains(stylesValue)) {
-      styles.remove(stylesValue);
-      return true;
+      boolean result = styles.remove(stylesValue);
+      return result;
     }
     return false;
   }

@@ -153,8 +153,8 @@ public class TestAny extends Identifiable {
    */
   public boolean addToMultiAnyType(Object multiAnyTypeValue) {
     if (!multiAnyType.contains(multiAnyTypeValue)) {
-      multiAnyType.add(multiAnyTypeValue);
-      return true;
+      boolean result = multiAnyType.add(multiAnyTypeValue);
+      return result;
     }
     return false;
   }
@@ -171,8 +171,8 @@ public class TestAny extends Identifiable {
    */
   public boolean removeFromMultiAnyType(Object multiAnyTypeValue) {
     if (multiAnyType.contains(multiAnyTypeValue)) {
-      multiAnyType.remove(multiAnyTypeValue);
-      return true;
+      boolean result = multiAnyType.remove(multiAnyTypeValue);
+      return result;
     }
     return false;
   }

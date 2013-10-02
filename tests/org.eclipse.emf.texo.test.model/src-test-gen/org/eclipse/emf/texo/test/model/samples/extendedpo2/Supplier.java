@@ -98,8 +98,8 @@ public class Supplier extends Identifiable {
    */
   public boolean addToCustomers(Customer customersValue) {
     if (!customers.contains(customersValue)) {
-      customers.add(customersValue);
-      return true;
+      boolean result = customers.add(customersValue);
+      return result;
     }
     return false;
   }
@@ -116,8 +116,8 @@ public class Supplier extends Identifiable {
    */
   public boolean removeFromCustomers(Customer customersValue) {
     if (customers.contains(customersValue)) {
-      customers.remove(customersValue);
-      return true;
+      boolean result = customers.remove(customersValue);
+      return result;
     }
     return false;
   }
@@ -168,8 +168,8 @@ public class Supplier extends Identifiable {
    */
   public boolean addToOrders(PurchaseOrder ordersValue) {
     if (!orders.contains(ordersValue)) {
-      orders.add(ordersValue);
-      return true;
+      boolean result = orders.add(ordersValue);
+      return result;
     }
     return false;
   }
@@ -186,8 +186,8 @@ public class Supplier extends Identifiable {
    */
   public boolean removeFromOrders(PurchaseOrder ordersValue) {
     if (orders.contains(ordersValue)) {
-      orders.remove(ordersValue);
-      return true;
+      boolean result = orders.remove(ordersValue);
+      return result;
     }
     return false;
   }

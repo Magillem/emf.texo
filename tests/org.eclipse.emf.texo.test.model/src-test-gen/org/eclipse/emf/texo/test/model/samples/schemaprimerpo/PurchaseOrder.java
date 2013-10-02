@@ -168,8 +168,8 @@ public class PurchaseOrder extends Identifiable {
    */
   public boolean addToItems(Item itemsValue) {
     if (!items.contains(itemsValue)) {
-      items.add(itemsValue);
-      return true;
+      boolean result = items.add(itemsValue);
+      return result;
     }
     return false;
   }
@@ -186,8 +186,8 @@ public class PurchaseOrder extends Identifiable {
    */
   public boolean removeFromItems(Item itemsValue) {
     if (items.contains(itemsValue)) {
-      items.remove(itemsValue);
-      return true;
+      boolean result = items.remove(itemsValue);
+      return result;
     }
     return false;
   }

@@ -51,8 +51,8 @@ public class DeployedSoftwareSystem extends AbstractPlatformElement {
    */
   public boolean addToGroupedComponent(DeployedComponent groupedComponentValue) {
     if (!groupedComponent.contains(groupedComponentValue)) {
-      groupedComponent.add(groupedComponentValue);
-      return true;
+      boolean result = groupedComponent.add(groupedComponentValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class DeployedSoftwareSystem extends AbstractPlatformElement {
    */
   public boolean removeFromGroupedComponent(DeployedComponent groupedComponentValue) {
     if (groupedComponent.contains(groupedComponentValue)) {
-      groupedComponent.remove(groupedComponentValue);
-      return true;
+      boolean result = groupedComponent.remove(groupedComponentValue);
+      return result;
     }
     return false;
   }

@@ -150,8 +150,8 @@ public class AggregatedRelationship extends ModelElement {
    */
   public boolean addToRelation(KDMRelationship relationValue) {
     if (!relation.contains(relationValue)) {
-      relation.add(relationValue);
-      return true;
+      boolean result = relation.add(relationValue);
+      return result;
     }
     return false;
   }
@@ -168,8 +168,8 @@ public class AggregatedRelationship extends ModelElement {
    */
   public boolean removeFromRelation(KDMRelationship relationValue) {
     if (relation.contains(relationValue)) {
-      relation.remove(relationValue);
-      return true;
+      boolean result = relation.remove(relationValue);
+      return result;
     }
     return false;
   }

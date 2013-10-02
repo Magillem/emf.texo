@@ -51,8 +51,8 @@ public class EventModel extends KDMModel {
    */
   public boolean addToEventElement(AbstractEventElement eventElementValue) {
     if (!eventElement.contains(eventElementValue)) {
-      eventElement.add(eventElementValue);
-      return true;
+      boolean result = eventElement.add(eventElementValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class EventModel extends KDMModel {
    */
   public boolean removeFromEventElement(AbstractEventElement eventElementValue) {
     if (eventElement.contains(eventElementValue)) {
-      eventElement.remove(eventElementValue);
-      return true;
+      boolean result = eventElement.remove(eventElementValue);
+      return result;
     }
     return false;
   }

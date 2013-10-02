@@ -189,8 +189,8 @@ public class ResponseType extends Identifiable {
    */
   public boolean addToData(Object dataValue) {
     if (!data.contains(dataValue)) {
-      data.add(dataValue);
-      return true;
+      boolean result = data.add(dataValue);
+      return result;
     }
     return false;
   }
@@ -207,8 +207,8 @@ public class ResponseType extends Identifiable {
    */
   public boolean removeFromData(Object dataValue) {
     if (data.contains(dataValue)) {
-      data.remove(dataValue);
-      return true;
+      boolean result = data.remove(dataValue);
+      return result;
     }
     return false;
   }

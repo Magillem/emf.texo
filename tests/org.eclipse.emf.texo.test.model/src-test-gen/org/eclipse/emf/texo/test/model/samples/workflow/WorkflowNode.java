@@ -120,8 +120,8 @@ public abstract class WorkflowNode extends WorkflowElement {
    */
   public boolean addToOutputs(OutputPort outputsValue) {
     if (!outputs.contains(outputsValue)) {
-      outputs.add(outputsValue);
-      return true;
+      boolean result = outputs.add(outputsValue);
+      return result;
     }
     return false;
   }
@@ -138,8 +138,8 @@ public abstract class WorkflowNode extends WorkflowElement {
    */
   public boolean removeFromOutputs(OutputPort outputsValue) {
     if (outputs.contains(outputsValue)) {
-      outputs.remove(outputsValue);
-      return true;
+      boolean result = outputs.remove(outputsValue);
+      return result;
     }
     return false;
   }
@@ -190,8 +190,8 @@ public abstract class WorkflowNode extends WorkflowElement {
    */
   public boolean addToInputs(InputPort inputsValue) {
     if (!inputs.contains(inputsValue)) {
-      inputs.add(inputsValue);
-      return true;
+      boolean result = inputs.add(inputsValue);
+      return result;
     }
     return false;
   }
@@ -208,8 +208,8 @@ public abstract class WorkflowNode extends WorkflowElement {
    */
   public boolean removeFromInputs(InputPort inputsValue) {
     if (inputs.contains(inputsValue)) {
-      inputs.remove(inputsValue);
-      return true;
+      boolean result = inputs.remove(inputsValue);
+      return result;
     }
     return false;
   }

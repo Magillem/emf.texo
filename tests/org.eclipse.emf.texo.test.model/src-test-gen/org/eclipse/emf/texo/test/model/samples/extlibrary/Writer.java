@@ -85,8 +85,8 @@ public class Writer extends Person {
    */
   public boolean addToBooks(Book booksValue) {
     if (!books.contains(booksValue)) {
-      books.add(booksValue);
-      return true;
+      boolean result = books.add(booksValue);
+      return result;
     }
     return false;
   }
@@ -103,8 +103,8 @@ public class Writer extends Person {
    */
   public boolean removeFromBooks(Book booksValue) {
     if (books.contains(booksValue)) {
-      books.remove(booksValue);
-      return true;
+      boolean result = books.remove(booksValue);
+      return result;
     }
     return false;
   }

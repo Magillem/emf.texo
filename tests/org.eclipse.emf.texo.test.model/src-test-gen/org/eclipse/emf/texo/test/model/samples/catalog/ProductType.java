@@ -135,8 +135,8 @@ public class ProductType extends Identifiable {
    */
   public boolean addToRemark(StringType remarkValue) {
     if (!remark.contains(remarkValue)) {
-      remark.add(remarkValue);
-      return true;
+      boolean result = remark.add(remarkValue);
+      return result;
     }
     return false;
   }
@@ -153,8 +153,8 @@ public class ProductType extends Identifiable {
    */
   public boolean removeFromRemark(StringType remarkValue) {
     if (remark.contains(remarkValue)) {
-      remark.remove(remarkValue);
-      return true;
+      boolean result = remark.remove(remarkValue);
+      return result;
     }
     return false;
   }

@@ -50,8 +50,8 @@ public class ResourceType extends AbstractPlatformElement {
    */
   public boolean addToPlatformElement(AbstractPlatformElement platformElementValue) {
     if (!platformElement.contains(platformElementValue)) {
-      platformElement.add(platformElementValue);
-      return true;
+      boolean result = platformElement.add(platformElementValue);
+      return result;
     }
     return false;
   }
@@ -68,8 +68,8 @@ public class ResourceType extends AbstractPlatformElement {
    */
   public boolean removeFromPlatformElement(AbstractPlatformElement platformElementValue) {
     if (platformElement.contains(platformElementValue)) {
-      platformElement.remove(platformElementValue);
-      return true;
+      boolean result = platformElement.remove(platformElementValue);
+      return result;
     }
     return false;
   }

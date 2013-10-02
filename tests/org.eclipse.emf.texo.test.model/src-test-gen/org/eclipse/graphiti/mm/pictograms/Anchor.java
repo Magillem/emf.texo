@@ -101,8 +101,8 @@ public abstract class Anchor extends PictogramElement {
    */
   public boolean addToOutgoingConnections(Connection outgoingConnectionsValue) {
     if (!outgoingConnections.contains(outgoingConnectionsValue)) {
-      outgoingConnections.add(outgoingConnectionsValue);
-      return true;
+      boolean result = outgoingConnections.add(outgoingConnectionsValue);
+      return result;
     }
     return false;
   }
@@ -119,8 +119,8 @@ public abstract class Anchor extends PictogramElement {
    */
   public boolean removeFromOutgoingConnections(Connection outgoingConnectionsValue) {
     if (outgoingConnections.contains(outgoingConnectionsValue)) {
-      outgoingConnections.remove(outgoingConnectionsValue);
-      return true;
+      boolean result = outgoingConnections.remove(outgoingConnectionsValue);
+      return result;
     }
     return false;
   }
@@ -171,8 +171,8 @@ public abstract class Anchor extends PictogramElement {
    */
   public boolean addToIncomingConnections(Connection incomingConnectionsValue) {
     if (!incomingConnections.contains(incomingConnectionsValue)) {
-      incomingConnections.add(incomingConnectionsValue);
-      return true;
+      boolean result = incomingConnections.add(incomingConnectionsValue);
+      return result;
     }
     return false;
   }
@@ -189,8 +189,8 @@ public abstract class Anchor extends PictogramElement {
    */
   public boolean removeFromIncomingConnections(Connection incomingConnectionsValue) {
     if (incomingConnections.contains(incomingConnectionsValue)) {
-      incomingConnections.remove(incomingConnectionsValue);
-      return true;
+      boolean result = incomingConnections.remove(incomingConnectionsValue);
+      return result;
     }
     return false;
   }

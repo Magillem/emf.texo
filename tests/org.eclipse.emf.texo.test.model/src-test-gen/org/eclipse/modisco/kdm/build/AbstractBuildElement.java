@@ -52,8 +52,8 @@ public abstract class AbstractBuildElement extends KDMEntity {
    */
   public boolean addToBuildRelation(AbstractBuildRelationship buildRelationValue) {
     if (!buildRelation.contains(buildRelationValue)) {
-      buildRelation.add(buildRelationValue);
-      return true;
+      boolean result = buildRelation.add(buildRelationValue);
+      return result;
     }
     return false;
   }
@@ -70,8 +70,8 @@ public abstract class AbstractBuildElement extends KDMEntity {
    */
   public boolean removeFromBuildRelation(AbstractBuildRelationship buildRelationValue) {
     if (buildRelation.contains(buildRelationValue)) {
-      buildRelation.remove(buildRelationValue);
-      return true;
+      boolean result = buildRelation.remove(buildRelationValue);
+      return result;
     }
     return false;
   }

@@ -68,8 +68,8 @@ public abstract class ModelElement extends Element {
    */
   public boolean addToStereotype(Stereotype stereotypeValue) {
     if (!stereotype.contains(stereotypeValue)) {
-      stereotype.add(stereotypeValue);
-      return true;
+      boolean result = stereotype.add(stereotypeValue);
+      return result;
     }
     return false;
   }
@@ -86,8 +86,8 @@ public abstract class ModelElement extends Element {
    */
   public boolean removeFromStereotype(Stereotype stereotypeValue) {
     if (stereotype.contains(stereotypeValue)) {
-      stereotype.remove(stereotypeValue);
-      return true;
+      boolean result = stereotype.remove(stereotypeValue);
+      return result;
     }
     return false;
   }
@@ -140,8 +140,8 @@ public abstract class ModelElement extends Element {
    */
   public boolean addToTaggedValue(ExtendedValue taggedValueValue) {
     if (!taggedValue.contains(taggedValueValue)) {
-      taggedValue.add(taggedValueValue);
-      return true;
+      boolean result = taggedValue.add(taggedValueValue);
+      return result;
     }
     return false;
   }
@@ -158,8 +158,8 @@ public abstract class ModelElement extends Element {
    */
   public boolean removeFromTaggedValue(ExtendedValue taggedValueValue) {
     if (taggedValue.contains(taggedValueValue)) {
-      taggedValue.remove(taggedValueValue);
-      return true;
+      boolean result = taggedValue.remove(taggedValueValue);
+      return result;
     }
     return false;
   }

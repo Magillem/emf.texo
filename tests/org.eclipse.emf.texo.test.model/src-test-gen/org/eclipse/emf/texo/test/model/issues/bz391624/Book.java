@@ -54,8 +54,8 @@ public class Book extends Identifiable {
    */
   public boolean addToAuthors(Author authorsValue) {
     if (!authors.contains(authorsValue)) {
-      authors.add(authorsValue);
-      return true;
+      boolean result = authors.add(authorsValue);
+      return result;
     }
     return false;
   }
@@ -72,8 +72,8 @@ public class Book extends Identifiable {
    */
   public boolean removeFromAuthors(Author authorsValue) {
     if (authors.contains(authorsValue)) {
-      authors.remove(authorsValue);
-      return true;
+      boolean result = authors.remove(authorsValue);
+      return result;
     }
     return false;
   }

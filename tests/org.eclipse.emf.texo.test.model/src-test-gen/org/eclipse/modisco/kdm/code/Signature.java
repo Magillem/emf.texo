@@ -52,8 +52,8 @@ public class Signature extends Datatype {
    */
   public boolean addToParameterUnit(ParameterUnit parameterUnitValue) {
     if (!parameterUnit.contains(parameterUnitValue)) {
-      parameterUnit.add(parameterUnitValue);
-      return true;
+      boolean result = parameterUnit.add(parameterUnitValue);
+      return result;
     }
     return false;
   }
@@ -70,8 +70,8 @@ public class Signature extends Datatype {
    */
   public boolean removeFromParameterUnit(ParameterUnit parameterUnitValue) {
     if (parameterUnit.contains(parameterUnitValue)) {
-      parameterUnit.remove(parameterUnitValue);
-      return true;
+      boolean result = parameterUnit.remove(parameterUnitValue);
+      return result;
     }
     return false;
   }

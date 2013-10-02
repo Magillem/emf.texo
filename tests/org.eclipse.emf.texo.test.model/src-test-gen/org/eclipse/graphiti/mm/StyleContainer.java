@@ -54,8 +54,8 @@ public abstract class StyleContainer extends Identifiable {
    */
   public boolean addToStyles(Style stylesValue) {
     if (!styles.contains(stylesValue)) {
-      styles.add(stylesValue);
-      return true;
+      boolean result = styles.add(stylesValue);
+      return result;
     }
     return false;
   }
@@ -72,8 +72,8 @@ public abstract class StyleContainer extends Identifiable {
    */
   public boolean removeFromStyles(Style stylesValue) {
     if (styles.contains(stylesValue)) {
-      styles.remove(stylesValue);
-      return true;
+      boolean result = styles.remove(stylesValue);
+      return result;
     }
     return false;
   }

@@ -52,8 +52,8 @@ public abstract class AbstractInventoryElement extends KDMEntity {
    */
   public boolean addToInventoryRelationship(AbstractInventoryRelationship inventoryRelationshipValue) {
     if (!inventoryRelationship.contains(inventoryRelationshipValue)) {
-      inventoryRelationship.add(inventoryRelationshipValue);
-      return true;
+      boolean result = inventoryRelationship.add(inventoryRelationshipValue);
+      return result;
     }
     return false;
   }
@@ -70,8 +70,8 @@ public abstract class AbstractInventoryElement extends KDMEntity {
    */
   public boolean removeFromInventoryRelationship(AbstractInventoryRelationship inventoryRelationshipValue) {
     if (inventoryRelationship.contains(inventoryRelationshipValue)) {
-      inventoryRelationship.remove(inventoryRelationshipValue);
-      return true;
+      boolean result = inventoryRelationship.remove(inventoryRelationshipValue);
+      return result;
     }
     return false;
   }

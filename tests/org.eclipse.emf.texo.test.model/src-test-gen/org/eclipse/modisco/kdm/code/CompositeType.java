@@ -52,8 +52,8 @@ public class CompositeType extends Datatype {
    */
   public boolean addToItemUnit(ItemUnit itemUnitValue) {
     if (!itemUnit.contains(itemUnitValue)) {
-      itemUnit.add(itemUnitValue);
-      return true;
+      boolean result = itemUnit.add(itemUnitValue);
+      return result;
     }
     return false;
   }
@@ -70,8 +70,8 @@ public class CompositeType extends Datatype {
    */
   public boolean removeFromItemUnit(ItemUnit itemUnitValue) {
     if (itemUnit.contains(itemUnitValue)) {
-      itemUnit.remove(itemUnitValue);
-      return true;
+      boolean result = itemUnit.remove(itemUnitValue);
+      return result;
     }
     return false;
   }

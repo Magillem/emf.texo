@@ -54,8 +54,8 @@ public class Borrower extends Person {
    */
   public boolean addToBorrowed(Lendable borrowedValue) {
     if (!borrowed.contains(borrowedValue)) {
-      borrowed.add(borrowedValue);
-      return true;
+      boolean result = borrowed.add(borrowedValue);
+      return result;
     }
     return false;
   }
@@ -72,8 +72,8 @@ public class Borrower extends Person {
    */
   public boolean removeFromBorrowed(Lendable borrowedValue) {
     if (borrowed.contains(borrowedValue)) {
-      borrowed.remove(borrowedValue);
-      return true;
+      boolean result = borrowed.remove(borrowedValue);
+      return result;
     }
     return false;
   }

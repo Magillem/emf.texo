@@ -52,8 +52,8 @@ public class DeployedComponent extends AbstractPlatformElement {
    */
   public boolean addToGroupedCode(Module groupedCodeValue) {
     if (!groupedCode.contains(groupedCodeValue)) {
-      groupedCode.add(groupedCodeValue);
-      return true;
+      boolean result = groupedCode.add(groupedCodeValue);
+      return result;
     }
     return false;
   }
@@ -70,8 +70,8 @@ public class DeployedComponent extends AbstractPlatformElement {
    */
   public boolean removeFromGroupedCode(Module groupedCodeValue) {
     if (groupedCode.contains(groupedCodeValue)) {
-      groupedCode.remove(groupedCodeValue);
-      return true;
+      boolean result = groupedCode.remove(groupedCodeValue);
+      return result;
     }
     return false;
   }

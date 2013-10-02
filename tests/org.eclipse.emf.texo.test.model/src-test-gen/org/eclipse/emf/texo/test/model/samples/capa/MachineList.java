@@ -55,8 +55,8 @@ public class MachineList extends Identifiable {
    */
   public boolean addToMachines(Machine machinesValue) {
     if (!machines.contains(machinesValue)) {
-      machines.add(machinesValue);
-      return true;
+      boolean result = machines.add(machinesValue);
+      return result;
     }
     return false;
   }
@@ -73,8 +73,8 @@ public class MachineList extends Identifiable {
    */
   public boolean removeFromMachines(Machine machinesValue) {
     if (machines.contains(machinesValue)) {
-      machines.remove(machinesValue);
-      return true;
+      boolean result = machines.remove(machinesValue);
+      return result;
     }
     return false;
   }

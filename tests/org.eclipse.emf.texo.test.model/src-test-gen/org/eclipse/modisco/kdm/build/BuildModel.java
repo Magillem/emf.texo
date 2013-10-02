@@ -51,8 +51,8 @@ public class BuildModel extends KDMModel {
    */
   public boolean addToBuildElement(AbstractBuildElement buildElementValue) {
     if (!buildElement.contains(buildElementValue)) {
-      buildElement.add(buildElementValue);
-      return true;
+      boolean result = buildElement.add(buildElementValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class BuildModel extends KDMModel {
    */
   public boolean removeFromBuildElement(AbstractBuildElement buildElementValue) {
     if (buildElement.contains(buildElementValue)) {
-      buildElement.remove(buildElementValue);
-      return true;
+      boolean result = buildElement.remove(buildElementValue);
+      return result;
     }
     return false;
   }

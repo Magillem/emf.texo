@@ -51,8 +51,8 @@ public class DeployedResource extends AbstractPlatformElement {
    */
   public boolean addToPlatformElement(ResourceType platformElementValue) {
     if (!platformElement.contains(platformElementValue)) {
-      platformElement.add(platformElementValue);
-      return true;
+      boolean result = platformElement.add(platformElementValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class DeployedResource extends AbstractPlatformElement {
    */
   public boolean removeFromPlatformElement(ResourceType platformElementValue) {
     if (platformElement.contains(platformElementValue)) {
-      platformElement.remove(platformElementValue);
-      return true;
+      boolean result = platformElement.remove(platformElementValue);
+      return result;
     }
     return false;
   }

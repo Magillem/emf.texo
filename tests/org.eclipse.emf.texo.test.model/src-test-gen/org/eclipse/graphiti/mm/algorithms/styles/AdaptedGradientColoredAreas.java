@@ -98,8 +98,8 @@ public class AdaptedGradientColoredAreas extends Identifiable {
    */
   public boolean addToAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
     if (!adaptedGradientColoredAreas.contains(adaptedGradientColoredAreasValue)) {
-      adaptedGradientColoredAreas.add(adaptedGradientColoredAreasValue);
-      return true;
+      boolean result = adaptedGradientColoredAreas.add(adaptedGradientColoredAreasValue);
+      return result;
     }
     return false;
   }
@@ -116,8 +116,8 @@ public class AdaptedGradientColoredAreas extends Identifiable {
    */
   public boolean removeFromAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
     if (adaptedGradientColoredAreas.contains(adaptedGradientColoredAreasValue)) {
-      adaptedGradientColoredAreas.remove(adaptedGradientColoredAreasValue);
-      return true;
+      boolean result = adaptedGradientColoredAreas.remove(adaptedGradientColoredAreasValue);
+      return result;
     }
     return false;
   }

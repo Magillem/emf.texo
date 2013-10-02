@@ -50,8 +50,8 @@ public abstract class AnchorContainer extends PictogramElement {
    */
   public boolean addToAnchors(Anchor anchorsValue) {
     if (!anchors.contains(anchorsValue)) {
-      anchors.add(anchorsValue);
-      return true;
+      boolean result = anchors.add(anchorsValue);
+      return result;
     }
     return false;
   }
@@ -68,8 +68,8 @@ public abstract class AnchorContainer extends PictogramElement {
    */
   public boolean removeFromAnchors(Anchor anchorsValue) {
     if (anchors.contains(anchorsValue)) {
-      anchors.remove(anchorsValue);
-      return true;
+      boolean result = anchors.remove(anchorsValue);
+      return result;
     }
     return false;
   }

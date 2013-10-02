@@ -158,7 +158,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                 «IF featureAnnotation.EStructuralFeature.unique»
                 if (!«featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
                 «ENDIF»
-                    «featureAnnotation.validJavaMemberName».add(«featureAnnotation.validJavaMemberName»Value);
+                    boolean result = «featureAnnotation.validJavaMemberName».add(«featureAnnotation.validJavaMemberName»Value);
                     «IF (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation != null && (featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport»
                     «var oppositeAnnotation = (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation»
                     «IF oppositeAnnotation.many»
@@ -171,7 +171,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                         «featureAnnotation.validJavaMemberName»Value.«oppositeAnnotation.setter»(this);
                     «ENDIF»
                     «ENDIF»
-                    return true;
+                    return result;
                 «IF featureAnnotation.EStructuralFeature.unique»
                 }
                 return false;
@@ -194,7 +194,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
             public boolean removeFrom«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»(«featureAnnotation.itemType» «featureAnnotation.validJavaMemberName»Value) {
                 «IF !featureAnnotation.EStructuralFeature.volatile»
                 if («featureAnnotation.validJavaMemberName».contains(«featureAnnotation.validJavaMemberName»Value)) {
-                    «featureAnnotation.validJavaMemberName».remove(«featureAnnotation.validJavaMemberName»Value);
+                    boolean result = «featureAnnotation.validJavaMemberName».remove(«featureAnnotation.validJavaMemberName»Value);
                     «IF (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation != null && (featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport»
                     «var oppositeAnnotation = (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation»
                     «IF oppositeAnnotation.many»
@@ -207,7 +207,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                         «featureAnnotation.validJavaMemberName»Value.«oppositeAnnotation.setter»(null);
                     «ENDIF»
                     «ENDIF»
-                    return true;
+                    return result;
                 }
                	return false;
                 «ELSE»

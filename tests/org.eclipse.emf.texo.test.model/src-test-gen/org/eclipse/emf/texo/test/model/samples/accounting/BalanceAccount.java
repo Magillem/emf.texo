@@ -59,8 +59,8 @@ public class BalanceAccount extends Account {
    */
   public boolean addToReport(ReportGroup reportValue) {
     if (!report.contains(reportValue)) {
-      report.add(reportValue);
-      return true;
+      boolean result = report.add(reportValue);
+      return result;
     }
     return false;
   }
@@ -77,8 +77,8 @@ public class BalanceAccount extends Account {
    */
   public boolean removeFromReport(ReportGroup reportValue) {
     if (report.contains(reportValue)) {
-      report.remove(reportValue);
-      return true;
+      boolean result = report.remove(reportValue);
+      return result;
     }
     return false;
   }

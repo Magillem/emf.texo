@@ -55,8 +55,8 @@ public class BooksType extends Identifiable {
    */
   public boolean addToBook(BookType bookValue) {
     if (!book.contains(bookValue)) {
-      book.add(bookValue);
-      return true;
+      boolean result = book.add(bookValue);
+      return result;
     }
     return false;
   }
@@ -73,8 +73,8 @@ public class BooksType extends Identifiable {
    */
   public boolean removeFromBook(BookType bookValue) {
     if (book.contains(bookValue)) {
-      book.remove(bookValue);
-      return true;
+      boolean result = book.remove(bookValue);
+      return result;
     }
     return false;
   }

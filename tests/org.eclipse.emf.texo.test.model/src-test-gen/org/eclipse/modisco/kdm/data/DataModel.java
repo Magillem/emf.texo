@@ -51,8 +51,8 @@ public class DataModel extends KDMModel {
    */
   public boolean addToDataElement(AbstractDataElement dataElementValue) {
     if (!dataElement.contains(dataElementValue)) {
-      dataElement.add(dataElementValue);
-      return true;
+      boolean result = dataElement.add(dataElementValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class DataModel extends KDMModel {
    */
   public boolean removeFromDataElement(AbstractDataElement dataElementValue) {
     if (dataElement.contains(dataElementValue)) {
-      dataElement.remove(dataElementValue);
-      return true;
+      boolean result = dataElement.remove(dataElementValue);
+      return result;
     }
     return false;
   }

@@ -582,6 +582,7 @@ public class EntityTemplate extends BaseTemplate {
                         }
                         _builder.append("    ");
                         _builder.append("    ");
+                        _builder.append("boolean result = ");
                         String _validJavaMemberName_11 = featureAnnotation_1.getValidJavaMemberName();
                         _builder.append(_validJavaMemberName_11, "        ");
                         _builder.append(".add(");
@@ -645,7 +646,7 @@ public class EntityTemplate extends BaseTemplate {
                         }
                         _builder.append("    ");
                         _builder.append("    ");
-                        _builder.append("return true;");
+                        _builder.append("return result;");
                         _builder.newLine();
                         {
                           EStructuralFeature _eStructuralFeature_12 = featureAnnotation_1.getEStructuralFeature();
@@ -732,6 +733,7 @@ public class EntityTemplate extends BaseTemplate {
                         _builder.newLineIfNotEmpty();
                         _builder.append("    ");
                         _builder.append("    ");
+                        _builder.append("boolean result = ");
                         String _validJavaMemberName_22 = featureAnnotation_1.getValidJavaMemberName();
                         _builder.append(_validJavaMemberName_22, "        ");
                         _builder.append(".remove(");
@@ -795,7 +797,7 @@ public class EntityTemplate extends BaseTemplate {
                         }
                         _builder.append("    ");
                         _builder.append("    ");
-                        _builder.append("return true;");
+                        _builder.append("return result;");
                         _builder.newLine();
                         _builder.append("    ");
                         _builder.append("}");

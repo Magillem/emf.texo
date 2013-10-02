@@ -106,8 +106,8 @@ public class JournalGroup extends Identifiable {
    */
   public boolean addToJournalGroups(JournalGroup journalGroupsValue) {
     if (!journalGroups.contains(journalGroupsValue)) {
-      journalGroups.add(journalGroupsValue);
-      return true;
+      boolean result = journalGroups.add(journalGroupsValue);
+      return result;
     }
     return false;
   }
@@ -124,8 +124,8 @@ public class JournalGroup extends Identifiable {
    */
   public boolean removeFromJournalGroups(JournalGroup journalGroupsValue) {
     if (journalGroups.contains(journalGroupsValue)) {
-      journalGroups.remove(journalGroupsValue);
-      return true;
+      boolean result = journalGroups.remove(journalGroupsValue);
+      return result;
     }
     return false;
   }
@@ -176,8 +176,8 @@ public class JournalGroup extends Identifiable {
    */
   public boolean addToJournalStatements(JournalStatement journalStatementsValue) {
     if (!journalStatements.contains(journalStatementsValue)) {
-      journalStatements.add(journalStatementsValue);
-      return true;
+      boolean result = journalStatements.add(journalStatementsValue);
+      return result;
     }
     return false;
   }
@@ -194,8 +194,8 @@ public class JournalGroup extends Identifiable {
    */
   public boolean removeFromJournalStatements(JournalStatement journalStatementsValue) {
     if (journalStatements.contains(journalStatementsValue)) {
-      journalStatements.remove(journalStatementsValue);
-      return true;
+      boolean result = journalStatements.remove(journalStatementsValue);
+      return result;
     }
     return false;
   }

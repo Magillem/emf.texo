@@ -108,8 +108,8 @@ public class ReportGroup extends Identifiable {
    */
   public boolean addToReportGroup(ReportGroup reportGroupValue) {
     if (!reportGroup.contains(reportGroupValue)) {
-      reportGroup.add(reportGroupValue);
-      return true;
+      boolean result = reportGroup.add(reportGroupValue);
+      return result;
     }
     return false;
   }
@@ -126,8 +126,8 @@ public class ReportGroup extends Identifiable {
    */
   public boolean removeFromReportGroup(ReportGroup reportGroupValue) {
     if (reportGroup.contains(reportGroupValue)) {
-      reportGroup.remove(reportGroupValue);
-      return true;
+      boolean result = reportGroup.remove(reportGroupValue);
+      return result;
     }
     return false;
   }
@@ -178,8 +178,8 @@ public class ReportGroup extends Identifiable {
    */
   public boolean addToAccount(BalanceAccount accountValue) {
     if (!account.contains(accountValue)) {
-      account.add(accountValue);
-      return true;
+      boolean result = account.add(accountValue);
+      return result;
     }
     return false;
   }
@@ -196,8 +196,8 @@ public class ReportGroup extends Identifiable {
    */
   public boolean removeFromAccount(BalanceAccount accountValue) {
     if (account.contains(accountValue)) {
-      account.remove(accountValue);
-      return true;
+      boolean result = account.remove(accountValue);
+      return result;
     }
     return false;
   }

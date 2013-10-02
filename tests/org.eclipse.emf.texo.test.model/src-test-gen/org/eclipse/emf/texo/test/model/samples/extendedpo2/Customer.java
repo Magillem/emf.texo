@@ -91,8 +91,8 @@ public class Customer extends Identifiable {
    */
   public boolean addToOrders(PurchaseOrder ordersValue) {
     if (!orders.contains(ordersValue)) {
-      orders.add(ordersValue);
-      return true;
+      boolean result = orders.add(ordersValue);
+      return result;
     }
     return false;
   }
@@ -109,8 +109,8 @@ public class Customer extends Identifiable {
    */
   public boolean removeFromOrders(PurchaseOrder ordersValue) {
     if (orders.contains(ordersValue)) {
-      orders.remove(ordersValue);
-      return true;
+      boolean result = orders.remove(ordersValue);
+      return result;
     }
     return false;
   }

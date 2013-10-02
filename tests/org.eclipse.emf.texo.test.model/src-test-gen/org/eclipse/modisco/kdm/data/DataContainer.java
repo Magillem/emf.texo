@@ -50,8 +50,8 @@ public class DataContainer extends DataResource {
    */
   public boolean addToDataElement(DataResource dataElementValue) {
     if (!dataElement.contains(dataElementValue)) {
-      dataElement.add(dataElementValue);
-      return true;
+      boolean result = dataElement.add(dataElementValue);
+      return result;
     }
     return false;
   }
@@ -68,8 +68,8 @@ public class DataContainer extends DataResource {
    */
   public boolean removeFromDataElement(DataResource dataElementValue) {
     if (dataElement.contains(dataElementValue)) {
-      dataElement.remove(dataElementValue);
-      return true;
+      boolean result = dataElement.remove(dataElementValue);
+      return result;
     }
     return false;
   }

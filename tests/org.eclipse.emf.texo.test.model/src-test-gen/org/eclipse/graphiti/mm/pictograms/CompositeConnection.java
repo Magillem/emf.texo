@@ -53,8 +53,8 @@ public class CompositeConnection extends Connection {
    */
   public boolean addToChildren(CurvedConnection childrenValue) {
     if (!children.contains(childrenValue)) {
-      children.add(childrenValue);
-      return true;
+      boolean result = children.add(childrenValue);
+      return result;
     }
     return false;
   }
@@ -71,8 +71,8 @@ public class CompositeConnection extends Connection {
    */
   public boolean removeFromChildren(CurvedConnection childrenValue) {
     if (children.contains(childrenValue)) {
-      children.remove(childrenValue);
-      return true;
+      boolean result = children.remove(childrenValue);
+      return result;
     }
     return false;
   }

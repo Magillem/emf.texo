@@ -84,8 +84,8 @@ public class EventAction extends AbstractEventElement {
    */
   public boolean addToEventElement(Event eventElementValue) {
     if (!eventElement.contains(eventElementValue)) {
-      eventElement.add(eventElementValue);
-      return true;
+      boolean result = eventElement.add(eventElementValue);
+      return result;
     }
     return false;
   }
@@ -102,8 +102,8 @@ public class EventAction extends AbstractEventElement {
    */
   public boolean removeFromEventElement(Event eventElementValue) {
     if (eventElement.contains(eventElementValue)) {
-      eventElement.remove(eventElementValue);
-      return true;
+      boolean result = eventElement.remove(eventElementValue);
+      return result;
     }
     return false;
   }

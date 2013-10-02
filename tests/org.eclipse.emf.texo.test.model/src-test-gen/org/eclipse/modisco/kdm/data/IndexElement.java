@@ -51,8 +51,8 @@ public class IndexElement extends DataResource {
    */
   public boolean addToImplementation(ItemUnit implementationValue) {
     if (!implementation.contains(implementationValue)) {
-      implementation.add(implementationValue);
-      return true;
+      boolean result = implementation.add(implementationValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class IndexElement extends DataResource {
    */
   public boolean removeFromImplementation(ItemUnit implementationValue) {
     if (implementation.contains(implementationValue)) {
-      implementation.remove(implementationValue);
-      return true;
+      boolean result = implementation.remove(implementationValue);
+      return result;
     }
     return false;
   }

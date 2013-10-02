@@ -60,8 +60,8 @@ public class SimpleContentType extends ComplexContentType {
    */
   public boolean addToType(ComplexContentType typeValue) {
     if (!type.contains(typeValue)) {
-      type.add(typeValue);
-      return true;
+      boolean result = type.add(typeValue);
+      return result;
     }
     return false;
   }
@@ -78,8 +78,8 @@ public class SimpleContentType extends ComplexContentType {
    */
   public boolean removeFromType(ComplexContentType typeValue) {
     if (type.contains(typeValue)) {
-      type.remove(typeValue);
-      return true;
+      boolean result = type.remove(typeValue);
+      return result;
     }
     return false;
   }

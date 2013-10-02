@@ -94,8 +94,8 @@ public class Writer extends Identifiable {
    */
   public boolean addToBooks(Book booksValue) {
     if (!books.contains(booksValue)) {
-      books.add(booksValue);
-      return true;
+      boolean result = books.add(booksValue);
+      return result;
     }
     return false;
   }
@@ -112,8 +112,8 @@ public class Writer extends Identifiable {
    */
   public boolean removeFromBooks(Book booksValue) {
     if (books.contains(booksValue)) {
-      books.remove(booksValue);
-      return true;
+      boolean result = books.remove(booksValue);
+      return result;
     }
     return false;
   }

@@ -155,8 +155,8 @@ public class Connection extends AnchorContainer {
    */
   public boolean addToConnectionDecorators(ConnectionDecorator connectionDecoratorsValue) {
     if (!connectionDecorators.contains(connectionDecoratorsValue)) {
-      connectionDecorators.add(connectionDecoratorsValue);
-      return true;
+      boolean result = connectionDecorators.add(connectionDecoratorsValue);
+      return result;
     }
     return false;
   }
@@ -173,8 +173,8 @@ public class Connection extends AnchorContainer {
    */
   public boolean removeFromConnectionDecorators(ConnectionDecorator connectionDecoratorsValue) {
     if (connectionDecorators.contains(connectionDecoratorsValue)) {
-      connectionDecorators.remove(connectionDecoratorsValue);
-      return true;
+      boolean result = connectionDecorators.remove(connectionDecoratorsValue);
+      return result;
     }
     return false;
   }

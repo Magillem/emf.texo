@@ -61,8 +61,8 @@ public class EnumeratedType extends Datatype {
    */
   public boolean addToValue(Value valueValue) {
     if (!value.contains(valueValue)) {
-      value.add(valueValue);
-      return true;
+      boolean result = value.add(valueValue);
+      return result;
     }
     return false;
   }
@@ -79,8 +79,8 @@ public class EnumeratedType extends Datatype {
    */
   public boolean removeFromValue(Value valueValue) {
     if (value.contains(valueValue)) {
-      value.remove(valueValue);
-      return true;
+      boolean result = value.remove(valueValue);
+      return result;
     }
     return false;
   }
@@ -131,8 +131,8 @@ public class EnumeratedType extends Datatype {
    */
   public boolean addToCodeElement(CodeItem codeElementValue) {
     if (!codeElement.contains(codeElementValue)) {
-      codeElement.add(codeElementValue);
-      return true;
+      boolean result = codeElement.add(codeElementValue);
+      return result;
     }
     return false;
   }
@@ -149,8 +149,8 @@ public class EnumeratedType extends Datatype {
    */
   public boolean removeFromCodeElement(CodeItem codeElementValue) {
     if (codeElement.contains(codeElementValue)) {
-      codeElement.remove(codeElementValue);
-      return true;
+      boolean result = codeElement.remove(codeElementValue);
+      return result;
     }
     return false;
   }

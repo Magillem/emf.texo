@@ -68,8 +68,8 @@ public class BuildResource extends AbstractBuildElement {
    */
   public boolean addToImplementation(KDMEntity implementationValue) {
     if (!implementation.contains(implementationValue)) {
-      implementation.add(implementationValue);
-      return true;
+      boolean result = implementation.add(implementationValue);
+      return result;
     }
     return false;
   }
@@ -86,8 +86,8 @@ public class BuildResource extends AbstractBuildElement {
    */
   public boolean removeFromImplementation(KDMEntity implementationValue) {
     if (implementation.contains(implementationValue)) {
-      implementation.remove(implementationValue);
-      return true;
+      boolean result = implementation.remove(implementationValue);
+      return result;
     }
     return false;
   }
@@ -138,8 +138,8 @@ public class BuildResource extends AbstractBuildElement {
    */
   public boolean addToGroupedBuild(AbstractBuildElement groupedBuildValue) {
     if (!groupedBuild.contains(groupedBuildValue)) {
-      groupedBuild.add(groupedBuildValue);
-      return true;
+      boolean result = groupedBuild.add(groupedBuildValue);
+      return result;
     }
     return false;
   }
@@ -156,8 +156,8 @@ public class BuildResource extends AbstractBuildElement {
    */
   public boolean removeFromGroupedBuild(AbstractBuildElement groupedBuildValue) {
     if (groupedBuild.contains(groupedBuildValue)) {
-      groupedBuild.remove(groupedBuildValue);
-      return true;
+      boolean result = groupedBuild.remove(groupedBuildValue);
+      return result;
     }
     return false;
   }
@@ -208,8 +208,8 @@ public class BuildResource extends AbstractBuildElement {
    */
   public boolean addToBuildElement(AbstractBuildElement buildElementValue) {
     if (!buildElement.contains(buildElementValue)) {
-      buildElement.add(buildElementValue);
-      return true;
+      boolean result = buildElement.add(buildElementValue);
+      return result;
     }
     return false;
   }
@@ -226,8 +226,8 @@ public class BuildResource extends AbstractBuildElement {
    */
   public boolean removeFromBuildElement(AbstractBuildElement buildElementValue) {
     if (buildElement.contains(buildElementValue)) {
-      buildElement.remove(buildElementValue);
-      return true;
+      boolean result = buildElement.remove(buildElementValue);
+      return result;
     }
     return false;
   }

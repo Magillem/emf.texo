@@ -83,8 +83,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
-      source.add(sourceValue);
-      return true;
+      boolean result = source.add(sourceValue);
+      return result;
     }
     return false;
   }
@@ -101,8 +101,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
-      source.remove(sourceValue);
-      return true;
+      boolean result = source.remove(sourceValue);
+      return result;
     }
     return false;
   }
@@ -153,8 +153,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean addToComment(CommentUnit commentValue) {
     if (!comment.contains(commentValue)) {
-      comment.add(commentValue);
-      return true;
+      boolean result = comment.add(commentValue);
+      return result;
     }
     return false;
   }
@@ -171,8 +171,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean removeFromComment(CommentUnit commentValue) {
     if (comment.contains(commentValue)) {
-      comment.remove(commentValue);
-      return true;
+      boolean result = comment.remove(commentValue);
+      return result;
     }
     return false;
   }
@@ -223,8 +223,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean addToCodeRelation(AbstractCodeRelationship codeRelationValue) {
     if (!codeRelation.contains(codeRelationValue)) {
-      codeRelation.add(codeRelationValue);
-      return true;
+      boolean result = codeRelation.add(codeRelationValue);
+      return result;
     }
     return false;
   }
@@ -241,8 +241,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean removeFromCodeRelation(AbstractCodeRelationship codeRelationValue) {
     if (codeRelation.contains(codeRelationValue)) {
-      codeRelation.remove(codeRelationValue);
-      return true;
+      boolean result = codeRelation.remove(codeRelationValue);
+      return result;
     }
     return false;
   }
@@ -293,8 +293,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean addToEntryFlow(EntryFlow entryFlowValue) {
     if (!entryFlow.contains(entryFlowValue)) {
-      entryFlow.add(entryFlowValue);
-      return true;
+      boolean result = entryFlow.add(entryFlowValue);
+      return result;
     }
     return false;
   }
@@ -311,8 +311,8 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public boolean removeFromEntryFlow(EntryFlow entryFlowValue) {
     if (entryFlow.contains(entryFlowValue)) {
-      entryFlow.remove(entryFlowValue);
-      return true;
+      boolean result = entryFlow.remove(entryFlowValue);
+      return result;
     }
     return false;
   }

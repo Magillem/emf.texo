@@ -96,8 +96,8 @@ public class AccountGroup extends Identifiable {
    */
   public boolean addToAccount(Account accountValue) {
     if (!account.contains(accountValue)) {
-      account.add(accountValue);
-      return true;
+      boolean result = account.add(accountValue);
+      return result;
     }
     return false;
   }
@@ -114,8 +114,8 @@ public class AccountGroup extends Identifiable {
    */
   public boolean removeFromAccount(Account accountValue) {
     if (account.contains(accountValue)) {
-      account.remove(accountValue);
-      return true;
+      boolean result = account.remove(accountValue);
+      return result;
     }
     return false;
   }

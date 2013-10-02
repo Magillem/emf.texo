@@ -61,8 +61,8 @@ public class BuildDescription extends BuildResource {
    */
   public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
-      source.add(sourceValue);
-      return true;
+      boolean result = source.add(sourceValue);
+      return result;
     }
     return false;
   }
@@ -79,8 +79,8 @@ public class BuildDescription extends BuildResource {
    */
   public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
-      source.remove(sourceValue);
-      return true;
+      boolean result = source.remove(sourceValue);
+      return result;
     }
     return false;
   }

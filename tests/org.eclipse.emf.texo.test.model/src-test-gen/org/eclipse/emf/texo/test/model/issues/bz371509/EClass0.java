@@ -102,9 +102,9 @@ public class EClass0 extends Identifiable {
    */
   public boolean addToMany(EClass1 manyValue) {
     if (!many.contains(manyValue)) {
-      many.add(manyValue);
+      boolean result = many.add(manyValue);
       manyValue.addToMany(this);
-      return true;
+      return result;
     }
     return false;
   }
@@ -121,9 +121,9 @@ public class EClass0 extends Identifiable {
    */
   public boolean removeFromMany(EClass1 manyValue) {
     if (many.contains(manyValue)) {
-      many.remove(manyValue);
+      boolean result = many.remove(manyValue);
       manyValue.removeFromMany(this);
-      return true;
+      return result;
     }
     return false;
   }

@@ -86,8 +86,8 @@ public class ControlElement extends ComputationalObject {
    */
   public boolean addToCodeElement(AbstractCodeElement codeElementValue) {
     if (!codeElement.contains(codeElementValue)) {
-      codeElement.add(codeElementValue);
-      return true;
+      boolean result = codeElement.add(codeElementValue);
+      return result;
     }
     return false;
   }
@@ -104,8 +104,8 @@ public class ControlElement extends ComputationalObject {
    */
   public boolean removeFromCodeElement(AbstractCodeElement codeElementValue) {
     if (codeElement.contains(codeElementValue)) {
-      codeElement.remove(codeElementValue);
-      return true;
+      boolean result = codeElement.remove(codeElementValue);
+      return result;
     }
     return false;
   }

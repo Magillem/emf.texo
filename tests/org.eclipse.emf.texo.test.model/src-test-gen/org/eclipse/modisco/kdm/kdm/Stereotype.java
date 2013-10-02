@@ -68,8 +68,8 @@ public class Stereotype extends Element {
    */
   public boolean addToTag(TagDefinition tagValue) {
     if (!tag.contains(tagValue)) {
-      tag.add(tagValue);
-      return true;
+      boolean result = tag.add(tagValue);
+      return result;
     }
     return false;
   }
@@ -86,8 +86,8 @@ public class Stereotype extends Element {
    */
   public boolean removeFromTag(TagDefinition tagValue) {
     if (tag.contains(tagValue)) {
-      tag.remove(tagValue);
-      return true;
+      boolean result = tag.remove(tagValue);
+      return result;
     }
     return false;
   }

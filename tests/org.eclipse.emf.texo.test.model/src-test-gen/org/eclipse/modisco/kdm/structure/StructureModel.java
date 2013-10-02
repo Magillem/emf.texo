@@ -51,8 +51,8 @@ public class StructureModel extends KDMModel {
    */
   public boolean addToStructureElement(AbstractStructureElement structureElementValue) {
     if (!structureElement.contains(structureElementValue)) {
-      structureElement.add(structureElementValue);
-      return true;
+      boolean result = structureElement.add(structureElementValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class StructureModel extends KDMModel {
    */
   public boolean removeFromStructureElement(AbstractStructureElement structureElementValue) {
     if (structureElement.contains(structureElementValue)) {
-      structureElement.remove(structureElementValue);
-      return true;
+      boolean result = structureElement.remove(structureElementValue);
+      return result;
     }
     return false;
   }

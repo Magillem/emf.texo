@@ -140,8 +140,8 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public boolean addToAccountGroup(AccountGroup accountGroupValue) {
     if (!accountGroup.contains(accountGroupValue)) {
-      accountGroup.add(accountGroupValue);
-      return true;
+      boolean result = accountGroup.add(accountGroupValue);
+      return result;
     }
     return false;
   }
@@ -158,8 +158,8 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public boolean removeFromAccountGroup(AccountGroup accountGroupValue) {
     if (accountGroup.contains(accountGroupValue)) {
-      accountGroup.remove(accountGroupValue);
-      return true;
+      boolean result = accountGroup.remove(accountGroupValue);
+      return result;
     }
     return false;
   }
@@ -210,8 +210,8 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public boolean addToVat(Vat vatValue) {
     if (!vat.contains(vatValue)) {
-      vat.add(vatValue);
-      return true;
+      boolean result = vat.add(vatValue);
+      return result;
     }
     return false;
   }
@@ -228,8 +228,8 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public boolean removeFromVat(Vat vatValue) {
     if (vat.contains(vatValue)) {
-      vat.remove(vatValue);
-      return true;
+      boolean result = vat.remove(vatValue);
+      return result;
     }
     return false;
   }
@@ -330,8 +330,8 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public boolean addToJournalGroup(JournalGroup journalGroupValue) {
     if (!journalGroup.contains(journalGroupValue)) {
-      journalGroup.add(journalGroupValue);
-      return true;
+      boolean result = journalGroup.add(journalGroupValue);
+      return result;
     }
     return false;
   }
@@ -348,8 +348,8 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public boolean removeFromJournalGroup(JournalGroup journalGroupValue) {
     if (journalGroup.contains(journalGroupValue)) {
-      journalGroup.remove(journalGroupValue);
-      return true;
+      boolean result = journalGroup.remove(journalGroupValue);
+      return result;
     }
     return false;
   }

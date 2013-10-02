@@ -78,8 +78,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean addToAggregated(AggregatedRelationship aggregatedValue) {
     if (!aggregated.contains(aggregatedValue)) {
-      aggregated.add(aggregatedValue);
-      return true;
+      boolean result = aggregated.add(aggregatedValue);
+      return result;
     }
     return false;
   }
@@ -96,8 +96,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean removeFromAggregated(AggregatedRelationship aggregatedValue) {
     if (aggregated.contains(aggregatedValue)) {
-      aggregated.remove(aggregatedValue);
-      return true;
+      boolean result = aggregated.remove(aggregatedValue);
+      return result;
     }
     return false;
   }
@@ -148,8 +148,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean addToImplementation(KDMEntity implementationValue) {
     if (!implementation.contains(implementationValue)) {
-      implementation.add(implementationValue);
-      return true;
+      boolean result = implementation.add(implementationValue);
+      return result;
     }
     return false;
   }
@@ -166,8 +166,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean removeFromImplementation(KDMEntity implementationValue) {
     if (implementation.contains(implementationValue)) {
-      implementation.remove(implementationValue);
-      return true;
+      boolean result = implementation.remove(implementationValue);
+      return result;
     }
     return false;
   }
@@ -218,8 +218,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean addToStructureElement(AbstractStructureElement structureElementValue) {
     if (!structureElement.contains(structureElementValue)) {
-      structureElement.add(structureElementValue);
-      return true;
+      boolean result = structureElement.add(structureElementValue);
+      return result;
     }
     return false;
   }
@@ -236,8 +236,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean removeFromStructureElement(AbstractStructureElement structureElementValue) {
     if (structureElement.contains(structureElementValue)) {
-      structureElement.remove(structureElementValue);
-      return true;
+      boolean result = structureElement.remove(structureElementValue);
+      return result;
     }
     return false;
   }
@@ -288,8 +288,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean addToStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
     if (!structureRelationship.contains(structureRelationshipValue)) {
-      structureRelationship.add(structureRelationshipValue);
-      return true;
+      boolean result = structureRelationship.add(structureRelationshipValue);
+      return result;
     }
     return false;
   }
@@ -306,8 +306,8 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public boolean removeFromStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
     if (structureRelationship.contains(structureRelationshipValue)) {
-      structureRelationship.remove(structureRelationshipValue);
-      return true;
+      boolean result = structureRelationship.remove(structureRelationshipValue);
+      return result;
     }
     return false;
   }

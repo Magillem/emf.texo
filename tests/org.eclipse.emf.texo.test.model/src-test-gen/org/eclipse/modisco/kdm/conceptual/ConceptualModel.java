@@ -51,8 +51,8 @@ public class ConceptualModel extends KDMModel {
    */
   public boolean addToConceptualElement(AbstractConceptualElement conceptualElementValue) {
     if (!conceptualElement.contains(conceptualElementValue)) {
-      conceptualElement.add(conceptualElementValue);
-      return true;
+      boolean result = conceptualElement.add(conceptualElementValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class ConceptualModel extends KDMModel {
    */
   public boolean removeFromConceptualElement(AbstractConceptualElement conceptualElementValue) {
     if (conceptualElement.contains(conceptualElementValue)) {
-      conceptualElement.remove(conceptualElementValue);
-      return true;
+      boolean result = conceptualElement.remove(conceptualElementValue);
+      return result;
     }
     return false;
   }

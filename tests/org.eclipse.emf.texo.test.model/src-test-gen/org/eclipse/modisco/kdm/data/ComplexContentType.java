@@ -53,8 +53,8 @@ public class ComplexContentType extends AbstractContentElement {
    */
   public boolean addToContentElement(AbstractContentElement contentElementValue) {
     if (!contentElement.contains(contentElementValue)) {
-      contentElement.add(contentElementValue);
-      return true;
+      boolean result = contentElement.add(contentElementValue);
+      return result;
     }
     return false;
   }
@@ -71,8 +71,8 @@ public class ComplexContentType extends AbstractContentElement {
    */
   public boolean removeFromContentElement(AbstractContentElement contentElementValue) {
     if (contentElement.contains(contentElementValue)) {
-      contentElement.remove(contentElementValue);
-      return true;
+      boolean result = contentElement.remove(contentElementValue);
+      return result;
     }
     return false;
   }

@@ -218,8 +218,8 @@ public class Library extends Identifiable implements Addressable {
    */
   public boolean addToStock(Item stockValue) {
     if (!stock.contains(stockValue)) {
-      stock.add(stockValue);
-      return true;
+      boolean result = stock.add(stockValue);
+      return result;
     }
     return false;
   }
@@ -236,8 +236,8 @@ public class Library extends Identifiable implements Addressable {
    */
   public boolean removeFromStock(Item stockValue) {
     if (stock.contains(stockValue)) {
-      stock.remove(stockValue);
-      return true;
+      boolean result = stock.remove(stockValue);
+      return result;
     }
     return false;
   }
@@ -288,8 +288,8 @@ public class Library extends Identifiable implements Addressable {
    */
   public boolean addToBooks(Book booksValue) {
     if (!books.contains(booksValue)) {
-      books.add(booksValue);
-      return true;
+      boolean result = books.add(booksValue);
+      return result;
     }
     return false;
   }
@@ -306,8 +306,8 @@ public class Library extends Identifiable implements Addressable {
    */
   public boolean removeFromBooks(Book booksValue) {
     if (books.contains(booksValue)) {
-      books.remove(booksValue);
-      return true;
+      boolean result = books.remove(booksValue);
+      return result;
     }
     return false;
   }
@@ -358,8 +358,8 @@ public class Library extends Identifiable implements Addressable {
    */
   public boolean addToBranches(Library branchesValue) {
     if (!branches.contains(branchesValue)) {
-      branches.add(branchesValue);
-      return true;
+      boolean result = branches.add(branchesValue);
+      return result;
     }
     return false;
   }
@@ -376,8 +376,8 @@ public class Library extends Identifiable implements Addressable {
    */
   public boolean removeFromBranches(Library branchesValue) {
     if (branches.contains(branchesValue)) {
-      branches.remove(branchesValue);
-      return true;
+      boolean result = branches.remove(branchesValue);
+      return result;
     }
     return false;
   }

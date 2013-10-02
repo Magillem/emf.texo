@@ -68,8 +68,8 @@ public abstract class KDMFramework extends ModelElement {
    */
   public boolean addToAudit(Audit auditValue) {
     if (!audit.contains(auditValue)) {
-      audit.add(auditValue);
-      return true;
+      boolean result = audit.add(auditValue);
+      return result;
     }
     return false;
   }
@@ -86,8 +86,8 @@ public abstract class KDMFramework extends ModelElement {
    */
   public boolean removeFromAudit(Audit auditValue) {
     if (audit.contains(auditValue)) {
-      audit.remove(auditValue);
-      return true;
+      boolean result = audit.remove(auditValue);
+      return result;
     }
     return false;
   }
@@ -138,8 +138,8 @@ public abstract class KDMFramework extends ModelElement {
    */
   public boolean addToExtension(ExtensionFamily extensionValue) {
     if (!extension.contains(extensionValue)) {
-      extension.add(extensionValue);
-      return true;
+      boolean result = extension.add(extensionValue);
+      return result;
     }
     return false;
   }
@@ -156,8 +156,8 @@ public abstract class KDMFramework extends ModelElement {
    */
   public boolean removeFromExtension(ExtensionFamily extensionValue) {
     if (extension.contains(extensionValue)) {
-      extension.remove(extensionValue);
-      return true;
+      boolean result = extension.remove(extensionValue);
+      return result;
     }
     return false;
   }

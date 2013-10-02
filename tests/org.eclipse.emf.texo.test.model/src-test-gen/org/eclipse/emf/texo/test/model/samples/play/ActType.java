@@ -72,8 +72,8 @@ public class ActType extends Identifiable {
    */
   public boolean addToScene(SceneType sceneValue) {
     if (!scene.contains(sceneValue)) {
-      scene.add(sceneValue);
-      return true;
+      boolean result = scene.add(sceneValue);
+      return result;
     }
     return false;
   }
@@ -90,8 +90,8 @@ public class ActType extends Identifiable {
    */
   public boolean removeFromScene(SceneType sceneValue) {
     if (scene.contains(sceneValue)) {
-      scene.remove(sceneValue);
-      return true;
+      boolean result = scene.remove(sceneValue);
+      return result;
     }
     return false;
   }

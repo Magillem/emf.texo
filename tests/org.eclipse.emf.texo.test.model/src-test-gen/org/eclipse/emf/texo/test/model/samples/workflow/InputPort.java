@@ -91,8 +91,8 @@ public class InputPort extends Port {
    */
   public boolean addToEdges(Edge edgesValue) {
     if (!edges.contains(edgesValue)) {
-      edges.add(edgesValue);
-      return true;
+      boolean result = edges.add(edgesValue);
+      return result;
     }
     return false;
   }
@@ -109,8 +109,8 @@ public class InputPort extends Port {
    */
   public boolean removeFromEdges(Edge edgesValue) {
     if (edges.contains(edgesValue)) {
-      edges.remove(edgesValue);
-      return true;
+      boolean result = edges.remove(edgesValue);
+      return result;
     }
     return false;
   }

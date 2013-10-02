@@ -193,8 +193,8 @@ public class RentalContract extends Identifiable {
    */
   public boolean addToRentalContractLines(RentalContractLine rentalContractLinesValue) {
     if (!rentalContractLines.contains(rentalContractLinesValue)) {
-      rentalContractLines.add(rentalContractLinesValue);
-      return true;
+      boolean result = rentalContractLines.add(rentalContractLinesValue);
+      return result;
     }
     return false;
   }
@@ -211,8 +211,8 @@ public class RentalContract extends Identifiable {
    */
   public boolean removeFromRentalContractLines(RentalContractLine rentalContractLinesValue) {
     if (rentalContractLines.contains(rentalContractLinesValue)) {
-      rentalContractLines.remove(rentalContractLinesValue);
-      return true;
+      boolean result = rentalContractLines.remove(rentalContractLinesValue);
+      return result;
     }
     return false;
   }

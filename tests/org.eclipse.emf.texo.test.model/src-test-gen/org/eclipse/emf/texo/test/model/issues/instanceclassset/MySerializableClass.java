@@ -130,8 +130,8 @@ public class MySerializableClass extends Identifiable implements Serializable {
    */
   public boolean addToNonEMFs(NonEMF nonEMFsValue) {
     if (!nonEMFs.contains(nonEMFsValue)) {
-      nonEMFs.add(nonEMFsValue);
-      return true;
+      boolean result = nonEMFs.add(nonEMFsValue);
+      return result;
     }
     return false;
   }
@@ -148,8 +148,8 @@ public class MySerializableClass extends Identifiable implements Serializable {
    */
   public boolean removeFromNonEMFs(NonEMF nonEMFsValue) {
     if (nonEMFs.contains(nonEMFsValue)) {
-      nonEMFs.remove(nonEMFsValue);
-      return true;
+      boolean result = nonEMFs.remove(nonEMFsValue);
+      return result;
     }
     return false;
   }

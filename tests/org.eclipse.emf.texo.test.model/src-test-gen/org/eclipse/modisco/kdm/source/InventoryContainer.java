@@ -51,8 +51,8 @@ public class InventoryContainer extends AbstractInventoryElement {
    */
   public boolean addToInventoryElement(AbstractInventoryElement inventoryElementValue) {
     if (!inventoryElement.contains(inventoryElementValue)) {
-      inventoryElement.add(inventoryElementValue);
-      return true;
+      boolean result = inventoryElement.add(inventoryElementValue);
+      return result;
     }
     return false;
   }
@@ -69,8 +69,8 @@ public class InventoryContainer extends AbstractInventoryElement {
    */
   public boolean removeFromInventoryElement(AbstractInventoryElement inventoryElementValue) {
     if (inventoryElement.contains(inventoryElementValue)) {
-      inventoryElement.remove(inventoryElementValue);
-      return true;
+      boolean result = inventoryElement.remove(inventoryElementValue);
+      return result;
     }
     return false;
   }

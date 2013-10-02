@@ -70,8 +70,8 @@ public class SourceRef extends Element {
    */
   public boolean addToRegion(SourceRegion regionValue) {
     if (!region.contains(regionValue)) {
-      region.add(regionValue);
-      return true;
+      boolean result = region.add(regionValue);
+      return result;
     }
     return false;
   }
@@ -88,8 +88,8 @@ public class SourceRef extends Element {
    */
   public boolean removeFromRegion(SourceRegion regionValue) {
     if (region.contains(regionValue)) {
-      region.remove(regionValue);
-      return true;
+      boolean result = region.remove(regionValue);
+      return result;
     }
     return false;
   }

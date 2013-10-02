@@ -86,8 +86,8 @@ public class ClassUnit extends Datatype {
    */
   public boolean addToCodeElement(CodeItem codeElementValue) {
     if (!codeElement.contains(codeElementValue)) {
-      codeElement.add(codeElementValue);
-      return true;
+      boolean result = codeElement.add(codeElementValue);
+      return result;
     }
     return false;
   }
@@ -104,8 +104,8 @@ public class ClassUnit extends Datatype {
    */
   public boolean removeFromCodeElement(CodeItem codeElementValue) {
     if (codeElement.contains(codeElementValue)) {
-      codeElement.remove(codeElementValue);
-      return true;
+      boolean result = codeElement.remove(codeElementValue);
+      return result;
     }
     return false;
   }

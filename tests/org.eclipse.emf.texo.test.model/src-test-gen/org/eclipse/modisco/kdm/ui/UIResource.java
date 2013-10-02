@@ -50,8 +50,8 @@ public class UIResource extends AbstractUIElement {
    */
   public boolean addToUIElement(AbstractUIElement uIElementValue) {
     if (!uIElement.contains(uIElementValue)) {
-      uIElement.add(uIElementValue);
-      return true;
+      boolean result = uIElement.add(uIElementValue);
+      return result;
     }
     return false;
   }
@@ -68,8 +68,8 @@ public class UIResource extends AbstractUIElement {
    */
   public boolean removeFromUIElement(AbstractUIElement uIElementValue) {
     if (uIElement.contains(uIElementValue)) {
-      uIElement.remove(uIElementValue);
-      return true;
+      boolean result = uIElement.remove(uIElementValue);
+      return result;
     }
     return false;
   }

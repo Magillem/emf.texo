@@ -68,8 +68,8 @@ public abstract class Element extends Identifiable {
    */
   public boolean addToAttribute(Attribute attributeValue) {
     if (!attribute.contains(attributeValue)) {
-      attribute.add(attributeValue);
-      return true;
+      boolean result = attribute.add(attributeValue);
+      return result;
     }
     return false;
   }
@@ -86,8 +86,8 @@ public abstract class Element extends Identifiable {
    */
   public boolean removeFromAttribute(Attribute attributeValue) {
     if (attribute.contains(attributeValue)) {
-      attribute.remove(attributeValue);
-      return true;
+      boolean result = attribute.remove(attributeValue);
+      return result;
     }
     return false;
   }
@@ -140,8 +140,8 @@ public abstract class Element extends Identifiable {
    */
   public boolean addToAnnotation(Annotation annotationValue) {
     if (!annotation.contains(annotationValue)) {
-      annotation.add(annotationValue);
-      return true;
+      boolean result = annotation.add(annotationValue);
+      return result;
     }
     return false;
   }
@@ -158,8 +158,8 @@ public abstract class Element extends Identifiable {
    */
   public boolean removeFromAnnotation(Annotation annotationValue) {
     if (annotation.contains(annotationValue)) {
-      annotation.remove(annotationValue);
-      return true;
+      boolean result = annotation.remove(annotationValue);
+      return result;
     }
     return false;
   }

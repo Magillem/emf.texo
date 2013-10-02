@@ -52,8 +52,8 @@ public class VideoCassette extends AudioVisualItem {
    */
   public boolean addToCast(Person castValue) {
     if (!cast.contains(castValue)) {
-      cast.add(castValue);
-      return true;
+      boolean result = cast.add(castValue);
+      return result;
     }
     return false;
   }
@@ -70,8 +70,8 @@ public class VideoCassette extends AudioVisualItem {
    */
   public boolean removeFromCast(Person castValue) {
     if (cast.contains(castValue)) {
-      cast.remove(castValue);
-      return true;
+      boolean result = cast.remove(castValue);
+      return result;
     }
     return false;
   }

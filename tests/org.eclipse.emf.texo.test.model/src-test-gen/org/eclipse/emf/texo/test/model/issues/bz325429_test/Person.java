@@ -156,8 +156,8 @@ public class Person extends Identifiable {
    */
   public boolean addToContacts(Contact contactsValue) {
     if (!contacts.contains(contactsValue)) {
-      contacts.add(contactsValue);
-      return true;
+      boolean result = contacts.add(contactsValue);
+      return result;
     }
     return false;
   }
@@ -174,8 +174,8 @@ public class Person extends Identifiable {
    */
   public boolean removeFromContacts(Contact contactsValue) {
     if (contacts.contains(contactsValue)) {
-      contacts.remove(contactsValue);
-      return true;
+      boolean result = contacts.remove(contactsValue);
+      return result;
     }
     return false;
   }

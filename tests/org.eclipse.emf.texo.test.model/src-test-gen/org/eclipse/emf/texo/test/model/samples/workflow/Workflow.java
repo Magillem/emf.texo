@@ -75,8 +75,8 @@ public class Workflow extends WorkflowElement {
    */
   public boolean addToNodes(WorkflowNode nodesValue) {
     if (!nodes.contains(nodesValue)) {
-      nodes.add(nodesValue);
-      return true;
+      boolean result = nodes.add(nodesValue);
+      return result;
     }
     return false;
   }
@@ -93,8 +93,8 @@ public class Workflow extends WorkflowElement {
    */
   public boolean removeFromNodes(WorkflowNode nodesValue) {
     if (nodes.contains(nodesValue)) {
-      nodes.remove(nodesValue);
-      return true;
+      boolean result = nodes.remove(nodesValue);
+      return result;
     }
     return false;
   }
@@ -145,8 +145,8 @@ public class Workflow extends WorkflowElement {
    */
   public boolean addToEdges(Edge edgesValue) {
     if (!edges.contains(edgesValue)) {
-      edges.add(edgesValue);
-      return true;
+      boolean result = edges.add(edgesValue);
+      return result;
     }
     return false;
   }
@@ -163,8 +163,8 @@ public class Workflow extends WorkflowElement {
    */
   public boolean removeFromEdges(Edge edgesValue) {
     if (edges.contains(edgesValue)) {
-      edges.remove(edgesValue);
-      return true;
+      boolean result = edges.remove(edgesValue);
+      return result;
     }
     return false;
   }
@@ -215,8 +215,8 @@ public class Workflow extends WorkflowElement {
    */
   public boolean addToComments(Comment commentsValue) {
     if (!comments.contains(commentsValue)) {
-      comments.add(commentsValue);
-      return true;
+      boolean result = comments.add(commentsValue);
+      return result;
     }
     return false;
   }
@@ -233,8 +233,8 @@ public class Workflow extends WorkflowElement {
    */
   public boolean removeFromComments(Comment commentsValue) {
     if (comments.contains(commentsValue)) {
-      comments.remove(commentsValue);
-      return true;
+      boolean result = comments.remove(commentsValue);
+      return result;
     }
     return false;
   }

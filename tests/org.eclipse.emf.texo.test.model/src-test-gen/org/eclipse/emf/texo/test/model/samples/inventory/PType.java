@@ -184,8 +184,8 @@ public class PType extends Identifiable {
    * @generated
    */
   public boolean addToSubTypes(PType subTypesValue) {
-    subTypes.add(subTypesValue);
-    return true;
+    boolean result = subTypes.add(subTypesValue);
+    return result;
   }
 
   /**
@@ -200,8 +200,8 @@ public class PType extends Identifiable {
    */
   public boolean removeFromSubTypes(PType subTypesValue) {
     if (subTypes.contains(subTypesValue)) {
-      subTypes.remove(subTypesValue);
-      return true;
+      boolean result = subTypes.remove(subTypesValue);
+      return result;
     }
     return false;
   }
@@ -251,8 +251,8 @@ public class PType extends Identifiable {
    * @generated
    */
   public boolean addToSubNOTypes(PType subNOTypesValue) {
-    subNOTypes.add(subNOTypesValue);
-    return true;
+    boolean result = subNOTypes.add(subNOTypesValue);
+    return result;
   }
 
   /**
@@ -267,8 +267,8 @@ public class PType extends Identifiable {
    */
   public boolean removeFromSubNOTypes(PType subNOTypesValue) {
     if (subNOTypes.contains(subNOTypesValue)) {
-      subNOTypes.remove(subNOTypesValue);
-      return true;
+      boolean result = subNOTypes.remove(subNOTypesValue);
+      return result;
     }
     return false;
   }
@@ -318,8 +318,8 @@ public class PType extends Identifiable {
    * @generated
    */
   public boolean addToInfoReferences(PDeclaration infoReferencesValue) {
-    infoReferences.add(infoReferencesValue);
-    return true;
+    boolean result = infoReferences.add(infoReferencesValue);
+    return result;
   }
 
   /**
@@ -334,8 +334,8 @@ public class PType extends Identifiable {
    */
   public boolean removeFromInfoReferences(PDeclaration infoReferencesValue) {
     if (infoReferences.contains(infoReferencesValue)) {
-      infoReferences.remove(infoReferencesValue);
-      return true;
+      boolean result = infoReferences.remove(infoReferencesValue);
+      return result;
     }
     return false;
   }

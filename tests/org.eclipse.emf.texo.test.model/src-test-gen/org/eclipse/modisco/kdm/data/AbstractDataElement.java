@@ -74,8 +74,8 @@ public abstract class AbstractDataElement extends KDMEntity {
    */
   public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
-      source.add(sourceValue);
-      return true;
+      boolean result = source.add(sourceValue);
+      return result;
     }
     return false;
   }
@@ -92,8 +92,8 @@ public abstract class AbstractDataElement extends KDMEntity {
    */
   public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
-      source.remove(sourceValue);
-      return true;
+      boolean result = source.remove(sourceValue);
+      return result;
     }
     return false;
   }
@@ -144,8 +144,8 @@ public abstract class AbstractDataElement extends KDMEntity {
    */
   public boolean addToDataRelation(AbstractDataRelationship dataRelationValue) {
     if (!dataRelation.contains(dataRelationValue)) {
-      dataRelation.add(dataRelationValue);
-      return true;
+      boolean result = dataRelation.add(dataRelationValue);
+      return result;
     }
     return false;
   }
@@ -162,8 +162,8 @@ public abstract class AbstractDataElement extends KDMEntity {
    */
   public boolean removeFromDataRelation(AbstractDataRelationship dataRelationValue) {
     if (dataRelation.contains(dataRelationValue)) {
-      dataRelation.remove(dataRelationValue);
-      return true;
+      boolean result = dataRelation.remove(dataRelationValue);
+      return result;
     }
     return false;
   }
@@ -214,8 +214,8 @@ public abstract class AbstractDataElement extends KDMEntity {
    */
   public boolean addToAbstraction(ActionElement abstractionValue) {
     if (!abstraction.contains(abstractionValue)) {
-      abstraction.add(abstractionValue);
-      return true;
+      boolean result = abstraction.add(abstractionValue);
+      return result;
     }
     return false;
   }
@@ -232,8 +232,8 @@ public abstract class AbstractDataElement extends KDMEntity {
    */
   public boolean removeFromAbstraction(ActionElement abstractionValue) {
     if (abstraction.contains(abstractionValue)) {
-      abstraction.remove(abstractionValue);
-      return true;
+      boolean result = abstraction.remove(abstractionValue);
+      return result;
     }
     return false;
   }

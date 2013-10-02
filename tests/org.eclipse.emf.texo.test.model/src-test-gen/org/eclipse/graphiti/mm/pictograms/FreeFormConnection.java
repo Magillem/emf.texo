@@ -54,8 +54,8 @@ public class FreeFormConnection extends Connection {
    */
   public boolean addToBendpoints(Point bendpointsValue) {
     if (!bendpoints.contains(bendpointsValue)) {
-      bendpoints.add(bendpointsValue);
-      return true;
+      boolean result = bendpoints.add(bendpointsValue);
+      return result;
     }
     return false;
   }
@@ -72,8 +72,8 @@ public class FreeFormConnection extends Connection {
    */
   public boolean removeFromBendpoints(Point bendpointsValue) {
     if (bendpoints.contains(bendpointsValue)) {
-      bendpoints.remove(bendpointsValue);
-      return true;
+      boolean result = bendpoints.remove(bendpointsValue);
+      return result;
     }
     return false;
   }

@@ -132,8 +132,8 @@ public class CatalogType extends Identifiable {
    */
   public boolean addToSubCatalog(CatalogType subCatalogValue) {
     if (!subCatalog.contains(subCatalogValue)) {
-      subCatalog.add(subCatalogValue);
-      return true;
+      boolean result = subCatalog.add(subCatalogValue);
+      return result;
     }
     return false;
   }
@@ -150,8 +150,8 @@ public class CatalogType extends Identifiable {
    */
   public boolean removeFromSubCatalog(CatalogType subCatalogValue) {
     if (subCatalog.contains(subCatalogValue)) {
-      subCatalog.remove(subCatalogValue);
-      return true;
+      boolean result = subCatalog.remove(subCatalogValue);
+      return result;
     }
     return false;
   }
@@ -203,8 +203,8 @@ public class CatalogType extends Identifiable {
    */
   public boolean addToProduct(ProductType productValue) {
     if (!product.contains(productValue)) {
-      product.add(productValue);
-      return true;
+      boolean result = product.add(productValue);
+      return result;
     }
     return false;
   }
@@ -221,8 +221,8 @@ public class CatalogType extends Identifiable {
    */
   public boolean removeFromProduct(ProductType productValue) {
     if (product.contains(productValue)) {
-      product.remove(productValue);
-      return true;
+      boolean result = product.remove(productValue);
+      return result;
     }
     return false;
   }

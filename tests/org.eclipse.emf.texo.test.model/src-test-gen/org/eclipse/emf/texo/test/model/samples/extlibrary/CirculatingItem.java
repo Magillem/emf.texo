@@ -84,8 +84,8 @@ public abstract class CirculatingItem extends Item implements Lendable {
    */
   public boolean addToBorrowers(Borrower borrowersValue) {
     if (!borrowers.contains(borrowersValue)) {
-      borrowers.add(borrowersValue);
-      return true;
+      boolean result = borrowers.add(borrowersValue);
+      return result;
     }
     return false;
   }
@@ -102,8 +102,8 @@ public abstract class CirculatingItem extends Item implements Lendable {
    */
   public boolean removeFromBorrowers(Borrower borrowersValue) {
     if (borrowers.contains(borrowersValue)) {
-      borrowers.remove(borrowersValue);
-      return true;
+      boolean result = borrowers.remove(borrowersValue);
+      return result;
     }
     return false;
   }

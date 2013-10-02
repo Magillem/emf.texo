@@ -58,8 +58,8 @@ public class Machine extends AbstractPlatformElement {
    */
   public boolean addToDeployedComponent(DeployedComponent deployedComponentValue) {
     if (!deployedComponent.contains(deployedComponentValue)) {
-      deployedComponent.add(deployedComponentValue);
-      return true;
+      boolean result = deployedComponent.add(deployedComponentValue);
+      return result;
     }
     return false;
   }
@@ -76,8 +76,8 @@ public class Machine extends AbstractPlatformElement {
    */
   public boolean removeFromDeployedComponent(DeployedComponent deployedComponentValue) {
     if (deployedComponent.contains(deployedComponentValue)) {
-      deployedComponent.remove(deployedComponentValue);
-      return true;
+      boolean result = deployedComponent.remove(deployedComponentValue);
+      return result;
     }
     return false;
   }
@@ -128,8 +128,8 @@ public class Machine extends AbstractPlatformElement {
    */
   public boolean addToDeployedResource(DeployedResource deployedResourceValue) {
     if (!deployedResource.contains(deployedResourceValue)) {
-      deployedResource.add(deployedResourceValue);
-      return true;
+      boolean result = deployedResource.add(deployedResourceValue);
+      return result;
     }
     return false;
   }
@@ -146,8 +146,8 @@ public class Machine extends AbstractPlatformElement {
    */
   public boolean removeFromDeployedResource(DeployedResource deployedResourceValue) {
     if (deployedResource.contains(deployedResourceValue)) {
-      deployedResource.remove(deployedResourceValue);
-      return true;
+      boolean result = deployedResource.remove(deployedResourceValue);
+      return result;
     }
     return false;
   }

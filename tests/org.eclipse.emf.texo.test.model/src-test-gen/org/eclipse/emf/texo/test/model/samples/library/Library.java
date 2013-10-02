@@ -103,8 +103,8 @@ public class Library extends Identifiable {
    */
   public boolean addToWriters(Writer writersValue) {
     if (!writers.contains(writersValue)) {
-      writers.add(writersValue);
-      return true;
+      boolean result = writers.add(writersValue);
+      return result;
     }
     return false;
   }
@@ -121,8 +121,8 @@ public class Library extends Identifiable {
    */
   public boolean removeFromWriters(Writer writersValue) {
     if (writers.contains(writersValue)) {
-      writers.remove(writersValue);
-      return true;
+      boolean result = writers.remove(writersValue);
+      return result;
     }
     return false;
   }
@@ -173,8 +173,8 @@ public class Library extends Identifiable {
    */
   public boolean addToBooks(Book booksValue) {
     if (!books.contains(booksValue)) {
-      books.add(booksValue);
-      return true;
+      boolean result = books.add(booksValue);
+      return result;
     }
     return false;
   }
@@ -191,8 +191,8 @@ public class Library extends Identifiable {
    */
   public boolean removeFromBooks(Book booksValue) {
     if (books.contains(booksValue)) {
-      books.remove(booksValue);
-      return true;
+      boolean result = books.remove(booksValue);
+      return result;
     }
     return false;
   }

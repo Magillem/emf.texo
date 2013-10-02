@@ -84,8 +84,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
-      source.add(sourceValue);
-      return true;
+      boolean result = source.add(sourceValue);
+      return result;
     }
     return false;
   }
@@ -102,8 +102,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
-      source.remove(sourceValue);
-      return true;
+      boolean result = source.remove(sourceValue);
+      return result;
     }
     return false;
   }
@@ -154,8 +154,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean addToEventRelation(AbstractEventRelationship eventRelationValue) {
     if (!eventRelation.contains(eventRelationValue)) {
-      eventRelation.add(eventRelationValue);
-      return true;
+      boolean result = eventRelation.add(eventRelationValue);
+      return result;
     }
     return false;
   }
@@ -172,8 +172,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean removeFromEventRelation(AbstractEventRelationship eventRelationValue) {
     if (eventRelation.contains(eventRelationValue)) {
-      eventRelation.remove(eventRelationValue);
-      return true;
+      boolean result = eventRelation.remove(eventRelationValue);
+      return result;
     }
     return false;
   }
@@ -224,8 +224,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean addToAbstraction(ActionElement abstractionValue) {
     if (!abstraction.contains(abstractionValue)) {
-      abstraction.add(abstractionValue);
-      return true;
+      boolean result = abstraction.add(abstractionValue);
+      return result;
     }
     return false;
   }
@@ -242,8 +242,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean removeFromAbstraction(ActionElement abstractionValue) {
     if (abstraction.contains(abstractionValue)) {
-      abstraction.remove(abstractionValue);
-      return true;
+      boolean result = abstraction.remove(abstractionValue);
+      return result;
     }
     return false;
   }
@@ -294,8 +294,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean addToImplementation(AbstractCodeElement implementationValue) {
     if (!implementation.contains(implementationValue)) {
-      implementation.add(implementationValue);
-      return true;
+      boolean result = implementation.add(implementationValue);
+      return result;
     }
     return false;
   }
@@ -312,8 +312,8 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   public boolean removeFromImplementation(AbstractCodeElement implementationValue) {
     if (implementation.contains(implementationValue)) {
-      implementation.remove(implementationValue);
-      return true;
+      boolean result = implementation.remove(implementationValue);
+      return result;
     }
     return false;
   }

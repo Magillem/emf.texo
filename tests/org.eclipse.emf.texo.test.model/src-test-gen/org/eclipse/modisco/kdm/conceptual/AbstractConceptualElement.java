@@ -79,8 +79,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean addToSource(SourceRef sourceValue) {
     if (!source.contains(sourceValue)) {
-      source.add(sourceValue);
-      return true;
+      boolean result = source.add(sourceValue);
+      return result;
     }
     return false;
   }
@@ -97,8 +97,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean removeFromSource(SourceRef sourceValue) {
     if (source.contains(sourceValue)) {
-      source.remove(sourceValue);
-      return true;
+      boolean result = source.remove(sourceValue);
+      return result;
     }
     return false;
   }
@@ -149,8 +149,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean addToImplementation(KDMEntity implementationValue) {
     if (!implementation.contains(implementationValue)) {
-      implementation.add(implementationValue);
-      return true;
+      boolean result = implementation.add(implementationValue);
+      return result;
     }
     return false;
   }
@@ -167,8 +167,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean removeFromImplementation(KDMEntity implementationValue) {
     if (implementation.contains(implementationValue)) {
-      implementation.remove(implementationValue);
-      return true;
+      boolean result = implementation.remove(implementationValue);
+      return result;
     }
     return false;
   }
@@ -219,8 +219,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean addToConceptualRelation(AbstractConceptualRelationship conceptualRelationValue) {
     if (!conceptualRelation.contains(conceptualRelationValue)) {
-      conceptualRelation.add(conceptualRelationValue);
-      return true;
+      boolean result = conceptualRelation.add(conceptualRelationValue);
+      return result;
     }
     return false;
   }
@@ -237,8 +237,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean removeFromConceptualRelation(AbstractConceptualRelationship conceptualRelationValue) {
     if (conceptualRelation.contains(conceptualRelationValue)) {
-      conceptualRelation.remove(conceptualRelationValue);
-      return true;
+      boolean result = conceptualRelation.remove(conceptualRelationValue);
+      return result;
     }
     return false;
   }
@@ -290,8 +290,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean addToAbstraction(ActionElement abstractionValue) {
     if (!abstraction.contains(abstractionValue)) {
-      abstraction.add(abstractionValue);
-      return true;
+      boolean result = abstraction.add(abstractionValue);
+      return result;
     }
     return false;
   }
@@ -308,8 +308,8 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public boolean removeFromAbstraction(ActionElement abstractionValue) {
     if (abstraction.contains(abstractionValue)) {
-      abstraction.remove(abstractionValue);
-      return true;
+      boolean result = abstraction.remove(abstractionValue);
+      return result;
     }
     return false;
   }

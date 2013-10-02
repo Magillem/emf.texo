@@ -94,8 +94,8 @@ public class DataAction extends AbstractDataElement {
    */
   public boolean addToImplementation(ActionElement implementationValue) {
     if (!implementation.contains(implementationValue)) {
-      implementation.add(implementationValue);
-      return true;
+      boolean result = implementation.add(implementationValue);
+      return result;
     }
     return false;
   }
@@ -112,8 +112,8 @@ public class DataAction extends AbstractDataElement {
    */
   public boolean removeFromImplementation(ActionElement implementationValue) {
     if (implementation.contains(implementationValue)) {
-      implementation.remove(implementationValue);
-      return true;
+      boolean result = implementation.remove(implementationValue);
+      return result;
     }
     return false;
   }
@@ -164,8 +164,8 @@ public class DataAction extends AbstractDataElement {
    */
   public boolean addToDataElement(DataEvent dataElementValue) {
     if (!dataElement.contains(dataElementValue)) {
-      dataElement.add(dataElementValue);
-      return true;
+      boolean result = dataElement.add(dataElementValue);
+      return result;
     }
     return false;
   }
@@ -182,8 +182,8 @@ public class DataAction extends AbstractDataElement {
    */
   public boolean removeFromDataElement(DataEvent dataElementValue) {
     if (dataElement.contains(dataElementValue)) {
-      dataElement.remove(dataElementValue);
-      return true;
+      boolean result = dataElement.remove(dataElementValue);
+      return result;
     }
     return false;
   }

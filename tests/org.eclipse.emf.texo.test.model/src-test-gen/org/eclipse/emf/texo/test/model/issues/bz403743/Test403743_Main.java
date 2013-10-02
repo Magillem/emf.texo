@@ -87,8 +87,8 @@ public class Test403743_Main extends Identifiable {
    */
   public boolean addToChildren(Test403743 childrenValue) {
     if (!children.contains(childrenValue)) {
-      children.add(childrenValue);
-      return true;
+      boolean result = children.add(childrenValue);
+      return result;
     }
     return false;
   }
@@ -105,8 +105,8 @@ public class Test403743_Main extends Identifiable {
    */
   public boolean removeFromChildren(Test403743 childrenValue) {
     if (children.contains(childrenValue)) {
-      children.remove(childrenValue);
-      return true;
+      boolean result = children.remove(childrenValue);
+      return result;
     }
     return false;
   }

@@ -52,8 +52,8 @@ public class ValueList extends ValueElement {
    */
   public boolean addToValueElement(ValueElement valueElementValue) {
     if (!valueElement.contains(valueElementValue)) {
-      valueElement.add(valueElementValue);
-      return true;
+      boolean result = valueElement.add(valueElementValue);
+      return result;
     }
     return false;
   }
@@ -70,8 +70,8 @@ public class ValueList extends ValueElement {
    */
   public boolean removeFromValueElement(ValueElement valueElementValue) {
     if (valueElement.contains(valueElementValue)) {
-      valueElement.remove(valueElementValue);
-      return true;
+      boolean result = valueElement.remove(valueElementValue);
+      return result;
     }
     return false;
   }

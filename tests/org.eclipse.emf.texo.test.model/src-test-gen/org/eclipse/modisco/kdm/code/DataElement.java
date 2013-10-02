@@ -151,8 +151,8 @@ public class DataElement extends ComputationalObject {
    */
   public boolean addToCodeElement(Datatype codeElementValue) {
     if (!codeElement.contains(codeElementValue)) {
-      codeElement.add(codeElementValue);
-      return true;
+      boolean result = codeElement.add(codeElementValue);
+      return result;
     }
     return false;
   }
@@ -169,8 +169,8 @@ public class DataElement extends ComputationalObject {
    */
   public boolean removeFromCodeElement(Datatype codeElementValue) {
     if (codeElement.contains(codeElementValue)) {
-      codeElement.remove(codeElementValue);
-      return true;
+      boolean result = codeElement.remove(codeElementValue);
+      return result;
     }
     return false;
   }

@@ -50,8 +50,8 @@ public class Namespace extends CodeItem {
    */
   public boolean addToGroupedCode(CodeItem groupedCodeValue) {
     if (!groupedCode.contains(groupedCodeValue)) {
-      groupedCode.add(groupedCodeValue);
-      return true;
+      boolean result = groupedCode.add(groupedCodeValue);
+      return result;
     }
     return false;
   }
@@ -68,8 +68,8 @@ public class Namespace extends CodeItem {
    */
   public boolean removeFromGroupedCode(CodeItem groupedCodeValue) {
     if (groupedCode.contains(groupedCodeValue)) {
-      groupedCode.remove(groupedCodeValue);
-      return true;
+      boolean result = groupedCode.remove(groupedCodeValue);
+      return result;
     }
     return false;
   }

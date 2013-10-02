@@ -54,8 +54,8 @@ public class CurvedConnection extends Connection {
    */
   public boolean addToControlPoints(PrecisionPoint controlPointsValue) {
     if (!controlPoints.contains(controlPointsValue)) {
-      controlPoints.add(controlPointsValue);
-      return true;
+      boolean result = controlPoints.add(controlPointsValue);
+      return result;
     }
     return false;
   }
@@ -72,8 +72,8 @@ public class CurvedConnection extends Connection {
    */
   public boolean removeFromControlPoints(PrecisionPoint controlPointsValue) {
     if (controlPoints.contains(controlPointsValue)) {
-      controlPoints.remove(controlPointsValue);
-      return true;
+      boolean result = controlPoints.remove(controlPointsValue);
+      return result;
     }
     return false;
   }

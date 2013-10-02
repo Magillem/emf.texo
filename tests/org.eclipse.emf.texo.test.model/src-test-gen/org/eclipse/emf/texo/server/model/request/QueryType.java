@@ -154,8 +154,8 @@ public class QueryType extends Identifiable {
    */
   public boolean addToParameters(Parameter parametersValue) {
     if (!parameters.contains(parametersValue)) {
-      parameters.add(parametersValue);
-      return true;
+      boolean result = parameters.add(parametersValue);
+      return result;
     }
     return false;
   }
@@ -172,8 +172,8 @@ public class QueryType extends Identifiable {
    */
   public boolean removeFromParameters(Parameter parametersValue) {
     if (parameters.contains(parametersValue)) {
-      parameters.remove(parametersValue);
-      return true;
+      boolean result = parameters.remove(parametersValue);
+      return result;
     }
     return false;
   }

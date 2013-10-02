@@ -222,8 +222,8 @@ public class PlayType extends Identifiable {
    */
   public boolean addToAct(ActType actValue) {
     if (!act.contains(actValue)) {
-      act.add(actValue);
-      return true;
+      boolean result = act.add(actValue);
+      return result;
     }
     return false;
   }
@@ -240,8 +240,8 @@ public class PlayType extends Identifiable {
    */
   public boolean removeFromAct(ActType actValue) {
     if (act.contains(actValue)) {
-      act.remove(actValue);
-      return true;
+      boolean result = act.remove(actValue);
+      return result;
     }
     return false;
   }

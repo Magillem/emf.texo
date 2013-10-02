@@ -164,8 +164,8 @@ public class Topic extends Identifiable {
    */
   public boolean addToPosts(Post postsValue) {
     if (!posts.contains(postsValue)) {
-      posts.add(postsValue);
-      return true;
+      boolean result = posts.add(postsValue);
+      return result;
     }
     return false;
   }
@@ -182,8 +182,8 @@ public class Topic extends Identifiable {
    */
   public boolean removeFromPosts(Post postsValue) {
     if (posts.contains(postsValue)) {
-      posts.remove(postsValue);
-      return true;
+      boolean result = posts.remove(postsValue);
+      return result;
     }
     return false;
   }

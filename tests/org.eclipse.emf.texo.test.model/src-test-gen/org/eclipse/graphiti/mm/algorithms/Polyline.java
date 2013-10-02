@@ -53,8 +53,8 @@ public class Polyline extends GraphicsAlgorithm {
    */
   public boolean addToPoints(Point pointsValue) {
     if (!points.contains(pointsValue)) {
-      points.add(pointsValue);
-      return true;
+      boolean result = points.add(pointsValue);
+      return result;
     }
     return false;
   }
@@ -71,8 +71,8 @@ public class Polyline extends GraphicsAlgorithm {
    */
   public boolean removeFromPoints(Point pointsValue) {
     if (points.contains(pointsValue)) {
-      points.remove(pointsValue);
-      return true;
+      boolean result = points.remove(pointsValue);
+      return result;
     }
     return false;
   }

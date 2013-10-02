@@ -251,8 +251,8 @@ public class Album extends Identifiable {
    */
   public boolean addToGenres(Genre genresValue) {
     if (!genres.contains(genresValue)) {
-      genres.add(genresValue);
-      return true;
+      boolean result = genres.add(genresValue);
+      return result;
     }
     return false;
   }
@@ -269,8 +269,8 @@ public class Album extends Identifiable {
    */
   public boolean removeFromGenres(Genre genresValue) {
     if (genres.contains(genresValue)) {
-      genres.remove(genresValue);
-      return true;
+      boolean result = genres.remove(genresValue);
+      return result;
     }
     return false;
   }
@@ -321,8 +321,8 @@ public class Album extends Identifiable {
    */
   public boolean addToSongs(Song songsValue) {
     if (!songs.contains(songsValue)) {
-      songs.add(songsValue);
-      return true;
+      boolean result = songs.add(songsValue);
+      return result;
     }
     return false;
   }
@@ -339,8 +339,8 @@ public class Album extends Identifiable {
    */
   public boolean removeFromSongs(Song songsValue) {
     if (songs.contains(songsValue)) {
-      songs.remove(songsValue);
-      return true;
+      boolean result = songs.remove(songsValue);
+      return result;
     }
     return false;
   }

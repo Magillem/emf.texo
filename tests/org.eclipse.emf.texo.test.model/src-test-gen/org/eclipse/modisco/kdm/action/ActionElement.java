@@ -97,8 +97,8 @@ public class ActionElement extends AbstractCodeElement {
    */
   public boolean addToCodeElement(AbstractCodeElement codeElementValue) {
     if (!codeElement.contains(codeElementValue)) {
-      codeElement.add(codeElementValue);
-      return true;
+      boolean result = codeElement.add(codeElementValue);
+      return result;
     }
     return false;
   }
@@ -115,8 +115,8 @@ public class ActionElement extends AbstractCodeElement {
    */
   public boolean removeFromCodeElement(AbstractCodeElement codeElementValue) {
     if (codeElement.contains(codeElementValue)) {
-      codeElement.remove(codeElementValue);
-      return true;
+      boolean result = codeElement.remove(codeElementValue);
+      return result;
     }
     return false;
   }
@@ -167,8 +167,8 @@ public class ActionElement extends AbstractCodeElement {
    */
   public boolean addToActionRelation(AbstractActionRelationship actionRelationValue) {
     if (!actionRelation.contains(actionRelationValue)) {
-      actionRelation.add(actionRelationValue);
-      return true;
+      boolean result = actionRelation.add(actionRelationValue);
+      return result;
     }
     return false;
   }
@@ -185,8 +185,8 @@ public class ActionElement extends AbstractCodeElement {
    */
   public boolean removeFromActionRelation(AbstractActionRelationship actionRelationValue) {
     if (actionRelation.contains(actionRelationValue)) {
-      actionRelation.remove(actionRelationValue);
-      return true;
+      boolean result = actionRelation.remove(actionRelationValue);
+      return result;
     }
     return false;
   }

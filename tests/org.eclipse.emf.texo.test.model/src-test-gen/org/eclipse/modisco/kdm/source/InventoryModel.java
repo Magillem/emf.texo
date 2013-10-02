@@ -57,8 +57,8 @@ public class InventoryModel extends KDMModel {
    */
   public boolean addToInventoryElement(AbstractInventoryElement inventoryElementValue) {
     if (!inventoryElement.contains(inventoryElementValue)) {
-      inventoryElement.add(inventoryElementValue);
-      return true;
+      boolean result = inventoryElement.add(inventoryElementValue);
+      return result;
     }
     return false;
   }
@@ -75,8 +75,8 @@ public class InventoryModel extends KDMModel {
    */
   public boolean removeFromInventoryElement(AbstractInventoryElement inventoryElementValue) {
     if (inventoryElement.contains(inventoryElementValue)) {
-      inventoryElement.remove(inventoryElementValue);
-      return true;
+      boolean result = inventoryElement.remove(inventoryElementValue);
+      return result;
     }
     return false;
   }

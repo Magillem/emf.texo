@@ -101,8 +101,8 @@ public class Member extends Identifiable {
    */
   public boolean addToPosts(Post postsValue) {
     if (!posts.contains(postsValue)) {
-      posts.add(postsValue);
-      return true;
+      boolean result = posts.add(postsValue);
+      return result;
     }
     return false;
   }
@@ -119,8 +119,8 @@ public class Member extends Identifiable {
    */
   public boolean removeFromPosts(Post postsValue) {
     if (posts.contains(postsValue)) {
-      posts.remove(postsValue);
-      return true;
+      boolean result = posts.remove(postsValue);
+      return result;
     }
     return false;
   }
@@ -171,8 +171,8 @@ public class Member extends Identifiable {
    */
   public boolean addToCreated(Topic createdValue) {
     if (!created.contains(createdValue)) {
-      created.add(createdValue);
-      return true;
+      boolean result = created.add(createdValue);
+      return result;
     }
     return false;
   }
@@ -189,8 +189,8 @@ public class Member extends Identifiable {
    */
   public boolean removeFromCreated(Topic createdValue) {
     if (created.contains(createdValue)) {
-      created.remove(createdValue);
-      return true;
+      boolean result = created.remove(createdValue);
+      return result;
     }
     return false;
   }

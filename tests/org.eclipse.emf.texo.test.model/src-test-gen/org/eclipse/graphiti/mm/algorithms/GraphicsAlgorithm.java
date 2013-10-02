@@ -188,8 +188,8 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    */
   public boolean addToGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
     if (!graphicsAlgorithmChildren.contains(graphicsAlgorithmChildrenValue)) {
-      graphicsAlgorithmChildren.add(graphicsAlgorithmChildrenValue);
-      return true;
+      boolean result = graphicsAlgorithmChildren.add(graphicsAlgorithmChildrenValue);
+      return result;
     }
     return false;
   }
@@ -206,8 +206,8 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    */
   public boolean removeFromGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
     if (graphicsAlgorithmChildren.contains(graphicsAlgorithmChildrenValue)) {
-      graphicsAlgorithmChildren.remove(graphicsAlgorithmChildrenValue);
-      return true;
+      boolean result = graphicsAlgorithmChildren.remove(graphicsAlgorithmChildrenValue);
+      return result;
     }
     return false;
   }

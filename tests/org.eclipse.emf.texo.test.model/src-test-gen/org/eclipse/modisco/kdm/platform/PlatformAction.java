@@ -84,8 +84,8 @@ public class PlatformAction extends AbstractPlatformElement {
    */
   public boolean addToPlatformElement(PlatformEvent platformElementValue) {
     if (!platformElement.contains(platformElementValue)) {
-      platformElement.add(platformElementValue);
-      return true;
+      boolean result = platformElement.add(platformElementValue);
+      return result;
     }
     return false;
   }
@@ -102,8 +102,8 @@ public class PlatformAction extends AbstractPlatformElement {
    */
   public boolean removeFromPlatformElement(PlatformEvent platformElementValue) {
     if (platformElement.contains(platformElementValue)) {
-      platformElement.remove(platformElementValue);
-      return true;
+      boolean result = platformElement.remove(platformElementValue);
+      return result;
     }
     return false;
   }

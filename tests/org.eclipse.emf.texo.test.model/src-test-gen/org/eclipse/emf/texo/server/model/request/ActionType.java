@@ -76,8 +76,8 @@ public class ActionType extends Identifiable {
    */
   public boolean addToUpdate(Object updateValue) {
     if (!update.contains(updateValue)) {
-      update.add(updateValue);
-      return true;
+      boolean result = update.add(updateValue);
+      return result;
     }
     return false;
   }
@@ -94,8 +94,8 @@ public class ActionType extends Identifiable {
    */
   public boolean removeFromUpdate(Object updateValue) {
     if (update.contains(updateValue)) {
-      update.remove(updateValue);
-      return true;
+      boolean result = update.remove(updateValue);
+      return result;
     }
     return false;
   }
@@ -146,8 +146,8 @@ public class ActionType extends Identifiable {
    */
   public boolean addToInsert(Object insertValue) {
     if (!insert.contains(insertValue)) {
-      insert.add(insertValue);
-      return true;
+      boolean result = insert.add(insertValue);
+      return result;
     }
     return false;
   }
@@ -164,8 +164,8 @@ public class ActionType extends Identifiable {
    */
   public boolean removeFromInsert(Object insertValue) {
     if (insert.contains(insertValue)) {
-      insert.remove(insertValue);
-      return true;
+      boolean result = insert.remove(insertValue);
+      return result;
     }
     return false;
   }
@@ -216,8 +216,8 @@ public class ActionType extends Identifiable {
    */
   public boolean addToDelete(Object deleteValue) {
     if (!delete.contains(deleteValue)) {
-      delete.add(deleteValue);
-      return true;
+      boolean result = delete.add(deleteValue);
+      return result;
     }
     return false;
   }
@@ -234,8 +234,8 @@ public class ActionType extends Identifiable {
    */
   public boolean removeFromDelete(Object deleteValue) {
     if (delete.contains(deleteValue)) {
-      delete.remove(deleteValue);
-      return true;
+      boolean result = delete.remove(deleteValue);
+      return result;
     }
     return false;
   }

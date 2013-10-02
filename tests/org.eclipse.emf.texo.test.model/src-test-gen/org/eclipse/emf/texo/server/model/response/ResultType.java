@@ -76,8 +76,8 @@ public class ResultType extends Identifiable {
    */
   public boolean addToUpdated(Object updatedValue) {
     if (!updated.contains(updatedValue)) {
-      updated.add(updatedValue);
-      return true;
+      boolean result = updated.add(updatedValue);
+      return result;
     }
     return false;
   }
@@ -94,8 +94,8 @@ public class ResultType extends Identifiable {
    */
   public boolean removeFromUpdated(Object updatedValue) {
     if (updated.contains(updatedValue)) {
-      updated.remove(updatedValue);
-      return true;
+      boolean result = updated.remove(updatedValue);
+      return result;
     }
     return false;
   }
@@ -146,8 +146,8 @@ public class ResultType extends Identifiable {
    */
   public boolean addToInserted(Object insertedValue) {
     if (!inserted.contains(insertedValue)) {
-      inserted.add(insertedValue);
-      return true;
+      boolean result = inserted.add(insertedValue);
+      return result;
     }
     return false;
   }
@@ -164,8 +164,8 @@ public class ResultType extends Identifiable {
    */
   public boolean removeFromInserted(Object insertedValue) {
     if (inserted.contains(insertedValue)) {
-      inserted.remove(insertedValue);
-      return true;
+      boolean result = inserted.remove(insertedValue);
+      return result;
     }
     return false;
   }
@@ -216,8 +216,8 @@ public class ResultType extends Identifiable {
    */
   public boolean addToDeleted(Object deletedValue) {
     if (!deleted.contains(deletedValue)) {
-      deleted.add(deletedValue);
-      return true;
+      boolean result = deleted.add(deletedValue);
+      return result;
     }
     return false;
   }
@@ -234,8 +234,8 @@ public class ResultType extends Identifiable {
    */
   public boolean removeFromDeleted(Object deletedValue) {
     if (deleted.contains(deletedValue)) {
-      deleted.remove(deletedValue);
-      return true;
+      boolean result = deleted.remove(deletedValue);
+      return result;
     }
     return false;
   }
