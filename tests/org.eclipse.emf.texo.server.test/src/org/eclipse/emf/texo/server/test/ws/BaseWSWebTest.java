@@ -27,6 +27,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.server.model.response.ErrorType;
+import org.eclipse.emf.texo.server.service.ServiceContext;
 import org.eclipse.emf.texo.server.test.BaseTest;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
 import org.eclipse.emf.texo.utils.ModelUtils;
@@ -54,6 +55,9 @@ public abstract class BaseWSWebTest extends BaseTest {
 
   public BaseWSWebTest(String name) {
     super(name);
+
+    ServiceContext.setInTexoTestRun();
+
   }
 
   protected void startClient() throws Exception {
