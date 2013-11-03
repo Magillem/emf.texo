@@ -19,6 +19,7 @@ import org.eclipse.graphiti.mm.algorithms.styles.Orientation;
 import org.eclipse.graphiti.mm.algorithms.styles.Point;
 import org.eclipse.graphiti.mm.algorithms.styles.RenderingStyle;
 import org.eclipse.graphiti.mm.algorithms.styles.Style;
+import org.eclipse.graphiti.mm.algorithms.styles.TextStyleRegion;
 import org.eclipse.graphiti.mm.pictograms.PictogramElement;
 
 /**
@@ -887,6 +888,8 @@ public class AlgorithmsModelFactory implements ModelFactory {
         return getTarget().getAngle();
       case AlgorithmsModelPackage.TEXT_VALUE_FEATURE_ID:
         return getTarget().getValue();
+      case AlgorithmsModelPackage.TEXT_STYLEREGIONS_FEATURE_ID:
+        return getTarget().getStyleRegions();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -971,6 +974,9 @@ public class AlgorithmsModelFactory implements ModelFactory {
         return;
       case AlgorithmsModelPackage.TEXT_VALUE_FEATURE_ID:
         getTarget().setValue((String) value);
+        return;
+      case AlgorithmsModelPackage.TEXT_STYLEREGIONS_FEATURE_ID:
+        getTarget().setStyleRegions((List<TextStyleRegion>) value);
         return;
       default:
         super.eSet(eStructuralFeature, value);
@@ -1084,6 +1090,8 @@ public class AlgorithmsModelFactory implements ModelFactory {
         return getTarget().getAngle();
       case AlgorithmsModelPackage.ABSTRACTTEXT_VALUE_FEATURE_ID:
         return getTarget().getValue();
+      case AlgorithmsModelPackage.ABSTRACTTEXT_STYLEREGIONS_FEATURE_ID:
+        return getTarget().getStyleRegions();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1169,6 +1177,9 @@ public class AlgorithmsModelFactory implements ModelFactory {
       case AlgorithmsModelPackage.ABSTRACTTEXT_VALUE_FEATURE_ID:
         getTarget().setValue((String) value);
         return;
+      case AlgorithmsModelPackage.ABSTRACTTEXT_STYLEREGIONS_FEATURE_ID:
+        getTarget().setStyleRegions((List<TextStyleRegion>) value);
+        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1182,6 +1193,8 @@ public class AlgorithmsModelFactory implements ModelFactory {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
+      case AlgorithmsModelPackage.ABSTRACTTEXT_STYLEREGIONS_FEATURE_ID:
+        return getTarget().addToStyleRegions((TextStyleRegion) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1195,6 +1208,8 @@ public class AlgorithmsModelFactory implements ModelFactory {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
 
+      case AlgorithmsModelPackage.ABSTRACTTEXT_STYLEREGIONS_FEATURE_ID:
+        return getTarget().removeFromStyleRegions((TextStyleRegion) value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2190,6 +2205,8 @@ public class AlgorithmsModelFactory implements ModelFactory {
         return getTarget().getAngle();
       case AlgorithmsModelPackage.MULTITEXT_VALUE_FEATURE_ID:
         return getTarget().getValue();
+      case AlgorithmsModelPackage.MULTITEXT_STYLEREGIONS_FEATURE_ID:
+        return getTarget().getStyleRegions();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2274,6 +2291,9 @@ public class AlgorithmsModelFactory implements ModelFactory {
         return;
       case AlgorithmsModelPackage.MULTITEXT_VALUE_FEATURE_ID:
         getTarget().setValue((String) value);
+        return;
+      case AlgorithmsModelPackage.MULTITEXT_STYLEREGIONS_FEATURE_ID:
+        getTarget().setStyleRegions((List<TextStyleRegion>) value);
         return;
       default:
         super.eSet(eStructuralFeature, value);

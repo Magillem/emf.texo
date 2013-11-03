@@ -76,6 +76,11 @@
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
     	</provider>
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Kepler)">
+      		<uri format="{0}/jetty/updates/jetty-bundles-8.x">
+				<bc:propertyRef key="eclipse.download"/>
+      		</uri>
+    	</provider>
     	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Juno)">
       		<uri format="{0}/releases/juno">
 				<bc:propertyRef key="eclipse.download"/>
@@ -132,7 +137,7 @@
       		</uri>
 		</provider>
 		<provider readerType="p2" componentTypes="osgi.bundle" mutable="false" source="false">
-			<uri format="http://www.elver.org/eclipse/2.0.0/update/">
+			<uri format="http://www.elver.org/eclipse/2.1.0/update/">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
 		</provider>

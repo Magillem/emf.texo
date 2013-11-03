@@ -25,6 +25,8 @@ import org.eclipse.graphiti.mm.algorithms.styles.dao.PointDao;
 import org.eclipse.graphiti.mm.algorithms.styles.dao.PrecisionPointDao;
 import org.eclipse.graphiti.mm.algorithms.styles.dao.RenderingStyleDao;
 import org.eclipse.graphiti.mm.algorithms.styles.dao.StyleDao;
+import org.eclipse.graphiti.mm.algorithms.styles.dao.TextStyleDao;
+import org.eclipse.graphiti.mm.algorithms.styles.dao.TextStyleRegionDao;
 
 /**
  * The <b>Package</b> for the model '<em><b>styles</b></em>'. It contains initialization code and access to the Factory
@@ -62,21 +64,28 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ORIENTATION_CLASSIFIER_ID = 12;
+  public static final int ORIENTATION_CLASSIFIER_ID = 14;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int LINESTYLE_CLASSIFIER_ID = 11;
+  public static final int LINESTYLE_CLASSIFIER_ID = 13;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int LOCATIONTYPE_CLASSIFIER_ID = 13;
+  public static final int LOCATIONTYPE_CLASSIFIER_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int UNDERLINESTYLE_CLASSIFIER_ID = 16;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -489,6 +498,48 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int TEXTSTYLEREGION_CLASSIFIER_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLEREGION_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLEREGION_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLEREGION_START_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLEREGION_END_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLEREGION_STYLE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int RENDERINGSTYLE_CLASSIFIER_ID = 0;
 
   /**
@@ -667,6 +718,83 @@ public class StylesModelPackage extends ModelPackage {
   public static final int GRADIENTCOLOREDAREAS_STYLEADAPTION_FEATURE_ID = 3;
 
   /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_CLASSIFIER_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_UNDERLINE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_UNDERLINESTYLE_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_STRIKEOUT_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_FONT_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_FOREGROUND_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_BACKGROUND_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_UNDERLINECOLOR_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_STRIKEOUTCOLOR_FEATURE_ID = 9;
+
+  /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
@@ -708,6 +836,8 @@ public class StylesModelPackage extends ModelPackage {
     ModelResolver.getInstance().registerClassModelMapping(Point.class, modelPackage.getPointEClass(), modelPackage);
     ModelResolver.getInstance().registerClassModelMapping(PrecisionPoint.class, modelPackage.getPrecisionPointEClass(),
         modelPackage);
+    ModelResolver.getInstance().registerClassModelMapping(TextStyleRegion.class,
+        modelPackage.getTextStyleRegionEClass(), modelPackage);
     ModelResolver.getInstance().registerClassModelMapping(RenderingStyle.class, modelPackage.getRenderingStyleEClass(),
         modelPackage);
     ModelResolver.getInstance().registerClassModelMapping(AdaptedGradientColoredAreas.class,
@@ -718,12 +848,16 @@ public class StylesModelPackage extends ModelPackage {
         modelPackage.getGradientColoredAreaEClass(), modelPackage);
     ModelResolver.getInstance().registerClassModelMapping(GradientColoredAreas.class,
         modelPackage.getGradientColoredAreasEClass(), modelPackage);
+    ModelResolver.getInstance().registerClassModelMapping(TextStyle.class, modelPackage.getTextStyleEClass(),
+        modelPackage);
 
     ModelResolver.getInstance().registerClassModelMapping(Orientation.class, modelPackage.getOrientationEEnum(),
         modelPackage);
     ModelResolver.getInstance().registerClassModelMapping(LineStyle.class, modelPackage.getLineStyleEEnum(),
         modelPackage);
     ModelResolver.getInstance().registerClassModelMapping(LocationType.class, modelPackage.getLocationTypeEEnum(),
+        modelPackage);
+    ModelResolver.getInstance().registerClassModelMapping(UnderlineStyle.class, modelPackage.getUnderlineStyleEEnum(),
         modelPackage);
 
     DaoRegistry.getInstance().registerDao(Style.class, StyleDao.class);
@@ -732,11 +866,13 @@ public class StylesModelPackage extends ModelPackage {
     DaoRegistry.getInstance().registerDao(Font.class, FontDao.class);
     DaoRegistry.getInstance().registerDao(Point.class, PointDao.class);
     DaoRegistry.getInstance().registerDao(PrecisionPoint.class, PrecisionPointDao.class);
+    DaoRegistry.getInstance().registerDao(TextStyleRegion.class, TextStyleRegionDao.class);
     DaoRegistry.getInstance().registerDao(RenderingStyle.class, RenderingStyleDao.class);
     DaoRegistry.getInstance().registerDao(AdaptedGradientColoredAreas.class, AdaptedGradientColoredAreasDao.class);
     DaoRegistry.getInstance().registerDao(GradientColoredLocation.class, GradientColoredLocationDao.class);
     DaoRegistry.getInstance().registerDao(GradientColoredArea.class, GradientColoredAreaDao.class);
     DaoRegistry.getInstance().registerDao(GradientColoredAreas.class, GradientColoredAreasDao.class);
+    DaoRegistry.getInstance().registerDao(TextStyle.class, TextStyleDao.class);
 
     // and return ourselves
     return modelPackage;
@@ -1255,6 +1391,49 @@ public class StylesModelPackage extends ModelPackage {
   }
 
   /**
+   * Returns the {@link EClass} '<em><b>TextStyleRegion</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @return an instance of the {@link EClass} '<em><b>TextStyleRegion</b></em>'
+   * @generated
+   */
+  public EClass getTextStyleRegionEClass() {
+    return (EClass) getEPackage().getEClassifiers().get(TEXTSTYLEREGION_CLASSIFIER_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyleRegion.start</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyleRegion.start</b></em>'.
+   * @generated
+   */
+  public EAttribute getTextStyleRegion_Start() {
+    return (EAttribute) getTextStyleRegionEClass().getEAllStructuralFeatures().get(TEXTSTYLEREGION_START_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyleRegion.end</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyleRegion.end</b></em>'.
+   * @generated
+   */
+  public EAttribute getTextStyleRegion_End() {
+    return (EAttribute) getTextStyleRegionEClass().getEAllStructuralFeatures().get(TEXTSTYLEREGION_END_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyleRegion.style</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyleRegion.style</b></em>'.
+   * @generated
+   */
+  public EReference getTextStyleRegion_Style() {
+    return (EReference) getTextStyleRegionEClass().getEAllStructuralFeatures().get(TEXTSTYLEREGION_STYLE_FEATURE_ID);
+  }
+
+  /**
    * Returns the {@link EClass} '<em><b>RenderingStyle</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return an instance of the {@link EClass} '<em><b>RenderingStyle</b></em>'
@@ -1441,6 +1620,104 @@ public class StylesModelPackage extends ModelPackage {
   }
 
   /**
+   * Returns the {@link EClass} '<em><b>TextStyle</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @return an instance of the {@link EClass} '<em><b>TextStyle</b></em>'
+   * @generated
+   */
+  public EClass getTextStyleEClass() {
+    return (EClass) getEPackage().getEClassifiers().get(TEXTSTYLE_CLASSIFIER_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.underline</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.underline</b></em>'.
+   * @generated
+   */
+  public EAttribute getTextStyle_Underline() {
+    return (EAttribute) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_UNDERLINE_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.underlineStyle</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.underlineStyle</b></em>'.
+   * @generated
+   */
+  public EAttribute getTextStyle_UnderlineStyle() {
+    return (EAttribute) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_UNDERLINESTYLE_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.strikeout</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.strikeout</b></em>'.
+   * @generated
+   */
+  public EAttribute getTextStyle_Strikeout() {
+    return (EAttribute) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_STRIKEOUT_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.font</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
+   * -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.font</b></em>'.
+   * @generated
+   */
+  public EReference getTextStyle_Font() {
+    return (EReference) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_FONT_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.foreground</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.foreground</b></em>'.
+   * @generated
+   */
+  public EReference getTextStyle_Foreground() {
+    return (EReference) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_FOREGROUND_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.background</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.background</b></em>'.
+   * @generated
+   */
+  public EReference getTextStyle_Background() {
+    return (EReference) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_BACKGROUND_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.underlineColor</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.underlineColor</b></em>'.
+   * @generated
+   */
+  public EReference getTextStyle_UnderlineColor() {
+    return (EReference) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_UNDERLINECOLOR_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>TextStyle.strikeoutColor</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>TextStyle.strikeoutColor</b></em>'.
+   * @generated
+   */
+  public EReference getTextStyle_StrikeoutColor() {
+    return (EReference) getTextStyleEClass().getEAllStructuralFeatures().get(TEXTSTYLE_STRIKEOUTCOLOR_FEATURE_ID);
+  }
+
+  /**
    * Returns the EEnum '<em><b>Orientation</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return an instance of the EEnum representing '<em><b>Orientation</b></em>'
@@ -1471,6 +1748,16 @@ public class StylesModelPackage extends ModelPackage {
   }
 
   /**
+   * Returns the EEnum '<em><b>UnderlineStyle</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @return an instance of the EEnum representing '<em><b>UnderlineStyle</b></em>'
+   * @generated
+   */
+  public EEnum getUnderlineStyleEEnum() {
+    return (EEnum) getEPackage().getEClassifiers().get(UNDERLINESTYLE_CLASSIFIER_ID);
+  }
+
+  /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param eClassifier
@@ -1493,6 +1780,8 @@ public class StylesModelPackage extends ModelPackage {
       return Point.class;
     case PRECISIONPOINT_CLASSIFIER_ID:
       return PrecisionPoint.class;
+    case TEXTSTYLEREGION_CLASSIFIER_ID:
+      return TextStyleRegion.class;
     case RENDERINGSTYLE_CLASSIFIER_ID:
       return RenderingStyle.class;
     case ADAPTEDGRADIENTCOLOREDAREAS_CLASSIFIER_ID:
@@ -1503,12 +1792,16 @@ public class StylesModelPackage extends ModelPackage {
       return GradientColoredArea.class;
     case GRADIENTCOLOREDAREAS_CLASSIFIER_ID:
       return GradientColoredAreas.class;
+    case TEXTSTYLE_CLASSIFIER_ID:
+      return TextStyle.class;
     case ORIENTATION_CLASSIFIER_ID:
       return Orientation.class;
     case LINESTYLE_CLASSIFIER_ID:
       return LineStyle.class;
     case LOCATIONTYPE_CLASSIFIER_ID:
       return LocationType.class;
+    case UNDERLINESTYLE_CLASSIFIER_ID:
+      return UnderlineStyle.class;
     default:
       throw new IllegalArgumentException("The EClassifier '" + eClassifier + "' is not defined in this EPackage");
     }

@@ -1,15 +1,20 @@
 package org.eclipse.graphiti.mm.algorithms;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OrderColumn;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.graphiti.mm.algorithms.styles.Font;
 import org.eclipse.graphiti.mm.algorithms.styles.Orientation;
+import org.eclipse.graphiti.mm.algorithms.styles.TextStyleRegion;
 import org.eclipse.persistence.annotations.Converter;
 import org.eclipse.persistence.annotations.Converters;
 
@@ -64,6 +69,15 @@ public abstract class AbstractText extends GraphicsAlgorithm {
    */
   @Basic(optional = false)
   private String value = null;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  @OneToMany(cascade = { CascadeType.ALL })
+  @OrderColumn()
+  private List<TextStyleRegion> styleRegions = new ArrayList<TextStyleRegion>();
 
   /**
    * Returns the value of '<em><b>font</b></em>' feature.
@@ -188,6 +202,76 @@ public abstract class AbstractText extends GraphicsAlgorithm {
    */
   public void setValue(String newValue) {
     value = newValue;
+  }
+
+  /**
+   * Returns the value of '<em><b>styleRegions</b></em>' feature.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @return the value of '<em><b>styleRegions</b></em>' feature
+   * @generated
+   */
+  public List<TextStyleRegion> getStyleRegions() {
+    return styleRegions;
+  }
+
+  /**
+   * Adds to the <em>styleRegions</em> feature.
+   * 
+   * @param styleRegionsValue
+   *          the value to add
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
+   * @generated
+   */
+  public boolean addToStyleRegions(TextStyleRegion styleRegionsValue) {
+    if (!styleRegions.contains(styleRegionsValue)) {
+      boolean result = styleRegions.add(styleRegionsValue);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Removes from the <em>styleRegions</em> feature.
+   * 
+   * @param styleRegionsValue
+   *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
+   * 
+   * @generated
+   */
+  public boolean removeFromStyleRegions(TextStyleRegion styleRegionsValue) {
+    if (styleRegions.contains(styleRegionsValue)) {
+      boolean result = styleRegions.remove(styleRegionsValue);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Clears the <em>styleRegions</em> feature.
+   * 
+   * @generated
+   */
+  public void clearStyleRegions() {
+    while (!styleRegions.isEmpty()) {
+      removeFromStyleRegions(styleRegions.iterator().next());
+    }
+  }
+
+  /**
+   * Sets the '{@link AbstractText#getStyleRegions() <em>styleRegions</em>}' feature.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param newStyleRegions
+   *          the new value of the '{@link AbstractText#getStyleRegions() styleRegions}' feature.
+   * @generated
+   */
+  public void setStyleRegions(List<TextStyleRegion> newStyleRegions) {
+    styleRegions = newStyleRegions;
   }
 
   /**

@@ -19,19 +19,23 @@ package org.eclipse.emf.texo.test;
 
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import junit.framework.Assert;
-
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.compare.diff.metamodel.DiffElement;
-import org.eclipse.emf.compare.diff.metamodel.DiffModel;
-import org.eclipse.emf.compare.diff.service.DiffService;
-import org.eclipse.emf.compare.match.MatchOptions;
-import org.eclipse.emf.compare.match.metamodel.MatchModel;
-import org.eclipse.emf.compare.match.service.MatchService;
+import org.eclipse.emf.compare.Comparison;
+import org.eclipse.emf.compare.Diff;
+import org.eclipse.emf.compare.EMFCompare;
+import org.eclipse.emf.compare.match.DefaultComparisonFactory;
+import org.eclipse.emf.compare.match.DefaultEqualityHelperFactory;
+import org.eclipse.emf.compare.match.DefaultMatchEngine;
+import org.eclipse.emf.compare.match.IComparisonFactory;
+import org.eclipse.emf.compare.match.IMatchEngine;
+import org.eclipse.emf.compare.match.eobject.IEObjectMatcher;
+import org.eclipse.emf.compare.match.impl.MatchEngineFactoryImpl;
+import org.eclipse.emf.compare.match.impl.MatchEngineFactoryRegistryImpl;
+import org.eclipse.emf.compare.scope.IComparisonScope;
+import org.eclipse.emf.compare.utils.UseIdentifiers;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,6 +47,7 @@ import org.eclipse.emf.texo.converter.ModelEMFConverter;
 import org.eclipse.emf.texo.datagenerator.ModelDataGenerator;
 import org.eclipse.emf.texo.xml.ModelXMLLoader;
 import org.eclipse.emf.texo.xml.ModelXMLSaver;
+import org.junit.Assert;
 
 /**
  * Utility methods for testcases.
@@ -149,25 +154,23 @@ public class TestUtils {
     resource1.getContents().addAll(eObjects1);
     resource2.getContents().addAll(eObjects2);
 
-    try {
-      final Map<String, Object> options = new HashMap<String, Object>();
-      options.put(MatchOptions.OPTION_IGNORE_XMI_ID, Boolean.TRUE);
-      options.put(MatchOptions.OPTION_IGNORE_ID, Boolean.TRUE);
-      final MatchModel match = MatchService.doResourceMatch(resource1, resource2, options);
-      // Computing differences
-      final DiffModel diff = DiffService.doDiff(match, false);
-      final List<DiffElement> differences = diff.getDifferences();
-      final StringBuilder sb = new StringBuilder();
-      for (DiffElement diffElement : differences) {
-        sb.append(diffElement.toString() + "\n"); //$NON-NLS-1$
-      }
-      if (!differences.isEmpty()) {
-        System.err.println("ads");
-      }
-      Assert.assertTrue(sb.toString(), differences.isEmpty());
-    } catch (final InterruptedException e) {
-      throw new IllegalStateException(e);
+    final IEObjectMatcher matcher = DefaultMatchEngine.createDefaultEObjectMatcher(UseIdentifiers.NEVER);
+    final IComparisonFactory comparisonFactory = new DefaultComparisonFactory(new DefaultEqualityHelperFactory());
+    final IMatchEngine.Factory matchEngineFactory = new MatchEngineFactoryImpl(matcher, comparisonFactory);
+    matchEngineFactory.setRanking(20);
+    IMatchEngine.Factory.Registry matchEngineRegistry = new MatchEngineFactoryRegistryImpl();
+    matchEngineRegistry.add(matchEngineFactory);
+    final EMFCompare comparator = EMFCompare.builder().setMatchEngineFactoryRegistry(matchEngineRegistry).build();
+
+    // Compare the two models
+    final IComparisonScope scope = EMFCompare.createDefaultScope(resource1, resource2);
+    final Comparison comparison = comparator.compare(scope);
+    final EList<Diff> differences = comparison.getDifferences();
+    final StringBuilder sb = new StringBuilder();
+    for (Diff diff : differences) {
+      sb.append(diff.toString() + "\n"); //$NON-NLS-1$
     }
+    Assert.assertTrue(sb.toString(), differences.isEmpty());
   }
 
 }

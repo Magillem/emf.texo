@@ -43,6 +43,8 @@ public class StylesModelFactory implements ModelFactory {
       return createPoint();
     case StylesModelPackage.PRECISIONPOINT_CLASSIFIER_ID:
       return createPrecisionPoint();
+    case StylesModelPackage.TEXTSTYLEREGION_CLASSIFIER_ID:
+      return createTextStyleRegion();
     case StylesModelPackage.RENDERINGSTYLE_CLASSIFIER_ID:
       return createRenderingStyle();
     case StylesModelPackage.ADAPTEDGRADIENTCOLOREDAREAS_CLASSIFIER_ID:
@@ -53,6 +55,8 @@ public class StylesModelFactory implements ModelFactory {
       return createGradientColoredArea();
     case StylesModelPackage.GRADIENTCOLOREDAREAS_CLASSIFIER_ID:
       return createGradientColoredAreas();
+    case StylesModelPackage.TEXTSTYLE_CLASSIFIER_ID:
+      return createTextStyle();
     default:
       throw new IllegalArgumentException("The EClass '" + eClass.getName()
           + "' is not a valid EClass for this EPackage");
@@ -91,6 +95,9 @@ public class StylesModelFactory implements ModelFactory {
     case StylesModelPackage.PRECISIONPOINT_CLASSIFIER_ID:
       modelObject = new PrecisionPointModelObject();
       break;
+    case StylesModelPackage.TEXTSTYLEREGION_CLASSIFIER_ID:
+      modelObject = new TextStyleRegionModelObject();
+      break;
     case StylesModelPackage.RENDERINGSTYLE_CLASSIFIER_ID:
       modelObject = new RenderingStyleModelObject();
       break;
@@ -105,6 +112,9 @@ public class StylesModelFactory implements ModelFactory {
       break;
     case StylesModelPackage.GRADIENTCOLOREDAREAS_CLASSIFIER_ID:
       modelObject = new GradientColoredAreasModelObject();
+      break;
+    case StylesModelPackage.TEXTSTYLE_CLASSIFIER_ID:
+      modelObject = new TextStyleModelObject();
       break;
     default:
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
@@ -195,6 +205,16 @@ public class StylesModelFactory implements ModelFactory {
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
+   * @return an instance of the model object representing the EClass TextStyleRegion
+   * @generated
+   */
+  public TextStyleRegion createTextStyleRegion() {
+    return new TextStyleRegion();
+  }
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @return an instance of the model object representing the EClass RenderingStyle
    * @generated
    */
@@ -243,6 +263,16 @@ public class StylesModelFactory implements ModelFactory {
   }
 
   /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @return an instance of the model object representing the EClass TextStyle
+   * @generated
+   */
+  public TextStyle createTextStyle() {
+    return new TextStyle();
+  }
+
+  /**
    * Converts an instance of an {@link EDataType} to a String. <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param eDataType
@@ -259,6 +289,8 @@ public class StylesModelFactory implements ModelFactory {
       return createLineStyleFromString(value);
     case StylesModelPackage.LOCATIONTYPE_CLASSIFIER_ID:
       return createLocationTypeFromString(value);
+    case StylesModelPackage.UNDERLINESTYLE_CLASSIFIER_ID:
+      return createUnderlineStyleFromString(value);
     default:
       throw new IllegalArgumentException("The EDatatype '" + eDataType + "' is not defined in this EPackage");
     }
@@ -281,6 +313,8 @@ public class StylesModelFactory implements ModelFactory {
       return convertLineStyleToString((LineStyle) value);
     case StylesModelPackage.LOCATIONTYPE_CLASSIFIER_ID:
       return convertLocationTypeToString((LocationType) value);
+    case StylesModelPackage.UNDERLINESTYLE_CLASSIFIER_ID:
+      return convertUnderlineStyleToString((UnderlineStyle) value);
     default:
       throw new IllegalArgumentException("The EDatatype '" + eDataType + "' is not defined in this EPackage.");
     }
@@ -374,6 +408,36 @@ public class StylesModelFactory implements ModelFactory {
       return null;
     }
     return LocationType.get(value);
+  }
+
+  /**
+   * Converts the EDataType: UnderlineStyle to a String. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param value
+   *          the object to convert
+   * @return the String representing the value, if value == null then null is returned
+   * @generated
+   */
+  public String convertUnderlineStyleToString(UnderlineStyle value) {
+    if (value == null) {
+      return null;
+    }
+    return value.toString();
+  }
+
+  /**
+   * Creates an instance of the EDataType: UnderlineStyle from a String. <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param value
+   *          the string value to convert to an object
+   * @return the instance of the data type, if value == null then null is returned
+   * @generated
+   */
+  public UnderlineStyle createUnderlineStyleFromString(String value) {
+    if (value == null) {
+      return null;
+    }
+    return UnderlineStyle.get(value);
   }
 
   /**
@@ -1108,6 +1172,110 @@ public class StylesModelFactory implements ModelFactory {
   }
 
   /**
+   * The adapter/wrapper for the EClass '<em><b>TextStyleRegion</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param <E>
+   *          the domain model java class
+   * 
+   * @generated
+   */
+  public static class TextStyleRegionModelObject<E extends TextStyleRegion> extends
+      IdentifiableModelFactory.IdentifiableModelObject<E> {
+    /**
+     * @generated
+     */
+    @Override
+    public EClass eClass() {
+      return StylesModelPackage.INSTANCE.getTextStyleRegionEClass();
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public ModelPackage getModelPackage() {
+      return StylesModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public Object eGet(EStructuralFeature eStructuralFeature) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
+      case StylesModelPackage.TEXTSTYLEREGION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case StylesModelPackage.TEXTSTYLEREGION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case StylesModelPackage.TEXTSTYLEREGION_START_FEATURE_ID:
+        return getTarget().getStart();
+      case StylesModelPackage.TEXTSTYLEREGION_END_FEATURE_ID:
+        return getTarget().getEnd();
+      case StylesModelPackage.TEXTSTYLEREGION_STYLE_FEATURE_ID:
+        return getTarget().getStyle();
+      default:
+        return super.eGet(eStructuralFeature);
+      }
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public void eSet(EStructuralFeature eStructuralFeature, Object value) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
+      case StylesModelPackage.TEXTSTYLEREGION_DB_ID_FEATURE_ID:
+        getTarget().setDb_Id((Long) value);
+        return;
+      case StylesModelPackage.TEXTSTYLEREGION_DB_VERSION_FEATURE_ID:
+        getTarget().setDb_version((Integer) value);
+        return;
+      case StylesModelPackage.TEXTSTYLEREGION_START_FEATURE_ID:
+        getTarget().setStart((Integer) value);
+        return;
+      case StylesModelPackage.TEXTSTYLEREGION_END_FEATURE_ID:
+        getTarget().setEnd((Integer) value);
+        return;
+      case StylesModelPackage.TEXTSTYLEREGION_STYLE_FEATURE_ID:
+        getTarget().setStyle((TextStyle) value);
+        return;
+      default:
+        super.eSet(eStructuralFeature, value);
+      }
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
+
+      default:
+        return super.eAddTo(eStructuralFeature, value);
+      }
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
+
+      default:
+        return super.eRemoveFrom(eStructuralFeature, value);
+      }
+    }
+  }
+
+  /**
    * The adapter/wrapper for the EClass '<em><b>RenderingStyle</b></em>'.
    * 
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -1614,6 +1782,135 @@ public class StylesModelFactory implements ModelFactory {
 
       case StylesModelPackage.GRADIENTCOLOREDAREAS_GRADIENTCOLOR_FEATURE_ID:
         return getTarget().removeFromGradientColor((GradientColoredArea) value);
+
+      default:
+        return super.eRemoveFrom(eStructuralFeature, value);
+      }
+    }
+  }
+
+  /**
+   * The adapter/wrapper for the EClass '<em><b>TextStyle</b></em>'.
+   * 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @param <E>
+   *          the domain model java class
+   * 
+   * @generated
+   */
+  public static class TextStyleModelObject<E extends TextStyle> extends
+      IdentifiableModelFactory.IdentifiableModelObject<E> {
+    /**
+     * @generated
+     */
+    @Override
+    public EClass eClass() {
+      return StylesModelPackage.INSTANCE.getTextStyleEClass();
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public ModelPackage getModelPackage() {
+      return StylesModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public Object eGet(EStructuralFeature eStructuralFeature) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
+      case StylesModelPackage.TEXTSTYLE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case StylesModelPackage.TEXTSTYLE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case StylesModelPackage.TEXTSTYLE_UNDERLINE_FEATURE_ID:
+        return getTarget().isUnderline();
+      case StylesModelPackage.TEXTSTYLE_UNDERLINESTYLE_FEATURE_ID:
+        return getTarget().getUnderlineStyle();
+      case StylesModelPackage.TEXTSTYLE_STRIKEOUT_FEATURE_ID:
+        return getTarget().isStrikeout();
+      case StylesModelPackage.TEXTSTYLE_FONT_FEATURE_ID:
+        return getTarget().getFont();
+      case StylesModelPackage.TEXTSTYLE_FOREGROUND_FEATURE_ID:
+        return getTarget().getForeground();
+      case StylesModelPackage.TEXTSTYLE_BACKGROUND_FEATURE_ID:
+        return getTarget().getBackground();
+      case StylesModelPackage.TEXTSTYLE_UNDERLINECOLOR_FEATURE_ID:
+        return getTarget().getUnderlineColor();
+      case StylesModelPackage.TEXTSTYLE_STRIKEOUTCOLOR_FEATURE_ID:
+        return getTarget().getStrikeoutColor();
+      default:
+        return super.eGet(eStructuralFeature);
+      }
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public void eSet(EStructuralFeature eStructuralFeature, Object value) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
+      case StylesModelPackage.TEXTSTYLE_DB_ID_FEATURE_ID:
+        getTarget().setDb_Id((Long) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_DB_VERSION_FEATURE_ID:
+        getTarget().setDb_version((Integer) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_UNDERLINE_FEATURE_ID:
+        getTarget().setUnderline((Boolean) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_UNDERLINESTYLE_FEATURE_ID:
+        getTarget().setUnderlineStyle((UnderlineStyle) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_STRIKEOUT_FEATURE_ID:
+        getTarget().setStrikeout((Boolean) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_FONT_FEATURE_ID:
+        getTarget().setFont((Font) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_FOREGROUND_FEATURE_ID:
+        getTarget().setForeground((Color) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_BACKGROUND_FEATURE_ID:
+        getTarget().setBackground((Color) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_UNDERLINECOLOR_FEATURE_ID:
+        getTarget().setUnderlineColor((Color) value);
+        return;
+      case StylesModelPackage.TEXTSTYLE_STRIKEOUTCOLOR_FEATURE_ID:
+        getTarget().setStrikeoutColor((Color) value);
+        return;
+      default:
+        super.eSet(eStructuralFeature, value);
+      }
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public boolean eAddTo(EStructuralFeature eStructuralFeature, Object value) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
+
+      default:
+        return super.eAddTo(eStructuralFeature, value);
+      }
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public boolean eRemoveFrom(EStructuralFeature eStructuralFeature, Object value) {
+      final int featureID = eClass().getFeatureID(eStructuralFeature);
+      switch (featureID) {
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);

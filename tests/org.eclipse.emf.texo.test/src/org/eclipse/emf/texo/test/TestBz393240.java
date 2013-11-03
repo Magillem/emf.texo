@@ -35,26 +35,26 @@ public class TestBz393240 {
     {
       final DocumentRoot dr = Bz393240ModelPackage.INSTANCE.getModelFactory().createDocumentRoot();
       final Application appl = Bz393240ModelPackage.INSTANCE.getModelFactory().createApplication();
-      appl.setName("test");
+      appl.setName("test"); //$NON-NLS-1$
       dr.setApplicationResponse(appl);
       final ModelXMLSaver xmlSaver = new ModelXMLSaver();
       xmlSaver.setObjects(Collections.singletonList((Object) dr));
       final StringWriter sw = new StringWriter();
       xmlSaver.setWriter(sw);
       xmlSaver.write();
-      Assert.assertTrue(sw.toString().contains("applicationResponse"));
+      Assert.assertTrue(sw.toString().contains("applicationResponse")); //$NON-NLS-1$
     }
     {
       final DocumentRoot dr = Bz393240ModelPackage.INSTANCE.getModelFactory().createDocumentRoot();
       final Application appl = Bz393240ModelPackage.INSTANCE.getModelFactory().createApplication();
-      appl.setName("test");
+      appl.setName("test"); //$NON-NLS-1$
       dr.setApplicationRequest(appl);
       final ModelXMLSaver xmlSaver = new ModelXMLSaver();
       xmlSaver.setObjects(Collections.singletonList((Object) dr));
       final StringWriter sw = new StringWriter();
       xmlSaver.setWriter(sw);
       xmlSaver.write();
-      Assert.assertTrue(sw.toString().contains("applicationRequest"));
+      Assert.assertTrue(sw.toString().contains("applicationRequest")); //$NON-NLS-1$
     }
 
     // System.err.println(sw.toString());

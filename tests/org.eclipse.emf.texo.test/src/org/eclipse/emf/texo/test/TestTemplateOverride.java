@@ -17,12 +17,12 @@
 
 package org.eclipse.emf.texo.test;
 
-import junit.framework.Assert;
 import junit.framework.TestCase;
 
 import org.eclipse.emf.texo.test.model.samples.employee.Department;
 import org.eclipse.emf.texo.test.model.samples.employee.Employee;
 import org.eclipse.emf.texo.test.model.samples.employee.EmployeeOverrideTest;
+import org.junit.Assert;
 
 /**
  * Tests that the entity.xpt template is overridden.

@@ -17,12 +17,12 @@
 
 package org.eclipse.emf.texo.test;
 
-import junit.framework.Assert;
 import junit.framework.TestCase;
 
 import org.eclipse.emf.texo.test.model.samples.library.Library;
 import org.eclipse.emf.texo.test.model.samples.library.Writer;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
+import org.junit.Assert;
 
 /**
  * Tests bugzilla 363802

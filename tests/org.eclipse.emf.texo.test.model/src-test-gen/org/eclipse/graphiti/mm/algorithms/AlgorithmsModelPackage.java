@@ -663,6 +663,13 @@ public class AlgorithmsModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int TEXT_STYLEREGIONS_FEATURE_ID = 24;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ABSTRACTTEXT_CLASSIFIER_ID = 9;
 
   /**
@@ -832,6 +839,13 @@ public class AlgorithmsModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ABSTRACTTEXT_VALUE_FEATURE_ID = 23;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTTEXT_STYLEREGIONS_FEATURE_ID = 24;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -1765,6 +1779,13 @@ public class AlgorithmsModelPackage extends ModelPackage {
   public static final int MULTITEXT_VALUE_FEATURE_ID = 23;
 
   /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int MULTITEXT_STYLEREGIONS_FEATURE_ID = 24;
+
+  /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
@@ -2177,6 +2198,17 @@ public class AlgorithmsModelPackage extends ModelPackage {
    */
   public EAttribute getAbstractText_Value() {
     return (EAttribute) getAbstractTextEClass().getEAllStructuralFeatures().get(ABSTRACTTEXT_VALUE_FEATURE_ID);
+  }
+
+  /**
+   * Returns the {@link EStructuralFeature} '<em><b>AbstractText.styleRegions</b></em>'. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>AbstractText.styleRegions</b></em>'.
+   * @generated
+   */
+  public EReference getAbstractText_StyleRegions() {
+    return (EReference) getAbstractTextEClass().getEAllStructuralFeatures().get(ABSTRACTTEXT_STYLEREGIONS_FEATURE_ID);
   }
 
   /**

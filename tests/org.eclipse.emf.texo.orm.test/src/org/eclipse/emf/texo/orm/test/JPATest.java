@@ -27,9 +27,7 @@ import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.test.base.ModelPackageJPATest;
 import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelPackage;
 import org.eclipse.persistence.config.PersistenceUnitProperties;
-import org.eclipse.persistence.jpa.osgi.PersistenceProvider;
-import org.eclipse.persistence.sessions.Session;
-import org.eclipse.persistence.sessions.factories.SessionManager;
+import org.eclipse.persistence.jpa.PersistenceProvider;
 
 /**
  * Base JPA Test
@@ -151,8 +149,8 @@ public abstract class JPATest extends ModelPackageJPATest {
   }
 
   protected void reinitializeCachesAndEntityManager() {
-    Session session = SessionManager.getManager().getSession(getPersistenceUnitName());
-    session.getIdentityMapAccessor().initializeAllIdentityMaps();
+    // Session session = SessionManager.getManager().getSession(getPersistenceUnitName());
+    // session.getIdentityMapAccessor().initializeAllIdentityMaps();
     em.close();
     em = getEntityManagerFactory().createEntityManager();
   }

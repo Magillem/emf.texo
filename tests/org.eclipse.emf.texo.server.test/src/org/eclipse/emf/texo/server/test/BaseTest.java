@@ -40,7 +40,7 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.persistence.config.PersistenceUnitProperties;
-import org.eclipse.persistence.jpa.osgi.PersistenceProvider;
+import org.eclipse.persistence.jpa.PersistenceProvider;
 import org.junit.After;
 import org.junit.Before;
 

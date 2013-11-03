@@ -34,7 +34,7 @@ import org.eclipse.emf.texo.utils.ModelUtils;
 import org.eclipse.emf.texo.xml.ModelXMLLoader;
 import org.eclipse.emf.texo.xml.ModelXMLSaver;
 import org.eclipse.emf.texo.xml.XMLWebServiceObjectResolver;
-import org.eclipse.jetty.client.ContentExchange;
+import org.eclipse.jetty.client.HttpExchange.ContentExchange;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.http.HttpMethods;
 import org.eclipse.jetty.io.ByteArrayBuffer;

@@ -7,7 +7,7 @@
         <details key="java.member" value="key"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="org.eclipse.emf.texo">
         <details key="java.member" value="value"/>
       </eAnnotations>
@@ -453,6 +453,12 @@
           <details key="java.member" value="value"/>
         </eAnnotations>
       </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="styleRegions" upperBound="-1"
+          eType="#//algorithms/styles/TextStyleRegion" containment="true">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="styleRegions"/>
+        </eAnnotations>
+      </eStructuralFeatures>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="MultiText" eSuperTypes="#//algorithms/AbstractText"/>
     <eSubpackages name="styles" nsURI="http://eclipse.org/graphiti/mm/algorithms/styles"
@@ -747,6 +753,66 @@
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="TextStyle" eSuperTypes="http://www.eclipse.org/emf/texo/test/model/base/identifiable#//Identifiable">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="underline" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="underline"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="underlineStyle" eType="#//algorithms/styles/UnderlineStyle">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="underlineStyle"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="strikeout" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="strikeout"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="font" eType="#//algorithms/styles/Font">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="font"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="foreground" eType="#//algorithms/styles/Color">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="foreground"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="background" eType="#//algorithms/styles/Color">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="background"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="underlineColor" eType="#//algorithms/styles/Color">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="underlineColor"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="strikeoutColor" eType="#//algorithms/styles/Color">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="strikeoutColor"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="TextStyleRegion" eSuperTypes="http://www.eclipse.org/emf/texo/test/model/base/identifiable#//Identifiable">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="start" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="start"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="end"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="style" eType="#//algorithms/styles/TextStyle"
+            containment="true">
+          <eAnnotations source="org.eclipse.emf.texo">
+            <details key="java.member" value="style"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="LineStyle">
         <eLiterals name="SOLID"/>
         <eLiterals name="DASH" value="1"/>
@@ -768,6 +834,12 @@
         <eLiterals name="LOCATION_TYPE_RELATIVE" value="1"/>
         <eLiterals name="LOCATION_TYPE_ABSOLUTE_START" value="2"/>
         <eLiterals name="LOCATION_TYPE_ABSOLUTE_END" value="3"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="UnderlineStyle">
+        <eLiterals name="UNDERLINE_SINGLE"/>
+        <eLiterals name="UNDERLINE_DOUBLE" value="1"/>
+        <eLiterals name="UNDERLINE_ERROR" value="2"/>
+        <eLiterals name="UNDERLINE_SQUIGGLE" value="3"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
