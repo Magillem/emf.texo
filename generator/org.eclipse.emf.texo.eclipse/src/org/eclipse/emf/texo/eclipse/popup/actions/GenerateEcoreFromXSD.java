@@ -16,7 +16,6 @@
  */
 package org.eclipse.emf.texo.eclipse.popup.actions;
 
-import java.io.File;
 import java.net.URI;
 import java.util.Collection;
 import java.util.Collections;
@@ -70,13 +69,7 @@ public class GenerateEcoreFromXSD extends BaseGenerateAction {
             }
 
             // save the EPackage in the file
-            final Resource resource;
-            final File file = new File(ecoreURI.toFileString());
-            if (file.exists()) {
-              resource = resourceSet.getResource(ecoreURI, true);
-            } else {
-              resource = resourceSet.createResource(ecoreURI);
-            }
+            final Resource resource = resourceSet.createResource(ecoreURI);
             resource.getContents().clear();
             resource.getContents().add(ePackage);
           }
