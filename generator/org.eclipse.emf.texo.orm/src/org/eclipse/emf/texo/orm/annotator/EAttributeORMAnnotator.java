@@ -238,12 +238,14 @@ public class EAttributeORMAnnotator extends EStructuralFeatureORMAnnotator imple
       if (elementCollection.getCollectionTable() == null) {
         final CollectionTable collectionTable = OrmFactory.eINSTANCE.createCollectionTable();
         elementCollection.setCollectionTable(collectionTable);
-      }
-      if (GeneratorUtils.isEmptyOrNull(elementCollection.getCollectionTable().getName())) {
-        elementCollection.getCollectionTable().setName(namingStrategy.getJoinTableName(eAttribute));
+        collectionTable.setName(null);
       }
 
       if (namingStrategy.isGenerateAllDBSchemaNames()) {
+        if (GeneratorUtils.isEmptyOrNull(elementCollection.getCollectionTable().getName())) {
+          elementCollection.getCollectionTable().setName(namingStrategy.getJoinTableName(eAttribute));
+        }
+
         if (elementCollection.getColumn() == null) {
           elementCollection.setColumn(OrmFactory.eINSTANCE.createColumn());
         }
