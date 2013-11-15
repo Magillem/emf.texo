@@ -52,6 +52,7 @@ import org.json.JSONObject;
 public abstract class BaseJSONModelConverter<T extends Object> implements TexoComponent {
 
   private Map<String, T> resolvedObjects = new HashMap<String, T>();
+  private Map<String, T> newObjects = new HashMap<String, T>();
 
   private ObjectResolver objectResolver = ComponentProvider.getInstance().newInstance(DefaultObjectResolver.class);
 
@@ -71,6 +72,7 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
    */
   public List<T> convert(final JSONArray jsonArray) {
     resolvedObjects.clear();
+    newObjects.clear();
     doClearInternalDataStructures();
     return doConvert(jsonArray);
   }
@@ -101,6 +103,7 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
    */
   public T convert(final JSONObject jsonObject) {
     resolvedObjects.clear();
+    newObjects.clear();
     doClearInternalDataStructures();
     return doConvert(jsonObject);
   }
@@ -151,6 +154,7 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
         final T object = create(eClass, uriString);
         if (uriString != null) {
           resolvedObjects.put(uriString, object);
+          newObjects.put(uriString, object);
         }
         return object;
       }
@@ -158,6 +162,10 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
     } catch (JSONException e) {
       throw new RuntimeException(e);
     }
+  }
+
+  protected boolean isNewObject(String uriString) {
+    return newObjects.containsKey(uriString);
   }
 
   protected abstract T fromUri(String uriString);

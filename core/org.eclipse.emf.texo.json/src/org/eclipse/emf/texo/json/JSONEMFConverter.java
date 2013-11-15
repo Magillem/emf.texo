@@ -58,8 +58,13 @@ public class JSONEMFConverter extends BaseJSONModelConverter<EObject> {
       if (source.has(ModelJSONConstants.PROXY_PROPERTY) && source.getBoolean(ModelJSONConstants.PROXY_PROPERTY)
           && !nonProxiedObjects.contains(target)) {
         final String proxyUri = source.getString(ModelJSONConstants.URI_PROPERTY);
-        final URI uri = ModelUtils.convertToEMFURI(URI.createURI(proxyUri));
-        ((InternalEObject) target).eSetProxyURI(uri);
+        // only set the uri if it is wat not cached before, if it was cached
+        // before then the proxy uri is already cleared, so we should not set it
+        // again.
+        if (isNewObject(proxyUri)) {
+          final URI uri = ModelUtils.convertToEMFURI(URI.createURI(proxyUri));
+          ((InternalEObject) target).eSetProxyURI(uri);
+        }
       } else {
         nonProxiedObjects.add(target);
         ((InternalEObject) target).eSetProxyURI(null);
