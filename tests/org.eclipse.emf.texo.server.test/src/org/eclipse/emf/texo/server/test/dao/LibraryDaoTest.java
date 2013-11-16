@@ -23,8 +23,6 @@ import java.util.Map;
 
 import javax.persistence.EntityManager;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.texo.server.store.BaseDao;
 import org.eclipse.emf.texo.server.store.DaoRegistry;
@@ -36,6 +34,7 @@ import org.eclipse.emf.texo.test.model.samples.library.GenericLibraryDao;
 import org.eclipse.emf.texo.test.model.samples.library.Writer;
 import org.eclipse.emf.texo.test.model.samples.library.dao.BookDao;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**

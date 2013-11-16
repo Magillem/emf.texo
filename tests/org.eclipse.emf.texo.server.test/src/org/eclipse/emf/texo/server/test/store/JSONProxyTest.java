@@ -23,8 +23,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -40,6 +38,7 @@ import org.eclipse.emf.texo.test.emfmodel.library.Writer;
 import org.eclipse.emf.texo.test.emfmodel.library.impl.LibraryPackageImpl;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 

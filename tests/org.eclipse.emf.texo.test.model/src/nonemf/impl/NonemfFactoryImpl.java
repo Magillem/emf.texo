@@ -6,15 +6,19 @@
  */
 package nonemf.impl;
 
-import nonemf.*;
+import nonemf.A;
+import nonemf.B;
+import nonemf.MySerializableClass;
+import nonemf.NonemfFactory;
+import nonemf.NonemfPackage;
+import nonemf.TestA;
+import nonemf.TestB;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**

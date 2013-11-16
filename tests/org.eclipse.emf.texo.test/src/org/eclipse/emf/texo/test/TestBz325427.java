@@ -24,9 +24,9 @@ public class TestBz325427 {
 
   @Test
   public void test() throws Exception {
-    Assert.assertTrue(Bz325427ModelPackage.ECLASSB_CLASSIFIER_ID == 0);
-    Assert.assertTrue(Bz325427ModelPackage.ECLASSA_CLASSIFIER_ID == 1);
-    Assert.assertTrue(Bz325427ModelPackage.ENUMA_CLASSIFIER_ID == 3);
-    Assert.assertTrue(Bz325427ModelPackage.ENUMB_CLASSIFIER_ID == 2);
+    Assert.assertEquals(0, Bz325427ModelPackage.ECLASSB_CLASSIFIER_ID);
+    Assert.assertEquals(1, Bz325427ModelPackage.ECLASSA_CLASSIFIER_ID);
+    Assert.assertEquals(3, Bz325427ModelPackage.ENUMA_CLASSIFIER_ID);
+    Assert.assertEquals(2, Bz325427ModelPackage.ENUMB_CLASSIFIER_ID);
   }
 }

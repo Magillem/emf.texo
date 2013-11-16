@@ -27,8 +27,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -50,6 +48,7 @@ import org.eclipse.emf.texo.test.emfmodel.bz399086.impl.Bz399086PackageImpl;
 import org.eclipse.emf.texo.test.model.issues.bz399086.Bz399086ModelPackage;
 import org.json.JSONArray;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 

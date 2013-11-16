@@ -23,8 +23,6 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.texo.model.DynamicModelObject;
@@ -46,6 +44,7 @@ import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.Library
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 import org.eclipse.emf.texo.utils.ModelUtils;
 import org.eclipse.jetty.http.HttpMethods;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**

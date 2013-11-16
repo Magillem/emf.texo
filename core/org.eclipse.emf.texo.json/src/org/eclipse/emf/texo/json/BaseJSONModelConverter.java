@@ -138,9 +138,11 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
           throw new IllegalArgumentException("No eclass found for jsonObject " + jsonObject); //$NON-NLS-1$
         }
         if (hasValue(jsonObject, ModelJSONConstants.ID_PROPERTY)) {
-          final String idString = jsonObject.getString(ModelJSONConstants.ID_PROPERTY);
-          final URI uri = getObjectResolver().toURI(eClass, idString);
-          uriString = uri.toString();
+          if (uriString == null) {
+            final String idString = jsonObject.getString(ModelJSONConstants.ID_PROPERTY);
+            final URI uri = getObjectResolver().toURI(eClass, idString);
+            uriString = uri.toString();
+          }
           if (resolvedObjects.containsKey(uriString)) {
             return resolvedObjects.get(uriString);
           }

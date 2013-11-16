@@ -19,8 +19,6 @@ package org.eclipse.emf.texo.server.test.issues;
 import java.io.IOException;
 import java.util.Collections;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
@@ -33,6 +31,7 @@ import org.eclipse.emf.texo.test.emfmodel.bz403743.Test403743_Main;
 import org.eclipse.emf.texo.test.emfmodel.bz403743.impl.Bz403743PackageImpl;
 import org.eclipse.emf.texo.test.model.issues.bz403743.Bz403743ModelPackage;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 

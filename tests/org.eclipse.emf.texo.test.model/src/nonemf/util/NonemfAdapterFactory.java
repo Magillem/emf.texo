@@ -8,13 +8,14 @@ package nonemf.util;
 
 import java.io.Serializable;
 
-import nonemf.*;
+import nonemf.A;
+import nonemf.B;
+import nonemf.MySerializableClass;
+import nonemf.NonemfPackage;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**

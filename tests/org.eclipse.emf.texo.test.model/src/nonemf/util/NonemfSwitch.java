@@ -8,11 +8,11 @@ package nonemf.util;
 
 import java.io.Serializable;
 
-import java.util.List;
+import nonemf.A;
+import nonemf.B;
+import nonemf.MySerializableClass;
+import nonemf.NonemfPackage;
 
-import nonemf.*;
-
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;

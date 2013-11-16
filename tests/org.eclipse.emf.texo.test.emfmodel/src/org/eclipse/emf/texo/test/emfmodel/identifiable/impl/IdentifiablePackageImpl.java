@@ -9,24 +9,14 @@ package org.eclipse.emf.texo.test.emfmodel.identifiable.impl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import org.eclipse.emf.texo.test.emfmodel.bz403743.Bz403743Package;
 import org.eclipse.emf.texo.test.emfmodel.bz403743.impl.Bz403743PackageImpl;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.Identifiable;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiableFactory;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiableInterface;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiablePackage;
-
 import org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable;
-import org.eclipse.emf.texo.test.emfmodel.library.LibraryPackage;
-
-import org.eclipse.emf.texo.test.emfmodel.library.impl.LibraryPackageImpl;
-
-import org.eclipse.emf.texo.test.emfmodel.schoollibrary.SchoollibraryPackage;
-
-import org.eclipse.emf.texo.test.emfmodel.schoollibrary.impl.SchoollibraryPackageImpl;
 
 /**
  * <!-- begin-user-doc -->

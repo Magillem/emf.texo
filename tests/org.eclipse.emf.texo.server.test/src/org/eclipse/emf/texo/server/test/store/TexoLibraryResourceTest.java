@@ -24,8 +24,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.texo.model.ModelConstants;
@@ -38,6 +36,7 @@ import org.eclipse.emf.texo.test.emfmodel.library.Writer;
 import org.eclipse.emf.texo.test.emfmodel.library.impl.LibraryPackageImpl;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 import org.eclipse.emf.texo.utils.ModelUtils;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**

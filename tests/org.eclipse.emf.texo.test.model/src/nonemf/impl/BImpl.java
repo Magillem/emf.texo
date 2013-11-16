@@ -10,7 +10,6 @@ import nonemf.B;
 import nonemf.NonemfPackage;
 
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**

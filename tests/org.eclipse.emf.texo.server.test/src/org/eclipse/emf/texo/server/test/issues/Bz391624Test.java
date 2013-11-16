@@ -19,8 +19,6 @@ package org.eclipse.emf.texo.server.test.issues;
 import java.io.IOException;
 import java.util.Collections;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.texo.server.test.store.TexoResourceTest;
 import org.eclipse.emf.texo.store.TexoResource;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Author;
@@ -28,6 +26,7 @@ import org.eclipse.emf.texo.test.emfmodel.bz391624.Book;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Factory;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.impl.Bz391624PackageImpl;
 import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**

@@ -213,7 +213,7 @@ public class DefaultObjectResolver implements ObjectResolver, TexoComponent {
     if (isUseWebServiceUriFormat()) {
       // append a fragment to make sure that EMF correctly handles the id
       return getUri().appendSegment(ModelUtils.getQualifiedNameFromEClass(eClass)).appendSegment(idString)
-          .appendFragment(""); //$NON-NLS-1$
+          .appendFragment("").trimQuery(); //$NON-NLS-1$
     }
 
     return getUri().appendFragment(

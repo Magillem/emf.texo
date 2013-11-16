@@ -25,14 +25,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.texo.server.store.DaoRegistry;
 import org.eclipse.emf.texo.server.store.EntityManagerProvider;
 import org.eclipse.emf.texo.test.model.samples.library.Book;
 import org.eclipse.emf.texo.test.model.samples.library.BookCategory;
 import org.eclipse.emf.texo.test.model.samples.library.dao.BookDao;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
+import org.junit.Assert;
 
 /**
  * Servlet to test entity manager clean up.
