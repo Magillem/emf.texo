@@ -31,6 +31,7 @@ import org.eclipse.emf.texo.component.TexoComponent;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.utils.ModelUtils;
+import org.json.JSONObject;
 
 /**
  * Is used to convert model primitive values to JSON primitive values.
@@ -93,6 +94,10 @@ public class JSONValueConverter implements TexoComponent {
       return XMLTypeFactory.eINSTANCE.convertToString(eDataType, value);
     }
 
+    if (value == null) {
+      return JSONObject.NULL;
+    }
+
     return value;
   }
 
@@ -126,6 +131,10 @@ public class JSONValueConverter implements TexoComponent {
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
   protected Object fromJSON(Object target, final Object value, final EDataType eDataType) {
+    if (value == JSONObject.NULL) {
+      return null;
+    }
+
     if (ModelUtils.isEEnum(eDataType)) {
       final EDataType enumDataType = getDataTypeOrBaseType(eDataType);
       final EEnum eeNum = (EEnum) enumDataType;
