@@ -20,8 +20,10 @@ package org.eclipse.emf.texo.json;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.texo.model.ModelObject;
+import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
  * Converts an {@link EObject} to a JSON object.
@@ -39,6 +41,20 @@ public class EMFJSONConverter extends BaseModelJSONConverter<EObject> {
   @Override
   protected EClass eClass(EObject target) {
     return target.eClass();
+  }
+
+  protected boolean isProxy(EObject o) {
+    // if explicitly said to be not proxied
+    if (o instanceof InternalEObject) {
+      final InternalEObject internalEObject = (InternalEObject)o;
+      if (internalEObject.eProxyURI() == null) {
+        return false;
+      }
+      if (ModelUtils.isTempURI(internalEObject.eProxyURI().toString())) {
+        return false;
+      }
+    }
+    return o.eIsProxy();
   }
 
   @Override

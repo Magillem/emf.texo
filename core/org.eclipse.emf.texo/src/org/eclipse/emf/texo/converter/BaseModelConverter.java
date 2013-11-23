@@ -78,8 +78,19 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
     }
   }
 
+  protected boolean isProxy(T o) {
+    return false;
+  }
+
   @SuppressWarnings("unchecked")
   protected void traverseEReferencesForProxyDetermination(T object, int level) {
+
+    if (isProxy(object)) {
+      if (!proxyObjects.contains(object)) {
+        proxyObjects.add(object);
+      }
+      return;
+    }
 
     if (nonProxiedObjects.contains(object) || nonProxiedObjects.contains(object)) {
       // been here, go away
