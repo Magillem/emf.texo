@@ -33,7 +33,7 @@ public class PersonaGroupType extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "play_PersonaGroupType_persona")
+  @CollectionTable()
   private List<String> persona = new ArrayList<String>();
 
   /**

@@ -52,7 +52,7 @@ public class Mytest extends Identifiable {
   @ElementCollection()
   @OrderColumn()
   @Convert("TexoTestQNameConverter")
-  @CollectionTable(name = "qname_Mytest_names")
+  @CollectionTable()
   private List<QName> names = new ArrayList<QName>();
 
   /**

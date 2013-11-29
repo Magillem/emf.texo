@@ -49,7 +49,7 @@ public class DurationTest extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "duration_DurationTest_durations")
+  @CollectionTable()
   private List<Duration> durations = new ArrayList<Duration>();
 
   /**

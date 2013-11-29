@@ -101,7 +101,7 @@ public class Album extends Identifiable {
   @ElementCollection()
   @OrderColumn()
   @Enumerated(EnumType.STRING)
-  @CollectionTable(name = "org_elver_music_Album_ratings")
+  @CollectionTable()
   private List<Rating> ratings = new ArrayList<Rating>();
 
   /**

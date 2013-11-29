@@ -29,7 +29,7 @@ public class GlobalAddress extends Address {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "com_example_epo2_GlobalAddress_location")
+  @CollectionTable()
   private List<String> location = new ArrayList<String>();
 
   /**

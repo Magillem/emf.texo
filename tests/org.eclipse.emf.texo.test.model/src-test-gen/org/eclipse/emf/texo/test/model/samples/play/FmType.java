@@ -31,7 +31,7 @@ public class FmType extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "play_FmType_p")
+  @CollectionTable()
   private List<String> p = new ArrayList<String>();
 
   /**

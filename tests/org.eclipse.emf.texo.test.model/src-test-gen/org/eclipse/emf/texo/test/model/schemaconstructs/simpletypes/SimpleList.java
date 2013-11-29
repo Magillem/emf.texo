@@ -46,7 +46,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_boo")
+  @CollectionTable()
   private List<Boolean> boo = new ArrayList<Boolean>();
 
   /**
@@ -56,7 +56,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_byt")
+  @CollectionTable()
   private List<Byte> byt = new ArrayList<Byte>();
 
   /**
@@ -66,7 +66,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_doubl")
+  @CollectionTable()
   private List<Double> doubl = new ArrayList<Double>();
 
   /**
@@ -76,7 +76,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_floa")
+  @CollectionTable()
   private List<Float> floa = new ArrayList<Float>();
 
   /**
@@ -86,7 +86,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_inte")
+  @CollectionTable()
   private List<Integer> inte = new ArrayList<Integer>();
 
   /**
@@ -96,7 +96,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_long")
+  @CollectionTable()
   private List<Long> long_ = new ArrayList<Long>();
 
   /**
@@ -106,7 +106,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_shor")
+  @CollectionTable()
   private List<Short> shor = new ArrayList<Short>();
 
   /**
@@ -117,7 +117,7 @@ public class SimpleList extends Identifiable {
   @ElementCollection()
   @OrderColumn()
   @Enumerated(EnumType.STRING)
-  @CollectionTable(name = "simpletypes_SimpleList_enu")
+  @CollectionTable()
   private List<SimpleEnum> enu = new ArrayList<SimpleEnum>();
 
   /**
@@ -128,7 +128,7 @@ public class SimpleList extends Identifiable {
   @ElementCollection()
   @OrderColumn()
   @Temporal(TemporalType.DATE)
-  @CollectionTable(name = "simpletypes_SimpleList_dat")
+  @CollectionTable()
   private List<Date> dat = new ArrayList<Date>();
 
   /**
@@ -138,7 +138,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_limitedstring")
+  @CollectionTable()
   private List<String> limitedstring = new ArrayList<String>();
 
   /**
@@ -148,7 +148,7 @@ public class SimpleList extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "simpletypes_SimpleList_stri")
+  @CollectionTable()
   private List<String> stri = new ArrayList<String>();
 
   /**

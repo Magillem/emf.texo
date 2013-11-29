@@ -31,7 +31,7 @@ public class AuthorsType extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "sunBooks_AuthorsType_authorName")
+  @CollectionTable()
   private List<String> authorName = new ArrayList<String>();
 
   /**

@@ -65,7 +65,7 @@ public class StatesByCountry extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "listunion_statesByCountry_zipUnions")
+  @CollectionTable()
   private List<String> zipUnions = new ArrayList<String>();
 
   /**
@@ -85,7 +85,7 @@ public class StatesByCountry extends Identifiable {
   @ElementCollection()
   @OrderColumn()
   @Convert("TexoTestObjectConverter")
-  @CollectionTable(name = "listunion_statesByCountry_simpleUnions")
+  @CollectionTable()
   private List<Object> simpleUnions = new ArrayList<Object>();
 
   /**
@@ -103,7 +103,7 @@ public class StatesByCountry extends Identifiable {
    */
   @ElementCollection()
   @OrderColumn()
-  @CollectionTable(name = "listunion_statesByCountry_simpleStringUnions")
+  @CollectionTable()
   private List<String> simpleStringUnions = new ArrayList<String>();
 
   /**
