@@ -169,6 +169,10 @@ public class ORMJavaAnnotationGenerator {
       if (value == null || value instanceof Collection<?> && ((Collection<?>) value).isEmpty()) {
         continue;
       }
+      // ignore empty strings
+      if (value instanceof String && ((String) value).trim().length() == 0) {
+        continue;
+      }
 
       // always ignore this one, except for the converter
       if (eFeature.getEContainingClass() != OrmPackage.eINSTANCE.getConverter() && eFeature.getName().equals("class")) { //$NON-NLS-1$
