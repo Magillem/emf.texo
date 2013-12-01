@@ -284,7 +284,7 @@ public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implemen
     // now the set of dependent epackages is found, get the CodeGenEPackage
     final List<EPackageModelGenAnnotation> dependsOn = new ArrayList<EPackageModelGenAnnotation>();
     for (final EPackage depEPackage : epacks) {
-      if (depEPackage == EcorePackage.eINSTANCE || depEPackage == XMLTypePackage.eINSTANCE) {
+      if (depEPackage.getNsURI().equals(EcorePackage.eNS_URI) || depEPackage.getNsURI().equals(XMLTypePackage.eNS_URI)) {
         continue;
       }
       dependsOn.add(getEPackageModelGenAnnotation(depEPackage, false));

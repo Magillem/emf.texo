@@ -25,6 +25,8 @@ import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EcoreFactory;
+import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.xml.type.XMLTypeFactory;
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 import org.eclipse.emf.texo.component.TexoComponent;
@@ -92,6 +94,15 @@ public class JSONValueConverter implements TexoComponent {
 
     if (eDataType.getEPackage() == XMLTypePackage.eINSTANCE) {
       return XMLTypeFactory.eINSTANCE.convertToString(eDataType, value);
+    }
+
+    if (eDataType.getEPackage() == EcorePackage.eINSTANCE) {
+      // encode bytearrays using base64
+      if (eDataType == EcorePackage.eINSTANCE.getEByteArray()) {
+        return XMLTypeFactory.eINSTANCE.convertBase64Binary((byte[]) value);
+      }
+
+      return EcoreFactory.eINSTANCE.convertToString(eDataType, value);
     }
 
     if (value == null) {
@@ -183,7 +194,6 @@ public class JSONValueConverter implements TexoComponent {
       }
     }
 
-
     if (eDataType.getInstanceClass() != null && Date.class.isAssignableFrom(eDataType.getInstanceClass())) {
       return createDateTimeFromJSON(value);
     }
@@ -207,8 +217,16 @@ public class JSONValueConverter implements TexoComponent {
       }
     }
 
-    if (value instanceof String && eDataType.getEPackage() == XMLTypePackage.eINSTANCE) {
-      return XMLTypeFactory.eINSTANCE.createFromString(eDataType, (String) value);
+    if (value instanceof String) {
+      if (eDataType.getEPackage() == XMLTypePackage.eINSTANCE) {
+        return XMLTypeFactory.eINSTANCE.createFromString(eDataType, (String) value);
+      } else if (eDataType.getEPackage() == EcorePackage.eINSTANCE) {
+        // encode bytearrays using base64
+        if (eDataType == EcorePackage.eINSTANCE.getEByteArray()) {
+          return XMLTypeFactory.eINSTANCE.createBase64Binary((String) value);
+        }
+        return EcoreFactory.eINSTANCE.createFromString(eDataType, (String) value);
+      }
     }
 
     return value;
