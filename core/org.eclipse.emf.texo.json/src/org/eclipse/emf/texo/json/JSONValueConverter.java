@@ -217,6 +217,10 @@ public class JSONValueConverter implements TexoComponent {
       }
     }
 
+    if (eDataType == EcorePackage.eINSTANCE.getEEnumerator()) {
+      return null;
+    }
+
     if (value instanceof String) {
       if (eDataType.getEPackage() == XMLTypePackage.eINSTANCE) {
         return XMLTypeFactory.eINSTANCE.createFromString(eDataType, (String) value);

@@ -37,6 +37,7 @@ import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.BigDecimalDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.BigIntegerDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.BooleanDataGenerator;
+import org.eclipse.emf.texo.datagenerator.attributegenerators.ByteArrayDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.ByteDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.CharDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.CollectionDataGenerator;
@@ -46,6 +47,7 @@ import org.eclipse.emf.texo.datagenerator.attributegenerators.DurationDataGenera
 import org.eclipse.emf.texo.datagenerator.attributegenerators.EEnumDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.FloatDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.IntegerDataGenerator;
+import org.eclipse.emf.texo.datagenerator.attributegenerators.JavaClassDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.LongDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.NullDataGenerator;
 import org.eclipse.emf.texo.datagenerator.attributegenerators.QNameDataGenerator;
@@ -143,6 +145,8 @@ public class DataGeneratorFactory {
       }
       if (QName.class.isAssignableFrom(clz)) {
         eDataTypeDataGenerator = new QNameDataGenerator();
+      } else if (Class.class.isAssignableFrom(clz)) {
+        eDataTypeDataGenerator = new JavaClassDataGenerator();
       } else if (Collection.class.isAssignableFrom(clz)) {
         eDataTypeDataGenerator = new CollectionDataGenerator();
       } else if (DataGeneratorUtils.getEnumBaseDataTypeIfObject(eDataType) != null || eDataType instanceof EEnum) {
@@ -157,6 +161,8 @@ public class DataGeneratorFactory {
         eDataTypeDataGenerator = new ShortDataGenerator();
       } else if (byte.class.isAssignableFrom(clz) || Byte.class.isAssignableFrom(clz)) {
         eDataTypeDataGenerator = new ByteDataGenerator();
+      } else if (byte[].class.isAssignableFrom(clz) || Byte[].class.isAssignableFrom(clz)) {
+        eDataTypeDataGenerator = new ByteArrayDataGenerator();
       } else if (long.class.isAssignableFrom(clz) || Long.class.isAssignableFrom(clz)) {
         eDataTypeDataGenerator = new LongDataGenerator();
       } else if (double.class.isAssignableFrom(clz) || Double.class.isAssignableFrom(clz)) {
