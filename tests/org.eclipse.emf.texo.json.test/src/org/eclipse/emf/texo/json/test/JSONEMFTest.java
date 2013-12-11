@@ -81,7 +81,7 @@ public class JSONEMFTest extends BaseJSONTest {
     toJsonConverter.setObjectResolver(store);
     toJsonConverter.setConvertNonContainedReferencedObjects(false);
     toJsonConverter.setMaxChildLevelsToConvert(1);
-    toJsonConverter.setPreSortManyValues(true);
+    toJsonConverter.setPreSortManyValues(false);
     toJsonConverter.setSerializeTitleProperty(false);
     return toJsonConverter;
   }

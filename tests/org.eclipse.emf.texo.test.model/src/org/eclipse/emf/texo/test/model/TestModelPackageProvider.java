@@ -31,6 +31,19 @@ import org.eclipse.emf.texo.test.model.issues.bz378087.Bz378087ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz378642.Bz378642ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz379796.Bz379796ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz379815.Bz379815ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz380279.Bz380279ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz386923.Bz386923ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz390942.Bz390942ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz393240.Bz393240ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz397220.Bz397220ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz399086.Bz399086ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz4031611.Bz403161_1ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz4031612.Bz403161_2ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz403743.Bz403743ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz404132.Bz404132ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz411874.Bz411874ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz422811.Bz422811ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.subpackage.MainModelPackage;
 import org.eclipse.emf.texo.test.model.samples.accounting.AccountingModelPackage;
 import org.eclipse.emf.texo.test.model.samples.capa.CapaModelPackage;
@@ -119,6 +132,22 @@ public class TestModelPackageProvider {
     result.add(Bz378642ModelPackage.INSTANCE);
     result.add(Bz379796ModelPackage.INSTANCE);
     result.add(Bz379815ModelPackage.INSTANCE);
+
+    result.add(Bz380279ModelPackage.INSTANCE);
+    result.add(Bz386923ModelPackage.INSTANCE);
+    result.add(Bz390942ModelPackage.INSTANCE);
+    result.add(Bz391624ModelPackage.INSTANCE);
+    result.add(Bz393240ModelPackage.INSTANCE);
+    result.add(Bz397220ModelPackage.INSTANCE);
+    result.add(Bz399086ModelPackage.INSTANCE);
+    result.add(Bz403161_1ModelPackage.INSTANCE);
+    result.add(Bz403161_2ModelPackage.INSTANCE);
+    result.add(Bz403743ModelPackage.INSTANCE);
+    result.add(Bz404132ModelPackage.INSTANCE);
+    // result.add(Bz409157ModelPackage.INSTANCE);
+    result.add(Bz411874ModelPackage.INSTANCE);
+    result.add(Bz422811ModelPackage.INSTANCE);
+
     // ignored as it adds the serializable class to the modelresolver
     // collides with another model doing the same
     // result.add(Bz306546ModelPackage.INSTANCE);

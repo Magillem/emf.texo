@@ -38,9 +38,9 @@ public class ModelJSONTestSuite {
     final List<ModelPackage> modelPackages = TestModelPackageProvider.getModelPackages();
 
     // modelPackages.clear();
-    // modelPackages.add(AccountingModelPackage.INSTANCE);
-    // modelPackages.add(JpamixedModelPackage.INSTANCE);
-    // modelPackages.add(NestedgroupModelPackage.INSTANCE);
+    // modelPackages.add(Bz391624ModelPackage.INSTANCE);
+    // modelPackages.add(Bz403161_2ModelPackage.INSTANCE);
+    // modelPackages.add(TypesModelPackage.INSTANCE);
 
     // anytype is not supported, result in Object as item/target entity
     // modelPackages.remove(AttributesModelPackage.INSTANCE);

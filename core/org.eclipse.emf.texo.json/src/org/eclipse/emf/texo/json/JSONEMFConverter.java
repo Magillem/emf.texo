@@ -25,6 +25,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
@@ -58,7 +59,7 @@ public class JSONEMFConverter extends BaseJSONModelConverter<EObject> {
       if (source.has(ModelJSONConstants.PROXY_PROPERTY) && source.getBoolean(ModelJSONConstants.PROXY_PROPERTY)
           && !nonProxiedObjects.contains(target)) {
         final String proxyUri = source.getString(ModelJSONConstants.URI_PROPERTY);
-        // only set the uri if it is wat not cached before, if it was cached
+        // only set the uri if it is was not cached before, if it was cached
         // before then the proxy uri is already cleared, so we should not set it
         // again.
         if (isNewObject(proxyUri)) {
@@ -102,6 +103,10 @@ public class JSONEMFConverter extends BaseJSONModelConverter<EObject> {
 
   @Override
   protected void eSet(EObject target, EStructuralFeature eFeature, Object value) {
+    if (isControlledByOtherSideOfBidirectionalAssociation(eFeature)) {
+      return;
+    }
+
     final boolean deliver = target.eDeliver();
     ((InternalEObject) target).eSetDeliver(false);
     boolean deliverValue = false;
@@ -117,6 +122,30 @@ public class JSONEMFConverter extends BaseJSONModelConverter<EObject> {
         ((InternalEObject) value).eSetDeliver(deliverValue);
       }
     }
+  }
+
+  protected boolean isControlledByOtherSideOfBidirectionalAssociation(EStructuralFeature eFeature) {
+    if (eFeature instanceof EAttribute) {
+      return false;
+    }
+    final EReference eReference = (EReference) eFeature;
+    if (eReference.getEOpposite() == null) {
+      return false;
+    }
+    final EReference eOpposite = eReference.getEOpposite();
+    if (eOpposite.isMany() && !eReference.isMany()) {
+      return true;
+    }
+    if (eReference.isMany() && !eOpposite.isMany()) {
+      return false;
+    }
+
+    // use name comparison
+    final String thisName = eReference.getEContainingClass().getEPackage().getNsURI() + "_"
+        + eReference.getEContainingClass().getName() + "_" + eReference.getName();
+    final String thatName = eOpposite.getEContainingClass().getEPackage().getNsURI() + "_"
+        + eOpposite.getEContainingClass().getName() + "_" + eOpposite.getName();
+    return thisName.compareTo(thatName) > 0;
   }
 
   @Override
