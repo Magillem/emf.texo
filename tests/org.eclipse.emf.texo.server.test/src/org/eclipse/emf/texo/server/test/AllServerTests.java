@@ -43,10 +43,11 @@ import org.junit.runners.Suite;
  * @version $Revision: 1.10 $
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ Bz401968JSONResourceTest.class, Bz403743JSONResourceTest.class, Bz401982Test.class,
-    Bz391624EPersistenceResourceTest.class, Bz391624JSONResourceTest.class, Bz399086Test.class,
+@Suite.SuiteClasses({ Bz391624EPersistenceResourceTest.class, Bz391624JSONResourceTest.class,
+    Bz401968JSONResourceTest.class, Bz403743JSONResourceTest.class, Bz401982Test.class, Bz399086Test.class,
     JSONEObjectStoreTest.class, JSONProxyTest.class, JSONTexoResourceTest.class, EPersistenceTexoResourceTest.class,
     EPersistenceServiceTest.class, CurrentEMFilterTest.class, LibraryDaoTest.class, WSMainJSONTest.class,
     WSMainTest.class, ResponseXMLTest.class, XMLReadTest.class, ReferersTest.class })
+// @Suite.SuiteClasses({ Bz391624EPersistenceResourceTest.class, Bz391624JSONResourceTest.class })
 public class AllServerTests extends TestSuite {
 }

@@ -32,7 +32,7 @@ import org.junit.runners.Suite;
  * @author mtaal
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ AllTestsTests.class, AllServerTests.class, CopyCompareTestSuite.class, ModelJSONTestSuite.class,
+@Suite.SuiteClasses({ AllServerTests.class, AllTestsTests.class, CopyCompareTestSuite.class, ModelJSONTestSuite.class,
     TestBz325427.class, CombinedTestSuite.class })
 public class CombinedTestSuiteJunit4 {
 }
