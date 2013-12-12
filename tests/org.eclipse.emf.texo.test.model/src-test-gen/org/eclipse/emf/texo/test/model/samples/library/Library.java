@@ -8,6 +8,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
+import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -43,7 +44,7 @@ public class Library extends Identifiable {
    */
   @OneToMany(cascade = { CascadeType.ALL }, orphanRemoval = true)
   @OrderColumn(name = "library_Library_writers_ind")
-  @JoinColumns({ @JoinColumn(name = "library_Library_writers") })
+  @JoinTable(joinColumns = { @JoinColumn(name = "library_Library_writers") }, inverseJoinColumns = { @JoinColumn(name = "writers_library_Writer") }, name = "Library_Books_Test")
   private List<Writer> writers = new ArrayList<Writer>();
 
   /**
