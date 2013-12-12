@@ -44,6 +44,7 @@ import org.eclipse.emf.texo.test.model.issues.bz403743.Bz403743ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz404132.Bz404132ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz411874.Bz411874ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz422811.Bz422811ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz423760.Bz423760ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.subpackage.MainModelPackage;
 import org.eclipse.emf.texo.test.model.samples.accounting.AccountingModelPackage;
 import org.eclipse.emf.texo.test.model.samples.capa.CapaModelPackage;
@@ -156,6 +157,7 @@ public class TestModelPackageProvider {
     // result.add(Bz409157ModelPackage.INSTANCE);
     result.add(Bz411874ModelPackage.INSTANCE);
     result.add(Bz422811ModelPackage.INSTANCE);
+    result.add(Bz423760ModelPackage.INSTANCE);
 
     // ignored as it adds the serializable class to the modelresolver
     // collides with another model doing the same
