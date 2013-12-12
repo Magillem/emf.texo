@@ -34,6 +34,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.FeatureMapUtil;
 import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
@@ -239,6 +240,12 @@ public class DataGenCompareModelJPATest extends JPATest {
       try {
         final Object v1 = m1.eGet(eFeature);
         final Object v2 = m2.eGet(eFeature);
+
+        // not supported by JPA to persist
+        if (eFeature.getEType().equals(EcorePackage.eINSTANCE.getEJavaClass())) {
+          continue;
+        }
+
         if (eFeature.isMany()) {
           if (v1 instanceof List) {
             compareLists(v1, v2);
