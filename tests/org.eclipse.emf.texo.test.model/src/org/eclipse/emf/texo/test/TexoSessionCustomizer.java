@@ -16,7 +16,9 @@
  */
 package org.eclipse.emf.texo.test;
 
+import org.eclipse.persistence.config.DescriptorCustomizer;
 import org.eclipse.persistence.config.SessionCustomizer;
+import org.eclipse.persistence.descriptors.ClassDescriptor;
 import org.eclipse.persistence.sessions.Session;
 
 /**
@@ -25,12 +27,16 @@ import org.eclipse.persistence.sessions.Session;
  * @author <a href="mailto:mtaal@elver.org">Martin Taal</a>
  * @version $Revision: 1.5 $
  */
-public class TexoSessionCustomizer implements SessionCustomizer {
+public class TexoSessionCustomizer implements SessionCustomizer, DescriptorCustomizer {
 
   // do not check instantiation:
   // http://www.eclipse.org/forums/index.php/m/663886/
   public void customize(Session session) throws Exception {
     session.getIntegrityChecker().setShouldCheckInstantiationPolicy(false);
+  }
+
+  public void customize(ClassDescriptor descriptor) throws Exception {
+
   }
 
 }

@@ -472,6 +472,13 @@
           <orm:cascade-refresh/>
         </orm:cascade>
       </orm:many-to-one>
+      <orm:one-to-many name="styleRegions">
+        <orm:order-column name="al_AbstractText_styleRegions_ind"/>
+        <orm:join-column name="al_AbstractText_styleRegions"/>
+        <orm:cascade>
+          <orm:cascade-all/>
+        </orm:cascade>
+      </orm:one-to-many>
     </orm:attributes>
   </orm:entity>
   <orm:entity class="org.eclipse.graphiti.mm.algorithms.Polygon" name="al_Polygon">
@@ -693,6 +700,26 @@
       </orm:basic>
     </orm:attributes>
   </orm:entity>
+  <orm:entity class="org.eclipse.graphiti.mm.algorithms.styles.TextStyleRegion" name="st_TextStyleRegion">
+    <orm:table name="st_TextStyleRegion"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:basic name="start">
+        <orm:column name="T_start"/>
+      </orm:basic>
+      <orm:basic name="end">
+        <orm:column name="T_end"/>
+      </orm:basic>
+      <orm:many-to-one name="style">
+        <orm:join-column name="st_TextStyleRegion_style"/>
+        <orm:cascade>
+          <orm:cascade-all/>
+        </orm:cascade>
+      </orm:many-to-one>
+    </orm:attributes>
+  </orm:entity>
   <orm:entity class="org.eclipse.graphiti.mm.algorithms.styles.RenderingStyle" name="st_RenderingStyle">
     <orm:table name="st_RenderingStyle"/>
     <orm:discriminator-column length="255"/>
@@ -785,6 +812,64 @@
           <orm:cascade-all/>
         </orm:cascade>
       </orm:one-to-many>
+    </orm:attributes>
+  </orm:entity>
+  <orm:entity class="org.eclipse.graphiti.mm.algorithms.styles.TextStyle" name="st_TextStyle">
+    <orm:table name="st_TextStyle"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:basic name="underline">
+        <orm:column name="underline"/>
+      </orm:basic>
+      <orm:basic name="underlineStyle">
+        <orm:column name="underlineStyle"/>
+        <orm:enumerated>STRING</orm:enumerated>
+      </orm:basic>
+      <orm:basic name="strikeout">
+        <orm:column name="strikeout"/>
+      </orm:basic>
+      <orm:many-to-one name="font">
+        <orm:join-column name="st_TextStyle_font"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+      <orm:many-to-one name="foreground">
+        <orm:join-column name="st_TextStyle_foreground"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+      <orm:many-to-one name="background">
+        <orm:join-column name="st_TextStyle_background"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+      <orm:many-to-one name="underlineColor">
+        <orm:join-column name="st_TextStyle_underlineColor"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+      <orm:many-to-one name="strikeoutColor">
+        <orm:join-column name="st_TextStyle_strikeoutColor"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
     </orm:attributes>
   </orm:entity>
 </orm:entity-mappings>

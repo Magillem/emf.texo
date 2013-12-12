@@ -202,6 +202,7 @@ Require-Bundle: org.eclipse.emf.texo;bundle-version="[0.1.0,1.1.0)",
  org.eclipse.core.commands;bundle-version="[3.6.0,4.3.0)",
  org.eclipse.persistence.jpa;bundle-version="[2.3.0,3.0.0)",
  org.json;bundle-version="[1.0.0,2.0.0)",
- org.eclipse.emf.texo.json;bundle-version="[0.1.0,1.1.0)"
+ org.eclipse.emf.texo.json;bundle-version="[0.1.0,1.1.0)",
+ org.eclipse.emf.texo.test.emfmodel;bundle-version="0.1.0"
 Import-Package: org.eclipse.persistence.annotations;version="[2.2.0,3.0.0)"
 Bundle-ActivationPolicy: lazy

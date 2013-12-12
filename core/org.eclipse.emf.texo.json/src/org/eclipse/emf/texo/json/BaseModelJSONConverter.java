@@ -28,6 +28,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
@@ -415,7 +416,7 @@ public abstract class BaseModelJSONConverter<T extends Object> extends BaseModel
   // sorting is important for testcases which assume a fixed
   // ordering, some java examples use Set instead of List
   private Collection<T> sortedValues(Collection<T> values) {
-    if (!preSortManyValues) {
+    if (!preSortManyValues || (!(values instanceof EList) && values instanceof List)) {
       return values;
     }
     final List<T> sortedValues = new ArrayList<T>(values);
@@ -440,7 +441,7 @@ public abstract class BaseModelJSONConverter<T extends Object> extends BaseModel
   }
 
   private Collection<?> sortedEAttributeValues(Collection<?> values) {
-    if (!preSortManyValues) {
+    if (!preSortManyValues || (!(values instanceof EList) && values instanceof List)) {
       return values;
     }
     final List<Object> sortedValues = new ArrayList<Object>(values);

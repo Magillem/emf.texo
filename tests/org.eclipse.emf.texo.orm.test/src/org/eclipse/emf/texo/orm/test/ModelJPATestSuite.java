@@ -24,6 +24,7 @@ import junit.framework.TestSuite;
 
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.test.model.TestModelPackageProvider;
+import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
 import org.eclipse.emf.texo.test.model.samples.extlibrary.ExtlibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.schoollibrary.SchoollibraryModelPackage;
@@ -60,6 +61,8 @@ public class ModelJPATestSuite {
     modelPackages.remove(DurationModelPackage.INSTANCE);
     // has an ereference with type object
     modelPackages.remove(MmModelPackage.INSTANCE);
+
+    modelPackages.remove(Bz391624ModelPackage.INSTANCE);
 
     // extlibrary works with interfaces and multiple inheritance
     // this does not work nicely with JPA/ORM

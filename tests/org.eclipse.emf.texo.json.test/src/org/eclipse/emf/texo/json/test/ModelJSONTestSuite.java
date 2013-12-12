@@ -38,7 +38,7 @@ public class ModelJSONTestSuite {
     final List<ModelPackage> modelPackages = TestModelPackageProvider.getModelPackages();
 
     // modelPackages.clear();
-    // modelPackages.add(Bz391624ModelPackage.INSTANCE);
+    // modelPackages.add(TypesModelPackage.INSTANCE);
     // modelPackages.add(Bz403161_2ModelPackage.INSTANCE);
     // modelPackages.add(TypesModelPackage.INSTANCE);
 
@@ -52,7 +52,7 @@ public class ModelJSONTestSuite {
 
     // extlibrary works with interfaces and multiple inheritance
     // this does not work nicely with JPA/ORM
-    // modelPackages.remove(ExtlibraryModelPackage.INSTANCE);
+    // modelPackages.add(ExtlibraryModelPackage.INSTANCE);
 
     for (ModelPackage modelPackage : modelPackages) {
       addTest(modelPackage, suite);

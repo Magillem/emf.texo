@@ -72,6 +72,8 @@
 		<class>org.eclipse.graphiti.mm.algorithms.styles.Point</class>
 		<class>org.eclipse.graphiti.mm.algorithms.styles.Color</class>
 		<class>org.eclipse.graphiti.mm.algorithms.styles.PrecisionPoint</class>
+		<class>org.eclipse.graphiti.mm.algorithms.styles.TextStyle</class>
+		<class>org.eclipse.graphiti.mm.algorithms.styles.TextStyleRegion</class>
 
 		<properties>
 			<property name="eclipselink.session.customizer" value="org.eclipse.emf.texo.test.TexoSessionCustomizer"/>
@@ -162,6 +164,8 @@
 		<class>org.eclipse.graphiti.mm.algorithms.styles.Point</class>
 		<class>org.eclipse.graphiti.mm.algorithms.styles.Color</class>
 		<class>org.eclipse.graphiti.mm.algorithms.styles.PrecisionPoint</class>
+		<class>org.eclipse.graphiti.mm.algorithms.styles.TextStyle</class>
+		<class>org.eclipse.graphiti.mm.algorithms.styles.TextStyleRegion</class>
 
 		<properties>
 			<property name="eclipselink.session.customizer" value="org.eclipse.emf.texo.test.TexoSessionCustomizer"/>

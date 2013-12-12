@@ -20,6 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.emf.texo.model.ModelPackage;
+import org.eclipse.emf.texo.test.emfmodel.bz391624.impl.Bz391624PackageImpl;
+import org.eclipse.emf.texo.test.emfmodel.bz399086.impl.Bz399086PackageImpl;
+import org.eclipse.emf.texo.test.emfmodel.bz403743.impl.Bz403743PackageImpl;
 import org.eclipse.emf.texo.test.model.issues.bz325427.Bz325427ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz325429_test.TestModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz331009.ModelModelPackage;
@@ -31,15 +34,12 @@ import org.eclipse.emf.texo.test.model.issues.bz378087.Bz378087ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz378642.Bz378642ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz379796.Bz379796ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz379815.Bz379815ModelPackage;
-import org.eclipse.emf.texo.test.model.issues.bz380279.Bz380279ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz386923.Bz386923ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz390942.Bz390942ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz393240.Bz393240ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz397220.Bz397220ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz399086.Bz399086ModelPackage;
-import org.eclipse.emf.texo.test.model.issues.bz4031611.Bz403161_1ModelPackage;
-import org.eclipse.emf.texo.test.model.issues.bz4031612.Bz403161_2ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz403743.Bz403743ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz404132.Bz404132ModelPackage;
 import org.eclipse.emf.texo.test.model.issues.bz411874.Bz411874ModelPackage;
@@ -85,7 +85,6 @@ import org.eclipse.emf.texo.test.model.schemaconstructs.simplefeaturemap.Simplef
 import org.eclipse.emf.texo.test.model.schemaconstructs.simpletypes.SimpletypesModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.substitution.SubstitutionModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.substitutionzvon.SubstitutionzvonModelPackage;
-import org.eclipse.graphiti.mm.MmModelPackage;
 
 /**
  * Returns the list of all generated model packages.
@@ -111,7 +110,7 @@ public class TestModelPackageProvider {
     result.add(InvModelPackage.INSTANCE);
     result.add(JpamixedModelPackage.INSTANCE);
     result.add(LibraryModelPackage.INSTANCE);
-    result.add(MmModelPackage.INSTANCE);
+    // result.add(MmModelPackage.INSTANCE);
     result.add(MusicModelPackage.INSTANCE);
     result.add(PlayModelPackage.INSTANCE);
     result.add(RentalModelPackage.INSTANCE);
@@ -133,16 +132,26 @@ public class TestModelPackageProvider {
     result.add(Bz379796ModelPackage.INSTANCE);
     result.add(Bz379815ModelPackage.INSTANCE);
 
-    result.add(Bz380279ModelPackage.INSTANCE);
+    // result.add(Bz380279ModelPackage.INSTANCE);
     result.add(Bz386923ModelPackage.INSTANCE);
     result.add(Bz390942ModelPackage.INSTANCE);
+
+    // initialize the EMF package first
+    Bz391624PackageImpl.init();
     result.add(Bz391624ModelPackage.INSTANCE);
+
     result.add(Bz393240ModelPackage.INSTANCE);
     result.add(Bz397220ModelPackage.INSTANCE);
+
+    Bz399086PackageImpl.init();
     result.add(Bz399086ModelPackage.INSTANCE);
-    result.add(Bz403161_1ModelPackage.INSTANCE);
-    result.add(Bz403161_2ModelPackage.INSTANCE);
+
+    // result.add(Bz403161_1ModelPackage.INSTANCE);
+    // result.add(Bz403161_2ModelPackage.INSTANCE);
+
+    Bz403743PackageImpl.init();
     result.add(Bz403743ModelPackage.INSTANCE);
+
     result.add(Bz404132ModelPackage.INSTANCE);
     // result.add(Bz409157ModelPackage.INSTANCE);
     result.add(Bz411874ModelPackage.INSTANCE);
