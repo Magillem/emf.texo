@@ -214,7 +214,7 @@ public class EReferenceORMAnnotator extends EStructuralFeatureORMAnnotator imple
       }
     }
     if (oneToMany.getJoinTable() == null) {
-      oneToMany.setJoinTable(EcoreUtil.copy(annotation.getJoinTable()));
+      oneToMany.setJoinTable(annotation.getJoinTable());
     }
 
     // make the access field if not changeable, as there won't be a setter
@@ -462,8 +462,11 @@ public class EReferenceORMAnnotator extends EStructuralFeatureORMAnnotator imple
     // oneToOne.setTargetEntity(getTargetEntity(eReference));
     // }
 
-    // copy any join columns over
+    // copy any join columns over removes them from the annotation
     oneToOne.getJoinColumn().addAll(annotation.getJoinColumn());
+    if (oneToOne.getJoinTable() == null) {
+      oneToOne.setJoinTable(annotation.getJoinTable());
+    }
 
     final ORMNamingStrategy namingStrategy = getOrmNamingStrategy(eReference.getEContainingClass().getEPackage());
     if (oneToOne.getJoinColumn().isEmpty() && namingStrategy.isGenerateAllDBSchemaNames()) {
@@ -547,8 +550,11 @@ public class EReferenceORMAnnotator extends EStructuralFeatureORMAnnotator imple
       manyToOne.setOptional(false);
     }
 
-    // copy any join columns over
-    manyToOne.getJoinColumn().addAll(EcoreUtil.copyAll(annotation.getJoinColumn()));
+    // copy any join columns/table over, remove from the annotation
+    manyToOne.getJoinColumn().addAll(annotation.getJoinColumn());
+    if (manyToOne.getJoinTable() == null) {
+      manyToOne.setJoinTable(annotation.getJoinTable());
+    }
 
     // now work on jointable or joincolumn
     if (manyToOne.getJoinColumn().isEmpty() && manyToOne.getJoinTable() == null) {
@@ -678,6 +684,11 @@ public class EReferenceORMAnnotator extends EStructuralFeatureORMAnnotator imple
 
     if (doAddConverter(eReferenceModelGenAnnotation)) {
       manyToMany.setConverter(ORMUtils.createDefaultConverter());
+    }
+
+    // if the annotation has a jointable use it here
+    if (manyToMany.getJoinTable() == null) {
+      manyToMany.setJoinTable(annotation.getJoinTable());
     }
 
     if (eReference.getEOpposite() != null) {

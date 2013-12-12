@@ -141,7 +141,9 @@ public class EClassORMAnnotator extends ETypeElementORMAnnotator implements Anno
         entity.setClass(modelGenAnnotation.getQualifiedClassName());
       }
 
-      if (GeneratorUtils.isEmptyOrNull(entity.getName())) {
+      // only set the name if it should be unique
+      if (GeneratorUtils.isEmptyOrNull(entity.getName())
+          && namingStrategy.getePackageORMAnnotation().isUniqueEntityNames()) {
         entity.setName(namingStrategy.getEntityName(eClass));
       }
     } else if (embeddable != null) {
