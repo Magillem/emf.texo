@@ -35,6 +35,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EClassifierImpl;
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
@@ -331,6 +332,11 @@ public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implemen
     // final URI uri = URI.createURI(ePackage.getNsURI());
     final HashMap<Resource, URI> previousURI = new HashMap<Resource, URI>();
     try {
+      if (ePackage.eResource() != null && ePackage.eResource().getResourceSet() != null) {
+        ePackage.eResource().getResourceSet().getURIConverter().getURIMap()
+            .putAll(EcorePlugin.computePlatformURIMap(true));
+      }
+
       // store the epackage in a class readable file
       // in every package java impl package so that they can be
       // loaded. to ensure that references between packages use nsuri's
