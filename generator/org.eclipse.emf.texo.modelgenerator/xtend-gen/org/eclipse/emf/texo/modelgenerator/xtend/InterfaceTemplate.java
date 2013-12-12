@@ -94,7 +94,8 @@ public class InterfaceTemplate extends BaseTemplate {
     _builder.append("*/");
     _builder.newLine();
     EClass _eClass = eClassModelGenAnnotation.getEClass();
-    String _javaAnnotations = modelController.getJavaAnnotations(_eClass, "type");
+    EClass _eClass_1 = eClassModelGenAnnotation.getEClass();
+    String _javaAnnotations = modelController.getJavaAnnotations(_eClass, "type", _eClass_1);
     _builder.append(_javaAnnotations, "");
     _builder.newLineIfNotEmpty();
     _builder.append("public interface ");
@@ -153,7 +154,8 @@ public class InterfaceTemplate extends BaseTemplate {
             _builder.append("*/");
             _builder.newLine();
             EStructuralFeature _eStructuralFeature_2 = featureAnnotation.getEStructuralFeature();
-            String _javaAnnotations_1 = modelController.getJavaAnnotations(_eStructuralFeature_2, "getter");
+            EClass _eClass_2 = eClassModelGenAnnotation.getEClass();
+            String _javaAnnotations_1 = modelController.getJavaAnnotations(_eStructuralFeature_2, "getter", _eClass_2);
             _builder.append(_javaAnnotations_1, "");
             _builder.newLineIfNotEmpty();
             _builder.append("public ");
@@ -361,7 +363,8 @@ public class InterfaceTemplate extends BaseTemplate {
                 _builder.append("*/");
                 _builder.newLine();
                 EStructuralFeature _eStructuralFeature_9 = featureAnnotation.getEStructuralFeature();
-                String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_9, "getter");
+                EClass _eClass_3 = eClassModelGenAnnotation.getEClass();
+                String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_9, "getter", _eClass_3);
                 _builder.append(_javaAnnotations_2, "");
                 _builder.newLineIfNotEmpty();
                 _builder.append("public void ");

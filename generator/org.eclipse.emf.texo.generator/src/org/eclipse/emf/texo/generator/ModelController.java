@@ -234,6 +234,19 @@ public class ModelController implements AnnotationProvider {
    * @return java annotations to add
    */
   public String getJavaAnnotations(final ENamedElement eNamedElement, final String identifier) {
+    return getJavaAnnotations(eNamedElement, identifier, null);
+  }
+
+  /**
+   * Method is used to add java annotations to a generated class.
+   * 
+   * @param eNamedElement
+   *          the element for which to create java annotations.
+   * @param identifier
+   *          identifies how the java annotations is used, examples of values: type, field, method
+   * @return java annotations to add
+   */
+  public String getJavaAnnotations(final ENamedElement eNamedElement, final String identifier, ENamedElement context) {
 
     if (eNamedElement instanceof EEnumLiteral) {
       return getEEnumLiteralAnnotations(eNamedElement);
@@ -242,6 +255,10 @@ public class ModelController implements AnnotationProvider {
     final List<ENamedElementAnnotation> annotations = getAnnotationManager().getAnnotations(eNamedElement);
     final StringBuilder sb = new StringBuilder();
     for (final ENamedElementAnnotation annotation : annotations) {
+      if (context != null && !annotation.isValidForContext(context)) {
+        continue;
+      }
+
       if (annotation.getENamedElement() == eNamedElement) {
         if (annotation.getLastIdentifier() != null) {
           // do some checking

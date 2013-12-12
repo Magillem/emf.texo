@@ -115,7 +115,8 @@ public class EntityTemplate extends BaseTemplate {
     _builder.append("*/");
     _builder.newLine();
     EClass _eClass = eClassModelGenAnnotation.getEClass();
-    String _javaAnnotations = modelController.getJavaAnnotations(_eClass, "type");
+    EClass _eClass_1 = eClassModelGenAnnotation.getEClass();
+    String _javaAnnotations = modelController.getJavaAnnotations(_eClass, "type", _eClass_1);
     _builder.append(_javaAnnotations, "");
     _builder.newLineIfNotEmpty();
     _builder.append("public");
@@ -225,7 +226,8 @@ public class EntityTemplate extends BaseTemplate {
             _builder.append("*/");
             _builder.newLine();
             EStructuralFeature _eStructuralFeature_1 = featureAnnotation.getEStructuralFeature();
-            String _javaAnnotations_1 = modelController.getJavaAnnotations(_eStructuralFeature_1, "field");
+            EClass _eClass_2 = eClassModelGenAnnotation.getEClass();
+            String _javaAnnotations_1 = modelController.getJavaAnnotations(_eStructuralFeature_1, "field", _eClass_2);
             _builder.append(_javaAnnotations_1, "");
             _builder.newLineIfNotEmpty();
             _builder.append("private ");
@@ -348,7 +350,8 @@ public class EntityTemplate extends BaseTemplate {
             _builder.append("*/");
             _builder.newLine();
             EStructuralFeature _eStructuralFeature_5 = featureAnnotation_1.getEStructuralFeature();
-            String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_5, "getter");
+            EClass _eClass_3 = eClassModelGenAnnotation.getEClass();
+            String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_5, "getter", _eClass_3);
             _builder.append(_javaAnnotations_2, "");
             _builder.newLineIfNotEmpty();
             _builder.append("public ");
@@ -944,7 +947,8 @@ public class EntityTemplate extends BaseTemplate {
                 _builder.append("*/");
                 _builder.newLine();
                 EStructuralFeature _eStructuralFeature_19 = featureAnnotation_1.getEStructuralFeature();
-                String _javaAnnotations_3 = modelController.getJavaAnnotations(_eStructuralFeature_19, "setter");
+                EClass _eClass_4 = eClassModelGenAnnotation.getEClass();
+                String _javaAnnotations_3 = modelController.getJavaAnnotations(_eStructuralFeature_19, "setter", _eClass_4);
                 _builder.append(_javaAnnotations_3, "");
                 _builder.newLineIfNotEmpty();
                 _builder.append("public void ");

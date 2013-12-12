@@ -61,7 +61,7 @@ package «ePackageAnnotation.packagePath»;
 «ENDIF»
  * @generated
 */
-«modelController.getJavaAnnotations(eClassModelGenAnnotation.EClass, "type")»
+«modelController.getJavaAnnotations(eClassModelGenAnnotation.EClass, "type", eClassModelGenAnnotation.EClass)»
 public interface «eClassModelGenAnnotation.simpleClassName»
 «IF eClassModelGenAnnotation.classExtends.size > 0» extends «eClassModelGenAnnotation.classExtends.get(0)»«ENDIF»
 {
@@ -75,7 +75,7 @@ public interface «eClassModelGenAnnotation.simpleClassName»
          * @return the value of '<em><b>«featureAnnotation.EStructuralFeature.name»</b></em>' feature
          * @generated
          */
-        «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "getter")»
+        «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "getter", eClassModelGenAnnotation.EClass)»
         public «featureAnnotation.type» «featureAnnotation.getter»();
 
         «IF featureAnnotation.EStructuralFeature.changeable || (featureAnnotation.reference && (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation != null)»
@@ -114,7 +114,7 @@ public interface «eClassModelGenAnnotation.simpleClassName»
              * @param new«TemplateUtil::toFirstUpper(featureAnnotation.name)» the new value of the '{@link «eClassModelGenAnnotation.simpleClassName»#«featureAnnotation.getter»() <em>«featureAnnotation.EStructuralFeature.name»</em>}' feature.
              * @generated
              */
-            «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "getter")»
+            «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "getter", eClassModelGenAnnotation.EClass)»
             public void «featureAnnotation.setter»(«featureAnnotation.type» new«TemplateUtil::toFirstUpper(featureAnnotation.name)»);
         «ENDIF»
     «ENDIF»

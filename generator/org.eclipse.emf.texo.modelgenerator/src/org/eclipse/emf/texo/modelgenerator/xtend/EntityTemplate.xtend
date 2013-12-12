@@ -63,7 +63,7 @@ package «ePackageModelGenAnnotation.packagePath»;
 «ENDIF»
  * @generated
 */
-«modelController.getJavaAnnotations(eClassModelGenAnnotation.EClass, "type")»
+«modelController.getJavaAnnotations(eClassModelGenAnnotation.EClass, "type", eClassModelGenAnnotation.EClass)»
 public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eClassModelGenAnnotation.simpleClassName»
 «IF eClassModelGenAnnotation.classExtends.size > 0» extends «eClassModelGenAnnotation.classExtends.get(0)»«ENDIF»
 «IF eClassModelGenAnnotation.classImplements.size > 0» implements
@@ -91,7 +91,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
         «ENDIF»
          * @generated
          */
-        «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "field")»
+        «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "field", eClassModelGenAnnotation.EClass)»
         private «featureAnnotation.type» «featureAnnotation.validJavaMemberName» = «featureAnnotation.defaultValue»;
     «ENDIF»
 «ENDFOR»
@@ -118,7 +118,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
          * @return the value of '<em><b>«featureAnnotation.EStructuralFeature.name»</b></em>' feature
          * @generated
          */
-        «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "getter")»
+        «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "getter", eClassModelGenAnnotation.EClass)»
         public «featureAnnotation.type» «featureAnnotation.getter»() {
         «IF !featureAnnotation.EStructuralFeature.volatile»
             «IF featureAnnotation.many && featureAnnotation.reference && (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»
@@ -246,7 +246,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
              * @param new«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)» the new value of the '{@link «eClassModelGenAnnotation.simpleClassName»#«featureAnnotation.getter»() «featureAnnotation.EStructuralFeature.name»}' feature.
              * @generated
              */
-            «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "setter")»
+            «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "setter", eClassModelGenAnnotation.EClass)»
             public void «featureAnnotation.setter»(«featureAnnotation.type» new«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)») {
             «IF !featureAnnotation.EStructuralFeature.volatile»
                 «IF featureAnnotation.reference && (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»

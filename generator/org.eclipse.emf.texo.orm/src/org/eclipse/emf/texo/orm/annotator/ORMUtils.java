@@ -19,12 +19,15 @@ package org.eclipse.emf.texo.orm.annotator;
 import java.util.Properties;
 
 import org.eclipse.core.resources.IProject;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.ENamedElement;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.eclipse.ProjectPropertyUtil;
 import org.eclipse.emf.texo.orm.annotations.model.orm.Converter;
 import org.eclipse.emf.texo.orm.annotations.model.orm.OrmFactory;
 import org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation;
+import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
  * ORM utility methods
@@ -40,6 +43,20 @@ public class ORMUtils {
   public static final String OBJECT_CONVERTER_NAME = "TexoTestObjectConverter";
   public static final String QNAME_CONVERTER_CLASS = "org.eclipse.emf.texo.test.TexoTestQNameConverter";
   public static final String QNAME_CONVERTER_NAME = "TexoTestQNameConverter";
+
+  /**
+   * ORM Annotations are not generated on interfaces or emap classes.
+   */
+  public static boolean isValidForContext(ENamedElement eNamedElement) {
+    if (eNamedElement instanceof EClass) {
+      final EClass eClass = (EClass) eNamedElement;
+      if (ModelUtils.isEMap(eClass)) {
+        return false;
+      }
+      return !eClass.isInterface();
+    }
+    return true;
+  }
 
   /**
    * Creates the default converter used to convert Objects to String and back.
