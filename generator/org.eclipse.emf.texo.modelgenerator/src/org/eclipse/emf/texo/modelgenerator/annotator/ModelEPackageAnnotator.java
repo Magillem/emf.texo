@@ -96,7 +96,23 @@ public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implemen
         final int lastIndex = annotation.getQualifiedClassName().lastIndexOf(GenConstants.DOT);
         packagePath = annotation.getQualifiedClassName().substring(0, lastIndex);
       } else {
-        packagePath = GenUtils.createJavaPackagePath(ePackage.getNsURI());
+
+        // in case of xcore the package is a real package
+        // the normal texo behavior will remove the last part
+        // therefore add a dummy part
+        String nsUri = ePackage.getNsURI();
+        if (ePackage.eResource() != null) {
+          final URI uri = URI.createURI(nsUri);
+          final String resourceUri = ePackage.eResource().getURI().toString();
+          if (resourceUri.endsWith("xcore")) { //$NON-NLS-1$
+            if (uri.scheme() == null && uri.host() == null) {
+              // add arbitrary extension
+              nsUri += ".xcore"; //$NON-NLS-1$
+            }
+          }
+        }
+
+        packagePath = GenUtils.createJavaPackagePath(nsUri);
       }
       annotation.setPackagePath(packagePath);
     } else {
