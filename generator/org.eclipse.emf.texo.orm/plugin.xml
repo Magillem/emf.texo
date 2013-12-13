@@ -33,6 +33,7 @@
                     <or>
                         <objectState name="extension" value="ecore"/>
                         <objectState name="extension" value="xsd"/>
+                        <objectState name="extension" value="xcore"/>
                     </or>
             </visibility>
          <action
@@ -50,6 +51,7 @@
                     <or>
                         <objectState name="extension" value="ecore"/>
                         <objectState name="extension" value="xsd"/>
+                        <objectState name="extension" value="xcore"/>
                     </or>
             </visibility>
          <action
@@ -66,6 +68,7 @@
             <visibility>
                     <or>
                         <objectState name="extension" value="ecore"/>
+                        <objectState name="extension" value="xcore"/>
                     </or>
             </visibility>
          <menu
@@ -90,6 +93,7 @@
                     <or>
                         <objectState name="extension" value="ecore"/>
                         <objectState name="extension" value="xsd"/>
+                        <objectState name="extension" value="xcore"/>
                     </or>
             </visibility>
          <action
@@ -107,6 +111,7 @@
                     <or>
                         <objectState name="extension" value="ecore"/>
                         <objectState name="extension" value="xsd"/>
+                        <objectState name="extension" value="xcore"/>
                     </or>
             </visibility>
          <action

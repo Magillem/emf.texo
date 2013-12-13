@@ -11,6 +11,7 @@
                     <or>
                         <objectState name="extension" value="ecore"/>
                         <objectState name="extension" value="xsd"/>
+                        <objectState name="extension" value="xcore"/>
                     </or>
             </visibility>
          <menu
@@ -56,7 +57,10 @@
                enablesFor="+"
                id="org.eclipse.emf.texo.eclipse.GenerateInitialAnnotationModel">
                <enablement>
-                 <objectState name="extension" value="ecore"/>
+                    <or>
+                        <objectState name="extension" value="ecore"/>
+                        <objectState name="extension" value="xcore"/>
+                    </or>
                </enablement>
           </action>
       </objectContribution>
@@ -75,6 +79,22 @@
                menubarPath="org.eclipse.emf.texo.eclipse.menu1/group5"
                enablesFor="+"
                id="org.eclipse.emf.texo.eclipse.GenerateEcoreFromXSD"/>
+      </objectContribution>
+
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="org.eclipse.emf.texo.eclipse.contribution">
+            <visibility>
+                    <or>
+                        <objectState name="extension" value="xcore"/>
+                    </or>
+            </visibility>
+         <action
+             label="%menu.GenerateEcore"
+               class="org.eclipse.emf.texo.eclipse.popup.actions.GenerateEcoreFromXCore"
+               menubarPath="org.eclipse.emf.texo.eclipse.menu1/group5"
+               enablesFor="+"
+               id="org.eclipse.emf.texo.eclipse.GenerateEcoreFromXCore"/>
       </objectContribution>
 	  
       <!--objectContribution

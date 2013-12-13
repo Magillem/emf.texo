@@ -12,6 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.emf.codegen.ecore.genmodel.GenModelPackage;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAnnotation;
@@ -22,12 +23,14 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EPackageRegistryImpl;
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.BasicExtendedMetaData;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.emf.ecore.util.FeatureMap;
+import org.eclipse.emf.ecore.xcore.XcorePackage;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
@@ -195,6 +198,8 @@ public class GeneratorUtils {
   public static EPackage.Registry createEPackageRegistry() {
     final EPackage.Registry registry = new EPackageRegistryImpl();
     registry.put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
+    registry.put(XcorePackage.eNS_URI, XcorePackage.eINSTANCE);
+    registry.put(GenModelPackage.eNS_URI, GenModelPackage.eINSTANCE);
     registry.put(XMLTypePackage.eNS_URI, XMLTypePackage.eINSTANCE);
     registry.put(XSDPackage.eNS_URI, XSDPackage.eINSTANCE);
     registry.put(AnnotationsmodelPackage.eNS_URI, AnnotationsmodelPackage.eINSTANCE);
@@ -273,6 +278,8 @@ public class GeneratorUtils {
         new EcoreResourceFactoryImpl());
     rs.setPackageRegistry(registry);
 
+    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
+
     // note passing resourcesets package registry to the xsdecore builder
     // this ensures that epackages which refer to eachother are handled
     // correctly
@@ -293,6 +300,16 @@ public class GeneratorUtils {
         final Resource res = rs.createResource(emfURI);
         try {
           res.load(Collections.EMPTY_MAP);
+
+          // code copied from EMF's EcoreEditor
+          if (!res.getContents().isEmpty()) {
+            EObject rootObject = res.getContents().get(0);
+            Resource metaDataResource = rootObject.eClass().eResource();
+            if (metaDataResource != null && metaDataResource.getResourceSet() != null) {
+              rs.getResources().addAll(metaDataResource.getResourceSet().getResources());
+            }
+          }
+
           final Iterator<EObject> it = res.getAllContents();
           while (it.hasNext()) {
             final Object obj = it.next();

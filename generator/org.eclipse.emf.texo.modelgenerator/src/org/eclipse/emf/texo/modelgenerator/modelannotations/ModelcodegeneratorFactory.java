@@ -20,138 +20,138 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  */
 public class ModelcodegeneratorFactory extends EFactoryImpl {
   /**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public static final ModelcodegeneratorFactory eINSTANCE = init();
 
   /**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public static ModelcodegeneratorFactory init() {
-		try {
-			ModelcodegeneratorFactory theModelcodegeneratorFactory = (ModelcodegeneratorFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.eclipse.org/emf/texo/modelgenerator/modelannotations"); //$NON-NLS-1$ 
-			if (theModelcodegeneratorFactory != null) {
-				return theModelcodegeneratorFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new ModelcodegeneratorFactory();
-	}
+    try {
+      ModelcodegeneratorFactory theModelcodegeneratorFactory = (ModelcodegeneratorFactory)EPackage.Registry.INSTANCE.getEFactory(ModelcodegeneratorPackage.eNS_URI);
+      if (theModelcodegeneratorFactory != null) {
+        return theModelcodegeneratorFactory;
+      }
+    }
+    catch (Exception exception) {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new ModelcodegeneratorFactory();
+  }
 
   /**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public ModelcodegeneratorFactory() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case ModelcodegeneratorPackage.EPACKAGE_MODEL_GEN_ANNOTATION: return createEPackageModelGenAnnotation();
-			case ModelcodegeneratorPackage.ECLASS_MODEL_GEN_ANNOTATION: return createEClassModelGenAnnotation();
-			case ModelcodegeneratorPackage.EATTRIBUTE_MODEL_GEN_ANNOTATION: return createEAttributeModelGenAnnotation();
-			case ModelcodegeneratorPackage.EREFERENCE_MODEL_GEN_ANNOTATION: return createEReferenceModelGenAnnotation();
-			case ModelcodegeneratorPackage.EENUM_MODEL_GEN_ANNOTATION: return createEEnumModelGenAnnotation();
-			case ModelcodegeneratorPackage.EDATA_TYPE_MODEL_GEN_ANNOTATION: return createEDataTypeModelGenAnnotation();
-			case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION: return createDaoFinderDefinition();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier"); //$NON-NLS-1$ //$NON-NLS-2$
-		}
-	}
+    switch (eClass.getClassifierID()) {
+      case ModelcodegeneratorPackage.EPACKAGE_MODEL_GEN_ANNOTATION: return createEPackageModelGenAnnotation();
+      case ModelcodegeneratorPackage.ECLASS_MODEL_GEN_ANNOTATION: return createEClassModelGenAnnotation();
+      case ModelcodegeneratorPackage.EATTRIBUTE_MODEL_GEN_ANNOTATION: return createEAttributeModelGenAnnotation();
+      case ModelcodegeneratorPackage.EREFERENCE_MODEL_GEN_ANNOTATION: return createEReferenceModelGenAnnotation();
+      case ModelcodegeneratorPackage.EENUM_MODEL_GEN_ANNOTATION: return createEEnumModelGenAnnotation();
+      case ModelcodegeneratorPackage.EDATA_TYPE_MODEL_GEN_ANNOTATION: return createEDataTypeModelGenAnnotation();
+      case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION: return createDaoFinderDefinition();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EPackageModelGenAnnotation createEPackageModelGenAnnotation() {
-		EPackageModelGenAnnotation ePackageModelGenAnnotation = new EPackageModelGenAnnotation();
-		return ePackageModelGenAnnotation;
-	}
+    EPackageModelGenAnnotation ePackageModelGenAnnotation = new EPackageModelGenAnnotation();
+    return ePackageModelGenAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EClassModelGenAnnotation createEClassModelGenAnnotation() {
-		EClassModelGenAnnotation eClassModelGenAnnotation = new EClassModelGenAnnotation();
-		return eClassModelGenAnnotation;
-	}
+    EClassModelGenAnnotation eClassModelGenAnnotation = new EClassModelGenAnnotation();
+    return eClassModelGenAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EAttributeModelGenAnnotation createEAttributeModelGenAnnotation() {
-		EAttributeModelGenAnnotation eAttributeModelGenAnnotation = new EAttributeModelGenAnnotation();
-		return eAttributeModelGenAnnotation;
-	}
+    EAttributeModelGenAnnotation eAttributeModelGenAnnotation = new EAttributeModelGenAnnotation();
+    return eAttributeModelGenAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EReferenceModelGenAnnotation createEReferenceModelGenAnnotation() {
-		EReferenceModelGenAnnotation eReferenceModelGenAnnotation = new EReferenceModelGenAnnotation();
-		return eReferenceModelGenAnnotation;
-	}
+    EReferenceModelGenAnnotation eReferenceModelGenAnnotation = new EReferenceModelGenAnnotation();
+    return eReferenceModelGenAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EEnumModelGenAnnotation createEEnumModelGenAnnotation() {
-		EEnumModelGenAnnotation eEnumModelGenAnnotation = new EEnumModelGenAnnotation();
-		return eEnumModelGenAnnotation;
-	}
+    EEnumModelGenAnnotation eEnumModelGenAnnotation = new EEnumModelGenAnnotation();
+    return eEnumModelGenAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EDataTypeModelGenAnnotation createEDataTypeModelGenAnnotation() {
-		EDataTypeModelGenAnnotation eDataTypeModelGenAnnotation = new EDataTypeModelGenAnnotation();
-		return eDataTypeModelGenAnnotation;
-	}
+    EDataTypeModelGenAnnotation eDataTypeModelGenAnnotation = new EDataTypeModelGenAnnotation();
+    return eDataTypeModelGenAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public DaoFinderDefinition createDaoFinderDefinition() {
-		DaoFinderDefinition daoFinderDefinition = new DaoFinderDefinition();
-		return daoFinderDefinition;
-	}
+    DaoFinderDefinition daoFinderDefinition = new DaoFinderDefinition();
+    return daoFinderDefinition;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public ModelcodegeneratorPackage getModelcodegeneratorPackage() {
-		return (ModelcodegeneratorPackage)getEPackage();
-	}
+    return (ModelcodegeneratorPackage)getEPackage();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @deprecated
+   * @generated
+   */
   @Deprecated
   public static ModelcodegeneratorPackage getPackage() {
-		return ModelcodegeneratorPackage.eINSTANCE;
-	}
+    return ModelcodegeneratorPackage.eINSTANCE;
+  }
 
 } // ModelcodegeneratorFactory

@@ -18,7 +18,6 @@ package org.eclipse.emf.texo.eclipse.popup.actions;
 
 import java.net.URI;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -31,16 +30,14 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-import org.eclipse.emf.ecore.util.BasicExtendedMetaData;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
-import org.eclipse.xsd.ecore.XSDEcoreBuilder;
 
 /**
- * Generates an ecore file from a XSD.
+ * Generates an ecore file from a xcore file.
  * 
  * @author mtaal
  */
-public class GenerateEcoreFromXSD extends BaseGenerateAction {
+public class GenerateEcoreFromXCore extends BaseGenerateAction {
 
   @Override
   protected void generateFromModelFiles(IProgressMonitor monitor, IProject project, List<IFile> modelFiles) {
@@ -51,16 +48,26 @@ public class GenerateEcoreFromXSD extends BaseGenerateAction {
       resourceSet.setPackageRegistry(EPackage.Registry.INSTANCE);
       resourceSet.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
 
-      final XSDEcoreBuilder ecoreBuilder = new XSDEcoreBuilder(new BasicExtendedMetaData(EPackage.Registry.INSTANCE));
       final List<Resource> resourcesToSave = new ArrayList<Resource>();
       for (IFile modelFile : modelFiles) {
         final URI uri = new URI(modelFile.getFullPath().toString());
+        final org.eclipse.emf.common.util.URI emfURI = org.eclipse.emf.common.util.URI.createURI(uri.toString());
 
-        if (uri.toString().endsWith("xsd")) { //$NON-NLS-1$
-          final org.eclipse.emf.common.util.URI emfURI = org.eclipse.emf.common.util.URI.createURI(uri.toString());
-          final Collection<EObject> eObjects = ecoreBuilder.generate(emfURI);
-          final boolean multipleFiles = eObjects.size() > 1;
-          for (final EObject eObject : eObjects) {
+        Resource resource = resourceSet.createResource(emfURI);
+        resource.load(Collections.emptyMap());
+
+        if (!resource.getContents().isEmpty()) {
+          EObject rootObject = resource.getContents().get(0);
+          Resource metaDataResource = rootObject.eClass().eResource();
+          if (metaDataResource != null && metaDataResource.getResourceSet() != null) {
+            resourceSet.getResources().addAll(metaDataResource.getResourceSet().getResources());
+          }
+        }
+
+        boolean multipleFiles = false;
+        // create new list to prevent concurrent mod error
+        for (EObject eObject : new ArrayList<EObject>(resource.getContents())) {
+          if (eObject instanceof EPackage) {
             final EPackage ePackage = (EPackage) eObject;
 
             // create the new URI
@@ -73,16 +80,20 @@ public class GenerateEcoreFromXSD extends BaseGenerateAction {
             }
 
             // save the EPackage in the file
-            final Resource resource = resourceSet.createResource(ecoreURI);
-            resource.getContents().clear();
-            resource.getContents().add(ePackage);
-            resourcesToSave.add(resource);
+            // note this actually removes the epackage from the xcore resource
+            // but we are not saving that other resource, so should be fine...
+            final Resource ePackageResource = resourceSet.createResource(ecoreURI);
+            ePackageResource.getContents().clear();
+            ePackageResource.getContents().add(ePackage);
+            resourcesToSave.add(ePackageResource);
+            multipleFiles = true;
           }
         }
+      }
 
-        for (Resource resource : resourcesToSave) {
-          resource.save(Collections.emptyMap());
-        }
+      // save at the end as different files may refer to eachother
+      for (Resource res : resourcesToSave) {
+        res.save(Collections.emptyMap());
       }
     } catch (Exception e) {
       throw new IllegalStateException(e);

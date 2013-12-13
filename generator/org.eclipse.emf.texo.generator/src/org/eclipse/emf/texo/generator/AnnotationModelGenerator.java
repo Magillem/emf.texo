@@ -33,6 +33,7 @@ import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.XMLResource;
@@ -67,14 +68,18 @@ public class AnnotationModelGenerator {
           .getLocation().toOSString());
       final org.eclipse.emf.common.util.URI fileAnnotationModelUri = AnnotationModelSuffixHandler
           .createAnnotationsModelURIWithSuffix(fileUri, suffix);
+      resourceSet.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
+
       final File file = new File(fileAnnotationModelUri.toFileString());
       final Resource resource;
       if (file.exists()) {
         resource = resourceSet.getResource(fileAnnotationModelUri, true);
       } else {
         resource = resourceSet.createResource(fileAnnotationModelUri);
-        final String encoding = ((XMLResource) ePackage.eResource()).getEncoding();
-        ((XMLResource) resource).setEncoding(encoding);
+        if (ePackage.eResource() instanceof XMLResource) {
+          final String encoding = ((XMLResource) ePackage.eResource()).getEncoding();
+          ((XMLResource) resource).setEncoding(encoding);
+        }
       }
 
       if (!resource.getContents().isEmpty() && resource.getContents().get(0) instanceof AnnotatedModel) {

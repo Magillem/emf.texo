@@ -11,11 +11,14 @@ Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="[2.5.0,3.0.0)",
  org.eclipse.xsd;bundle-version="[2.5.0,3.0.0)",
  org.eclipse.emf.texo.annotations.model;bundle-version="[0.1.0,1.1.0)",
  org.eclipse.emf.texo.generator;bundle-version="[0.1.0,1.1.0)",
+ org.eclipse.core.runtime,
  org.eclipse.emf.ecore;bundle-version="[2.5.0,3.0.0)",
  org.eclipse.emf.texo.annotations.model;bundle-version="[0.1.0,1.1.0)",
  org.eclipse.emf.texo;bundle-version="[0.1.0,1.1.0)",
  org.eclipse.xtext.xbase.lib;bundle-version="[2.3.0,3.0.0)",
- org.junit;bundle-version="[3.8.0,5.0.0)"
+ org.junit;bundle-version="[3.8.0,5.0.0)",
+ org.eclipse.emf.ecore.xcore;bundle-version="[1.0.0,2.0.0)"
+Bundle-ActivationPolicy: lazy
 Export-Package: org.eclipse.emf.texo.modelgenerator.annotator;version="0.1.0",
  org.eclipse.emf.texo.modelgenerator.modelannotations;version="0.1.0",
  org.eclipse.emf.texo.modelgenerator.modelannotations.util;version="0.1.0",

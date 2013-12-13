@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.ENamedElement;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.texo.annotations.annotationsmodel.ENamedElementAnnotation;
 
 /**
@@ -91,8 +92,25 @@ public abstract class ModelAnnotator {
         if (object instanceof ENamedElement) {
           final ENamedElement eNamedElement = (ENamedElement) object;
           final EClass annotationEClass = getAnnotationEClass(eNamedElement);
+
+          if (eNamedElement.getName().equals("Book")) {
+            final EClass bkEClass = (EClass) eNamedElement;
+            final EClass superType = bkEClass.getESuperTypes().get(0);
+            final EPackage eSuperPackage = superType.getEPackage();
+            final Resource eResource = eSuperPackage.eResource();
+            System.err.println(eResource);
+          }
+
           if (annotationEClass != null) {
             annotationManager.getAnnotation(eNamedElement, annotationEClass);
+          }
+
+          if (eNamedElement.getName().equals("Book")) {
+            final EClass bkEClass = (EClass) eNamedElement;
+            final EClass superType = bkEClass.getESuperTypes().get(0);
+            final EPackage eSuperPackage = superType.getEPackage();
+            final Resource eResource = eSuperPackage.eResource();
+            System.err.println(eResource);
           }
         }
       }

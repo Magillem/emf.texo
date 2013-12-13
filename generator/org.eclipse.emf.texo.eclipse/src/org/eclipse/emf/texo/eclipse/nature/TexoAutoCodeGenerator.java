@@ -103,6 +103,8 @@ public class TexoAutoCodeGenerator extends IncrementalProjectBuilder {
             final String extension = resource.getRawLocation().getFileExtension();
             if (extension.endsWith("ecore")) {
               files.add((IFile) resource);
+            } else if (extension.endsWith("xcore")) {
+              files.add((IFile) resource);
             } else if (extension.endsWith("xsd")) {
               files.add((IFile) resource);
             } else if (extension.endsWith("annotationsmodel")) {

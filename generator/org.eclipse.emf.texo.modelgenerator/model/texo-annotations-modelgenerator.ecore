@@ -20,7 +20,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="simpleModelFactoryClassName"
         unique="false" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependsOn" unique="false"
-        upperBound="-1" eType="#//EPackageModelGenAnnotation"/>
+        upperBound="-1" eType="#//EPackageModelGenAnnotation" transient="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ecoreFileContent" unique="false"
         eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
         transient="true"/>
@@ -106,7 +106,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstract" unique="false"
         eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"
         defaultValueLiteral="false" unsettable="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="superEClass" eType="#//EClassModelGenAnnotation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superEClass" eType="#//EClassModelGenAnnotation"
+        transient="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="featureMapFeatures" upperBound="-1"
         eType="#//EStructuralFeatureModelGenAnnotation" changeable="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="eStructuralFeatureModelGenAnnotations"

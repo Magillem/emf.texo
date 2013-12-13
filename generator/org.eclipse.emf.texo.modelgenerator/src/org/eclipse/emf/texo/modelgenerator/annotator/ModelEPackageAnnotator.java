@@ -37,6 +37,7 @@ import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EClassifierImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
@@ -372,14 +373,11 @@ public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implemen
       // note the uri of the resource is the same as the one used to read
       // it again in
       // ModelUtils.readEPackagesFromFile
-      final XMLResource outputRes;
-      if (ePackage.eResource() == null) {
-        outputRes = (XMLResource) ecoreResourceFactory.createResource(URI.createURI(GenConstants.EMPTY));
-        previousURI.put(outputRes, URI.createURI(ePackage.getNsURI()));
-        outputRes.getContents().add(ePackage);
-      } else {
-        outputRes = (XMLResource) ePackage.eResource();
-      }
+      final XMLResource outputRes = (XMLResource) ecoreResourceFactory
+          .createResource(URI.createURI(GenConstants.EMPTY));
+      previousURI.put(outputRes, URI.createURI(ePackage.getNsURI()));
+      outputRes.getContents().add(EcoreUtil.copy(ePackage));
+
       final StringWriter sw = new StringWriter();
       outputRes.save(sw, Collections.EMPTY_MAP);
       return sw.toString();

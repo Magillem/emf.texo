@@ -1,0 +1,18 @@
+package org.eclipse.emf.texo.test.model.samples.travel
+
+class Journey 
+{
+	String name
+	contains Trip trips
+}
+
+class Trip 
+{
+	String name
+	refers City destination
+}
+
+class City 
+{
+	String name
+}

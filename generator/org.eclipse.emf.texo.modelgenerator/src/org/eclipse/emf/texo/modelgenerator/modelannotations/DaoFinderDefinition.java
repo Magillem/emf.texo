@@ -35,113 +35,113 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  */
 public class DaoFinderDefinition extends EObjectImpl implements EObject {
   /**
-	 * The cached value of the '{@link #getFindPart() <em>Find Part</em>}' reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getFindPart() <em>Find Part</em>}' reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getFindPart()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getFindPart()
+   * @generated
+   * @ordered
+   */
   protected EList<EStructuralFeatureModelGenAnnotation> findPart;
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected DaoFinderDefinition() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return ModelcodegeneratorPackage.Literals.DAO_FINDER_DEFINITION;
-	}
+    return ModelcodegeneratorPackage.Literals.DAO_FINDER_DEFINITION;
+  }
 
   /**
-	 * Returns the value of the '<em><b>Find Part</b></em>' reference list.
-	 * The list contents are of type {@link org.eclipse.emf.texo.modelgenerator.modelannotations.EStructuralFeatureModelGenAnnotation}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Find Part</b></em>' reference list.
+   * The list contents are of type {@link org.eclipse.emf.texo.modelgenerator.modelannotations.EStructuralFeatureModelGenAnnotation}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Find Part</em>' reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Find Part</em>' reference list.
-	 * @see org.eclipse.emf.texo.modelgenerator.modelannotations.ModelcodegeneratorPackage#getDaoFinderDefinition_FindPart()
-	 * @model
-	 * @generated
-	 */
+   * @return the value of the '<em>Find Part</em>' reference list.
+   * @see org.eclipse.emf.texo.modelgenerator.modelannotations.ModelcodegeneratorPackage#getDaoFinderDefinition_FindPart()
+   * @model
+   * @generated
+   */
   public EList<EStructuralFeatureModelGenAnnotation> getFindPart() {
-		if (findPart == null) {
-			findPart = new EObjectResolvingEList<EStructuralFeatureModelGenAnnotation>(EStructuralFeatureModelGenAnnotation.class, this, ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART);
-		}
-		return findPart;
-	}
+    if (findPart == null) {
+      findPart = new EObjectResolvingEList<EStructuralFeatureModelGenAnnotation>(EStructuralFeatureModelGenAnnotation.class, this, ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART);
+    }
+    return findPart;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
-				return getFindPart();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
+        return getFindPart();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
-				getFindPart().clear();
-				getFindPart().addAll((Collection<? extends EStructuralFeatureModelGenAnnotation>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
+        getFindPart().clear();
+        getFindPart().addAll((Collection<? extends EStructuralFeatureModelGenAnnotation>)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
-				getFindPart().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
+        getFindPart().clear();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
-				return findPart != null && !findPart.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case ModelcodegeneratorPackage.DAO_FINDER_DEFINITION__FIND_PART:
+        return findPart != null && !findPart.isEmpty();
+    }
+    return super.eIsSet(featureID);
+  }
 
 } // DaoFinderDefinition
