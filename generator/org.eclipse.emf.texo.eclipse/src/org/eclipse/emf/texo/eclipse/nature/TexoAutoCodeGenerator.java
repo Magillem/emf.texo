@@ -101,6 +101,9 @@ public class TexoAutoCodeGenerator extends IncrementalProjectBuilder {
           final IResource resource = delta.getResource();
           if (resource instanceof IFile) {
             final String extension = resource.getRawLocation().getFileExtension();
+            if (extension == null) {
+              return true;
+            }
             if (extension.endsWith("ecore")) {
               files.add((IFile) resource);
             } else if (extension.endsWith("xcore")) {
