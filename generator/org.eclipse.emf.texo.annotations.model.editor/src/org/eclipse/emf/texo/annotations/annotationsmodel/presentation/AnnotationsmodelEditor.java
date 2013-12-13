@@ -859,6 +859,7 @@ public class AnnotationsmodelEditor extends MultiPageEditorPart implements IEdit
       exception = e;
       resource = editingDomain.getResourceSet().getResource(resourceURI, false);
     }
+    resource.setTrackingModification(true);
 
     Diagnostic diagnostic = analyzeResourceProblems(resource, exception);
     if (diagnostic.getSeverity() != Diagnostic.OK) {
@@ -1345,7 +1346,7 @@ public class AnnotationsmodelEditor extends MultiPageEditorPart implements IEdit
    * This is for implementing {@link IEditorPart} and simply saves the model file. <!-- begin-user-doc --> <!--
    * end-user-doc -->
    * 
-   * @generated
+   * @generatedNOT added check on not modified
    */
   @Override
   public void doSave(IProgressMonitor progressMonitor) {
@@ -1366,7 +1367,7 @@ public class AnnotationsmodelEditor extends MultiPageEditorPart implements IEdit
         boolean first = true;
         for (Resource resource : editingDomain.getResourceSet().getResources()) {
           if ((first || !resource.getContents().isEmpty() || isPersisted(resource))
-              && !editingDomain.isReadOnly(resource)) {
+              && !editingDomain.isReadOnly(resource) && resource.isModified()) {
             try {
               long timeStamp = resource.getTimeStamp();
               resource.save(saveOptions);

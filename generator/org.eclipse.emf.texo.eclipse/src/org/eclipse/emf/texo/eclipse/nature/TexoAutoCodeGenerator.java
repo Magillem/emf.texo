@@ -114,10 +114,18 @@ public class TexoAutoCodeGenerator extends IncrementalProjectBuilder {
                 dashIndex = name.indexOf(".");
               }
               if (dashIndex != -1) {
-                final String modelFileName = name.substring(0, dashIndex) + ".ecore";
-                final IPath path = resource.getParent().getFullPath().append(modelFileName);
-                final IFile modelFile = resource.getParent().getFile(
-                    path.makeRelativeTo(resource.getParent().getFullPath()));
+                IFile modelFile = null;
+                // first try the xcore file
+                {
+                  final String modelFileName = name.substring(0, dashIndex) + ".xcore";
+                  final IPath path = resource.getParent().getFullPath().append(modelFileName);
+                  modelFile = resource.getParent().getFile(path.makeRelativeTo(resource.getParent().getFullPath()));
+                }
+                if (!modelFile.exists()) {
+                  final String modelFileName = name.substring(0, dashIndex) + ".ecore";
+                  final IPath path = resource.getParent().getFullPath().append(modelFileName);
+                  modelFile = resource.getParent().getFile(path.makeRelativeTo(resource.getParent().getFullPath()));
+                }
                 if (modelFile.exists()) {
                   files.add(modelFile);
                 }
