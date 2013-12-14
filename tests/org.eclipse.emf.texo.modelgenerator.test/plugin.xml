@@ -14,4 +14,28 @@
             genModel="src/org/eclipse/emf/texo/modelgenerator/test/models/samples/travel.xcore"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated sport-competition -->
+      <package
+            uri="org.eclipse.emf.texo.samples.sport.competition"
+            class="org.eclipse.emf.texo.samples.sport.competition.CompetitionPackage"
+            genModel="src/org/eclipse/emf/texo/modelgenerator/test/models/samples/sport-competition.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated sport-club -->
+      <package
+            uri="org.eclipse.emf.texo.samples.sport.club"
+            class="org.eclipse.emf.texo.samples.sport.club.ClubPackage"
+            genModel="src/org/eclipse/emf/texo/modelgenerator/test/models/samples/sport-club.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated sport-society -->
+      <package
+            uri="org.eclipse.emf.texo.samples.sport.society"
+            class="org.eclipse.emf.texo.samples.sport.society.SocietyPackage"
+            genModel="src/org/eclipse/emf/texo/modelgenerator/test/models/samples/sport-society.xcore"/>
+   </extension>
+
 </plugin>

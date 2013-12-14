@@ -272,12 +272,18 @@ public class GeneratorUtils {
    * @return the EPackages
    */
   public static List<EPackage> readEPackagesUsingEMFURI(final List<URI> uris, EPackage.Registry registry) {
+
+    // force the init of xcore
+    if (XcorePackage.eINSTANCE != null) {
+    }
+
     final List<EPackage> ePackages = new ArrayList<EPackage>();
     final ResourceSet rs = new ResourceSetImpl();
     rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
         new EcoreResourceFactoryImpl());
+    //    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xcore", //$NON-NLS-1$
+    // new XcoreResourceFactory());
     rs.setPackageRegistry(registry);
-
     rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
 
     // note passing resourcesets package registry to the xsdecore builder
@@ -299,6 +305,7 @@ public class GeneratorUtils {
       } else {
         final Resource res = rs.createResource(emfURI);
         try {
+
           res.load(Collections.EMPTY_MAP);
 
           // code copied from EMF's EcoreEditor

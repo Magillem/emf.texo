@@ -14,9 +14,10 @@ Require-Bundle: org.eclipse.emf.texo.annotations.model;bundle-version="[0.1.0,1.
  org.eclipse.xtend;bundle-version="[0.7.0,2.1.0)",
  org.eclipse.emf.texo;bundle-version="[0.1.0,1.1.0)",
  org.eclipse.core.runtime;bundle-version="[3.5.0,5.0.0)",
- org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.xtext.xbase.lib;visibility:=reexport,
- org.eclipse.emf.ecore.xcore.lib;visibility:=reexport,
+ org.eclipse.emf.ecore;bundle-version="[2.9.0,3.0.0)",
+ org.eclipse.emf.ecore.xcore;bundle-version="[1.0.0,2.0.0)",
+ org.eclipse.xtext.xbase.lib;bundle-version="[2.4.0,3.0.0)",
+ org.eclipse.emf.ecore.xcore.lib;bundle-version="[1.0.0,2.0.0)",
  org.eclipse.core.resources;bundle-version="[3.5.0,4.0.0)",
  org.eclipse.emf.texo.orm;bundle-version="[0.1.0,1.1.0)",
  org.junit;bundle-version="[4.0.0,5.1.0)",
@@ -27,7 +28,4 @@ Export-Package: org.eclipse.emf.texo.modelgenerator.test;uses:=junit.framework;v
  org.eclipse.emf.texo.modelgenerator.test.models.issues;version="0.1.0",
  org.eclipse.emf.texo.modelgenerator.test.models.samples;version="0.1.0",
  org.eclipse.emf.texo.modelgenerator.test.models.schemaconstructs;version="0.1.0",
- org.eclipse.emf.texo.modelgenerator.test.models.texo;version="0.1.0",
- org.eclipse.emf.texo.test.model.samples.travel,
- org.eclipse.emf.texo.test.model.samples.travel.impl,
- org.eclipse.emf.texo.test.model.samples.travel.util
+ org.eclipse.emf.texo.modelgenerator.test.models.texo;version="0.1.0"

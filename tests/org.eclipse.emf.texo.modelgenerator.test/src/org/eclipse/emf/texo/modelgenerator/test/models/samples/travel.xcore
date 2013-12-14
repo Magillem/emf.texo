@@ -3,16 +3,17 @@ package org.eclipse.emf.texo.test.model.samples.travel
 class Journey 
 {
 	String name
-	contains Trip trips
+	contains Trip[] trips
 }
 
 class Trip 
 {
-	String name
+	String name2
 	refers City destination
 }
 
 class City 
 {
 	String name
+	String reis
 }

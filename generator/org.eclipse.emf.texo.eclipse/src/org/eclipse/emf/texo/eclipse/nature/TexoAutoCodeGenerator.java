@@ -84,7 +84,11 @@ public class TexoAutoCodeGenerator extends IncrementalProjectBuilder {
     if (kind != IncrementalProjectBuilder.FULL_BUILD) {
       IResourceDelta delta = getDelta(getProject());
       if (delta != null) {
-        incrementalBuild(delta, monitor);
+        try {
+          incrementalBuild(delta, monitor);
+        } catch (IllegalStateException e) {
+          // ignore, be robust if ecores/epackages are not valid
+        }
       }
     }
     return null;
