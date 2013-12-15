@@ -29,7 +29,6 @@ import org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage;
 import org.eclipse.emf.texo.orm.annotations.model.orm.Property;
 import org.eclipse.emf.texo.orm.annotations.model.orm.StructConverter;
 import org.eclipse.emf.texo.orm.annotations.model.orm.TemporalType;
-import org.eclipse.emf.texo.orm.annotations.model.orm.Temporal;
 import org.eclipse.emf.texo.orm.annotations.model.orm.TypeConverter;
 import org.eclipse.emf.texo.orm.annotations.model.orm.Version;
 import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;

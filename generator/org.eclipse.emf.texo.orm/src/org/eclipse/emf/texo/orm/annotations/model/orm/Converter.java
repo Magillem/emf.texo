@@ -7,7 +7,6 @@
 package org.eclipse.emf.texo.orm.annotations.model.orm;
 
 import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>Converter</b></em>'. <!-- end-user-doc -->

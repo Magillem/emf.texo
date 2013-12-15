@@ -10,15 +10,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
 import org.eclipse.emf.ecore.xml.type.util.XMLTypeUtil;
 import org.eclipse.emf.ecore.xml.type.util.XMLTypeValidator;
-
 import org.eclipse.emf.texo.orm.annotations.model.orm.*;
 
 /**

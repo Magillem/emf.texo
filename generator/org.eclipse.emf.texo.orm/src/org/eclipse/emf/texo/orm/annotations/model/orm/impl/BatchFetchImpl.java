@@ -9,15 +9,11 @@ package org.eclipse.emf.texo.orm.annotations.model.orm.impl;
 import java.math.BigInteger;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch;
 import org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetchType;
 import org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage;
-
 import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
 
 /**

@@ -9,7 +9,6 @@ package org.eclipse.emf.texo.orm.annotations.model.orm;
 import java.math.BigInteger;
 
 import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>Stored Procedure Parameter</b></em>'. <!--

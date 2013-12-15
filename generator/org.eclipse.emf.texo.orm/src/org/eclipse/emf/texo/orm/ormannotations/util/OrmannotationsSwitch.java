@@ -6,9 +6,6 @@
  */
 package org.eclipse.emf.texo.orm.ormannotations.util;
 
-import java.util.List;
-
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
@@ -21,7 +18,6 @@ import org.eclipse.emf.texo.annotations.annotationsmodel.ENamedElementAnnotation
 import org.eclipse.emf.texo.annotations.annotationsmodel.EPackageAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EReferenceAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EStructuralFeatureAnnotation;
-import org.eclipse.emf.texo.orm.ormannotations.*;
 import org.eclipse.emf.texo.orm.ormannotations.EAttributeORMAnnotation;
 import org.eclipse.emf.texo.orm.ormannotations.EClassORMAnnotation;
 import org.eclipse.emf.texo.orm.ormannotations.EClassifierORMAnnotation;

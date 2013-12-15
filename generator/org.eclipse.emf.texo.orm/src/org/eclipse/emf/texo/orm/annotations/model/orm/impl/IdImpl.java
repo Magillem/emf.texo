@@ -34,7 +34,6 @@ import org.eclipse.emf.texo.orm.annotations.model.orm.SequenceGenerator;
 import org.eclipse.emf.texo.orm.annotations.model.orm.StructConverter;
 import org.eclipse.emf.texo.orm.annotations.model.orm.TableGenerator;
 import org.eclipse.emf.texo.orm.annotations.model.orm.TemporalType;
-import org.eclipse.emf.texo.orm.annotations.model.orm.Temporal;
 import org.eclipse.emf.texo.orm.annotations.model.orm.TypeConverter;
 import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
 import org.eclipse.emf.texo.orm.annotator.ORMJavaAnnotationGenerator;

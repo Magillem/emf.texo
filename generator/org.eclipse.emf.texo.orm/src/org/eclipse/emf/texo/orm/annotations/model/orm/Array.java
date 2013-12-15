@@ -7,9 +7,7 @@
 package org.eclipse.emf.texo.orm.annotations.model.orm;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.util.FeatureMap;
-
 import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
 
 /**

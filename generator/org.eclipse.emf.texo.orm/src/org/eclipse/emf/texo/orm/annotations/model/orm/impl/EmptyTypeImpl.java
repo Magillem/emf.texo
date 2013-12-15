@@ -7,9 +7,6 @@
 package org.eclipse.emf.texo.orm.annotations.model.orm.impl;
 
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.texo.orm.annotations.model.orm.EmptyType;
 import org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage;
 import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
