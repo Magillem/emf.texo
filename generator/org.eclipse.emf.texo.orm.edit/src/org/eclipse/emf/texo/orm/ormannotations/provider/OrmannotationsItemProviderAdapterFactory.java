@@ -40,19 +40,19 @@ import org.eclipse.emf.texo.orm.ormannotations.util.OrmannotationsAdapterFactory
 public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdapterFactory implements
     ComposeableAdapterFactory, IChangeNotifier, IDisposable {
   /**
-	 * This keeps track of the root adapter factory that delegates to this adapter factory.
-	 * <!-- begin-user-doc --> <!--
+   * This keeps track of the root adapter factory that delegates to this adapter factory.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected ComposedAdapterFactory parentAdapterFactory;
 
   /**
-	 * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
-	 * <!-- begin-user-doc --> <!--
+   * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected IChangeNotifier changeNotifier = new ChangeNotifier();
 
   /**
@@ -64,24 +64,24 @@ public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdap
   protected Collection<Object> supportedTypes = new ArrayList<Object>();
 
   /**
-	 * This constructs an instance.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * This constructs an instance.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public OrmannotationsItemProviderAdapterFactory() {
-		supportedTypes.add(IEditingDomainItemProvider.class);
-		supportedTypes.add(IStructuredItemContentProvider.class);
-		supportedTypes.add(ITreeItemContentProvider.class);
-		supportedTypes.add(IItemLabelProvider.class);
-		supportedTypes.add(IItemPropertySource.class);
-	}
+    supportedTypes.add(IEditingDomainItemProvider.class);
+    supportedTypes.add(IStructuredItemContentProvider.class);
+    supportedTypes.add(ITreeItemContentProvider.class);
+    supportedTypes.add(IItemLabelProvider.class);
+    supportedTypes.add(IItemPropertySource.class);
+  }
 
   /**
-	 * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation} instances.
-	 * <!-- begin-user-doc --> <!--
+   * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation} instances.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected EPackageORMAnnotationItemProvider ePackageORMAnnotationItemProvider;
 
   /**
@@ -106,11 +106,11 @@ public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdap
   }
 
   /**
-	 * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EClassORMAnnotation} instances.
-	 * <!-- begin-user-doc --> <!--
+   * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EClassORMAnnotation} instances.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected EClassORMAnnotationItemProvider eClassORMAnnotationItemProvider;
 
   /**
@@ -135,11 +135,11 @@ public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdap
   }
 
   /**
-	 * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EAttributeORMAnnotation} instances.
-	 * <!-- begin-user-doc --> <!--
+   * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EAttributeORMAnnotation} instances.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected EAttributeORMAnnotationItemProvider eAttributeORMAnnotationItemProvider;
 
   /**
@@ -164,11 +164,11 @@ public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdap
   }
 
   /**
-	 * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EReferenceORMAnnotation} instances.
-	 * <!-- begin-user-doc --> <!--
+   * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EReferenceORMAnnotation} instances.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected EReferenceORMAnnotationItemProvider eReferenceORMAnnotationItemProvider;
 
   /**
@@ -193,10 +193,10 @@ public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdap
   }
 
   /**
-	 * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EEnumORMAnnotation} instances.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EEnumORMAnnotation} instances.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected EEnumORMAnnotationItemProvider eEnumORMAnnotationItemProvider;
 
   /**
@@ -221,11 +221,11 @@ public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdap
   }
 
   /**
-	 * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EDataTypeORMAnnotation} instances.
-	 * <!-- begin-user-doc --> <!--
+   * This keeps track of the one adapter used for all {@link org.eclipse.emf.texo.orm.ormannotations.EDataTypeORMAnnotation} instances.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   protected EDataTypeORMAnnotationItemProvider eDataTypeORMAnnotationItemProvider;
 
   /**
@@ -250,104 +250,104 @@ public class OrmannotationsItemProviderAdapterFactory extends OrmannotationsAdap
   }
 
   /**
-	 * This returns the root adapter factory that contains this factory.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * This returns the root adapter factory that contains this factory.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public ComposeableAdapterFactory getRootAdapterFactory() {
-		return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
-	}
+    return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
+  }
 
   /**
-	 * This sets the composed adapter factory that contains this factory.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * This sets the composed adapter factory that contains this factory.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setParentAdapterFactory(ComposedAdapterFactory parentAdapterFactory) {
-		this.parentAdapterFactory = parentAdapterFactory;
-	}
+    this.parentAdapterFactory = parentAdapterFactory;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean isFactoryForType(Object type) {
-		return supportedTypes.contains(type) || super.isFactoryForType(type);
-	}
+    return supportedTypes.contains(type) || super.isFactoryForType(type);
+  }
 
   /**
-	 * This implementation substitutes the factory itself as the key for the adapter.
-	 * <!-- begin-user-doc --> <!--
+   * This implementation substitutes the factory itself as the key for the adapter.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public Adapter adapt(Notifier notifier, Object type) {
-		return super.adapt(notifier, this);
-	}
+    return super.adapt(notifier, this);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object adapt(Object object, Object type) {
-		if (isFactoryForType(type)) {
-			Object adapter = super.adapt(object, type);
-			if (!(type instanceof Class<?>) || (((Class<?>)type).isInstance(adapter))) {
-				return adapter;
-			}
-		}
+    if (isFactoryForType(type)) {
+      Object adapter = super.adapt(object, type);
+      if (!(type instanceof Class<?>) || (((Class<?>)type).isInstance(adapter))) {
+        return adapter;
+      }
+    }
 
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * This adds a listener.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * This adds a listener.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void addListener(INotifyChangedListener notifyChangedListener) {
-		changeNotifier.addListener(notifyChangedListener);
-	}
+    changeNotifier.addListener(notifyChangedListener);
+  }
 
   /**
-	 * This removes a listener.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * This removes a listener.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void removeListener(INotifyChangedListener notifyChangedListener) {
-		changeNotifier.removeListener(notifyChangedListener);
-	}
+    changeNotifier.removeListener(notifyChangedListener);
+  }
 
   /**
-	 * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
-	 * <!-- begin-user-doc --> <!--
+   * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public void fireNotifyChanged(Notification notification) {
-		changeNotifier.fireNotifyChanged(notification);
+    changeNotifier.fireNotifyChanged(notification);
 
-		if (parentAdapterFactory != null) {
-			parentAdapterFactory.fireNotifyChanged(notification);
-		}
-	}
+    if (parentAdapterFactory != null) {
+      parentAdapterFactory.fireNotifyChanged(notification);
+    }
+  }
 
   /**
-	 * This disposes all of the item providers created by this factory. 
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * This disposes all of the item providers created by this factory. 
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void dispose() {
-		if (ePackageORMAnnotationItemProvider != null) ePackageORMAnnotationItemProvider.dispose();
-		if (eClassORMAnnotationItemProvider != null) eClassORMAnnotationItemProvider.dispose();
-		if (eAttributeORMAnnotationItemProvider != null) eAttributeORMAnnotationItemProvider.dispose();
-		if (eReferenceORMAnnotationItemProvider != null) eReferenceORMAnnotationItemProvider.dispose();
-		if (eEnumORMAnnotationItemProvider != null) eEnumORMAnnotationItemProvider.dispose();
-		if (eDataTypeORMAnnotationItemProvider != null) eDataTypeORMAnnotationItemProvider.dispose();
-	}
+    if (ePackageORMAnnotationItemProvider != null) ePackageORMAnnotationItemProvider.dispose();
+    if (eClassORMAnnotationItemProvider != null) eClassORMAnnotationItemProvider.dispose();
+    if (eAttributeORMAnnotationItemProvider != null) eAttributeORMAnnotationItemProvider.dispose();
+    if (eReferenceORMAnnotationItemProvider != null) eReferenceORMAnnotationItemProvider.dispose();
+    if (eEnumORMAnnotationItemProvider != null) eEnumORMAnnotationItemProvider.dispose();
+    if (eDataTypeORMAnnotationItemProvider != null) eDataTypeORMAnnotationItemProvider.dispose();
+  }
 
   private static class ChildPropertyDescriptorSorter implements Comparator<Object> {
 

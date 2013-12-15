@@ -139,4 +139,18 @@
    </extension>
    
    
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated texo-annotations-orm -->
+      <package
+            uri="http://www.eclipse.org/emf/texo/orm/ormannotations"
+            class="org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage"
+            genModel="model/texo-annotations-orm.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated texo-annotations-orm -->
+      <parser
+            type="ormannotations"
+            class="org.eclipse.emf.texo.orm.ormannotations.util.OrmannotationsResourceFactoryImpl"/>
+   </extension>
 </plugin>
