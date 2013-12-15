@@ -64,9 +64,6 @@ import org.eclipse.emf.texo.test.model.samples.music.MusicModelPackage;
 import org.eclipse.emf.texo.test.model.samples.play.PlayModelPackage;
 import org.eclipse.emf.texo.test.model.samples.rental.RentalModelPackage;
 import org.eclipse.emf.texo.test.model.samples.schemaprimerpo.SchemaprimerpoModelPackage;
-import org.eclipse.emf.texo.test.model.samples.sport.club.ClubModelPackage;
-import org.eclipse.emf.texo.test.model.samples.sport.competition.CompetitionModelPackage;
-import org.eclipse.emf.texo.test.model.samples.sport.society.SocietyModelPackage;
 import org.eclipse.emf.texo.test.model.samples.sunbooks.SunBooksModelPackage;
 import org.eclipse.emf.texo.test.model.samples.travel.TravelModelPackage;
 import org.eclipse.emf.texo.test.model.samples.types.TypesModelPackage;
@@ -125,9 +122,9 @@ public class TestModelPackageProvider {
     result.add(WorkflowModelPackage.INSTANCE);
 
     result.add(TravelModelPackage.INSTANCE);
-    result.add(ClubModelPackage.INSTANCE);
-    result.add(CompetitionModelPackage.INSTANCE);
-    result.add(SocietyModelPackage.INSTANCE);
+    // result.add(ClubModelPackage.INSTANCE);
+    // result.add(CompetitionModelPackage.INSTANCE);
+    // result.add(SocietyModelPackage.INSTANCE);
 
     // jpa constructs
     result.add(Bz325427ModelPackage.INSTANCE);
