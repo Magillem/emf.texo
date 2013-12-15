@@ -18,7 +18,6 @@
 package org.eclipse.emf.texo.modelgenerator.test;
 
 import java.net.URI;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -61,6 +60,7 @@ public class EclipseModelGeneratorTest extends TestCase {
   private static final String DEFAULT_EXTENDS = "org.eclipse.emf.texo.test.model.base.identifiable.Identifiable"; //$NON-NLS-1$
 
   private static final String TEST_MODEL_PROJECT = "org.eclipse.emf.texo.test.model"; //$NON-NLS-1$
+  private static final String MODELGENERATOR_TEST_PROJECT = "org.eclipse.emf.texo.modelgenerator.test"; //$NON-NLS-1$
 
   private static final EPackage.Registry SHARED_REGISTRY = GeneratorUtils.createEPackageRegistry();
 
@@ -70,6 +70,8 @@ public class EclipseModelGeneratorTest extends TestCase {
   private ORMMappingOptions safeORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
+    final IProject project = EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
+    project.open(null);
 
     testORMOptions.setAddOrderColumnToListMappings(true);
     testORMOptions.setEnforceUniqueNames(true);
@@ -90,11 +92,11 @@ public class EclipseModelGeneratorTest extends TestCase {
 
     for (String modelFile : getModelFileRelativePaths()) {
       System.err.println("Generating modelfile " + modelFile); //$NON-NLS-1$
-      final IProject project = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
+      final IProject testProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
       if (modelFile.contains("employee.xsd")) { //$NON-NLS-1$
-        project.setPersistentProperty(TexoResourceManager.TEMPLATE_FOLDER_PROPERTY, "templates"); //$NON-NLS-1$
+        testProject.setPersistentProperty(TexoResourceManager.TEMPLATE_FOLDER_PROPERTY, "templates"); //$NON-NLS-1$
       } else {
-        project.setPersistentProperty(TexoResourceManager.TEMPLATE_FOLDER_PROPERTY, null);
+        testProject.setPersistentProperty(TexoResourceManager.TEMPLATE_FOLDER_PROPERTY, null);
       }
       generate(new String[] { modelFile });
     }
@@ -104,7 +106,7 @@ public class EclipseModelGeneratorTest extends TestCase {
     return false;
   }
 
-  private void generate(final String[] ecoreFileNames) {
+  private void generate(final String[] ecoreFileNames) throws Exception {
     try {
       ORMMappingOptions.setDefaultOptions(testORMOptions);
       final List<String> safelyMappedModels = TestModel.getSafelyMappedModels();
@@ -117,8 +119,8 @@ public class EclipseModelGeneratorTest extends TestCase {
 
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {
-        final URL url = TestModel.getModelUrl(ecoreFileName);
-        uris.add(url.toURI());
+        final URI uri = getModelPlatformUri(ecoreFileName);
+        uris.add(uri);
       }
 
       final EPackage.Registry packageRegistry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
@@ -166,6 +168,11 @@ public class EclipseModelGeneratorTest extends TestCase {
     } finally {
       ORMMappingOptions.setDefaultOptions(null);
     }
+  }
+
+  protected URI getModelPlatformUri(final String fileName) {
+    final String path = "platform:/plugin/" + MODELGENERATOR_TEST_PROJECT + "/src/org/eclipse/emf/texo/modelgenerator/test/models/" + fileName; //$NON-NLS-1$ //$NON-NLS-2$
+    return URI.create(path);
   }
 
   protected void addSuperType(final List<EPackage> ePackages, final EPackage.Registry packageRegistry) throws Exception {

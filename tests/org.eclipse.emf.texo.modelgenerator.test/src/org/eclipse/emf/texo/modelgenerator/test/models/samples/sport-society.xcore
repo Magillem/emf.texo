@@ -1,4 +1,4 @@
-package org.eclipse.emf.texo.samples.sport.society
+package org.eclipse.emf.texo.test.model.samples.sport.society
 
 class Society 
 {

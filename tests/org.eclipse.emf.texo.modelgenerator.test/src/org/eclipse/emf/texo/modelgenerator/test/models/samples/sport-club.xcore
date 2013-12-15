@@ -1,6 +1,6 @@
-package org.eclipse.emf.texo.samples.sport.club
+package org.eclipse.emf.texo.test.model.samples.sport.club
 
-import org.eclipse.emf.texo.samples.sport.society.Society
+import org.eclipse.emf.texo.test.model.samples.sport.society.Society
 
 class Club extends Society
 {
@@ -10,7 +10,7 @@ class Club extends Society
 class Team
 {
 	String name
-	refers Member[] member
+	refers Member[] members
 } 
 
 class Member 

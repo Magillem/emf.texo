@@ -49,7 +49,10 @@
       </orm:basic>
       <orm:one-to-many name="writers" orphan-removal="true">
         <orm:order-column name="library_Library_writers_ind"/>
-        <orm:join-column name="library_Library_writers"/>
+        <orm:join-table name="Library_Books_Test">
+          <orm:join-column name="library_Library_writers"/>
+          <orm:inverse-join-column name="writers_library_Writer"/>
+        </orm:join-table>
         <orm:cascade>
           <orm:cascade-all/>
         </orm:cascade>

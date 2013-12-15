@@ -27,7 +27,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subTypes" ordered="false"
-        unique="false" upperBound="-1" eType="#//PType" eOpposite="#//PType/base">
+        upperBound="-1" eType="#//PType" eOpposite="#//PType/base">
       <eAnnotations source="teneo.jpa">
         <details key="appinfo" value="@OneToMany(indexed=false)"/>
       </eAnnotations>

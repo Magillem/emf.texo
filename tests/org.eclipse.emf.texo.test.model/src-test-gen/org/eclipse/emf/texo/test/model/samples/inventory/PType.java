@@ -184,8 +184,11 @@ public class PType extends Identifiable {
    * @generated
    */
   public boolean addToSubTypes(PType subTypesValue) {
-    boolean result = subTypes.add(subTypesValue);
-    return result;
+    if (!subTypes.contains(subTypesValue)) {
+      boolean result = subTypes.add(subTypesValue);
+      return result;
+    }
+    return false;
   }
 
   /**

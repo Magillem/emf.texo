@@ -273,10 +273,6 @@ public class GeneratorUtils {
    */
   public static List<EPackage> readEPackagesUsingEMFURI(final List<URI> uris, EPackage.Registry registry) {
 
-    // force the init of xcore
-    if (XcorePackage.eINSTANCE != null) {
-    }
-
     final List<EPackage> ePackages = new ArrayList<EPackage>();
     final ResourceSet rs = new ResourceSetImpl();
     rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$

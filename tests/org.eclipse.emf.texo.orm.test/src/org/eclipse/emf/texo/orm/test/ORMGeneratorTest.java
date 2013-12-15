@@ -22,7 +22,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -58,6 +57,7 @@ public class ORMGeneratorTest extends TestCase {
 
   private static final String TEST_ORM_PROJECT = "org.eclipse.emf.texo.orm.test"; //$NON-NLS-1$
   private static final String TEST_MODEL_PROJECT = "org.eclipse.emf.texo.test.model"; //$NON-NLS-1$
+  private static final String MODELGENERATOR_TEST_PROJECT = "org.eclipse.emf.texo.modelgenerator.test"; //$NON-NLS-1$
 
   private static final String SRC_GEN = "src-test-gen"; //$NON-NLS-1$
   private static final String SRC = "src"; //$NON-NLS-1$
@@ -75,36 +75,49 @@ public class ORMGeneratorTest extends TestCase {
   private ORMMappingOptions testORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
+    // open the project so that the xcore files get resolved correctly
+    final IProject project = EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
+    project.getWorkspace().getRoot().refreshLocal(100, null);
+    project.refreshLocal(100, null);
 
-    // generate all the db names for the orms
-    testORMOptions.setAddOrderColumnToListMappings(true);
-    testORMOptions.setRenameSQLReservedNames(true);
-    testORMOptions.setEnforceUniqueNames(true);
-    testORMOptions.setGenerateFullDbSchemaNames(true);
-    testORMOptions.setMaximumSqlNameLength(64);
-    testORMOptions.setTestRun(true);
-    ORMMappingOptions.setDefaultOptions(testORMOptions);
+    try {
+      // generate all the db names for the orms
+      testORMOptions.setAddOrderColumnToListMappings(true);
+      testORMOptions.setRenameSQLReservedNames(true);
+      testORMOptions.setEnforceUniqueNames(true);
+      testORMOptions.setGenerateFullDbSchemaNames(true);
+      testORMOptions.setMaximumSqlNameLength(64);
+      testORMOptions.setTestRun(true);
+      ORMMappingOptions.setDefaultOptions(testORMOptions);
 
-    final IProject modelTestProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
-    final IPath projectPath = modelTestProject.getLocation();
-    final File modelTestProjectDir = projectPath.toFile();
+      final IProject modelTestProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
+      final IPath projectPath = modelTestProject.getLocation();
+      final File modelTestProjectDir = projectPath.toFile();
 
-    final IProject ormTestProject = EclipseGeneratorUtils.getProject(TEST_ORM_PROJECT);
-    final File ormTestProjectDir = new File(ormTestProject.getRawLocation().toOSString());
+      final IProject ormTestProject = EclipseGeneratorUtils.getProject(TEST_ORM_PROJECT);
+      final File ormTestProjectDir = new File(ormTestProject.getRawLocation().toOSString());
 
-    final File ormSrcDir = new File(ormTestProjectDir, SRC);
-    final File modelSrcGenDir = new File(modelTestProjectDir, SRC_GEN);
-    final File ormMetaInfDir = new File(ormSrcDir, META_INF);
-    final File modelMetaInfDir = new File(modelSrcGenDir, META_INF);
-    if (!modelMetaInfDir.exists()) {
-      modelMetaInfDir.mkdir();
+      final File ormSrcDir = new File(ormTestProjectDir, SRC);
+      final File modelSrcGenDir = new File(modelTestProjectDir, SRC_GEN);
+      final File ormMetaInfDir = new File(ormSrcDir, META_INF);
+      final File modelMetaInfDir = new File(modelSrcGenDir, META_INF);
+      if (!modelMetaInfDir.exists()) {
+        modelMetaInfDir.mkdir();
+      }
+      final File targetMappingFileDir = new File(modelMetaInfDir, MAPPING_FILES);
+
+      for (String modelFile : getModelFileRelativePaths()) {
+        System.err.println("Generating orm for " + modelFile); //$NON-NLS-1$
+        generate(modelFile, ormMetaInfDir, modelMetaInfDir, targetMappingFileDir);
+      }
+    } finally {
+      project.close(null);
     }
-    final File targetMappingFileDir = new File(modelMetaInfDir, MAPPING_FILES);
+  }
 
-    for (String modelFile : getModelFileRelativePaths()) {
-      System.err.println("Generating orm for " + modelFile); //$NON-NLS-1$
-      generate(modelFile, ormMetaInfDir, modelMetaInfDir, targetMappingFileDir);
-    }
+  protected java.net.URI getModelPlatformUri(final String fileName) {
+    final String path = "platform:/plugin/" + MODELGENERATOR_TEST_PROJECT + "/src/org/eclipse/emf/texo/modelgenerator/test/models/" + fileName; //$NON-NLS-1$ //$NON-NLS-2$
+    return java.net.URI.create(path);
   }
 
   protected boolean useSharedEPackageRegistry() {
@@ -115,8 +128,8 @@ public class ORMGeneratorTest extends TestCase {
     try {
       final File mappingFileDir = new File(targetMappingFileDir, modelFilePath).getParentFile();
 
-      final URL url = TestModel.getModelUrl(modelFilePath);
-      final List<EPackage> ePackages = GeneratorUtils.readEPackages(Collections.singletonList(url.toURI()),
+      final java.net.URI modelUri = getModelPlatformUri(modelFilePath);
+      final List<EPackage> ePackages = GeneratorUtils.readEPackages(Collections.singletonList(modelUri),
           useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils.createEPackageRegistry(), false);
 
       // create the uri to store the mapping file
