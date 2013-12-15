@@ -39,291 +39,291 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class PlsqlRecordImpl extends BaseOrmAnnotationImpl implements PlsqlRecord {
 	/**
-	 * The cached value of the '{@link #getField() <em>Field</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getField() <em>Field</em>}' containment reference list.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getField()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getField()
+   * @generated
+   * @ordered
+   */
 	protected EList<PlsqlParameter> field;
 
 	/**
-	 * The default value of the '{@link #getCompatibleType() <em>Compatible Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getCompatibleType() <em>Compatible Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCompatibleType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCompatibleType()
+   * @generated
+   * @ordered
+   */
 	protected static final String COMPATIBLE_TYPE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getCompatibleType() <em>Compatible Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getCompatibleType() <em>Compatible Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCompatibleType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCompatibleType()
+   * @generated
+   * @ordered
+   */
 	protected String compatibleType = COMPATIBLE_TYPE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getJavaType() <em>Java Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getJavaType() <em>Java Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJavaType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getJavaType()
+   * @generated
+   * @ordered
+   */
 	protected static final String JAVA_TYPE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getJavaType() <em>Java Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getJavaType() <em>Java Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJavaType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getJavaType()
+   * @generated
+   * @ordered
+   */
 	protected String javaType = JAVA_TYPE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PlsqlRecordImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getPlsqlRecord();
-	}
+    return OrmPackage.eINSTANCE.getPlsqlRecord();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<PlsqlParameter> getField() {
-		if (field == null) {
-			field = new EObjectContainmentEList<PlsqlParameter>(PlsqlParameter.class, this, OrmPackage.PLSQL_RECORD__FIELD);
-		}
-		return field;
-	}
+    if (field == null) {
+      field = new EObjectContainmentEList<PlsqlParameter>(PlsqlParameter.class, this, OrmPackage.PLSQL_RECORD__FIELD);
+    }
+    return field;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getCompatibleType() {
-		return compatibleType;
-	}
+    return compatibleType;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setCompatibleType(String newCompatibleType) {
-		String oldCompatibleType = compatibleType;
-		compatibleType = newCompatibleType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE, oldCompatibleType, compatibleType));
-	}
+    String oldCompatibleType = compatibleType;
+    compatibleType = newCompatibleType;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE, oldCompatibleType, compatibleType));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getJavaType() {
-		return javaType;
-	}
+    return javaType;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setJavaType(String newJavaType) {
-		String oldJavaType = javaType;
-		javaType = newJavaType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PLSQL_RECORD__JAVA_TYPE, oldJavaType, javaType));
-	}
+    String oldJavaType = javaType;
+    javaType = newJavaType;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PLSQL_RECORD__JAVA_TYPE, oldJavaType, javaType));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getName() {
-		return name;
-	}
+    return name;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PLSQL_RECORD__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PLSQL_RECORD__NAME, oldName, name));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.PLSQL_RECORD__FIELD:
-				return ((InternalEList<?>)getField()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.PLSQL_RECORD__FIELD:
+        return ((InternalEList<?>)getField()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.PLSQL_RECORD__FIELD:
-				return getField();
-			case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
-				return getCompatibleType();
-			case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
-				return getJavaType();
-			case OrmPackage.PLSQL_RECORD__NAME:
-				return getName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.PLSQL_RECORD__FIELD:
+        return getField();
+      case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
+        return getCompatibleType();
+      case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
+        return getJavaType();
+      case OrmPackage.PLSQL_RECORD__NAME:
+        return getName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.PLSQL_RECORD__FIELD:
-				getField().clear();
-				getField().addAll((Collection<? extends PlsqlParameter>)newValue);
-				return;
-			case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
-				setCompatibleType((String)newValue);
-				return;
-			case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
-				setJavaType((String)newValue);
-				return;
-			case OrmPackage.PLSQL_RECORD__NAME:
-				setName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.PLSQL_RECORD__FIELD:
+        getField().clear();
+        getField().addAll((Collection<? extends PlsqlParameter>)newValue);
+        return;
+      case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
+        setCompatibleType((String)newValue);
+        return;
+      case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
+        setJavaType((String)newValue);
+        return;
+      case OrmPackage.PLSQL_RECORD__NAME:
+        setName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PLSQL_RECORD__FIELD:
-				getField().clear();
-				return;
-			case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
-				setCompatibleType(COMPATIBLE_TYPE_EDEFAULT);
-				return;
-			case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
-				setJavaType(JAVA_TYPE_EDEFAULT);
-				return;
-			case OrmPackage.PLSQL_RECORD__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PLSQL_RECORD__FIELD:
+        getField().clear();
+        return;
+      case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
+        setCompatibleType(COMPATIBLE_TYPE_EDEFAULT);
+        return;
+      case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
+        setJavaType(JAVA_TYPE_EDEFAULT);
+        return;
+      case OrmPackage.PLSQL_RECORD__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PLSQL_RECORD__FIELD:
-				return field != null && !field.isEmpty();
-			case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
-				return COMPATIBLE_TYPE_EDEFAULT == null ? compatibleType != null : !COMPATIBLE_TYPE_EDEFAULT.equals(compatibleType);
-			case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
-				return JAVA_TYPE_EDEFAULT == null ? javaType != null : !JAVA_TYPE_EDEFAULT.equals(javaType);
-			case OrmPackage.PLSQL_RECORD__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PLSQL_RECORD__FIELD:
+        return field != null && !field.isEmpty();
+      case OrmPackage.PLSQL_RECORD__COMPATIBLE_TYPE:
+        return COMPATIBLE_TYPE_EDEFAULT == null ? compatibleType != null : !COMPATIBLE_TYPE_EDEFAULT.equals(compatibleType);
+      case OrmPackage.PLSQL_RECORD__JAVA_TYPE:
+        return JAVA_TYPE_EDEFAULT == null ? javaType != null : !JAVA_TYPE_EDEFAULT.equals(javaType);
+      case OrmPackage.PLSQL_RECORD__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (compatibleType: ");
-		result.append(compatibleType);
-		result.append(", javaType: ");
-		result.append(javaType);
-		result.append(", name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (compatibleType: "); //$NON-NLS-1$
+    result.append(compatibleType);
+    result.append(", javaType: "); //$NON-NLS-1$
+    result.append(javaType);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(')');
+    return result.toString();
+  }
 
 } //PlsqlRecordImpl

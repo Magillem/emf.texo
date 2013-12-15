@@ -70,101 +70,101 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface UnionPartitioning extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Connection Pool</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Connection Pool</b></em>' attribute list.
+   * The list contents are of type {@link java.lang.String}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Connection Pool</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Connection Pool</em>' attribute list.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getUnionPartitioning_ConnectionPool()
-	 * @model unique="false" dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='connection-pool' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Connection Pool</em>' attribute list.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getUnionPartitioning_ConnectionPool()
+   * @model unique="false" dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='element' name='connection-pool' namespace='##targetNamespace'"
+   * @generated
+   */
 	EList<String> getConnectionPool();
 
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getUnionPartitioning_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getUnionPartitioning_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Replicate Writes</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Replicate Writes</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Replicate Writes</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Replicate Writes</em>' attribute.
-	 * @see #isSetReplicateWrites()
-	 * @see #unsetReplicateWrites()
-	 * @see #setReplicateWrites(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getUnionPartitioning_ReplicateWrites()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='replicate-writes'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Replicate Writes</em>' attribute.
+   * @see #isSetReplicateWrites()
+   * @see #unsetReplicateWrites()
+   * @see #setReplicateWrites(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getUnionPartitioning_ReplicateWrites()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='replicate-writes'"
+   * @generated
+   */
 	boolean isReplicateWrites();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#isReplicateWrites <em>Replicate Writes</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#isReplicateWrites <em>Replicate Writes</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Replicate Writes</em>' attribute.
-	 * @see #isSetReplicateWrites()
-	 * @see #unsetReplicateWrites()
-	 * @see #isReplicateWrites()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Replicate Writes</em>' attribute.
+   * @see #isSetReplicateWrites()
+   * @see #unsetReplicateWrites()
+   * @see #isReplicateWrites()
+   * @generated
+   */
 	void setReplicateWrites(boolean value);
 
 	/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#isReplicateWrites <em>Replicate Writes</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#isReplicateWrites <em>Replicate Writes</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetReplicateWrites()
-	 * @see #isReplicateWrites()
-	 * @see #setReplicateWrites(boolean)
-	 * @generated
-	 */
+   * @see #isSetReplicateWrites()
+   * @see #isReplicateWrites()
+   * @see #setReplicateWrites(boolean)
+   * @generated
+   */
 	void unsetReplicateWrites();
 
 	/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#isReplicateWrites <em>Replicate Writes</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.UnionPartitioning#isReplicateWrites <em>Replicate Writes</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Replicate Writes</em>' attribute is set.
-	 * @see #unsetReplicateWrites()
-	 * @see #isReplicateWrites()
-	 * @see #setReplicateWrites(boolean)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Replicate Writes</em>' attribute is set.
+   * @see #unsetReplicateWrites()
+   * @see #isReplicateWrites()
+   * @see #setReplicateWrites(boolean)
+   * @generated
+   */
 	boolean isSetReplicateWrites();
 
 } // UnionPartitioning

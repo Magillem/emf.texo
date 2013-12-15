@@ -27,179 +27,179 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class AccessMethodsImpl extends BaseOrmAnnotationImpl implements AccessMethods {
   /**
-	 * The default value of the '{@link #getGetMethod() <em>Get Method</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getGetMethod() <em>Get Method</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getGetMethod()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getGetMethod()
+   * @generated
+   * @ordered
+   */
   protected static final String GET_METHOD_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getGetMethod() <em>Get Method</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getGetMethod() <em>Get Method</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getGetMethod()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getGetMethod()
+   * @generated
+   * @ordered
+   */
   protected String getMethod = GET_METHOD_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getSetMethod() <em>Set Method</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getSetMethod() <em>Set Method</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getSetMethod()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getSetMethod()
+   * @generated
+   * @ordered
+   */
   protected static final String SET_METHOD_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getSetMethod() <em>Set Method</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getSetMethod() <em>Set Method</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getSetMethod()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getSetMethod()
+   * @generated
+   * @ordered
+   */
   protected String setMethod = SET_METHOD_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected AccessMethodsImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getAccessMethods();
-	}
+    return OrmPackage.eINSTANCE.getAccessMethods();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getGetMethod() {
-		return getMethod;
-	}
+    return getMethod;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setGetMethod(String newGetMethod) {
-		String oldGetMethod = getMethod;
-		getMethod = newGetMethod;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ACCESS_METHODS__GET_METHOD, oldGetMethod, getMethod));
-	}
+    String oldGetMethod = getMethod;
+    getMethod = newGetMethod;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ACCESS_METHODS__GET_METHOD, oldGetMethod, getMethod));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getSetMethod() {
-		return setMethod;
-	}
+    return setMethod;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setSetMethod(String newSetMethod) {
-		String oldSetMethod = setMethod;
-		setMethod = newSetMethod;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ACCESS_METHODS__SET_METHOD, oldSetMethod, setMethod));
-	}
+    String oldSetMethod = setMethod;
+    setMethod = newSetMethod;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ACCESS_METHODS__SET_METHOD, oldSetMethod, setMethod));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.ACCESS_METHODS__GET_METHOD:
-				return getGetMethod();
-			case OrmPackage.ACCESS_METHODS__SET_METHOD:
-				return getSetMethod();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.ACCESS_METHODS__GET_METHOD:
+        return getGetMethod();
+      case OrmPackage.ACCESS_METHODS__SET_METHOD:
+        return getSetMethod();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.ACCESS_METHODS__GET_METHOD:
-				setGetMethod((String)newValue);
-				return;
-			case OrmPackage.ACCESS_METHODS__SET_METHOD:
-				setSetMethod((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.ACCESS_METHODS__GET_METHOD:
+        setGetMethod((String)newValue);
+        return;
+      case OrmPackage.ACCESS_METHODS__SET_METHOD:
+        setSetMethod((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ACCESS_METHODS__GET_METHOD:
-				setGetMethod(GET_METHOD_EDEFAULT);
-				return;
-			case OrmPackage.ACCESS_METHODS__SET_METHOD:
-				setSetMethod(SET_METHOD_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ACCESS_METHODS__GET_METHOD:
+        setGetMethod(GET_METHOD_EDEFAULT);
+        return;
+      case OrmPackage.ACCESS_METHODS__SET_METHOD:
+        setSetMethod(SET_METHOD_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ACCESS_METHODS__GET_METHOD:
-				return GET_METHOD_EDEFAULT == null ? getMethod != null : !GET_METHOD_EDEFAULT.equals(getMethod);
-			case OrmPackage.ACCESS_METHODS__SET_METHOD:
-				return SET_METHOD_EDEFAULT == null ? setMethod != null : !SET_METHOD_EDEFAULT.equals(setMethod);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ACCESS_METHODS__GET_METHOD:
+        return GET_METHOD_EDEFAULT == null ? getMethod != null : !GET_METHOD_EDEFAULT.equals(getMethod);
+      case OrmPackage.ACCESS_METHODS__SET_METHOD:
+        return SET_METHOD_EDEFAULT == null ? setMethod != null : !SET_METHOD_EDEFAULT.equals(setMethod);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (getMethod: ");
-		result.append(getMethod);
-		result.append(", setMethod: ");
-		result.append(setMethod);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (getMethod: "); //$NON-NLS-1$
+    result.append(getMethod);
+    result.append(", setMethod: "); //$NON-NLS-1$
+    result.append(setMethod);
+    result.append(')');
+    return result.toString();
+  }
 
 } // AccessMethodsImpl

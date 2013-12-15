@@ -43,231 +43,231 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ExistenceType implements Enumerator {
   /**
-	 * The '<em><b>CHECKCACHE</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #CHECKCACHE_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>CHECKCACHE</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #CHECKCACHE_VALUE
+   * @generated
+   * @ordered
+   */
   CHECKCACHE(0, "CHECKCACHE", "CHECK_CACHE"),
 
   /**
-	 * The '<em><b>CHECKDATABASE</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #CHECKDATABASE_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>CHECKDATABASE</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #CHECKDATABASE_VALUE
+   * @generated
+   * @ordered
+   */
   CHECKDATABASE(1, "CHECKDATABASE", "CHECK_DATABASE"),
 
   /**
-	 * The '<em><b>ASSUMEEXISTENCE</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #ASSUMEEXISTENCE_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>ASSUMEEXISTENCE</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #ASSUMEEXISTENCE_VALUE
+   * @generated
+   * @ordered
+   */
   ASSUMEEXISTENCE(2, "ASSUMEEXISTENCE", "ASSUME_EXISTENCE"),
 
   /**
-	 * The '<em><b>ASSUMENONEXISTENCE</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #ASSUMENONEXISTENCE_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>ASSUMENONEXISTENCE</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #ASSUMENONEXISTENCE_VALUE
+   * @generated
+   * @ordered
+   */
   ASSUMENONEXISTENCE(3, "ASSUMENONEXISTENCE", "ASSUME_NON_EXISTENCE");
 
   /**
-	 * The '<em><b>CHECKCACHE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>CHECKCACHE</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>CHECKCACHE</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #CHECKCACHE
-	 * @model literal="CHECK_CACHE"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #CHECKCACHE
+   * @model literal="CHECK_CACHE"
+   * @generated
+   * @ordered
+   */
   public static final int CHECKCACHE_VALUE = 0;
 
   /**
-	 * The '<em><b>CHECKDATABASE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>CHECKDATABASE</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>CHECKDATABASE</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #CHECKDATABASE
-	 * @model literal="CHECK_DATABASE"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #CHECKDATABASE
+   * @model literal="CHECK_DATABASE"
+   * @generated
+   * @ordered
+   */
   public static final int CHECKDATABASE_VALUE = 1;
 
   /**
-	 * The '<em><b>ASSUMEEXISTENCE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>ASSUMEEXISTENCE</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>ASSUMEEXISTENCE</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #ASSUMEEXISTENCE
-	 * @model literal="ASSUME_EXISTENCE"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #ASSUMEEXISTENCE
+   * @model literal="ASSUME_EXISTENCE"
+   * @generated
+   * @ordered
+   */
   public static final int ASSUMEEXISTENCE_VALUE = 2;
 
   /**
-	 * The '<em><b>ASSUMENONEXISTENCE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>ASSUMENONEXISTENCE</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>ASSUMENONEXISTENCE</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #ASSUMENONEXISTENCE
-	 * @model literal="ASSUME_NON_EXISTENCE"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #ASSUMENONEXISTENCE
+   * @model literal="ASSUME_NON_EXISTENCE"
+   * @generated
+   * @ordered
+   */
   public static final int ASSUMENONEXISTENCE_VALUE = 3;
 
   /**
-	 * An array of all the '<em><b>Existence Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * An array of all the '<em><b>Existence Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private static final ExistenceType[] VALUES_ARRAY = new ExistenceType[] {
-			CHECKCACHE,
-			CHECKDATABASE,
-			ASSUMEEXISTENCE,
-			ASSUMENONEXISTENCE,
-		};
+      CHECKCACHE,
+      CHECKDATABASE,
+      ASSUMEEXISTENCE,
+      ASSUMENONEXISTENCE,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Existence Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!--
+   * A public read-only list of all the '<em><b>Existence Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<ExistenceType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Existence Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Existence Type</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static ExistenceType get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			ExistenceType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      ExistenceType result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Existence Type</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Existence Type</b></em>' literal with the specified name.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static ExistenceType getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			ExistenceType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      ExistenceType result = VALUES_ARRAY[i];
+      if (result.getName().equals(name)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Existence Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Existence Type</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static ExistenceType get(int value) {
-		switch (value) {
-			case CHECKCACHE_VALUE: return CHECKCACHE;
-			case CHECKDATABASE_VALUE: return CHECKDATABASE;
-			case ASSUMEEXISTENCE_VALUE: return ASSUMEEXISTENCE;
-			case ASSUMENONEXISTENCE_VALUE: return ASSUMENONEXISTENCE;
-		}
-		return null;
-	}
+    switch (value) {
+      case CHECKCACHE_VALUE: return CHECKCACHE;
+      case CHECKDATABASE_VALUE: return CHECKDATABASE;
+      case ASSUMEEXISTENCE_VALUE: return ASSUMEEXISTENCE;
+      case ASSUMENONEXISTENCE_VALUE: return ASSUMENONEXISTENCE;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Only this class can construct instances.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private ExistenceType(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public int getValue() {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getLiteral() {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		return literal;
-	}
+    return literal;
+  }
 
 } // ExistenceType

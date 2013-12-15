@@ -52,211 +52,211 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum CacheType implements Enumerator {
   /**
-	 * The '<em><b>FULL</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #FULL_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>FULL</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #FULL_VALUE
+   * @generated
+   * @ordered
+   */
   FULL(0, "FULL", "FULL"),
 
   /**
-	 * The '<em><b>WEAK</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #WEAK_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>WEAK</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #WEAK_VALUE
+   * @generated
+   * @ordered
+   */
   WEAK(1, "WEAK", "WEAK"),
 
   /**
-	 * The '<em><b>SOFT</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #SOFT_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>SOFT</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #SOFT_VALUE
+   * @generated
+   * @ordered
+   */
   SOFT(2, "SOFT", "SOFT"),
 
   /**
-	 * The '<em><b>SOFTWEAK</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #SOFTWEAK_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>SOFTWEAK</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #SOFTWEAK_VALUE
+   * @generated
+   * @ordered
+   */
   SOFTWEAK(3, "SOFTWEAK", "SOFT_WEAK"),
 
   /**
-	 * The '<em><b>HARDWEAK</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #HARDWEAK_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>HARDWEAK</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #HARDWEAK_VALUE
+   * @generated
+   * @ordered
+   */
   HARDWEAK(4, "HARDWEAK", "HARD_WEAK"),
 
   /**
-	 * The '<em><b>CACHE</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #CACHE_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>CACHE</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #CACHE_VALUE
+   * @generated
+   * @ordered
+   */
   CACHE(5, "CACHE", "CACHE"),
 
   /**
-	 * The '<em><b>NONE</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #NONE_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>NONE</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #NONE_VALUE
+   * @generated
+   * @ordered
+   */
   NONE(6, "NONE", "NONE");
 
   /**
-	 * The '<em><b>FULL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>FULL</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>FULL</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #FULL
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #FULL
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int FULL_VALUE = 0;
 
   /**
-	 * The '<em><b>WEAK</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>WEAK</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>WEAK</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #WEAK
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #WEAK
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int WEAK_VALUE = 1;
 
   /**
-	 * The '<em><b>SOFT</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>SOFT</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>SOFT</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #SOFT
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #SOFT
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int SOFT_VALUE = 2;
 
   /**
-	 * The '<em><b>SOFTWEAK</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>SOFTWEAK</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>SOFTWEAK</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #SOFTWEAK
-	 * @model literal="SOFT_WEAK"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #SOFTWEAK
+   * @model literal="SOFT_WEAK"
+   * @generated
+   * @ordered
+   */
   public static final int SOFTWEAK_VALUE = 3;
 
   /**
-	 * The '<em><b>HARDWEAK</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>HARDWEAK</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>HARDWEAK</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #HARDWEAK
-	 * @model literal="HARD_WEAK"
-	 * @generated
-	 * @ordered
-	 */
+   * @see #HARDWEAK
+   * @model literal="HARD_WEAK"
+   * @generated
+   * @ordered
+   */
   public static final int HARDWEAK_VALUE = 4;
 
   /**
-	 * The '<em><b>CACHE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>CACHE</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>CACHE</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #CACHE
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #CACHE
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int CACHE_VALUE = 5;
 
   /**
-	 * The '<em><b>NONE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>NONE</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>NONE</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #NONE
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #NONE
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int NONE_VALUE = 6;
 
   /**
-	 * An array of all the '<em><b>Cache Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * An array of all the '<em><b>Cache Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private static final CacheType[] VALUES_ARRAY = new CacheType[] {
-			FULL,
-			WEAK,
-			SOFT,
-			SOFTWEAK,
-			HARDWEAK,
-			CACHE,
-			NONE,
-		};
+      FULL,
+      WEAK,
+      SOFT,
+      SOFTWEAK,
+      HARDWEAK,
+      CACHE,
+      NONE,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Cache Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!--
+   * A public read-only list of all the '<em><b>Cache Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<CacheType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Cache Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Cache Type</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static CacheType get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			CacheType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      CacheType result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
    * Returns the '<em><b>Cache Type</b></em>' literal with the specified name. <!-- begin-user-doc --> <!-- end-user-doc
@@ -265,96 +265,96 @@ public enum CacheType implements Enumerator {
    * @generated
    */
   public static CacheType getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			CacheType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      CacheType result = VALUES_ARRAY[i];
+      if (result.getName().equals(name)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Cache Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Cache Type</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static CacheType get(int value) {
-		switch (value) {
-			case FULL_VALUE: return FULL;
-			case WEAK_VALUE: return WEAK;
-			case SOFT_VALUE: return SOFT;
-			case SOFTWEAK_VALUE: return SOFTWEAK;
-			case HARDWEAK_VALUE: return HARDWEAK;
-			case CACHE_VALUE: return CACHE;
-			case NONE_VALUE: return NONE;
-		}
-		return null;
-	}
+    switch (value) {
+      case FULL_VALUE: return FULL;
+      case WEAK_VALUE: return WEAK;
+      case SOFT_VALUE: return SOFT;
+      case SOFTWEAK_VALUE: return SOFTWEAK;
+      case HARDWEAK_VALUE: return HARDWEAK;
+      case CACHE_VALUE: return CACHE;
+      case NONE_VALUE: return NONE;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Only this class can construct instances.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private CacheType(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public int getValue() {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getLiteral() {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		return literal;
-	}
+    return literal;
+  }
 
 } // CacheType

@@ -42,108 +42,108 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface PersistenceUnitMetadata extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Description</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Description</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' attribute.
-	 * @see #setDescription(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_Description()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='description' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Description</em>' attribute.
+   * @see #setDescription(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_Description()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='element' name='description' namespace='##targetNamespace'"
+   * @generated
+   */
   String getDescription();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getDescription <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' attribute.
-	 * @see #getDescription()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getDescription <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Description</em>' attribute.
+   * @see #getDescription()
+   * @generated
+   */
   void setDescription(String value);
 
   /**
-	 * Returns the value of the '<em><b>Xml Mapping Metadata Complete</b></em>' containment reference.
-	 * <!-- begin-user-doc
+   * Returns the value of the '<em><b>Xml Mapping Metadata Complete</b></em>' containment reference.
+   * <!-- begin-user-doc
    * -->
    * <p>
    * If the meaning of the '<em>Xml Mapping Metadata Complete</em>' containment reference isn't clear, there really
    * should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Xml Mapping Metadata Complete</em>' containment reference.
-	 * @see #setXmlMappingMetadataComplete(EmptyType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_XmlMappingMetadataComplete()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='xml-mapping-metadata-complete' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Xml Mapping Metadata Complete</em>' containment reference.
+   * @see #setXmlMappingMetadataComplete(EmptyType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_XmlMappingMetadataComplete()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='xml-mapping-metadata-complete' namespace='##targetNamespace'"
+   * @generated
+   */
   EmptyType getXmlMappingMetadataComplete();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getXmlMappingMetadataComplete <em>Xml Mapping Metadata Complete</em>}' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Xml Mapping Metadata Complete</em>' containment reference.
-	 * @see #getXmlMappingMetadataComplete()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getXmlMappingMetadataComplete <em>Xml Mapping Metadata Complete</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Xml Mapping Metadata Complete</em>' containment reference.
+   * @see #getXmlMappingMetadataComplete()
+   * @generated
+   */
   void setXmlMappingMetadataComplete(EmptyType value);
 
   /**
-	 * Returns the value of the '<em><b>Exclude Default Mappings</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Exclude Default Mappings</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Exclude Default Mappings</em>' containment reference isn't clear, there really should be
    * more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Exclude Default Mappings</em>' containment reference.
-	 * @see #setExcludeDefaultMappings(EmptyType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_ExcludeDefaultMappings()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='exclude-default-mappings' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Exclude Default Mappings</em>' containment reference.
+   * @see #setExcludeDefaultMappings(EmptyType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_ExcludeDefaultMappings()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='exclude-default-mappings' namespace='##targetNamespace'"
+   * @generated
+   */
   EmptyType getExcludeDefaultMappings();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getExcludeDefaultMappings <em>Exclude Default Mappings</em>}' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Exclude Default Mappings</em>' containment reference.
-	 * @see #getExcludeDefaultMappings()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getExcludeDefaultMappings <em>Exclude Default Mappings</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Exclude Default Mappings</em>' containment reference.
+   * @see #getExcludeDefaultMappings()
+   * @generated
+   */
   void setExcludeDefaultMappings(EmptyType value);
 
   /**
-	 * Returns the value of the '<em><b>Persistence Unit Defaults</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Persistence Unit Defaults</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Persistence Unit Defaults</em>' containment reference isn't clear, there really should
    * be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Persistence Unit Defaults</em>' containment reference.
-	 * @see #setPersistenceUnitDefaults(PersistenceUnitDefaults)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_PersistenceUnitDefaults()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='persistence-unit-defaults' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Persistence Unit Defaults</em>' containment reference.
+   * @see #setPersistenceUnitDefaults(PersistenceUnitDefaults)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPersistenceUnitMetadata_PersistenceUnitDefaults()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='persistence-unit-defaults' namespace='##targetNamespace'"
+   * @generated
+   */
   PersistenceUnitDefaults getPersistenceUnitDefaults();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getPersistenceUnitDefaults <em>Persistence Unit Defaults</em>}' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Persistence Unit Defaults</em>' containment reference.
-	 * @see #getPersistenceUnitDefaults()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PersistenceUnitMetadata#getPersistenceUnitDefaults <em>Persistence Unit Defaults</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Persistence Unit Defaults</em>' containment reference.
+   * @see #getPersistenceUnitDefaults()
+   * @generated
+   */
   void setPersistenceUnitDefaults(PersistenceUnitDefaults value);
 
 } // PersistenceUnitMetadata

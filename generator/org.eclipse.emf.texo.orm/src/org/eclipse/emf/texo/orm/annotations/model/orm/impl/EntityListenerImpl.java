@@ -54,33 +54,33 @@ import org.eclipse.emf.texo.orm.annotator.ORMJavaAnnotationGenerator;
  */
 public class EntityListenerImpl extends BaseOrmAnnotationImpl implements EntityListener {
   /**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getPrePersist() <em>Pre Persist</em>}' containment reference.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getPrePersist() <em>Pre Persist</em>}' containment reference.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getPrePersist()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPrePersist()
+   * @generated
+   * @ordered
+   */
   protected PrePersist prePersist;
 
   /**
@@ -94,53 +94,53 @@ public class EntityListenerImpl extends BaseOrmAnnotationImpl implements EntityL
   protected PostPersist postPersist;
 
   /**
-	 * The cached value of the '{@link #getPreRemove() <em>Pre Remove</em>}' containment reference.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getPreRemove() <em>Pre Remove</em>}' containment reference.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getPreRemove()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPreRemove()
+   * @generated
+   * @ordered
+   */
   protected PreRemove preRemove;
 
   /**
-	 * The cached value of the '{@link #getPostRemove() <em>Post Remove</em>}' containment reference.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getPostRemove() <em>Post Remove</em>}' containment reference.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getPostRemove()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPostRemove()
+   * @generated
+   * @ordered
+   */
   protected PostRemove postRemove;
 
   /**
-	 * The cached value of the '{@link #getPreUpdate() <em>Pre Update</em>}' containment reference.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getPreUpdate() <em>Pre Update</em>}' containment reference.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getPreUpdate()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPreUpdate()
+   * @generated
+   * @ordered
+   */
   protected PreUpdate preUpdate;
 
   /**
-	 * The cached value of the '{@link #getPostUpdate() <em>Post Update</em>}' containment reference.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getPostUpdate() <em>Post Update</em>}' containment reference.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getPostUpdate()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPostUpdate()
+   * @generated
+   * @ordered
+   */
   protected PostUpdate postUpdate;
 
   /**
-	 * The cached value of the '{@link #getPostLoad() <em>Post Load</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPostLoad() <em>Post Load</em>}' containment reference.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPostLoad()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPostLoad()
+   * @generated
+   * @ordered
+   */
   protected PostLoad postLoad;
 
   /**
@@ -164,515 +164,515 @@ public class EntityListenerImpl extends BaseOrmAnnotationImpl implements EntityL
   protected String class_ = CLASS_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected EntityListenerImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getEntityListener();
-	}
+    return OrmPackage.eINSTANCE.getEntityListener();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getDescription() {
-		return description;
-	}
+    return description;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__DESCRIPTION, oldDescription, description));
-	}
+    String oldDescription = description;
+    description = newDescription;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__DESCRIPTION, oldDescription, description));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public PrePersist getPrePersist() {
-		return prePersist;
-	}
+    return prePersist;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetPrePersist(PrePersist newPrePersist, NotificationChain msgs) {
-		PrePersist oldPrePersist = prePersist;
-		prePersist = newPrePersist;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_PERSIST, oldPrePersist, newPrePersist);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    PrePersist oldPrePersist = prePersist;
+    prePersist = newPrePersist;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_PERSIST, oldPrePersist, newPrePersist);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPrePersist(PrePersist newPrePersist) {
-		if (newPrePersist != prePersist) {
-			NotificationChain msgs = null;
-			if (prePersist != null)
-				msgs = ((InternalEObject)prePersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_PERSIST, null, msgs);
-			if (newPrePersist != null)
-				msgs = ((InternalEObject)newPrePersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_PERSIST, null, msgs);
-			msgs = basicSetPrePersist(newPrePersist, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_PERSIST, newPrePersist, newPrePersist));
-	}
+    if (newPrePersist != prePersist) {
+      NotificationChain msgs = null;
+      if (prePersist != null)
+        msgs = ((InternalEObject)prePersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_PERSIST, null, msgs);
+      if (newPrePersist != null)
+        msgs = ((InternalEObject)newPrePersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_PERSIST, null, msgs);
+      msgs = basicSetPrePersist(newPrePersist, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_PERSIST, newPrePersist, newPrePersist));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public PostPersist getPostPersist() {
-		return postPersist;
-	}
+    return postPersist;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetPostPersist(PostPersist newPostPersist, NotificationChain msgs) {
-		PostPersist oldPostPersist = postPersist;
-		postPersist = newPostPersist;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_PERSIST, oldPostPersist, newPostPersist);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    PostPersist oldPostPersist = postPersist;
+    postPersist = newPostPersist;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_PERSIST, oldPostPersist, newPostPersist);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPostPersist(PostPersist newPostPersist) {
-		if (newPostPersist != postPersist) {
-			NotificationChain msgs = null;
-			if (postPersist != null)
-				msgs = ((InternalEObject)postPersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_PERSIST, null, msgs);
-			if (newPostPersist != null)
-				msgs = ((InternalEObject)newPostPersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_PERSIST, null, msgs);
-			msgs = basicSetPostPersist(newPostPersist, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_PERSIST, newPostPersist, newPostPersist));
-	}
+    if (newPostPersist != postPersist) {
+      NotificationChain msgs = null;
+      if (postPersist != null)
+        msgs = ((InternalEObject)postPersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_PERSIST, null, msgs);
+      if (newPostPersist != null)
+        msgs = ((InternalEObject)newPostPersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_PERSIST, null, msgs);
+      msgs = basicSetPostPersist(newPostPersist, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_PERSIST, newPostPersist, newPostPersist));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public PreRemove getPreRemove() {
-		return preRemove;
-	}
+    return preRemove;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetPreRemove(PreRemove newPreRemove, NotificationChain msgs) {
-		PreRemove oldPreRemove = preRemove;
-		preRemove = newPreRemove;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_REMOVE, oldPreRemove, newPreRemove);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    PreRemove oldPreRemove = preRemove;
+    preRemove = newPreRemove;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_REMOVE, oldPreRemove, newPreRemove);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPreRemove(PreRemove newPreRemove) {
-		if (newPreRemove != preRemove) {
-			NotificationChain msgs = null;
-			if (preRemove != null)
-				msgs = ((InternalEObject)preRemove).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_REMOVE, null, msgs);
-			if (newPreRemove != null)
-				msgs = ((InternalEObject)newPreRemove).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_REMOVE, null, msgs);
-			msgs = basicSetPreRemove(newPreRemove, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_REMOVE, newPreRemove, newPreRemove));
-	}
+    if (newPreRemove != preRemove) {
+      NotificationChain msgs = null;
+      if (preRemove != null)
+        msgs = ((InternalEObject)preRemove).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_REMOVE, null, msgs);
+      if (newPreRemove != null)
+        msgs = ((InternalEObject)newPreRemove).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_REMOVE, null, msgs);
+      msgs = basicSetPreRemove(newPreRemove, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_REMOVE, newPreRemove, newPreRemove));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public PostRemove getPostRemove() {
-		return postRemove;
-	}
+    return postRemove;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetPostRemove(PostRemove newPostRemove, NotificationChain msgs) {
-		PostRemove oldPostRemove = postRemove;
-		postRemove = newPostRemove;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_REMOVE, oldPostRemove, newPostRemove);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    PostRemove oldPostRemove = postRemove;
+    postRemove = newPostRemove;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_REMOVE, oldPostRemove, newPostRemove);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPostRemove(PostRemove newPostRemove) {
-		if (newPostRemove != postRemove) {
-			NotificationChain msgs = null;
-			if (postRemove != null)
-				msgs = ((InternalEObject)postRemove).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_REMOVE, null, msgs);
-			if (newPostRemove != null)
-				msgs = ((InternalEObject)newPostRemove).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_REMOVE, null, msgs);
-			msgs = basicSetPostRemove(newPostRemove, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_REMOVE, newPostRemove, newPostRemove));
-	}
+    if (newPostRemove != postRemove) {
+      NotificationChain msgs = null;
+      if (postRemove != null)
+        msgs = ((InternalEObject)postRemove).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_REMOVE, null, msgs);
+      if (newPostRemove != null)
+        msgs = ((InternalEObject)newPostRemove).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_REMOVE, null, msgs);
+      msgs = basicSetPostRemove(newPostRemove, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_REMOVE, newPostRemove, newPostRemove));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public PreUpdate getPreUpdate() {
-		return preUpdate;
-	}
+    return preUpdate;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetPreUpdate(PreUpdate newPreUpdate, NotificationChain msgs) {
-		PreUpdate oldPreUpdate = preUpdate;
-		preUpdate = newPreUpdate;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_UPDATE, oldPreUpdate, newPreUpdate);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    PreUpdate oldPreUpdate = preUpdate;
+    preUpdate = newPreUpdate;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_UPDATE, oldPreUpdate, newPreUpdate);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPreUpdate(PreUpdate newPreUpdate) {
-		if (newPreUpdate != preUpdate) {
-			NotificationChain msgs = null;
-			if (preUpdate != null)
-				msgs = ((InternalEObject)preUpdate).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_UPDATE, null, msgs);
-			if (newPreUpdate != null)
-				msgs = ((InternalEObject)newPreUpdate).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_UPDATE, null, msgs);
-			msgs = basicSetPreUpdate(newPreUpdate, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_UPDATE, newPreUpdate, newPreUpdate));
-	}
+    if (newPreUpdate != preUpdate) {
+      NotificationChain msgs = null;
+      if (preUpdate != null)
+        msgs = ((InternalEObject)preUpdate).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_UPDATE, null, msgs);
+      if (newPreUpdate != null)
+        msgs = ((InternalEObject)newPreUpdate).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__PRE_UPDATE, null, msgs);
+      msgs = basicSetPreUpdate(newPreUpdate, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__PRE_UPDATE, newPreUpdate, newPreUpdate));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public PostUpdate getPostUpdate() {
-		return postUpdate;
-	}
+    return postUpdate;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetPostUpdate(PostUpdate newPostUpdate, NotificationChain msgs) {
-		PostUpdate oldPostUpdate = postUpdate;
-		postUpdate = newPostUpdate;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_UPDATE, oldPostUpdate, newPostUpdate);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    PostUpdate oldPostUpdate = postUpdate;
+    postUpdate = newPostUpdate;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_UPDATE, oldPostUpdate, newPostUpdate);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPostUpdate(PostUpdate newPostUpdate) {
-		if (newPostUpdate != postUpdate) {
-			NotificationChain msgs = null;
-			if (postUpdate != null)
-				msgs = ((InternalEObject)postUpdate).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_UPDATE, null, msgs);
-			if (newPostUpdate != null)
-				msgs = ((InternalEObject)newPostUpdate).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_UPDATE, null, msgs);
-			msgs = basicSetPostUpdate(newPostUpdate, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_UPDATE, newPostUpdate, newPostUpdate));
-	}
+    if (newPostUpdate != postUpdate) {
+      NotificationChain msgs = null;
+      if (postUpdate != null)
+        msgs = ((InternalEObject)postUpdate).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_UPDATE, null, msgs);
+      if (newPostUpdate != null)
+        msgs = ((InternalEObject)newPostUpdate).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_UPDATE, null, msgs);
+      msgs = basicSetPostUpdate(newPostUpdate, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_UPDATE, newPostUpdate, newPostUpdate));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public PostLoad getPostLoad() {
-		return postLoad;
-	}
+    return postLoad;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetPostLoad(PostLoad newPostLoad, NotificationChain msgs) {
-		PostLoad oldPostLoad = postLoad;
-		postLoad = newPostLoad;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_LOAD, oldPostLoad, newPostLoad);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    PostLoad oldPostLoad = postLoad;
+    postLoad = newPostLoad;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_LOAD, oldPostLoad, newPostLoad);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPostLoad(PostLoad newPostLoad) {
-		if (newPostLoad != postLoad) {
-			NotificationChain msgs = null;
-			if (postLoad != null)
-				msgs = ((InternalEObject)postLoad).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_LOAD, null, msgs);
-			if (newPostLoad != null)
-				msgs = ((InternalEObject)newPostLoad).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_LOAD, null, msgs);
-			msgs = basicSetPostLoad(newPostLoad, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_LOAD, newPostLoad, newPostLoad));
-	}
+    if (newPostLoad != postLoad) {
+      NotificationChain msgs = null;
+      if (postLoad != null)
+        msgs = ((InternalEObject)postLoad).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_LOAD, null, msgs);
+      if (newPostLoad != null)
+        msgs = ((InternalEObject)newPostLoad).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ENTITY_LISTENER__POST_LOAD, null, msgs);
+      msgs = basicSetPostLoad(newPostLoad, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__POST_LOAD, newPostLoad, newPostLoad));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getClass_() {
-		return class_;
-	}
+    return class_;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setClass(String newClass) {
-		String oldClass = class_;
-		class_ = newClass;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__CLASS, oldClass, class_));
-	}
+    String oldClass = class_;
+    class_ = newClass;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ENTITY_LISTENER__CLASS, oldClass, class_));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
-				return basicSetPrePersist(null, msgs);
-			case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
-				return basicSetPostPersist(null, msgs);
-			case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
-				return basicSetPreRemove(null, msgs);
-			case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
-				return basicSetPostRemove(null, msgs);
-			case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
-				return basicSetPreUpdate(null, msgs);
-			case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
-				return basicSetPostUpdate(null, msgs);
-			case OrmPackage.ENTITY_LISTENER__POST_LOAD:
-				return basicSetPostLoad(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
+        return basicSetPrePersist(null, msgs);
+      case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
+        return basicSetPostPersist(null, msgs);
+      case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
+        return basicSetPreRemove(null, msgs);
+      case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
+        return basicSetPostRemove(null, msgs);
+      case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
+        return basicSetPreUpdate(null, msgs);
+      case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
+        return basicSetPostUpdate(null, msgs);
+      case OrmPackage.ENTITY_LISTENER__POST_LOAD:
+        return basicSetPostLoad(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
-				return getDescription();
-			case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
-				return getPrePersist();
-			case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
-				return getPostPersist();
-			case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
-				return getPreRemove();
-			case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
-				return getPostRemove();
-			case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
-				return getPreUpdate();
-			case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
-				return getPostUpdate();
-			case OrmPackage.ENTITY_LISTENER__POST_LOAD:
-				return getPostLoad();
-			case OrmPackage.ENTITY_LISTENER__CLASS:
-				return getClass_();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
+        return getDescription();
+      case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
+        return getPrePersist();
+      case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
+        return getPostPersist();
+      case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
+        return getPreRemove();
+      case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
+        return getPostRemove();
+      case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
+        return getPreUpdate();
+      case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
+        return getPostUpdate();
+      case OrmPackage.ENTITY_LISTENER__POST_LOAD:
+        return getPostLoad();
+      case OrmPackage.ENTITY_LISTENER__CLASS:
+        return getClass_();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
-				setPrePersist((PrePersist)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
-				setPostPersist((PostPersist)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
-				setPreRemove((PreRemove)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
-				setPostRemove((PostRemove)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
-				setPreUpdate((PreUpdate)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
-				setPostUpdate((PostUpdate)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_LOAD:
-				setPostLoad((PostLoad)newValue);
-				return;
-			case OrmPackage.ENTITY_LISTENER__CLASS:
-				setClass((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
+        setDescription((String)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
+        setPrePersist((PrePersist)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
+        setPostPersist((PostPersist)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
+        setPreRemove((PreRemove)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
+        setPostRemove((PostRemove)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
+        setPreUpdate((PreUpdate)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
+        setPostUpdate((PostUpdate)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_LOAD:
+        setPostLoad((PostLoad)newValue);
+        return;
+      case OrmPackage.ENTITY_LISTENER__CLASS:
+        setClass((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
-			case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
-				setPrePersist((PrePersist)null);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
-				setPostPersist((PostPersist)null);
-				return;
-			case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
-				setPreRemove((PreRemove)null);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
-				setPostRemove((PostRemove)null);
-				return;
-			case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
-				setPreUpdate((PreUpdate)null);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
-				setPostUpdate((PostUpdate)null);
-				return;
-			case OrmPackage.ENTITY_LISTENER__POST_LOAD:
-				setPostLoad((PostLoad)null);
-				return;
-			case OrmPackage.ENTITY_LISTENER__CLASS:
-				setClass(CLASS_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
+        setDescription(DESCRIPTION_EDEFAULT);
+        return;
+      case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
+        setPrePersist((PrePersist)null);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
+        setPostPersist((PostPersist)null);
+        return;
+      case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
+        setPreRemove((PreRemove)null);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
+        setPostRemove((PostRemove)null);
+        return;
+      case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
+        setPreUpdate((PreUpdate)null);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
+        setPostUpdate((PostUpdate)null);
+        return;
+      case OrmPackage.ENTITY_LISTENER__POST_LOAD:
+        setPostLoad((PostLoad)null);
+        return;
+      case OrmPackage.ENTITY_LISTENER__CLASS:
+        setClass(CLASS_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
-				return prePersist != null;
-			case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
-				return postPersist != null;
-			case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
-				return preRemove != null;
-			case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
-				return postRemove != null;
-			case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
-				return preUpdate != null;
-			case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
-				return postUpdate != null;
-			case OrmPackage.ENTITY_LISTENER__POST_LOAD:
-				return postLoad != null;
-			case OrmPackage.ENTITY_LISTENER__CLASS:
-				return CLASS_EDEFAULT == null ? class_ != null : !CLASS_EDEFAULT.equals(class_);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ENTITY_LISTENER__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+      case OrmPackage.ENTITY_LISTENER__PRE_PERSIST:
+        return prePersist != null;
+      case OrmPackage.ENTITY_LISTENER__POST_PERSIST:
+        return postPersist != null;
+      case OrmPackage.ENTITY_LISTENER__PRE_REMOVE:
+        return preRemove != null;
+      case OrmPackage.ENTITY_LISTENER__POST_REMOVE:
+        return postRemove != null;
+      case OrmPackage.ENTITY_LISTENER__PRE_UPDATE:
+        return preUpdate != null;
+      case OrmPackage.ENTITY_LISTENER__POST_UPDATE:
+        return postUpdate != null;
+      case OrmPackage.ENTITY_LISTENER__POST_LOAD:
+        return postLoad != null;
+      case OrmPackage.ENTITY_LISTENER__CLASS:
+        return CLASS_EDEFAULT == null ? class_ != null : !CLASS_EDEFAULT.equals(class_);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", class: ");
-		result.append(class_);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (description: "); //$NON-NLS-1$
+    result.append(description);
+    result.append(", class: "); //$NON-NLS-1$
+    result.append(class_);
+    result.append(')');
+    return result.toString();
+  }
 
   @Override
   public String getJavaAnnotation(String identifier) {

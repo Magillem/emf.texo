@@ -42,390 +42,390 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class StructureImpl extends BaseOrmAnnotationImpl implements Structure {
 	/**
-	 * The cached value of the '{@link #getProperty() <em>Property</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getProperty() <em>Property</em>}' containment reference list.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProperty()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getProperty()
+   * @generated
+   * @ordered
+   */
 	protected EList<Property> property;
 
 	/**
-	 * The cached value of the '{@link #getAccessMethods() <em>Access Methods</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAccessMethods() <em>Access Methods</em>}' containment reference.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAccessMethods()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAccessMethods()
+   * @generated
+   * @ordered
+   */
 	protected AccessMethods accessMethods;
 
 	/**
-	 * The default value of the '{@link #getAccess() <em>Access</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getAccess() <em>Access</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAccess()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAccess()
+   * @generated
+   * @ordered
+   */
 	protected static final AccessType ACCESS_EDEFAULT = AccessType.PROPERTY;
 
 	/**
-	 * The cached value of the '{@link #getAccess() <em>Access</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAccess() <em>Access</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAccess()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAccess()
+   * @generated
+   * @ordered
+   */
 	protected AccessType access = ACCESS_EDEFAULT;
 
 	/**
-	 * This is true if the Access attribute has been set.
-	 * <!-- begin-user-doc -->
+   * This is true if the Access attribute has been set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
 	protected boolean accessESet;
 
 	/**
-	 * The default value of the '{@link #getAttributeType() <em>Attribute Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getAttributeType() <em>Attribute Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttributeType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAttributeType()
+   * @generated
+   * @ordered
+   */
 	protected static final String ATTRIBUTE_TYPE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getAttributeType() <em>Attribute Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAttributeType() <em>Attribute Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttributeType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAttributeType()
+   * @generated
+   * @ordered
+   */
 	protected String attributeType = ATTRIBUTE_TYPE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected StructureImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getStructure();
-	}
+    return OrmPackage.eINSTANCE.getStructure();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<Property> getProperty() {
-		if (property == null) {
-			property = new EObjectContainmentEList<Property>(Property.class, this, OrmPackage.STRUCTURE__PROPERTY);
-		}
-		return property;
-	}
+    if (property == null) {
+      property = new EObjectContainmentEList<Property>(Property.class, this, OrmPackage.STRUCTURE__PROPERTY);
+    }
+    return property;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AccessMethods getAccessMethods() {
-		return accessMethods;
-	}
+    return accessMethods;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NotificationChain basicSetAccessMethods(AccessMethods newAccessMethods, NotificationChain msgs) {
-		AccessMethods oldAccessMethods = accessMethods;
-		accessMethods = newAccessMethods;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ACCESS_METHODS, oldAccessMethods, newAccessMethods);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    AccessMethods oldAccessMethods = accessMethods;
+    accessMethods = newAccessMethods;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ACCESS_METHODS, oldAccessMethods, newAccessMethods);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setAccessMethods(AccessMethods newAccessMethods) {
-		if (newAccessMethods != accessMethods) {
-			NotificationChain msgs = null;
-			if (accessMethods != null)
-				msgs = ((InternalEObject)accessMethods).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.STRUCTURE__ACCESS_METHODS, null, msgs);
-			if (newAccessMethods != null)
-				msgs = ((InternalEObject)newAccessMethods).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.STRUCTURE__ACCESS_METHODS, null, msgs);
-			msgs = basicSetAccessMethods(newAccessMethods, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ACCESS_METHODS, newAccessMethods, newAccessMethods));
-	}
+    if (newAccessMethods != accessMethods) {
+      NotificationChain msgs = null;
+      if (accessMethods != null)
+        msgs = ((InternalEObject)accessMethods).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.STRUCTURE__ACCESS_METHODS, null, msgs);
+      if (newAccessMethods != null)
+        msgs = ((InternalEObject)newAccessMethods).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.STRUCTURE__ACCESS_METHODS, null, msgs);
+      msgs = basicSetAccessMethods(newAccessMethods, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ACCESS_METHODS, newAccessMethods, newAccessMethods));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AccessType getAccess() {
-		return access;
-	}
+    return access;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setAccess(AccessType newAccess) {
-		AccessType oldAccess = access;
-		access = newAccess == null ? ACCESS_EDEFAULT : newAccess;
-		boolean oldAccessESet = accessESet;
-		accessESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ACCESS, oldAccess, access, !oldAccessESet));
-	}
+    AccessType oldAccess = access;
+    access = newAccess == null ? ACCESS_EDEFAULT : newAccess;
+    boolean oldAccessESet = accessESet;
+    accessESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ACCESS, oldAccess, access, !oldAccessESet));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void unsetAccess() {
-		AccessType oldAccess = access;
-		boolean oldAccessESet = accessESet;
-		access = ACCESS_EDEFAULT;
-		accessESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.STRUCTURE__ACCESS, oldAccess, ACCESS_EDEFAULT, oldAccessESet));
-	}
+    AccessType oldAccess = access;
+    boolean oldAccessESet = accessESet;
+    access = ACCESS_EDEFAULT;
+    accessESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.STRUCTURE__ACCESS, oldAccess, ACCESS_EDEFAULT, oldAccessESet));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean isSetAccess() {
-		return accessESet;
-	}
+    return accessESet;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getAttributeType() {
-		return attributeType;
-	}
+    return attributeType;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setAttributeType(String newAttributeType) {
-		String oldAttributeType = attributeType;
-		attributeType = newAttributeType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ATTRIBUTE_TYPE, oldAttributeType, attributeType));
-	}
+    String oldAttributeType = attributeType;
+    attributeType = newAttributeType;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__ATTRIBUTE_TYPE, oldAttributeType, attributeType));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getName() {
-		return name;
-	}
+    return name;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.STRUCTURE__NAME, oldName, name));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.STRUCTURE__PROPERTY:
-				return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
-			case OrmPackage.STRUCTURE__ACCESS_METHODS:
-				return basicSetAccessMethods(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.STRUCTURE__PROPERTY:
+        return ((InternalEList<?>)getProperty()).basicRemove(otherEnd, msgs);
+      case OrmPackage.STRUCTURE__ACCESS_METHODS:
+        return basicSetAccessMethods(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.STRUCTURE__PROPERTY:
-				return getProperty();
-			case OrmPackage.STRUCTURE__ACCESS_METHODS:
-				return getAccessMethods();
-			case OrmPackage.STRUCTURE__ACCESS:
-				return getAccess();
-			case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
-				return getAttributeType();
-			case OrmPackage.STRUCTURE__NAME:
-				return getName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.STRUCTURE__PROPERTY:
+        return getProperty();
+      case OrmPackage.STRUCTURE__ACCESS_METHODS:
+        return getAccessMethods();
+      case OrmPackage.STRUCTURE__ACCESS:
+        return getAccess();
+      case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
+        return getAttributeType();
+      case OrmPackage.STRUCTURE__NAME:
+        return getName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.STRUCTURE__PROPERTY:
-				getProperty().clear();
-				getProperty().addAll((Collection<? extends Property>)newValue);
-				return;
-			case OrmPackage.STRUCTURE__ACCESS_METHODS:
-				setAccessMethods((AccessMethods)newValue);
-				return;
-			case OrmPackage.STRUCTURE__ACCESS:
-				setAccess((AccessType)newValue);
-				return;
-			case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
-				setAttributeType((String)newValue);
-				return;
-			case OrmPackage.STRUCTURE__NAME:
-				setName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.STRUCTURE__PROPERTY:
+        getProperty().clear();
+        getProperty().addAll((Collection<? extends Property>)newValue);
+        return;
+      case OrmPackage.STRUCTURE__ACCESS_METHODS:
+        setAccessMethods((AccessMethods)newValue);
+        return;
+      case OrmPackage.STRUCTURE__ACCESS:
+        setAccess((AccessType)newValue);
+        return;
+      case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
+        setAttributeType((String)newValue);
+        return;
+      case OrmPackage.STRUCTURE__NAME:
+        setName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.STRUCTURE__PROPERTY:
-				getProperty().clear();
-				return;
-			case OrmPackage.STRUCTURE__ACCESS_METHODS:
-				setAccessMethods((AccessMethods)null);
-				return;
-			case OrmPackage.STRUCTURE__ACCESS:
-				unsetAccess();
-				return;
-			case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
-				setAttributeType(ATTRIBUTE_TYPE_EDEFAULT);
-				return;
-			case OrmPackage.STRUCTURE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.STRUCTURE__PROPERTY:
+        getProperty().clear();
+        return;
+      case OrmPackage.STRUCTURE__ACCESS_METHODS:
+        setAccessMethods((AccessMethods)null);
+        return;
+      case OrmPackage.STRUCTURE__ACCESS:
+        unsetAccess();
+        return;
+      case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
+        setAttributeType(ATTRIBUTE_TYPE_EDEFAULT);
+        return;
+      case OrmPackage.STRUCTURE__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.STRUCTURE__PROPERTY:
-				return property != null && !property.isEmpty();
-			case OrmPackage.STRUCTURE__ACCESS_METHODS:
-				return accessMethods != null;
-			case OrmPackage.STRUCTURE__ACCESS:
-				return isSetAccess();
-			case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
-				return ATTRIBUTE_TYPE_EDEFAULT == null ? attributeType != null : !ATTRIBUTE_TYPE_EDEFAULT.equals(attributeType);
-			case OrmPackage.STRUCTURE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.STRUCTURE__PROPERTY:
+        return property != null && !property.isEmpty();
+      case OrmPackage.STRUCTURE__ACCESS_METHODS:
+        return accessMethods != null;
+      case OrmPackage.STRUCTURE__ACCESS:
+        return isSetAccess();
+      case OrmPackage.STRUCTURE__ATTRIBUTE_TYPE:
+        return ATTRIBUTE_TYPE_EDEFAULT == null ? attributeType != null : !ATTRIBUTE_TYPE_EDEFAULT.equals(attributeType);
+      case OrmPackage.STRUCTURE__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (access: ");
-		if (accessESet) result.append(access); else result.append("<unset>");
-		result.append(", attributeType: ");
-		result.append(attributeType);
-		result.append(", name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (access: "); //$NON-NLS-1$
+    if (accessESet) result.append(access); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(", attributeType: "); //$NON-NLS-1$
+    result.append(attributeType);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(')');
+    return result.toString();
+  }
 
 } //StructureImpl

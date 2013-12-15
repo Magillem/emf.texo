@@ -93,182 +93,182 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface ValuePartitioning extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Partition Column</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Partition Column</b></em>' containment reference.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Partition Column</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Partition Column</em>' containment reference.
-	 * @see #setPartitionColumn(Column)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_PartitionColumn()
-	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='partition-column' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Partition Column</em>' containment reference.
+   * @see #setPartitionColumn(Column)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_PartitionColumn()
+   * @model containment="true" required="true"
+   *        extendedMetaData="kind='element' name='partition-column' namespace='##targetNamespace'"
+   * @generated
+   */
 	Column getPartitionColumn();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getPartitionColumn <em>Partition Column</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getPartitionColumn <em>Partition Column</em>}' containment reference.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Partition Column</em>' containment reference.
-	 * @see #getPartitionColumn()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Partition Column</em>' containment reference.
+   * @see #getPartitionColumn()
+   * @generated
+   */
 	void setPartitionColumn(Column value);
 
 	/**
-	 * Returns the value of the '<em><b>Partition</b></em>' containment reference list.
-	 * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartition}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Partition</b></em>' containment reference list.
+   * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartition}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Partition</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Partition</em>' containment reference list.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_Partition()
-	 * @model containment="true" required="true"
-	 *        extendedMetaData="kind='element' name='partition' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Partition</em>' containment reference list.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_Partition()
+   * @model containment="true" required="true"
+   *        extendedMetaData="kind='element' name='partition' namespace='##targetNamespace'"
+   * @generated
+   */
 	EList<ValuePartition> getPartition();
 
 	/**
-	 * Returns the value of the '<em><b>Default Connection Pool</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Default Connection Pool</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Default Connection Pool</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Connection Pool</em>' attribute.
-	 * @see #setDefaultConnectionPool(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_DefaultConnectionPool()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='default-connection-pool'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Default Connection Pool</em>' attribute.
+   * @see #setDefaultConnectionPool(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_DefaultConnectionPool()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='default-connection-pool'"
+   * @generated
+   */
 	String getDefaultConnectionPool();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getDefaultConnectionPool <em>Default Connection Pool</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getDefaultConnectionPool <em>Default Connection Pool</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Connection Pool</em>' attribute.
-	 * @see #getDefaultConnectionPool()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Default Connection Pool</em>' attribute.
+   * @see #getDefaultConnectionPool()
+   * @generated
+   */
 	void setDefaultConnectionPool(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Partition Value Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Partition Value Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Partition Value Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Partition Value Type</em>' attribute.
-	 * @see #setPartitionValueType(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_PartitionValueType()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='partition-value-type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Partition Value Type</em>' attribute.
+   * @see #setPartitionValueType(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_PartitionValueType()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='partition-value-type'"
+   * @generated
+   */
 	String getPartitionValueType();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getPartitionValueType <em>Partition Value Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#getPartitionValueType <em>Partition Value Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Partition Value Type</em>' attribute.
-	 * @see #getPartitionValueType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Partition Value Type</em>' attribute.
+   * @see #getPartitionValueType()
+   * @generated
+   */
 	void setPartitionValueType(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Union Unpartitionable Queries</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Union Unpartitionable Queries</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Union Unpartitionable Queries</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Union Unpartitionable Queries</em>' attribute.
-	 * @see #isSetUnionUnpartitionableQueries()
-	 * @see #unsetUnionUnpartitionableQueries()
-	 * @see #setUnionUnpartitionableQueries(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_UnionUnpartitionableQueries()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='union-unpartitionable-queries'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Union Unpartitionable Queries</em>' attribute.
+   * @see #isSetUnionUnpartitionableQueries()
+   * @see #unsetUnionUnpartitionableQueries()
+   * @see #setUnionUnpartitionableQueries(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartitioning_UnionUnpartitionableQueries()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='union-unpartitionable-queries'"
+   * @generated
+   */
 	boolean isUnionUnpartitionableQueries();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#isUnionUnpartitionableQueries <em>Union Unpartitionable Queries</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#isUnionUnpartitionableQueries <em>Union Unpartitionable Queries</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Union Unpartitionable Queries</em>' attribute.
-	 * @see #isSetUnionUnpartitionableQueries()
-	 * @see #unsetUnionUnpartitionableQueries()
-	 * @see #isUnionUnpartitionableQueries()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Union Unpartitionable Queries</em>' attribute.
+   * @see #isSetUnionUnpartitionableQueries()
+   * @see #unsetUnionUnpartitionableQueries()
+   * @see #isUnionUnpartitionableQueries()
+   * @generated
+   */
 	void setUnionUnpartitionableQueries(boolean value);
 
 	/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#isUnionUnpartitionableQueries <em>Union Unpartitionable Queries</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#isUnionUnpartitionableQueries <em>Union Unpartitionable Queries</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetUnionUnpartitionableQueries()
-	 * @see #isUnionUnpartitionableQueries()
-	 * @see #setUnionUnpartitionableQueries(boolean)
-	 * @generated
-	 */
+   * @see #isSetUnionUnpartitionableQueries()
+   * @see #isUnionUnpartitionableQueries()
+   * @see #setUnionUnpartitionableQueries(boolean)
+   * @generated
+   */
 	void unsetUnionUnpartitionableQueries();
 
 	/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#isUnionUnpartitionableQueries <em>Union Unpartitionable Queries</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartitioning#isUnionUnpartitionableQueries <em>Union Unpartitionable Queries</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Union Unpartitionable Queries</em>' attribute is set.
-	 * @see #unsetUnionUnpartitionableQueries()
-	 * @see #isUnionUnpartitionableQueries()
-	 * @see #setUnionUnpartitionableQueries(boolean)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Union Unpartitionable Queries</em>' attribute is set.
+   * @see #unsetUnionUnpartitionableQueries()
+   * @see #isUnionUnpartitionableQueries()
+   * @see #setUnionUnpartitionableQueries(boolean)
+   * @generated
+   */
 	boolean isSetUnionUnpartitionableQueries();
 
 } // ValuePartitioning

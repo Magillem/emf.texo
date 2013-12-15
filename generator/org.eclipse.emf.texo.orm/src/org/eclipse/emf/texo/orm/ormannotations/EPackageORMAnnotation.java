@@ -26,49 +26,32 @@ import org.eclipse.emf.texo.orm.annotator.ORMUtils;
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>EPackage ORM Annotation</b></em>'. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following features are supported:
  * <ul>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateFullDbSchemaNames <em>Generate
- * Full Db Schema Names</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getNameDictionaryPropertyFile <em>Name
- * Dictionary Property File</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getTableNamePrefix <em>Table Name Prefix
- * </em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getColumnNamePrefix <em>Column Name Prefix
- * </em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getMaximumSqlNameLength <em>Maximum Sql Name
- * Length</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isLowerCasedNames <em>Lower Cased Names
- * </em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUpperCasedNames <em>Upper Cased Names
- * </em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isEnforceUniqueNames <em>Enforce Unique
- * Names</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForContainment <em>Use Join
- * Tables For Containment</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForNonContainment <em>Use
- * Join Tables For Non Containment</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeContainment <em>Default
- * Cascade Containment</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeNonContainment <em>Default
- * Cascade Non Containment</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getEntityMappings <em>Entity Mappings</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateJavaAnnotations <em>Generate Java
- * Annotations</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isAddOrderColumnToListMappings <em>Add Order
- * Column To List Mappings</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isRenameSQLReservedNames <em>Rename SQL
- * Reserved Names</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getInheritance <em>Inheritance</em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUniqueEntityNames <em>Unique Entity Names
- * </em>}</li>
- * <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isSetDelimitedIdentifierTagInORM <em>Set
- * Delimited Identifier Tag In ORM</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateFullDbSchemaNames <em>Generate Full Db Schema Names</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getNameDictionaryPropertyFile <em>Name Dictionary Property File</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getTableNamePrefix <em>Table Name Prefix</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getColumnNamePrefix <em>Column Name Prefix</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getMaximumSqlNameLength <em>Maximum Sql Name Length</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isLowerCasedNames <em>Lower Cased Names</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUpperCasedNames <em>Upper Cased Names</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isEnforceUniqueNames <em>Enforce Unique Names</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForContainment <em>Use Join Tables For Containment</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForNonContainment <em>Use Join Tables For Non Containment</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeContainment <em>Default Cascade Containment</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeNonContainment <em>Default Cascade Non Containment</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getEntityMappings <em>Entity Mappings</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateJavaAnnotations <em>Generate Java Annotations</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isAddOrderColumnToListMappings <em>Add Order Column To List Mappings</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isRenameSQLReservedNames <em>Rename SQL Reserved Names</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getInheritance <em>Inheritance</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUniqueEntityNames <em>Unique Entity Names</em>}</li>
+ *   <li>{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isSetDelimitedIdentifierTagInORM <em>Set Delimited Identifier Tag In ORM</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation()
  * @model kind="class"
  * @generated
@@ -78,7 +61,6 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   /**
    * The default value of the '{@link #isGenerateFullDbSchemaNames() <em>Generate Full Db Schema Names</em>}' attribute.
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @see #isGenerateFullDbSchemaNames()
    * @generated
    * @ordered
@@ -87,43 +69,40 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   /**
    * The cached value of the '{@link #isGenerateFullDbSchemaNames() <em>Generate Full Db Schema Names</em>}' attribute.
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @see #isGenerateFullDbSchemaNames()
    * @generated
    * @ordered
    */
   protected boolean generateFullDbSchemaNames = GENERATE_FULL_DB_SCHEMA_NAMES_EDEFAULT;
   /**
-   * The default value of the '{@link #getNameDictionaryPropertyFile() <em>Name Dictionary Property File</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The default value of the '{@link #getNameDictionaryPropertyFile() <em>Name Dictionary Property File</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #getNameDictionaryPropertyFile()
    * @generated
    * @ordered
    */
   protected static final String NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT = null;
   /**
-   * The cached value of the '{@link #getNameDictionaryPropertyFile() <em>Name Dictionary Property File</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The cached value of the '{@link #getNameDictionaryPropertyFile() <em>Name Dictionary Property File</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #getNameDictionaryPropertyFile()
    * @generated
    * @ordered
    */
   protected String nameDictionaryPropertyFile = NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT;
   /**
-   * The default value of the '{@link #getTableNamePrefix() <em>Table Name Prefix</em>}' attribute. <!-- begin-user-doc
+   * The default value of the '{@link #getTableNamePrefix() <em>Table Name Prefix</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #getTableNamePrefix()
    * @generated
    * @ordered
    */
   protected static final String TABLE_NAME_PREFIX_EDEFAULT = null;
   /**
-   * The cached value of the '{@link #getTableNamePrefix() <em>Table Name Prefix</em>}' attribute. <!-- begin-user-doc
+   * The cached value of the '{@link #getTableNamePrefix() <em>Table Name Prefix</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #getTableNamePrefix()
    * @generated
    * @ordered
@@ -139,9 +118,9 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
    */
   protected static final String COLUMN_NAME_PREFIX_EDEFAULT = null;
   /**
-   * The cached value of the '{@link #getColumnNamePrefix() <em>Column Name Prefix</em>}' attribute. <!-- begin-user-doc
+   * The cached value of the '{@link #getColumnNamePrefix() <em>Column Name Prefix</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #getColumnNamePrefix()
    * @generated
    * @ordered
@@ -166,36 +145,36 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
    */
   protected int maximumSqlNameLength = MAXIMUM_SQL_NAME_LENGTH_EDEFAULT;
   /**
-   * The default value of the '{@link #isLowerCasedNames() <em>Lower Cased Names</em>}' attribute. <!-- begin-user-doc
+   * The default value of the '{@link #isLowerCasedNames() <em>Lower Cased Names</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #isLowerCasedNames()
    * @generated
    * @ordered
    */
   protected static final boolean LOWER_CASED_NAMES_EDEFAULT = false;
   /**
-   * The cached value of the '{@link #isLowerCasedNames() <em>Lower Cased Names</em>}' attribute. <!-- begin-user-doc
+   * The cached value of the '{@link #isLowerCasedNames() <em>Lower Cased Names</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #isLowerCasedNames()
    * @generated
    * @ordered
    */
   protected boolean lowerCasedNames = LOWER_CASED_NAMES_EDEFAULT;
   /**
-   * The default value of the '{@link #isUpperCasedNames() <em>Upper Cased Names</em>}' attribute. <!-- begin-user-doc
+   * The default value of the '{@link #isUpperCasedNames() <em>Upper Cased Names</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #isUpperCasedNames()
    * @generated
    * @ordered
    */
   protected static final boolean UPPER_CASED_NAMES_EDEFAULT = false;
   /**
-   * The cached value of the '{@link #isUpperCasedNames() <em>Upper Cased Names</em>}' attribute. <!-- begin-user-doc
+   * The cached value of the '{@link #isUpperCasedNames() <em>Upper Cased Names</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #isUpperCasedNames()
    * @generated
    * @ordered
@@ -221,54 +200,48 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
    */
   protected boolean enforceUniqueNames = ENFORCE_UNIQUE_NAMES_EDEFAULT;
   /**
-   * The default value of the '{@link #isUseJoinTablesForContainment() <em>Use Join Tables For Containment</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The default value of the '{@link #isUseJoinTablesForContainment() <em>Use Join Tables For Containment</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isUseJoinTablesForContainment()
    * @generated
    * @ordered
    */
   protected static final boolean USE_JOIN_TABLES_FOR_CONTAINMENT_EDEFAULT = false;
   /**
-   * The cached value of the '{@link #isUseJoinTablesForContainment() <em>Use Join Tables For Containment</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The cached value of the '{@link #isUseJoinTablesForContainment() <em>Use Join Tables For Containment</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isUseJoinTablesForContainment()
    * @generated
    * @ordered
    */
   protected boolean useJoinTablesForContainment = USE_JOIN_TABLES_FOR_CONTAINMENT_EDEFAULT;
   /**
-   * The default value of the '{@link #isUseJoinTablesForNonContainment() <em>Use Join Tables For Non Containment</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The default value of the '{@link #isUseJoinTablesForNonContainment() <em>Use Join Tables For Non Containment</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isUseJoinTablesForNonContainment()
    * @generated
    * @ordered
    */
   protected static final boolean USE_JOIN_TABLES_FOR_NON_CONTAINMENT_EDEFAULT = true;
   /**
-   * The cached value of the '{@link #isUseJoinTablesForNonContainment() <em>Use Join Tables For Non Containment</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The cached value of the '{@link #isUseJoinTablesForNonContainment() <em>Use Join Tables For Non Containment</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isUseJoinTablesForNonContainment()
    * @generated
    * @ordered
    */
   protected boolean useJoinTablesForNonContainment = USE_JOIN_TABLES_FOR_NON_CONTAINMENT_EDEFAULT;
   /**
-   * The cached value of the '{@link #getDefaultCascadeContainment() <em>Default Cascade Containment</em>}' containment
-   * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The cached value of the '{@link #getDefaultCascadeContainment() <em>Default Cascade Containment</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #getDefaultCascadeContainment()
    * @generated
    * @ordered
    */
   protected CascadeType defaultCascadeContainment;
   /**
-   * The cached value of the '{@link #getDefaultCascadeNonContainment() <em>Default Cascade Non Containment</em>}'
-   * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The cached value of the '{@link #getDefaultCascadeNonContainment() <em>Default Cascade Non Containment</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #getDefaultCascadeNonContainment()
    * @generated
    * @ordered
@@ -304,18 +277,16 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
    */
   protected boolean generateJavaAnnotations = GENERATE_JAVA_ANNOTATIONS_EDEFAULT;
   /**
-   * The default value of the '{@link #isAddOrderColumnToListMappings() <em>Add Order Column To List Mappings</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The default value of the '{@link #isAddOrderColumnToListMappings() <em>Add Order Column To List Mappings</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isAddOrderColumnToListMappings()
    * @generated
    * @ordered
    */
   protected static final boolean ADD_ORDER_COLUMN_TO_LIST_MAPPINGS_EDEFAULT = false;
   /**
-   * The cached value of the '{@link #isAddOrderColumnToListMappings() <em>Add Order Column To List Mappings</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The cached value of the '{@link #isAddOrderColumnToListMappings() <em>Add Order Column To List Mappings</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isAddOrderColumnToListMappings()
    * @generated
    * @ordered
@@ -341,9 +312,9 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   protected boolean renameSQLReservedNames = RENAME_SQL_RESERVED_NAMES_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getInheritance() <em>Inheritance</em>}' containment reference. <!-- begin-user-doc
+   * The cached value of the '{@link #getInheritance() <em>Inheritance</em>}' containment reference.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
    * @see #getInheritance()
    * @generated
    * @ordered
@@ -368,18 +339,16 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
    */
   protected boolean uniqueEntityNames = UNIQUE_ENTITY_NAMES_EDEFAULT;
   /**
-   * The default value of the '{@link #isSetDelimitedIdentifierTagInORM() <em>Set Delimited Identifier Tag In ORM</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The default value of the '{@link #isSetDelimitedIdentifierTagInORM() <em>Set Delimited Identifier Tag In ORM</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isSetDelimitedIdentifierTagInORM()
    * @generated
    * @ordered
    */
   protected static final boolean SET_DELIMITED_IDENTIFIER_TAG_IN_ORM_EDEFAULT = true;
   /**
-   * The cached value of the '{@link #isSetDelimitedIdentifierTagInORM() <em>Set Delimited Identifier Tag In ORM</em>}'
-   * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   * The cached value of the '{@link #isSetDelimitedIdentifierTagInORM() <em>Set Delimited Identifier Tag In ORM</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @see #isSetDelimitedIdentifierTagInORM()
    * @generated
    * @ordered
@@ -433,7 +402,6 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
@@ -442,14 +410,14 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Returns the value of the '<em><b>Generate Full Db Schema Names</b></em>' attribute. The default value is
-   * <code>"true"</code>. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Generate Full Db Schema Names</b></em>' attribute.
+   * The default value is <code>"true"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Generate Full Db Schema Names</em>' attribute isn't clear, there really should be more
    * of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Generate Full Db Schema Names</em>' attribute.
    * @see #setGenerateFullDbSchemaNames(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_GenerateFullDbSchemaNames()
@@ -461,33 +429,27 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateFullDbSchemaNames
-   * <em>Generate Full Db Schema Names</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Generate Full Db Schema Names</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateFullDbSchemaNames <em>Generate Full Db Schema Names</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Generate Full Db Schema Names</em>' attribute.
    * @see #isGenerateFullDbSchemaNames()
    * @generated
    */
   public void setGenerateFullDbSchemaNames(boolean newGenerateFullDbSchemaNames) {
     boolean oldGenerateFullDbSchemaNames = generateFullDbSchemaNames;
     generateFullDbSchemaNames = newGenerateFullDbSchemaNames;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES, oldGenerateFullDbSchemaNames,
-          generateFullDbSchemaNames));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES, oldGenerateFullDbSchemaNames, generateFullDbSchemaNames));
   }
 
   /**
-   * Returns the value of the '<em><b>Name Dictionary Property File</b></em>' attribute. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name Dictionary Property File</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name Dictionary Property File</em>' attribute isn't clear, there really should be more
    * of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Name Dictionary Property File</em>' attribute.
    * @see #setNameDictionaryPropertyFile(String)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_NameDictionaryPropertyFile()
@@ -499,33 +461,27 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getNameDictionaryPropertyFile
-   * <em>Name Dictionary Property File</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Name Dictionary Property File</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getNameDictionaryPropertyFile <em>Name Dictionary Property File</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Name Dictionary Property File</em>' attribute.
    * @see #getNameDictionaryPropertyFile()
    * @generated
    */
   public void setNameDictionaryPropertyFile(String newNameDictionaryPropertyFile) {
     String oldNameDictionaryPropertyFile = nameDictionaryPropertyFile;
     nameDictionaryPropertyFile = newNameDictionaryPropertyFile;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE, oldNameDictionaryPropertyFile,
-          nameDictionaryPropertyFile));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE, oldNameDictionaryPropertyFile, nameDictionaryPropertyFile));
   }
 
   /**
-   * Returns the value of the '<em><b>Table Name Prefix</b></em>' attribute. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Table Name Prefix</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Table Name Prefix</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Table Name Prefix</em>' attribute.
    * @see #setTableNamePrefix(String)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_TableNamePrefix()
@@ -537,31 +493,27 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getTableNamePrefix
-   * <em>Table Name Prefix</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Table Name Prefix</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getTableNamePrefix <em>Table Name Prefix</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Table Name Prefix</em>' attribute.
    * @see #getTableNamePrefix()
    * @generated
    */
   public void setTableNamePrefix(String newTableNamePrefix) {
     String oldTableNamePrefix = tableNamePrefix;
     tableNamePrefix = newTableNamePrefix;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX, oldTableNamePrefix, tableNamePrefix));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX, oldTableNamePrefix, tableNamePrefix));
   }
 
   /**
-   * Returns the value of the '<em><b>Column Name Prefix</b></em>' attribute. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Column Name Prefix</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Column Name Prefix</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Column Name Prefix</em>' attribute.
    * @see #setColumnNamePrefix(String)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_ColumnNamePrefix()
@@ -573,32 +525,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getColumnNamePrefix
-   * <em>Column Name Prefix</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Column Name Prefix</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getColumnNamePrefix <em>Column Name Prefix</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Column Name Prefix</em>' attribute.
    * @see #getColumnNamePrefix()
    * @generated
    */
   public void setColumnNamePrefix(String newColumnNamePrefix) {
     String oldColumnNamePrefix = columnNamePrefix;
     columnNamePrefix = newColumnNamePrefix;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX, oldColumnNamePrefix, columnNamePrefix));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX, oldColumnNamePrefix, columnNamePrefix));
   }
 
   /**
-   * Returns the value of the '<em><b>Maximum Sql Name Length</b></em>' attribute. The default value is
-   * <code>"255"</code>. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Maximum Sql Name Length</b></em>' attribute.
+   * The default value is <code>"255"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Maximum Sql Name Length</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Maximum Sql Name Length</em>' attribute.
    * @see #setMaximumSqlNameLength(int)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_MaximumSqlNameLength()
@@ -610,34 +558,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getMaximumSqlNameLength
-   * <em>Maximum Sql Name Length</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Maximum Sql Name Length</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getMaximumSqlNameLength <em>Maximum Sql Name Length</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Maximum Sql Name Length</em>' attribute.
    * @see #getMaximumSqlNameLength()
    * @generated
    */
   public void setMaximumSqlNameLength(int newMaximumSqlNameLength) {
     int oldMaximumSqlNameLength = maximumSqlNameLength;
     maximumSqlNameLength = newMaximumSqlNameLength;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH, oldMaximumSqlNameLength,
-          maximumSqlNameLength));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH, oldMaximumSqlNameLength, maximumSqlNameLength));
   }
 
   /**
-   * Returns the value of the '<em><b>Lower Cased Names</b></em>' attribute. The default value is <code>"false"</code>.
+   * Returns the value of the '<em><b>Lower Cased Names</b></em>' attribute.
+   * The default value is <code>"false"</code>.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Lower Cased Names</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Lower Cased Names</em>' attribute.
    * @see #setLowerCasedNames(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_LowerCasedNames()
@@ -649,32 +591,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isLowerCasedNames
-   * <em>Lower Cased Names</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Lower Cased Names</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isLowerCasedNames <em>Lower Cased Names</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Lower Cased Names</em>' attribute.
    * @see #isLowerCasedNames()
    * @generated
    */
   public void setLowerCasedNames(boolean newLowerCasedNames) {
     boolean oldLowerCasedNames = lowerCasedNames;
     lowerCasedNames = newLowerCasedNames;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES, oldLowerCasedNames, lowerCasedNames));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES, oldLowerCasedNames, lowerCasedNames));
   }
 
   /**
-   * Returns the value of the '<em><b>Upper Cased Names</b></em>' attribute. The default value is <code>"false"</code>.
+   * Returns the value of the '<em><b>Upper Cased Names</b></em>' attribute.
+   * The default value is <code>"false"</code>.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Upper Cased Names</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Upper Cased Names</em>' attribute.
    * @see #setUpperCasedNames(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_UpperCasedNames()
@@ -686,32 +624,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUpperCasedNames
-   * <em>Upper Cased Names</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Upper Cased Names</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUpperCasedNames <em>Upper Cased Names</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Upper Cased Names</em>' attribute.
    * @see #isUpperCasedNames()
    * @generated
    */
   public void setUpperCasedNames(boolean newUpperCasedNames) {
     boolean oldUpperCasedNames = upperCasedNames;
     upperCasedNames = newUpperCasedNames;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES, oldUpperCasedNames, upperCasedNames));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES, oldUpperCasedNames, upperCasedNames));
   }
 
   /**
-   * Returns the value of the '<em><b>Enforce Unique Names</b></em>' attribute. The default value is <code>"true"</code>
-   * . <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Enforce Unique Names</b></em>' attribute.
+   * The default value is <code>"true"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Enforce Unique Names</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Enforce Unique Names</em>' attribute.
    * @see #setEnforceUniqueNames(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_EnforceUniqueNames()
@@ -723,33 +657,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isEnforceUniqueNames
-   * <em>Enforce Unique Names</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Enforce Unique Names</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isEnforceUniqueNames <em>Enforce Unique Names</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Enforce Unique Names</em>' attribute.
    * @see #isEnforceUniqueNames()
    * @generated
    */
   public void setEnforceUniqueNames(boolean newEnforceUniqueNames) {
     boolean oldEnforceUniqueNames = enforceUniqueNames;
     enforceUniqueNames = newEnforceUniqueNames;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES, oldEnforceUniqueNames,
-          enforceUniqueNames));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES, oldEnforceUniqueNames, enforceUniqueNames));
   }
 
   /**
-   * Returns the value of the '<em><b>Use Join Tables For Containment</b></em>' attribute. The default value is
-   * <code>"false"</code>. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Use Join Tables For Containment</b></em>' attribute.
+   * The default value is <code>"false"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Use Join Tables For Containment</em>' attribute isn't clear, there really should be more
    * of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Use Join Tables For Containment</em>' attribute.
    * @see #setUseJoinTablesForContainment(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_UseJoinTablesForContainment()
@@ -761,34 +690,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForContainment
-   * <em>Use Join Tables For Containment</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Use Join Tables For Containment</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForContainment <em>Use Join Tables For Containment</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Use Join Tables For Containment</em>' attribute.
    * @see #isUseJoinTablesForContainment()
    * @generated
    */
   public void setUseJoinTablesForContainment(boolean newUseJoinTablesForContainment) {
     boolean oldUseJoinTablesForContainment = useJoinTablesForContainment;
     useJoinTablesForContainment = newUseJoinTablesForContainment;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT,
-          oldUseJoinTablesForContainment, useJoinTablesForContainment));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT, oldUseJoinTablesForContainment, useJoinTablesForContainment));
   }
 
   /**
-   * Returns the value of the '<em><b>Use Join Tables For Non Containment</b></em>' attribute. The default value is
-   * <code>"true"</code>. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Use Join Tables For Non Containment</b></em>' attribute.
+   * The default value is <code>"true"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Use Join Tables For Non Containment</em>' attribute isn't clear, there really should be
    * more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Use Join Tables For Non Containment</em>' attribute.
    * @see #setUseJoinTablesForNonContainment(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_UseJoinTablesForNonContainment()
@@ -800,34 +723,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForNonContainment
-   * <em>Use Join Tables For Non Containment</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Use Join Tables For Non Containment</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUseJoinTablesForNonContainment <em>Use Join Tables For Non Containment</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Use Join Tables For Non Containment</em>' attribute.
    * @see #isUseJoinTablesForNonContainment()
    * @generated
    */
   public void setUseJoinTablesForNonContainment(boolean newUseJoinTablesForNonContainment) {
     boolean oldUseJoinTablesForNonContainment = useJoinTablesForNonContainment;
     useJoinTablesForNonContainment = newUseJoinTablesForNonContainment;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT,
-          oldUseJoinTablesForNonContainment, useJoinTablesForNonContainment));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT, oldUseJoinTablesForNonContainment, useJoinTablesForNonContainment));
   }
 
   /**
-   * Returns the value of the '<em><b>Default Cascade Containment</b></em>' containment reference. <!-- begin-user-doc
+   * Returns the value of the '<em><b>Default Cascade Containment</b></em>' containment reference.
+   * <!-- begin-user-doc
    * -->
    * <p>
    * If the meaning of the '<em>Default Cascade Containment</em>' containment reference isn't clear, there really should
    * be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Default Cascade Containment</em>' containment reference.
    * @see #setDefaultCascadeContainment(CascadeType)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_DefaultCascadeContainment()
@@ -840,7 +757,6 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   public NotificationChain basicSetDefaultCascadeContainment(CascadeType newDefaultCascadeContainment,
@@ -848,48 +764,31 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
     CascadeType oldDefaultCascadeContainment = defaultCascadeContainment;
     defaultCascadeContainment = newDefaultCascadeContainment;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, oldDefaultCascadeContainment,
-          newDefaultCascadeContainment);
-      if (msgs == null) {
-        msgs = notification;
-      } else {
-        msgs.add(notification);
-      }
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, oldDefaultCascadeContainment, newDefaultCascadeContainment);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeContainment
-   * <em>Default Cascade Containment</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Default Cascade Containment</em>' containment reference.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeContainment <em>Default Cascade Containment</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Default Cascade Containment</em>' containment reference.
    * @see #getDefaultCascadeContainment()
    * @generated
    */
   public void setDefaultCascadeContainment(CascadeType newDefaultCascadeContainment) {
     if (newDefaultCascadeContainment != defaultCascadeContainment) {
       NotificationChain msgs = null;
-      if (defaultCascadeContainment != null) {
-        msgs = ((InternalEObject) defaultCascadeContainment).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, null, msgs);
-      }
-      if (newDefaultCascadeContainment != null) {
-        msgs = ((InternalEObject) newDefaultCascadeContainment).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, null, msgs);
-      }
+      if (defaultCascadeContainment != null)
+        msgs = ((InternalEObject)defaultCascadeContainment).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, null, msgs);
+      if (newDefaultCascadeContainment != null)
+        msgs = ((InternalEObject)newDefaultCascadeContainment).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, null, msgs);
       msgs = basicSetDefaultCascadeContainment(newDefaultCascadeContainment, msgs);
-      if (msgs != null) {
-        msgs.dispatch();
-      }
-    } else if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, newDefaultCascadeContainment,
-          newDefaultCascadeContainment));
+      if (msgs != null) msgs.dispatch();
     }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT, newDefaultCascadeContainment, newDefaultCascadeContainment));
   }
 
   /**
@@ -913,7 +812,6 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   public NotificationChain basicSetDefaultCascadeNonContainment(CascadeType newDefaultCascadeNonContainment,
@@ -921,58 +819,41 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
     CascadeType oldDefaultCascadeNonContainment = defaultCascadeNonContainment;
     defaultCascadeNonContainment = newDefaultCascadeNonContainment;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT,
-          oldDefaultCascadeNonContainment, newDefaultCascadeNonContainment);
-      if (msgs == null) {
-        msgs = notification;
-      } else {
-        msgs.add(notification);
-      }
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT, oldDefaultCascadeNonContainment, newDefaultCascadeNonContainment);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeNonContainment
-   * <em>Default Cascade Non Containment</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Default Cascade Non Containment</em>' containment reference.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getDefaultCascadeNonContainment <em>Default Cascade Non Containment</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Default Cascade Non Containment</em>' containment reference.
    * @see #getDefaultCascadeNonContainment()
    * @generated
    */
   public void setDefaultCascadeNonContainment(CascadeType newDefaultCascadeNonContainment) {
     if (newDefaultCascadeNonContainment != defaultCascadeNonContainment) {
       NotificationChain msgs = null;
-      if (defaultCascadeNonContainment != null) {
-        msgs = ((InternalEObject) defaultCascadeNonContainment).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT, null, msgs);
-      }
-      if (newDefaultCascadeNonContainment != null) {
-        msgs = ((InternalEObject) newDefaultCascadeNonContainment).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT, null, msgs);
-      }
+      if (defaultCascadeNonContainment != null)
+        msgs = ((InternalEObject)defaultCascadeNonContainment).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT, null, msgs);
+      if (newDefaultCascadeNonContainment != null)
+        msgs = ((InternalEObject)newDefaultCascadeNonContainment).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT, null, msgs);
       msgs = basicSetDefaultCascadeNonContainment(newDefaultCascadeNonContainment, msgs);
-      if (msgs != null) {
-        msgs.dispatch();
-      }
-    } else if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT,
-          newDefaultCascadeNonContainment, newDefaultCascadeNonContainment));
+      if (msgs != null) msgs.dispatch();
     }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT, newDefaultCascadeNonContainment, newDefaultCascadeNonContainment));
   }
 
   /**
-   * Returns the value of the '<em><b>Entity Mappings</b></em>' containment reference. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Entity Mappings</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Entity Mappings</em>' containment reference isn't clear, there really should be more of
    * a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Entity Mappings</em>' containment reference.
    * @see #setEntityMappings(EntityMappingsType)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_EntityMappings()
@@ -985,52 +866,37 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   public NotificationChain basicSetEntityMappings(EntityMappingsType newEntityMappings, NotificationChain msgs) {
     EntityMappingsType oldEntityMappings = entityMappings;
     entityMappings = newEntityMappings;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, oldEntityMappings, newEntityMappings);
-      if (msgs == null) {
-        msgs = notification;
-      } else {
-        msgs.add(notification);
-      }
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, oldEntityMappings, newEntityMappings);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getEntityMappings
-   * <em>Entity Mappings</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Entity Mappings</em>' containment reference.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getEntityMappings <em>Entity Mappings</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Entity Mappings</em>' containment reference.
    * @see #getEntityMappings()
    * @generated
    */
   public void setEntityMappings(EntityMappingsType newEntityMappings) {
     if (newEntityMappings != entityMappings) {
       NotificationChain msgs = null;
-      if (entityMappings != null) {
-        msgs = ((InternalEObject) entityMappings).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, null, msgs);
-      }
-      if (newEntityMappings != null) {
-        msgs = ((InternalEObject) newEntityMappings).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, null, msgs);
-      }
+      if (entityMappings != null)
+        msgs = ((InternalEObject)entityMappings).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, null, msgs);
+      if (newEntityMappings != null)
+        msgs = ((InternalEObject)newEntityMappings).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, null, msgs);
       msgs = basicSetEntityMappings(newEntityMappings, msgs);
-      if (msgs != null) {
-        msgs.dispatch();
-      }
-    } else if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, newEntityMappings, newEntityMappings));
+      if (msgs != null) msgs.dispatch();
     }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS, newEntityMappings, newEntityMappings));
   }
 
   /**
@@ -1055,34 +921,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateJavaAnnotations
-   * <em>Generate Java Annotations</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Generate Java Annotations</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isGenerateJavaAnnotations <em>Generate Java Annotations</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Generate Java Annotations</em>' attribute.
    * @see #isGenerateJavaAnnotations()
    * @generated
    */
   public void setGenerateJavaAnnotations(boolean newGenerateJavaAnnotations) {
     boolean oldGenerateJavaAnnotations = generateJavaAnnotations;
     generateJavaAnnotations = newGenerateJavaAnnotations;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS, oldGenerateJavaAnnotations,
-          generateJavaAnnotations));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS, oldGenerateJavaAnnotations, generateJavaAnnotations));
   }
 
   /**
-   * Returns the value of the '<em><b>Add Order Column To List Mappings</b></em>' attribute. The default value is
-   * <code>"false"</code>. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Add Order Column To List Mappings</b></em>' attribute.
+   * The default value is <code>"false"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Add Order Column To List Mappings</em>' attribute isn't clear, there really should be
    * more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Add Order Column To List Mappings</em>' attribute.
    * @see #setAddOrderColumnToListMappings(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_AddOrderColumnToListMappings()
@@ -1094,34 +954,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isAddOrderColumnToListMappings
-   * <em>Add Order Column To List Mappings</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Add Order Column To List Mappings</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isAddOrderColumnToListMappings <em>Add Order Column To List Mappings</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Add Order Column To List Mappings</em>' attribute.
    * @see #isAddOrderColumnToListMappings()
    * @generated
    */
   public void setAddOrderColumnToListMappings(boolean newAddOrderColumnToListMappings) {
     boolean oldAddOrderColumnToListMappings = addOrderColumnToListMappings;
     addOrderColumnToListMappings = newAddOrderColumnToListMappings;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS,
-          oldAddOrderColumnToListMappings, addOrderColumnToListMappings));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS, oldAddOrderColumnToListMappings, addOrderColumnToListMappings));
   }
 
   /**
-   * Returns the value of the '<em><b>Rename SQL Reserved Names</b></em>' attribute. The default value is
-   * <code>"true"</code>. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Rename SQL Reserved Names</b></em>' attribute.
+   * The default value is <code>"true"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Rename SQL Reserved Names</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Rename SQL Reserved Names</em>' attribute.
    * @see #setRenameSQLReservedNames(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_RenameSQLReservedNames()
@@ -1133,33 +987,27 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isRenameSQLReservedNames
-   * <em>Rename SQL Reserved Names</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Rename SQL Reserved Names</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isRenameSQLReservedNames <em>Rename SQL Reserved Names</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Rename SQL Reserved Names</em>' attribute.
    * @see #isRenameSQLReservedNames()
    * @generated
    */
   public void setRenameSQLReservedNames(boolean newRenameSQLReservedNames) {
     boolean oldRenameSQLReservedNames = renameSQLReservedNames;
     renameSQLReservedNames = newRenameSQLReservedNames;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES, oldRenameSQLReservedNames,
-          renameSQLReservedNames));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES, oldRenameSQLReservedNames, renameSQLReservedNames));
   }
 
   /**
-   * Returns the value of the '<em><b>Inheritance</b></em>' containment reference. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Inheritance</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Inheritance</em>' containment reference isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Inheritance</em>' containment reference.
    * @see #setInheritance(Inheritance)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_Inheritance()
@@ -1172,63 +1020,48 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   public NotificationChain basicSetInheritance(Inheritance newInheritance, NotificationChain msgs) {
     Inheritance oldInheritance = inheritance;
     inheritance = newInheritance;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE, oldInheritance, newInheritance);
-      if (msgs == null) {
-        msgs = notification;
-      } else {
-        msgs.add(notification);
-      }
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE, oldInheritance, newInheritance);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getInheritance
-   * <em>Inheritance</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Inheritance</em>' containment reference.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#getInheritance <em>Inheritance</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Inheritance</em>' containment reference.
    * @see #getInheritance()
    * @generated
    */
   public void setInheritance(Inheritance newInheritance) {
     if (newInheritance != inheritance) {
       NotificationChain msgs = null;
-      if (inheritance != null) {
-        msgs = ((InternalEObject) inheritance).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE, null, msgs);
-      }
-      if (newInheritance != null) {
-        msgs = ((InternalEObject) newInheritance).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
-            - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE, null, msgs);
-      }
+      if (inheritance != null)
+        msgs = ((InternalEObject)inheritance).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE, null, msgs);
+      if (newInheritance != null)
+        msgs = ((InternalEObject)newInheritance).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE, null, msgs);
       msgs = basicSetInheritance(newInheritance, msgs);
-      if (msgs != null) {
-        msgs.dispatch();
-      }
-    } else if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE,
-          newInheritance, newInheritance));
+      if (msgs != null) msgs.dispatch();
     }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE, newInheritance, newInheritance));
   }
 
   /**
-   * Returns the value of the '<em><b>Unique Entity Names</b></em>' attribute. The default value is <code>"true"</code>.
+   * Returns the value of the '<em><b>Unique Entity Names</b></em>' attribute.
+   * The default value is <code>"true"</code>.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Unique Entity Names</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Unique Entity Names</em>' attribute.
    * @see #setUniqueEntityNames(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_UniqueEntityNames()
@@ -1240,32 +1073,28 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUniqueEntityNames
-   * <em>Unique Entity Names</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Unique Entity Names</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isUniqueEntityNames <em>Unique Entity Names</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Unique Entity Names</em>' attribute.
    * @see #isUniqueEntityNames()
    * @generated
    */
   public void setUniqueEntityNames(boolean newUniqueEntityNames) {
     boolean oldUniqueEntityNames = uniqueEntityNames;
     uniqueEntityNames = newUniqueEntityNames;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES, oldUniqueEntityNames, uniqueEntityNames));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES, oldUniqueEntityNames, uniqueEntityNames));
   }
 
   /**
-   * Returns the value of the '<em><b>Set Delimited Identifier Tag In ORM</b></em>' attribute. The default value is
-   * <code>"true"</code>. <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Set Delimited Identifier Tag In ORM</b></em>' attribute.
+   * The default value is <code>"true"</code>.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Set Delimited Identifier Tag In ORM</em>' attribute isn't clear, there really should be
    * more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * 
    * @return the value of the '<em>Set Delimited Identifier Tag In ORM</em>' attribute.
    * @see #setSetDelimitedIdentifierTagInORM(boolean)
    * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getEPackageORMAnnotation_SetDelimitedIdentifierTagInORM()
@@ -1277,327 +1106,310 @@ public class EPackageORMAnnotation extends EPackageAnnotation implements ENamedE
   }
 
   /**
-   * Sets the value of the '
-   * {@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isSetDelimitedIdentifierTagInORM
-   * <em>Set Delimited Identifier Tag In ORM</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @param value
-   *          the new value of the '<em>Set Delimited Identifier Tag In ORM</em>' attribute.
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation#isSetDelimitedIdentifierTagInORM <em>Set Delimited Identifier Tag In ORM</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Set Delimited Identifier Tag In ORM</em>' attribute.
    * @see #isSetDelimitedIdentifierTagInORM()
    * @generated
    */
   public void setSetDelimitedIdentifierTagInORM(boolean newSetDelimitedIdentifierTagInORM) {
     boolean oldSetDelimitedIdentifierTagInORM = setDelimitedIdentifierTagInORM;
     setDelimitedIdentifierTagInORM = newSetDelimitedIdentifierTagInORM;
-    if (eNotificationRequired()) {
-      eNotify(new ENotificationImpl(this, Notification.SET,
-          OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM,
-          oldSetDelimitedIdentifierTagInORM, setDelimitedIdentifierTagInORM));
-    }
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM, oldSetDelimitedIdentifierTagInORM, setDelimitedIdentifierTagInORM));
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
-      return basicSetDefaultCascadeContainment(null, msgs);
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
-      return basicSetDefaultCascadeNonContainment(null, msgs);
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
-      return basicSetEntityMappings(null, msgs);
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
-      return basicSetInheritance(null, msgs);
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
+        return basicSetDefaultCascadeContainment(null, msgs);
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
+        return basicSetDefaultCascadeNonContainment(null, msgs);
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
+        return basicSetEntityMappings(null, msgs);
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
+        return basicSetInheritance(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
-      return isGenerateFullDbSchemaNames();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
-      return getNameDictionaryPropertyFile();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
-      return getTableNamePrefix();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
-      return getColumnNamePrefix();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
-      return getMaximumSqlNameLength();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
-      return isLowerCasedNames();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
-      return isUpperCasedNames();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
-      return isEnforceUniqueNames();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
-      return isUseJoinTablesForContainment();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
-      return isUseJoinTablesForNonContainment();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
-      return getDefaultCascadeContainment();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
-      return getDefaultCascadeNonContainment();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
-      return getEntityMappings();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
-      return isGenerateJavaAnnotations();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
-      return isAddOrderColumnToListMappings();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
-      return isRenameSQLReservedNames();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
-      return getInheritance();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
-      return isUniqueEntityNames();
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
-      return isSetDelimitedIdentifierTagInORM();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
+        return isGenerateFullDbSchemaNames();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
+        return getNameDictionaryPropertyFile();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
+        return getTableNamePrefix();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
+        return getColumnNamePrefix();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
+        return getMaximumSqlNameLength();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
+        return isLowerCasedNames();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
+        return isUpperCasedNames();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
+        return isEnforceUniqueNames();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
+        return isUseJoinTablesForContainment();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
+        return isUseJoinTablesForNonContainment();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
+        return getDefaultCascadeContainment();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
+        return getDefaultCascadeNonContainment();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
+        return getEntityMappings();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
+        return isGenerateJavaAnnotations();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
+        return isAddOrderColumnToListMappings();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
+        return isRenameSQLReservedNames();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
+        return getInheritance();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
+        return isUniqueEntityNames();
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
+        return isSetDelimitedIdentifierTagInORM();
     }
     return super.eGet(featureID, resolve, coreType);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
-      setGenerateFullDbSchemaNames((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
-      setNameDictionaryPropertyFile((String) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
-      setTableNamePrefix((String) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
-      setColumnNamePrefix((String) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
-      setMaximumSqlNameLength((Integer) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
-      setLowerCasedNames((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
-      setUpperCasedNames((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
-      setEnforceUniqueNames((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
-      setUseJoinTablesForContainment((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
-      setUseJoinTablesForNonContainment((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
-      setDefaultCascadeContainment((CascadeType) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
-      setDefaultCascadeNonContainment((CascadeType) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
-      setEntityMappings((EntityMappingsType) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
-      setGenerateJavaAnnotations((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
-      setAddOrderColumnToListMappings((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
-      setRenameSQLReservedNames((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
-      setInheritance((Inheritance) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
-      setUniqueEntityNames((Boolean) newValue);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
-      setSetDelimitedIdentifierTagInORM((Boolean) newValue);
-      return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
+        setGenerateFullDbSchemaNames((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
+        setNameDictionaryPropertyFile((String)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
+        setTableNamePrefix((String)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
+        setColumnNamePrefix((String)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
+        setMaximumSqlNameLength((Integer)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
+        setLowerCasedNames((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
+        setUpperCasedNames((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
+        setEnforceUniqueNames((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
+        setUseJoinTablesForContainment((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
+        setUseJoinTablesForNonContainment((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
+        setDefaultCascadeContainment((CascadeType)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
+        setDefaultCascadeNonContainment((CascadeType)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
+        setEntityMappings((EntityMappingsType)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
+        setGenerateJavaAnnotations((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
+        setAddOrderColumnToListMappings((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
+        setRenameSQLReservedNames((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
+        setInheritance((Inheritance)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
+        setUniqueEntityNames((Boolean)newValue);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
+        setSetDelimitedIdentifierTagInORM((Boolean)newValue);
+        return;
     }
     super.eSet(featureID, newValue);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
-      setGenerateFullDbSchemaNames(GENERATE_FULL_DB_SCHEMA_NAMES_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
-      setNameDictionaryPropertyFile(NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
-      setTableNamePrefix(TABLE_NAME_PREFIX_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
-      setColumnNamePrefix(COLUMN_NAME_PREFIX_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
-      setMaximumSqlNameLength(MAXIMUM_SQL_NAME_LENGTH_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
-      setLowerCasedNames(LOWER_CASED_NAMES_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
-      setUpperCasedNames(UPPER_CASED_NAMES_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
-      setEnforceUniqueNames(ENFORCE_UNIQUE_NAMES_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
-      setUseJoinTablesForContainment(USE_JOIN_TABLES_FOR_CONTAINMENT_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
-      setUseJoinTablesForNonContainment(USE_JOIN_TABLES_FOR_NON_CONTAINMENT_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
-      setDefaultCascadeContainment((CascadeType) null);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
-      setDefaultCascadeNonContainment((CascadeType) null);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
-      setEntityMappings((EntityMappingsType) null);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
-      setGenerateJavaAnnotations(GENERATE_JAVA_ANNOTATIONS_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
-      setAddOrderColumnToListMappings(ADD_ORDER_COLUMN_TO_LIST_MAPPINGS_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
-      setRenameSQLReservedNames(RENAME_SQL_RESERVED_NAMES_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
-      setInheritance((Inheritance) null);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
-      setUniqueEntityNames(UNIQUE_ENTITY_NAMES_EDEFAULT);
-      return;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
-      setSetDelimitedIdentifierTagInORM(SET_DELIMITED_IDENTIFIER_TAG_IN_ORM_EDEFAULT);
-      return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
+        setGenerateFullDbSchemaNames(GENERATE_FULL_DB_SCHEMA_NAMES_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
+        setNameDictionaryPropertyFile(NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
+        setTableNamePrefix(TABLE_NAME_PREFIX_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
+        setColumnNamePrefix(COLUMN_NAME_PREFIX_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
+        setMaximumSqlNameLength(MAXIMUM_SQL_NAME_LENGTH_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
+        setLowerCasedNames(LOWER_CASED_NAMES_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
+        setUpperCasedNames(UPPER_CASED_NAMES_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
+        setEnforceUniqueNames(ENFORCE_UNIQUE_NAMES_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
+        setUseJoinTablesForContainment(USE_JOIN_TABLES_FOR_CONTAINMENT_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
+        setUseJoinTablesForNonContainment(USE_JOIN_TABLES_FOR_NON_CONTAINMENT_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
+        setDefaultCascadeContainment((CascadeType)null);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
+        setDefaultCascadeNonContainment((CascadeType)null);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
+        setEntityMappings((EntityMappingsType)null);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
+        setGenerateJavaAnnotations(GENERATE_JAVA_ANNOTATIONS_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
+        setAddOrderColumnToListMappings(ADD_ORDER_COLUMN_TO_LIST_MAPPINGS_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
+        setRenameSQLReservedNames(RENAME_SQL_RESERVED_NAMES_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
+        setInheritance((Inheritance)null);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
+        setUniqueEntityNames(UNIQUE_ENTITY_NAMES_EDEFAULT);
+        return;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
+        setSetDelimitedIdentifierTagInORM(SET_DELIMITED_IDENTIFIER_TAG_IN_ORM_EDEFAULT);
+        return;
     }
     super.eUnset(featureID);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
-      return generateFullDbSchemaNames != GENERATE_FULL_DB_SCHEMA_NAMES_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
-      return NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT == null ? nameDictionaryPropertyFile != null
-          : !NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT.equals(nameDictionaryPropertyFile);
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
-      return TABLE_NAME_PREFIX_EDEFAULT == null ? tableNamePrefix != null : !TABLE_NAME_PREFIX_EDEFAULT
-          .equals(tableNamePrefix);
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
-      return COLUMN_NAME_PREFIX_EDEFAULT == null ? columnNamePrefix != null : !COLUMN_NAME_PREFIX_EDEFAULT
-          .equals(columnNamePrefix);
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
-      return maximumSqlNameLength != MAXIMUM_SQL_NAME_LENGTH_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
-      return lowerCasedNames != LOWER_CASED_NAMES_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
-      return upperCasedNames != UPPER_CASED_NAMES_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
-      return enforceUniqueNames != ENFORCE_UNIQUE_NAMES_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
-      return useJoinTablesForContainment != USE_JOIN_TABLES_FOR_CONTAINMENT_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
-      return useJoinTablesForNonContainment != USE_JOIN_TABLES_FOR_NON_CONTAINMENT_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
-      return defaultCascadeContainment != null;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
-      return defaultCascadeNonContainment != null;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
-      return entityMappings != null;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
-      return generateJavaAnnotations != GENERATE_JAVA_ANNOTATIONS_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
-      return addOrderColumnToListMappings != ADD_ORDER_COLUMN_TO_LIST_MAPPINGS_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
-      return renameSQLReservedNames != RENAME_SQL_RESERVED_NAMES_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
-      return inheritance != null;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
-      return uniqueEntityNames != UNIQUE_ENTITY_NAMES_EDEFAULT;
-    case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
-      return setDelimitedIdentifierTagInORM != SET_DELIMITED_IDENTIFIER_TAG_IN_ORM_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_FULL_DB_SCHEMA_NAMES:
+        return generateFullDbSchemaNames != GENERATE_FULL_DB_SCHEMA_NAMES_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__NAME_DICTIONARY_PROPERTY_FILE:
+        return NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT == null ? nameDictionaryPropertyFile != null : !NAME_DICTIONARY_PROPERTY_FILE_EDEFAULT.equals(nameDictionaryPropertyFile);
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__TABLE_NAME_PREFIX:
+        return TABLE_NAME_PREFIX_EDEFAULT == null ? tableNamePrefix != null : !TABLE_NAME_PREFIX_EDEFAULT.equals(tableNamePrefix);
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__COLUMN_NAME_PREFIX:
+        return COLUMN_NAME_PREFIX_EDEFAULT == null ? columnNamePrefix != null : !COLUMN_NAME_PREFIX_EDEFAULT.equals(columnNamePrefix);
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__MAXIMUM_SQL_NAME_LENGTH:
+        return maximumSqlNameLength != MAXIMUM_SQL_NAME_LENGTH_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__LOWER_CASED_NAMES:
+        return lowerCasedNames != LOWER_CASED_NAMES_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UPPER_CASED_NAMES:
+        return upperCasedNames != UPPER_CASED_NAMES_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENFORCE_UNIQUE_NAMES:
+        return enforceUniqueNames != ENFORCE_UNIQUE_NAMES_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_CONTAINMENT:
+        return useJoinTablesForContainment != USE_JOIN_TABLES_FOR_CONTAINMENT_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__USE_JOIN_TABLES_FOR_NON_CONTAINMENT:
+        return useJoinTablesForNonContainment != USE_JOIN_TABLES_FOR_NON_CONTAINMENT_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_CONTAINMENT:
+        return defaultCascadeContainment != null;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__DEFAULT_CASCADE_NON_CONTAINMENT:
+        return defaultCascadeNonContainment != null;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ENTITY_MAPPINGS:
+        return entityMappings != null;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__GENERATE_JAVA_ANNOTATIONS:
+        return generateJavaAnnotations != GENERATE_JAVA_ANNOTATIONS_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__ADD_ORDER_COLUMN_TO_LIST_MAPPINGS:
+        return addOrderColumnToListMappings != ADD_ORDER_COLUMN_TO_LIST_MAPPINGS_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__RENAME_SQL_RESERVED_NAMES:
+        return renameSQLReservedNames != RENAME_SQL_RESERVED_NAMES_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__INHERITANCE:
+        return inheritance != null;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__UNIQUE_ENTITY_NAMES:
+        return uniqueEntityNames != UNIQUE_ENTITY_NAMES_EDEFAULT;
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION__SET_DELIMITED_IDENTIFIER_TAG_IN_ORM:
+        return setDelimitedIdentifierTagInORM != SET_DELIMITED_IDENTIFIER_TAG_IN_ORM_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
   public String toString() {
-    if (eIsProxy()) {
-      return super.toString();
-    }
+    if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (generateFullDbSchemaNames: ");
+    result.append(" (generateFullDbSchemaNames: "); //$NON-NLS-1$
     result.append(generateFullDbSchemaNames);
-    result.append(", nameDictionaryPropertyFile: ");
+    result.append(", nameDictionaryPropertyFile: "); //$NON-NLS-1$
     result.append(nameDictionaryPropertyFile);
-    result.append(", tableNamePrefix: ");
+    result.append(", tableNamePrefix: "); //$NON-NLS-1$
     result.append(tableNamePrefix);
-    result.append(", columnNamePrefix: ");
+    result.append(", columnNamePrefix: "); //$NON-NLS-1$
     result.append(columnNamePrefix);
-    result.append(", maximumSqlNameLength: ");
+    result.append(", maximumSqlNameLength: "); //$NON-NLS-1$
     result.append(maximumSqlNameLength);
-    result.append(", lowerCasedNames: ");
+    result.append(", lowerCasedNames: "); //$NON-NLS-1$
     result.append(lowerCasedNames);
-    result.append(", upperCasedNames: ");
+    result.append(", upperCasedNames: "); //$NON-NLS-1$
     result.append(upperCasedNames);
-    result.append(", enforceUniqueNames: ");
+    result.append(", enforceUniqueNames: "); //$NON-NLS-1$
     result.append(enforceUniqueNames);
-    result.append(", useJoinTablesForContainment: ");
+    result.append(", useJoinTablesForContainment: "); //$NON-NLS-1$
     result.append(useJoinTablesForContainment);
-    result.append(", useJoinTablesForNonContainment: ");
+    result.append(", useJoinTablesForNonContainment: "); //$NON-NLS-1$
     result.append(useJoinTablesForNonContainment);
-    result.append(", generateJavaAnnotations: ");
+    result.append(", generateJavaAnnotations: "); //$NON-NLS-1$
     result.append(generateJavaAnnotations);
-    result.append(", addOrderColumnToListMappings: ");
+    result.append(", addOrderColumnToListMappings: "); //$NON-NLS-1$
     result.append(addOrderColumnToListMappings);
-    result.append(", renameSQLReservedNames: ");
+    result.append(", renameSQLReservedNames: "); //$NON-NLS-1$
     result.append(renameSQLReservedNames);
-    result.append(", uniqueEntityNames: ");
+    result.append(", uniqueEntityNames: "); //$NON-NLS-1$
     result.append(uniqueEntityNames);
-    result.append(", setDelimitedIdentifierTagInORM: ");
+    result.append(", setDelimitedIdentifierTagInORM: "); //$NON-NLS-1$
     result.append(setDelimitedIdentifierTagInORM);
     result.append(')');
     return result.toString();

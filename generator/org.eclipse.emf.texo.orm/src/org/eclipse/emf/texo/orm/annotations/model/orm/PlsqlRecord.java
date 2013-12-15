@@ -75,101 +75,101 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface PlsqlRecord extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Field</b></em>' containment reference list.
-	 * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Field</b></em>' containment reference list.
+   * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Field</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Field</em>' containment reference list.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_Field()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='field' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Field</em>' containment reference list.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_Field()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='field' namespace='##targetNamespace'"
+   * @generated
+   */
 	EList<PlsqlParameter> getField();
 
 	/**
-	 * Returns the value of the '<em><b>Compatible Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Compatible Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Compatible Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Compatible Type</em>' attribute.
-	 * @see #setCompatibleType(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_CompatibleType()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='compatible-type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Compatible Type</em>' attribute.
+   * @see #setCompatibleType(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_CompatibleType()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='compatible-type'"
+   * @generated
+   */
 	String getCompatibleType();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlRecord#getCompatibleType <em>Compatible Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlRecord#getCompatibleType <em>Compatible Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Compatible Type</em>' attribute.
-	 * @see #getCompatibleType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Compatible Type</em>' attribute.
+   * @see #getCompatibleType()
+   * @generated
+   */
 	void setCompatibleType(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Java Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Java Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Java Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Java Type</em>' attribute.
-	 * @see #setJavaType(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_JavaType()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='java-type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Java Type</em>' attribute.
+   * @see #setJavaType(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_JavaType()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='java-type'"
+   * @generated
+   */
 	String getJavaType();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlRecord#getJavaType <em>Java Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlRecord#getJavaType <em>Java Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Java Type</em>' attribute.
-	 * @see #getJavaType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Java Type</em>' attribute.
+   * @see #getJavaType()
+   * @generated
+   */
 	void setJavaType(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlRecord_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlRecord#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlRecord#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
 	void setName(String value);
 
 } // PlsqlRecord

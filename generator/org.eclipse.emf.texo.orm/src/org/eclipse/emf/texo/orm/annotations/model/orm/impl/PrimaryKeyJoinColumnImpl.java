@@ -29,23 +29,23 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class PrimaryKeyJoinColumnImpl extends BaseOrmAnnotationImpl implements PrimaryKeyJoinColumn {
   /**
-	 * The default value of the '{@link #getColumnDefinition() <em>Column Definition</em>}' attribute.
-	 * <!-- begin-user-doc
+   * The default value of the '{@link #getColumnDefinition() <em>Column Definition</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getColumnDefinition()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getColumnDefinition()
+   * @generated
+   * @ordered
+   */
   protected static final String COLUMN_DEFINITION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getColumnDefinition() <em>Column Definition</em>}' attribute.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getColumnDefinition() <em>Column Definition</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getColumnDefinition()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getColumnDefinition()
+   * @generated
+   * @ordered
+   */
   protected String columnDefinition = COLUMN_DEFINITION_EDEFAULT;
 
   /**
@@ -59,12 +59,12 @@ public class PrimaryKeyJoinColumnImpl extends BaseOrmAnnotationImpl implements P
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
@@ -88,170 +88,170 @@ public class PrimaryKeyJoinColumnImpl extends BaseOrmAnnotationImpl implements P
   protected String referencedColumnName = REFERENCED_COLUMN_NAME_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected PrimaryKeyJoinColumnImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getPrimaryKeyJoinColumn();
-	}
+    return OrmPackage.eINSTANCE.getPrimaryKeyJoinColumn();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getColumnDefinition() {
-		return columnDefinition;
-	}
+    return columnDefinition;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setColumnDefinition(String newColumnDefinition) {
-		String oldColumnDefinition = columnDefinition;
-		columnDefinition = newColumnDefinition;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION, oldColumnDefinition, columnDefinition));
-	}
+    String oldColumnDefinition = columnDefinition;
+    columnDefinition = newColumnDefinition;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION, oldColumnDefinition, columnDefinition));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getReferencedColumnName() {
-		return referencedColumnName;
-	}
+    return referencedColumnName;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setReferencedColumnName(String newReferencedColumnName) {
-		String oldReferencedColumnName = referencedColumnName;
-		referencedColumnName = newReferencedColumnName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME, oldReferencedColumnName, referencedColumnName));
-	}
+    String oldReferencedColumnName = referencedColumnName;
+    referencedColumnName = newReferencedColumnName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME, oldReferencedColumnName, referencedColumnName));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
-				return getColumnDefinition();
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
-				return getName();
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
-				return getReferencedColumnName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
+        return getColumnDefinition();
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
+        return getName();
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
+        return getReferencedColumnName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
-				setColumnDefinition((String)newValue);
-				return;
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
-				setName((String)newValue);
-				return;
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
-				setReferencedColumnName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
+        setColumnDefinition((String)newValue);
+        return;
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
+        setName((String)newValue);
+        return;
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
+        setReferencedColumnName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
-				setColumnDefinition(COLUMN_DEFINITION_EDEFAULT);
-				return;
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
-				setReferencedColumnName(REFERENCED_COLUMN_NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
+        setColumnDefinition(COLUMN_DEFINITION_EDEFAULT);
+        return;
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
+        setReferencedColumnName(REFERENCED_COLUMN_NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
-				return COLUMN_DEFINITION_EDEFAULT == null ? columnDefinition != null : !COLUMN_DEFINITION_EDEFAULT.equals(columnDefinition);
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
-				return REFERENCED_COLUMN_NAME_EDEFAULT == null ? referencedColumnName != null : !REFERENCED_COLUMN_NAME_EDEFAULT.equals(referencedColumnName);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__COLUMN_DEFINITION:
+        return COLUMN_DEFINITION_EDEFAULT == null ? columnDefinition != null : !COLUMN_DEFINITION_EDEFAULT.equals(columnDefinition);
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case OrmPackage.PRIMARY_KEY_JOIN_COLUMN__REFERENCED_COLUMN_NAME:
+        return REFERENCED_COLUMN_NAME_EDEFAULT == null ? referencedColumnName != null : !REFERENCED_COLUMN_NAME_EDEFAULT.equals(referencedColumnName);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (columnDefinition: ");
-		result.append(columnDefinition);
-		result.append(", name: ");
-		result.append(name);
-		result.append(", referencedColumnName: ");
-		result.append(referencedColumnName);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (columnDefinition: "); //$NON-NLS-1$
+    result.append(columnDefinition);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(", referencedColumnName: "); //$NON-NLS-1$
+    result.append(referencedColumnName);
+    result.append(')');
+    return result.toString();
+  }
 
 } // PrimaryKeyJoinColumnImpl

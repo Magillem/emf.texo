@@ -87,239 +87,239 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface StoredProcedureParameter extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Direction</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Direction</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Direction</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Direction</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
-	 * @see #isSetDirection()
-	 * @see #unsetDirection()
-	 * @see #setDirection(DirectionType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Direction()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='direction'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Direction</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
+   * @see #isSetDirection()
+   * @see #unsetDirection()
+   * @see #setDirection(DirectionType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Direction()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='direction'"
+   * @generated
+   */
   DirectionType getDirection();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getDirection <em>Direction</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Direction</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
-	 * @see #isSetDirection()
-	 * @see #unsetDirection()
-	 * @see #getDirection()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getDirection <em>Direction</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Direction</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
+   * @see #isSetDirection()
+   * @see #unsetDirection()
+   * @see #getDirection()
+   * @generated
+   */
   void setDirection(DirectionType value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getDirection <em>Direction</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetDirection()
-	 * @see #getDirection()
-	 * @see #setDirection(DirectionType)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getDirection <em>Direction</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetDirection()
+   * @see #getDirection()
+   * @see #setDirection(DirectionType)
+   * @generated
+   */
   void unsetDirection();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getDirection <em>Direction</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Direction</em>' attribute is set.
-	 * @see #unsetDirection()
-	 * @see #getDirection()
-	 * @see #setDirection(DirectionType)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getDirection <em>Direction</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Direction</em>' attribute is set.
+   * @see #unsetDirection()
+   * @see #getDirection()
+   * @see #setDirection(DirectionType)
+   * @generated
+   */
   boolean isSetDirection();
 
   /**
-	 * Returns the value of the '<em><b>Jdbc Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Jdbc Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Jdbc Type</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Jdbc Type</em>' attribute.
-	 * @see #setJdbcType(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_JdbcType()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='jdbc-type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Jdbc Type</em>' attribute.
+   * @see #setJdbcType(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_JdbcType()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='jdbc-type'"
+   * @generated
+   */
   BigInteger getJdbcType();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getJdbcType <em>Jdbc Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Jdbc Type</em>' attribute.
-	 * @see #getJdbcType()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getJdbcType <em>Jdbc Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Jdbc Type</em>' attribute.
+   * @see #getJdbcType()
+   * @generated
+   */
   void setJdbcType(BigInteger value);
 
   /**
-	 * Returns the value of the '<em><b>Jdbc Type Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Jdbc Type Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Jdbc Type Name</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Jdbc Type Name</em>' attribute.
-	 * @see #setJdbcTypeName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_JdbcTypeName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='jdbc-type-name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Jdbc Type Name</em>' attribute.
+   * @see #setJdbcTypeName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_JdbcTypeName()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='jdbc-type-name'"
+   * @generated
+   */
   String getJdbcTypeName();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getJdbcTypeName <em>Jdbc Type Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Jdbc Type Name</em>' attribute.
-	 * @see #getJdbcTypeName()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getJdbcTypeName <em>Jdbc Type Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Jdbc Type Name</em>' attribute.
+   * @see #getJdbcTypeName()
+   * @generated
+   */
   void setJdbcTypeName(String value);
 
   /**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
   String getName();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
   void setName(String value);
 
   /**
-	 * Returns the value of the '<em><b>Optional</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Optional</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Optional</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Optional</em>' attribute.
-	 * @see #isSetOptional()
-	 * @see #unsetOptional()
-	 * @see #setOptional(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Optional()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='optional'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Optional</em>' attribute.
+   * @see #isSetOptional()
+   * @see #unsetOptional()
+   * @see #setOptional(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Optional()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='optional'"
+   * @generated
+   */
 	boolean isOptional();
 
 		/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#isOptional <em>Optional</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#isOptional <em>Optional</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Optional</em>' attribute.
-	 * @see #isSetOptional()
-	 * @see #unsetOptional()
-	 * @see #isOptional()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Optional</em>' attribute.
+   * @see #isSetOptional()
+   * @see #unsetOptional()
+   * @see #isOptional()
+   * @generated
+   */
 	void setOptional(boolean value);
 
 		/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#isOptional <em>Optional</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#isOptional <em>Optional</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetOptional()
-	 * @see #isOptional()
-	 * @see #setOptional(boolean)
-	 * @generated
-	 */
+   * @see #isSetOptional()
+   * @see #isOptional()
+   * @see #setOptional(boolean)
+   * @generated
+   */
 	void unsetOptional();
 
 		/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#isOptional <em>Optional</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#isOptional <em>Optional</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Optional</em>' attribute is set.
-	 * @see #unsetOptional()
-	 * @see #isOptional()
-	 * @see #setOptional(boolean)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Optional</em>' attribute is set.
+   * @see #unsetOptional()
+   * @see #isOptional()
+   * @see #setOptional(boolean)
+   * @generated
+   */
 	boolean isSetOptional();
 
 		/**
-	 * Returns the value of the '<em><b>Query Parameter</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Query Parameter</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Query Parameter</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Query Parameter</em>' attribute.
-	 * @see #setQueryParameter(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_QueryParameter()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='query-parameter'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Query Parameter</em>' attribute.
+   * @see #setQueryParameter(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_QueryParameter()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='attribute' name='query-parameter'"
+   * @generated
+   */
   String getQueryParameter();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getQueryParameter <em>Query Parameter</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Query Parameter</em>' attribute.
-	 * @see #getQueryParameter()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getQueryParameter <em>Query Parameter</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Query Parameter</em>' attribute.
+   * @see #getQueryParameter()
+   * @generated
+   */
   void setQueryParameter(String value);
 
   /**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Type</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see #setType(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Type()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Type</em>' attribute.
+   * @see #setType(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getStoredProcedureParameter_Type()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='type'"
+   * @generated
+   */
   String getType();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see #getType()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.StoredProcedureParameter#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Type</em>' attribute.
+   * @see #getType()
+   * @generated
+   */
   void setType(String value);
 
 } // StoredProcedureParameter

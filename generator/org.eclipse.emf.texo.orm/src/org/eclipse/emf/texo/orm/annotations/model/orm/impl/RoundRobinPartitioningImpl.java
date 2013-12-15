@@ -34,260 +34,260 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class RoundRobinPartitioningImpl extends BaseOrmAnnotationImpl implements RoundRobinPartitioning {
 	/**
-	 * The cached value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute list.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConnectionPool()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getConnectionPool()
+   * @generated
+   * @ordered
+   */
 	protected EList<String> connectionPool;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #isReplicateWrites() <em>Replicate Writes</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #isReplicateWrites() <em>Replicate Writes</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isReplicateWrites()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #isReplicateWrites()
+   * @generated
+   * @ordered
+   */
 	protected static final boolean REPLICATE_WRITES_EDEFAULT = false;
 
 	/**
-	 * The cached value of the '{@link #isReplicateWrites() <em>Replicate Writes</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #isReplicateWrites() <em>Replicate Writes</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isReplicateWrites()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #isReplicateWrites()
+   * @generated
+   * @ordered
+   */
 	protected boolean replicateWrites = REPLICATE_WRITES_EDEFAULT;
 
 	/**
-	 * This is true if the Replicate Writes attribute has been set.
-	 * <!-- begin-user-doc -->
+   * This is true if the Replicate Writes attribute has been set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
 	protected boolean replicateWritesESet;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected RoundRobinPartitioningImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getRoundRobinPartitioning();
-	}
+    return OrmPackage.eINSTANCE.getRoundRobinPartitioning();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<String> getConnectionPool() {
-		if (connectionPool == null) {
-			connectionPool = new EDataTypeEList<String>(String.class, this, OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL);
-		}
-		return connectionPool;
-	}
+    if (connectionPool == null) {
+      connectionPool = new EDataTypeEList<String>(String.class, this, OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL);
+    }
+    return connectionPool;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getName() {
-		return name;
-	}
+    return name;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ROUND_ROBIN_PARTITIONING__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ROUND_ROBIN_PARTITIONING__NAME, oldName, name));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean isReplicateWrites() {
-		return replicateWrites;
-	}
+    return replicateWrites;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setReplicateWrites(boolean newReplicateWrites) {
-		boolean oldReplicateWrites = replicateWrites;
-		replicateWrites = newReplicateWrites;
-		boolean oldReplicateWritesESet = replicateWritesESet;
-		replicateWritesESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES, oldReplicateWrites, replicateWrites, !oldReplicateWritesESet));
-	}
+    boolean oldReplicateWrites = replicateWrites;
+    replicateWrites = newReplicateWrites;
+    boolean oldReplicateWritesESet = replicateWritesESet;
+    replicateWritesESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES, oldReplicateWrites, replicateWrites, !oldReplicateWritesESet));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void unsetReplicateWrites() {
-		boolean oldReplicateWrites = replicateWrites;
-		boolean oldReplicateWritesESet = replicateWritesESet;
-		replicateWrites = REPLICATE_WRITES_EDEFAULT;
-		replicateWritesESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES, oldReplicateWrites, REPLICATE_WRITES_EDEFAULT, oldReplicateWritesESet));
-	}
+    boolean oldReplicateWrites = replicateWrites;
+    boolean oldReplicateWritesESet = replicateWritesESet;
+    replicateWrites = REPLICATE_WRITES_EDEFAULT;
+    replicateWritesESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES, oldReplicateWrites, REPLICATE_WRITES_EDEFAULT, oldReplicateWritesESet));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean isSetReplicateWrites() {
-		return replicateWritesESet;
-	}
+    return replicateWritesESet;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
-				return getConnectionPool();
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
-				return getName();
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
-				return isReplicateWrites();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
+        return getConnectionPool();
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
+        return getName();
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
+        return isReplicateWrites();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
-				getConnectionPool().clear();
-				getConnectionPool().addAll((Collection<? extends String>)newValue);
-				return;
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
-				setName((String)newValue);
-				return;
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
-				setReplicateWrites((Boolean)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
+        getConnectionPool().clear();
+        getConnectionPool().addAll((Collection<? extends String>)newValue);
+        return;
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
+        setName((String)newValue);
+        return;
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
+        setReplicateWrites((Boolean)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
-				getConnectionPool().clear();
-				return;
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
-				unsetReplicateWrites();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
+        getConnectionPool().clear();
+        return;
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
+        unsetReplicateWrites();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
-				return connectionPool != null && !connectionPool.isEmpty();
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
-				return isSetReplicateWrites();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__CONNECTION_POOL:
+        return connectionPool != null && !connectionPool.isEmpty();
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case OrmPackage.ROUND_ROBIN_PARTITIONING__REPLICATE_WRITES:
+        return isSetReplicateWrites();
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (connectionPool: ");
-		result.append(connectionPool);
-		result.append(", name: ");
-		result.append(name);
-		result.append(", replicateWrites: ");
-		if (replicateWritesESet) result.append(replicateWrites); else result.append("<unset>");
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (connectionPool: "); //$NON-NLS-1$
+    result.append(connectionPool);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(", replicateWrites: "); //$NON-NLS-1$
+    if (replicateWritesESet) result.append(replicateWrites); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(')');
+    return result.toString();
+  }
 
 } //RoundRobinPartitioningImpl

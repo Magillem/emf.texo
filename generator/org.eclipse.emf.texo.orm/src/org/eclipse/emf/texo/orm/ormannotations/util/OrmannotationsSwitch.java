@@ -18,6 +18,7 @@ import org.eclipse.emf.texo.annotations.annotationsmodel.ENamedElementAnnotation
 import org.eclipse.emf.texo.annotations.annotationsmodel.EPackageAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EReferenceAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EStructuralFeatureAnnotation;
+import org.eclipse.emf.texo.orm.ormannotations.*;
 import org.eclipse.emf.texo.orm.ormannotations.EAttributeORMAnnotation;
 import org.eclipse.emf.texo.orm.ormannotations.EClassORMAnnotation;
 import org.eclipse.emf.texo.orm.ormannotations.EClassifierORMAnnotation;
@@ -41,35 +42,35 @@ import org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage;
  */
 public class OrmannotationsSwitch<T> extends Switch<T> {
   /**
-	 * The cached model package
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * The cached model package
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected static OrmannotationsPackage modelPackage;
 
   /**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Creates an instance of the switch.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public OrmannotationsSwitch() {
-		if (modelPackage == null) {
-			modelPackage = OrmannotationsPackage.eINSTANCE;
-		}
-	}
+    if (modelPackage == null) {
+      modelPackage = OrmannotationsPackage.eINSTANCE;
+    }
+  }
 
   /**
-	 * Checks whether this is a switch for the given package.
-	 * <!-- begin-user-doc -->
+   * Checks whether this is a switch for the given package.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
-	 * @return whether this is a switch for the given package.
-	 * @generated
-	 */
+   * @parameter ePackage the package in question.
+   * @return whether this is a switch for the given package.
+   * @generated
+   */
   @Override
   protected boolean isSwitchFor(EPackage ePackage) {
-		return ePackage == modelPackage;
-	}
+    return ePackage == modelPackage;
+  }
 
   /**
    * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
@@ -320,8 +321,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEPackageORMAnnotation(EPackageORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EType Element ORM Annotation</em>'. <!--
@@ -335,8 +336,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseETypeElementORMAnnotation(ETypeElementORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EClassifier ORM Annotation</em>'. <!--
@@ -350,8 +351,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEClassifierORMAnnotation(EClassifierORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EClass ORM Annotation</em>'. <!--
@@ -365,21 +366,21 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEClassORMAnnotation(EClassORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Returns the result of interpreting the object as an instance of '<em>EData Type ORM Annotation Definition</em>'.
-	 * <!-- begin-user-doc --> This implementation returns null; returning a non-null result will terminate the switch.
+   * Returns the result of interpreting the object as an instance of '<em>EData Type ORM Annotation Definition</em>'.
+   * <!-- begin-user-doc --> This implementation returns null; returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EData Type ORM Annotation Definition</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EData Type ORM Annotation Definition</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
   public T caseEDataTypeORMAnnotationDefinition(EDataTypeORMAnnotationDefinition object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EStructural Feature ORM Annotation</em>'. <!--
@@ -393,8 +394,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEStructuralFeatureORMAnnotation(EStructuralFeatureORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EAttribute ORM Annotation</em>'. <!--
@@ -408,8 +409,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEAttributeORMAnnotation(EAttributeORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EReference ORM Annotation</em>'. <!--
@@ -423,8 +424,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEReferenceORMAnnotation(EReferenceORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EEnum ORM Annotation</em>'. <!--
@@ -438,8 +439,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEEnumORMAnnotation(EEnumORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EData Type ORM Annotation</em>'. <!--
@@ -453,8 +454,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEDataTypeORMAnnotation(EDataTypeORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>ENamed Element ORM Annotation</em>'. <!--
@@ -468,8 +469,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseENamedElementORMAnnotation(ENamedElementORMAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>ENamed Element Annotation</em>'. <!--
@@ -483,21 +484,21 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseENamedElementAnnotation(ENamedElementAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Returns the result of interpreting the object as an instance of '<em>EPackage Annotation</em>'.
-	 * <!-- begin-user-doc
+   * Returns the result of interpreting the object as an instance of '<em>EPackage Annotation</em>'.
+   * <!-- begin-user-doc
    * --> This implementation returns null; returning a non-null result will terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EPackage Annotation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EPackage Annotation</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
   public T caseEPackageAnnotation(EPackageAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EClassifier Annotation</em>'. <!--
@@ -511,21 +512,21 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEClassifierAnnotation(EClassifierAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Returns the result of interpreting the object as an instance of '<em>EClass Annotation</em>'.
-	 * <!-- begin-user-doc
+   * Returns the result of interpreting the object as an instance of '<em>EClass Annotation</em>'.
+   * <!-- begin-user-doc
    * --> This implementation returns null; returning a non-null result will terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EClass Annotation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EClass Annotation</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
   public T caseEClassAnnotation(EClassAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EData Type Annotation</em>'. <!--
@@ -539,8 +540,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEDataTypeAnnotation(EDataTypeAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EStructural Feature Annotation</em>'. <!--
@@ -554,8 +555,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEStructuralFeatureAnnotation(EStructuralFeatureAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EAttribute Annotation</em>'. <!--
@@ -569,8 +570,8 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEAttributeAnnotation(EAttributeAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
    * Returns the result of interpreting the object as an instance of '<em>EReference Annotation</em>'. <!--
@@ -584,35 +585,35 @@ public class OrmannotationsSwitch<T> extends Switch<T> {
    * @generated
    */
   public T caseEReferenceAnnotation(EReferenceAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Returns the result of interpreting the object as an instance of '<em>EEnum Annotation</em>'.
-	 * <!-- begin-user-doc
+   * Returns the result of interpreting the object as an instance of '<em>EEnum Annotation</em>'.
+   * <!-- begin-user-doc
    * --> This implementation returns null; returning a non-null result will terminate the switch. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EEnum Annotation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EEnum Annotation</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
   public T caseEEnumAnnotation(EEnumAnnotation object) {
-		return null;
-	}
+    return null;
+  }
 
   /**
-	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-	 * <!-- begin-user-doc --> This
+   * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
+   * <!-- begin-user-doc --> This
    * implementation returns null; returning a non-null result will terminate the switch, but this is the last case
    * anyway. <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
-	 * @generated
-	 */
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject)
+   * @generated
+   */
   @Override
   public T defaultCase(EObject object) {
-		return null;
-	}
+    return null;
+  }
 
 } // OrmannotationsSwitch

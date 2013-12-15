@@ -30,243 +30,243 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class RangePartitionImpl extends BaseOrmAnnotationImpl implements RangePartition {
 	/**
-	 * The default value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConnectionPool()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getConnectionPool()
+   * @generated
+   * @ordered
+   */
 	protected static final String CONNECTION_POOL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConnectionPool()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getConnectionPool()
+   * @generated
+   * @ordered
+   */
 	protected String connectionPool = CONNECTION_POOL_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEndValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getEndValue()
+   * @generated
+   * @ordered
+   */
 	protected static final String END_VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEndValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getEndValue()
+   * @generated
+   * @ordered
+   */
 	protected String endValue = END_VALUE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStartValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getStartValue()
+   * @generated
+   * @ordered
+   */
 	protected static final String START_VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStartValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getStartValue()
+   * @generated
+   * @ordered
+   */
 	protected String startValue = START_VALUE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected RangePartitionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getRangePartition();
-	}
+    return OrmPackage.eINSTANCE.getRangePartition();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getConnectionPool() {
-		return connectionPool;
-	}
+    return connectionPool;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setConnectionPool(String newConnectionPool) {
-		String oldConnectionPool = connectionPool;
-		connectionPool = newConnectionPool;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RANGE_PARTITION__CONNECTION_POOL, oldConnectionPool, connectionPool));
-	}
+    String oldConnectionPool = connectionPool;
+    connectionPool = newConnectionPool;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RANGE_PARTITION__CONNECTION_POOL, oldConnectionPool, connectionPool));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getEndValue() {
-		return endValue;
-	}
+    return endValue;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setEndValue(String newEndValue) {
-		String oldEndValue = endValue;
-		endValue = newEndValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RANGE_PARTITION__END_VALUE, oldEndValue, endValue));
-	}
+    String oldEndValue = endValue;
+    endValue = newEndValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RANGE_PARTITION__END_VALUE, oldEndValue, endValue));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getStartValue() {
-		return startValue;
-	}
+    return startValue;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setStartValue(String newStartValue) {
-		String oldStartValue = startValue;
-		startValue = newStartValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RANGE_PARTITION__START_VALUE, oldStartValue, startValue));
-	}
+    String oldStartValue = startValue;
+    startValue = newStartValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RANGE_PARTITION__START_VALUE, oldStartValue, startValue));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
-				return getConnectionPool();
-			case OrmPackage.RANGE_PARTITION__END_VALUE:
-				return getEndValue();
-			case OrmPackage.RANGE_PARTITION__START_VALUE:
-				return getStartValue();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
+        return getConnectionPool();
+      case OrmPackage.RANGE_PARTITION__END_VALUE:
+        return getEndValue();
+      case OrmPackage.RANGE_PARTITION__START_VALUE:
+        return getStartValue();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
-				setConnectionPool((String)newValue);
-				return;
-			case OrmPackage.RANGE_PARTITION__END_VALUE:
-				setEndValue((String)newValue);
-				return;
-			case OrmPackage.RANGE_PARTITION__START_VALUE:
-				setStartValue((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
+        setConnectionPool((String)newValue);
+        return;
+      case OrmPackage.RANGE_PARTITION__END_VALUE:
+        setEndValue((String)newValue);
+        return;
+      case OrmPackage.RANGE_PARTITION__START_VALUE:
+        setStartValue((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
-				setConnectionPool(CONNECTION_POOL_EDEFAULT);
-				return;
-			case OrmPackage.RANGE_PARTITION__END_VALUE:
-				setEndValue(END_VALUE_EDEFAULT);
-				return;
-			case OrmPackage.RANGE_PARTITION__START_VALUE:
-				setStartValue(START_VALUE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
+        setConnectionPool(CONNECTION_POOL_EDEFAULT);
+        return;
+      case OrmPackage.RANGE_PARTITION__END_VALUE:
+        setEndValue(END_VALUE_EDEFAULT);
+        return;
+      case OrmPackage.RANGE_PARTITION__START_VALUE:
+        setStartValue(START_VALUE_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
-				return CONNECTION_POOL_EDEFAULT == null ? connectionPool != null : !CONNECTION_POOL_EDEFAULT.equals(connectionPool);
-			case OrmPackage.RANGE_PARTITION__END_VALUE:
-				return END_VALUE_EDEFAULT == null ? endValue != null : !END_VALUE_EDEFAULT.equals(endValue);
-			case OrmPackage.RANGE_PARTITION__START_VALUE:
-				return START_VALUE_EDEFAULT == null ? startValue != null : !START_VALUE_EDEFAULT.equals(startValue);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.RANGE_PARTITION__CONNECTION_POOL:
+        return CONNECTION_POOL_EDEFAULT == null ? connectionPool != null : !CONNECTION_POOL_EDEFAULT.equals(connectionPool);
+      case OrmPackage.RANGE_PARTITION__END_VALUE:
+        return END_VALUE_EDEFAULT == null ? endValue != null : !END_VALUE_EDEFAULT.equals(endValue);
+      case OrmPackage.RANGE_PARTITION__START_VALUE:
+        return START_VALUE_EDEFAULT == null ? startValue != null : !START_VALUE_EDEFAULT.equals(startValue);
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (connectionPool: ");
-		result.append(connectionPool);
-		result.append(", endValue: ");
-		result.append(endValue);
-		result.append(", startValue: ");
-		result.append(startValue);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (connectionPool: "); //$NON-NLS-1$
+    result.append(connectionPool);
+    result.append(", endValue: "); //$NON-NLS-1$
+    result.append(endValue);
+    result.append(", startValue: "); //$NON-NLS-1$
+    result.append(startValue);
+    result.append(')');
+    return result.toString();
+  }
 
 } //RangePartitionImpl

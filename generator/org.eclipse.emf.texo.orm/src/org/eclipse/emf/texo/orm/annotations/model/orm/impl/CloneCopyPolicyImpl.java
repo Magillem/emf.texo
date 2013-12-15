@@ -29,13 +29,13 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class CloneCopyPolicyImpl extends BaseOrmAnnotationImpl implements CloneCopyPolicy {
   /**
-	 * The default value of the '{@link #getMethod() <em>Method</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getMethod() <em>Method</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getMethod()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getMethod()
+   * @generated
+   * @ordered
+   */
   protected static final String METHOD_EDEFAULT = null;
 
   /**
@@ -69,139 +69,139 @@ public class CloneCopyPolicyImpl extends BaseOrmAnnotationImpl implements CloneC
   protected String workingCopyMethod = WORKING_COPY_METHOD_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected CloneCopyPolicyImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getCloneCopyPolicy();
-	}
+    return OrmPackage.eINSTANCE.getCloneCopyPolicy();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getMethod() {
-		return method;
-	}
+    return method;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setMethod(String newMethod) {
-		String oldMethod = method;
-		method = newMethod;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CLONE_COPY_POLICY__METHOD, oldMethod, method));
-	}
+    String oldMethod = method;
+    method = newMethod;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CLONE_COPY_POLICY__METHOD, oldMethod, method));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getWorkingCopyMethod() {
-		return workingCopyMethod;
-	}
+    return workingCopyMethod;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setWorkingCopyMethod(String newWorkingCopyMethod) {
-		String oldWorkingCopyMethod = workingCopyMethod;
-		workingCopyMethod = newWorkingCopyMethod;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD, oldWorkingCopyMethod, workingCopyMethod));
-	}
+    String oldWorkingCopyMethod = workingCopyMethod;
+    workingCopyMethod = newWorkingCopyMethod;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD, oldWorkingCopyMethod, workingCopyMethod));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.CLONE_COPY_POLICY__METHOD:
-				return getMethod();
-			case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
-				return getWorkingCopyMethod();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.CLONE_COPY_POLICY__METHOD:
+        return getMethod();
+      case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
+        return getWorkingCopyMethod();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.CLONE_COPY_POLICY__METHOD:
-				setMethod((String)newValue);
-				return;
-			case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
-				setWorkingCopyMethod((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.CLONE_COPY_POLICY__METHOD:
+        setMethod((String)newValue);
+        return;
+      case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
+        setWorkingCopyMethod((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.CLONE_COPY_POLICY__METHOD:
-				setMethod(METHOD_EDEFAULT);
-				return;
-			case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
-				setWorkingCopyMethod(WORKING_COPY_METHOD_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.CLONE_COPY_POLICY__METHOD:
+        setMethod(METHOD_EDEFAULT);
+        return;
+      case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
+        setWorkingCopyMethod(WORKING_COPY_METHOD_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.CLONE_COPY_POLICY__METHOD:
-				return METHOD_EDEFAULT == null ? method != null : !METHOD_EDEFAULT.equals(method);
-			case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
-				return WORKING_COPY_METHOD_EDEFAULT == null ? workingCopyMethod != null : !WORKING_COPY_METHOD_EDEFAULT.equals(workingCopyMethod);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.CLONE_COPY_POLICY__METHOD:
+        return METHOD_EDEFAULT == null ? method != null : !METHOD_EDEFAULT.equals(method);
+      case OrmPackage.CLONE_COPY_POLICY__WORKING_COPY_METHOD:
+        return WORKING_COPY_METHOD_EDEFAULT == null ? workingCopyMethod != null : !WORKING_COPY_METHOD_EDEFAULT.equals(workingCopyMethod);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (method: ");
-		result.append(method);
-		result.append(", workingCopyMethod: ");
-		result.append(workingCopyMethod);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (method: "); //$NON-NLS-1$
+    result.append(method);
+    result.append(", workingCopyMethod: "); //$NON-NLS-1$
+    result.append(workingCopyMethod);
+    result.append(')');
+    return result.toString();
+  }
 
 } // CloneCopyPolicyImpl

@@ -42,379 +42,379 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class NamedPlsqlStoredProcedureQueryImpl extends BaseOrmAnnotationImpl implements NamedPlsqlStoredProcedureQuery {
 	/**
-	 * The cached value of the '{@link #getHint() <em>Hint</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getHint() <em>Hint</em>}' containment reference list.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHint()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getHint()
+   * @generated
+   * @ordered
+   */
 	protected EList<QueryHint> hint;
 
 	/**
-	 * The cached value of the '{@link #getParameter() <em>Parameter</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getParameter() <em>Parameter</em>}' containment reference list.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getParameter()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getParameter()
+   * @generated
+   * @ordered
+   */
 	protected EList<PlsqlParameter> parameter;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getProcedureName() <em>Procedure Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getProcedureName() <em>Procedure Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getProcedureName()
+   * @generated
+   * @ordered
+   */
 	protected static final String PROCEDURE_NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getProcedureName() <em>Procedure Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getProcedureName() <em>Procedure Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getProcedureName()
+   * @generated
+   * @ordered
+   */
 	protected String procedureName = PROCEDURE_NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultClass()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResultClass()
+   * @generated
+   * @ordered
+   */
 	protected static final String RESULT_CLASS_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultClass()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResultClass()
+   * @generated
+   * @ordered
+   */
 	protected String resultClass = RESULT_CLASS_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getResultSetMapping() <em>Result Set Mapping</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getResultSetMapping() <em>Result Set Mapping</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultSetMapping()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResultSetMapping()
+   * @generated
+   * @ordered
+   */
 	protected static final String RESULT_SET_MAPPING_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getResultSetMapping() <em>Result Set Mapping</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getResultSetMapping() <em>Result Set Mapping</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultSetMapping()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResultSetMapping()
+   * @generated
+   * @ordered
+   */
 	protected String resultSetMapping = RESULT_SET_MAPPING_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected NamedPlsqlStoredProcedureQueryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getNamedPlsqlStoredProcedureQuery();
-	}
+    return OrmPackage.eINSTANCE.getNamedPlsqlStoredProcedureQuery();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<QueryHint> getHint() {
-		if (hint == null) {
-			hint = new EObjectContainmentEList<QueryHint>(QueryHint.class, this, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT);
-		}
-		return hint;
-	}
+    if (hint == null) {
+      hint = new EObjectContainmentEList<QueryHint>(QueryHint.class, this, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT);
+    }
+    return hint;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<PlsqlParameter> getParameter() {
-		if (parameter == null) {
-			parameter = new EObjectContainmentEList<PlsqlParameter>(PlsqlParameter.class, this, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER);
-		}
-		return parameter;
-	}
+    if (parameter == null) {
+      parameter = new EObjectContainmentEList<PlsqlParameter>(PlsqlParameter.class, this, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER);
+    }
+    return parameter;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getName() {
-		return name;
-	}
+    return name;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME, oldName, name));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getProcedureName() {
-		return procedureName;
-	}
+    return procedureName;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setProcedureName(String newProcedureName) {
-		String oldProcedureName = procedureName;
-		procedureName = newProcedureName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME, oldProcedureName, procedureName));
-	}
+    String oldProcedureName = procedureName;
+    procedureName = newProcedureName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME, oldProcedureName, procedureName));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getResultClass() {
-		return resultClass;
-	}
+    return resultClass;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setResultClass(String newResultClass) {
-		String oldResultClass = resultClass;
-		resultClass = newResultClass;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS, oldResultClass, resultClass));
-	}
+    String oldResultClass = resultClass;
+    resultClass = newResultClass;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS, oldResultClass, resultClass));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getResultSetMapping() {
-		return resultSetMapping;
-	}
+    return resultSetMapping;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setResultSetMapping(String newResultSetMapping) {
-		String oldResultSetMapping = resultSetMapping;
-		resultSetMapping = newResultSetMapping;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING, oldResultSetMapping, resultSetMapping));
-	}
+    String oldResultSetMapping = resultSetMapping;
+    resultSetMapping = newResultSetMapping;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING, oldResultSetMapping, resultSetMapping));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
-				return ((InternalEList<?>)getHint()).basicRemove(otherEnd, msgs);
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
-				return ((InternalEList<?>)getParameter()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
+        return ((InternalEList<?>)getHint()).basicRemove(otherEnd, msgs);
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
+        return ((InternalEList<?>)getParameter()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
-				return getHint();
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
-				return getParameter();
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
-				return getName();
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
-				return getProcedureName();
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
-				return getResultClass();
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
-				return getResultSetMapping();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
+        return getHint();
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
+        return getParameter();
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
+        return getName();
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
+        return getProcedureName();
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
+        return getResultClass();
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
+        return getResultSetMapping();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
-				getHint().clear();
-				getHint().addAll((Collection<? extends QueryHint>)newValue);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
-				getParameter().clear();
-				getParameter().addAll((Collection<? extends PlsqlParameter>)newValue);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
-				setName((String)newValue);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
-				setProcedureName((String)newValue);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
-				setResultClass((String)newValue);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
-				setResultSetMapping((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
+        getHint().clear();
+        getHint().addAll((Collection<? extends QueryHint>)newValue);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
+        getParameter().clear();
+        getParameter().addAll((Collection<? extends PlsqlParameter>)newValue);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
+        setName((String)newValue);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
+        setProcedureName((String)newValue);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
+        setResultClass((String)newValue);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
+        setResultSetMapping((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
-				getHint().clear();
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
-				getParameter().clear();
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
-				setProcedureName(PROCEDURE_NAME_EDEFAULT);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
-				setResultClass(RESULT_CLASS_EDEFAULT);
-				return;
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
-				setResultSetMapping(RESULT_SET_MAPPING_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
+        getHint().clear();
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
+        getParameter().clear();
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
+        setProcedureName(PROCEDURE_NAME_EDEFAULT);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
+        setResultClass(RESULT_CLASS_EDEFAULT);
+        return;
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
+        setResultSetMapping(RESULT_SET_MAPPING_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
-				return hint != null && !hint.isEmpty();
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
-				return parameter != null && !parameter.isEmpty();
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
-				return PROCEDURE_NAME_EDEFAULT == null ? procedureName != null : !PROCEDURE_NAME_EDEFAULT.equals(procedureName);
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
-				return RESULT_CLASS_EDEFAULT == null ? resultClass != null : !RESULT_CLASS_EDEFAULT.equals(resultClass);
-			case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
-				return RESULT_SET_MAPPING_EDEFAULT == null ? resultSetMapping != null : !RESULT_SET_MAPPING_EDEFAULT.equals(resultSetMapping);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__HINT:
+        return hint != null && !hint.isEmpty();
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PARAMETER:
+        return parameter != null && !parameter.isEmpty();
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__PROCEDURE_NAME:
+        return PROCEDURE_NAME_EDEFAULT == null ? procedureName != null : !PROCEDURE_NAME_EDEFAULT.equals(procedureName);
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_CLASS:
+        return RESULT_CLASS_EDEFAULT == null ? resultClass != null : !RESULT_CLASS_EDEFAULT.equals(resultClass);
+      case OrmPackage.NAMED_PLSQL_STORED_PROCEDURE_QUERY__RESULT_SET_MAPPING:
+        return RESULT_SET_MAPPING_EDEFAULT == null ? resultSetMapping != null : !RESULT_SET_MAPPING_EDEFAULT.equals(resultSetMapping);
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", procedureName: ");
-		result.append(procedureName);
-		result.append(", resultClass: ");
-		result.append(resultClass);
-		result.append(", resultSetMapping: ");
-		result.append(resultSetMapping);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(", procedureName: "); //$NON-NLS-1$
+    result.append(procedureName);
+    result.append(", resultClass: "); //$NON-NLS-1$
+    result.append(resultClass);
+    result.append(", resultSetMapping: "); //$NON-NLS-1$
+    result.append(resultSetMapping);
+    result.append(')');
+    return result.toString();
+  }
 
 } //NamedPlsqlStoredProcedureQueryImpl

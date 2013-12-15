@@ -21,20 +21,20 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class InstantiationCopyPolicyImpl extends BaseOrmAnnotationImpl implements InstantiationCopyPolicy {
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected InstantiationCopyPolicyImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getInstantiationCopyPolicy();
-	}
+    return OrmPackage.eINSTANCE.getInstantiationCopyPolicy();
+  }
 
 } // InstantiationCopyPolicyImpl

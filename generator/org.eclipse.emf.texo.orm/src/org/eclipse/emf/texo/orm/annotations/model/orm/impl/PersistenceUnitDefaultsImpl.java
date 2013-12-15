@@ -47,33 +47,33 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class PersistenceUnitDefaultsImpl extends BaseOrmAnnotationImpl implements PersistenceUnitDefaults {
   /**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getSchema() <em>Schema</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getSchema() <em>Schema</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getSchema()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getSchema()
+   * @generated
+   * @ordered
+   */
   protected static final String SCHEMA_EDEFAULT = null;
 
   /**
@@ -87,42 +87,42 @@ public class PersistenceUnitDefaultsImpl extends BaseOrmAnnotationImpl implement
   protected String schema = SCHEMA_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getCatalog()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCatalog()
+   * @generated
+   * @ordered
+   */
   protected static final String CATALOG_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getCatalog()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCatalog()
+   * @generated
+   * @ordered
+   */
   protected String catalog = CATALOG_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getDelimitedIdentifiers() <em>Delimited Identifiers</em>}' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getDelimitedIdentifiers()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getDelimitedIdentifiers() <em>Delimited Identifiers</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getDelimitedIdentifiers()
+   * @generated
+   * @ordered
+   */
   protected EmptyType delimitedIdentifiers;
 
   /**
-	 * The default value of the '{@link #getAccess() <em>Access</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getAccess() <em>Access</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getAccess()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAccess()
+   * @generated
+   * @ordered
+   */
   protected static final AccessType ACCESS_EDEFAULT = AccessType.PROPERTY;
 
   /**
@@ -136,21 +136,21 @@ public class PersistenceUnitDefaultsImpl extends BaseOrmAnnotationImpl implement
   protected AccessType access = ACCESS_EDEFAULT;
 
   /**
-	 * This is true if the Access attribute has been set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * This is true if the Access attribute has been set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
   protected boolean accessESet;
 
   /**
-	 * The cached value of the '{@link #getAccessMethods() <em>Access Methods</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAccessMethods() <em>Access Methods</em>}' containment reference.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAccessMethods()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAccessMethods()
+   * @generated
+   * @ordered
+   */
 	protected AccessMethods accessMethods;
 
 		/**
@@ -164,13 +164,13 @@ public class PersistenceUnitDefaultsImpl extends BaseOrmAnnotationImpl implement
   protected EmptyType cascadePersist;
 
   /**
-	 * The cached value of the '{@link #getTenantDiscriminator() <em>Tenant Discriminator</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getTenantDiscriminator() <em>Tenant Discriminator</em>}' containment reference list.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTenantDiscriminator()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getTenantDiscriminator()
+   * @generated
+   * @ordered
+   */
 	protected EList<TenantDiscriminator> tenantDiscriminator;
 
 		/**
@@ -184,472 +184,472 @@ public class PersistenceUnitDefaultsImpl extends BaseOrmAnnotationImpl implement
   protected EntityListeners entityListeners;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected PersistenceUnitDefaultsImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getPersistenceUnitDefaults();
-	}
+    return OrmPackage.eINSTANCE.getPersistenceUnitDefaults();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getDescription() {
-		return description;
-	}
+    return description;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION, oldDescription, description));
-	}
+    String oldDescription = description;
+    description = newDescription;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION, oldDescription, description));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getSchema() {
-		return schema;
-	}
+    return schema;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setSchema(String newSchema) {
-		String oldSchema = schema;
-		schema = newSchema;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA, oldSchema, schema));
-	}
+    String oldSchema = schema;
+    schema = newSchema;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA, oldSchema, schema));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getCatalog() {
-		return catalog;
-	}
+    return catalog;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setCatalog(String newCatalog) {
-		String oldCatalog = catalog;
-		catalog = newCatalog;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG, oldCatalog, catalog));
-	}
+    String oldCatalog = catalog;
+    catalog = newCatalog;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG, oldCatalog, catalog));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EmptyType getDelimitedIdentifiers() {
-		return delimitedIdentifiers;
-	}
+    return delimitedIdentifiers;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetDelimitedIdentifiers(EmptyType newDelimitedIdentifiers, NotificationChain msgs) {
-		EmptyType oldDelimitedIdentifiers = delimitedIdentifiers;
-		delimitedIdentifiers = newDelimitedIdentifiers;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, oldDelimitedIdentifiers, newDelimitedIdentifiers);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    EmptyType oldDelimitedIdentifiers = delimitedIdentifiers;
+    delimitedIdentifiers = newDelimitedIdentifiers;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, oldDelimitedIdentifiers, newDelimitedIdentifiers);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDelimitedIdentifiers(EmptyType newDelimitedIdentifiers) {
-		if (newDelimitedIdentifiers != delimitedIdentifiers) {
-			NotificationChain msgs = null;
-			if (delimitedIdentifiers != null)
-				msgs = ((InternalEObject)delimitedIdentifiers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, null, msgs);
-			if (newDelimitedIdentifiers != null)
-				msgs = ((InternalEObject)newDelimitedIdentifiers).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, null, msgs);
-			msgs = basicSetDelimitedIdentifiers(newDelimitedIdentifiers, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, newDelimitedIdentifiers, newDelimitedIdentifiers));
-	}
+    if (newDelimitedIdentifiers != delimitedIdentifiers) {
+      NotificationChain msgs = null;
+      if (delimitedIdentifiers != null)
+        msgs = ((InternalEObject)delimitedIdentifiers).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, null, msgs);
+      if (newDelimitedIdentifiers != null)
+        msgs = ((InternalEObject)newDelimitedIdentifiers).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, null, msgs);
+      msgs = basicSetDelimitedIdentifiers(newDelimitedIdentifiers, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS, newDelimitedIdentifiers, newDelimitedIdentifiers));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public AccessType getAccess() {
-		return access;
-	}
+    return access;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setAccess(AccessType newAccess) {
-		AccessType oldAccess = access;
-		access = newAccess == null ? ACCESS_EDEFAULT : newAccess;
-		boolean oldAccessESet = accessESet;
-		accessESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS, oldAccess, access, !oldAccessESet));
-	}
+    AccessType oldAccess = access;
+    access = newAccess == null ? ACCESS_EDEFAULT : newAccess;
+    boolean oldAccessESet = accessESet;
+    accessESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS, oldAccess, access, !oldAccessESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void unsetAccess() {
-		AccessType oldAccess = access;
-		boolean oldAccessESet = accessESet;
-		access = ACCESS_EDEFAULT;
-		accessESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS, oldAccess, ACCESS_EDEFAULT, oldAccessESet));
-	}
+    AccessType oldAccess = access;
+    boolean oldAccessESet = accessESet;
+    access = ACCESS_EDEFAULT;
+    accessESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS, oldAccess, ACCESS_EDEFAULT, oldAccessESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public boolean isSetAccess() {
-		return accessESet;
-	}
+    return accessESet;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AccessMethods getAccessMethods() {
-		return accessMethods;
-	}
+    return accessMethods;
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NotificationChain basicSetAccessMethods(AccessMethods newAccessMethods, NotificationChain msgs) {
-		AccessMethods oldAccessMethods = accessMethods;
-		accessMethods = newAccessMethods;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, oldAccessMethods, newAccessMethods);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    AccessMethods oldAccessMethods = accessMethods;
+    accessMethods = newAccessMethods;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, oldAccessMethods, newAccessMethods);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setAccessMethods(AccessMethods newAccessMethods) {
-		if (newAccessMethods != accessMethods) {
-			NotificationChain msgs = null;
-			if (accessMethods != null)
-				msgs = ((InternalEObject)accessMethods).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, null, msgs);
-			if (newAccessMethods != null)
-				msgs = ((InternalEObject)newAccessMethods).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, null, msgs);
-			msgs = basicSetAccessMethods(newAccessMethods, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, newAccessMethods, newAccessMethods));
-	}
+    if (newAccessMethods != accessMethods) {
+      NotificationChain msgs = null;
+      if (accessMethods != null)
+        msgs = ((InternalEObject)accessMethods).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, null, msgs);
+      if (newAccessMethods != null)
+        msgs = ((InternalEObject)newAccessMethods).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, null, msgs);
+      msgs = basicSetAccessMethods(newAccessMethods, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS, newAccessMethods, newAccessMethods));
+  }
 
 		/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EmptyType getCascadePersist() {
-		return cascadePersist;
-	}
+    return cascadePersist;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetCascadePersist(EmptyType newCascadePersist, NotificationChain msgs) {
-		EmptyType oldCascadePersist = cascadePersist;
-		cascadePersist = newCascadePersist;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, oldCascadePersist, newCascadePersist);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    EmptyType oldCascadePersist = cascadePersist;
+    cascadePersist = newCascadePersist;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, oldCascadePersist, newCascadePersist);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setCascadePersist(EmptyType newCascadePersist) {
-		if (newCascadePersist != cascadePersist) {
-			NotificationChain msgs = null;
-			if (cascadePersist != null)
-				msgs = ((InternalEObject)cascadePersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, null, msgs);
-			if (newCascadePersist != null)
-				msgs = ((InternalEObject)newCascadePersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, null, msgs);
-			msgs = basicSetCascadePersist(newCascadePersist, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, newCascadePersist, newCascadePersist));
-	}
+    if (newCascadePersist != cascadePersist) {
+      NotificationChain msgs = null;
+      if (cascadePersist != null)
+        msgs = ((InternalEObject)cascadePersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, null, msgs);
+      if (newCascadePersist != null)
+        msgs = ((InternalEObject)newCascadePersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, null, msgs);
+      msgs = basicSetCascadePersist(newCascadePersist, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST, newCascadePersist, newCascadePersist));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<TenantDiscriminator> getTenantDiscriminator() {
-		if (tenantDiscriminator == null) {
-			tenantDiscriminator = new EObjectContainmentEList<TenantDiscriminator>(TenantDiscriminator.class, this, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR);
-		}
-		return tenantDiscriminator;
-	}
+    if (tenantDiscriminator == null) {
+      tenantDiscriminator = new EObjectContainmentEList<TenantDiscriminator>(TenantDiscriminator.class, this, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR);
+    }
+    return tenantDiscriminator;
+  }
 
 		/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EntityListeners getEntityListeners() {
-		return entityListeners;
-	}
+    return entityListeners;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetEntityListeners(EntityListeners newEntityListeners, NotificationChain msgs) {
-		EntityListeners oldEntityListeners = entityListeners;
-		entityListeners = newEntityListeners;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, oldEntityListeners, newEntityListeners);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    EntityListeners oldEntityListeners = entityListeners;
+    entityListeners = newEntityListeners;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, oldEntityListeners, newEntityListeners);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setEntityListeners(EntityListeners newEntityListeners) {
-		if (newEntityListeners != entityListeners) {
-			NotificationChain msgs = null;
-			if (entityListeners != null)
-				msgs = ((InternalEObject)entityListeners).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, null, msgs);
-			if (newEntityListeners != null)
-				msgs = ((InternalEObject)newEntityListeners).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, null, msgs);
-			msgs = basicSetEntityListeners(newEntityListeners, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, newEntityListeners, newEntityListeners));
-	}
+    if (newEntityListeners != entityListeners) {
+      NotificationChain msgs = null;
+      if (entityListeners != null)
+        msgs = ((InternalEObject)entityListeners).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, null, msgs);
+      if (newEntityListeners != null)
+        msgs = ((InternalEObject)newEntityListeners).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, null, msgs);
+      msgs = basicSetEntityListeners(newEntityListeners, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS, newEntityListeners, newEntityListeners));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
-				return basicSetDelimitedIdentifiers(null, msgs);
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
-				return basicSetAccessMethods(null, msgs);
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
-				return basicSetCascadePersist(null, msgs);
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
-				return ((InternalEList<?>)getTenantDiscriminator()).basicRemove(otherEnd, msgs);
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
-				return basicSetEntityListeners(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
+        return basicSetDelimitedIdentifiers(null, msgs);
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
+        return basicSetAccessMethods(null, msgs);
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
+        return basicSetCascadePersist(null, msgs);
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
+        return ((InternalEList<?>)getTenantDiscriminator()).basicRemove(otherEnd, msgs);
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
+        return basicSetEntityListeners(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
-				return getDescription();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
-				return getSchema();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
-				return getCatalog();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
-				return getDelimitedIdentifiers();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
-				return getAccess();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
-				return getAccessMethods();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
-				return getCascadePersist();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
-				return getTenantDiscriminator();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
-				return getEntityListeners();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
+        return getDescription();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
+        return getSchema();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
+        return getCatalog();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
+        return getDelimitedIdentifiers();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
+        return getAccess();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
+        return getAccessMethods();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
+        return getCascadePersist();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
+        return getTenantDiscriminator();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
+        return getEntityListeners();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
 		@Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
-				setSchema((String)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
-				setCatalog((String)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
-				setDelimitedIdentifiers((EmptyType)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
-				setAccess((AccessType)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
-				setAccessMethods((AccessMethods)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
-				setCascadePersist((EmptyType)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
-				getTenantDiscriminator().clear();
-				getTenantDiscriminator().addAll((Collection<? extends TenantDiscriminator>)newValue);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
-				setEntityListeners((EntityListeners)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
+        setDescription((String)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
+        setSchema((String)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
+        setCatalog((String)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
+        setDelimitedIdentifiers((EmptyType)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
+        setAccess((AccessType)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
+        setAccessMethods((AccessMethods)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
+        setCascadePersist((EmptyType)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
+        getTenantDiscriminator().clear();
+        getTenantDiscriminator().addAll((Collection<? extends TenantDiscriminator>)newValue);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
+        setEntityListeners((EntityListeners)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
-				setSchema(SCHEMA_EDEFAULT);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
-				setCatalog(CATALOG_EDEFAULT);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
-				setDelimitedIdentifiers((EmptyType)null);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
-				unsetAccess();
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
-				setAccessMethods((AccessMethods)null);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
-				setCascadePersist((EmptyType)null);
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
-				getTenantDiscriminator().clear();
-				return;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
-				setEntityListeners((EntityListeners)null);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
+        setDescription(DESCRIPTION_EDEFAULT);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
+        setSchema(SCHEMA_EDEFAULT);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
+        setCatalog(CATALOG_EDEFAULT);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
+        setDelimitedIdentifiers((EmptyType)null);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
+        unsetAccess();
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
+        setAccessMethods((AccessMethods)null);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
+        setCascadePersist((EmptyType)null);
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
+        getTenantDiscriminator().clear();
+        return;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
+        setEntityListeners((EntityListeners)null);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
-				return SCHEMA_EDEFAULT == null ? schema != null : !SCHEMA_EDEFAULT.equals(schema);
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
-				return CATALOG_EDEFAULT == null ? catalog != null : !CATALOG_EDEFAULT.equals(catalog);
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
-				return delimitedIdentifiers != null;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
-				return isSetAccess();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
-				return accessMethods != null;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
-				return cascadePersist != null;
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
-				return tenantDiscriminator != null && !tenantDiscriminator.isEmpty();
-			case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
-				return entityListeners != null;
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__SCHEMA:
+        return SCHEMA_EDEFAULT == null ? schema != null : !SCHEMA_EDEFAULT.equals(schema);
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CATALOG:
+        return CATALOG_EDEFAULT == null ? catalog != null : !CATALOG_EDEFAULT.equals(catalog);
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__DELIMITED_IDENTIFIERS:
+        return delimitedIdentifiers != null;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS:
+        return isSetAccess();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ACCESS_METHODS:
+        return accessMethods != null;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__CASCADE_PERSIST:
+        return cascadePersist != null;
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__TENANT_DISCRIMINATOR:
+        return tenantDiscriminator != null && !tenantDiscriminator.isEmpty();
+      case OrmPackage.PERSISTENCE_UNIT_DEFAULTS__ENTITY_LISTENERS:
+        return entityListeners != null;
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", schema: ");
-		result.append(schema);
-		result.append(", catalog: ");
-		result.append(catalog);
-		result.append(", access: ");
-		if (accessESet) result.append(access); else result.append("<unset>");
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (description: "); //$NON-NLS-1$
+    result.append(description);
+    result.append(", schema: "); //$NON-NLS-1$
+    result.append(schema);
+    result.append(", catalog: "); //$NON-NLS-1$
+    result.append(catalog);
+    result.append(", access: "); //$NON-NLS-1$
+    if (accessESet) result.append(access); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(')');
+    return result.toString();
+  }
 
 } // PersistenceUnitDefaultsImpl

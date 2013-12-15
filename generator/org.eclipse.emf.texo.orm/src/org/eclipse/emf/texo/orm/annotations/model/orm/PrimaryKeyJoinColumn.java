@@ -41,80 +41,80 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface PrimaryKeyJoinColumn extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Column Definition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Column Definition</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Column Definition</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Column Definition</em>' attribute.
-	 * @see #setColumnDefinition(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKeyJoinColumn_ColumnDefinition()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='column-definition'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Column Definition</em>' attribute.
+   * @see #setColumnDefinition(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKeyJoinColumn_ColumnDefinition()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='column-definition'"
+   * @generated
+   */
   String getColumnDefinition();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKeyJoinColumn#getColumnDefinition <em>Column Definition</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Column Definition</em>' attribute.
-	 * @see #getColumnDefinition()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKeyJoinColumn#getColumnDefinition <em>Column Definition</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Column Definition</em>' attribute.
+   * @see #getColumnDefinition()
+   * @generated
+   */
   void setColumnDefinition(String value);
 
   /**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKeyJoinColumn_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKeyJoinColumn_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
   String getName();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKeyJoinColumn#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKeyJoinColumn#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
   void setName(String value);
 
   /**
-	 * Returns the value of the '<em><b>Referenced Column Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Referenced Column Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Referenced Column Name</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Referenced Column Name</em>' attribute.
-	 * @see #setReferencedColumnName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKeyJoinColumn_ReferencedColumnName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='referenced-column-name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Referenced Column Name</em>' attribute.
+   * @see #setReferencedColumnName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKeyJoinColumn_ReferencedColumnName()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='referenced-column-name'"
+   * @generated
+   */
   String getReferencedColumnName();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKeyJoinColumn#getReferencedColumnName <em>Referenced Column Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Referenced Column Name</em>' attribute.
-	 * @see #getReferencedColumnName()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKeyJoinColumn#getReferencedColumnName <em>Referenced Column Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Referenced Column Name</em>' attribute.
+   * @see #getReferencedColumnName()
+   * @generated
+   */
   void setReferencedColumnName(String value);
 
 } // PrimaryKeyJoinColumn

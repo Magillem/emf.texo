@@ -43,23 +43,23 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class NamedNativeQueryImpl extends BaseOrmAnnotationImpl implements NamedNativeQuery {
   /**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
@@ -83,13 +83,13 @@ public class NamedNativeQueryImpl extends BaseOrmAnnotationImpl implements Named
   protected String query = QUERY_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getHint() <em>Hint</em>}' containment reference list.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getHint() <em>Hint</em>}' containment reference list.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getHint()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getHint()
+   * @generated
+   * @ordered
+   */
   protected EList<QueryHint> hint;
 
   /**
@@ -103,32 +103,32 @@ public class NamedNativeQueryImpl extends BaseOrmAnnotationImpl implements Named
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getResultClass()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResultClass()
+   * @generated
+   * @ordered
+   */
   protected static final String RESULT_CLASS_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getResultClass() <em>Result Class</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getResultClass()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResultClass()
+   * @generated
+   * @ordered
+   */
   protected String resultClass = RESULT_CLASS_EDEFAULT;
 
   /**
@@ -142,278 +142,278 @@ public class NamedNativeQueryImpl extends BaseOrmAnnotationImpl implements Named
   protected static final String RESULT_SET_MAPPING_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getResultSetMapping() <em>Result Set Mapping</em>}' attribute.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getResultSetMapping() <em>Result Set Mapping</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getResultSetMapping()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getResultSetMapping()
+   * @generated
+   * @ordered
+   */
   protected String resultSetMapping = RESULT_SET_MAPPING_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected NamedNativeQueryImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getNamedNativeQuery();
-	}
+    return OrmPackage.eINSTANCE.getNamedNativeQuery();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getDescription() {
-		return description;
-	}
+    return description;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION, oldDescription, description));
-	}
+    String oldDescription = description;
+    description = newDescription;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION, oldDescription, description));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getQuery() {
-		return query;
-	}
+    return query;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setQuery(String newQuery) {
-		String oldQuery = query;
-		query = newQuery;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__QUERY, oldQuery, query));
-	}
+    String oldQuery = query;
+    query = newQuery;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__QUERY, oldQuery, query));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<QueryHint> getHint() {
-		if (hint == null) {
-			hint = new EObjectContainmentEList<QueryHint>(QueryHint.class, this, OrmPackage.NAMED_NATIVE_QUERY__HINT);
-		}
-		return hint;
-	}
+    if (hint == null) {
+      hint = new EObjectContainmentEList<QueryHint>(QueryHint.class, this, OrmPackage.NAMED_NATIVE_QUERY__HINT);
+    }
+    return hint;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getResultClass() {
-		return resultClass;
-	}
+    return resultClass;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setResultClass(String newResultClass) {
-		String oldResultClass = resultClass;
-		resultClass = newResultClass;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS, oldResultClass, resultClass));
-	}
+    String oldResultClass = resultClass;
+    resultClass = newResultClass;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS, oldResultClass, resultClass));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getResultSetMapping() {
-		return resultSetMapping;
-	}
+    return resultSetMapping;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setResultSetMapping(String newResultSetMapping) {
-		String oldResultSetMapping = resultSetMapping;
-		resultSetMapping = newResultSetMapping;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING, oldResultSetMapping, resultSetMapping));
-	}
+    String oldResultSetMapping = resultSetMapping;
+    resultSetMapping = newResultSetMapping;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING, oldResultSetMapping, resultSetMapping));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.NAMED_NATIVE_QUERY__HINT:
-				return ((InternalEList<?>)getHint()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_NATIVE_QUERY__HINT:
+        return ((InternalEList<?>)getHint()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
-				return getDescription();
-			case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
-				return getQuery();
-			case OrmPackage.NAMED_NATIVE_QUERY__HINT:
-				return getHint();
-			case OrmPackage.NAMED_NATIVE_QUERY__NAME:
-				return getName();
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
-				return getResultClass();
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
-				return getResultSetMapping();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
+        return getDescription();
+      case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
+        return getQuery();
+      case OrmPackage.NAMED_NATIVE_QUERY__HINT:
+        return getHint();
+      case OrmPackage.NAMED_NATIVE_QUERY__NAME:
+        return getName();
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
+        return getResultClass();
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
+        return getResultSetMapping();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
-				setQuery((String)newValue);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__HINT:
-				getHint().clear();
-				getHint().addAll((Collection<? extends QueryHint>)newValue);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__NAME:
-				setName((String)newValue);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
-				setResultClass((String)newValue);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
-				setResultSetMapping((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
+        setDescription((String)newValue);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
+        setQuery((String)newValue);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__HINT:
+        getHint().clear();
+        getHint().addAll((Collection<? extends QueryHint>)newValue);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__NAME:
+        setName((String)newValue);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
+        setResultClass((String)newValue);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
+        setResultSetMapping((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
-				setQuery(QUERY_EDEFAULT);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__HINT:
-				getHint().clear();
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
-				setResultClass(RESULT_CLASS_EDEFAULT);
-				return;
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
-				setResultSetMapping(RESULT_SET_MAPPING_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
+        setDescription(DESCRIPTION_EDEFAULT);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
+        setQuery(QUERY_EDEFAULT);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__HINT:
+        getHint().clear();
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
+        setResultClass(RESULT_CLASS_EDEFAULT);
+        return;
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
+        setResultSetMapping(RESULT_SET_MAPPING_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
-				return QUERY_EDEFAULT == null ? query != null : !QUERY_EDEFAULT.equals(query);
-			case OrmPackage.NAMED_NATIVE_QUERY__HINT:
-				return hint != null && !hint.isEmpty();
-			case OrmPackage.NAMED_NATIVE_QUERY__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
-				return RESULT_CLASS_EDEFAULT == null ? resultClass != null : !RESULT_CLASS_EDEFAULT.equals(resultClass);
-			case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
-				return RESULT_SET_MAPPING_EDEFAULT == null ? resultSetMapping != null : !RESULT_SET_MAPPING_EDEFAULT.equals(resultSetMapping);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.NAMED_NATIVE_QUERY__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+      case OrmPackage.NAMED_NATIVE_QUERY__QUERY:
+        return QUERY_EDEFAULT == null ? query != null : !QUERY_EDEFAULT.equals(query);
+      case OrmPackage.NAMED_NATIVE_QUERY__HINT:
+        return hint != null && !hint.isEmpty();
+      case OrmPackage.NAMED_NATIVE_QUERY__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_CLASS:
+        return RESULT_CLASS_EDEFAULT == null ? resultClass != null : !RESULT_CLASS_EDEFAULT.equals(resultClass);
+      case OrmPackage.NAMED_NATIVE_QUERY__RESULT_SET_MAPPING:
+        return RESULT_SET_MAPPING_EDEFAULT == null ? resultSetMapping != null : !RESULT_SET_MAPPING_EDEFAULT.equals(resultSetMapping);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", query: ");
-		result.append(query);
-		result.append(", name: ");
-		result.append(name);
-		result.append(", resultClass: ");
-		result.append(resultClass);
-		result.append(", resultSetMapping: ");
-		result.append(resultSetMapping);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (description: "); //$NON-NLS-1$
+    result.append(description);
+    result.append(", query: "); //$NON-NLS-1$
+    result.append(query);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(", resultClass: "); //$NON-NLS-1$
+    result.append(resultClass);
+    result.append(", resultSetMapping: "); //$NON-NLS-1$
+    result.append(resultSetMapping);
+    result.append(')');
+    return result.toString();
+  }
 
 } // NamedNativeQueryImpl

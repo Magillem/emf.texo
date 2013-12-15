@@ -43,23 +43,23 @@ import org.eclipse.emf.texo.orm.annotator.ORMJavaAnnotationGenerator;
  */
 public class AssociationOverrideImpl extends BaseOrmAnnotationImpl implements AssociationOverride {
   /**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
@@ -73,13 +73,13 @@ public class AssociationOverrideImpl extends BaseOrmAnnotationImpl implements As
   protected EList<JoinColumn> joinColumn;
 
   /**
-	 * The cached value of the '{@link #getJoinTable() <em>Join Table</em>}' containment reference.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getJoinTable() <em>Join Table</em>}' containment reference.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getJoinTable()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getJoinTable()
+   * @generated
+   * @ordered
+   */
   protected JoinTable joinTable;
 
   /**
@@ -93,237 +93,237 @@ public class AssociationOverrideImpl extends BaseOrmAnnotationImpl implements As
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected AssociationOverrideImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getAssociationOverride();
-	}
+    return OrmPackage.eINSTANCE.getAssociationOverride();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getDescription() {
-		return description;
-	}
+    return description;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION, oldDescription, description));
-	}
+    String oldDescription = description;
+    description = newDescription;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION, oldDescription, description));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<JoinColumn> getJoinColumn() {
-		if (joinColumn == null) {
-			joinColumn = new EObjectContainmentEList<JoinColumn>(JoinColumn.class, this, OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN);
-		}
-		return joinColumn;
-	}
+    if (joinColumn == null) {
+      joinColumn = new EObjectContainmentEList<JoinColumn>(JoinColumn.class, this, OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN);
+    }
+    return joinColumn;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public JoinTable getJoinTable() {
-		return joinTable;
-	}
+    return joinTable;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public NotificationChain basicSetJoinTable(JoinTable newJoinTable, NotificationChain msgs) {
-		JoinTable oldJoinTable = joinTable;
-		joinTable = newJoinTable;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, oldJoinTable, newJoinTable);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+    JoinTable oldJoinTable = joinTable;
+    joinTable = newJoinTable;
+    if (eNotificationRequired()) {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, oldJoinTable, newJoinTable);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setJoinTable(JoinTable newJoinTable) {
-		if (newJoinTable != joinTable) {
-			NotificationChain msgs = null;
-			if (joinTable != null)
-				msgs = ((InternalEObject)joinTable).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, null, msgs);
-			if (newJoinTable != null)
-				msgs = ((InternalEObject)newJoinTable).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, null, msgs);
-			msgs = basicSetJoinTable(newJoinTable, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, newJoinTable, newJoinTable));
-	}
+    if (newJoinTable != joinTable) {
+      NotificationChain msgs = null;
+      if (joinTable != null)
+        msgs = ((InternalEObject)joinTable).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, null, msgs);
+      if (newJoinTable != null)
+        msgs = ((InternalEObject)newJoinTable).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, null, msgs);
+      msgs = basicSetJoinTable(newJoinTable, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE, newJoinTable, newJoinTable));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ASSOCIATION_OVERRIDE__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
-				return ((InternalEList<?>)getJoinColumn()).basicRemove(otherEnd, msgs);
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
-				return basicSetJoinTable(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
+        return ((InternalEList<?>)getJoinColumn()).basicRemove(otherEnd, msgs);
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
+        return basicSetJoinTable(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
-				return getDescription();
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
-				return getJoinColumn();
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
-				return getJoinTable();
-			case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
-				return getName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
+        return getDescription();
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
+        return getJoinColumn();
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
+        return getJoinTable();
+      case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
+        return getName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
-				getJoinColumn().clear();
-				getJoinColumn().addAll((Collection<? extends JoinColumn>)newValue);
-				return;
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
-				setJoinTable((JoinTable)newValue);
-				return;
-			case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
-				setName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
+        setDescription((String)newValue);
+        return;
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
+        getJoinColumn().clear();
+        getJoinColumn().addAll((Collection<? extends JoinColumn>)newValue);
+        return;
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
+        setJoinTable((JoinTable)newValue);
+        return;
+      case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
+        setName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
-				getJoinColumn().clear();
-				return;
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
-				setJoinTable((JoinTable)null);
-				return;
-			case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
+        setDescription(DESCRIPTION_EDEFAULT);
+        return;
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
+        getJoinColumn().clear();
+        return;
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
+        setJoinTable((JoinTable)null);
+        return;
+      case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
-				return joinColumn != null && !joinColumn.isEmpty();
-			case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
-				return joinTable != null;
-			case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ASSOCIATION_OVERRIDE__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_COLUMN:
+        return joinColumn != null && !joinColumn.isEmpty();
+      case OrmPackage.ASSOCIATION_OVERRIDE__JOIN_TABLE:
+        return joinTable != null;
+      case OrmPackage.ASSOCIATION_OVERRIDE__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (description: "); //$NON-NLS-1$
+    result.append(description);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(')');
+    return result.toString();
+  }
 
   @Override
   public String getJavaAnnotation(String identifier) {

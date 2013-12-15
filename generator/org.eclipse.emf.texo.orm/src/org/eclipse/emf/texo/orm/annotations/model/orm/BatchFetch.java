@@ -66,87 +66,87 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface BatchFetch extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Size</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Size</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Size</em>' attribute.
-	 * @see #setSize(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getBatchFetch_Size()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='size'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Size</em>' attribute.
+   * @see #setSize(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getBatchFetch_Size()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='size'"
+   * @generated
+   */
 	BigInteger getSize();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getSize <em>Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getSize <em>Size</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Size</em>' attribute.
-	 * @see #getSize()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Size</em>' attribute.
+   * @see #getSize()
+   * @generated
+   */
 	void setSize(BigInteger value);
 
 	/**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetchType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetchType}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetchType
-	 * @see #isSetType()
-	 * @see #unsetType()
-	 * @see #setType(BatchFetchType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getBatchFetch_Type()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetchType
+   * @see #isSetType()
+   * @see #unsetType()
+   * @see #setType(BatchFetchType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getBatchFetch_Type()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='type'"
+   * @generated
+   */
 	BatchFetchType getType();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetchType
-	 * @see #isSetType()
-	 * @see #unsetType()
-	 * @see #getType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetchType
+   * @see #isSetType()
+   * @see #unsetType()
+   * @see #getType()
+   * @generated
+   */
 	void setType(BatchFetchType value);
 
 	/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetType()
-	 * @see #getType()
-	 * @see #setType(BatchFetchType)
-	 * @generated
-	 */
+   * @see #isSetType()
+   * @see #getType()
+   * @see #setType(BatchFetchType)
+   * @generated
+   */
 	void unsetType();
 
 	/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getType <em>Type</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.BatchFetch#getType <em>Type</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Type</em>' attribute is set.
-	 * @see #unsetType()
-	 * @see #getType()
-	 * @see #setType(BatchFetchType)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Type</em>' attribute is set.
+   * @see #unsetType()
+   * @see #getType()
+   * @see #setType(BatchFetchType)
+   * @generated
+   */
 	boolean isSetType();
 
 } // BatchFetch

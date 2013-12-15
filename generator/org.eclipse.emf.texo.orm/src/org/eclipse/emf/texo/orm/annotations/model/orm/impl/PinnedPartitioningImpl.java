@@ -29,190 +29,190 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class PinnedPartitioningImpl extends BaseOrmAnnotationImpl implements PinnedPartitioning {
 	/**
-	 * The default value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConnectionPool()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getConnectionPool()
+   * @generated
+   * @ordered
+   */
 	protected static final String CONNECTION_POOL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getConnectionPool() <em>Connection Pool</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConnectionPool()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getConnectionPool()
+   * @generated
+   * @ordered
+   */
 	protected String connectionPool = CONNECTION_POOL_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PinnedPartitioningImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getPinnedPartitioning();
-	}
+    return OrmPackage.eINSTANCE.getPinnedPartitioning();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getConnectionPool() {
-		return connectionPool;
-	}
+    return connectionPool;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setConnectionPool(String newConnectionPool) {
-		String oldConnectionPool = connectionPool;
-		connectionPool = newConnectionPool;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL, oldConnectionPool, connectionPool));
-	}
+    String oldConnectionPool = connectionPool;
+    connectionPool = newConnectionPool;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL, oldConnectionPool, connectionPool));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getName() {
-		return name;
-	}
+    return name;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PINNED_PARTITIONING__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PINNED_PARTITIONING__NAME, oldName, name));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
-				return getConnectionPool();
-			case OrmPackage.PINNED_PARTITIONING__NAME:
-				return getName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
+        return getConnectionPool();
+      case OrmPackage.PINNED_PARTITIONING__NAME:
+        return getName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
-				setConnectionPool((String)newValue);
-				return;
-			case OrmPackage.PINNED_PARTITIONING__NAME:
-				setName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
+        setConnectionPool((String)newValue);
+        return;
+      case OrmPackage.PINNED_PARTITIONING__NAME:
+        setName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
-				setConnectionPool(CONNECTION_POOL_EDEFAULT);
-				return;
-			case OrmPackage.PINNED_PARTITIONING__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
+        setConnectionPool(CONNECTION_POOL_EDEFAULT);
+        return;
+      case OrmPackage.PINNED_PARTITIONING__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
-				return CONNECTION_POOL_EDEFAULT == null ? connectionPool != null : !CONNECTION_POOL_EDEFAULT.equals(connectionPool);
-			case OrmPackage.PINNED_PARTITIONING__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PINNED_PARTITIONING__CONNECTION_POOL:
+        return CONNECTION_POOL_EDEFAULT == null ? connectionPool != null : !CONNECTION_POOL_EDEFAULT.equals(connectionPool);
+      case OrmPackage.PINNED_PARTITIONING__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (connectionPool: ");
-		result.append(connectionPool);
-		result.append(", name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (connectionPool: "); //$NON-NLS-1$
+    result.append(connectionPool);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(')');
+    return result.toString();
+  }
 
 } //PinnedPartitioningImpl

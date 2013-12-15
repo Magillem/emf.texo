@@ -22,29 +22,29 @@ import org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage;
 public class OrmannotationsXMLProcessor extends XMLProcessor {
 
   /**
-	 * Public constructor to instantiate the helper.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Public constructor to instantiate the helper.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public OrmannotationsXMLProcessor() {
-		super((EPackage.Registry.INSTANCE));
-		OrmannotationsPackage.eINSTANCE.eClass();
-	}
+    super((EPackage.Registry.INSTANCE));
+    OrmannotationsPackage.eINSTANCE.eClass();
+  }
 
   /**
-	 * Register for "*" and "xml" file extensions the OrmannotationsResourceFactoryImpl factory.
-	 * <!-- begin-user-doc -->
+   * Register for "*" and "xml" file extensions the OrmannotationsResourceFactoryImpl factory.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   protected Map<String, Resource.Factory> getRegistrations() {
-		if (registrations == null) {
-			super.getRegistrations();
-			registrations.put(XML_EXTENSION, new OrmannotationsResourceFactoryImpl());
-			registrations.put(STAR_EXTENSION, new OrmannotationsResourceFactoryImpl());
-		}
-		return registrations;
-	}
+    if (registrations == null) {
+      super.getRegistrations();
+      registrations.put(XML_EXTENSION, new OrmannotationsResourceFactoryImpl());
+      registrations.put(STAR_EXTENSION, new OrmannotationsResourceFactoryImpl());
+    }
+    return registrations;
+  }
 
 } // OrmannotationsXMLProcessor

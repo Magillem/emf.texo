@@ -28,23 +28,23 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class DiscriminatorClassImpl extends BaseOrmAnnotationImpl implements DiscriminatorClass {
   /**
-	 * The default value of the '{@link #getDiscriminator() <em>Discriminator</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getDiscriminator() <em>Discriminator</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getDiscriminator()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDiscriminator()
+   * @generated
+   * @ordered
+   */
   protected static final String DISCRIMINATOR_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDiscriminator() <em>Discriminator</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getDiscriminator() <em>Discriminator</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getDiscriminator()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDiscriminator()
+   * @generated
+   * @ordered
+   */
   protected String discriminator = DISCRIMINATOR_EDEFAULT;
 
   /**
@@ -68,139 +68,139 @@ public class DiscriminatorClassImpl extends BaseOrmAnnotationImpl implements Dis
   protected String value = VALUE_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected DiscriminatorClassImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getDiscriminatorClass();
-	}
+    return OrmPackage.eINSTANCE.getDiscriminatorClass();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getDiscriminator() {
-		return discriminator;
-	}
+    return discriminator;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDiscriminator(String newDiscriminator) {
-		String oldDiscriminator = discriminator;
-		discriminator = newDiscriminator;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR, oldDiscriminator, discriminator));
-	}
+    String oldDiscriminator = discriminator;
+    discriminator = newDiscriminator;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR, oldDiscriminator, discriminator));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getValue() {
-		return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setValue(String newValue) {
-		String oldValue = value;
-		value = newValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.DISCRIMINATOR_CLASS__VALUE, oldValue, value));
-	}
+    String oldValue = value;
+    value = newValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.DISCRIMINATOR_CLASS__VALUE, oldValue, value));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
-				return getDiscriminator();
-			case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
-				return getValue();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
+        return getDiscriminator();
+      case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
+        return getValue();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
-				setDiscriminator((String)newValue);
-				return;
-			case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
-				setValue((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
+        setDiscriminator((String)newValue);
+        return;
+      case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
+        setValue((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
-				setDiscriminator(DISCRIMINATOR_EDEFAULT);
-				return;
-			case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
-				setValue(VALUE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
+        setDiscriminator(DISCRIMINATOR_EDEFAULT);
+        return;
+      case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
+        setValue(VALUE_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
-				return DISCRIMINATOR_EDEFAULT == null ? discriminator != null : !DISCRIMINATOR_EDEFAULT.equals(discriminator);
-			case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
-				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.DISCRIMINATOR_CLASS__DISCRIMINATOR:
+        return DISCRIMINATOR_EDEFAULT == null ? discriminator != null : !DISCRIMINATOR_EDEFAULT.equals(discriminator);
+      case OrmPackage.DISCRIMINATOR_CLASS__VALUE:
+        return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (discriminator: ");
-		result.append(discriminator);
-		result.append(", value: ");
-		result.append(value);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (discriminator: "); //$NON-NLS-1$
+    result.append(discriminator);
+    result.append(", value: "); //$NON-NLS-1$
+    result.append(value);
+    result.append(')');
+    return result.toString();
+  }
 
 } // DiscriminatorClassImpl

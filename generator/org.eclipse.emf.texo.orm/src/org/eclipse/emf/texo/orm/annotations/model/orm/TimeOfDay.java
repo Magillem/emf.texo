@@ -65,104 +65,104 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface TimeOfDay extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Hour</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Hour</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Hour</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Hour</em>' attribute.
-	 * @see #setHour(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Hour()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='hour'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Hour</em>' attribute.
+   * @see #setHour(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Hour()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='hour'"
+   * @generated
+   */
   BigInteger getHour();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getHour <em>Hour</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Hour</em>' attribute.
-	 * @see #getHour()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getHour <em>Hour</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Hour</em>' attribute.
+   * @see #getHour()
+   * @generated
+   */
   void setHour(BigInteger value);
 
   /**
-	 * Returns the value of the '<em><b>Millisecond</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Millisecond</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Millisecond</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Millisecond</em>' attribute.
-	 * @see #setMillisecond(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Millisecond()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='millisecond'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Millisecond</em>' attribute.
+   * @see #setMillisecond(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Millisecond()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='millisecond'"
+   * @generated
+   */
   BigInteger getMillisecond();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getMillisecond <em>Millisecond</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Millisecond</em>' attribute.
-	 * @see #getMillisecond()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getMillisecond <em>Millisecond</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Millisecond</em>' attribute.
+   * @see #getMillisecond()
+   * @generated
+   */
   void setMillisecond(BigInteger value);
 
   /**
-	 * Returns the value of the '<em><b>Minute</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Minute</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Minute</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Minute</em>' attribute.
-	 * @see #setMinute(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Minute()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='minute'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Minute</em>' attribute.
+   * @see #setMinute(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Minute()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='minute'"
+   * @generated
+   */
   BigInteger getMinute();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getMinute <em>Minute</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Minute</em>' attribute.
-	 * @see #getMinute()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getMinute <em>Minute</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Minute</em>' attribute.
+   * @see #getMinute()
+   * @generated
+   */
   void setMinute(BigInteger value);
 
   /**
-	 * Returns the value of the '<em><b>Second</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Second</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Second</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Second</em>' attribute.
-	 * @see #setSecond(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Second()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='second'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Second</em>' attribute.
+   * @see #setSecond(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTimeOfDay_Second()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='second'"
+   * @generated
+   */
   BigInteger getSecond();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getSecond <em>Second</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Second</em>' attribute.
-	 * @see #getSecond()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.TimeOfDay#getSecond <em>Second</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Second</em>' attribute.
+   * @see #getSecond()
+   * @generated
+   */
   void setSecond(BigInteger value);
 
 } // TimeOfDay

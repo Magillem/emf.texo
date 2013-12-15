@@ -28,203 +28,203 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum AccessType implements Enumerator {
   /**
-	 * The '<em><b>PROPERTY</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!--
+   * The '<em><b>PROPERTY</b></em>' literal object.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #PROPERTY_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #PROPERTY_VALUE
+   * @generated
+   * @ordered
+   */
   PROPERTY(0, "PROPERTY", "PROPERTY"), /**
-	 * The '<em><b>FIELD</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #FIELD_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>FIELD</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #FIELD_VALUE
+   * @generated
+   * @ordered
+   */
   FIELD(1, "FIELD", "FIELD"), /**
-	 * The '<em><b>VIRTUAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>VIRTUAL</b></em>' literal object.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #VIRTUAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * @see #VIRTUAL_VALUE
+   * @generated
+   * @ordered
+   */
 	VIRTUAL(2, "VIRTUAL", "VIRTUAL");
 
   /**
-	 * The '<em><b>PROPERTY</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>PROPERTY</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>PROPERTY</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #PROPERTY
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #PROPERTY
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int PROPERTY_VALUE = 0;
 
 		/**
-	 * The '<em><b>FIELD</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>FIELD</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>FIELD</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #FIELD
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #FIELD
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int FIELD_VALUE = 1;
 
 		/**
-	 * The '<em><b>VIRTUAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>VIRTUAL</b></em>' literal value.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>VIRTUAL</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #VIRTUAL
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #VIRTUAL
+   * @model
+   * @generated
+   * @ordered
+   */
 	public static final int VIRTUAL_VALUE = 2;
 
   /**
-	 * An array of all the '<em><b>Access Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * An array of all the '<em><b>Access Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private static final AccessType[] VALUES_ARRAY = new AccessType[] {
-			PROPERTY,
-			FIELD,
-			VIRTUAL,
-		};
+      PROPERTY,
+      FIELD,
+      VIRTUAL,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Access Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!--
+   * A public read-only list of all the '<em><b>Access Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<AccessType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Access Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Access Type</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static AccessType get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			AccessType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      AccessType result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Access Type</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Access Type</b></em>' literal with the specified name.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static AccessType getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			AccessType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      AccessType result = VALUES_ARRAY[i];
+      if (result.getName().equals(name)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Access Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Access Type</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static AccessType get(int value) {
-		switch (value) {
-			case PROPERTY_VALUE: return PROPERTY;
-			case FIELD_VALUE: return FIELD;
-			case VIRTUAL_VALUE: return VIRTUAL;
-		}
-		return null;
-	}
+    switch (value) {
+      case PROPERTY_VALUE: return PROPERTY;
+      case FIELD_VALUE: return FIELD;
+      case VIRTUAL_VALUE: return VIRTUAL;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Only this class can construct instances.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private AccessType(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public int getValue() {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getLiteral() {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		return literal;
-	}
+    return literal;
+  }
 
 } // AccessType

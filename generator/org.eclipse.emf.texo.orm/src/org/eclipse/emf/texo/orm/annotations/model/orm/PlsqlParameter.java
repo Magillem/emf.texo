@@ -102,276 +102,276 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface PlsqlParameter extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Database Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Database Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Database Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Database Type</em>' attribute.
-	 * @see #setDatabaseType(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_DatabaseType()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='database-type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Database Type</em>' attribute.
+   * @see #setDatabaseType(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_DatabaseType()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='database-type'"
+   * @generated
+   */
 	String getDatabaseType();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDatabaseType <em>Database Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDatabaseType <em>Database Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Database Type</em>' attribute.
-	 * @see #getDatabaseType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Database Type</em>' attribute.
+   * @see #getDatabaseType()
+   * @generated
+   */
 	void setDatabaseType(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Direction</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Direction</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Direction</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Direction</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
-	 * @see #isSetDirection()
-	 * @see #unsetDirection()
-	 * @see #setDirection(DirectionType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Direction()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='direction'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Direction</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
+   * @see #isSetDirection()
+   * @see #unsetDirection()
+   * @see #setDirection(DirectionType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Direction()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='direction'"
+   * @generated
+   */
 	DirectionType getDirection();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDirection <em>Direction</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDirection <em>Direction</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Direction</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
-	 * @see #isSetDirection()
-	 * @see #unsetDirection()
-	 * @see #getDirection()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Direction</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.DirectionType
+   * @see #isSetDirection()
+   * @see #unsetDirection()
+   * @see #getDirection()
+   * @generated
+   */
 	void setDirection(DirectionType value);
 
 	/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDirection <em>Direction</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDirection <em>Direction</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetDirection()
-	 * @see #getDirection()
-	 * @see #setDirection(DirectionType)
-	 * @generated
-	 */
+   * @see #isSetDirection()
+   * @see #getDirection()
+   * @see #setDirection(DirectionType)
+   * @generated
+   */
 	void unsetDirection();
 
 	/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDirection <em>Direction</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getDirection <em>Direction</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Direction</em>' attribute is set.
-	 * @see #unsetDirection()
-	 * @see #getDirection()
-	 * @see #setDirection(DirectionType)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Direction</em>' attribute is set.
+   * @see #unsetDirection()
+   * @see #getDirection()
+   * @see #setDirection(DirectionType)
+   * @generated
+   */
 	boolean isSetDirection();
 
 	/**
-	 * Returns the value of the '<em><b>Length</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Length</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Length</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Length</em>' attribute.
-	 * @see #setLength(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Length()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='length'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Length</em>' attribute.
+   * @see #setLength(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Length()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='length'"
+   * @generated
+   */
 	BigInteger getLength();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getLength <em>Length</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getLength <em>Length</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Length</em>' attribute.
-	 * @see #getLength()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Length</em>' attribute.
+   * @see #getLength()
+   * @generated
+   */
 	void setLength(BigInteger value);
 
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Optional</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Optional</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Optional</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Optional</em>' attribute.
-	 * @see #isSetOptional()
-	 * @see #unsetOptional()
-	 * @see #setOptional(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Optional()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='optional'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Optional</em>' attribute.
+   * @see #isSetOptional()
+   * @see #unsetOptional()
+   * @see #setOptional(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Optional()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='optional'"
+   * @generated
+   */
 	boolean isOptional();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#isOptional <em>Optional</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#isOptional <em>Optional</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Optional</em>' attribute.
-	 * @see #isSetOptional()
-	 * @see #unsetOptional()
-	 * @see #isOptional()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Optional</em>' attribute.
+   * @see #isSetOptional()
+   * @see #unsetOptional()
+   * @see #isOptional()
+   * @generated
+   */
 	void setOptional(boolean value);
 
 	/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#isOptional <em>Optional</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#isOptional <em>Optional</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetOptional()
-	 * @see #isOptional()
-	 * @see #setOptional(boolean)
-	 * @generated
-	 */
+   * @see #isSetOptional()
+   * @see #isOptional()
+   * @see #setOptional(boolean)
+   * @generated
+   */
 	void unsetOptional();
 
 	/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#isOptional <em>Optional</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#isOptional <em>Optional</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Optional</em>' attribute is set.
-	 * @see #unsetOptional()
-	 * @see #isOptional()
-	 * @see #setOptional(boolean)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Optional</em>' attribute is set.
+   * @see #unsetOptional()
+   * @see #isOptional()
+   * @see #setOptional(boolean)
+   * @generated
+   */
 	boolean isSetOptional();
 
 	/**
-	 * Returns the value of the '<em><b>Precision</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Precision</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Precision</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Precision</em>' attribute.
-	 * @see #setPrecision(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Precision()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='precision'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Precision</em>' attribute.
+   * @see #setPrecision(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Precision()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='precision'"
+   * @generated
+   */
 	BigInteger getPrecision();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getPrecision <em>Precision</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getPrecision <em>Precision</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Precision</em>' attribute.
-	 * @see #getPrecision()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Precision</em>' attribute.
+   * @see #getPrecision()
+   * @generated
+   */
 	void setPrecision(BigInteger value);
 
 	/**
-	 * Returns the value of the '<em><b>Query Parameter</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Query Parameter</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Query Parameter</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Query Parameter</em>' attribute.
-	 * @see #setQueryParameter(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_QueryParameter()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='query-parameter'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Query Parameter</em>' attribute.
+   * @see #setQueryParameter(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_QueryParameter()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='query-parameter'"
+   * @generated
+   */
 	String getQueryParameter();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getQueryParameter <em>Query Parameter</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getQueryParameter <em>Query Parameter</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Query Parameter</em>' attribute.
-	 * @see #getQueryParameter()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Query Parameter</em>' attribute.
+   * @see #getQueryParameter()
+   * @generated
+   */
 	void setQueryParameter(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Scale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Scale</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Scale</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Scale</em>' attribute.
-	 * @see #setScale(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Scale()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='scale'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Scale</em>' attribute.
+   * @see #setScale(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPlsqlParameter_Scale()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='scale'"
+   * @generated
+   */
 	BigInteger getScale();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getScale <em>Scale</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PlsqlParameter#getScale <em>Scale</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Scale</em>' attribute.
-	 * @see #getScale()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Scale</em>' attribute.
+   * @see #getScale()
+   * @generated
+   */
 	void setScale(BigInteger value);
 
 } // PlsqlParameter

@@ -56,57 +56,57 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface ValuePartition extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Connection Pool</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Connection Pool</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Connection Pool</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Connection Pool</em>' attribute.
-	 * @see #setConnectionPool(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartition_ConnectionPool()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='connection-pool'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Connection Pool</em>' attribute.
+   * @see #setConnectionPool(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartition_ConnectionPool()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='attribute' name='connection-pool'"
+   * @generated
+   */
 	String getConnectionPool();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartition#getConnectionPool <em>Connection Pool</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartition#getConnectionPool <em>Connection Pool</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Connection Pool</em>' attribute.
-	 * @see #getConnectionPool()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Connection Pool</em>' attribute.
+   * @see #getConnectionPool()
+   * @generated
+   */
 	void setConnectionPool(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartition_Value()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='attribute' name='value'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Value</em>' attribute.
+   * @see #setValue(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getValuePartition_Value()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='attribute' name='value'"
+   * @generated
+   */
 	String getValue();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartition#getValue <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ValuePartition#getValue <em>Value</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Value</em>' attribute.
-	 * @see #getValue()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Value</em>' attribute.
+   * @see #getValue()
+   * @generated
+   */
 	void setValue(String value);
 
 } // ValuePartition

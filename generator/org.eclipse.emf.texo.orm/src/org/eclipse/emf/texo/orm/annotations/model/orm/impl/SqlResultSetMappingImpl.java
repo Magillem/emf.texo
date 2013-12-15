@@ -39,23 +39,23 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class SqlResultSetMappingImpl extends BaseOrmAnnotationImpl implements SqlResultSetMapping {
   /**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
@@ -89,208 +89,208 @@ public class SqlResultSetMappingImpl extends BaseOrmAnnotationImpl implements Sq
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected SqlResultSetMappingImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getSqlResultSetMapping();
-	}
+    return OrmPackage.eINSTANCE.getSqlResultSetMapping();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getDescription() {
-		return description;
-	}
+    return description;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION, oldDescription, description));
-	}
+    String oldDescription = description;
+    description = newDescription;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION, oldDescription, description));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<EntityResult> getEntityResult() {
-		if (entityResult == null) {
-			entityResult = new EObjectContainmentEList<EntityResult>(EntityResult.class, this, OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT);
-		}
-		return entityResult;
-	}
+    if (entityResult == null) {
+      entityResult = new EObjectContainmentEList<EntityResult>(EntityResult.class, this, OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT);
+    }
+    return entityResult;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<ColumnResult> getColumnResult() {
-		if (columnResult == null) {
-			columnResult = new EObjectContainmentEList<ColumnResult>(ColumnResult.class, this, OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT);
-		}
-		return columnResult;
-	}
+    if (columnResult == null) {
+      columnResult = new EObjectContainmentEList<ColumnResult>(ColumnResult.class, this, OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT);
+    }
+    return columnResult;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.SQL_RESULT_SET_MAPPING__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.SQL_RESULT_SET_MAPPING__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
-				return ((InternalEList<?>)getEntityResult()).basicRemove(otherEnd, msgs);
-			case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
-				return ((InternalEList<?>)getColumnResult()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
+        return ((InternalEList<?>)getEntityResult()).basicRemove(otherEnd, msgs);
+      case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
+        return ((InternalEList<?>)getColumnResult()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
-				return getDescription();
-			case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
-				return getEntityResult();
-			case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
-				return getColumnResult();
-			case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
-				return getName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
+        return getDescription();
+      case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
+        return getEntityResult();
+      case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
+        return getColumnResult();
+      case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
+        return getName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
-			case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
-				getEntityResult().clear();
-				getEntityResult().addAll((Collection<? extends EntityResult>)newValue);
-				return;
-			case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
-				getColumnResult().clear();
-				getColumnResult().addAll((Collection<? extends ColumnResult>)newValue);
-				return;
-			case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
-				setName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
+        setDescription((String)newValue);
+        return;
+      case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
+        getEntityResult().clear();
+        getEntityResult().addAll((Collection<? extends EntityResult>)newValue);
+        return;
+      case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
+        getColumnResult().clear();
+        getColumnResult().addAll((Collection<? extends ColumnResult>)newValue);
+        return;
+      case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
+        setName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
-			case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
-				getEntityResult().clear();
-				return;
-			case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
-				getColumnResult().clear();
-				return;
-			case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
+        setDescription(DESCRIPTION_EDEFAULT);
+        return;
+      case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
+        getEntityResult().clear();
+        return;
+      case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
+        getColumnResult().clear();
+        return;
+      case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
-				return entityResult != null && !entityResult.isEmpty();
-			case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
-				return columnResult != null && !columnResult.isEmpty();
-			case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.SQL_RESULT_SET_MAPPING__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+      case OrmPackage.SQL_RESULT_SET_MAPPING__ENTITY_RESULT:
+        return entityResult != null && !entityResult.isEmpty();
+      case OrmPackage.SQL_RESULT_SET_MAPPING__COLUMN_RESULT:
+        return columnResult != null && !columnResult.isEmpty();
+      case OrmPackage.SQL_RESULT_SET_MAPPING__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (description: "); //$NON-NLS-1$
+    result.append(description);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(')');
+    return result.toString();
+  }
 
 } // SqlResultSetMappingImpl

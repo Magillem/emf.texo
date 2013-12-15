@@ -44,150 +44,150 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface Table extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Unique Constraint</b></em>' containment reference list.
-	 * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.UniqueConstraint}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Unique Constraint</b></em>' containment reference list.
+   * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.UniqueConstraint}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Unique Constraint</em>' containment reference list isn't clear, there really should be
    * more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Unique Constraint</em>' containment reference list.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_UniqueConstraint()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='unique-constraint' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Unique Constraint</em>' containment reference list.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_UniqueConstraint()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='unique-constraint' namespace='##targetNamespace'"
+   * @generated
+   */
   EList<UniqueConstraint> getUniqueConstraint();
 
   /**
-	 * Returns the value of the '<em><b>Catalog</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Catalog</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Catalog</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Catalog</em>' attribute.
-	 * @see #setCatalog(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_Catalog()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='catalog'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Catalog</em>' attribute.
+   * @see #setCatalog(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_Catalog()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='catalog'"
+   * @generated
+   */
   String getCatalog();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCatalog <em>Catalog</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Catalog</em>' attribute.
-	 * @see #getCatalog()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCatalog <em>Catalog</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Catalog</em>' attribute.
+   * @see #getCatalog()
+   * @generated
+   */
   void setCatalog(String value);
 
   /**
-	 * Returns the value of the '<em><b>Creation Suffix</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Creation Suffix</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Creation Suffix</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Creation Suffix</em>' attribute.
-	 * @see #isSetCreationSuffix()
-	 * @see #unsetCreationSuffix()
-	 * @see #setCreationSuffix(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_CreationSuffix()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='creation-suffix'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Creation Suffix</em>' attribute.
+   * @see #isSetCreationSuffix()
+   * @see #unsetCreationSuffix()
+   * @see #setCreationSuffix(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_CreationSuffix()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='creation-suffix'"
+   * @generated
+   */
 	String getCreationSuffix();
 
 		/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCreationSuffix <em>Creation Suffix</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCreationSuffix <em>Creation Suffix</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Creation Suffix</em>' attribute.
-	 * @see #isSetCreationSuffix()
-	 * @see #unsetCreationSuffix()
-	 * @see #getCreationSuffix()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Creation Suffix</em>' attribute.
+   * @see #isSetCreationSuffix()
+   * @see #unsetCreationSuffix()
+   * @see #getCreationSuffix()
+   * @generated
+   */
 	void setCreationSuffix(String value);
 
 		/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCreationSuffix <em>Creation Suffix</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCreationSuffix <em>Creation Suffix</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetCreationSuffix()
-	 * @see #getCreationSuffix()
-	 * @see #setCreationSuffix(String)
-	 * @generated
-	 */
+   * @see #isSetCreationSuffix()
+   * @see #getCreationSuffix()
+   * @see #setCreationSuffix(String)
+   * @generated
+   */
 	void unsetCreationSuffix();
 
 		/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCreationSuffix <em>Creation Suffix</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getCreationSuffix <em>Creation Suffix</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Creation Suffix</em>' attribute is set.
-	 * @see #unsetCreationSuffix()
-	 * @see #getCreationSuffix()
-	 * @see #setCreationSuffix(String)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Creation Suffix</em>' attribute is set.
+   * @see #unsetCreationSuffix()
+   * @see #getCreationSuffix()
+   * @see #setCreationSuffix(String)
+   * @generated
+   */
 	boolean isSetCreationSuffix();
 
 		/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='name'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_Name()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='name'"
+   * @generated
+   */
   String getName();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
   void setName(String value);
 
   /**
-	 * Returns the value of the '<em><b>Schema</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Schema</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Schema</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Schema</em>' attribute.
-	 * @see #setSchema(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_Schema()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='schema'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Schema</em>' attribute.
+   * @see #setSchema(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getTable_Schema()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='schema'"
+   * @generated
+   */
   String getSchema();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getSchema <em>Schema</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Schema</em>' attribute.
-	 * @see #getSchema()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Table#getSchema <em>Schema</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Schema</em>' attribute.
+   * @see #getSchema()
+   * @generated
+   */
   void setSchema(String value);
 
 } // Table

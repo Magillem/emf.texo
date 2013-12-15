@@ -71,131 +71,131 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface PrimaryKey extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Column</b></em>' containment reference list.
-	 * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.Column}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Column</b></em>' containment reference list.
+   * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.Column}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Column</em>' containment reference list isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Column</em>' containment reference list.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKey_Column()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='column' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Column</em>' containment reference list.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKey_Column()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='column' namespace='##targetNamespace'"
+   * @generated
+   */
   EList<Column> getColumn();
 
   /**
-	 * Returns the value of the '<em><b>Cache Key Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheKeyType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Cache Key Type</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheKeyType}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Cache Key Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cache Key Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheKeyType
-	 * @see #isSetCacheKeyType()
-	 * @see #unsetCacheKeyType()
-	 * @see #setCacheKeyType(CacheKeyType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKey_CacheKeyType()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='cache-key-type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Cache Key Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheKeyType
+   * @see #isSetCacheKeyType()
+   * @see #unsetCacheKeyType()
+   * @see #setCacheKeyType(CacheKeyType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKey_CacheKeyType()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='cache-key-type'"
+   * @generated
+   */
 	CacheKeyType getCacheKeyType();
 
 		/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getCacheKeyType <em>Cache Key Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getCacheKeyType <em>Cache Key Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cache Key Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheKeyType
-	 * @see #isSetCacheKeyType()
-	 * @see #unsetCacheKeyType()
-	 * @see #getCacheKeyType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Cache Key Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheKeyType
+   * @see #isSetCacheKeyType()
+   * @see #unsetCacheKeyType()
+   * @see #getCacheKeyType()
+   * @generated
+   */
 	void setCacheKeyType(CacheKeyType value);
 
 		/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getCacheKeyType <em>Cache Key Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getCacheKeyType <em>Cache Key Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetCacheKeyType()
-	 * @see #getCacheKeyType()
-	 * @see #setCacheKeyType(CacheKeyType)
-	 * @generated
-	 */
+   * @see #isSetCacheKeyType()
+   * @see #getCacheKeyType()
+   * @see #setCacheKeyType(CacheKeyType)
+   * @generated
+   */
 	void unsetCacheKeyType();
 
 		/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getCacheKeyType <em>Cache Key Type</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getCacheKeyType <em>Cache Key Type</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Cache Key Type</em>' attribute is set.
-	 * @see #unsetCacheKeyType()
-	 * @see #getCacheKeyType()
-	 * @see #setCacheKeyType(CacheKeyType)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Cache Key Type</em>' attribute is set.
+   * @see #unsetCacheKeyType()
+   * @see #getCacheKeyType()
+   * @see #setCacheKeyType(CacheKeyType)
+   * @generated
+   */
 	boolean isSetCacheKeyType();
 
 		/**
-	 * Returns the value of the '<em><b>Validation</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.IdValidation}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Validation</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.IdValidation}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Validation</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Validation</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.IdValidation
-	 * @see #isSetValidation()
-	 * @see #unsetValidation()
-	 * @see #setValidation(IdValidation)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKey_Validation()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='validation'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Validation</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.IdValidation
+   * @see #isSetValidation()
+   * @see #unsetValidation()
+   * @see #setValidation(IdValidation)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getPrimaryKey_Validation()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='validation'"
+   * @generated
+   */
   IdValidation getValidation();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getValidation <em>Validation</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Validation</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.IdValidation
-	 * @see #isSetValidation()
-	 * @see #unsetValidation()
-	 * @see #getValidation()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getValidation <em>Validation</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Validation</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.IdValidation
+   * @see #isSetValidation()
+   * @see #unsetValidation()
+   * @see #getValidation()
+   * @generated
+   */
   void setValidation(IdValidation value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getValidation <em>Validation</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetValidation()
-	 * @see #getValidation()
-	 * @see #setValidation(IdValidation)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getValidation <em>Validation</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetValidation()
+   * @see #getValidation()
+   * @see #setValidation(IdValidation)
+   * @generated
+   */
   void unsetValidation();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getValidation <em>Validation</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Validation</em>' attribute is set.
-	 * @see #unsetValidation()
-	 * @see #getValidation()
-	 * @see #setValidation(IdValidation)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.PrimaryKey#getValidation <em>Validation</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Validation</em>' attribute is set.
+   * @see #unsetValidation()
+   * @see #getValidation()
+   * @see #setValidation(IdValidation)
+   * @generated
+   */
   boolean isSetValidation();
 
 } // PrimaryKey

@@ -25,28 +25,28 @@ import org.eclipse.emf.texo.orm.annotations.model.orm.Transient;
  */
 public interface ETypeElementORMAnnotation extends ENamedElementORMAnnotation {
   /**
-	 * Returns the value of the '<em><b>Transient</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Transient</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Transient</em>' containment reference isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Transient</em>' containment reference.
-	 * @see #setTransient(Transient)
-	 * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getETypeElementORMAnnotation_Transient()
-	 * @model containment="true"
-	 * @generated
-	 */
+   * @return the value of the '<em>Transient</em>' containment reference.
+   * @see #setTransient(Transient)
+   * @see org.eclipse.emf.texo.orm.ormannotations.OrmannotationsPackage#getETypeElementORMAnnotation_Transient()
+   * @model containment="true"
+   * @generated
+   */
   Transient getTransient();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.ETypeElementORMAnnotation#getTransient <em>Transient</em>}' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Transient</em>' containment reference.
-	 * @see #getTransient()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.ormannotations.ETypeElementORMAnnotation#getTransient <em>Transient</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Transient</em>' containment reference.
+   * @see #getTransient()
+   * @generated
+   */
   void setTransient(Transient value);
 
 } // ETypeElementORMAnnotation

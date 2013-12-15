@@ -129,446 +129,446 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface Cache extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Expiry</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Expiry</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Expiry</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Expiry</em>' attribute.
-	 * @see #setExpiry(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Expiry()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='expiry' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Expiry</em>' attribute.
+   * @see #setExpiry(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Expiry()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='element' name='expiry' namespace='##targetNamespace'"
+   * @generated
+   */
   BigInteger getExpiry();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getExpiry <em>Expiry</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Expiry</em>' attribute.
-	 * @see #getExpiry()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getExpiry <em>Expiry</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Expiry</em>' attribute.
+   * @see #getExpiry()
+   * @generated
+   */
   void setExpiry(BigInteger value);
 
   /**
-	 * Returns the value of the '<em><b>Expiry Time Of Day</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Expiry Time Of Day</b></em>' containment reference.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Expiry Time Of Day</em>' containment reference isn't clear, there really should be more
    * of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Expiry Time Of Day</em>' containment reference.
-	 * @see #setExpiryTimeOfDay(TimeOfDay)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_ExpiryTimeOfDay()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='expiry-time-of-day' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Expiry Time Of Day</em>' containment reference.
+   * @see #setExpiryTimeOfDay(TimeOfDay)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_ExpiryTimeOfDay()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='expiry-time-of-day' namespace='##targetNamespace'"
+   * @generated
+   */
   TimeOfDay getExpiryTimeOfDay();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getExpiryTimeOfDay <em>Expiry Time Of Day</em>}' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Expiry Time Of Day</em>' containment reference.
-	 * @see #getExpiryTimeOfDay()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getExpiryTimeOfDay <em>Expiry Time Of Day</em>}' containment reference.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Expiry Time Of Day</em>' containment reference.
+   * @see #getExpiryTimeOfDay()
+   * @generated
+   */
   void setExpiryTimeOfDay(TimeOfDay value);
 
   /**
-	 * Returns the value of the '<em><b>Always Refresh</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Always Refresh</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Always Refresh</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Always Refresh</em>' attribute.
-	 * @see #isSetAlwaysRefresh()
-	 * @see #unsetAlwaysRefresh()
-	 * @see #setAlwaysRefresh(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_AlwaysRefresh()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='always-refresh'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Always Refresh</em>' attribute.
+   * @see #isSetAlwaysRefresh()
+   * @see #unsetAlwaysRefresh()
+   * @see #setAlwaysRefresh(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_AlwaysRefresh()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='always-refresh'"
+   * @generated
+   */
   boolean isAlwaysRefresh();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isAlwaysRefresh <em>Always Refresh</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Always Refresh</em>' attribute.
-	 * @see #isSetAlwaysRefresh()
-	 * @see #unsetAlwaysRefresh()
-	 * @see #isAlwaysRefresh()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isAlwaysRefresh <em>Always Refresh</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Always Refresh</em>' attribute.
+   * @see #isSetAlwaysRefresh()
+   * @see #unsetAlwaysRefresh()
+   * @see #isAlwaysRefresh()
+   * @generated
+   */
   void setAlwaysRefresh(boolean value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isAlwaysRefresh <em>Always Refresh</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetAlwaysRefresh()
-	 * @see #isAlwaysRefresh()
-	 * @see #setAlwaysRefresh(boolean)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isAlwaysRefresh <em>Always Refresh</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetAlwaysRefresh()
+   * @see #isAlwaysRefresh()
+   * @see #setAlwaysRefresh(boolean)
+   * @generated
+   */
   void unsetAlwaysRefresh();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isAlwaysRefresh <em>Always Refresh</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Always Refresh</em>' attribute is set.
-	 * @see #unsetAlwaysRefresh()
-	 * @see #isAlwaysRefresh()
-	 * @see #setAlwaysRefresh(boolean)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isAlwaysRefresh <em>Always Refresh</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Always Refresh</em>' attribute is set.
+   * @see #unsetAlwaysRefresh()
+   * @see #isAlwaysRefresh()
+   * @see #setAlwaysRefresh(boolean)
+   * @generated
+   */
   boolean isSetAlwaysRefresh();
 
   /**
-	 * Returns the value of the '<em><b>Coordination Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheCoordinationType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Coordination Type</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheCoordinationType}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Coordination Type</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Coordination Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheCoordinationType
-	 * @see #isSetCoordinationType()
-	 * @see #unsetCoordinationType()
-	 * @see #setCoordinationType(CacheCoordinationType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_CoordinationType()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='coordination-type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Coordination Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheCoordinationType
+   * @see #isSetCoordinationType()
+   * @see #unsetCoordinationType()
+   * @see #setCoordinationType(CacheCoordinationType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_CoordinationType()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='coordination-type'"
+   * @generated
+   */
   CacheCoordinationType getCoordinationType();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getCoordinationType <em>Coordination Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Coordination Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheCoordinationType
-	 * @see #isSetCoordinationType()
-	 * @see #unsetCoordinationType()
-	 * @see #getCoordinationType()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getCoordinationType <em>Coordination Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Coordination Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheCoordinationType
+   * @see #isSetCoordinationType()
+   * @see #unsetCoordinationType()
+   * @see #getCoordinationType()
+   * @generated
+   */
   void setCoordinationType(CacheCoordinationType value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getCoordinationType <em>Coordination Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetCoordinationType()
-	 * @see #getCoordinationType()
-	 * @see #setCoordinationType(CacheCoordinationType)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getCoordinationType <em>Coordination Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetCoordinationType()
+   * @see #getCoordinationType()
+   * @see #setCoordinationType(CacheCoordinationType)
+   * @generated
+   */
   void unsetCoordinationType();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getCoordinationType <em>Coordination Type</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Coordination Type</em>' attribute is set.
-	 * @see #unsetCoordinationType()
-	 * @see #getCoordinationType()
-	 * @see #setCoordinationType(CacheCoordinationType)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getCoordinationType <em>Coordination Type</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Coordination Type</em>' attribute is set.
+   * @see #unsetCoordinationType()
+   * @see #getCoordinationType()
+   * @see #setCoordinationType(CacheCoordinationType)
+   * @generated
+   */
   boolean isSetCoordinationType();
 
   /**
-	 * Returns the value of the '<em><b>Disable Hits</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Disable Hits</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Disable Hits</em>' attribute isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Disable Hits</em>' attribute.
-	 * @see #isSetDisableHits()
-	 * @see #unsetDisableHits()
-	 * @see #setDisableHits(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_DisableHits()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='disable-hits'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Disable Hits</em>' attribute.
+   * @see #isSetDisableHits()
+   * @see #unsetDisableHits()
+   * @see #setDisableHits(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_DisableHits()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='disable-hits'"
+   * @generated
+   */
   boolean isDisableHits();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isDisableHits <em>Disable Hits</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Disable Hits</em>' attribute.
-	 * @see #isSetDisableHits()
-	 * @see #unsetDisableHits()
-	 * @see #isDisableHits()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isDisableHits <em>Disable Hits</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Disable Hits</em>' attribute.
+   * @see #isSetDisableHits()
+   * @see #unsetDisableHits()
+   * @see #isDisableHits()
+   * @generated
+   */
   void setDisableHits(boolean value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isDisableHits <em>Disable Hits</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetDisableHits()
-	 * @see #isDisableHits()
-	 * @see #setDisableHits(boolean)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isDisableHits <em>Disable Hits</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetDisableHits()
+   * @see #isDisableHits()
+   * @see #setDisableHits(boolean)
+   * @generated
+   */
   void unsetDisableHits();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isDisableHits <em>Disable Hits</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Disable Hits</em>' attribute is set.
-	 * @see #unsetDisableHits()
-	 * @see #isDisableHits()
-	 * @see #setDisableHits(boolean)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isDisableHits <em>Disable Hits</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Disable Hits</em>' attribute is set.
+   * @see #unsetDisableHits()
+   * @see #isDisableHits()
+   * @see #setDisableHits(boolean)
+   * @generated
+   */
   boolean isSetDisableHits();
 
   /**
-	 * Returns the value of the '<em><b>Isolation</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheIsolationType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Isolation</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheIsolationType}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Isolation</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Isolation</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheIsolationType
-	 * @see #isSetIsolation()
-	 * @see #unsetIsolation()
-	 * @see #setIsolation(CacheIsolationType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Isolation()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='isolation'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Isolation</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheIsolationType
+   * @see #isSetIsolation()
+   * @see #unsetIsolation()
+   * @see #setIsolation(CacheIsolationType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Isolation()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='isolation'"
+   * @generated
+   */
 	CacheIsolationType getIsolation();
 
 		/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getIsolation <em>Isolation</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getIsolation <em>Isolation</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Isolation</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheIsolationType
-	 * @see #isSetIsolation()
-	 * @see #unsetIsolation()
-	 * @see #getIsolation()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Isolation</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheIsolationType
+   * @see #isSetIsolation()
+   * @see #unsetIsolation()
+   * @see #getIsolation()
+   * @generated
+   */
 	void setIsolation(CacheIsolationType value);
 
 		/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getIsolation <em>Isolation</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getIsolation <em>Isolation</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetIsolation()
-	 * @see #getIsolation()
-	 * @see #setIsolation(CacheIsolationType)
-	 * @generated
-	 */
+   * @see #isSetIsolation()
+   * @see #getIsolation()
+   * @see #setIsolation(CacheIsolationType)
+   * @generated
+   */
 	void unsetIsolation();
 
 		/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getIsolation <em>Isolation</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getIsolation <em>Isolation</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Isolation</em>' attribute is set.
-	 * @see #unsetIsolation()
-	 * @see #getIsolation()
-	 * @see #setIsolation(CacheIsolationType)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Isolation</em>' attribute is set.
+   * @see #unsetIsolation()
+   * @see #getIsolation()
+   * @see #setIsolation(CacheIsolationType)
+   * @generated
+   */
 	boolean isSetIsolation();
 
 		/**
-	 * Returns the value of the '<em><b>Refresh Only If Newer</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Refresh Only If Newer</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Refresh Only If Newer</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Refresh Only If Newer</em>' attribute.
-	 * @see #isSetRefreshOnlyIfNewer()
-	 * @see #unsetRefreshOnlyIfNewer()
-	 * @see #setRefreshOnlyIfNewer(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_RefreshOnlyIfNewer()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='refresh-only-if-newer'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Refresh Only If Newer</em>' attribute.
+   * @see #isSetRefreshOnlyIfNewer()
+   * @see #unsetRefreshOnlyIfNewer()
+   * @see #setRefreshOnlyIfNewer(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_RefreshOnlyIfNewer()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='refresh-only-if-newer'"
+   * @generated
+   */
   boolean isRefreshOnlyIfNewer();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isRefreshOnlyIfNewer <em>Refresh Only If Newer</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Refresh Only If Newer</em>' attribute.
-	 * @see #isSetRefreshOnlyIfNewer()
-	 * @see #unsetRefreshOnlyIfNewer()
-	 * @see #isRefreshOnlyIfNewer()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isRefreshOnlyIfNewer <em>Refresh Only If Newer</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Refresh Only If Newer</em>' attribute.
+   * @see #isSetRefreshOnlyIfNewer()
+   * @see #unsetRefreshOnlyIfNewer()
+   * @see #isRefreshOnlyIfNewer()
+   * @generated
+   */
   void setRefreshOnlyIfNewer(boolean value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isRefreshOnlyIfNewer <em>Refresh Only If Newer</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetRefreshOnlyIfNewer()
-	 * @see #isRefreshOnlyIfNewer()
-	 * @see #setRefreshOnlyIfNewer(boolean)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isRefreshOnlyIfNewer <em>Refresh Only If Newer</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetRefreshOnlyIfNewer()
+   * @see #isRefreshOnlyIfNewer()
+   * @see #setRefreshOnlyIfNewer(boolean)
+   * @generated
+   */
   void unsetRefreshOnlyIfNewer();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isRefreshOnlyIfNewer <em>Refresh Only If Newer</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Refresh Only If Newer</em>' attribute is set.
-	 * @see #unsetRefreshOnlyIfNewer()
-	 * @see #isRefreshOnlyIfNewer()
-	 * @see #setRefreshOnlyIfNewer(boolean)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isRefreshOnlyIfNewer <em>Refresh Only If Newer</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Refresh Only If Newer</em>' attribute is set.
+   * @see #unsetRefreshOnlyIfNewer()
+   * @see #isRefreshOnlyIfNewer()
+   * @see #setRefreshOnlyIfNewer(boolean)
+   * @generated
+   */
   boolean isSetRefreshOnlyIfNewer();
 
   /**
-	 * Returns the value of the '<em><b>Shared</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Shared</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Shared</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shared</em>' attribute.
-	 * @see #isSetShared()
-	 * @see #unsetShared()
-	 * @see #setShared(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Shared()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='shared'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Shared</em>' attribute.
+   * @see #isSetShared()
+   * @see #unsetShared()
+   * @see #setShared(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Shared()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='shared'"
+   * @generated
+   */
   boolean isShared();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isShared <em>Shared</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shared</em>' attribute.
-	 * @see #isSetShared()
-	 * @see #unsetShared()
-	 * @see #isShared()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isShared <em>Shared</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Shared</em>' attribute.
+   * @see #isSetShared()
+   * @see #unsetShared()
+   * @see #isShared()
+   * @generated
+   */
   void setShared(boolean value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isShared <em>Shared</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetShared()
-	 * @see #isShared()
-	 * @see #setShared(boolean)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isShared <em>Shared</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetShared()
+   * @see #isShared()
+   * @see #setShared(boolean)
+   * @generated
+   */
   void unsetShared();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isShared <em>Shared</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Shared</em>' attribute is set.
-	 * @see #unsetShared()
-	 * @see #isShared()
-	 * @see #setShared(boolean)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#isShared <em>Shared</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Shared</em>' attribute is set.
+   * @see #unsetShared()
+   * @see #isShared()
+   * @see #setShared(boolean)
+   * @generated
+   */
   boolean isSetShared();
 
   /**
-	 * Returns the value of the '<em><b>Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Size</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Size</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Size</em>' attribute.
-	 * @see #setSize(BigInteger)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Size()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='attribute' name='size'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Size</em>' attribute.
+   * @see #setSize(BigInteger)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Size()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
+   *        extendedMetaData="kind='attribute' name='size'"
+   * @generated
+   */
   BigInteger getSize();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getSize <em>Size</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Size</em>' attribute.
-	 * @see #getSize()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getSize <em>Size</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Size</em>' attribute.
+   * @see #getSize()
+   * @generated
+   */
   void setSize(BigInteger value);
 
   /**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.CacheType}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Type</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheType
-	 * @see #isSetType()
-	 * @see #unsetType()
-	 * @see #setType(CacheType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Type()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheType
+   * @see #isSetType()
+   * @see #unsetType()
+   * @see #setType(CacheType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCache_Type()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='type'"
+   * @generated
+   */
   CacheType getType();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheType
-	 * @see #isSetType()
-	 * @see #unsetType()
-	 * @see #getType()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.CacheType
+   * @see #isSetType()
+   * @see #unsetType()
+   * @see #getType()
+   * @generated
+   */
   void setType(CacheType value);
 
   /**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #isSetType()
-	 * @see #getType()
-	 * @see #setType(CacheType)
-	 * @generated
-	 */
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #isSetType()
+   * @see #getType()
+   * @see #setType(CacheType)
+   * @generated
+   */
   void unsetType();
 
   /**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getType <em>Type</em>}' attribute is set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Type</em>' attribute is set.
-	 * @see #unsetType()
-	 * @see #getType()
-	 * @see #setType(CacheType)
-	 * @generated
-	 */
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Cache#getType <em>Type</em>}' attribute is set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return whether the value of the '<em>Type</em>' attribute is set.
+   * @see #unsetType()
+   * @see #getType()
+   * @see #setType(CacheType)
+   * @generated
+   */
   boolean isSetType();
 
 } // Cache

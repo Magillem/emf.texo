@@ -44,77 +44,77 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface Multitenant extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Tenant Discriminator</b></em>' containment reference list.
-	 * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.TenantDiscriminator}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Tenant Discriminator</b></em>' containment reference list.
+   * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.TenantDiscriminator}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Tenant Discriminator</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tenant Discriminator</em>' containment reference list.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getMultitenant_TenantDiscriminator()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='tenant-discriminator' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Tenant Discriminator</em>' containment reference list.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getMultitenant_TenantDiscriminator()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='tenant-discriminator' namespace='##targetNamespace'"
+   * @generated
+   */
 	EList<TenantDiscriminator> getTenantDiscriminator();
 
 	/**
-	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.MultitenantType}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * The literals are from the enumeration {@link org.eclipse.emf.texo.orm.annotations.model.orm.MultitenantType}.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.MultitenantType
-	 * @see #isSetType()
-	 * @see #unsetType()
-	 * @see #setType(MultitenantType)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getMultitenant_Type()
-	 * @model unsettable="true"
-	 *        extendedMetaData="kind='attribute' name='type'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.MultitenantType
+   * @see #isSetType()
+   * @see #unsetType()
+   * @see #setType(MultitenantType)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getMultitenant_Type()
+   * @model unsettable="true"
+   *        extendedMetaData="kind='attribute' name='type'"
+   * @generated
+   */
 	MultitenantType getType();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Multitenant#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Multitenant#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type</em>' attribute.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.MultitenantType
-	 * @see #isSetType()
-	 * @see #unsetType()
-	 * @see #getType()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Type</em>' attribute.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.MultitenantType
+   * @see #isSetType()
+   * @see #unsetType()
+   * @see #getType()
+   * @generated
+   */
 	void setType(MultitenantType value);
 
 	/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Multitenant#getType <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Multitenant#getType <em>Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetType()
-	 * @see #getType()
-	 * @see #setType(MultitenantType)
-	 * @generated
-	 */
+   * @see #isSetType()
+   * @see #getType()
+   * @see #setType(MultitenantType)
+   * @generated
+   */
 	void unsetType();
 
 	/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Multitenant#getType <em>Type</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.Multitenant#getType <em>Type</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Type</em>' attribute is set.
-	 * @see #unsetType()
-	 * @see #getType()
-	 * @see #setType(MultitenantType)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Type</em>' attribute is set.
+   * @see #unsetType()
+   * @see #getType()
+   * @see #setType(MultitenantType)
+   * @generated
+   */
 	boolean isSetType();
 
 } // Multitenant

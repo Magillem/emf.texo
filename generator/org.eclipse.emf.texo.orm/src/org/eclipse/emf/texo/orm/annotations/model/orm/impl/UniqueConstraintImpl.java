@@ -33,13 +33,13 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class UniqueConstraintImpl extends BaseOrmAnnotationImpl implements UniqueConstraint {
   /**
-	 * The cached value of the '{@link #getColumnName() <em>Column Name</em>}' attribute list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getColumnName() <em>Column Name</em>}' attribute list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getColumnName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getColumnName()
+   * @generated
+   * @ordered
+   */
   protected EList<String> columnName;
 
   /**
@@ -53,142 +53,142 @@ public class UniqueConstraintImpl extends BaseOrmAnnotationImpl implements Uniqu
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected UniqueConstraintImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getUniqueConstraint();
-	}
+    return OrmPackage.eINSTANCE.getUniqueConstraint();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<String> getColumnName() {
-		if (columnName == null) {
-			columnName = new EDataTypeEList<String>(String.class, this, OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME);
-		}
-		return columnName;
-	}
+    if (columnName == null) {
+      columnName = new EDataTypeEList<String>(String.class, this, OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME);
+    }
+    return columnName;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.UNIQUE_CONSTRAINT__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.UNIQUE_CONSTRAINT__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
-				return getColumnName();
-			case OrmPackage.UNIQUE_CONSTRAINT__NAME:
-				return getName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
+        return getColumnName();
+      case OrmPackage.UNIQUE_CONSTRAINT__NAME:
+        return getName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
-				getColumnName().clear();
-				getColumnName().addAll((Collection<? extends String>)newValue);
-				return;
-			case OrmPackage.UNIQUE_CONSTRAINT__NAME:
-				setName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
+        getColumnName().clear();
+        getColumnName().addAll((Collection<? extends String>)newValue);
+        return;
+      case OrmPackage.UNIQUE_CONSTRAINT__NAME:
+        setName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
-				getColumnName().clear();
-				return;
-			case OrmPackage.UNIQUE_CONSTRAINT__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
+        getColumnName().clear();
+        return;
+      case OrmPackage.UNIQUE_CONSTRAINT__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
-				return columnName != null && !columnName.isEmpty();
-			case OrmPackage.UNIQUE_CONSTRAINT__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.UNIQUE_CONSTRAINT__COLUMN_NAME:
+        return columnName != null && !columnName.isEmpty();
+      case OrmPackage.UNIQUE_CONSTRAINT__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (columnName: ");
-		result.append(columnName);
-		result.append(", name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (columnName: "); //$NON-NLS-1$
+    result.append(columnName);
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(')');
+    return result.toString();
+  }
 
 } // UniqueConstraintImpl

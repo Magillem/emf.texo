@@ -38,12 +38,12 @@ public class PropertyImpl extends BaseOrmAnnotationImpl implements Property {
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
@@ -67,190 +67,190 @@ public class PropertyImpl extends BaseOrmAnnotationImpl implements Property {
   protected String value = VALUE_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getValueType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValueType()
+   * @generated
+   * @ordered
+   */
   protected static final String VALUE_TYPE_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getValueType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValueType()
+   * @generated
+   * @ordered
+   */
   protected String valueType = VALUE_TYPE_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected PropertyImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getProperty();
-	}
+    return OrmPackage.eINSTANCE.getProperty();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PROPERTY__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PROPERTY__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getValue() {
-		return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setValue(String newValue) {
-		String oldValue = value;
-		value = newValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PROPERTY__VALUE, oldValue, value));
-	}
+    String oldValue = value;
+    value = newValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PROPERTY__VALUE, oldValue, value));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getValueType() {
-		return valueType;
-	}
+    return valueType;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setValueType(String newValueType) {
-		String oldValueType = valueType;
-		valueType = newValueType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PROPERTY__VALUE_TYPE, oldValueType, valueType));
-	}
+    String oldValueType = valueType;
+    valueType = newValueType;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PROPERTY__VALUE_TYPE, oldValueType, valueType));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.PROPERTY__NAME:
-				return getName();
-			case OrmPackage.PROPERTY__VALUE:
-				return getValue();
-			case OrmPackage.PROPERTY__VALUE_TYPE:
-				return getValueType();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.PROPERTY__NAME:
+        return getName();
+      case OrmPackage.PROPERTY__VALUE:
+        return getValue();
+      case OrmPackage.PROPERTY__VALUE_TYPE:
+        return getValueType();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.PROPERTY__NAME:
-				setName((String)newValue);
-				return;
-			case OrmPackage.PROPERTY__VALUE:
-				setValue((String)newValue);
-				return;
-			case OrmPackage.PROPERTY__VALUE_TYPE:
-				setValueType((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.PROPERTY__NAME:
+        setName((String)newValue);
+        return;
+      case OrmPackage.PROPERTY__VALUE:
+        setValue((String)newValue);
+        return;
+      case OrmPackage.PROPERTY__VALUE_TYPE:
+        setValueType((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PROPERTY__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case OrmPackage.PROPERTY__VALUE:
-				setValue(VALUE_EDEFAULT);
-				return;
-			case OrmPackage.PROPERTY__VALUE_TYPE:
-				setValueType(VALUE_TYPE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PROPERTY__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case OrmPackage.PROPERTY__VALUE:
+        setValue(VALUE_EDEFAULT);
+        return;
+      case OrmPackage.PROPERTY__VALUE_TYPE:
+        setValueType(VALUE_TYPE_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PROPERTY__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case OrmPackage.PROPERTY__VALUE:
-				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
-			case OrmPackage.PROPERTY__VALUE_TYPE:
-				return VALUE_TYPE_EDEFAULT == null ? valueType != null : !VALUE_TYPE_EDEFAULT.equals(valueType);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PROPERTY__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case OrmPackage.PROPERTY__VALUE:
+        return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+      case OrmPackage.PROPERTY__VALUE_TYPE:
+        return VALUE_TYPE_EDEFAULT == null ? valueType != null : !VALUE_TYPE_EDEFAULT.equals(valueType);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", value: ");
-		result.append(value);
-		result.append(", valueType: ");
-		result.append(valueType);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(", value: "); //$NON-NLS-1$
+    result.append(value);
+    result.append(", valueType: "); //$NON-NLS-1$
+    result.append(valueType);
+    result.append(')');
+    return result.toString();
+  }
 
 } // PropertyImpl

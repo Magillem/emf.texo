@@ -20,127 +20,127 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  */
 public class OrmannotationsFactory extends EFactoryImpl {
   /**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public static final OrmannotationsFactory eINSTANCE = init();
 
   /**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public static OrmannotationsFactory init() {
-		try {
-			OrmannotationsFactory theOrmannotationsFactory = (OrmannotationsFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.eclipse.org/emf/texo/orm/ormannotations"); 
-			if (theOrmannotationsFactory != null) {
-				return theOrmannotationsFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new OrmannotationsFactory();
-	}
+    try {
+      OrmannotationsFactory theOrmannotationsFactory = (OrmannotationsFactory)EPackage.Registry.INSTANCE.getEFactory(OrmannotationsPackage.eNS_URI);
+      if (theOrmannotationsFactory != null) {
+        return theOrmannotationsFactory;
+      }
+    }
+    catch (Exception exception) {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new OrmannotationsFactory();
+  }
 
   /**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public OrmannotationsFactory() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION: return createEPackageORMAnnotation();
-			case OrmannotationsPackage.ECLASS_ORM_ANNOTATION: return createEClassORMAnnotation();
-			case OrmannotationsPackage.EATTRIBUTE_ORM_ANNOTATION: return createEAttributeORMAnnotation();
-			case OrmannotationsPackage.EREFERENCE_ORM_ANNOTATION: return createEReferenceORMAnnotation();
-			case OrmannotationsPackage.EENUM_ORM_ANNOTATION: return createEEnumORMAnnotation();
-			case OrmannotationsPackage.EDATA_TYPE_ORM_ANNOTATION: return createEDataTypeORMAnnotation();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID()) {
+      case OrmannotationsPackage.EPACKAGE_ORM_ANNOTATION: return createEPackageORMAnnotation();
+      case OrmannotationsPackage.ECLASS_ORM_ANNOTATION: return createEClassORMAnnotation();
+      case OrmannotationsPackage.EATTRIBUTE_ORM_ANNOTATION: return createEAttributeORMAnnotation();
+      case OrmannotationsPackage.EREFERENCE_ORM_ANNOTATION: return createEReferenceORMAnnotation();
+      case OrmannotationsPackage.EENUM_ORM_ANNOTATION: return createEEnumORMAnnotation();
+      case OrmannotationsPackage.EDATA_TYPE_ORM_ANNOTATION: return createEDataTypeORMAnnotation();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EPackageORMAnnotation createEPackageORMAnnotation() {
-		EPackageORMAnnotation ePackageORMAnnotation = new EPackageORMAnnotation();
-		return ePackageORMAnnotation;
-	}
+    EPackageORMAnnotation ePackageORMAnnotation = new EPackageORMAnnotation();
+    return ePackageORMAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EClassORMAnnotation createEClassORMAnnotation() {
-		EClassORMAnnotation eClassORMAnnotation = new EClassORMAnnotation();
-		return eClassORMAnnotation;
-	}
+    EClassORMAnnotation eClassORMAnnotation = new EClassORMAnnotation();
+    return eClassORMAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EAttributeORMAnnotation createEAttributeORMAnnotation() {
-		EAttributeORMAnnotation eAttributeORMAnnotation = new EAttributeORMAnnotation();
-		return eAttributeORMAnnotation;
-	}
+    EAttributeORMAnnotation eAttributeORMAnnotation = new EAttributeORMAnnotation();
+    return eAttributeORMAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EReferenceORMAnnotation createEReferenceORMAnnotation() {
-		EReferenceORMAnnotation eReferenceORMAnnotation = new EReferenceORMAnnotation();
-		return eReferenceORMAnnotation;
-	}
+    EReferenceORMAnnotation eReferenceORMAnnotation = new EReferenceORMAnnotation();
+    return eReferenceORMAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EEnumORMAnnotation createEEnumORMAnnotation() {
-		EEnumORMAnnotation eEnumORMAnnotation = new EEnumORMAnnotation();
-		return eEnumORMAnnotation;
-	}
+    EEnumORMAnnotation eEnumORMAnnotation = new EEnumORMAnnotation();
+    return eEnumORMAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EDataTypeORMAnnotation createEDataTypeORMAnnotation() {
-		EDataTypeORMAnnotation eDataTypeORMAnnotation = new EDataTypeORMAnnotation();
-		return eDataTypeORMAnnotation;
-	}
+    EDataTypeORMAnnotation eDataTypeORMAnnotation = new EDataTypeORMAnnotation();
+    return eDataTypeORMAnnotation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public OrmannotationsPackage getOrmannotationsPackage() {
-		return (OrmannotationsPackage)getEPackage();
-	}
+    return (OrmannotationsPackage)getEPackage();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @deprecated
+   * @generated
+   */
   @Deprecated
   public static OrmannotationsPackage getPackage() {
-		return OrmannotationsPackage.eINSTANCE;
-	}
+    return OrmannotationsPackage.eINSTANCE;
+  }
 
 } // OrmannotationsFactory

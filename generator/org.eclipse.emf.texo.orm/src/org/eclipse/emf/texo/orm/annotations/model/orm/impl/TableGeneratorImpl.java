@@ -52,137 +52,137 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class TableGeneratorImpl extends BaseOrmAnnotationImpl implements TableGenerator {
   /**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected static final String DESCRIPTION_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getDescription()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getDescription()
+   * @generated
+   * @ordered
+   */
   protected String description = DESCRIPTION_EDEFAULT;
 
   /**
-	 * The cached value of the '{@link #getUniqueConstraint() <em>Unique Constraint</em>}' containment reference list.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getUniqueConstraint()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getUniqueConstraint() <em>Unique Constraint</em>}' containment reference list.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getUniqueConstraint()
+   * @generated
+   * @ordered
+   */
   protected EList<UniqueConstraint> uniqueConstraint;
 
   /**
-	 * The default value of the '{@link #getAllocationSize() <em>Allocation Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getAllocationSize() <em>Allocation Size</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getAllocationSize()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAllocationSize()
+   * @generated
+   * @ordered
+   */
   protected static final int ALLOCATION_SIZE_EDEFAULT = 0;
 
   /**
-	 * The cached value of the '{@link #getAllocationSize() <em>Allocation Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getAllocationSize() <em>Allocation Size</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getAllocationSize()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getAllocationSize()
+   * @generated
+   * @ordered
+   */
   protected int allocationSize = ALLOCATION_SIZE_EDEFAULT;
 
   /**
-	 * This is true if the Allocation Size attribute has been set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * This is true if the Allocation Size attribute has been set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
   protected boolean allocationSizeESet;
 
   /**
-	 * The default value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getCatalog()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCatalog()
+   * @generated
+   * @ordered
+   */
   protected static final String CATALOG_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getCatalog() <em>Catalog</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getCatalog()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCatalog()
+   * @generated
+   * @ordered
+   */
   protected String catalog = CATALOG_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getCreationSuffix() <em>Creation Suffix</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getCreationSuffix() <em>Creation Suffix</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCreationSuffix()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCreationSuffix()
+   * @generated
+   * @ordered
+   */
 	protected static final String CREATION_SUFFIX_EDEFAULT = null;
 
 		/**
-	 * The cached value of the '{@link #getCreationSuffix() <em>Creation Suffix</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getCreationSuffix() <em>Creation Suffix</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCreationSuffix()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCreationSuffix()
+   * @generated
+   * @ordered
+   */
 	protected String creationSuffix = CREATION_SUFFIX_EDEFAULT;
 
 		/**
-	 * This is true if the Creation Suffix attribute has been set.
-	 * <!-- begin-user-doc -->
+   * This is true if the Creation Suffix attribute has been set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
 	protected boolean creationSuffixESet;
 
 		/**
-	 * The default value of the '{@link #getInitialValue() <em>Initial Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getInitialValue() <em>Initial Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getInitialValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getInitialValue()
+   * @generated
+   * @ordered
+   */
   protected static final int INITIAL_VALUE_EDEFAULT = 0;
 
   /**
-	 * The cached value of the '{@link #getInitialValue() <em>Initial Value</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getInitialValue() <em>Initial Value</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getInitialValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getInitialValue()
+   * @generated
+   * @ordered
+   */
   protected int initialValue = INITIAL_VALUE_EDEFAULT;
 
   /**
-	 * This is true if the Initial Value attribute has been set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * This is true if the Initial Value attribute has been set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
   protected boolean initialValueESet;
 
   /**
@@ -196,62 +196,62 @@ public class TableGeneratorImpl extends BaseOrmAnnotationImpl implements TableGe
   protected static final String NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
   protected String name = NAME_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getPkColumnName() <em>Pk Column Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getPkColumnName() <em>Pk Column Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPkColumnName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPkColumnName()
+   * @generated
+   * @ordered
+   */
   protected static final String PK_COLUMN_NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getPkColumnName() <em>Pk Column Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPkColumnName() <em>Pk Column Name</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPkColumnName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPkColumnName()
+   * @generated
+   * @ordered
+   */
   protected String pkColumnName = PK_COLUMN_NAME_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getPkColumnValue() <em>Pk Column Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getPkColumnValue() <em>Pk Column Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPkColumnValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPkColumnValue()
+   * @generated
+   * @ordered
+   */
   protected static final String PK_COLUMN_VALUE_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getPkColumnValue() <em>Pk Column Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getPkColumnValue() <em>Pk Column Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getPkColumnValue()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getPkColumnValue()
+   * @generated
+   * @ordered
+   */
   protected String pkColumnValue = PK_COLUMN_VALUE_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getSchema() <em>Schema</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getSchema() <em>Schema</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getSchema()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getSchema()
+   * @generated
+   * @ordered
+   */
   protected static final String SCHEMA_EDEFAULT = null;
 
   /**
@@ -285,547 +285,547 @@ public class TableGeneratorImpl extends BaseOrmAnnotationImpl implements TableGe
   protected String table = TABLE_EDEFAULT;
 
   /**
-	 * The default value of the '{@link #getValueColumnName() <em>Value Column Name</em>}' attribute.
-	 * <!-- begin-user-doc
+   * The default value of the '{@link #getValueColumnName() <em>Value Column Name</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getValueColumnName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValueColumnName()
+   * @generated
+   * @ordered
+   */
   protected static final String VALUE_COLUMN_NAME_EDEFAULT = null;
 
   /**
-	 * The cached value of the '{@link #getValueColumnName() <em>Value Column Name</em>}' attribute.
-	 * <!-- begin-user-doc
+   * The cached value of the '{@link #getValueColumnName() <em>Value Column Name</em>}' attribute.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @see #getValueColumnName()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValueColumnName()
+   * @generated
+   * @ordered
+   */
   protected String valueColumnName = VALUE_COLUMN_NAME_EDEFAULT;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected TableGeneratorImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getTableGenerator();
-	}
+    return OrmPackage.eINSTANCE.getTableGenerator();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getDescription() {
-		return description;
-	}
+    return description;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__DESCRIPTION, oldDescription, description));
-	}
+    String oldDescription = description;
+    description = newDescription;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__DESCRIPTION, oldDescription, description));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<UniqueConstraint> getUniqueConstraint() {
-		if (uniqueConstraint == null) {
-			uniqueConstraint = new EObjectContainmentEList<UniqueConstraint>(UniqueConstraint.class, this, OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT);
-		}
-		return uniqueConstraint;
-	}
+    if (uniqueConstraint == null) {
+      uniqueConstraint = new EObjectContainmentEList<UniqueConstraint>(UniqueConstraint.class, this, OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT);
+    }
+    return uniqueConstraint;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public int getAllocationSize() {
-		return allocationSize;
-	}
+    return allocationSize;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setAllocationSize(int newAllocationSize) {
-		int oldAllocationSize = allocationSize;
-		allocationSize = newAllocationSize;
-		boolean oldAllocationSizeESet = allocationSizeESet;
-		allocationSizeESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE, oldAllocationSize, allocationSize, !oldAllocationSizeESet));
-	}
+    int oldAllocationSize = allocationSize;
+    allocationSize = newAllocationSize;
+    boolean oldAllocationSizeESet = allocationSizeESet;
+    allocationSizeESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE, oldAllocationSize, allocationSize, !oldAllocationSizeESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void unsetAllocationSize() {
-		int oldAllocationSize = allocationSize;
-		boolean oldAllocationSizeESet = allocationSizeESet;
-		allocationSize = ALLOCATION_SIZE_EDEFAULT;
-		allocationSizeESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE, oldAllocationSize, ALLOCATION_SIZE_EDEFAULT, oldAllocationSizeESet));
-	}
+    int oldAllocationSize = allocationSize;
+    boolean oldAllocationSizeESet = allocationSizeESet;
+    allocationSize = ALLOCATION_SIZE_EDEFAULT;
+    allocationSizeESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE, oldAllocationSize, ALLOCATION_SIZE_EDEFAULT, oldAllocationSizeESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public boolean isSetAllocationSize() {
-		return allocationSizeESet;
-	}
+    return allocationSizeESet;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getCatalog() {
-		return catalog;
-	}
+    return catalog;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setCatalog(String newCatalog) {
-		String oldCatalog = catalog;
-		catalog = newCatalog;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__CATALOG, oldCatalog, catalog));
-	}
+    String oldCatalog = catalog;
+    catalog = newCatalog;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__CATALOG, oldCatalog, catalog));
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getCreationSuffix() {
-		return creationSuffix;
-	}
+    return creationSuffix;
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setCreationSuffix(String newCreationSuffix) {
-		String oldCreationSuffix = creationSuffix;
-		creationSuffix = newCreationSuffix;
-		boolean oldCreationSuffixESet = creationSuffixESet;
-		creationSuffixESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX, oldCreationSuffix, creationSuffix, !oldCreationSuffixESet));
-	}
+    String oldCreationSuffix = creationSuffix;
+    creationSuffix = newCreationSuffix;
+    boolean oldCreationSuffixESet = creationSuffixESet;
+    creationSuffixESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX, oldCreationSuffix, creationSuffix, !oldCreationSuffixESet));
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void unsetCreationSuffix() {
-		String oldCreationSuffix = creationSuffix;
-		boolean oldCreationSuffixESet = creationSuffixESet;
-		creationSuffix = CREATION_SUFFIX_EDEFAULT;
-		creationSuffixESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX, oldCreationSuffix, CREATION_SUFFIX_EDEFAULT, oldCreationSuffixESet));
-	}
+    String oldCreationSuffix = creationSuffix;
+    boolean oldCreationSuffixESet = creationSuffixESet;
+    creationSuffix = CREATION_SUFFIX_EDEFAULT;
+    creationSuffixESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX, oldCreationSuffix, CREATION_SUFFIX_EDEFAULT, oldCreationSuffixESet));
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean isSetCreationSuffix() {
-		return creationSuffixESet;
-	}
+    return creationSuffixESet;
+  }
 
 		/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public int getInitialValue() {
-		return initialValue;
-	}
+    return initialValue;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setInitialValue(int newInitialValue) {
-		int oldInitialValue = initialValue;
-		initialValue = newInitialValue;
-		boolean oldInitialValueESet = initialValueESet;
-		initialValueESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__INITIAL_VALUE, oldInitialValue, initialValue, !oldInitialValueESet));
-	}
+    int oldInitialValue = initialValue;
+    initialValue = newInitialValue;
+    boolean oldInitialValueESet = initialValueESet;
+    initialValueESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__INITIAL_VALUE, oldInitialValue, initialValue, !oldInitialValueESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void unsetInitialValue() {
-		int oldInitialValue = initialValue;
-		boolean oldInitialValueESet = initialValueESet;
-		initialValue = INITIAL_VALUE_EDEFAULT;
-		initialValueESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.TABLE_GENERATOR__INITIAL_VALUE, oldInitialValue, INITIAL_VALUE_EDEFAULT, oldInitialValueESet));
-	}
+    int oldInitialValue = initialValue;
+    boolean oldInitialValueESet = initialValueESet;
+    initialValue = INITIAL_VALUE_EDEFAULT;
+    initialValueESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.TABLE_GENERATOR__INITIAL_VALUE, oldInitialValue, INITIAL_VALUE_EDEFAULT, oldInitialValueESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public boolean isSetInitialValue() {
-		return initialValueESet;
-	}
+    return initialValueESet;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-		return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__NAME, oldName, name));
-	}
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__NAME, oldName, name));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getPkColumnName() {
-		return pkColumnName;
-	}
+    return pkColumnName;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPkColumnName(String newPkColumnName) {
-		String oldPkColumnName = pkColumnName;
-		pkColumnName = newPkColumnName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME, oldPkColumnName, pkColumnName));
-	}
+    String oldPkColumnName = pkColumnName;
+    pkColumnName = newPkColumnName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME, oldPkColumnName, pkColumnName));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getPkColumnValue() {
-		return pkColumnValue;
-	}
+    return pkColumnValue;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setPkColumnValue(String newPkColumnValue) {
-		String oldPkColumnValue = pkColumnValue;
-		pkColumnValue = newPkColumnValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE, oldPkColumnValue, pkColumnValue));
-	}
+    String oldPkColumnValue = pkColumnValue;
+    pkColumnValue = newPkColumnValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE, oldPkColumnValue, pkColumnValue));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getSchema() {
-		return schema;
-	}
+    return schema;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setSchema(String newSchema) {
-		String oldSchema = schema;
-		schema = newSchema;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__SCHEMA, oldSchema, schema));
-	}
+    String oldSchema = schema;
+    schema = newSchema;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__SCHEMA, oldSchema, schema));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getTable() {
-		return table;
-	}
+    return table;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setTable(String newTable) {
-		String oldTable = table;
-		table = newTable;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__TABLE, oldTable, table));
-	}
+    String oldTable = table;
+    table = newTable;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__TABLE, oldTable, table));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getValueColumnName() {
-		return valueColumnName;
-	}
+    return valueColumnName;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setValueColumnName(String newValueColumnName) {
-		String oldValueColumnName = valueColumnName;
-		valueColumnName = newValueColumnName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME, oldValueColumnName, valueColumnName));
-	}
+    String oldValueColumnName = valueColumnName;
+    valueColumnName = newValueColumnName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME, oldValueColumnName, valueColumnName));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
-				return ((InternalEList<?>)getUniqueConstraint()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
+        return ((InternalEList<?>)getUniqueConstraint()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
-				return getDescription();
-			case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
-				return getUniqueConstraint();
-			case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
-				return getAllocationSize();
-			case OrmPackage.TABLE_GENERATOR__CATALOG:
-				return getCatalog();
-			case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
-				return getCreationSuffix();
-			case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
-				return getInitialValue();
-			case OrmPackage.TABLE_GENERATOR__NAME:
-				return getName();
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
-				return getPkColumnName();
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
-				return getPkColumnValue();
-			case OrmPackage.TABLE_GENERATOR__SCHEMA:
-				return getSchema();
-			case OrmPackage.TABLE_GENERATOR__TABLE:
-				return getTable();
-			case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
-				return getValueColumnName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
+        return getDescription();
+      case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
+        return getUniqueConstraint();
+      case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
+        return getAllocationSize();
+      case OrmPackage.TABLE_GENERATOR__CATALOG:
+        return getCatalog();
+      case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
+        return getCreationSuffix();
+      case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
+        return getInitialValue();
+      case OrmPackage.TABLE_GENERATOR__NAME:
+        return getName();
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
+        return getPkColumnName();
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
+        return getPkColumnValue();
+      case OrmPackage.TABLE_GENERATOR__SCHEMA:
+        return getSchema();
+      case OrmPackage.TABLE_GENERATOR__TABLE:
+        return getTable();
+      case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
+        return getValueColumnName();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
-				setDescription((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
-				getUniqueConstraint().clear();
-				getUniqueConstraint().addAll((Collection<? extends UniqueConstraint>)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
-				setAllocationSize((Integer)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__CATALOG:
-				setCatalog((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
-				setCreationSuffix((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
-				setInitialValue((Integer)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__NAME:
-				setName((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
-				setPkColumnName((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
-				setPkColumnValue((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__SCHEMA:
-				setSchema((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__TABLE:
-				setTable((String)newValue);
-				return;
-			case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
-				setValueColumnName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
+        setDescription((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
+        getUniqueConstraint().clear();
+        getUniqueConstraint().addAll((Collection<? extends UniqueConstraint>)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
+        setAllocationSize((Integer)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__CATALOG:
+        setCatalog((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
+        setCreationSuffix((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
+        setInitialValue((Integer)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__NAME:
+        setName((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
+        setPkColumnName((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
+        setPkColumnValue((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__SCHEMA:
+        setSchema((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__TABLE:
+        setTable((String)newValue);
+        return;
+      case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
+        setValueColumnName((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
-				setDescription(DESCRIPTION_EDEFAULT);
-				return;
-			case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
-				getUniqueConstraint().clear();
-				return;
-			case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
-				unsetAllocationSize();
-				return;
-			case OrmPackage.TABLE_GENERATOR__CATALOG:
-				setCatalog(CATALOG_EDEFAULT);
-				return;
-			case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
-				unsetCreationSuffix();
-				return;
-			case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
-				unsetInitialValue();
-				return;
-			case OrmPackage.TABLE_GENERATOR__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
-				setPkColumnName(PK_COLUMN_NAME_EDEFAULT);
-				return;
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
-				setPkColumnValue(PK_COLUMN_VALUE_EDEFAULT);
-				return;
-			case OrmPackage.TABLE_GENERATOR__SCHEMA:
-				setSchema(SCHEMA_EDEFAULT);
-				return;
-			case OrmPackage.TABLE_GENERATOR__TABLE:
-				setTable(TABLE_EDEFAULT);
-				return;
-			case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
-				setValueColumnName(VALUE_COLUMN_NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
+        setDescription(DESCRIPTION_EDEFAULT);
+        return;
+      case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
+        getUniqueConstraint().clear();
+        return;
+      case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
+        unsetAllocationSize();
+        return;
+      case OrmPackage.TABLE_GENERATOR__CATALOG:
+        setCatalog(CATALOG_EDEFAULT);
+        return;
+      case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
+        unsetCreationSuffix();
+        return;
+      case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
+        unsetInitialValue();
+        return;
+      case OrmPackage.TABLE_GENERATOR__NAME:
+        setName(NAME_EDEFAULT);
+        return;
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
+        setPkColumnName(PK_COLUMN_NAME_EDEFAULT);
+        return;
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
+        setPkColumnValue(PK_COLUMN_VALUE_EDEFAULT);
+        return;
+      case OrmPackage.TABLE_GENERATOR__SCHEMA:
+        setSchema(SCHEMA_EDEFAULT);
+        return;
+      case OrmPackage.TABLE_GENERATOR__TABLE:
+        setTable(TABLE_EDEFAULT);
+        return;
+      case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
+        setValueColumnName(VALUE_COLUMN_NAME_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
-				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
-				return uniqueConstraint != null && !uniqueConstraint.isEmpty();
-			case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
-				return isSetAllocationSize();
-			case OrmPackage.TABLE_GENERATOR__CATALOG:
-				return CATALOG_EDEFAULT == null ? catalog != null : !CATALOG_EDEFAULT.equals(catalog);
-			case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
-				return isSetCreationSuffix();
-			case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
-				return isSetInitialValue();
-			case OrmPackage.TABLE_GENERATOR__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
-				return PK_COLUMN_NAME_EDEFAULT == null ? pkColumnName != null : !PK_COLUMN_NAME_EDEFAULT.equals(pkColumnName);
-			case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
-				return PK_COLUMN_VALUE_EDEFAULT == null ? pkColumnValue != null : !PK_COLUMN_VALUE_EDEFAULT.equals(pkColumnValue);
-			case OrmPackage.TABLE_GENERATOR__SCHEMA:
-				return SCHEMA_EDEFAULT == null ? schema != null : !SCHEMA_EDEFAULT.equals(schema);
-			case OrmPackage.TABLE_GENERATOR__TABLE:
-				return TABLE_EDEFAULT == null ? table != null : !TABLE_EDEFAULT.equals(table);
-			case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
-				return VALUE_COLUMN_NAME_EDEFAULT == null ? valueColumnName != null : !VALUE_COLUMN_NAME_EDEFAULT.equals(valueColumnName);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.TABLE_GENERATOR__DESCRIPTION:
+        return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+      case OrmPackage.TABLE_GENERATOR__UNIQUE_CONSTRAINT:
+        return uniqueConstraint != null && !uniqueConstraint.isEmpty();
+      case OrmPackage.TABLE_GENERATOR__ALLOCATION_SIZE:
+        return isSetAllocationSize();
+      case OrmPackage.TABLE_GENERATOR__CATALOG:
+        return CATALOG_EDEFAULT == null ? catalog != null : !CATALOG_EDEFAULT.equals(catalog);
+      case OrmPackage.TABLE_GENERATOR__CREATION_SUFFIX:
+        return isSetCreationSuffix();
+      case OrmPackage.TABLE_GENERATOR__INITIAL_VALUE:
+        return isSetInitialValue();
+      case OrmPackage.TABLE_GENERATOR__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_NAME:
+        return PK_COLUMN_NAME_EDEFAULT == null ? pkColumnName != null : !PK_COLUMN_NAME_EDEFAULT.equals(pkColumnName);
+      case OrmPackage.TABLE_GENERATOR__PK_COLUMN_VALUE:
+        return PK_COLUMN_VALUE_EDEFAULT == null ? pkColumnValue != null : !PK_COLUMN_VALUE_EDEFAULT.equals(pkColumnValue);
+      case OrmPackage.TABLE_GENERATOR__SCHEMA:
+        return SCHEMA_EDEFAULT == null ? schema != null : !SCHEMA_EDEFAULT.equals(schema);
+      case OrmPackage.TABLE_GENERATOR__TABLE:
+        return TABLE_EDEFAULT == null ? table != null : !TABLE_EDEFAULT.equals(table);
+      case OrmPackage.TABLE_GENERATOR__VALUE_COLUMN_NAME:
+        return VALUE_COLUMN_NAME_EDEFAULT == null ? valueColumnName != null : !VALUE_COLUMN_NAME_EDEFAULT.equals(valueColumnName);
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", allocationSize: ");
-		if (allocationSizeESet) result.append(allocationSize); else result.append("<unset>");
-		result.append(", catalog: ");
-		result.append(catalog);
-		result.append(", creationSuffix: ");
-		if (creationSuffixESet) result.append(creationSuffix); else result.append("<unset>");
-		result.append(", initialValue: ");
-		if (initialValueESet) result.append(initialValue); else result.append("<unset>");
-		result.append(", name: ");
-		result.append(name);
-		result.append(", pkColumnName: ");
-		result.append(pkColumnName);
-		result.append(", pkColumnValue: ");
-		result.append(pkColumnValue);
-		result.append(", schema: ");
-		result.append(schema);
-		result.append(", table: ");
-		result.append(table);
-		result.append(", valueColumnName: ");
-		result.append(valueColumnName);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (description: "); //$NON-NLS-1$
+    result.append(description);
+    result.append(", allocationSize: "); //$NON-NLS-1$
+    if (allocationSizeESet) result.append(allocationSize); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(", catalog: "); //$NON-NLS-1$
+    result.append(catalog);
+    result.append(", creationSuffix: "); //$NON-NLS-1$
+    if (creationSuffixESet) result.append(creationSuffix); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(", initialValue: "); //$NON-NLS-1$
+    if (initialValueESet) result.append(initialValue); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(", name: "); //$NON-NLS-1$
+    result.append(name);
+    result.append(", pkColumnName: "); //$NON-NLS-1$
+    result.append(pkColumnName);
+    result.append(", pkColumnValue: "); //$NON-NLS-1$
+    result.append(pkColumnValue);
+    result.append(", schema: "); //$NON-NLS-1$
+    result.append(schema);
+    result.append(", table: "); //$NON-NLS-1$
+    result.append(table);
+    result.append(", valueColumnName: "); //$NON-NLS-1$
+    result.append(valueColumnName);
+    result.append(')');
+    return result.toString();
+  }
 
 } // TableGeneratorImpl

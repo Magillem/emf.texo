@@ -31,179 +31,179 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum JoinFetchType implements Enumerator {
   /**
-	 * The '<em><b>INNER</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #INNER_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>INNER</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #INNER_VALUE
+   * @generated
+   * @ordered
+   */
   INNER(0, "INNER", "INNER"),
 
   /**
-	 * The '<em><b>OUTER</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #OUTER_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>OUTER</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #OUTER_VALUE
+   * @generated
+   * @ordered
+   */
   OUTER(1, "OUTER", "OUTER");
 
   /**
-	 * The '<em><b>INNER</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>INNER</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>INNER</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #INNER
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #INNER
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int INNER_VALUE = 0;
 
   /**
-	 * The '<em><b>OUTER</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>OUTER</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>OUTER</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #OUTER
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #OUTER
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int OUTER_VALUE = 1;
 
   /**
-	 * An array of all the '<em><b>Join Fetch Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * An array of all the '<em><b>Join Fetch Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private static final JoinFetchType[] VALUES_ARRAY = new JoinFetchType[] {
-			INNER,
-			OUTER,
-		};
+      INNER,
+      OUTER,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Join Fetch Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!--
+   * A public read-only list of all the '<em><b>Join Fetch Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<JoinFetchType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Join Fetch Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Join Fetch Type</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static JoinFetchType get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			JoinFetchType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      JoinFetchType result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Join Fetch Type</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Join Fetch Type</b></em>' literal with the specified name.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static JoinFetchType getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			JoinFetchType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      JoinFetchType result = VALUES_ARRAY[i];
+      if (result.getName().equals(name)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Join Fetch Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+   * Returns the '<em><b>Join Fetch Type</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static JoinFetchType get(int value) {
-		switch (value) {
-			case INNER_VALUE: return INNER;
-			case OUTER_VALUE: return OUTER;
-		}
-		return null;
-	}
+    switch (value) {
+      case INNER_VALUE: return INNER;
+      case OUTER_VALUE: return OUTER;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Only this class can construct instances.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private JoinFetchType(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public int getValue() {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getLiteral() {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		return literal;
-	}
+    return literal;
+  }
 
 } // JoinFetchType

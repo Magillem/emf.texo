@@ -58,54 +58,54 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface CloneCopyPolicy extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Method</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Method</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Method</em>' attribute isn't clear, there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Method</em>' attribute.
-	 * @see #setMethod(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCloneCopyPolicy_Method()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='method'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Method</em>' attribute.
+   * @see #setMethod(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCloneCopyPolicy_Method()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='method'"
+   * @generated
+   */
   String getMethod();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.CloneCopyPolicy#getMethod <em>Method</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Method</em>' attribute.
-	 * @see #getMethod()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.CloneCopyPolicy#getMethod <em>Method</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Method</em>' attribute.
+   * @see #getMethod()
+   * @generated
+   */
   void setMethod(String value);
 
   /**
-	 * Returns the value of the '<em><b>Working Copy Method</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Working Copy Method</b></em>' attribute.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Working Copy Method</em>' attribute isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Working Copy Method</em>' attribute.
-	 * @see #setWorkingCopyMethod(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCloneCopyPolicy_WorkingCopyMethod()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='working-copy-method'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Working Copy Method</em>' attribute.
+   * @see #setWorkingCopyMethod(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getCloneCopyPolicy_WorkingCopyMethod()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+   *        extendedMetaData="kind='attribute' name='working-copy-method'"
+   * @generated
+   */
   String getWorkingCopyMethod();
 
   /**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.CloneCopyPolicy#getWorkingCopyMethod <em>Working Copy Method</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Working Copy Method</em>' attribute.
-	 * @see #getWorkingCopyMethod()
-	 * @generated
-	 */
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.CloneCopyPolicy#getWorkingCopyMethod <em>Working Copy Method</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @param value the new value of the '<em>Working Copy Method</em>' attribute.
+   * @see #getWorkingCopyMethod()
+   * @generated
+   */
   void setWorkingCopyMethod(String value);
 
 } // CloneCopyPolicy

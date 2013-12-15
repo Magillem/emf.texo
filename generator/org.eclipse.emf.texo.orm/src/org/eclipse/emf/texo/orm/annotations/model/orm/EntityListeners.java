@@ -35,20 +35,20 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface EntityListeners extends BaseOrmAnnotation {
   /**
-	 * Returns the value of the '<em><b>Entity Listener</b></em>' containment reference list.
-	 * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.EntityListener}.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Entity Listener</b></em>' containment reference list.
+   * The list contents are of type {@link org.eclipse.emf.texo.orm.annotations.model.orm.EntityListener}.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Entity Listener</em>' containment reference list isn't clear, there really should be
    * more of a description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @return the value of the '<em>Entity Listener</em>' containment reference list.
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getEntityListeners_EntityListener()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='entity-listener' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Entity Listener</em>' containment reference list.
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getEntityListeners_EntityListener()
+   * @model containment="true"
+   *        extendedMetaData="kind='element' name='entity-listener' namespace='##targetNamespace'"
+   * @generated
+   */
   EList<EntityListener> getEntityListener();
 
 } // EntityListeners

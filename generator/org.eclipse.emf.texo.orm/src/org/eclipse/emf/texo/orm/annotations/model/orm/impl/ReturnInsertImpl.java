@@ -28,171 +28,171 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class ReturnInsertImpl extends BaseOrmAnnotationImpl implements ReturnInsert {
 	/**
-	 * The default value of the '{@link #isReturnOnly() <em>Return Only</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #isReturnOnly() <em>Return Only</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isReturnOnly()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #isReturnOnly()
+   * @generated
+   * @ordered
+   */
 	protected static final boolean RETURN_ONLY_EDEFAULT = false;
 
 	/**
-	 * The cached value of the '{@link #isReturnOnly() <em>Return Only</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #isReturnOnly() <em>Return Only</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isReturnOnly()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #isReturnOnly()
+   * @generated
+   * @ordered
+   */
 	protected boolean returnOnly = RETURN_ONLY_EDEFAULT;
 
 	/**
-	 * This is true if the Return Only attribute has been set.
-	 * <!-- begin-user-doc -->
+   * This is true if the Return Only attribute has been set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
 	protected boolean returnOnlyESet;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ReturnInsertImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getReturnInsert();
-	}
+    return OrmPackage.eINSTANCE.getReturnInsert();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean isReturnOnly() {
-		return returnOnly;
-	}
+    return returnOnly;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setReturnOnly(boolean newReturnOnly) {
-		boolean oldReturnOnly = returnOnly;
-		returnOnly = newReturnOnly;
-		boolean oldReturnOnlyESet = returnOnlyESet;
-		returnOnlyESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RETURN_INSERT__RETURN_ONLY, oldReturnOnly, returnOnly, !oldReturnOnlyESet));
-	}
+    boolean oldReturnOnly = returnOnly;
+    returnOnly = newReturnOnly;
+    boolean oldReturnOnlyESet = returnOnlyESet;
+    returnOnlyESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.RETURN_INSERT__RETURN_ONLY, oldReturnOnly, returnOnly, !oldReturnOnlyESet));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void unsetReturnOnly() {
-		boolean oldReturnOnly = returnOnly;
-		boolean oldReturnOnlyESet = returnOnlyESet;
-		returnOnly = RETURN_ONLY_EDEFAULT;
-		returnOnlyESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.RETURN_INSERT__RETURN_ONLY, oldReturnOnly, RETURN_ONLY_EDEFAULT, oldReturnOnlyESet));
-	}
+    boolean oldReturnOnly = returnOnly;
+    boolean oldReturnOnlyESet = returnOnlyESet;
+    returnOnly = RETURN_ONLY_EDEFAULT;
+    returnOnlyESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.RETURN_INSERT__RETURN_ONLY, oldReturnOnly, RETURN_ONLY_EDEFAULT, oldReturnOnlyESet));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean isSetReturnOnly() {
-		return returnOnlyESet;
-	}
+    return returnOnlyESet;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.RETURN_INSERT__RETURN_ONLY:
-				return isReturnOnly();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.RETURN_INSERT__RETURN_ONLY:
+        return isReturnOnly();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.RETURN_INSERT__RETURN_ONLY:
-				setReturnOnly((Boolean)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.RETURN_INSERT__RETURN_ONLY:
+        setReturnOnly((Boolean)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.RETURN_INSERT__RETURN_ONLY:
-				unsetReturnOnly();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.RETURN_INSERT__RETURN_ONLY:
+        unsetReturnOnly();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.RETURN_INSERT__RETURN_ONLY:
-				return isSetReturnOnly();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.RETURN_INSERT__RETURN_ONLY:
+        return isSetReturnOnly();
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (returnOnly: ");
-		if (returnOnlyESet) result.append(returnOnly); else result.append("<unset>");
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (returnOnly: "); //$NON-NLS-1$
+    if (returnOnlyESet) result.append(returnOnly); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(')');
+    return result.toString();
+  }
 
 } //ReturnInsertImpl

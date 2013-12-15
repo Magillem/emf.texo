@@ -79,30 +79,30 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface AdditionalCriteria extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Criteria</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Criteria</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Criteria</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Criteria</em>' attribute.
-	 * @see #setCriteria(String)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getAdditionalCriteria_Criteria()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-	 *        extendedMetaData="kind='element' name='criteria' namespace='##targetNamespace'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Criteria</em>' attribute.
+   * @see #setCriteria(String)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getAdditionalCriteria_Criteria()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+   *        extendedMetaData="kind='element' name='criteria' namespace='##targetNamespace'"
+   * @generated
+   */
 	String getCriteria();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.AdditionalCriteria#getCriteria <em>Criteria</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.AdditionalCriteria#getCriteria <em>Criteria</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Criteria</em>' attribute.
-	 * @see #getCriteria()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Criteria</em>' attribute.
+   * @see #getCriteria()
+   * @generated
+   */
 	void setCriteria(String value);
 
 } // AdditionalCriteria

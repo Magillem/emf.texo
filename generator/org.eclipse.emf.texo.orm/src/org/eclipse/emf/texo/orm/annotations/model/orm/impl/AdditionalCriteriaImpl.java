@@ -28,137 +28,137 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class AdditionalCriteriaImpl extends BaseOrmAnnotationImpl implements AdditionalCriteria {
 	/**
-	 * The default value of the '{@link #getCriteria() <em>Criteria</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getCriteria() <em>Criteria</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCriteria()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCriteria()
+   * @generated
+   * @ordered
+   */
 	protected static final String CRITERIA_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getCriteria() <em>Criteria</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getCriteria() <em>Criteria</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCriteria()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCriteria()
+   * @generated
+   * @ordered
+   */
 	protected String criteria = CRITERIA_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AdditionalCriteriaImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getAdditionalCriteria();
-	}
+    return OrmPackage.eINSTANCE.getAdditionalCriteria();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public String getCriteria() {
-		return criteria;
-	}
+    return criteria;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setCriteria(String newCriteria) {
-		String oldCriteria = criteria;
-		criteria = newCriteria;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ADDITIONAL_CRITERIA__CRITERIA, oldCriteria, criteria));
-	}
+    String oldCriteria = criteria;
+    criteria = newCriteria;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.ADDITIONAL_CRITERIA__CRITERIA, oldCriteria, criteria));
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
-				return getCriteria();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
+        return getCriteria();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
-				setCriteria((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
+        setCriteria((String)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
-				setCriteria(CRITERIA_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
+        setCriteria(CRITERIA_EDEFAULT);
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
-				return CRITERIA_EDEFAULT == null ? criteria != null : !CRITERIA_EDEFAULT.equals(criteria);
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.ADDITIONAL_CRITERIA__CRITERIA:
+        return CRITERIA_EDEFAULT == null ? criteria != null : !CRITERIA_EDEFAULT.equals(criteria);
+    }
+    return super.eIsSet(featureID);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (criteria: ");
-		result.append(criteria);
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (criteria: "); //$NON-NLS-1$
+    result.append(criteria);
+    result.append(')');
+    return result.toString();
+  }
 
 } //AdditionalCriteriaImpl

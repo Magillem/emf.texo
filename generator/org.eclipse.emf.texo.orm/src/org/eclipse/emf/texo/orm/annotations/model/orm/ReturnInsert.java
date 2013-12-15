@@ -45,57 +45,57 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotation;
  */
 public interface ReturnInsert extends BaseOrmAnnotation {
 	/**
-	 * Returns the value of the '<em><b>Return Only</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+   * Returns the value of the '<em><b>Return Only</b></em>' attribute.
+   * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Return Only</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Only</em>' attribute.
-	 * @see #isSetReturnOnly()
-	 * @see #unsetReturnOnly()
-	 * @see #setReturnOnly(boolean)
-	 * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getReturnInsert_ReturnOnly()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
-	 *        extendedMetaData="kind='attribute' name='return-only'"
-	 * @generated
-	 */
+   * @return the value of the '<em>Return Only</em>' attribute.
+   * @see #isSetReturnOnly()
+   * @see #unsetReturnOnly()
+   * @see #setReturnOnly(boolean)
+   * @see org.eclipse.emf.texo.orm.annotations.model.orm.OrmPackage#getReturnInsert_ReturnOnly()
+   * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+   *        extendedMetaData="kind='attribute' name='return-only'"
+   * @generated
+   */
 	boolean isReturnOnly();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ReturnInsert#isReturnOnly <em>Return Only</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Sets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ReturnInsert#isReturnOnly <em>Return Only</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Only</em>' attribute.
-	 * @see #isSetReturnOnly()
-	 * @see #unsetReturnOnly()
-	 * @see #isReturnOnly()
-	 * @generated
-	 */
+   * @param value the new value of the '<em>Return Only</em>' attribute.
+   * @see #isSetReturnOnly()
+   * @see #unsetReturnOnly()
+   * @see #isReturnOnly()
+   * @generated
+   */
 	void setReturnOnly(boolean value);
 
 	/**
-	 * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ReturnInsert#isReturnOnly <em>Return Only</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * Unsets the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ReturnInsert#isReturnOnly <em>Return Only</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetReturnOnly()
-	 * @see #isReturnOnly()
-	 * @see #setReturnOnly(boolean)
-	 * @generated
-	 */
+   * @see #isSetReturnOnly()
+   * @see #isReturnOnly()
+   * @see #setReturnOnly(boolean)
+   * @generated
+   */
 	void unsetReturnOnly();
 
 	/**
-	 * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ReturnInsert#isReturnOnly <em>Return Only</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+   * Returns whether the value of the '{@link org.eclipse.emf.texo.orm.annotations.model.orm.ReturnInsert#isReturnOnly <em>Return Only</em>}' attribute is set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Return Only</em>' attribute is set.
-	 * @see #unsetReturnOnly()
-	 * @see #isReturnOnly()
-	 * @see #setReturnOnly(boolean)
-	 * @generated
-	 */
+   * @return whether the value of the '<em>Return Only</em>' attribute is set.
+   * @see #unsetReturnOnly()
+   * @see #isReturnOnly()
+   * @see #setReturnOnly(boolean)
+   * @generated
+   */
 	boolean isSetReturnOnly();
 
 } // ReturnInsert

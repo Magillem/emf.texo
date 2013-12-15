@@ -41,99 +41,99 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ChangeTrackingType implements Enumerator {
   /**
-	 * The '<em><b>ATTRIBUTE</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #ATTRIBUTE_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>ATTRIBUTE</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #ATTRIBUTE_VALUE
+   * @generated
+   * @ordered
+   */
   ATTRIBUTE(0, "ATTRIBUTE", "ATTRIBUTE"),
 
   /**
-	 * The '<em><b>OBJECT</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #OBJECT_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>OBJECT</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #OBJECT_VALUE
+   * @generated
+   * @ordered
+   */
   OBJECT(1, "OBJECT", "OBJECT"),
 
   /**
-	 * The '<em><b>DEFERRED</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #DEFERRED_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>DEFERRED</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #DEFERRED_VALUE
+   * @generated
+   * @ordered
+   */
   DEFERRED(2, "DEFERRED", "DEFERRED"),
 
   /**
-	 * The '<em><b>AUTO</b></em>' literal object.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #AUTO_VALUE
-	 * @generated
-	 * @ordered
-	 */
+   * The '<em><b>AUTO</b></em>' literal object.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #AUTO_VALUE
+   * @generated
+   * @ordered
+   */
   AUTO(3, "AUTO", "AUTO");
 
   /**
-	 * The '<em><b>ATTRIBUTE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>ATTRIBUTE</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>ATTRIBUTE</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #ATTRIBUTE
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #ATTRIBUTE
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int ATTRIBUTE_VALUE = 0;
 
   /**
-	 * The '<em><b>OBJECT</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>OBJECT</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>OBJECT</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #OBJECT
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #OBJECT
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int OBJECT_VALUE = 1;
 
   /**
-	 * The '<em><b>DEFERRED</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>DEFERRED</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>DEFERRED</b></em>' literal object isn't clear, there really should be more of a
    * description here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #DEFERRED
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #DEFERRED
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int DEFERRED_VALUE = 2;
 
   /**
-	 * The '<em><b>AUTO</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+   * The '<em><b>AUTO</b></em>' literal value.
+   * <!-- begin-user-doc -->
    * <p>
    * If the meaning of '<em><b>AUTO</b></em>' literal object isn't clear, there really should be more of a description
    * here...
    * </p>
    * <!-- end-user-doc -->
-	 * @see #AUTO
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
+   * @see #AUTO
+   * @model
+   * @generated
+   * @ordered
+   */
   public static final int AUTO_VALUE = 3;
 
   /**
@@ -143,130 +143,130 @@ public enum ChangeTrackingType implements Enumerator {
    * @generated
    */
   private static final ChangeTrackingType[] VALUES_ARRAY = new ChangeTrackingType[] {
-			ATTRIBUTE,
-			OBJECT,
-			DEFERRED,
-			AUTO,
-		};
+      ATTRIBUTE,
+      OBJECT,
+      DEFERRED,
+      AUTO,
+    };
 
   /**
-	 * A public read-only list of all the '<em><b>Change Tracking Type</b></em>' enumerators.
-	 * <!-- begin-user-doc --> <!--
+   * A public read-only list of all the '<em><b>Change Tracking Type</b></em>' enumerators.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static final List<ChangeTrackingType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
   /**
-	 * Returns the '<em><b>Change Tracking Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc
+   * Returns the '<em><b>Change Tracking Type</b></em>' literal with the specified literal value.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static ChangeTrackingType get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			ChangeTrackingType result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      ChangeTrackingType result = VALUES_ARRAY[i];
+      if (result.toString().equals(literal)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Change Tracking Type</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the '<em><b>Change Tracking Type</b></em>' literal with the specified name.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static ChangeTrackingType getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			ChangeTrackingType result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+    for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+      ChangeTrackingType result = VALUES_ARRAY[i];
+      if (result.getName().equals(name)) {
+        return result;
+      }
+    }
+    return null;
+  }
 
   /**
-	 * Returns the '<em><b>Change Tracking Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc
+   * Returns the '<em><b>Change Tracking Type</b></em>' literal with the specified integer value.
+   * <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   public static ChangeTrackingType get(int value) {
-		switch (value) {
-			case ATTRIBUTE_VALUE: return ATTRIBUTE;
-			case OBJECT_VALUE: return OBJECT;
-			case DEFERRED_VALUE: return DEFERRED;
-			case AUTO_VALUE: return AUTO;
-		}
-		return null;
-	}
+    switch (value) {
+      case ATTRIBUTE_VALUE: return ATTRIBUTE;
+      case OBJECT_VALUE: return OBJECT;
+      case DEFERRED_VALUE: return DEFERRED;
+      case AUTO_VALUE: return AUTO;
+    }
+    return null;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final int value;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String name;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private final String literal;
 
   /**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * Only this class can construct instances.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   private ChangeTrackingType(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+    this.value = value;
+    this.name = name;
+    this.literal = literal;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public int getValue() {
-	  return value;
-	}
+    return value;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getName() {
-	  return name;
-	}
+    return name;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public String getLiteral() {
-	  return literal;
-	}
+    return literal;
+  }
 
   /**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc --> <!--
+   * Returns the literal value of the enumerator, which is its string representation.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
   @Override
   public String toString() {
-		return literal;
-	}
+    return literal;
+  }
 
 } // ChangeTrackingType

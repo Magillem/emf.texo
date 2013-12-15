@@ -38,292 +38,292 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class PrimaryKeyImpl extends BaseOrmAnnotationImpl implements PrimaryKey {
   /**
-	 * The cached value of the '{@link #getColumn() <em>Column</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getColumn() <em>Column</em>}' containment reference list.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see #getColumn()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getColumn()
+   * @generated
+   * @ordered
+   */
   protected EList<Column> column;
 
   /**
-	 * The default value of the '{@link #getCacheKeyType() <em>Cache Key Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The default value of the '{@link #getCacheKeyType() <em>Cache Key Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCacheKeyType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCacheKeyType()
+   * @generated
+   * @ordered
+   */
 	protected static final CacheKeyType CACHE_KEY_TYPE_EDEFAULT = CacheKeyType.IDVALUE;
 
 		/**
-	 * The cached value of the '{@link #getCacheKeyType() <em>Cache Key Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getCacheKeyType() <em>Cache Key Type</em>}' attribute.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCacheKeyType()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getCacheKeyType()
+   * @generated
+   * @ordered
+   */
 	protected CacheKeyType cacheKeyType = CACHE_KEY_TYPE_EDEFAULT;
 
 		/**
-	 * This is true if the Cache Key Type attribute has been set.
-	 * <!-- begin-user-doc -->
+   * This is true if the Cache Key Type attribute has been set.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * @generated
+   * @ordered
+   */
 	protected boolean cacheKeyTypeESet;
 
 		/**
-	 * The default value of the '{@link #getValidation() <em>Validation</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getValidation() <em>Validation</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getValidation()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValidation()
+   * @generated
+   * @ordered
+   */
   protected static final IdValidation VALIDATION_EDEFAULT = IdValidation.NULL;
 
   /**
-	 * The cached value of the '{@link #getValidation() <em>Validation</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getValidation() <em>Validation</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-	 * @see #getValidation()
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getValidation()
+   * @generated
+   * @ordered
+   */
   protected IdValidation validation = VALIDATION_EDEFAULT;
 
   /**
-	 * This is true if the Validation attribute has been set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * This is true if the Validation attribute has been set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
   protected boolean validationESet;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected PrimaryKeyImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getPrimaryKey();
-	}
+    return OrmPackage.eINSTANCE.getPrimaryKey();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<Column> getColumn() {
-		if (column == null) {
-			column = new EObjectContainmentEList<Column>(Column.class, this, OrmPackage.PRIMARY_KEY__COLUMN);
-		}
-		return column;
-	}
+    if (column == null) {
+      column = new EObjectContainmentEList<Column>(Column.class, this, OrmPackage.PRIMARY_KEY__COLUMN);
+    }
+    return column;
+  }
 
   /**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CacheKeyType getCacheKeyType() {
-		return cacheKeyType;
-	}
+    return cacheKeyType;
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void setCacheKeyType(CacheKeyType newCacheKeyType) {
-		CacheKeyType oldCacheKeyType = cacheKeyType;
-		cacheKeyType = newCacheKeyType == null ? CACHE_KEY_TYPE_EDEFAULT : newCacheKeyType;
-		boolean oldCacheKeyTypeESet = cacheKeyTypeESet;
-		cacheKeyTypeESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE, oldCacheKeyType, cacheKeyType, !oldCacheKeyTypeESet));
-	}
+    CacheKeyType oldCacheKeyType = cacheKeyType;
+    cacheKeyType = newCacheKeyType == null ? CACHE_KEY_TYPE_EDEFAULT : newCacheKeyType;
+    boolean oldCacheKeyTypeESet = cacheKeyTypeESet;
+    cacheKeyTypeESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE, oldCacheKeyType, cacheKeyType, !oldCacheKeyTypeESet));
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void unsetCacheKeyType() {
-		CacheKeyType oldCacheKeyType = cacheKeyType;
-		boolean oldCacheKeyTypeESet = cacheKeyTypeESet;
-		cacheKeyType = CACHE_KEY_TYPE_EDEFAULT;
-		cacheKeyTypeESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE, oldCacheKeyType, CACHE_KEY_TYPE_EDEFAULT, oldCacheKeyTypeESet));
-	}
+    CacheKeyType oldCacheKeyType = cacheKeyType;
+    boolean oldCacheKeyTypeESet = cacheKeyTypeESet;
+    cacheKeyType = CACHE_KEY_TYPE_EDEFAULT;
+    cacheKeyTypeESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE, oldCacheKeyType, CACHE_KEY_TYPE_EDEFAULT, oldCacheKeyTypeESet));
+  }
 
 		/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean isSetCacheKeyType() {
-		return cacheKeyTypeESet;
-	}
+    return cacheKeyTypeESet;
+  }
 
 		/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public IdValidation getValidation() {
-		return validation;
-	}
+    return validation;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setValidation(IdValidation newValidation) {
-		IdValidation oldValidation = validation;
-		validation = newValidation == null ? VALIDATION_EDEFAULT : newValidation;
-		boolean oldValidationESet = validationESet;
-		validationESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY__VALIDATION, oldValidation, validation, !oldValidationESet));
-	}
+    IdValidation oldValidation = validation;
+    validation = newValidation == null ? VALIDATION_EDEFAULT : newValidation;
+    boolean oldValidationESet = validationESet;
+    validationESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.PRIMARY_KEY__VALIDATION, oldValidation, validation, !oldValidationESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void unsetValidation() {
-		IdValidation oldValidation = validation;
-		boolean oldValidationESet = validationESet;
-		validation = VALIDATION_EDEFAULT;
-		validationESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.PRIMARY_KEY__VALIDATION, oldValidation, VALIDATION_EDEFAULT, oldValidationESet));
-	}
+    IdValidation oldValidation = validation;
+    boolean oldValidationESet = validationESet;
+    validation = VALIDATION_EDEFAULT;
+    validationESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.PRIMARY_KEY__VALIDATION, oldValidation, VALIDATION_EDEFAULT, oldValidationESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public boolean isSetValidation() {
-		return validationESet;
-	}
+    return validationESet;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY__COLUMN:
-				return ((InternalEList<?>)getColumn()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY__COLUMN:
+        return ((InternalEList<?>)getColumn()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY__COLUMN:
-				return getColumn();
-			case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
-				return getCacheKeyType();
-			case OrmPackage.PRIMARY_KEY__VALIDATION:
-				return getValidation();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY__COLUMN:
+        return getColumn();
+      case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
+        return getCacheKeyType();
+      case OrmPackage.PRIMARY_KEY__VALIDATION:
+        return getValidation();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY__COLUMN:
-				getColumn().clear();
-				getColumn().addAll((Collection<? extends Column>)newValue);
-				return;
-			case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
-				setCacheKeyType((CacheKeyType)newValue);
-				return;
-			case OrmPackage.PRIMARY_KEY__VALIDATION:
-				setValidation((IdValidation)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY__COLUMN:
+        getColumn().clear();
+        getColumn().addAll((Collection<? extends Column>)newValue);
+        return;
+      case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
+        setCacheKeyType((CacheKeyType)newValue);
+        return;
+      case OrmPackage.PRIMARY_KEY__VALIDATION:
+        setValidation((IdValidation)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY__COLUMN:
-				getColumn().clear();
-				return;
-			case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
-				unsetCacheKeyType();
-				return;
-			case OrmPackage.PRIMARY_KEY__VALIDATION:
-				unsetValidation();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY__COLUMN:
+        getColumn().clear();
+        return;
+      case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
+        unsetCacheKeyType();
+        return;
+      case OrmPackage.PRIMARY_KEY__VALIDATION:
+        unsetValidation();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.PRIMARY_KEY__COLUMN:
-				return column != null && !column.isEmpty();
-			case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
-				return isSetCacheKeyType();
-			case OrmPackage.PRIMARY_KEY__VALIDATION:
-				return isSetValidation();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.PRIMARY_KEY__COLUMN:
+        return column != null && !column.isEmpty();
+      case OrmPackage.PRIMARY_KEY__CACHE_KEY_TYPE:
+        return isSetCacheKeyType();
+      case OrmPackage.PRIMARY_KEY__VALIDATION:
+        return isSetValidation();
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (cacheKeyType: ");
-		if (cacheKeyTypeESet) result.append(cacheKeyType); else result.append("<unset>");
-		result.append(", validation: ");
-		if (validationESet) result.append(validation); else result.append("<unset>");
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (cacheKeyType: "); //$NON-NLS-1$
+    if (cacheKeyTypeESet) result.append(cacheKeyType); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(", validation: "); //$NON-NLS-1$
+    if (validationESet) result.append(validation); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(')');
+    return result.toString();
+  }
 
 } // PrimaryKeyImpl

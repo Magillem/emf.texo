@@ -40,12 +40,12 @@ import org.eclipse.emf.texo.orm.annotator.ORMJavaAnnotationGenerator;
  */
 public class MultitenantImpl extends BaseOrmAnnotationImpl implements Multitenant {
   /**
-	 * The cached value of the '{@link #getTenantDiscriminator() <em>Tenant Discriminator</em>}' containment reference list.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getTenantDiscriminator()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getTenantDiscriminator() <em>Tenant Discriminator</em>}' containment reference list.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getTenantDiscriminator()
+   * @generated
+   * @ordered
+   */
   protected EList<TenantDiscriminator> tenantDiscriminator;
 
   /**
@@ -59,185 +59,185 @@ public class MultitenantImpl extends BaseOrmAnnotationImpl implements Multitenan
   protected static final MultitenantType TYPE_EDEFAULT = MultitenantType.SINGLETABLE;
 
   /**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getType()
-	 * @generated
-	 * @ordered
-	 */
+   * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getType()
+   * @generated
+   * @ordered
+   */
   protected MultitenantType type = TYPE_EDEFAULT;
 
   /**
-	 * This is true if the Type attribute has been set.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+   * This is true if the Type attribute has been set.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
   protected boolean typeESet;
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   protected MultitenantImpl() {
-		super();
-	}
+    super();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   protected EClass eStaticClass() {
-		return OrmPackage.eINSTANCE.getMultitenant();
-	}
+    return OrmPackage.eINSTANCE.getMultitenant();
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public EList<TenantDiscriminator> getTenantDiscriminator() {
-		if (tenantDiscriminator == null) {
-			tenantDiscriminator = new EObjectContainmentEList<TenantDiscriminator>(TenantDiscriminator.class, this, OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR);
-		}
-		return tenantDiscriminator;
-	}
+    if (tenantDiscriminator == null) {
+      tenantDiscriminator = new EObjectContainmentEList<TenantDiscriminator>(TenantDiscriminator.class, this, OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR);
+    }
+    return tenantDiscriminator;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public MultitenantType getType() {
-		return type;
-	}
+    return type;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void setType(MultitenantType newType) {
-		MultitenantType oldType = type;
-		type = newType == null ? TYPE_EDEFAULT : newType;
-		boolean oldTypeESet = typeESet;
-		typeESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.MULTITENANT__TYPE, oldType, type, !oldTypeESet));
-	}
+    MultitenantType oldType = type;
+    type = newType == null ? TYPE_EDEFAULT : newType;
+    boolean oldTypeESet = typeESet;
+    typeESet = true;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.MULTITENANT__TYPE, oldType, type, !oldTypeESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public void unsetType() {
-		MultitenantType oldType = type;
-		boolean oldTypeESet = typeESet;
-		type = TYPE_EDEFAULT;
-		typeESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.MULTITENANT__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet));
-	}
+    MultitenantType oldType = type;
+    boolean oldTypeESet = typeESet;
+    type = TYPE_EDEFAULT;
+    typeESet = false;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.UNSET, OrmPackage.MULTITENANT__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet));
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   public boolean isSetType() {
-		return typeESet;
-	}
+    return typeESet;
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
-				return ((InternalEList<?>)getTenantDiscriminator()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+    switch (featureID) {
+      case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
+        return ((InternalEList<?>)getTenantDiscriminator()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
-				return getTenantDiscriminator();
-			case OrmPackage.MULTITENANT__TYPE:
-				return getType();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    switch (featureID) {
+      case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
+        return getTenantDiscriminator();
+      case OrmPackage.MULTITENANT__TYPE:
+        return getType();
+    }
+    return super.eGet(featureID, resolve, coreType);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
-				getTenantDiscriminator().clear();
-				getTenantDiscriminator().addAll((Collection<? extends TenantDiscriminator>)newValue);
-				return;
-			case OrmPackage.MULTITENANT__TYPE:
-				setType((MultitenantType)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    switch (featureID) {
+      case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
+        getTenantDiscriminator().clear();
+        getTenantDiscriminator().addAll((Collection<? extends TenantDiscriminator>)newValue);
+        return;
+      case OrmPackage.MULTITENANT__TYPE:
+        setType((MultitenantType)newValue);
+        return;
+    }
+    super.eSet(featureID, newValue);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public void eUnset(int featureID) {
-		switch (featureID) {
-			case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
-				getTenantDiscriminator().clear();
-				return;
-			case OrmPackage.MULTITENANT__TYPE:
-				unsetType();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
+        getTenantDiscriminator().clear();
+        return;
+      case OrmPackage.MULTITENANT__TYPE:
+        unsetType();
+        return;
+    }
+    super.eUnset(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
-				return tenantDiscriminator != null && !tenantDiscriminator.isEmpty();
-			case OrmPackage.MULTITENANT__TYPE:
-				return isSetType();
-		}
-		return super.eIsSet(featureID);
-	}
+    switch (featureID) {
+      case OrmPackage.MULTITENANT__TENANT_DISCRIMINATOR:
+        return tenantDiscriminator != null && !tenantDiscriminator.isEmpty();
+      case OrmPackage.MULTITENANT__TYPE:
+        return isSetType();
+    }
+    return super.eIsSet(featureID);
+  }
 
   /**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public String toString() {
-		if (eIsProxy()) return super.toString();
+    if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (type: ");
-		if (typeESet) result.append(type); else result.append("<unset>");
-		result.append(')');
-		return result.toString();
-	}
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (type: "); //$NON-NLS-1$
+    if (typeESet) result.append(type); else result.append("<unset>"); //$NON-NLS-1$
+    result.append(')');
+    return result.toString();
+  }
 
   @Override
   public String getJavaAnnotation(String identifier) {
