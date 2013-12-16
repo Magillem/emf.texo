@@ -80,38 +80,34 @@ public class ORMGeneratorTest extends TestCase {
     project.getWorkspace().getRoot().refreshLocal(100, null);
     project.refreshLocal(100, null);
 
-    try {
-      // generate all the db names for the orms
-      testORMOptions.setAddOrderColumnToListMappings(true);
-      testORMOptions.setRenameSQLReservedNames(true);
-      testORMOptions.setEnforceUniqueNames(true);
-      testORMOptions.setGenerateFullDbSchemaNames(true);
-      testORMOptions.setMaximumSqlNameLength(64);
-      testORMOptions.setTestRun(true);
-      ORMMappingOptions.setDefaultOptions(testORMOptions);
+    // generate all the db names for the orms
+    testORMOptions.setAddOrderColumnToListMappings(true);
+    testORMOptions.setRenameSQLReservedNames(true);
+    testORMOptions.setEnforceUniqueNames(true);
+    testORMOptions.setGenerateFullDbSchemaNames(true);
+    testORMOptions.setMaximumSqlNameLength(64);
+    testORMOptions.setTestRun(true);
+    ORMMappingOptions.setDefaultOptions(testORMOptions);
 
-      final IProject modelTestProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
-      final IPath projectPath = modelTestProject.getLocation();
-      final File modelTestProjectDir = projectPath.toFile();
+    final IProject modelTestProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
+    final IPath projectPath = modelTestProject.getLocation();
+    final File modelTestProjectDir = projectPath.toFile();
 
-      final IProject ormTestProject = EclipseGeneratorUtils.getProject(TEST_ORM_PROJECT);
-      final File ormTestProjectDir = new File(ormTestProject.getRawLocation().toOSString());
+    final IProject ormTestProject = EclipseGeneratorUtils.getProject(TEST_ORM_PROJECT);
+    final File ormTestProjectDir = new File(ormTestProject.getRawLocation().toOSString());
 
-      final File ormSrcDir = new File(ormTestProjectDir, SRC);
-      final File modelSrcGenDir = new File(modelTestProjectDir, SRC_GEN);
-      final File ormMetaInfDir = new File(ormSrcDir, META_INF);
-      final File modelMetaInfDir = new File(modelSrcGenDir, META_INF);
-      if (!modelMetaInfDir.exists()) {
-        modelMetaInfDir.mkdir();
-      }
-      final File targetMappingFileDir = new File(modelMetaInfDir, MAPPING_FILES);
+    final File ormSrcDir = new File(ormTestProjectDir, SRC);
+    final File modelSrcGenDir = new File(modelTestProjectDir, SRC_GEN);
+    final File ormMetaInfDir = new File(ormSrcDir, META_INF);
+    final File modelMetaInfDir = new File(modelSrcGenDir, META_INF);
+    if (!modelMetaInfDir.exists()) {
+      modelMetaInfDir.mkdir();
+    }
+    final File targetMappingFileDir = new File(modelMetaInfDir, MAPPING_FILES);
 
-      for (String modelFile : getModelFileRelativePaths()) {
-        System.err.println("Generating orm for " + modelFile); //$NON-NLS-1$
-        generate(modelFile, ormMetaInfDir, modelMetaInfDir, targetMappingFileDir);
-      }
-    } finally {
-      project.close(null);
+    for (String modelFile : getModelFileRelativePaths()) {
+      System.err.println("Generating orm for " + modelFile); //$NON-NLS-1$
+      generate(modelFile, ormMetaInfDir, modelMetaInfDir, targetMappingFileDir);
     }
   }
 

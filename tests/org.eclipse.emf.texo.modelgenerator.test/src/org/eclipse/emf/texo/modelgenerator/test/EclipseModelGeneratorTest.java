@@ -71,7 +71,8 @@ public class EclipseModelGeneratorTest extends TestCase {
 
   public void testGenerateModels() throws Exception {
     final IProject project = EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
-    project.open(null);
+    project.getWorkspace().getRoot().refreshLocal(100, null);
+    project.refreshLocal(100, null);
 
     testORMOptions.setAddOrderColumnToListMappings(true);
     testORMOptions.setEnforceUniqueNames(true);
