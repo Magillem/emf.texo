@@ -56,20 +56,6 @@ public class Bz390942ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int BZ390942_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int BZ390942_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int BZ390942_VALUE_FEATURE_ID = 2;
 
   /**

@@ -86,20 +86,6 @@ public class CoreModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ELEMENT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ELEMENT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int ELEMENT_ATTRIBUTE_FEATURE_ID = 2;
 
   /**
@@ -121,34 +107,6 @@ public class CoreModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int MODELELEMENT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MODELELEMENT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MODELELEMENT_ATTRIBUTE_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MODELELEMENT_ANNOTATION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int MODELELEMENT_STEREOTYPE_FEATURE_ID = 4;
 
   /**
@@ -164,48 +122,6 @@ public class CoreModelPackage extends ModelPackage {
    * @generated
    */
   public static final int KDMENTITY_CLASSIFIER_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMENTITY_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMENTITY_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMENTITY_ATTRIBUTE_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMENTITY_ANNOTATION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMENTITY_STEREOTYPE_FEATURE_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMENTITY_TAGGEDVALUE_FEATURE_ID = 5;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -296,91 +212,7 @@ public class CoreModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int KDMRELATIONSHIP_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMRELATIONSHIP_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMRELATIONSHIP_ATTRIBUTE_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMRELATIONSHIP_ANNOTATION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMRELATIONSHIP_STEREOTYPE_FEATURE_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int KDMRELATIONSHIP_TAGGEDVALUE_FEATURE_ID = 5;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int AGGREGATEDRELATIONSHIP_CLASSIFIER_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int AGGREGATEDRELATIONSHIP_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int AGGREGATEDRELATIONSHIP_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int AGGREGATEDRELATIONSHIP_ATTRIBUTE_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int AGGREGATEDRELATIONSHIP_ANNOTATION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int AGGREGATEDRELATIONSHIP_STEREOTYPE_FEATURE_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int AGGREGATEDRELATIONSHIP_TAGGEDVALUE_FEATURE_ID = 5;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

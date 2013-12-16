@@ -223,10 +223,6 @@ public class NestedgroupModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case NestedgroupModelPackage.A_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case NestedgroupModelPackage.A_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case NestedgroupModelPackage.A_NAME_FEATURE_ID:
         return getTarget().getName();
       case NestedgroupModelPackage.A_GROUP_FEATURE_ID:
@@ -248,12 +244,6 @@ public class NestedgroupModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case NestedgroupModelPackage.A_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case NestedgroupModelPackage.A_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case NestedgroupModelPackage.A_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -348,10 +338,6 @@ public class NestedgroupModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case NestedgroupModelPackage.CTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case NestedgroupModelPackage.CTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case NestedgroupModelPackage.CTYPE_CNAME_FEATURE_ID:
         return getTarget().getCname();
       case NestedgroupModelPackage.CTYPE_CVALUE_FEATURE_ID:
@@ -368,12 +354,6 @@ public class NestedgroupModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case NestedgroupModelPackage.CTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case NestedgroupModelPackage.CTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case NestedgroupModelPackage.CTYPE_CNAME_FEATURE_ID:
         getTarget().setCname((String) value);
         return;
@@ -446,10 +426,6 @@ public class NestedgroupModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case NestedgroupModelPackage.ELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case NestedgroupModelPackage.ELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case NestedgroupModelPackage.ELEMENT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case NestedgroupModelPackage.ELEMENT_NAME_FEATURE_ID:
@@ -473,12 +449,6 @@ public class NestedgroupModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case NestedgroupModelPackage.ELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case NestedgroupModelPackage.ELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case NestedgroupModelPackage.ELEMENT_MIXED_FEATURE_ID:
         getTarget().setMixed((List<ElementMixedFeatureGroup>) value);
         return;

@@ -374,10 +374,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.ACTTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.ACTTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.ACTTYPE_SCENE_FEATURE_ID:
         return getTarget().getScene();
       case PlayModelPackage.ACTTYPE_PINDEX_FEATURE_ID:
@@ -397,12 +393,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.ACTTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.ACTTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.ACTTYPE_SCENE_FEATURE_ID:
         getTarget().setScene((List<SceneType>) value);
         return;
@@ -485,10 +475,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.SCENETYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.SCENETYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.SCENETYPE_GROUP_FEATURE_ID:
         return getTarget().getGroup();
       case PlayModelPackage.SCENETYPE_STAGEDIRECTIONS_FEATURE_ID:
@@ -512,12 +498,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.SCENETYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.SCENETYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.SCENETYPE_GROUP_FEATURE_ID:
         getTarget().setGroup((List<SceneTypeGroupFeatureGroup>) value);
         return;
@@ -618,10 +598,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case PlayModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -673,12 +649,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         getTarget().setMixed((List<DocumentRootMixedFeatureGroup>) value);
         return;
@@ -808,10 +778,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.FMTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.FMTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.FMTYPE_P_FEATURE_ID:
         return getTarget().getP();
       default:
@@ -827,12 +793,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.FMTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.FMTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.FMTYPE_P_FEATURE_ID:
         getTarget().setP((List<String>) value);
         return;
@@ -907,10 +867,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.PERSONAETYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.PERSONAETYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.PERSONAETYPE_GROUP_FEATURE_ID:
         return getTarget().getGroup();
       case PlayModelPackage.PERSONAETYPE_TITLE_FEATURE_ID:
@@ -932,12 +888,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.PERSONAETYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.PERSONAETYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.PERSONAETYPE_GROUP_FEATURE_ID:
         getTarget().setGroup((List<PersonaeTypeGroupFeatureGroup>) value);
         return;
@@ -1038,10 +988,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.PERSONAGROUPTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.PERSONAGROUPTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.PERSONAGROUPTYPE_PERSONA_FEATURE_ID:
         return getTarget().getPersona();
       case PlayModelPackage.PERSONAGROUPTYPE_GROUPDESCRIPTION_FEATURE_ID:
@@ -1059,12 +1005,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.PERSONAGROUPTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.PERSONAGROUPTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.PERSONAGROUPTYPE_PERSONA_FEATURE_ID:
         getTarget().setPersona((List<String>) value);
         return;
@@ -1144,10 +1084,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.PLAYTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.PLAYTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.PLAYTYPE_TITLE_FEATURE_ID:
         return getTarget().getTitle();
       case PlayModelPackage.PLAYTYPE_FM_FEATURE_ID:
@@ -1173,12 +1109,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.PLAYTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.PLAYTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.PLAYTYPE_TITLE_FEATURE_ID:
         getTarget().setTitle((String) value);
         return;
@@ -1268,10 +1198,6 @@ public class PlayModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.SPEECHTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PlayModelPackage.SPEECHTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case PlayModelPackage.SPEECHTYPE_GROUP_FEATURE_ID:
         return getTarget().getGroup();
       case PlayModelPackage.SPEECHTYPE_SPEAKER_FEATURE_ID:
@@ -1293,12 +1219,6 @@ public class PlayModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PlayModelPackage.SPEECHTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PlayModelPackage.SPEECHTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case PlayModelPackage.SPEECHTYPE_GROUP_FEATURE_ID:
         getTarget().setGroup((List<SpeechTypeGroupFeatureGroup>) value);
         return;

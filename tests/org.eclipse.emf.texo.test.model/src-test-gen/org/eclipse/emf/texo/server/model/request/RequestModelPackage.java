@@ -61,20 +61,6 @@ public class RequestModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ACTIONTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ACTIONTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int ACTIONTYPE_UPDATE_FEATURE_ID = 2;
 
   /**
@@ -97,20 +83,6 @@ public class RequestModelPackage extends ModelPackage {
    * @generated
    */
   public static final int DOCUMENTROOT_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -160,20 +132,6 @@ public class RequestModelPackage extends ModelPackage {
    * @generated
    */
   public static final int QUERYTYPE_CLASSIFIER_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int QUERYTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int QUERYTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -236,20 +194,6 @@ public class RequestModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int QUERYREFERINGOBJECTSTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int QUERYREFERINGOBJECTSTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int QUERYREFERINGOBJECTSTYPE_TARGETURI_FEATURE_ID = 2;
 
   /**
@@ -272,20 +216,6 @@ public class RequestModelPackage extends ModelPackage {
    * @generated
    */
   public static final int PARAMETER_CLASSIFIER_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PARAMETER_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PARAMETER_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

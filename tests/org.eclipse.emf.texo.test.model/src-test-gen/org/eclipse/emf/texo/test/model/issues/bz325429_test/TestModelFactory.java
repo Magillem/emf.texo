@@ -231,10 +231,6 @@ public class TestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TestModelPackage.PERSON_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TestModelPackage.PERSON_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TestModelPackage.PERSON_FIRSTNAME_FEATURE_ID:
         return getTarget().getFirstname();
       case TestModelPackage.PERSON_LASTNAME_FEATURE_ID:
@@ -256,12 +252,6 @@ public class TestModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TestModelPackage.PERSON_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TestModelPackage.PERSON_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TestModelPackage.PERSON_FIRSTNAME_FEATURE_ID:
         getTarget().setFirstname((String) value);
         return;
@@ -344,10 +334,6 @@ public class TestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TestModelPackage.ADDRESS_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TestModelPackage.ADDRESS_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TestModelPackage.ADDRESS_STREET_FEATURE_ID:
         return getTarget().getStreet();
       case TestModelPackage.ADDRESS_CITY_FEATURE_ID:
@@ -364,12 +350,6 @@ public class TestModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TestModelPackage.ADDRESS_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TestModelPackage.ADDRESS_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TestModelPackage.ADDRESS_STREET_FEATURE_ID:
         getTarget().setStreet((String) value);
         return;
@@ -442,10 +422,6 @@ public class TestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TestModelPackage.CONTACT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TestModelPackage.CONTACT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TestModelPackage.CONTACT_VALUE_FEATURE_ID:
         return getTarget().getValue();
       case TestModelPackage.CONTACT_TYPE_FEATURE_ID:
@@ -462,12 +438,6 @@ public class TestModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TestModelPackage.CONTACT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TestModelPackage.CONTACT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TestModelPackage.CONTACT_VALUE_FEATURE_ID:
         getTarget().setValue((String) value);
         return;

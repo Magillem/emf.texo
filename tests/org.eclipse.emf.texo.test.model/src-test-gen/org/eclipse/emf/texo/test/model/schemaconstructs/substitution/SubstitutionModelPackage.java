@@ -100,20 +100,6 @@ public class SubstitutionModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int COMPLEXNUMBER_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int COMPLEXNUMBER_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int COMPLEXNUMBER_VALUE_FEATURE_ID = 2;
 
   /**
@@ -129,20 +115,6 @@ public class SubstitutionModelPackage extends ModelPackage {
    * @generated
    */
   public static final int DOCUMENTROOT_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -233,49 +205,7 @@ public class SubstitutionModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int EVENCOMPLEXNUMBERTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int EVENCOMPLEXNUMBERTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int EVENCOMPLEXNUMBERTYPE_VALUE_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int EVENCOMPLEXNUMBERTYPE_UNIT_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int MULTINUMBERTYPE_CLASSIFIER_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MULTINUMBERTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MULTINUMBERTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -304,20 +234,6 @@ public class SubstitutionModelPackage extends ModelPackage {
    * @generated
    */
   public static final int NUMBERTYPE_CLASSIFIER_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int NUMBERTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int NUMBERTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -360,34 +276,6 @@ public class SubstitutionModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ODDCOMPLEXNUMBERTYPE_CLASSIFIER_ID = 5;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ODDCOMPLEXNUMBERTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ODDCOMPLEXNUMBERTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ODDCOMPLEXNUMBERTYPE_VALUE_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ODDCOMPLEXNUMBERTYPE_UNIT_FEATURE_ID = 3;
 
   /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->

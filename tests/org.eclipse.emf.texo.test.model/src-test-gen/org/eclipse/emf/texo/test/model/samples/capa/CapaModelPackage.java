@@ -63,20 +63,6 @@ public class CapaModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int CAPACITYENTRY_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CAPACITYENTRY_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int CAPACITYENTRY_CAPACITYENTRYID_FEATURE_ID = 2;
 
   /**
@@ -92,20 +78,6 @@ public class CapaModelPackage extends ModelPackage {
    * @generated
    */
   public static final int MACHINE_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MACHINE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MACHINE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -161,20 +133,6 @@ public class CapaModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int WORKWEEK_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int WORKWEEK_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int WORKWEEK_DAYS_FEATURE_ID = 2;
 
   /**
@@ -190,20 +148,6 @@ public class CapaModelPackage extends ModelPackage {
    * @generated
    */
   public static final int TASK_CLASSIFIER_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int TASK_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int TASK_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -259,20 +203,6 @@ public class CapaModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int MACHINELIST_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int MACHINELIST_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int MACHINELIST_MACHINES_FEATURE_ID = 2;
 
   /**
@@ -281,20 +211,6 @@ public class CapaModelPackage extends ModelPackage {
    * @generated
    */
   public static final int PRODUCTION_CLASSIFIER_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PRODUCTION_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PRODUCTION_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -344,20 +260,6 @@ public class CapaModelPackage extends ModelPackage {
    * @generated
    */
   public static final int WORKDAY_CLASSIFIER_ID = 5;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int WORKDAY_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int WORKDAY_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

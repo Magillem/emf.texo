@@ -183,10 +183,6 @@ public class InvModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InvModelPackage.PTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case InvModelPackage.PTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case InvModelPackage.PTYPE_ID_FEATURE_ID:
         return getTarget().getId();
       case InvModelPackage.PTYPE_NAME_FEATURE_ID:
@@ -212,12 +208,6 @@ public class InvModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InvModelPackage.PTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case InvModelPackage.PTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case InvModelPackage.PTYPE_ID_FEATURE_ID:
         getTarget().setId((Long) value);
         return;
@@ -319,10 +309,6 @@ public class InvModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InvModelPackage.PDECLARATION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case InvModelPackage.PDECLARATION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case InvModelPackage.PDECLARATION_ID_FEATURE_ID:
         return getTarget().getId();
       case InvModelPackage.PDECLARATION_NAME_FEATURE_ID:
@@ -339,12 +325,6 @@ public class InvModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InvModelPackage.PDECLARATION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case InvModelPackage.PDECLARATION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case InvModelPackage.PDECLARATION_ID_FEATURE_ID:
         getTarget().setId((Long) value);
         return;

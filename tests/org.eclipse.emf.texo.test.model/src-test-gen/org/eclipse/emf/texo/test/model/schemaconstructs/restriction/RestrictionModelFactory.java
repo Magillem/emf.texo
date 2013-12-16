@@ -184,20 +184,6 @@ public class RestrictionModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RestrictionModelPackage.MEMBER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RestrictionModelPackage.MEMBER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case RestrictionModelPackage.MEMBER_NUMPOSTS_FEATURE_ID:
-        return getTarget().getNumPosts();
-      case RestrictionModelPackage.MEMBER_SIGNATURE_FEATURE_ID:
-        return getTarget().getSignature();
-      case RestrictionModelPackage.MEMBER_EMAIL_FEATURE_ID:
-        return getTarget().getEmail();
-      case RestrictionModelPackage.MEMBER_FIRSTSUBSCRIBED_FEATURE_ID:
-        return getTarget().getFirstSubscribed();
-      case RestrictionModelPackage.MEMBER_MAILREADER_FEATURE_ID:
-        return getTarget().getMailReader();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -210,27 +196,6 @@ public class RestrictionModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RestrictionModelPackage.MEMBER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RestrictionModelPackage.MEMBER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case RestrictionModelPackage.MEMBER_NUMPOSTS_FEATURE_ID:
-        getTarget().setNumPosts((BigInteger) value);
-        return;
-      case RestrictionModelPackage.MEMBER_SIGNATURE_FEATURE_ID:
-        getTarget().setSignature((String) value);
-        return;
-      case RestrictionModelPackage.MEMBER_EMAIL_FEATURE_ID:
-        getTarget().setEmail((String) value);
-        return;
-      case RestrictionModelPackage.MEMBER_FIRSTSUBSCRIBED_FEATURE_ID:
-        getTarget().setFirstSubscribed((Date) value);
-        return;
-      case RestrictionModelPackage.MEMBER_MAILREADER_FEATURE_ID:
-        getTarget().setMailReader((String) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -296,10 +261,6 @@ public class RestrictionModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RestrictionModelPackage.XMLDEVIANT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RestrictionModelPackage.XMLDEVIANT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case RestrictionModelPackage.XMLDEVIANT_NUMPOSTS_FEATURE_ID:
         return getTarget().getNumPosts();
       case RestrictionModelPackage.XMLDEVIANT_SIGNATURE_FEATURE_ID:
@@ -322,12 +283,6 @@ public class RestrictionModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RestrictionModelPackage.XMLDEVIANT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RestrictionModelPackage.XMLDEVIANT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case RestrictionModelPackage.XMLDEVIANT_NUMPOSTS_FEATURE_ID:
         getTarget().setNumPosts((BigInteger) value);
         return;

@@ -69,20 +69,6 @@ public class MusicModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ARTIST_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ARTIST_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int ARTIST_ID_FEATURE_ID = 2;
 
   /**
@@ -139,20 +125,6 @@ public class MusicModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int COUNTRY_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int COUNTRY_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int COUNTRY_CODE_FEATURE_ID = 2;
 
   /**
@@ -181,20 +153,6 @@ public class MusicModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int GENRE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int GENRE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int GENRE_ID_FEATURE_ID = 2;
 
   /**
@@ -217,20 +175,6 @@ public class MusicModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ALBUM_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ALBUM_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ALBUM_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -294,20 +238,6 @@ public class MusicModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SONG_CLASSIFIER_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SONG_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SONG_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

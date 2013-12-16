@@ -195,10 +195,6 @@ public class DatetimeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DatetimeModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DatetimeModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case DatetimeModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case DatetimeModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -220,12 +216,6 @@ public class DatetimeModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DatetimeModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DatetimeModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case DatetimeModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         getTarget().setMixed((List<DocumentRootMixedFeatureGroup>) value);
         return;
@@ -311,10 +301,6 @@ public class DatetimeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DatetimeModelPackage.TESTDATE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DatetimeModelPackage.TESTDATE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case DatetimeModelPackage.TESTDATE_DATE_FEATURE_ID:
         return getTarget().getDate();
       case DatetimeModelPackage.TESTDATE_DATETIME_FEATURE_ID:
@@ -331,12 +317,6 @@ public class DatetimeModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DatetimeModelPackage.TESTDATE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DatetimeModelPackage.TESTDATE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case DatetimeModelPackage.TESTDATE_DATE_FEATURE_ID:
         getTarget().setDate((Date) value);
         return;

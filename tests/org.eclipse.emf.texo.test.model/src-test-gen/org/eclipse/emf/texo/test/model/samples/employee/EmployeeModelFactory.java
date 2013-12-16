@@ -219,10 +219,6 @@ public class EmployeeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmployeeModelPackage.DEPARTMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case EmployeeModelPackage.DEPARTMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case EmployeeModelPackage.DEPARTMENT_NAME_FEATURE_ID:
         return getTarget().getName();
       case EmployeeModelPackage.DEPARTMENT_EMPLOYEES_FEATURE_ID:
@@ -240,12 +236,6 @@ public class EmployeeModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmployeeModelPackage.DEPARTMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case EmployeeModelPackage.DEPARTMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case EmployeeModelPackage.DEPARTMENT_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -323,10 +313,6 @@ public class EmployeeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmployeeModelPackage.EMPLOYEE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case EmployeeModelPackage.EMPLOYEE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case EmployeeModelPackage.EMPLOYEE_NAME_FEATURE_ID:
         return getTarget().getName();
       case EmployeeModelPackage.EMPLOYEE_SALARY_FEATURE_ID:
@@ -347,12 +333,6 @@ public class EmployeeModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmployeeModelPackage.EMPLOYEE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case EmployeeModelPackage.EMPLOYEE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case EmployeeModelPackage.EMPLOYEE_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;

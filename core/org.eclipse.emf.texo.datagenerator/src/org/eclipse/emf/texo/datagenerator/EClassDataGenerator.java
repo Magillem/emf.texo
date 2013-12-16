@@ -169,7 +169,8 @@ public class EClassDataGenerator extends DataGenerator {
    * @return the newly create EObject
    */
   public EObject createEObject() {
-    final EObject eObject = EcoreUtil.create(getNextConcreteEClass());
+    final EClass nextEClass = getNextConcreteEClass();
+    final EObject eObject = EcoreUtil.create(nextEClass);
     eObjects.add(eObject);
     getModelDataGenerator().addToSetData(eObject);
     return eObject;

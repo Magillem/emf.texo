@@ -11,7 +11,6 @@ import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.graphiti.mm.MmModelFactory;
-import org.eclipse.graphiti.mm.Property;
 import org.eclipse.graphiti.mm.algorithms.GraphicsAlgorithm;
 import org.eclipse.graphiti.mm.algorithms.styles.Color;
 import org.eclipse.graphiti.mm.algorithms.styles.Font;
@@ -367,22 +366,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.SHAPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.SHAPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.SHAPE_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.SHAPE_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.SHAPE_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.SHAPE_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.SHAPE_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.SHAPE_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
       case PictogramsModelPackage.SHAPE_CONTAINER_FEATURE_ID:
         return getTarget().getContainer();
       default:
@@ -398,30 +381,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.SHAPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.SHAPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.SHAPE_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.SHAPE_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.SHAPE_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.SHAPE_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.SHAPE_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.SHAPE_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
       case PictogramsModelPackage.SHAPE_CONTAINER_FEATURE_ID:
         getTarget().setContainer((ContainerShape) value);
         return;
@@ -492,12 +451,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.PICTOGRAMELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.PICTOGRAMELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.PICTOGRAMELEMENT_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
       case PictogramsModelPackage.PICTOGRAMELEMENT_VISIBLE_FEATURE_ID:
         return getTarget().isVisible();
       case PictogramsModelPackage.PICTOGRAMELEMENT_GRAPHICSALGORITHM_FEATURE_ID:
@@ -519,15 +472,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.PICTOGRAMELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.PICTOGRAMELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.PICTOGRAMELEMENT_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
       case PictogramsModelPackage.PICTOGRAMELEMENT_VISIBLE_FEATURE_ID:
         getTarget().setVisible((Boolean) value);
         return;
@@ -606,20 +550,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.ANCHORCONTAINER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.ANCHORCONTAINER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.ANCHORCONTAINER_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.ANCHORCONTAINER_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.ANCHORCONTAINER_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.ANCHORCONTAINER_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.ANCHORCONTAINER_LINK_FEATURE_ID:
-        return getTarget().getLink();
       case PictogramsModelPackage.ANCHORCONTAINER_ANCHORS_FEATURE_ID:
         return getTarget().getAnchors();
       default:
@@ -635,27 +565,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.ANCHORCONTAINER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.ANCHORCONTAINER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.ANCHORCONTAINER_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.ANCHORCONTAINER_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.ANCHORCONTAINER_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.ANCHORCONTAINER_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.ANCHORCONTAINER_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
       case PictogramsModelPackage.ANCHORCONTAINER_ANCHORS_FEATURE_ID:
         getTarget().setAnchors((Set<Anchor>) value);
         return;
@@ -729,24 +638,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CONTAINERSHAPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.CONTAINERSHAPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.CONTAINERSHAPE_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.CONTAINERSHAPE_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.CONTAINERSHAPE_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.CONTAINERSHAPE_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.CONTAINERSHAPE_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.CONTAINERSHAPE_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
-      case PictogramsModelPackage.CONTAINERSHAPE_CONTAINER_FEATURE_ID:
-        return getTarget().getContainer();
       case PictogramsModelPackage.CONTAINERSHAPE_CHILDREN_FEATURE_ID:
         return getTarget().getChildren();
       default:
@@ -762,33 +653,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CONTAINERSHAPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
-      case PictogramsModelPackage.CONTAINERSHAPE_CONTAINER_FEATURE_ID:
-        getTarget().setContainer((ContainerShape) value);
-        return;
       case PictogramsModelPackage.CONTAINERSHAPE_CHILDREN_FEATURE_ID:
         getTarget().setChildren((List<Shape>) value);
         return;
@@ -862,26 +726,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.DIAGRAM_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.DIAGRAM_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.DIAGRAM_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.DIAGRAM_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.DIAGRAM_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.DIAGRAM_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.DIAGRAM_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.DIAGRAM_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
-      case PictogramsModelPackage.DIAGRAM_CONTAINER_FEATURE_ID:
-        return getTarget().getContainer();
-      case PictogramsModelPackage.DIAGRAM_CHILDREN_FEATURE_ID:
-        return getTarget().getChildren();
       case PictogramsModelPackage.DIAGRAM_GRIDUNIT_FEATURE_ID:
         return getTarget().getGridUnit();
       case PictogramsModelPackage.DIAGRAM_DIAGRAMTYPEID_FEATURE_ID:
@@ -919,36 +763,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.DIAGRAM_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_CONTAINER_FEATURE_ID:
-        getTarget().setContainer((ContainerShape) value);
-        return;
-      case PictogramsModelPackage.DIAGRAM_CHILDREN_FEATURE_ID:
-        getTarget().setChildren((List<Shape>) value);
-        return;
       case PictogramsModelPackage.DIAGRAM_GRIDUNIT_FEATURE_ID:
         getTarget().setGridUnit((Integer) value);
         return;
@@ -1079,22 +893,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CONNECTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.CONNECTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.CONNECTION_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.CONNECTION_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.CONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.CONNECTION_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.CONNECTION_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.CONNECTION_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
       case PictogramsModelPackage.CONNECTION_START_FEATURE_ID:
         return getTarget().getStart();
       case PictogramsModelPackage.CONNECTION_END_FEATURE_ID:
@@ -1116,30 +914,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CONNECTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.CONNECTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.CONNECTION_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.CONNECTION_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.CONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.CONNECTION_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.CONNECTION_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.CONNECTION_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
       case PictogramsModelPackage.CONNECTION_START_FEATURE_ID:
         getTarget().setStart((Anchor) value);
         return;
@@ -1223,12 +997,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.PICTOGRAMLINK_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.PICTOGRAMLINK_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.PICTOGRAMLINK_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
       case PictogramsModelPackage.PICTOGRAMLINK_PICTOGRAMELEMENT_FEATURE_ID:
         return getTarget().getPictogramElement();
       case PictogramsModelPackage.PICTOGRAMLINK_BUSINESSOBJECTS_FEATURE_ID:
@@ -1246,15 +1014,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.PICTOGRAMLINK_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.PICTOGRAMLINK_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.PICTOGRAMLINK_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
       case PictogramsModelPackage.PICTOGRAMLINK_PICTOGRAMELEMENT_FEATURE_ID:
         getTarget().setPictogramElement((PictogramElement) value);
         return;
@@ -1331,20 +1090,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.ANCHOR_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.ANCHOR_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.ANCHOR_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.ANCHOR_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.ANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.ANCHOR_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.ANCHOR_LINK_FEATURE_ID:
-        return getTarget().getLink();
       case PictogramsModelPackage.ANCHOR_PARENT_FEATURE_ID:
         return getTarget().getParent();
       case PictogramsModelPackage.ANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
@@ -1366,27 +1111,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.ANCHOR_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.ANCHOR_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.ANCHOR_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.ANCHOR_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.ANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.ANCHOR_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.ANCHOR_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
       case PictogramsModelPackage.ANCHOR_PARENT_FEATURE_ID:
         getTarget().setParent((AnchorContainer) value);
         return;
@@ -1477,24 +1201,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CONNECTIONDECORATOR_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
-      case PictogramsModelPackage.CONNECTIONDECORATOR_CONTAINER_FEATURE_ID:
-        return getTarget().getContainer();
       case PictogramsModelPackage.CONNECTIONDECORATOR_LOCATIONRELATIVE_FEATURE_ID:
         return getTarget().isLocationRelative();
       case PictogramsModelPackage.CONNECTIONDECORATOR_LOCATION_FEATURE_ID:
@@ -1514,33 +1220,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CONNECTIONDECORATOR_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
-      case PictogramsModelPackage.CONNECTIONDECORATOR_CONTAINER_FEATURE_ID:
-        getTarget().setContainer((ContainerShape) value);
-        return;
       case PictogramsModelPackage.CONNECTIONDECORATOR_LOCATIONRELATIVE_FEATURE_ID:
         getTarget().setLocationRelative((Boolean) value);
         return;
@@ -1616,30 +1295,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.FIXPOINTANCHOR_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.FIXPOINTANCHOR_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.FIXPOINTANCHOR_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.FIXPOINTANCHOR_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.FIXPOINTANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.FIXPOINTANCHOR_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.FIXPOINTANCHOR_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.FIXPOINTANCHOR_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.FIXPOINTANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getOutgoingConnections();
-      case PictogramsModelPackage.FIXPOINTANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getIncomingConnections();
-      case PictogramsModelPackage.FIXPOINTANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getReferencedGraphicsAlgorithm();
-      case PictogramsModelPackage.FIXPOINTANCHOR_USEANCHORLOCATIONASCONNECTIONENDPOINT_FEATURE_ID:
-        return getTarget().isUseAnchorLocationAsConnectionEndpoint();
       case PictogramsModelPackage.FIXPOINTANCHOR_LOCATION_FEATURE_ID:
         return getTarget().getLocation();
       default:
@@ -1655,42 +1310,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.FIXPOINTANCHOR_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_PARENT_FEATURE_ID:
-        getTarget().setParent((AnchorContainer) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        getTarget().setOutgoingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        getTarget().setIncomingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setReferencedGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.FIXPOINTANCHOR_USEANCHORLOCATIONASCONNECTIONENDPOINT_FEATURE_ID:
-        getTarget().setUseAnchorLocationAsConnectionEndpoint((Boolean) value);
-        return;
       case PictogramsModelPackage.FIXPOINTANCHOR_LOCATION_FEATURE_ID:
         getTarget().setLocation((Point) value);
         return;
@@ -1760,28 +1379,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.ADVANCEDANCHOR_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.ADVANCEDANCHOR_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.ADVANCEDANCHOR_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.ADVANCEDANCHOR_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.ADVANCEDANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.ADVANCEDANCHOR_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.ADVANCEDANCHOR_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.ADVANCEDANCHOR_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.ADVANCEDANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getOutgoingConnections();
-      case PictogramsModelPackage.ADVANCEDANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getIncomingConnections();
-      case PictogramsModelPackage.ADVANCEDANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getReferencedGraphicsAlgorithm();
       case PictogramsModelPackage.ADVANCEDANCHOR_USEANCHORLOCATIONASCONNECTIONENDPOINT_FEATURE_ID:
         return getTarget().isUseAnchorLocationAsConnectionEndpoint();
       default:
@@ -1797,39 +1394,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.ADVANCEDANCHOR_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_PARENT_FEATURE_ID:
-        getTarget().setParent((AnchorContainer) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        getTarget().setOutgoingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        getTarget().setIncomingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.ADVANCEDANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setReferencedGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
       case PictogramsModelPackage.ADVANCEDANCHOR_USEANCHORLOCATIONASCONNECTIONENDPOINT_FEATURE_ID:
         getTarget().setUseAnchorLocationAsConnectionEndpoint((Boolean) value);
         return;
@@ -1899,30 +1463,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getOutgoingConnections();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getIncomingConnections();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getReferencedGraphicsAlgorithm();
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_USEANCHORLOCATIONASCONNECTIONENDPOINT_FEATURE_ID:
-        return getTarget().isUseAnchorLocationAsConnectionEndpoint();
       case PictogramsModelPackage.BOXRELATIVEANCHOR_RELATIVEWIDTH_FEATURE_ID:
         return getTarget().getRelativeWidth();
       case PictogramsModelPackage.BOXRELATIVEANCHOR_RELATIVEHEIGHT_FEATURE_ID:
@@ -1940,42 +1480,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_PARENT_FEATURE_ID:
-        getTarget().setParent((AnchorContainer) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        getTarget().setOutgoingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        getTarget().setIncomingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setReferencedGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.BOXRELATIVEANCHOR_USEANCHORLOCATIONASCONNECTIONENDPOINT_FEATURE_ID:
-        getTarget().setUseAnchorLocationAsConnectionEndpoint((Boolean) value);
-        return;
       case PictogramsModelPackage.BOXRELATIVEANCHOR_RELATIVEWIDTH_FEATURE_ID:
         getTarget().setRelativeWidth((Double) value);
         return;
@@ -2048,28 +1552,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CHOPBOXANCHOR_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.CHOPBOXANCHOR_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.CHOPBOXANCHOR_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.CHOPBOXANCHOR_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.CHOPBOXANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.CHOPBOXANCHOR_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.CHOPBOXANCHOR_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.CHOPBOXANCHOR_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.CHOPBOXANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getOutgoingConnections();
-      case PictogramsModelPackage.CHOPBOXANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        return getTarget().getIncomingConnections();
-      case PictogramsModelPackage.CHOPBOXANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getReferencedGraphicsAlgorithm();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2083,39 +1565,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CHOPBOXANCHOR_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_PARENT_FEATURE_ID:
-        getTarget().setParent((AnchorContainer) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_OUTGOINGCONNECTIONS_FEATURE_ID:
-        getTarget().setOutgoingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_INCOMINGCONNECTIONS_FEATURE_ID:
-        getTarget().setIncomingConnections((Set<Connection>) value);
-        return;
-      case PictogramsModelPackage.CHOPBOXANCHOR_REFERENCEDGRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setReferencedGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -2180,30 +1629,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.FREEFORMCONNECTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.FREEFORMCONNECTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.FREEFORMCONNECTION_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.FREEFORMCONNECTION_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.FREEFORMCONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.FREEFORMCONNECTION_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.FREEFORMCONNECTION_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.FREEFORMCONNECTION_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
-      case PictogramsModelPackage.FREEFORMCONNECTION_START_FEATURE_ID:
-        return getTarget().getStart();
-      case PictogramsModelPackage.FREEFORMCONNECTION_END_FEATURE_ID:
-        return getTarget().getEnd();
-      case PictogramsModelPackage.FREEFORMCONNECTION_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.FREEFORMCONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        return getTarget().getConnectionDecorators();
       case PictogramsModelPackage.FREEFORMCONNECTION_BENDPOINTS_FEATURE_ID:
         return getTarget().getBendpoints();
       default:
@@ -2219,42 +1644,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.FREEFORMCONNECTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_START_FEATURE_ID:
-        getTarget().setStart((Anchor) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_END_FEATURE_ID:
-        getTarget().setEnd((Anchor) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_PARENT_FEATURE_ID:
-        getTarget().setParent((Diagram) value);
-        return;
-      case PictogramsModelPackage.FREEFORMCONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        getTarget().setConnectionDecorators((List<ConnectionDecorator>) value);
-        return;
       case PictogramsModelPackage.FREEFORMCONNECTION_BENDPOINTS_FEATURE_ID:
         getTarget().setBendpoints((List<Point>) value);
         return;
@@ -2328,30 +1717,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.MANHATTANCONNECTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.MANHATTANCONNECTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.MANHATTANCONNECTION_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.MANHATTANCONNECTION_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.MANHATTANCONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.MANHATTANCONNECTION_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.MANHATTANCONNECTION_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.MANHATTANCONNECTION_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
-      case PictogramsModelPackage.MANHATTANCONNECTION_START_FEATURE_ID:
-        return getTarget().getStart();
-      case PictogramsModelPackage.MANHATTANCONNECTION_END_FEATURE_ID:
-        return getTarget().getEnd();
-      case PictogramsModelPackage.MANHATTANCONNECTION_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.MANHATTANCONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        return getTarget().getConnectionDecorators();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2365,42 +1730,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.MANHATTANCONNECTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_START_FEATURE_ID:
-        getTarget().setStart((Anchor) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_END_FEATURE_ID:
-        getTarget().setEnd((Anchor) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_PARENT_FEATURE_ID:
-        getTarget().setParent((Diagram) value);
-        return;
-      case PictogramsModelPackage.MANHATTANCONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        getTarget().setConnectionDecorators((List<ConnectionDecorator>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -2465,30 +1794,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CURVEDCONNECTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.CURVEDCONNECTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.CURVEDCONNECTION_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.CURVEDCONNECTION_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.CURVEDCONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.CURVEDCONNECTION_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.CURVEDCONNECTION_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.CURVEDCONNECTION_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
-      case PictogramsModelPackage.CURVEDCONNECTION_START_FEATURE_ID:
-        return getTarget().getStart();
-      case PictogramsModelPackage.CURVEDCONNECTION_END_FEATURE_ID:
-        return getTarget().getEnd();
-      case PictogramsModelPackage.CURVEDCONNECTION_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.CURVEDCONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        return getTarget().getConnectionDecorators();
       case PictogramsModelPackage.CURVEDCONNECTION_CONTROLPOINTS_FEATURE_ID:
         return getTarget().getControlPoints();
       default:
@@ -2504,42 +1809,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.CURVEDCONNECTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_START_FEATURE_ID:
-        getTarget().setStart((Anchor) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_END_FEATURE_ID:
-        getTarget().setEnd((Anchor) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_PARENT_FEATURE_ID:
-        getTarget().setParent((Diagram) value);
-        return;
-      case PictogramsModelPackage.CURVEDCONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        getTarget().setConnectionDecorators((List<ConnectionDecorator>) value);
-        return;
       case PictogramsModelPackage.CURVEDCONNECTION_CONTROLPOINTS_FEATURE_ID:
         getTarget().setControlPoints((List<PrecisionPoint>) value);
         return;
@@ -2613,30 +1882,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.COMPOSITECONNECTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case PictogramsModelPackage.COMPOSITECONNECTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case PictogramsModelPackage.COMPOSITECONNECTION_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
-      case PictogramsModelPackage.COMPOSITECONNECTION_VISIBLE_FEATURE_ID:
-        return getTarget().isVisible();
-      case PictogramsModelPackage.COMPOSITECONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        return getTarget().getGraphicsAlgorithm();
-      case PictogramsModelPackage.COMPOSITECONNECTION_ACTIVE_FEATURE_ID:
-        return getTarget().isActive();
-      case PictogramsModelPackage.COMPOSITECONNECTION_LINK_FEATURE_ID:
-        return getTarget().getLink();
-      case PictogramsModelPackage.COMPOSITECONNECTION_ANCHORS_FEATURE_ID:
-        return getTarget().getAnchors();
-      case PictogramsModelPackage.COMPOSITECONNECTION_START_FEATURE_ID:
-        return getTarget().getStart();
-      case PictogramsModelPackage.COMPOSITECONNECTION_END_FEATURE_ID:
-        return getTarget().getEnd();
-      case PictogramsModelPackage.COMPOSITECONNECTION_PARENT_FEATURE_ID:
-        return getTarget().getParent();
-      case PictogramsModelPackage.COMPOSITECONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        return getTarget().getConnectionDecorators();
       case PictogramsModelPackage.COMPOSITECONNECTION_CHILDREN_FEATURE_ID:
         return getTarget().getChildren();
       default:
@@ -2652,42 +1897,6 @@ public class PictogramsModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case PictogramsModelPackage.COMPOSITECONNECTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_VISIBLE_FEATURE_ID:
-        getTarget().setVisible((Boolean) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_GRAPHICSALGORITHM_FEATURE_ID:
-        getTarget().setGraphicsAlgorithm((GraphicsAlgorithm) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_ACTIVE_FEATURE_ID:
-        getTarget().setActive((Boolean) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_LINK_FEATURE_ID:
-        getTarget().setLink((PictogramLink) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_ANCHORS_FEATURE_ID:
-        getTarget().setAnchors((Set<Anchor>) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_START_FEATURE_ID:
-        getTarget().setStart((Anchor) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_END_FEATURE_ID:
-        getTarget().setEnd((Anchor) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_PARENT_FEATURE_ID:
-        getTarget().setParent((Diagram) value);
-        return;
-      case PictogramsModelPackage.COMPOSITECONNECTION_CONNECTIONDECORATORS_FEATURE_ID:
-        getTarget().setConnectionDecorators((List<ConnectionDecorator>) value);
-        return;
       case PictogramsModelPackage.COMPOSITECONNECTION_CHILDREN_FEATURE_ID:
         getTarget().setChildren((List<CurvedConnection>) value);
         return;

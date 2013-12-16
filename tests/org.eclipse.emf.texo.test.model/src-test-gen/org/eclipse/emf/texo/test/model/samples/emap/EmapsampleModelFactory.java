@@ -197,10 +197,6 @@ public class EmapsampleModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmapsampleModelPackage.BOOK_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case EmapsampleModelPackage.BOOK_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case EmapsampleModelPackage.BOOK_TITLE_FEATURE_ID:
         return getTarget().getTitle();
       case EmapsampleModelPackage.BOOK_WRITERS_FEATURE_ID:
@@ -218,12 +214,6 @@ public class EmapsampleModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmapsampleModelPackage.BOOK_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case EmapsampleModelPackage.BOOK_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case EmapsampleModelPackage.BOOK_TITLE_FEATURE_ID:
         getTarget().setTitle((String) value);
         return;
@@ -297,10 +287,6 @@ public class EmapsampleModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmapsampleModelPackage.BOOKSTORE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case EmapsampleModelPackage.BOOKSTORE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case EmapsampleModelPackage.BOOKSTORE_NAME_FEATURE_ID:
         return getTarget().getName();
       case EmapsampleModelPackage.BOOKSTORE_BOOKSBYWRITER_FEATURE_ID:
@@ -322,12 +308,6 @@ public class EmapsampleModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmapsampleModelPackage.BOOKSTORE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case EmapsampleModelPackage.BOOKSTORE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case EmapsampleModelPackage.BOOKSTORE_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -406,10 +386,6 @@ public class EmapsampleModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmapsampleModelPackage.WRITER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case EmapsampleModelPackage.WRITER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case EmapsampleModelPackage.WRITER_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
@@ -424,12 +400,6 @@ public class EmapsampleModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case EmapsampleModelPackage.WRITER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case EmapsampleModelPackage.WRITER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case EmapsampleModelPackage.WRITER_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;

@@ -28,7 +28,10 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.emf.ecore.util.FeatureMapUtil;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
@@ -400,10 +403,22 @@ public class ModelUtils {
     Check.isNotEmpty(ecoreFileName, "Ecore file of ModelPackage may not be empty."); //$NON-NLS-1$
     if (ecoreFileName != null && ecoreFileName.length() > 0) {
       try {
+        final ResourceSet rs = new ResourceSetImpl();
+        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
+            new EcoreResourceFactoryImpl());
+        //    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xcore", //$NON-NLS-1$
+        // new XcoreResourceFactory());
+        rs.setPackageRegistry(ModelResolver.getInstance().getEPackageRegistry());
+
+        // trick to make resolving of the ecore package referenced from xcore packages work
+        rs.getPackageRegistry().put("platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore",
+            EcorePackage.eINSTANCE);
+        rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
 
         // note the resource uri is the same as by which it is saved in the
         // GenEPackage.getECoreFileContent
         final Resource res = new EcoreResourceFactoryImpl().createResource(URI.createURI(modelPackage.getNsURI()));
+        rs.getResources().add(res);
         final InputStream is = modelPackage.getClass().getResourceAsStream(ecoreFileName);
         if (is == null) {
           throw new RuntimeException("File " + ecoreFileName + " not found within class path of " //$NON-NLS-1$//$NON-NLS-2$

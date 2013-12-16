@@ -92,20 +92,6 @@ public class SunBooksModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int AUTHORSTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int AUTHORSTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int AUTHORSTYPE_AUTHORNAME_FEATURE_ID = 2;
 
   /**
@@ -120,20 +106,6 @@ public class SunBooksModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int BOOKSTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int BOOKSTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int BOOKSTYPE_BOOK_FEATURE_ID = 2;
 
   /**
@@ -142,20 +114,6 @@ public class SunBooksModelPackage extends ModelPackage {
    * @generated
    */
   public static final int BOOKTYPE_CLASSIFIER_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int BOOKTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int BOOKTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -232,20 +190,6 @@ public class SunBooksModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int PROMOTIONTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PROMOTIONTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int PROMOTIONTYPE_DISCOUNT_FEATURE_ID = 2;
 
   /**
@@ -267,20 +211,6 @@ public class SunBooksModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int COLLECTIONTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int COLLECTIONTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int COLLECTIONTYPE_BOOKS_FEATURE_ID = 2;
 
   /**
@@ -289,20 +219,6 @@ public class SunBooksModelPackage extends ModelPackage {
    * @generated
    */
   public static final int DOCUMENTROOT_CLASSIFIER_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

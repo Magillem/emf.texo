@@ -92,7 +92,7 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
     public Object eGet(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature) {
         final int featureID = eClass().getFeatureID(eStructuralFeature);
         switch (featureID) {
-        «FOR featureAnnotation : eClassModelGenAnnotation.EAllStructuralFeatureModelGenAnnotations»
+        «FOR featureAnnotation : eClassModelGenAnnotation.EStructuralFeatureModelGenAnnotations»
         	«IF featureAnnotation.generateCode»
             case «ePackageAnnotation.qualifiedClassName».«TemplateUtil::toUpperCase(eClassModelGenAnnotation.name)»_«TemplateUtil::toUpperCase(featureAnnotation.name)»_FEATURE_ID:
                 return getTarget().«featureAnnotation.getter»();
@@ -113,7 +113,7 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
     public void eSet(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature, Object value) {
         final int featureID = eClass().getFeatureID(eStructuralFeature);
         switch (featureID) {
-        «FOR featureAnnotation : eClassModelGenAnnotation.EAllStructuralFeatureModelGenAnnotations»
+        «FOR featureAnnotation : eClassModelGenAnnotation.EStructuralFeatureModelGenAnnotations»
             «IF featureAnnotation.generateCode && featureAnnotation.EStructuralFeature.changeable»
             case «ePackageAnnotation.qualifiedClassName».«TemplateUtil::toUpperCase(eClassModelGenAnnotation.name)»_«TemplateUtil::toUpperCase(featureAnnotation.name)»_FEATURE_ID:
                 getTarget().«featureAnnotation.setter»(«TemplateUtil::cast(featureAnnotation.objectType)»value);

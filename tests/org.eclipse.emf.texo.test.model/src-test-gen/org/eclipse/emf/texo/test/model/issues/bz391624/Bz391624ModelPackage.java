@@ -58,20 +58,6 @@ public class Bz391624ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int BOOK_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int BOOK_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int BOOK_AUTHORS_FEATURE_ID = 2;
 
   /**
@@ -86,7 +72,7 @@ public class Bz391624ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int AUTHOR_NAME_FEATURE_ID = 0;
+  public static final int AUTHOR_NAME_FEATURE_ID = 2;
 
   /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->

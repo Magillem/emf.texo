@@ -101,27 +101,6 @@ public class RentalModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int RENTALBICYCLE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALBICYCLE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALBICYCLE_DESCRIPTION_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int RENTALBICYCLE_TYPE_FEATURE_ID = 3;
 
   /**
@@ -143,20 +122,6 @@ public class RentalModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int RENTALUNIT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALUNIT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int RENTALUNIT_DESCRIPTION_FEATURE_ID = 2;
 
   /**
@@ -165,27 +130,6 @@ public class RentalModelPackage extends ModelPackage {
    * @generated
    */
   public static final int RENTALCAR_CLASSIFIER_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCAR_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCAR_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCAR_DESCRIPTION_FEATURE_ID = 2;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -213,20 +157,6 @@ public class RentalModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int RENTALBUSINESS_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALBUSINESS_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int RENTALBUSINESS_NAME_FEATURE_ID = 2;
 
   /**
@@ -235,20 +165,6 @@ public class RentalModelPackage extends ModelPackage {
    * @generated
    */
   public static final int RENTALCARDRIVER_CLASSIFIER_ID = 6;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCARDRIVER_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCARDRIVER_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -270,20 +186,6 @@ public class RentalModelPackage extends ModelPackage {
    * @generated
    */
   public static final int RENTALCONTRACT_CLASSIFIER_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCONTRACT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCONTRACT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -326,20 +228,6 @@ public class RentalModelPackage extends ModelPackage {
    * @generated
    */
   public static final int RENTALCONTRACTLINE_CLASSIFIER_ID = 5;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCONTRACTLINE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int RENTALCONTRACTLINE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

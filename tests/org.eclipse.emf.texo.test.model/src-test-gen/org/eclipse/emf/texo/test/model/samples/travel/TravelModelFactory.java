@@ -197,10 +197,6 @@ public class TravelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TravelModelPackage.JOURNEY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TravelModelPackage.JOURNEY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TravelModelPackage.JOURNEY_NAME_FEATURE_ID:
         return getTarget().getName();
       case TravelModelPackage.JOURNEY_TRIPS_FEATURE_ID:
@@ -218,12 +214,6 @@ public class TravelModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TravelModelPackage.JOURNEY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TravelModelPackage.JOURNEY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TravelModelPackage.JOURNEY_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -300,10 +290,6 @@ public class TravelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TravelModelPackage.TRIP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TravelModelPackage.TRIP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TravelModelPackage.TRIP_NAME2_FEATURE_ID:
         return getTarget().getName2();
       case TravelModelPackage.TRIP_DESTINATION_FEATURE_ID:
@@ -320,12 +306,6 @@ public class TravelModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TravelModelPackage.TRIP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TravelModelPackage.TRIP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TravelModelPackage.TRIP_NAME2_FEATURE_ID:
         getTarget().setName2((String) value);
         return;
@@ -398,10 +378,6 @@ public class TravelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TravelModelPackage.CITY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TravelModelPackage.CITY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TravelModelPackage.CITY_NAME_FEATURE_ID:
         return getTarget().getName();
       case TravelModelPackage.CITY_REIS_FEATURE_ID:
@@ -418,12 +394,6 @@ public class TravelModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TravelModelPackage.CITY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TravelModelPackage.CITY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TravelModelPackage.CITY_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;

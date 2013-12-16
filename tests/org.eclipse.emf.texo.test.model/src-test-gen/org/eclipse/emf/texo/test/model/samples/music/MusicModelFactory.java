@@ -262,10 +262,6 @@ public class MusicModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.ARTIST_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MusicModelPackage.ARTIST_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MusicModelPackage.ARTIST_ID_FEATURE_ID:
         return getTarget().getId();
       case MusicModelPackage.ARTIST_VERSION_FEATURE_ID:
@@ -292,12 +288,6 @@ public class MusicModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.ARTIST_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MusicModelPackage.ARTIST_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MusicModelPackage.ARTIST_ID_FEATURE_ID:
         getTarget().setId((Long) value);
         return;
@@ -385,10 +375,6 @@ public class MusicModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.COUNTRY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MusicModelPackage.COUNTRY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MusicModelPackage.COUNTRY_CODE_FEATURE_ID:
         return getTarget().getCode();
       case MusicModelPackage.COUNTRY_VERSION_FEATURE_ID:
@@ -407,12 +393,6 @@ public class MusicModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.COUNTRY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MusicModelPackage.COUNTRY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MusicModelPackage.COUNTRY_CODE_FEATURE_ID:
         getTarget().setCode((String) value);
         return;
@@ -488,10 +468,6 @@ public class MusicModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.GENRE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MusicModelPackage.GENRE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MusicModelPackage.GENRE_ID_FEATURE_ID:
         return getTarget().getId();
       case MusicModelPackage.GENRE_VERSION_FEATURE_ID:
@@ -510,12 +486,6 @@ public class MusicModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.GENRE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MusicModelPackage.GENRE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MusicModelPackage.GENRE_ID_FEATURE_ID:
         getTarget().setId((Long) value);
         return;
@@ -591,10 +561,6 @@ public class MusicModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.ALBUM_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MusicModelPackage.ALBUM_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MusicModelPackage.ALBUM_ID_FEATURE_ID:
         return getTarget().getId();
       case MusicModelPackage.ALBUM_VERSION_FEATURE_ID:
@@ -624,12 +590,6 @@ public class MusicModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.ALBUM_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MusicModelPackage.ALBUM_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MusicModelPackage.ALBUM_ID_FEATURE_ID:
         getTarget().setId((Long) value);
         return;
@@ -736,10 +696,6 @@ public class MusicModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.SONG_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MusicModelPackage.SONG_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MusicModelPackage.SONG_ID_FEATURE_ID:
         return getTarget().getId();
       case MusicModelPackage.SONG_VERSION_FEATURE_ID:
@@ -760,12 +716,6 @@ public class MusicModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MusicModelPackage.SONG_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MusicModelPackage.SONG_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MusicModelPackage.SONG_ID_FEATURE_ID:
         getTarget().setId((Long) value);
         return;

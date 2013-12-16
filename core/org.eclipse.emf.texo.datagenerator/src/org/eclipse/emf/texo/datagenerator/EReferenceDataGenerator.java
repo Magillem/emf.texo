@@ -18,8 +18,10 @@
 package org.eclipse.emf.texo.datagenerator;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
  * Generates/sets a value for a specific EReference. Calls the {@link EClassDataGenerator} of the
@@ -104,6 +106,11 @@ public class EReferenceDataGenerator extends EStructuralFeatureDataGenerator {
     if (eClassDataGenerator == null) {
       eClassDataGenerator = getModelDataGenerator().getEClassDataGenerator(eReference.getEReferenceType());
     }
+    final EClass eClass = eClassDataGenerator.getNextConcreteEClass();
+    if (eClass.eIsProxy()) {
+      EcoreUtil.resolve(eClass, eReference.getEContainingClass().getEPackage().eResource().getResourceSet());
+    }
+
     return eClassDataGenerator.getCreateEObject(owner, eReference);
   }
 }

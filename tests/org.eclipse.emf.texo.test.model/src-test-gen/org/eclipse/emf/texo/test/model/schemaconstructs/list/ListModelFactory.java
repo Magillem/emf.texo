@@ -376,10 +376,6 @@ public class ListModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ListModelPackage.STATESBYCOUNTRY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ListModelPackage.STATESBYCOUNTRY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case ListModelPackage.STATESBYCOUNTRY_COUNTRY_FEATURE_ID:
         return getTarget().getCountry();
       case ListModelPackage.STATESBYCOUNTRY_INDEX_FEATURE_ID:
@@ -401,12 +397,6 @@ public class ListModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ListModelPackage.STATESBYCOUNTRY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ListModelPackage.STATESBYCOUNTRY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case ListModelPackage.STATESBYCOUNTRY_COUNTRY_FEATURE_ID:
         getTarget().setCountry((String) value);
         return;

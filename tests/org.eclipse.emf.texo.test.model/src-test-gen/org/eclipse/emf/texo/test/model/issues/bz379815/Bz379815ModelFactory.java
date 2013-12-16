@@ -265,10 +265,6 @@ public class Bz379815ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz379815ModelPackage.VARINPUTTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz379815ModelPackage.VARINPUTTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz379815ModelPackage.VARINPUTTYPE_CONDITION_FEATURE_ID:
         return getTarget().getCondition();
       case Bz379815ModelPackage.VARINPUTTYPE_MEASURE_FEATURE_ID:
@@ -285,12 +281,6 @@ public class Bz379815ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz379815ModelPackage.VARINPUTTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Bz379815ModelPackage.VARINPUTTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Bz379815ModelPackage.VARINPUTTYPE_CONDITION_FEATURE_ID:
         getTarget().setCondition((VarConditionType) value);
         return;
@@ -363,10 +353,6 @@ public class Bz379815ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz379815ModelPackage.VARCONDITIONTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz379815ModelPackage.VARCONDITIONTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz379815ModelPackage.VARCONDITIONTYPE_POLICYTYPE_FEATURE_ID:
         return getTarget().getPolicyType();
       default:
@@ -381,12 +367,6 @@ public class Bz379815ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz379815ModelPackage.VARCONDITIONTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Bz379815ModelPackage.VARCONDITIONTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Bz379815ModelPackage.VARCONDITIONTYPE_POLICYTYPE_FEATURE_ID:
         getTarget().setPolicyType((VarPolicyTypeType) value);
         return;
@@ -456,10 +436,6 @@ public class Bz379815ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz379815ModelPackage.VARPOLICYTYPETYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz379815ModelPackage.VARPOLICYTYPETYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz379815ModelPackage.VARPOLICYTYPETYPE_TYPE_FEATURE_ID:
         return getTarget().getType();
       default:
@@ -474,12 +450,6 @@ public class Bz379815ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz379815ModelPackage.VARPOLICYTYPETYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Bz379815ModelPackage.VARPOLICYTYPETYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Bz379815ModelPackage.VARPOLICYTYPETYPE_TYPE_FEATURE_ID:
         getTarget().setType((TypeType) value);
         return;

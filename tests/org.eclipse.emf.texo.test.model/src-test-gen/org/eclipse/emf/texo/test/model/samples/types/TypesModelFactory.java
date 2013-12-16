@@ -343,10 +343,6 @@ public class TypesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TypesModelPackage.MANYTYPES_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TypesModelPackage.MANYTYPES_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TypesModelPackage.MANYTYPES_STRING_FEATURE_ID:
         return getTarget().getString();
       case TypesModelPackage.MANYTYPES_INTEGEROBJECT_FEATURE_ID:
@@ -386,12 +382,6 @@ public class TypesModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TypesModelPackage.MANYTYPES_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TypesModelPackage.MANYTYPES_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TypesModelPackage.MANYTYPES_STRING_FEATURE_ID:
         getTarget().setString((List<String>) value);
         return;
@@ -574,10 +564,6 @@ public class TypesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TypesModelPackage.SINGLETYPES_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case TypesModelPackage.SINGLETYPES_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case TypesModelPackage.SINGLETYPES_STRING_FEATURE_ID:
         return getTarget().getString();
       case TypesModelPackage.SINGLETYPES_INTEGER_FEATURE_ID:
@@ -634,12 +620,6 @@ public class TypesModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case TypesModelPackage.SINGLETYPES_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case TypesModelPackage.SINGLETYPES_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case TypesModelPackage.SINGLETYPES_STRING_FEATURE_ID:
         getTarget().setString((String) value);
         return;

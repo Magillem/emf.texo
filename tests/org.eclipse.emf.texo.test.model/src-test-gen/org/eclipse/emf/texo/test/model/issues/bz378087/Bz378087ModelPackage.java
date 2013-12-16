@@ -56,20 +56,6 @@ public class Bz378087ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int TEST_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int TEST_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int TEST_CLASS__FEATURE_ID = 2;
 
   /**

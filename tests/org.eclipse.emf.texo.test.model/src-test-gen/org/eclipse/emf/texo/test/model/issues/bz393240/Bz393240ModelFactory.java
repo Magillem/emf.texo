@@ -193,10 +193,6 @@ public class Bz393240ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz393240ModelPackage.APPLICATION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz393240ModelPackage.APPLICATION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz393240ModelPackage.APPLICATION_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
@@ -211,12 +207,6 @@ public class Bz393240ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz393240ModelPackage.APPLICATION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Bz393240ModelPackage.APPLICATION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Bz393240ModelPackage.APPLICATION_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -287,10 +277,6 @@ public class Bz393240ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz393240ModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz393240ModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz393240ModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case Bz393240ModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -314,12 +300,6 @@ public class Bz393240ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz393240ModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Bz393240ModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Bz393240ModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         getTarget().setMixed((List<DocumentRootMixedFeatureGroup>) value);
         return;

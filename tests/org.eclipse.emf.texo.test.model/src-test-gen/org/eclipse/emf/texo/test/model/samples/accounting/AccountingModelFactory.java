@@ -327,10 +327,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.ACCOUNTING_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.ACCOUNTING_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.ACCOUNTING_NAME_FEATURE_ID:
         return getTarget().getName();
       case AccountingModelPackage.ACCOUNTING_ACCOUNTGROUP_FEATURE_ID:
@@ -356,12 +352,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.ACCOUNTING_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.ACCOUNTING_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.ACCOUNTING_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -462,10 +452,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.ACCOUNT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.ACCOUNT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.ACCOUNT_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
@@ -480,12 +466,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.ACCOUNT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.ACCOUNT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.ACCOUNT_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -556,10 +536,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.ACCOUNTGROUP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.ACCOUNTGROUP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.ACCOUNTGROUP_NAME_FEATURE_ID:
         return getTarget().getName();
       case AccountingModelPackage.ACCOUNTGROUP_ACCOUNT_FEATURE_ID:
@@ -577,12 +553,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.ACCOUNTGROUP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.ACCOUNTGROUP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.ACCOUNTGROUP_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -659,10 +629,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.VAT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.VAT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.VAT_NAME_FEATURE_ID:
         return getTarget().getName();
       case AccountingModelPackage.VAT_RATE_FEATURE_ID:
@@ -679,12 +645,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.VAT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.VAT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.VAT_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -757,12 +717,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.BALANCEACCOUNT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.BALANCEACCOUNT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case AccountingModelPackage.BALANCEACCOUNT_NAME_FEATURE_ID:
-        return getTarget().getName();
       case AccountingModelPackage.BALANCEACCOUNT_REPORT_FEATURE_ID:
         return getTarget().getReport();
       default:
@@ -778,15 +732,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.BALANCEACCOUNT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.BALANCEACCOUNT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case AccountingModelPackage.BALANCEACCOUNT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
       case AccountingModelPackage.BALANCEACCOUNT_REPORT_FEATURE_ID:
         getTarget().setReport((List<ReportGroup>) value);
         return;
@@ -860,10 +805,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.REPORT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.REPORT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.REPORT_NAME_FEATURE_ID:
         return getTarget().getName();
       case AccountingModelPackage.REPORT_DEBITREPORTGROUP_FEATURE_ID:
@@ -882,12 +823,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.REPORT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.REPORT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.REPORT_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -964,10 +899,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.JOURNALGROUP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.JOURNALGROUP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.JOURNALGROUP_NAME_FEATURE_ID:
         return getTarget().getName();
       case AccountingModelPackage.JOURNALGROUP_JOURNALGROUPS_FEATURE_ID:
@@ -987,12 +918,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.JOURNALGROUP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.JOURNALGROUP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.JOURNALGROUP_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -1079,10 +1004,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.REPORTGROUP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.REPORTGROUP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.REPORTGROUP_NAME_FEATURE_ID:
         return getTarget().getName();
       case AccountingModelPackage.REPORTGROUP_REPORTGROUP_FEATURE_ID:
@@ -1102,12 +1023,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.REPORTGROUP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.REPORTGROUP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.REPORTGROUP_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -1193,10 +1108,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.JOURNALSTATEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.JOURNALSTATEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case AccountingModelPackage.JOURNALSTATEMENT_DESCRIPTION_FEATURE_ID:
         return getTarget().getDescription();
       case AccountingModelPackage.JOURNALSTATEMENT_DATE_FEATURE_ID:
@@ -1221,12 +1132,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.JOURNALSTATEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.JOURNALSTATEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case AccountingModelPackage.JOURNALSTATEMENT_DESCRIPTION_FEATURE_ID:
         getTarget().setDescription((String) value);
         return;
@@ -1311,12 +1216,6 @@ public class AccountingModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.PLACCOUNT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case AccountingModelPackage.PLACCOUNT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case AccountingModelPackage.PLACCOUNT_NAME_FEATURE_ID:
-        return getTarget().getName();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1329,15 +1228,6 @@ public class AccountingModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case AccountingModelPackage.PLACCOUNT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case AccountingModelPackage.PLACCOUNT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case AccountingModelPackage.PLACCOUNT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }

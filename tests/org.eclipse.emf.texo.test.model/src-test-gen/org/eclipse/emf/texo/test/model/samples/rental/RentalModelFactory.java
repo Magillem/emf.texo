@@ -420,12 +420,6 @@ public class RentalModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALBICYCLE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RentalModelPackage.RENTALBICYCLE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case RentalModelPackage.RENTALBICYCLE_DESCRIPTION_FEATURE_ID:
-        return getTarget().getDescription();
       case RentalModelPackage.RENTALBICYCLE_TYPE_FEATURE_ID:
         return getTarget().getType();
       case RentalModelPackage.RENTALBICYCLE_RENTALCAR_FEATURE_ID:
@@ -442,15 +436,6 @@ public class RentalModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALBICYCLE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RentalModelPackage.RENTALBICYCLE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case RentalModelPackage.RENTALBICYCLE_DESCRIPTION_FEATURE_ID:
-        getTarget().setDescription((String) value);
-        return;
       case RentalModelPackage.RENTALBICYCLE_TYPE_FEATURE_ID:
         getTarget().setType((RentalBicycleType) value);
         return;
@@ -524,10 +509,6 @@ public class RentalModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALUNIT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RentalModelPackage.RENTALUNIT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case RentalModelPackage.RENTALUNIT_DESCRIPTION_FEATURE_ID:
         return getTarget().getDescription();
       default:
@@ -542,12 +523,6 @@ public class RentalModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALUNIT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RentalModelPackage.RENTALUNIT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case RentalModelPackage.RENTALUNIT_DESCRIPTION_FEATURE_ID:
         getTarget().setDescription((String) value);
         return;
@@ -617,12 +592,6 @@ public class RentalModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCAR_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RentalModelPackage.RENTALCAR_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case RentalModelPackage.RENTALCAR_DESCRIPTION_FEATURE_ID:
-        return getTarget().getDescription();
       case RentalModelPackage.RENTALCAR_SIZE_FEATURE_ID:
         return getTarget().getSize();
       case RentalModelPackage.RENTALCAR_CURRENTDRIVER_FEATURE_ID:
@@ -639,15 +608,6 @@ public class RentalModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCAR_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RentalModelPackage.RENTALCAR_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case RentalModelPackage.RENTALCAR_DESCRIPTION_FEATURE_ID:
-        getTarget().setDescription((String) value);
-        return;
       case RentalModelPackage.RENTALCAR_SIZE_FEATURE_ID:
         getTarget().setSize((RentalCarSize) value);
         return;
@@ -721,10 +681,6 @@ public class RentalModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALBUSINESS_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RentalModelPackage.RENTALBUSINESS_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case RentalModelPackage.RENTALBUSINESS_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
@@ -739,12 +695,6 @@ public class RentalModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALBUSINESS_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RentalModelPackage.RENTALBUSINESS_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case RentalModelPackage.RENTALBUSINESS_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -815,10 +765,6 @@ public class RentalModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCARDRIVER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RentalModelPackage.RENTALCARDRIVER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case RentalModelPackage.RENTALCARDRIVER_NAME_FEATURE_ID:
         return getTarget().getName();
       case RentalModelPackage.RENTALCARDRIVER_CURRENTRENTALCAR_FEATURE_ID:
@@ -835,12 +781,6 @@ public class RentalModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCARDRIVER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RentalModelPackage.RENTALCARDRIVER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case RentalModelPackage.RENTALCARDRIVER_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -914,10 +854,6 @@ public class RentalModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCONTRACT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RentalModelPackage.RENTALCONTRACT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case RentalModelPackage.RENTALCONTRACT_RENTTOBUSINESSPARTNER_FEATURE_ID:
         return getTarget().getRentToBusinessPartner();
       case RentalModelPackage.RENTALCONTRACT_STARTDATE_FEATURE_ID:
@@ -941,12 +877,6 @@ public class RentalModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCONTRACT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RentalModelPackage.RENTALCONTRACT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case RentalModelPackage.RENTALCONTRACT_RENTTOBUSINESSPARTNER_FEATURE_ID:
         getTarget().setRentToBusinessPartner((String) value);
         return;
@@ -1032,10 +962,6 @@ public class RentalModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCONTRACTLINE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case RentalModelPackage.RENTALCONTRACTLINE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case RentalModelPackage.RENTALCONTRACTLINE_RENTALCONTRACT_FEATURE_ID:
         return getTarget().getRentalContract();
       case RentalModelPackage.RENTALCONTRACTLINE_NUMBER_FEATURE_ID:
@@ -1054,12 +980,6 @@ public class RentalModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case RentalModelPackage.RENTALCONTRACTLINE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case RentalModelPackage.RENTALCONTRACTLINE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case RentalModelPackage.RENTALCONTRACTLINE_RENTALCONTRACT_FEATURE_ID:
         getTarget().setRentalContract((RentalContract) value);
         return;

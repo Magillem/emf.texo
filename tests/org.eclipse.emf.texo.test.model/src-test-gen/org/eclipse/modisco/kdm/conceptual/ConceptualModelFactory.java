@@ -12,13 +12,7 @@ import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.modisco.kdm.action.ActionElement;
 import org.eclipse.modisco.kdm.core.CoreModelFactory;
 import org.eclipse.modisco.kdm.core.KDMEntity;
-import org.eclipse.modisco.kdm.kdm.Annotation;
-import org.eclipse.modisco.kdm.kdm.Attribute;
-import org.eclipse.modisco.kdm.kdm.Audit;
-import org.eclipse.modisco.kdm.kdm.ExtendedValue;
-import org.eclipse.modisco.kdm.kdm.ExtensionFamily;
 import org.eclipse.modisco.kdm.kdm.KdmModelFactory;
-import org.eclipse.modisco.kdm.kdm.Stereotype;
 import org.eclipse.modisco.kdm.source.SourceRef;
 
 /**
@@ -334,26 +328,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALMODEL_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.CONCEPTUALMODEL_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.CONCEPTUALMODEL_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.CONCEPTUALMODEL_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.CONCEPTUALMODEL_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.CONCEPTUALMODEL_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.CONCEPTUALMODEL_AUDIT_FEATURE_ID:
-        return getTarget().getAudit();
-      case ConceptualModelPackage.CONCEPTUALMODEL_EXTENSION_FEATURE_ID:
-        return getTarget().getExtension();
-      case ConceptualModelPackage.CONCEPTUALMODEL_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.CONCEPTUALMODEL_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
       case ConceptualModelPackage.CONCEPTUALMODEL_CONCEPTUALELEMENT_FEATURE_ID:
         return getTarget().getConceptualElement();
       default:
@@ -369,33 +343,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALMODEL_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_AUDIT_FEATURE_ID:
-        getTarget().setAudit((Set<Audit>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_EXTENSION_FEATURE_ID:
-        getTarget().setExtension((Set<ExtensionFamily>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALMODEL_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
       case ConceptualModelPackage.CONCEPTUALMODEL_CONCEPTUALELEMENT_FEATURE_ID:
         getTarget().setConceptualElement((Set<AbstractConceptualElement>) value);
         return;
@@ -470,40 +417,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_SOURCE_FEATURE_ID:
         return getTarget().getSource();
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_IMPLEMENTATION_FEATURE_ID:
@@ -525,27 +438,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_SOURCE_FEATURE_ID:
         getTarget().setSource((Set<SourceRef>) value);
         return;
@@ -647,18 +539,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -672,24 +552,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.ABSTRACTCONCEPTUALRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -754,48 +616,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.TERMUNIT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.TERMUNIT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.TERMUNIT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.TERMUNIT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.TERMUNIT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.TERMUNIT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.TERMUNIT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.TERMUNIT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.TERMUNIT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.TERMUNIT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.TERMUNIT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.TERMUNIT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.TERMUNIT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.TERMUNIT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.TERMUNIT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.TERMUNIT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.TERMUNIT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.TERMUNIT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.TERMUNIT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.TERMUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.TERMUNIT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -809,39 +629,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.TERMUNIT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.TERMUNIT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -907,48 +694,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case ConceptualModelPackage.CONCEPTUALCONTAINER_CONCEPTUALELEMENT_FEATURE_ID:
         return getTarget().getConceptualElement();
       default:
@@ -964,39 +709,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALCONTAINER_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
       case ConceptualModelPackage.CONCEPTUALCONTAINER_CONCEPTUALELEMENT_FEATURE_ID:
         getTarget().setConceptualElement((Set<AbstractConceptualElement>) value);
         return;
@@ -1070,50 +782,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.FACTUNIT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.FACTUNIT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.FACTUNIT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.FACTUNIT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.FACTUNIT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.FACTUNIT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.FACTUNIT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.FACTUNIT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.FACTUNIT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.FACTUNIT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.FACTUNIT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.FACTUNIT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.FACTUNIT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.FACTUNIT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.FACTUNIT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.FACTUNIT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.FACTUNIT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.FACTUNIT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.FACTUNIT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.FACTUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.FACTUNIT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case ConceptualModelPackage.FACTUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().getConceptualElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1127,42 +795,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.FACTUNIT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
-      case ConceptualModelPackage.FACTUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        getTarget().setConceptualElement((Set<AbstractConceptualElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1228,18 +860,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_TO_FEATURE_ID:
         return getTarget().getTo();
       case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_FROM_FEATURE_ID:
@@ -1257,24 +877,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case ConceptualModelPackage.CONCEPTUALRELATIONSHIP_TO_FEATURE_ID:
         getTarget().setTo((KDMEntity) value);
         return;
@@ -1347,50 +949,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.BEHAVIORUNIT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.BEHAVIORUNIT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.BEHAVIORUNIT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.BEHAVIORUNIT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.BEHAVIORUNIT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.BEHAVIORUNIT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.BEHAVIORUNIT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.BEHAVIORUNIT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.BEHAVIORUNIT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.BEHAVIORUNIT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.BEHAVIORUNIT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.BEHAVIORUNIT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.BEHAVIORUNIT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.BEHAVIORUNIT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.BEHAVIORUNIT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.BEHAVIORUNIT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.BEHAVIORUNIT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.BEHAVIORUNIT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.BEHAVIORUNIT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.BEHAVIORUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.BEHAVIORUNIT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case ConceptualModelPackage.BEHAVIORUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().getConceptualElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1404,42 +962,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.BEHAVIORUNIT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
-      case ConceptualModelPackage.BEHAVIORUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        getTarget().setConceptualElement((Set<AbstractConceptualElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1504,50 +1026,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.RULEUNIT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.RULEUNIT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.RULEUNIT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.RULEUNIT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.RULEUNIT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.RULEUNIT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.RULEUNIT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.RULEUNIT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.RULEUNIT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.RULEUNIT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.RULEUNIT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.RULEUNIT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.RULEUNIT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.RULEUNIT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.RULEUNIT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.RULEUNIT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.RULEUNIT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.RULEUNIT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.RULEUNIT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.RULEUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.RULEUNIT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case ConceptualModelPackage.RULEUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().getConceptualElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1561,42 +1039,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.RULEUNIT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
-      case ConceptualModelPackage.RULEUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        getTarget().setConceptualElement((Set<AbstractConceptualElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1661,50 +1103,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.SCENARIOUNIT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.SCENARIOUNIT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.SCENARIOUNIT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.SCENARIOUNIT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.SCENARIOUNIT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.SCENARIOUNIT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.SCENARIOUNIT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.SCENARIOUNIT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.SCENARIOUNIT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.SCENARIOUNIT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.SCENARIOUNIT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.SCENARIOUNIT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.SCENARIOUNIT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.SCENARIOUNIT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.SCENARIOUNIT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.SCENARIOUNIT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.SCENARIOUNIT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.SCENARIOUNIT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.SCENARIOUNIT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.SCENARIOUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.SCENARIOUNIT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case ConceptualModelPackage.SCENARIOUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().getConceptualElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1718,42 +1116,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.SCENARIOUNIT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
-      case ConceptualModelPackage.SCENARIOUNIT_CONCEPTUALELEMENT_FEATURE_ID:
-        getTarget().setConceptualElement((Set<AbstractConceptualElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1819,18 +1181,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALFLOW_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.CONCEPTUALFLOW_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.CONCEPTUALFLOW_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.CONCEPTUALFLOW_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.CONCEPTUALFLOW_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.CONCEPTUALFLOW_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case ConceptualModelPackage.CONCEPTUALFLOW_TO_FEATURE_ID:
         return getTarget().getTo();
       case ConceptualModelPackage.CONCEPTUALFLOW_FROM_FEATURE_ID:
@@ -1848,24 +1198,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALFLOW_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALFLOW_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALFLOW_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALFLOW_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALFLOW_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALFLOW_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case ConceptualModelPackage.CONCEPTUALFLOW_TO_FEATURE_ID:
         getTarget().setTo((ConceptualContainer) value);
         return;
@@ -1939,48 +1271,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.CONCEPTUALELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1994,39 +1284,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALELEMENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -2092,48 +1349,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALROLE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ConceptualModelPackage.CONCEPTUALROLE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ConceptualModelPackage.CONCEPTUALROLE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case ConceptualModelPackage.CONCEPTUALROLE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case ConceptualModelPackage.CONCEPTUALROLE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case ConceptualModelPackage.CONCEPTUALROLE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case ConceptualModelPackage.CONCEPTUALROLE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case ConceptualModelPackage.CONCEPTUALROLE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case ConceptualModelPackage.CONCEPTUALROLE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case ConceptualModelPackage.CONCEPTUALROLE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case ConceptualModelPackage.CONCEPTUALROLE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case ConceptualModelPackage.CONCEPTUALROLE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case ConceptualModelPackage.CONCEPTUALROLE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case ConceptualModelPackage.CONCEPTUALROLE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case ConceptualModelPackage.CONCEPTUALROLE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case ConceptualModelPackage.CONCEPTUALROLE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case ConceptualModelPackage.CONCEPTUALROLE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case ConceptualModelPackage.CONCEPTUALROLE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case ConceptualModelPackage.CONCEPTUALROLE_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
-      case ConceptualModelPackage.CONCEPTUALROLE_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().getConceptualRelation();
-      case ConceptualModelPackage.CONCEPTUALROLE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case ConceptualModelPackage.CONCEPTUALROLE_CONCEPTUALELEMENT_FEATURE_ID:
         return getTarget().getConceptualElement();
       default:
@@ -2149,39 +1364,6 @@ public class ConceptualModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ConceptualModelPackage.CONCEPTUALROLE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<KDMEntity>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_CONCEPTUALRELATION_FEATURE_ID:
-        getTarget().setConceptualRelation((Set<AbstractConceptualRelationship>) value);
-        return;
-      case ConceptualModelPackage.CONCEPTUALROLE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((Set<ActionElement>) value);
-        return;
       case ConceptualModelPackage.CONCEPTUALROLE_CONCEPTUALELEMENT_FEATURE_ID:
         getTarget().setConceptualElement((AbstractConceptualElement) value);
         return;

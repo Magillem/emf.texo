@@ -57,6 +57,9 @@ import org.eclipse.emf.texo.utils.ModelUtils;
  */
 
 public class EclipseModelGeneratorTest extends TestCase {
+  private static final String IDENTIFIABLE_NSURI = "http://www.eclipse.org/emf/texo/test/model/base/identifiable"; //$NON-NLS-1$
+  private static final String IDENTIFIABLE_ECLASS_NAME = "Identifiable"; //$NON-NLS-1$
+
   private static final String DEFAULT_EXTENDS = "org.eclipse.emf.texo.test.model.base.identifiable.Identifiable"; //$NON-NLS-1$
 
   private static final String TEST_MODEL_PROJECT = "org.eclipse.emf.texo.test.model"; //$NON-NLS-1$
@@ -180,16 +183,18 @@ public class EclipseModelGeneratorTest extends TestCase {
   }
 
   protected void addSuperType(final List<EPackage> ePackages, final EPackage.Registry packageRegistry) throws Exception {
-    final List<EPackage> identifiableEPackages = GeneratorUtils.readEPackages(
-        Collections.singletonList(TestModel.getModelUrl("base/identifiable.ecore").toURI()), packageRegistry, false); //$NON-NLS-1$
 
-    EClass identifiableEClass = null;
-    for (EPackage ePackage : identifiableEPackages) {
-      if (ePackage.getNsURI().equals("http://www.eclipse.org/emf/texo/test/model/base/identifiable")) { //$NON-NLS-1$
-        identifiableEClass = (EClass) ePackage.getEClassifier("Identifiable"); //$NON-NLS-1$
-        // if (ePackage.eResource() != null) {
-        // ePackage.eResource().setURI(org.eclipse.emf.common.util.URI.createURI(ePackage.getNsURI()));
-        // }
+    // first check if there is already an identifiable, if so use that one
+    EClass identifiableEClass = getIdentifiableSuperEClass(ePackages);
+    if (identifiableEClass == null) {
+      final List<EPackage> identifiableEPackages = GeneratorUtils.readEPackages(
+          Collections.singletonList(TestModel.getModelUrl("base/identifiable.ecore").toURI()), packageRegistry, false); //$NON-NLS-1$
+
+      for (EPackage ePackage : identifiableEPackages) {
+        if (ePackage.getNsURI().equals(IDENTIFIABLE_NSURI)) {
+          identifiableEClass = (EClass) ePackage.getEClassifier(IDENTIFIABLE_ECLASS_NAME);
+          break;
+        }
       }
     }
 
@@ -199,6 +204,34 @@ public class EclipseModelGeneratorTest extends TestCase {
     // reset the id and title providers
     IdProvider.setInstance(ComponentProvider.getInstance().newInstance(IdProvider.class));
     TitleProvider.setInstance(ComponentProvider.getInstance().newInstance(TitleProvider.class));
+  }
+
+  protected EClass getIdentifiableSuperEClass(final List<EPackage> ePackages) {
+    for (EPackage ePackage : ePackages) {
+      for (EClassifier eClassifier : ePackage.getEClassifiers()) {
+        if (eClassifier instanceof EClass) {
+          final EClass eClass = (EClass) eClassifier;
+          final EClass identifiableEClass = getIdentifiableSuperEClass(eClass);
+          if (identifiableEClass != null) {
+            return identifiableEClass;
+          }
+        }
+      }
+    }
+    return null;
+  }
+
+  protected EClass getIdentifiableSuperEClass(final EClass eClass) {
+    if (eClass.getEPackage().getNsURI().equals(IDENTIFIABLE_NSURI) && eClass.getName().equals(IDENTIFIABLE_ECLASS_NAME)) {
+      return eClass;
+    }
+    for (EClass eSuperClass : eClass.getESuperTypes()) {
+      final EClass identifiableEClass = getIdentifiableSuperEClass(eSuperClass);
+      if (identifiableEClass != null) {
+        return identifiableEClass;
+      }
+    }
+    return null;
   }
 
   // add the identifiable super type to each ecore
@@ -214,22 +247,25 @@ public class EclipseModelGeneratorTest extends TestCase {
         if (eClass.isInterface() || ModelUtils.isEMap(eClass)) {
           continue;
         }
-        boolean doContinue = false;
-        for (EClass eSuperClass : eClass.getESuperTypes()) {
-          if (!eSuperClass.isInterface()) {
-            doContinue = true;
-            break;
-          }
-        }
-        if (doContinue) {
-          continue;
-        }
-        eClass.getESuperTypes().add(0, identifiableEClass);
+        addSuperType(eClass, identifiableEClass);
       }
     }
     for (EPackage subEPackage : ePackage.getESubpackages()) {
       addSuperType(subEPackage, identifiableEClass);
     }
+  }
+
+  protected void addSuperType(final EClass eClass, final EClass identifiableEClass) {
+    if (eClass == identifiableEClass) {
+      return;
+    }
+    for (EClass eSuperClass : eClass.getESuperTypes()) {
+      if (!eSuperClass.isInterface()) {
+        addSuperType(eSuperClass, identifiableEClass);
+        return;
+      }
+    }
+    eClass.getESuperTypes().add(0, identifiableEClass);
   }
 
   protected List<String> getModelFileRelativePaths() {

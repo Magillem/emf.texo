@@ -67,20 +67,6 @@ public class TestModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int PERSON_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PERSON_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int PERSON_FIRSTNAME_FEATURE_ID = 2;
 
   /**
@@ -116,20 +102,6 @@ public class TestModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ADDRESS_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ADDRESS_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int ADDRESS_STREET_FEATURE_ID = 2;
 
   /**
@@ -145,20 +117,6 @@ public class TestModelPackage extends ModelPackage {
    * @generated
    */
   public static final int CONTACT_CLASSIFIER_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CONTACT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CONTACT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

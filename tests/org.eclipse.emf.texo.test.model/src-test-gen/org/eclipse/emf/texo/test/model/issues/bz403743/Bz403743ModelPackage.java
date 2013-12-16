@@ -58,20 +58,6 @@ public class Bz403743ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int TEST403743_MAIN_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int TEST403743_MAIN_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int TEST403743_MAIN_NAME_FEATURE_ID = 2;
 
   /**
@@ -87,20 +73,6 @@ public class Bz403743ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int TEST403743_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int TEST403743_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int TEST403743_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

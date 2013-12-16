@@ -174,20 +174,6 @@ public class SimpletypesModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int SIMPLELIST_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SIMPLELIST_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int SIMPLELIST_CODE_FEATURE_ID = 2;
 
   /**
@@ -307,20 +293,6 @@ public class SimpletypesModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int SIMPLETYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SIMPLETYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int SIMPLETYPE_CODE_FEATURE_ID = 2;
 
   /**
@@ -413,20 +385,6 @@ public class SimpletypesModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SIMPLETYPEOBJECT_CLASSIFIER_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SIMPLETYPEOBJECT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SIMPLETYPEOBJECT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

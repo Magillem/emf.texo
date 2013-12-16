@@ -24,7 +24,6 @@ import junit.framework.TestSuite;
 
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.test.model.TestModelPackageProvider;
-import org.eclipse.emf.texo.test.model.samples.travel.TravelModelPackage;
 
 /**
  * Creates the {@link JSONEMFTest} for each {@link ModelPackage}.
@@ -38,8 +37,11 @@ public class ModelJSONTestSuite {
 
     final List<ModelPackage> modelPackages = TestModelPackageProvider.getModelPackages();
 
-    modelPackages.clear();
-    modelPackages.add(TravelModelPackage.INSTANCE);
+    // modelPackages.clear();
+    // modelPackages.add(LibraryModelPackage.INSTANCE);
+    // modelPackages.add(SocietyModelPackage.INSTANCE);
+    // modelPackages.add(ClubModelPackage.INSTANCE);
+    // modelPackages.add(CompetitionModelPackage.INSTANCE);
     // modelPackages.add(Bz403161_2ModelPackage.INSTANCE);
     // modelPackages.add(TypesModelPackage.INSTANCE);
 

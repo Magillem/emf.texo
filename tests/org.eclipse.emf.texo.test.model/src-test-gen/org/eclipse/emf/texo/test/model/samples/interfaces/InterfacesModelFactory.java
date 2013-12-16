@@ -204,10 +204,6 @@ public class InterfacesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InterfacesModelPackage.DESCRIBABLEIDENTIFIABLECONCRETE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case InterfacesModelPackage.DESCRIBABLEIDENTIFIABLECONCRETE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case InterfacesModelPackage.DESCRIBABLEIDENTIFIABLECONCRETE_NAME_FEATURE_ID:
         return getTarget().getName();
       case InterfacesModelPackage.DESCRIBABLEIDENTIFIABLECONCRETE_DESCRIPTION_FEATURE_ID:
@@ -226,12 +222,6 @@ public class InterfacesModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InterfacesModelPackage.DESCRIBABLEIDENTIFIABLECONCRETE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case InterfacesModelPackage.DESCRIBABLEIDENTIFIABLECONCRETE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case InterfacesModelPackage.DESCRIBABLEIDENTIFIABLECONCRETE_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -469,10 +459,6 @@ public class InterfacesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InterfacesModelPackage.DESCRIBABLECONCRETE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case InterfacesModelPackage.DESCRIBABLECONCRETE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case InterfacesModelPackage.DESCRIBABLECONCRETE_NAME_FEATURE_ID:
         return getTarget().getName();
       case InterfacesModelPackage.DESCRIBABLECONCRETE_DESCRIPTION_FEATURE_ID:
@@ -489,12 +475,6 @@ public class InterfacesModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InterfacesModelPackage.DESCRIBABLECONCRETE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case InterfacesModelPackage.DESCRIBABLECONCRETE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case InterfacesModelPackage.DESCRIBABLECONCRETE_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -568,10 +548,6 @@ public class InterfacesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InterfacesModelPackage.IDENTIFIABLECONCRETE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case InterfacesModelPackage.IDENTIFIABLECONCRETE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case InterfacesModelPackage.IDENTIFIABLECONCRETE_NAME_FEATURE_ID:
         return getTarget().getName();
       case InterfacesModelPackage.IDENTIFIABLECONCRETE_IDENTIFIER_FEATURE_ID:
@@ -588,12 +564,6 @@ public class InterfacesModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case InterfacesModelPackage.IDENTIFIABLECONCRETE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case InterfacesModelPackage.IDENTIFIABLECONCRETE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case InterfacesModelPackage.IDENTIFIABLECONCRETE_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;

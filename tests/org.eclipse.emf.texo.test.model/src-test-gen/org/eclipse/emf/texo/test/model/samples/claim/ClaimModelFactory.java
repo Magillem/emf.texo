@@ -213,10 +213,6 @@ public class ClaimModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIM_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ClaimModelPackage.CLAIM_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case ClaimModelPackage.CLAIM_CLAIMCOMPOSITEKEY_FEATURE_ID:
         return getTarget().getClaimCompositeKey();
       case ClaimModelPackage.CLAIM_BILLINGNAME_FEATURE_ID:
@@ -240,12 +236,6 @@ public class ClaimModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIM_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ClaimModelPackage.CLAIM_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case ClaimModelPackage.CLAIM_CLAIMCOMPOSITEKEY_FEATURE_ID:
         getTarget().setClaimCompositeKey((ClaimCompositeKey) value);
         return;
@@ -331,10 +321,6 @@ public class ClaimModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIMCOMPOSITEKEY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ClaimModelPackage.CLAIMCOMPOSITEKEY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case ClaimModelPackage.CLAIMCOMPOSITEKEY_CLAIMNUMBER_FEATURE_ID:
         return getTarget().getClaimNumber();
       case ClaimModelPackage.CLAIMCOMPOSITEKEY_CLAIMEXTENSIONNUMBER_FEATURE_ID:
@@ -351,12 +337,6 @@ public class ClaimModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIMCOMPOSITEKEY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ClaimModelPackage.CLAIMCOMPOSITEKEY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case ClaimModelPackage.CLAIMCOMPOSITEKEY_CLAIMNUMBER_FEATURE_ID:
         getTarget().setClaimNumber((String) value);
         return;
@@ -430,10 +410,6 @@ public class ClaimModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIMLINE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ClaimModelPackage.CLAIMLINE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case ClaimModelPackage.CLAIMLINE_CLAIM_FEATURE_ID:
         return getTarget().getClaim();
       case ClaimModelPackage.CLAIMLINE_CLAIMLINECOMPOSITEKEY_FEATURE_ID:
@@ -456,12 +432,6 @@ public class ClaimModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIMLINE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ClaimModelPackage.CLAIMLINE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case ClaimModelPackage.CLAIMLINE_CLAIM_FEATURE_ID:
         getTarget().setClaim((Claim) value);
         return;
@@ -544,10 +514,6 @@ public class ClaimModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIMLINECOMPOSITEKEY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ClaimModelPackage.CLAIMLINECOMPOSITEKEY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case ClaimModelPackage.CLAIMLINECOMPOSITEKEY_CLAIM_FEATURE_ID:
         return getTarget().getClaim();
       case ClaimModelPackage.CLAIMLINECOMPOSITEKEY_CLAIMLINENUMBER_FEATURE_ID:
@@ -564,12 +530,6 @@ public class ClaimModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case ClaimModelPackage.CLAIMLINECOMPOSITEKEY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case ClaimModelPackage.CLAIMLINECOMPOSITEKEY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case ClaimModelPackage.CLAIMLINECOMPOSITEKEY_CLAIM_FEATURE_ID:
         getTarget().setClaim((Claim) value);
         return;

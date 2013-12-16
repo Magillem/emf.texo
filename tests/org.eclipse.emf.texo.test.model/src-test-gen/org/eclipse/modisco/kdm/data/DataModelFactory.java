@@ -17,13 +17,7 @@ import org.eclipse.modisco.kdm.code.Datatype;
 import org.eclipse.modisco.kdm.code.ItemUnit;
 import org.eclipse.modisco.kdm.core.CoreModelFactory;
 import org.eclipse.modisco.kdm.core.KDMEntity;
-import org.eclipse.modisco.kdm.kdm.Annotation;
-import org.eclipse.modisco.kdm.kdm.Attribute;
-import org.eclipse.modisco.kdm.kdm.Audit;
-import org.eclipse.modisco.kdm.kdm.ExtendedValue;
-import org.eclipse.modisco.kdm.kdm.ExtensionFamily;
 import org.eclipse.modisco.kdm.kdm.KdmModelFactory;
-import org.eclipse.modisco.kdm.kdm.Stereotype;
 import org.eclipse.modisco.kdm.source.SourceRef;
 
 /**
@@ -806,26 +800,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATAMODEL_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATAMODEL_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATAMODEL_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATAMODEL_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATAMODEL_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATAMODEL_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.DATAMODEL_AUDIT_FEATURE_ID:
-        return getTarget().getAudit();
-      case DataModelPackage.DATAMODEL_EXTENSION_FEATURE_ID:
-        return getTarget().getExtension();
-      case DataModelPackage.DATAMODEL_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.DATAMODEL_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
       case DataModelPackage.DATAMODEL_DATAELEMENT_FEATURE_ID:
         return getTarget().getDataElement();
       default:
@@ -841,33 +815,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATAMODEL_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATAMODEL_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATAMODEL_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATAMODEL_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATAMODEL_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATAMODEL_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.DATAMODEL_AUDIT_FEATURE_ID:
-        getTarget().setAudit((Set<Audit>) value);
-        return;
-      case DataModelPackage.DATAMODEL_EXTENSION_FEATURE_ID:
-        getTarget().setExtension((Set<ExtensionFamily>) value);
-        return;
-      case DataModelPackage.DATAMODEL_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
       case DataModelPackage.DATAMODEL_DATAELEMENT_FEATURE_ID:
         getTarget().setDataElement((Set<AbstractDataElement>) value);
         return;
@@ -942,40 +889,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ABSTRACTDATAELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.ABSTRACTDATAELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.ABSTRACTDATAELEMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.ABSTRACTDATAELEMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.ABSTRACTDATAELEMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.ABSTRACTDATAELEMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.ABSTRACTDATAELEMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.ABSTRACTDATAELEMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.ABSTRACTDATAELEMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.ABSTRACTDATAELEMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.ABSTRACTDATAELEMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.ABSTRACTDATAELEMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.ABSTRACTDATAELEMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.ABSTRACTDATAELEMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.ABSTRACTDATAELEMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.ABSTRACTDATAELEMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.ABSTRACTDATAELEMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
       case DataModelPackage.ABSTRACTDATAELEMENT_SOURCE_FEATURE_ID:
         return getTarget().getSource();
       case DataModelPackage.ABSTRACTDATAELEMENT_DATARELATION_FEATURE_ID:
@@ -995,27 +908,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ABSTRACTDATAELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.ABSTRACTDATAELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.ABSTRACTDATAELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.ABSTRACTDATAELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.ABSTRACTDATAELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.ABSTRACTDATAELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.ABSTRACTDATAELEMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
       case DataModelPackage.ABSTRACTDATAELEMENT_SOURCE_FEATURE_ID:
         getTarget().setSource((Set<SourceRef>) value);
         return;
@@ -1108,18 +1000,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1133,24 +1013,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.ABSTRACTDATARELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1215,46 +1077,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATARESOURCE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATARESOURCE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATARESOURCE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATARESOURCE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATARESOURCE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATARESOURCE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.DATARESOURCE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.DATARESOURCE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.DATARESOURCE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.DATARESOURCE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.DATARESOURCE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.DATARESOURCE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.DATARESOURCE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.DATARESOURCE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.DATARESOURCE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.DATARESOURCE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.DATARESOURCE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.DATARESOURCE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.DATARESOURCE_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.DATARESOURCE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1268,36 +1090,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATARESOURCE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATARESOURCE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATARESOURCE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATARESOURCE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATARESOURCE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATARESOURCE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.DATARESOURCE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.DATARESOURCE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.DATARESOURCE_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.DATARESOURCE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1362,46 +1154,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.INDEXELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.INDEXELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.INDEXELEMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.INDEXELEMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.INDEXELEMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.INDEXELEMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.INDEXELEMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.INDEXELEMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.INDEXELEMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.INDEXELEMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.INDEXELEMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.INDEXELEMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.INDEXELEMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.INDEXELEMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.INDEXELEMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.INDEXELEMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.INDEXELEMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.INDEXELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.INDEXELEMENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.INDEXELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.INDEXELEMENT_IMPLEMENTATION_FEATURE_ID:
         return getTarget().getImplementation();
       default:
@@ -1417,36 +1169,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.INDEXELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.INDEXELEMENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.INDEXELEMENT_IMPLEMENTATION_FEATURE_ID:
         getTarget().setImplementation((Set<ItemUnit>) value);
         return;
@@ -1520,48 +1242,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.UNIQUEKEY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.UNIQUEKEY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.UNIQUEKEY_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.UNIQUEKEY_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.UNIQUEKEY_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.UNIQUEKEY_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.UNIQUEKEY_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.UNIQUEKEY_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.UNIQUEKEY_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.UNIQUEKEY_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.UNIQUEKEY_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.UNIQUEKEY_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.UNIQUEKEY_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.UNIQUEKEY_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.UNIQUEKEY_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.UNIQUEKEY_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.UNIQUEKEY_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.UNIQUEKEY_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.UNIQUEKEY_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.UNIQUEKEY_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.UNIQUEKEY_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1575,39 +1255,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.UNIQUEKEY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.UNIQUEKEY_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<ItemUnit>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1672,48 +1319,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.INDEX_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.INDEX_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.INDEX_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.INDEX_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.INDEX_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.INDEX_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.INDEX_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.INDEX_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.INDEX_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.INDEX_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.INDEX_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.INDEX_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.INDEX_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.INDEX_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.INDEX_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.INDEX_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.INDEX_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.INDEX_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.INDEX_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.INDEX_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.INDEX_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1727,39 +1332,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.INDEX_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.INDEX_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.INDEX_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.INDEX_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.INDEX_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.INDEX_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.INDEX_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.INDEX_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.INDEX_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.INDEX_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.INDEX_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<ItemUnit>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -1824,18 +1396,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.KEYRELATION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.KEYRELATION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.KEYRELATION_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.KEYRELATION_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.KEYRELATION_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.KEYRELATION_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.KEYRELATION_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.KEYRELATION_FROM_FEATURE_ID:
@@ -1853,24 +1413,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.KEYRELATION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.KEYRELATION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.KEYRELATION_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.KEYRELATION_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.KEYRELATION_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.KEYRELATION_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.KEYRELATION_TO_FEATURE_ID:
         getTarget().setTo((UniqueKey) value);
         return;
@@ -1943,48 +1485,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.REFERENCEKEY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.REFERENCEKEY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.REFERENCEKEY_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.REFERENCEKEY_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.REFERENCEKEY_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.REFERENCEKEY_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.REFERENCEKEY_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.REFERENCEKEY_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.REFERENCEKEY_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.REFERENCEKEY_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.REFERENCEKEY_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.REFERENCEKEY_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.REFERENCEKEY_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.REFERENCEKEY_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.REFERENCEKEY_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.REFERENCEKEY_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.REFERENCEKEY_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.REFERENCEKEY_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.REFERENCEKEY_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.REFERENCEKEY_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.REFERENCEKEY_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().getImplementation();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1998,39 +1498,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.REFERENCEKEY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.REFERENCEKEY_IMPLEMENTATION_FEATURE_ID:
-        getTarget().setImplementation((Set<ItemUnit>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -2095,46 +1562,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATACONTAINER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATACONTAINER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATACONTAINER_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATACONTAINER_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATACONTAINER_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATACONTAINER_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.DATACONTAINER_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.DATACONTAINER_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.DATACONTAINER_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.DATACONTAINER_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.DATACONTAINER_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.DATACONTAINER_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.DATACONTAINER_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.DATACONTAINER_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.DATACONTAINER_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.DATACONTAINER_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.DATACONTAINER_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.DATACONTAINER_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.DATACONTAINER_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.DATACONTAINER_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.DATACONTAINER_DATAELEMENT_FEATURE_ID:
         return getTarget().getDataElement();
       default:
@@ -2150,36 +1577,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATACONTAINER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATACONTAINER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATACONTAINER_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATACONTAINER_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATACONTAINER_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATACONTAINER_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.DATACONTAINER_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.DATACONTAINER_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.DATACONTAINER_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.DATACONTAINER_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.DATACONTAINER_DATAELEMENT_FEATURE_ID:
         getTarget().setDataElement((Set<DataResource>) value);
         return;
@@ -2253,48 +1650,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CATALOG_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.CATALOG_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.CATALOG_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.CATALOG_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.CATALOG_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.CATALOG_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.CATALOG_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.CATALOG_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.CATALOG_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.CATALOG_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.CATALOG_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.CATALOG_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.CATALOG_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.CATALOG_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.CATALOG_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.CATALOG_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.CATALOG_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.CATALOG_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.CATALOG_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.CATALOG_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.CATALOG_DATAELEMENT_FEATURE_ID:
-        return getTarget().getDataElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2308,39 +1663,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CATALOG_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.CATALOG_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.CATALOG_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.CATALOG_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.CATALOG_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.CATALOG_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.CATALOG_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.CATALOG_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.CATALOG_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.CATALOG_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.CATALOG_DATAELEMENT_FEATURE_ID:
-        getTarget().setDataElement((Set<DataResource>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -2405,48 +1727,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RELATIONALSCHEMA_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.RELATIONALSCHEMA_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.RELATIONALSCHEMA_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.RELATIONALSCHEMA_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.RELATIONALSCHEMA_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.RELATIONALSCHEMA_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.RELATIONALSCHEMA_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.RELATIONALSCHEMA_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.RELATIONALSCHEMA_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.RELATIONALSCHEMA_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.RELATIONALSCHEMA_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.RELATIONALSCHEMA_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.RELATIONALSCHEMA_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.RELATIONALSCHEMA_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.RELATIONALSCHEMA_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.RELATIONALSCHEMA_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.RELATIONALSCHEMA_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.RELATIONALSCHEMA_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.RELATIONALSCHEMA_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.RELATIONALSCHEMA_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.RELATIONALSCHEMA_DATAELEMENT_FEATURE_ID:
-        return getTarget().getDataElement();
       case DataModelPackage.RELATIONALSCHEMA_CODEELEMENT_FEATURE_ID:
         return getTarget().getCodeElement();
       default:
@@ -2462,39 +1742,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RELATIONALSCHEMA_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.RELATIONALSCHEMA_DATAELEMENT_FEATURE_ID:
-        getTarget().setDataElement((Set<DataResource>) value);
-        return;
       case DataModelPackage.RELATIONALSCHEMA_CODEELEMENT_FEATURE_ID:
         getTarget().setCodeElement((Set<CodeItem>) value);
         return;
@@ -2568,48 +1815,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.COLUMNSET_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.COLUMNSET_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.COLUMNSET_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.COLUMNSET_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.COLUMNSET_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.COLUMNSET_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.COLUMNSET_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.COLUMNSET_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.COLUMNSET_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.COLUMNSET_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.COLUMNSET_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.COLUMNSET_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.COLUMNSET_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.COLUMNSET_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.COLUMNSET_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.COLUMNSET_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.COLUMNSET_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.COLUMNSET_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.COLUMNSET_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.COLUMNSET_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.COLUMNSET_DATAELEMENT_FEATURE_ID:
-        return getTarget().getDataElement();
       case DataModelPackage.COLUMNSET_ITEMUNIT_FEATURE_ID:
         return getTarget().getItemUnit();
       default:
@@ -2625,39 +1830,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.COLUMNSET_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.COLUMNSET_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.COLUMNSET_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.COLUMNSET_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.COLUMNSET_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.COLUMNSET_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.COLUMNSET_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.COLUMNSET_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.COLUMNSET_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.COLUMNSET_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.COLUMNSET_DATAELEMENT_FEATURE_ID:
-        getTarget().setDataElement((Set<DataResource>) value);
-        return;
       case DataModelPackage.COLUMNSET_ITEMUNIT_FEATURE_ID:
         getTarget().setItemUnit((List<ItemUnit>) value);
         return;
@@ -2731,50 +1903,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RELATIONALTABLE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.RELATIONALTABLE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.RELATIONALTABLE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.RELATIONALTABLE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.RELATIONALTABLE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.RELATIONALTABLE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.RELATIONALTABLE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.RELATIONALTABLE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.RELATIONALTABLE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.RELATIONALTABLE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.RELATIONALTABLE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.RELATIONALTABLE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.RELATIONALTABLE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.RELATIONALTABLE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.RELATIONALTABLE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.RELATIONALTABLE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.RELATIONALTABLE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.RELATIONALTABLE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.RELATIONALTABLE_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.RELATIONALTABLE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.RELATIONALTABLE_DATAELEMENT_FEATURE_ID:
-        return getTarget().getDataElement();
-      case DataModelPackage.RELATIONALTABLE_ITEMUNIT_FEATURE_ID:
-        return getTarget().getItemUnit();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2788,42 +1916,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RELATIONALTABLE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_DATAELEMENT_FEATURE_ID:
-        getTarget().setDataElement((Set<DataResource>) value);
-        return;
-      case DataModelPackage.RELATIONALTABLE_ITEMUNIT_FEATURE_ID:
-        getTarget().setItemUnit((List<ItemUnit>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -2888,50 +1980,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RELATIONALVIEW_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.RELATIONALVIEW_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.RELATIONALVIEW_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.RELATIONALVIEW_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.RELATIONALVIEW_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.RELATIONALVIEW_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.RELATIONALVIEW_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.RELATIONALVIEW_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.RELATIONALVIEW_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.RELATIONALVIEW_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.RELATIONALVIEW_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.RELATIONALVIEW_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.RELATIONALVIEW_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.RELATIONALVIEW_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.RELATIONALVIEW_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.RELATIONALVIEW_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.RELATIONALVIEW_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.RELATIONALVIEW_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.RELATIONALVIEW_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.RELATIONALVIEW_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.RELATIONALVIEW_DATAELEMENT_FEATURE_ID:
-        return getTarget().getDataElement();
-      case DataModelPackage.RELATIONALVIEW_ITEMUNIT_FEATURE_ID:
-        return getTarget().getItemUnit();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2945,42 +1993,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RELATIONALVIEW_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_DATAELEMENT_FEATURE_ID:
-        getTarget().setDataElement((Set<DataResource>) value);
-        return;
-      case DataModelPackage.RELATIONALVIEW_ITEMUNIT_FEATURE_ID:
-        getTarget().setItemUnit((List<ItemUnit>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -3045,50 +2057,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RECORDFILE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.RECORDFILE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.RECORDFILE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.RECORDFILE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.RECORDFILE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.RECORDFILE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.RECORDFILE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.RECORDFILE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.RECORDFILE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.RECORDFILE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.RECORDFILE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.RECORDFILE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.RECORDFILE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.RECORDFILE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.RECORDFILE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.RECORDFILE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.RECORDFILE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.RECORDFILE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.RECORDFILE_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.RECORDFILE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.RECORDFILE_DATAELEMENT_FEATURE_ID:
-        return getTarget().getDataElement();
-      case DataModelPackage.RECORDFILE_ITEMUNIT_FEATURE_ID:
-        return getTarget().getItemUnit();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3102,42 +2070,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RECORDFILE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.RECORDFILE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.RECORDFILE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.RECORDFILE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.RECORDFILE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.RECORDFILE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.RECORDFILE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.RECORDFILE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.RECORDFILE_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.RECORDFILE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.RECORDFILE_DATAELEMENT_FEATURE_ID:
-        getTarget().setDataElement((Set<DataResource>) value);
-        return;
-      case DataModelPackage.RECORDFILE_ITEMUNIT_FEATURE_ID:
-        getTarget().setItemUnit((List<ItemUnit>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -3202,46 +2134,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATAEVENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATAEVENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATAEVENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATAEVENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATAEVENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATAEVENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.DATAEVENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.DATAEVENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.DATAEVENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.DATAEVENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.DATAEVENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.DATAEVENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.DATAEVENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.DATAEVENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.DATAEVENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.DATAEVENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.DATAEVENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.DATAEVENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.DATAEVENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.DATAEVENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.DATAEVENT_KIND_FEATURE_ID:
         return getTarget().getKind();
       default:
@@ -3257,36 +2149,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATAEVENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATAEVENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATAEVENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATAEVENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATAEVENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATAEVENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.DATAEVENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.DATAEVENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.DATAEVENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.DATAEVENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.DATAEVENT_KIND_FEATURE_ID:
         getTarget().setKind((String) value);
         return;
@@ -3356,46 +2218,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.XMLSCHEMA_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.XMLSCHEMA_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.XMLSCHEMA_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.XMLSCHEMA_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.XMLSCHEMA_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.XMLSCHEMA_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.XMLSCHEMA_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.XMLSCHEMA_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.XMLSCHEMA_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.XMLSCHEMA_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.XMLSCHEMA_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.XMLSCHEMA_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.XMLSCHEMA_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.XMLSCHEMA_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.XMLSCHEMA_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.XMLSCHEMA_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.XMLSCHEMA_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.XMLSCHEMA_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.XMLSCHEMA_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.XMLSCHEMA_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.XMLSCHEMA_CONTENTELEMENT_FEATURE_ID:
         return getTarget().getContentElement();
       default:
@@ -3411,36 +2233,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.XMLSCHEMA_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.XMLSCHEMA_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.XMLSCHEMA_CONTENTELEMENT_FEATURE_ID:
         getTarget().setContentElement((Set<AbstractContentElement>) value);
         return;
@@ -3515,46 +2307,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3568,36 +2320,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.ABSTRACTCONTENTELEMENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -3663,46 +2385,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.COMPLEXCONTENTTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.COMPLEXCONTENTTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.COMPLEXCONTENTTYPE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.COMPLEXCONTENTTYPE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.COMPLEXCONTENTTYPE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.COMPLEXCONTENTTYPE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.COMPLEXCONTENTTYPE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.COMPLEXCONTENTTYPE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.COMPLEXCONTENTTYPE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.COMPLEXCONTENTTYPE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.COMPLEXCONTENTTYPE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.COMPLEXCONTENTTYPE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.COMPLEXCONTENTTYPE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.COMPLEXCONTENTTYPE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.COMPLEXCONTENTTYPE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.COMPLEXCONTENTTYPE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.COMPLEXCONTENTTYPE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.COMPLEXCONTENTTYPE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.COMPLEXCONTENTTYPE_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.COMPLEXCONTENTTYPE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.COMPLEXCONTENTTYPE_CONTENTELEMENT_FEATURE_ID:
         return getTarget().getContentElement();
       default:
@@ -3718,36 +2400,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.COMPLEXCONTENTTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.COMPLEXCONTENTTYPE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.COMPLEXCONTENTTYPE_CONTENTELEMENT_FEATURE_ID:
         getTarget().setContentElement((List<AbstractContentElement>) value);
         return;
@@ -3821,48 +2473,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ALLCONTENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.ALLCONTENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.ALLCONTENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.ALLCONTENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.ALLCONTENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.ALLCONTENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.ALLCONTENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.ALLCONTENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.ALLCONTENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.ALLCONTENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.ALLCONTENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.ALLCONTENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.ALLCONTENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.ALLCONTENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.ALLCONTENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.ALLCONTENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.ALLCONTENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.ALLCONTENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.ALLCONTENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.ALLCONTENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.ALLCONTENT_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3876,39 +2486,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.ALLCONTENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.ALLCONTENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.ALLCONTENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.ALLCONTENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.ALLCONTENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.ALLCONTENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.ALLCONTENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.ALLCONTENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.ALLCONTENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.ALLCONTENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.ALLCONTENT_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((List<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -3973,48 +2550,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.SEQCONTENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.SEQCONTENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.SEQCONTENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.SEQCONTENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.SEQCONTENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.SEQCONTENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.SEQCONTENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.SEQCONTENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.SEQCONTENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.SEQCONTENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.SEQCONTENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.SEQCONTENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.SEQCONTENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.SEQCONTENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.SEQCONTENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.SEQCONTENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.SEQCONTENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.SEQCONTENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.SEQCONTENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.SEQCONTENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.SEQCONTENT_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4028,39 +2563,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.SEQCONTENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.SEQCONTENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.SEQCONTENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.SEQCONTENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.SEQCONTENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.SEQCONTENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.SEQCONTENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.SEQCONTENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.SEQCONTENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.SEQCONTENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.SEQCONTENT_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((List<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -4125,48 +2627,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CHOICECONTENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.CHOICECONTENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.CHOICECONTENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.CHOICECONTENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.CHOICECONTENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.CHOICECONTENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.CHOICECONTENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.CHOICECONTENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.CHOICECONTENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.CHOICECONTENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.CHOICECONTENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.CHOICECONTENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.CHOICECONTENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.CHOICECONTENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.CHOICECONTENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.CHOICECONTENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.CHOICECONTENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.CHOICECONTENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.CHOICECONTENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.CHOICECONTENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.CHOICECONTENT_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4180,39 +2640,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CHOICECONTENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.CHOICECONTENT_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((List<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -4277,46 +2704,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTITEM_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.CONTENTITEM_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.CONTENTITEM_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.CONTENTITEM_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.CONTENTITEM_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.CONTENTITEM_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.CONTENTITEM_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.CONTENTITEM_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.CONTENTITEM_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.CONTENTITEM_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.CONTENTITEM_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.CONTENTITEM_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.CONTENTITEM_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.CONTENTITEM_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.CONTENTITEM_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.CONTENTITEM_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.CONTENTITEM_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.CONTENTITEM_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.CONTENTITEM_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.CONTENTITEM_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.CONTENTITEM_TYPE_FEATURE_ID:
         return getTarget().getType();
       case DataModelPackage.CONTENTITEM_CONTENTELEMENT_FEATURE_ID:
@@ -4334,36 +2721,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTITEM_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.CONTENTITEM_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.CONTENTITEM_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.CONTENTITEM_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.CONTENTITEM_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.CONTENTITEM_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.CONTENTITEM_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.CONTENTITEM_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.CONTENTITEM_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.CONTENTITEM_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.CONTENTITEM_TYPE_FEATURE_ID:
         getTarget().setType((ComplexContentType) value);
         return;
@@ -4440,50 +2797,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.GROUPCONTENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.GROUPCONTENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.GROUPCONTENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.GROUPCONTENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.GROUPCONTENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.GROUPCONTENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.GROUPCONTENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.GROUPCONTENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.GROUPCONTENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.GROUPCONTENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.GROUPCONTENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.GROUPCONTENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.GROUPCONTENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.GROUPCONTENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.GROUPCONTENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.GROUPCONTENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.GROUPCONTENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.GROUPCONTENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.GROUPCONTENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.GROUPCONTENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.GROUPCONTENT_TYPE_FEATURE_ID:
-        return getTarget().getType();
-      case DataModelPackage.GROUPCONTENT_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4497,42 +2810,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.GROUPCONTENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_TYPE_FEATURE_ID:
-        getTarget().setType((ComplexContentType) value);
-        return;
-      case DataModelPackage.GROUPCONTENT_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((Set<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -4598,46 +2875,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTRESTRICTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.CONTENTRESTRICTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.CONTENTRESTRICTION_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.CONTENTRESTRICTION_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.CONTENTRESTRICTION_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.CONTENTRESTRICTION_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.CONTENTRESTRICTION_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.CONTENTRESTRICTION_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.CONTENTRESTRICTION_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.CONTENTRESTRICTION_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.CONTENTRESTRICTION_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.CONTENTRESTRICTION_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.CONTENTRESTRICTION_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.CONTENTRESTRICTION_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.CONTENTRESTRICTION_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.CONTENTRESTRICTION_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.CONTENTRESTRICTION_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.CONTENTRESTRICTION_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.CONTENTRESTRICTION_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.CONTENTRESTRICTION_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.CONTENTRESTRICTION_KIND_FEATURE_ID:
         return getTarget().getKind();
       case DataModelPackage.CONTENTRESTRICTION_VALUE_FEATURE_ID:
@@ -4655,36 +2892,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTRESTRICTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.CONTENTRESTRICTION_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.CONTENTRESTRICTION_KIND_FEATURE_ID:
         getTarget().setKind((String) value);
         return;
@@ -4758,48 +2965,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.SIMPLECONTENTTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.SIMPLECONTENTTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.SIMPLECONTENTTYPE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.SIMPLECONTENTTYPE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.SIMPLECONTENTTYPE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.SIMPLECONTENTTYPE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.SIMPLECONTENTTYPE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.SIMPLECONTENTTYPE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.SIMPLECONTENTTYPE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.SIMPLECONTENTTYPE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.SIMPLECONTENTTYPE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.SIMPLECONTENTTYPE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.SIMPLECONTENTTYPE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.SIMPLECONTENTTYPE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.SIMPLECONTENTTYPE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.SIMPLECONTENTTYPE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.SIMPLECONTENTTYPE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.SIMPLECONTENTTYPE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.SIMPLECONTENTTYPE_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.SIMPLECONTENTTYPE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.SIMPLECONTENTTYPE_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       case DataModelPackage.SIMPLECONTENTTYPE_TYPE_FEATURE_ID:
         return getTarget().getType();
       case DataModelPackage.SIMPLECONTENTTYPE_KIND_FEATURE_ID:
@@ -4817,39 +2982,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.SIMPLECONTENTTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.SIMPLECONTENTTYPE_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((List<AbstractContentElement>) value);
-        return;
       case DataModelPackage.SIMPLECONTENTTYPE_TYPE_FEATURE_ID:
         getTarget().setType((Set<ComplexContentType>) value);
         return;
@@ -4929,46 +3061,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.EXTENDEDDATAELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.EXTENDEDDATAELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.EXTENDEDDATAELEMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.EXTENDEDDATAELEMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.EXTENDEDDATAELEMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.EXTENDEDDATAELEMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.EXTENDEDDATAELEMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.EXTENDEDDATAELEMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.EXTENDEDDATAELEMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.EXTENDEDDATAELEMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.EXTENDEDDATAELEMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.EXTENDEDDATAELEMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.EXTENDEDDATAELEMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.EXTENDEDDATAELEMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.EXTENDEDDATAELEMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.EXTENDEDDATAELEMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.EXTENDEDDATAELEMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.EXTENDEDDATAELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.EXTENDEDDATAELEMENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.EXTENDEDDATAELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4982,36 +3074,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.EXTENDEDDATAELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.EXTENDEDDATAELEMENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -5077,18 +3139,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATARELATIONSHIP_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATARELATIONSHIP_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATARELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATARELATIONSHIP_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATARELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATARELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.DATARELATIONSHIP_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.DATARELATIONSHIP_FROM_FEATURE_ID:
@@ -5106,24 +3156,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATARELATIONSHIP_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATARELATIONSHIP_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATARELATIONSHIP_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATARELATIONSHIP_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATARELATIONSHIP_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATARELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.DATARELATIONSHIP_TO_FEATURE_ID:
         getTarget().setTo((KDMEntity) value);
         return;
@@ -5196,48 +3228,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.MIXEDCONTENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.MIXEDCONTENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.MIXEDCONTENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.MIXEDCONTENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.MIXEDCONTENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.MIXEDCONTENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.MIXEDCONTENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.MIXEDCONTENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.MIXEDCONTENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.MIXEDCONTENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.MIXEDCONTENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.MIXEDCONTENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.MIXEDCONTENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.MIXEDCONTENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.MIXEDCONTENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.MIXEDCONTENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.MIXEDCONTENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.MIXEDCONTENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.MIXEDCONTENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.MIXEDCONTENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.MIXEDCONTENT_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -5251,39 +3241,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.MIXEDCONTENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.MIXEDCONTENT_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((List<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -5348,50 +3305,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTREFERENCE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.CONTENTREFERENCE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.CONTENTREFERENCE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.CONTENTREFERENCE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.CONTENTREFERENCE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.CONTENTREFERENCE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.CONTENTREFERENCE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.CONTENTREFERENCE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.CONTENTREFERENCE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.CONTENTREFERENCE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.CONTENTREFERENCE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.CONTENTREFERENCE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.CONTENTREFERENCE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.CONTENTREFERENCE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.CONTENTREFERENCE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.CONTENTREFERENCE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.CONTENTREFERENCE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.CONTENTREFERENCE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.CONTENTREFERENCE_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.CONTENTREFERENCE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.CONTENTREFERENCE_TYPE_FEATURE_ID:
-        return getTarget().getType();
-      case DataModelPackage.CONTENTREFERENCE_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -5405,42 +3318,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTREFERENCE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_TYPE_FEATURE_ID:
-        getTarget().setType((ComplexContentType) value);
-        return;
-      case DataModelPackage.CONTENTREFERENCE_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((Set<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -5505,46 +3382,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATAACTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATAACTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATAACTION_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATAACTION_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATAACTION_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATAACTION_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.DATAACTION_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.DATAACTION_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.DATAACTION_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.DATAACTION_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.DATAACTION_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.DATAACTION_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.DATAACTION_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.DATAACTION_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.DATAACTION_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.DATAACTION_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.DATAACTION_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.DATAACTION_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.DATAACTION_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.DATAACTION_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
       case DataModelPackage.DATAACTION_KIND_FEATURE_ID:
         return getTarget().getKind();
       case DataModelPackage.DATAACTION_IMPLEMENTATION_FEATURE_ID:
@@ -5564,36 +3401,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATAACTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATAACTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATAACTION_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATAACTION_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATAACTION_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATAACTION_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.DATAACTION_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.DATAACTION_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.DATAACTION_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.DATAACTION_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
       case DataModelPackage.DATAACTION_KIND_FEATURE_ID:
         getTarget().setKind((String) value);
         return;
@@ -5680,18 +3487,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.READSCOLUMNSET_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.READSCOLUMNSET_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.READSCOLUMNSET_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.READSCOLUMNSET_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.READSCOLUMNSET_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.READSCOLUMNSET_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.READSCOLUMNSET_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.READSCOLUMNSET_FROM_FEATURE_ID:
@@ -5709,24 +3504,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.READSCOLUMNSET_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.READSCOLUMNSET_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.READSCOLUMNSET_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.READSCOLUMNSET_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.READSCOLUMNSET_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.READSCOLUMNSET_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.READSCOLUMNSET_TO_FEATURE_ID:
         getTarget().setTo((ColumnSet) value);
         return;
@@ -5799,50 +3576,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTATTRIBUTE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.CONTENTATTRIBUTE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.CONTENTATTRIBUTE_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.CONTENTATTRIBUTE_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.CONTENTATTRIBUTE_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.CONTENTATTRIBUTE_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.CONTENTATTRIBUTE_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.CONTENTATTRIBUTE_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.CONTENTATTRIBUTE_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.CONTENTATTRIBUTE_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.CONTENTATTRIBUTE_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.CONTENTATTRIBUTE_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.CONTENTATTRIBUTE_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.CONTENTATTRIBUTE_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.CONTENTATTRIBUTE_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.CONTENTATTRIBUTE_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.CONTENTATTRIBUTE_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.CONTENTATTRIBUTE_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.CONTENTATTRIBUTE_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.CONTENTATTRIBUTE_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.CONTENTATTRIBUTE_TYPE_FEATURE_ID:
-        return getTarget().getType();
-      case DataModelPackage.CONTENTATTRIBUTE_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -5856,42 +3589,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTATTRIBUTE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_TYPE_FEATURE_ID:
-        getTarget().setType((ComplexContentType) value);
-        return;
-      case DataModelPackage.CONTENTATTRIBUTE_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((Set<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -5956,18 +3653,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.TYPEDBY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.TYPEDBY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.TYPEDBY_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.TYPEDBY_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.TYPEDBY_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.TYPEDBY_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.TYPEDBY_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.TYPEDBY_FROM_FEATURE_ID:
@@ -5985,24 +3670,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.TYPEDBY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.TYPEDBY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.TYPEDBY_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.TYPEDBY_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.TYPEDBY_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.TYPEDBY_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.TYPEDBY_TO_FEATURE_ID:
         getTarget().setTo((ComplexContentType) value);
         return;
@@ -6075,18 +3742,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.REFERENCETO_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.REFERENCETO_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.REFERENCETO_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.REFERENCETO_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.REFERENCETO_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.REFERENCETO_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.REFERENCETO_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.REFERENCETO_FROM_FEATURE_ID:
@@ -6104,24 +3759,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.REFERENCETO_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.REFERENCETO_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.REFERENCETO_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.REFERENCETO_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.REFERENCETO_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.REFERENCETO_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.REFERENCETO_TO_FEATURE_ID:
         getTarget().setTo((ContentItem) value);
         return;
@@ -6194,18 +3831,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RESTRICTIONOF_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.RESTRICTIONOF_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.RESTRICTIONOF_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.RESTRICTIONOF_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.RESTRICTIONOF_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.RESTRICTIONOF_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.RESTRICTIONOF_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.RESTRICTIONOF_FROM_FEATURE_ID:
@@ -6223,24 +3848,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.RESTRICTIONOF_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.RESTRICTIONOF_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.RESTRICTIONOF_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.RESTRICTIONOF_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.RESTRICTIONOF_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.RESTRICTIONOF_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.RESTRICTIONOF_TO_FEATURE_ID:
         getTarget().setTo((ComplexContentType) value);
         return;
@@ -6313,18 +3920,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.EXTENSIONTO_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.EXTENSIONTO_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.EXTENSIONTO_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.EXTENSIONTO_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.EXTENSIONTO_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.EXTENSIONTO_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.EXTENSIONTO_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.EXTENSIONTO_FROM_FEATURE_ID:
@@ -6342,24 +3937,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.EXTENSIONTO_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.EXTENSIONTO_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.EXTENSIONTO_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.EXTENSIONTO_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.EXTENSIONTO_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.EXTENSIONTO_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.EXTENSIONTO_TO_FEATURE_ID:
         getTarget().setTo((ComplexContentType) value);
         return;
@@ -6432,18 +4009,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATATYPEOF_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATATYPEOF_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATATYPEOF_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATATYPEOF_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATATYPEOF_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATATYPEOF_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.DATATYPEOF_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.DATATYPEOF_FROM_FEATURE_ID:
@@ -6461,24 +4026,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATATYPEOF_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATATYPEOF_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATATYPEOF_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATATYPEOF_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATATYPEOF_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATATYPEOF_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.DATATYPEOF_TO_FEATURE_ID:
         getTarget().setTo((Datatype) value);
         return;
@@ -6552,18 +4099,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.HASCONTENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.HASCONTENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.HASCONTENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.HASCONTENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.HASCONTENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.HASCONTENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.HASCONTENT_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.HASCONTENT_FROM_FEATURE_ID:
@@ -6581,24 +4116,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.HASCONTENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.HASCONTENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.HASCONTENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.HASCONTENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.HASCONTENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.HASCONTENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.HASCONTENT_TO_FEATURE_ID:
         getTarget().setTo((AbstractDataElement) value);
         return;
@@ -6672,18 +4189,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.WRITESCOLUMNSET_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.WRITESCOLUMNSET_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.WRITESCOLUMNSET_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.WRITESCOLUMNSET_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.WRITESCOLUMNSET_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.WRITESCOLUMNSET_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.WRITESCOLUMNSET_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.WRITESCOLUMNSET_FROM_FEATURE_ID:
@@ -6701,24 +4206,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.WRITESCOLUMNSET_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.WRITESCOLUMNSET_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.WRITESCOLUMNSET_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.WRITESCOLUMNSET_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.WRITESCOLUMNSET_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.WRITESCOLUMNSET_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.WRITESCOLUMNSET_TO_FEATURE_ID:
         getTarget().setTo((ColumnSet) value);
         return;
@@ -6792,18 +4279,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.PRODUCESDATAEVENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.PRODUCESDATAEVENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.PRODUCESDATAEVENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.PRODUCESDATAEVENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.PRODUCESDATAEVENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.PRODUCESDATAEVENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.PRODUCESDATAEVENT_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.PRODUCESDATAEVENT_FROM_FEATURE_ID:
@@ -6821,24 +4296,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.PRODUCESDATAEVENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.PRODUCESDATAEVENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.PRODUCESDATAEVENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.PRODUCESDATAEVENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.PRODUCESDATAEVENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.PRODUCESDATAEVENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.PRODUCESDATAEVENT_TO_FEATURE_ID:
         getTarget().setTo((DataEvent) value);
         return;
@@ -6911,50 +4368,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATASEGMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.DATASEGMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.DATASEGMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.DATASEGMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.DATASEGMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.DATASEGMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.DATASEGMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.DATASEGMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.DATASEGMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.DATASEGMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.DATASEGMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.DATASEGMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.DATASEGMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.DATASEGMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.DATASEGMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.DATASEGMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.DATASEGMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.DATASEGMENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.DATASEGMENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.DATASEGMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.DATASEGMENT_DATAELEMENT_FEATURE_ID:
-        return getTarget().getDataElement();
-      case DataModelPackage.DATASEGMENT_ITEMUNIT_FEATURE_ID:
-        return getTarget().getItemUnit();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -6968,42 +4381,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.DATASEGMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.DATASEGMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.DATASEGMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.DATASEGMENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_DATAELEMENT_FEATURE_ID:
-        getTarget().setDataElement((Set<DataResource>) value);
-        return;
-      case DataModelPackage.DATASEGMENT_ITEMUNIT_FEATURE_ID:
-        getTarget().setItemUnit((List<ItemUnit>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -7068,50 +4445,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTELEMENT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.CONTENTELEMENT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.CONTENTELEMENT_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.CONTENTELEMENT_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.CONTENTELEMENT_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.CONTENTELEMENT_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
-      case DataModelPackage.CONTENTELEMENT_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case DataModelPackage.CONTENTELEMENT_MODEL_FEATURE_ID:
-        return getTarget().getModel();
-      case DataModelPackage.CONTENTELEMENT_OWNER_FEATURE_ID:
-        return getTarget().getOwner();
-      case DataModelPackage.CONTENTELEMENT_OWNEDELEMENT_FEATURE_ID:
-        return getTarget().getOwnedElement();
-      case DataModelPackage.CONTENTELEMENT_OUTBOUND_FEATURE_ID:
-        return getTarget().getOutbound();
-      case DataModelPackage.CONTENTELEMENT_INBOUND_FEATURE_ID:
-        return getTarget().getInbound();
-      case DataModelPackage.CONTENTELEMENT_OWNEDRELATION_FEATURE_ID:
-        return getTarget().getOwnedRelation();
-      case DataModelPackage.CONTENTELEMENT_GROUP_FEATURE_ID:
-        return getTarget().getGroup();
-      case DataModelPackage.CONTENTELEMENT_GROUPEDELEMENT_FEATURE_ID:
-        return getTarget().getGroupedElement();
-      case DataModelPackage.CONTENTELEMENT_INAGGREGATED_FEATURE_ID:
-        return getTarget().getInAggregated();
-      case DataModelPackage.CONTENTELEMENT_OUTAGGREGATED_FEATURE_ID:
-        return getTarget().getOutAggregated();
-      case DataModelPackage.CONTENTELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().getSource();
-      case DataModelPackage.CONTENTELEMENT_DATARELATION_FEATURE_ID:
-        return getTarget().getDataRelation();
-      case DataModelPackage.CONTENTELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().getAbstraction();
-      case DataModelPackage.CONTENTELEMENT_TYPE_FEATURE_ID:
-        return getTarget().getType();
-      case DataModelPackage.CONTENTELEMENT_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().getContentElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -7125,42 +4458,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.CONTENTELEMENT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_SOURCE_FEATURE_ID:
-        getTarget().setSource((Set<SourceRef>) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_DATARELATION_FEATURE_ID:
-        getTarget().setDataRelation((Set<AbstractDataRelationship>) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_ABSTRACTION_FEATURE_ID:
-        getTarget().setAbstraction((List<ActionElement>) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_TYPE_FEATURE_ID:
-        getTarget().setType((ComplexContentType) value);
-        return;
-      case DataModelPackage.CONTENTELEMENT_CONTENTELEMENT_FEATURE_ID:
-        getTarget().setContentElement((Set<AbstractContentElement>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -7226,18 +4523,6 @@ public class DataModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.MANAGESDATA_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case DataModelPackage.MANAGESDATA_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case DataModelPackage.MANAGESDATA_ATTRIBUTE_FEATURE_ID:
-        return getTarget().getAttribute();
-      case DataModelPackage.MANAGESDATA_ANNOTATION_FEATURE_ID:
-        return getTarget().getAnnotation();
-      case DataModelPackage.MANAGESDATA_STEREOTYPE_FEATURE_ID:
-        return getTarget().getStereotype();
-      case DataModelPackage.MANAGESDATA_TAGGEDVALUE_FEATURE_ID:
-        return getTarget().getTaggedValue();
       case DataModelPackage.MANAGESDATA_TO_FEATURE_ID:
         return getTarget().getTo();
       case DataModelPackage.MANAGESDATA_FROM_FEATURE_ID:
@@ -7255,24 +4540,6 @@ public class DataModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case DataModelPackage.MANAGESDATA_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case DataModelPackage.MANAGESDATA_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case DataModelPackage.MANAGESDATA_ATTRIBUTE_FEATURE_ID:
-        getTarget().setAttribute((Set<Attribute>) value);
-        return;
-      case DataModelPackage.MANAGESDATA_ANNOTATION_FEATURE_ID:
-        getTarget().setAnnotation((Set<Annotation>) value);
-        return;
-      case DataModelPackage.MANAGESDATA_STEREOTYPE_FEATURE_ID:
-        getTarget().setStereotype((Set<Stereotype>) value);
-        return;
-      case DataModelPackage.MANAGESDATA_TAGGEDVALUE_FEATURE_ID:
-        getTarget().setTaggedValue((Set<ExtendedValue>) value);
-        return;
       case DataModelPackage.MANAGESDATA_TO_FEATURE_ID:
         getTarget().setTo((AbstractDataElement) value);
         return;

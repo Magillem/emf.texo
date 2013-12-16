@@ -221,8 +221,8 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("switch (featureID) {");
     _builder.newLine();
     {
-      EList<EStructuralFeatureModelGenAnnotation> _eAllStructuralFeatureModelGenAnnotations = eClassModelGenAnnotation.getEAllStructuralFeatureModelGenAnnotations();
-      for(final EStructuralFeatureModelGenAnnotation featureAnnotation : _eAllStructuralFeatureModelGenAnnotations) {
+      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
+      for(final EStructuralFeatureModelGenAnnotation featureAnnotation : _eStructuralFeatureModelGenAnnotations) {
         {
           boolean _isGenerateCode = featureAnnotation.isGenerateCode();
           if (_isGenerateCode) {
@@ -277,7 +277,7 @@ public class ModelObjectTemplate extends BaseTemplate {
       if (_addSuppressUnchecked) {
         _or = true;
       } else {
-        EList<EStructuralFeatureModelGenAnnotation> _eAllStructuralFeatureModelGenAnnotations_1 = eClassModelGenAnnotation.getEAllStructuralFeatureModelGenAnnotations();
+        EList<EStructuralFeatureModelGenAnnotation> _eAllStructuralFeatureModelGenAnnotations = eClassModelGenAnnotation.getEAllStructuralFeatureModelGenAnnotations();
         final Function1<EStructuralFeatureModelGenAnnotation,Boolean> _function = new Function1<EStructuralFeatureModelGenAnnotation,Boolean>() {
             public Boolean apply(final EStructuralFeatureModelGenAnnotation e) {
               boolean _and = false;
@@ -293,7 +293,7 @@ public class ModelObjectTemplate extends BaseTemplate {
               return Boolean.valueOf(_and);
             }
           };
-        boolean _exists = IterableExtensions.<EStructuralFeatureModelGenAnnotation>exists(_eAllStructuralFeatureModelGenAnnotations_1, _function);
+        boolean _exists = IterableExtensions.<EStructuralFeatureModelGenAnnotation>exists(_eAllStructuralFeatureModelGenAnnotations, _function);
         _or = (_addSuppressUnchecked || _exists);
       }
       if (_or) {
@@ -315,8 +315,8 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("switch (featureID) {");
     _builder.newLine();
     {
-      EList<EStructuralFeatureModelGenAnnotation> _eAllStructuralFeatureModelGenAnnotations_2 = eClassModelGenAnnotation.getEAllStructuralFeatureModelGenAnnotations();
-      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_1 : _eAllStructuralFeatureModelGenAnnotations_2) {
+      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_1 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
+      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_1 : _eStructuralFeatureModelGenAnnotations_1) {
         {
           boolean _and = false;
           boolean _isGenerateCode_1 = featureAnnotation_1.isGenerateCode();
@@ -396,8 +396,8 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("switch (featureID) {");
     _builder.newLine();
     {
-      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
-      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_2 : _eStructuralFeatureModelGenAnnotations) {
+      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_2 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
+      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_2 : _eStructuralFeatureModelGenAnnotations_2) {
         _builder.append("        ");
         _builder.newLine();
         {
@@ -538,8 +538,8 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("switch (featureID) {");
     _builder.newLine();
     {
-      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_1 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
-      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_3 : _eStructuralFeatureModelGenAnnotations_1) {
+      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_3 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
+      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_3 : _eStructuralFeatureModelGenAnnotations_3) {
         _builder.append("        ");
         _builder.newLine();
         {

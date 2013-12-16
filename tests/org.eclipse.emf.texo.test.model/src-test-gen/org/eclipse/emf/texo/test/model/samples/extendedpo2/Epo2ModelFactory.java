@@ -364,10 +364,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.ITEM_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.ITEM_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Epo2ModelPackage.ITEM_ORDER_FEATURE_ID:
         return getTarget().getOrder();
       case Epo2ModelPackage.ITEM_PRODUCTNAME_FEATURE_ID:
@@ -394,12 +390,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.ITEM_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.ITEM_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Epo2ModelPackage.ITEM_ORDER_FEATURE_ID:
         getTarget().setOrder((PurchaseOrder) value);
         return;
@@ -488,10 +478,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.PURCHASEORDER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.PURCHASEORDER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Epo2ModelPackage.PURCHASEORDER_ITEMS_FEATURE_ID:
         return getTarget().getItems();
       case Epo2ModelPackage.PURCHASEORDER_BILLTO_FEATURE_ID:
@@ -523,12 +509,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.PURCHASEORDER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.PURCHASEORDER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Epo2ModelPackage.PURCHASEORDER_ITEMS_FEATURE_ID:
         getTarget().setItems((List<Item>) value);
         return;
@@ -625,14 +605,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.USADDRESS_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.USADDRESS_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case Epo2ModelPackage.USADDRESS_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case Epo2ModelPackage.USADDRESS_COUNTRY_FEATURE_ID:
-        return getTarget().getCountry();
       case Epo2ModelPackage.USADDRESS_STREET_FEATURE_ID:
         return getTarget().getStreet();
       case Epo2ModelPackage.USADDRESS_CITY_FEATURE_ID:
@@ -653,18 +625,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.USADDRESS_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.USADDRESS_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case Epo2ModelPackage.USADDRESS_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case Epo2ModelPackage.USADDRESS_COUNTRY_FEATURE_ID:
-        getTarget().setCountry((String) value);
-        return;
       case Epo2ModelPackage.USADDRESS_STREET_FEATURE_ID:
         getTarget().setStreet((String) value);
         return;
@@ -743,10 +703,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.ADDRESS_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.ADDRESS_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Epo2ModelPackage.ADDRESS_NAME_FEATURE_ID:
         return getTarget().getName();
       case Epo2ModelPackage.ADDRESS_COUNTRY_FEATURE_ID:
@@ -763,12 +719,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.ADDRESS_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.ADDRESS_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Epo2ModelPackage.ADDRESS_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -842,10 +792,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.CUSTOMER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.CUSTOMER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Epo2ModelPackage.CUSTOMER_CUSTOMERID_FEATURE_ID:
         return getTarget().getCustomerID();
       case Epo2ModelPackage.CUSTOMER_ORDERS_FEATURE_ID:
@@ -863,12 +809,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.CUSTOMER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.CUSTOMER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Epo2ModelPackage.CUSTOMER_CUSTOMERID_FEATURE_ID:
         getTarget().setCustomerID((Integer) value);
         return;
@@ -946,10 +886,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.SUPPLIER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.SUPPLIER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Epo2ModelPackage.SUPPLIER_NAME_FEATURE_ID:
         return getTarget().getName();
       case Epo2ModelPackage.SUPPLIER_CUSTOMERS_FEATURE_ID:
@@ -973,12 +909,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.SUPPLIER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.SUPPLIER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Epo2ModelPackage.SUPPLIER_NAME_FEATURE_ID:
         getTarget().setName((String) value);
         return;
@@ -1066,14 +996,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.GLOBALADDRESS_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.GLOBALADDRESS_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case Epo2ModelPackage.GLOBALADDRESS_NAME_FEATURE_ID:
-        return getTarget().getName();
-      case Epo2ModelPackage.GLOBALADDRESS_COUNTRY_FEATURE_ID:
-        return getTarget().getCountry();
       case Epo2ModelPackage.GLOBALADDRESS_LOCATION_FEATURE_ID:
         return getTarget().getLocation();
       case Epo2ModelPackage.GLOBALADDRESS_COUNTRYCODE_FEATURE_ID:
@@ -1091,18 +1013,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.GLOBALADDRESS_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.GLOBALADDRESS_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case Epo2ModelPackage.GLOBALADDRESS_NAME_FEATURE_ID:
-        getTarget().setName((String) value);
-        return;
-      case Epo2ModelPackage.GLOBALADDRESS_COUNTRY_FEATURE_ID:
-        getTarget().setCountry((String) value);
-        return;
       case Epo2ModelPackage.GLOBALADDRESS_LOCATION_FEATURE_ID:
         getTarget().setLocation((List<String>) value);
         return;
@@ -1182,10 +1092,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.GLOBALLOCATION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Epo2ModelPackage.GLOBALLOCATION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Epo2ModelPackage.GLOBALLOCATION_COUNTRYCODE_FEATURE_ID:
         return getTarget().getCountryCode();
       default:
@@ -1200,12 +1106,6 @@ public class Epo2ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Epo2ModelPackage.GLOBALLOCATION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Epo2ModelPackage.GLOBALLOCATION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Epo2ModelPackage.GLOBALLOCATION_COUNTRYCODE_FEATURE_ID:
         getTarget().setCountryCode((Integer) value);
         return;

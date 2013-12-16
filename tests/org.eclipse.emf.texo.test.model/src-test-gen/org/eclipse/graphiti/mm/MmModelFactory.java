@@ -178,10 +178,6 @@ public class MmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.PROPERTY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MmModelPackage.PROPERTY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MmModelPackage.PROPERTY_KEY_FEATURE_ID:
         return getTarget().getKey();
       case MmModelPackage.PROPERTY_VALUE_FEATURE_ID:
@@ -198,12 +194,6 @@ public class MmModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.PROPERTY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MmModelPackage.PROPERTY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MmModelPackage.PROPERTY_KEY_FEATURE_ID:
         getTarget().setKey((String) value);
         return;
@@ -276,10 +266,6 @@ public class MmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.PROPERTYCONTAINER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MmModelPackage.PROPERTYCONTAINER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MmModelPackage.PROPERTYCONTAINER_PROPERTIES_FEATURE_ID:
         return getTarget().getProperties();
       default:
@@ -295,12 +281,6 @@ public class MmModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.PROPERTYCONTAINER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MmModelPackage.PROPERTYCONTAINER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MmModelPackage.PROPERTYCONTAINER_PROPERTIES_FEATURE_ID:
         getTarget().setProperties((Set<Property>) value);
         return;
@@ -375,12 +355,6 @@ public class MmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.GRAPHICSALGORITHMCONTAINER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MmModelPackage.GRAPHICSALGORITHMCONTAINER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case MmModelPackage.GRAPHICSALGORITHMCONTAINER_PROPERTIES_FEATURE_ID:
-        return getTarget().getProperties();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -394,15 +368,6 @@ public class MmModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.GRAPHICSALGORITHMCONTAINER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MmModelPackage.GRAPHICSALGORITHMCONTAINER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case MmModelPackage.GRAPHICSALGORITHMCONTAINER_PROPERTIES_FEATURE_ID:
-        getTarget().setProperties((Set<Property>) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -468,10 +433,6 @@ public class MmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.STYLECONTAINER_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case MmModelPackage.STYLECONTAINER_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case MmModelPackage.STYLECONTAINER_STYLES_FEATURE_ID:
         return getTarget().getStyles();
       default:
@@ -487,12 +448,6 @@ public class MmModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case MmModelPackage.STYLECONTAINER_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case MmModelPackage.STYLECONTAINER_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case MmModelPackage.STYLECONTAINER_STYLES_FEATURE_ID:
         getTarget().setStyles((Set<Style>) value);
         return;

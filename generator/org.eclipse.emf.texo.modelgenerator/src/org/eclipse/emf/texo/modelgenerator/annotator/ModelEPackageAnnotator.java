@@ -25,6 +25,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
@@ -33,11 +34,13 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.ENamedElement;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EClassifierImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.xcore.resource.XcoreResource;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
@@ -61,6 +64,9 @@ import org.eclipse.emf.texo.utils.ModelUtils;
 
 public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implements
     Annotator<EPackageModelGenAnnotation> {
+
+  private static String XCORE_SOURCE = "texo.xcore"; //$NON-NLS-1$
+  private static String XCORE_KEY_VALUE = "true"; //$NON-NLS-1$
 
   /*
    * (non-Javadoc)
@@ -101,7 +107,9 @@ public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implemen
         // the normal texo behavior will remove the last part
         // therefore add a dummy part
         String nsUri = ePackage.getNsURI();
-        if (ePackage.eResource() != null) {
+        if (ePackage.getEAnnotation(XCORE_SOURCE) != null) {
+          nsUri += ".xcore"; //$NON-NLS-1$
+        } else if (ePackage.eResource() != null) {
           final URI uri = URI.createURI(nsUri);
           final String resourceUri = ePackage.eResource().getURI().toString();
           if (resourceUri.endsWith("xcore")) { //$NON-NLS-1$
@@ -409,9 +417,18 @@ public class ModelEPackageAnnotator extends ModelENamedElementAnnotator implemen
 
   private Resource setEPackageResource(EPackage ePackage) {
     Resource res = ePackage.eResource();
-    if (res == null) {
+    // also move the epackages from an xcoreresource to a standard XMIresource
+    if (res == null || res instanceof XcoreResource) {
+      // flag the epackage as from an xcore source
+      if (res instanceof XcoreResource) {
+        final EAnnotation eAnnotation = EcoreFactory.eINSTANCE.createEAnnotation();
+        eAnnotation.setSource(XCORE_SOURCE);
+        eAnnotation.getDetails().put(XCORE_KEY_VALUE, XCORE_KEY_VALUE);
+        ePackage.getEAnnotations().add(eAnnotation);
+      }
       res = new XMIResourceImpl();
       res.getContents().add(ePackage);
+      res.setURI(URI.createURI(ePackage.getNsURI()));
     }
     return res;
   }

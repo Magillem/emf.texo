@@ -57,20 +57,6 @@ public class Bz371509ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ECLASS0_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ECLASS0_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int ECLASS0_TOCLASS1_FEATURE_ID = 2;
 
   /**
@@ -86,20 +72,6 @@ public class Bz371509ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ECLASS1_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ECLASS1_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ECLASS1_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -12,7 +12,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="teams" upperBound="-1"
-        eType="ecore:EClass org.eclipse.emf.texo.test.model.samples.sport.club#/EPackage/Team">
+        eType="ecore:EClass org.eclipse.emf.texo.test.model.samples.sport.club#//Team">
       <eAnnotations source="org.eclipse.emf.texo">
         <details key="java.member" value="teams"/>
       </eAnnotations>

@@ -61,20 +61,6 @@ public class CatalogModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int CATALOGTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CATALOGTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int CATALOGTYPE_NAME_FEATURE_ID = 2;
 
   /**
@@ -104,20 +90,6 @@ public class CatalogModelPackage extends ModelPackage {
    * @generated
    */
   public static final int PRODUCTTYPE_CLASSIFIER_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PRODUCTTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PRODUCTTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -159,20 +131,6 @@ public class CatalogModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int PRICETYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PRICETYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int PRICETYPE_PRICE_FEATURE_ID = 2;
 
   /**
@@ -201,20 +159,6 @@ public class CatalogModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int SUPPLIERTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SUPPLIERTYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int SUPPLIERTYPE_NAME_FEATURE_ID = 2;
 
   /**
@@ -230,20 +174,6 @@ public class CatalogModelPackage extends ModelPackage {
    * @generated
    */
   public static final int STRINGTYPE_CLASSIFIER_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int STRINGTYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int STRINGTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

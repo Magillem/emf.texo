@@ -56,20 +56,6 @@ public class Sub1ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int SUB1TYPE_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SUB1TYPE_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int SUB1TYPE_NAME_FEATURE_ID = 2;
 
   /**

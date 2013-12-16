@@ -182,10 +182,6 @@ public class Bz391624ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz391624ModelPackage.BOOK_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz391624ModelPackage.BOOK_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz391624ModelPackage.BOOK_AUTHORS_FEATURE_ID:
         return getTarget().getAuthors();
       default:
@@ -201,12 +197,6 @@ public class Bz391624ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz391624ModelPackage.BOOK_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Bz391624ModelPackage.BOOK_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Bz391624ModelPackage.BOOK_AUTHORS_FEATURE_ID:
         getTarget().setAuthors((List<Author>) value);
         return;

@@ -426,10 +426,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.COMPLEXAAA_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case SubstitutionzvonModelPackage.COMPLEXAAA_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case SubstitutionzvonModelPackage.COMPLEXAAA_VALUE_FEATURE_ID:
         return getTarget().getValue();
       default:
@@ -444,12 +440,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.COMPLEXAAA_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case SubstitutionzvonModelPackage.COMPLEXAAA_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case SubstitutionzvonModelPackage.COMPLEXAAA_VALUE_FEATURE_ID:
         getTarget().setValue((Long) value);
         return;
@@ -519,12 +509,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.COMPLEXEVENTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case SubstitutionzvonModelPackage.COMPLEXEVENTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case SubstitutionzvonModelPackage.COMPLEXEVENTYPE_VALUE_FEATURE_ID:
-        return getTarget().getValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -537,15 +521,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.COMPLEXEVENTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case SubstitutionzvonModelPackage.COMPLEXEVENTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case SubstitutionzvonModelPackage.COMPLEXEVENTYPE_VALUE_FEATURE_ID:
-        getTarget().setValue((Long) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -610,12 +585,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.COMPLEXODDTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case SubstitutionzvonModelPackage.COMPLEXODDTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case SubstitutionzvonModelPackage.COMPLEXODDTYPE_VALUE_FEATURE_ID:
-        return getTarget().getValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -628,15 +597,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.COMPLEXODDTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case SubstitutionzvonModelPackage.COMPLEXODDTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
-      case SubstitutionzvonModelPackage.COMPLEXODDTYPE_VALUE_FEATURE_ID:
-        getTarget().setValue((Long) value);
-        return;
       default:
         super.eSet(eStructuralFeature, value);
       }
@@ -702,10 +662,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case SubstitutionzvonModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case SubstitutionzvonModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case SubstitutionzvonModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -739,12 +695,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case SubstitutionzvonModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case SubstitutionzvonModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         getTarget().setMixed((List<DocumentRootMixedFeatureGroup>) value);
         return;
@@ -842,10 +792,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.ROOTTYPE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case SubstitutionzvonModelPackage.ROOTTYPE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case SubstitutionzvonModelPackage.ROOTTYPE_MYABSTRACTGROUP_FEATURE_ID:
         return getTarget().getMyAbstractGroup();
       case SubstitutionzvonModelPackage.ROOTTYPE_MYABSTRACT_FEATURE_ID:
@@ -867,12 +813,6 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SubstitutionzvonModelPackage.ROOTTYPE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case SubstitutionzvonModelPackage.ROOTTYPE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case SubstitutionzvonModelPackage.ROOTTYPE_MYABSTRACTGROUP_FEATURE_ID:
         getTarget().setMyAbstractGroup((List<RootTypeMyAbstractGroupFeatureGroup>) value);
         return;

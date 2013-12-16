@@ -76,20 +76,6 @@ public class SchemaprimerpoModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int DOCUMENTROOT_MIXED_FEATURE_ID = 2;
 
   /**
@@ -132,20 +118,6 @@ public class SchemaprimerpoModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int PURCHASEORDER_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PURCHASEORDER_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int PURCHASEORDER_SHIPTO_FEATURE_ID = 2;
 
   /**
@@ -182,20 +154,6 @@ public class SchemaprimerpoModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ITEM_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ITEM_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ITEM_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -245,20 +203,6 @@ public class SchemaprimerpoModelPackage extends ModelPackage {
    * @generated
    */
   public static final int USADDRESS_CLASSIFIER_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int USADDRESS_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int USADDRESS_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

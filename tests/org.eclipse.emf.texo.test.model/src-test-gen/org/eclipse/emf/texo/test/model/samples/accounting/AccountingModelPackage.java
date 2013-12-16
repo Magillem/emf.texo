@@ -77,20 +77,6 @@ public class AccountingModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ACCOUNTING_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ACCOUNTING_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int ACCOUNTING_NAME_FEATURE_ID = 2;
 
   /**
@@ -147,20 +133,6 @@ public class AccountingModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ACCOUNT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ACCOUNT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int ACCOUNT_NAME_FEATURE_ID = 2;
 
   /**
@@ -169,20 +141,6 @@ public class AccountingModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ACCOUNTGROUP_CLASSIFIER_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ACCOUNTGROUP_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int ACCOUNTGROUP_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -210,20 +168,6 @@ public class AccountingModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int VAT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int VAT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int VAT_NAME_FEATURE_ID = 2;
 
   /**
@@ -245,27 +189,6 @@ public class AccountingModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int BALANCEACCOUNT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int BALANCEACCOUNT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int BALANCEACCOUNT_NAME_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int BALANCEACCOUNT_REPORT_FEATURE_ID = 3;
 
   /**
@@ -274,20 +197,6 @@ public class AccountingModelPackage extends ModelPackage {
    * @generated
    */
   public static final int REPORT_CLASSIFIER_ID = 7;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int REPORT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int REPORT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -322,20 +231,6 @@ public class AccountingModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int JOURNALGROUP_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int JOURNALGROUP_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int JOURNALGROUP_NAME_FEATURE_ID = 2;
 
   /**
@@ -364,20 +259,6 @@ public class AccountingModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int REPORTGROUP_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int REPORTGROUP_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
   public static final int REPORTGROUP_NAME_FEATURE_ID = 2;
 
   /**
@@ -400,20 +281,6 @@ public class AccountingModelPackage extends ModelPackage {
    * @generated
    */
   public static final int JOURNALSTATEMENT_CLASSIFIER_ID = 5;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int JOURNALSTATEMENT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int JOURNALSTATEMENT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -463,27 +330,6 @@ public class AccountingModelPackage extends ModelPackage {
    * @generated
    */
   public static final int PLACCOUNT_CLASSIFIER_ID = 6;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PLACCOUNT_DB_ID_FEATURE_ID = 0;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PLACCOUNT_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int PLACCOUNT_NAME_FEATURE_ID = 2;
 
   /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->

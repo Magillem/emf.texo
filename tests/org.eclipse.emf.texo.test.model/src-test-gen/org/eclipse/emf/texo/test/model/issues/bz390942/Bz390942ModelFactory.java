@@ -167,10 +167,6 @@ public class Bz390942ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz390942ModelPackage.BZ390942_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz390942ModelPackage.BZ390942_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz390942ModelPackage.BZ390942_VALUE_FEATURE_ID:
         return getTarget().getValue();
       default:
@@ -185,12 +181,6 @@ public class Bz390942ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz390942ModelPackage.BZ390942_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case Bz390942ModelPackage.BZ390942_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case Bz390942ModelPackage.BZ390942_VALUE_FEATURE_ID:
         getTarget().setValue((Float) value);
         return;

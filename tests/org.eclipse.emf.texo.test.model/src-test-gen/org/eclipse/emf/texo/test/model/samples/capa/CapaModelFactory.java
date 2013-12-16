@@ -259,10 +259,6 @@ public class CapaModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.CAPACITYENTRY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case CapaModelPackage.CAPACITYENTRY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case CapaModelPackage.CAPACITYENTRY_CAPACITYENTRYID_FEATURE_ID:
         return getTarget().getCapacityEntryId();
       case CapaModelPackage.CAPACITYENTRY_NAME_FEATURE_ID:
@@ -279,12 +275,6 @@ public class CapaModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.CAPACITYENTRY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case CapaModelPackage.CAPACITYENTRY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case CapaModelPackage.CAPACITYENTRY_CAPACITYENTRYID_FEATURE_ID:
         getTarget().setCapacityEntryId((String) value);
         return;
@@ -357,10 +347,6 @@ public class CapaModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.MACHINE_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case CapaModelPackage.MACHINE_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case CapaModelPackage.MACHINE_WORKWEEK_FEATURE_ID:
         return getTarget().getWorkWeek();
       case CapaModelPackage.MACHINE_TASKS_FEATURE_ID:
@@ -386,12 +372,6 @@ public class CapaModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.MACHINE_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case CapaModelPackage.MACHINE_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case CapaModelPackage.MACHINE_WORKWEEK_FEATURE_ID:
         getTarget().setWorkWeek((WorkWeek) value);
         return;
@@ -483,10 +463,6 @@ public class CapaModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.WORKWEEK_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case CapaModelPackage.WORKWEEK_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case CapaModelPackage.WORKWEEK_DAYS_FEATURE_ID:
         return getTarget().getDays();
       case CapaModelPackage.WORKWEEK_WORKWEEKID_FEATURE_ID:
@@ -504,12 +480,6 @@ public class CapaModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.WORKWEEK_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case CapaModelPackage.WORKWEEK_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case CapaModelPackage.WORKWEEK_DAYS_FEATURE_ID:
         getTarget().setDays((List<WorkDay>) value);
         return;
@@ -588,10 +558,6 @@ public class CapaModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.TASK_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case CapaModelPackage.TASK_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case CapaModelPackage.TASK_CAPACITYENTRY_FEATURE_ID:
         return getTarget().getCapacityEntry();
       case CapaModelPackage.TASK_PRODUCTION_FEATURE_ID:
@@ -616,12 +582,6 @@ public class CapaModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.TASK_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case CapaModelPackage.TASK_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case CapaModelPackage.TASK_CAPACITYENTRY_FEATURE_ID:
         getTarget().setCapacityEntry((CapacityEntry) value);
         return;
@@ -707,10 +667,6 @@ public class CapaModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.MACHINELIST_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case CapaModelPackage.MACHINELIST_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case CapaModelPackage.MACHINELIST_MACHINES_FEATURE_ID:
         return getTarget().getMachines();
       default:
@@ -726,12 +682,6 @@ public class CapaModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.MACHINELIST_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case CapaModelPackage.MACHINELIST_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case CapaModelPackage.MACHINELIST_MACHINES_FEATURE_ID:
         getTarget().setMachines((List<Machine>) value);
         return;
@@ -806,10 +756,6 @@ public class CapaModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.PRODUCTION_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case CapaModelPackage.PRODUCTION_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case CapaModelPackage.PRODUCTION_ARTICLE_FEATURE_ID:
         return getTarget().getArticle();
       case CapaModelPackage.PRODUCTION_DUETIME_FEATURE_ID:
@@ -834,12 +780,6 @@ public class CapaModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.PRODUCTION_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case CapaModelPackage.PRODUCTION_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case CapaModelPackage.PRODUCTION_ARTICLE_FEATURE_ID:
         getTarget().setArticle((String) value);
         return;
@@ -924,10 +864,6 @@ public class CapaModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.WORKDAY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case CapaModelPackage.WORKDAY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case CapaModelPackage.WORKDAY_DAYOFWEEK_FEATURE_ID:
         return getTarget().getDayOfWeek();
       case CapaModelPackage.WORKDAY_DURATION_FEATURE_ID:
@@ -946,12 +882,6 @@ public class CapaModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case CapaModelPackage.WORKDAY_DB_ID_FEATURE_ID:
-        getTarget().setDb_Id((Long) value);
-        return;
-      case CapaModelPackage.WORKDAY_DB_VERSION_FEATURE_ID:
-        getTarget().setDb_version((Integer) value);
-        return;
       case CapaModelPackage.WORKDAY_DAYOFWEEK_FEATURE_ID:
         getTarget().setDayOfWeek((Integer) value);
         return;
