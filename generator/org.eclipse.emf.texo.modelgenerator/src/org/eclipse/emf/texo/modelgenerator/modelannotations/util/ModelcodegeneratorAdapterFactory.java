@@ -19,7 +19,7 @@ import org.eclipse.emf.texo.annotations.annotationsmodel.ENamedElementAnnotation
 import org.eclipse.emf.texo.annotations.annotationsmodel.EPackageAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EReferenceAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EStructuralFeatureAnnotation;
-import org.eclipse.emf.texo.modelgenerator.modelannotations.*;
+import org.eclipse.emf.texo.modelgenerator.modelannotations.DaoFinderDefinition;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EAttributeModelGenAnnotation;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EClassModelGenAnnotation;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EClassifierModelGenAnnotation;

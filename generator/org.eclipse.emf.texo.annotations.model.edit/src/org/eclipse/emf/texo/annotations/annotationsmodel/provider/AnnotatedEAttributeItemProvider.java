@@ -27,7 +27,6 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotatedEAttribute;
-import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotationsmodelFactory;
 import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotationsmodelPackage;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EAttributeAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.util.AnnotationsModelRegistry;

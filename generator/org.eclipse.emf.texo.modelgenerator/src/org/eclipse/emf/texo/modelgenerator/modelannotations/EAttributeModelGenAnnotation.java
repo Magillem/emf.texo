@@ -19,7 +19,6 @@ import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 import org.eclipse.emf.texo.annotations.AnnotationProvider;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EAttributeAnnotation;
-import org.eclipse.emf.texo.modelgenerator.annotator.GenUtils;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object ' <em><b>EAttribute Model Gen Annotation</b></em>'. <!--

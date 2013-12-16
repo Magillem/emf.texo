@@ -23,7 +23,6 @@ import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotatedEEnumLiteral;
-import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotationsmodelFactory;
 import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotationsmodelPackage;
 import org.eclipse.emf.texo.annotations.annotationsmodel.EEnumLiteralAnnotation;
 import org.eclipse.emf.texo.annotations.annotationsmodel.util.AnnotationsModelRegistry;
