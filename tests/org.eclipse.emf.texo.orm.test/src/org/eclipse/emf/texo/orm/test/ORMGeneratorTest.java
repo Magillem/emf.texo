@@ -29,6 +29,7 @@ import java.util.List;
 import junit.framework.TestCase;
 
 import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.IncrementalProjectBuilder;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
@@ -75,10 +76,10 @@ public class ORMGeneratorTest extends TestCase {
   private ORMMappingOptions testORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
-    // open the project so that the xcore files get resolved correctly
+    // needed refresh/build the project so that the xcore files get resolved correctly
     final IProject project = EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
     project.getWorkspace().getRoot().refreshLocal(100, null);
-    project.refreshLocal(100, null);
+    project.build(IncrementalProjectBuilder.FULL_BUILD, null);
 
     // generate all the db names for the orms
     testORMOptions.setAddOrderColumnToListMappings(true);

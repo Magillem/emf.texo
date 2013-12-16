@@ -70,9 +70,12 @@ public class EclipseModelGeneratorTest extends TestCase {
   private ORMMappingOptions safeORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
+    // needed refresh/build the project so that the xcore files get resolved correctly
     final IProject project = EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
     project.getWorkspace().getRoot().refreshLocal(100, null);
-    project.refreshLocal(100, null);
+    // project.build(IncrementalProjectBuilder.FULL_BUILD, null);
+
+    EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
 
     testORMOptions.setAddOrderColumnToListMappings(true);
     testORMOptions.setEnforceUniqueNames(true);
