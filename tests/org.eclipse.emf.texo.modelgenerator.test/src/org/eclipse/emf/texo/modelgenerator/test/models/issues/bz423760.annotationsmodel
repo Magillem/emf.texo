@@ -5,7 +5,7 @@
     <ePackageAnnotations xsi:type="modelannotations:EPackageModelGenAnnotation" name="bz423760" packagePath="org.eclipse.emf.texo.test.model.issues.bz423760" modelClassesPackagePath="org.eclipse.emf.texo.test.model.issues.bz423760" qualifiedClassName="org.eclipse.emf.texo.test.model.issues.bz423760.Bz423760ModelPackage" simpleClassName="Bz423760ModelPackage" simpleModelFactoryClassName="Bz423760ModelFactory" ecoreFileName="bz423760.ecore" daoClassesPackagePath="org.eclipse.emf.texo.test.model.issues.bz423760.dao" daoRootClass="org.eclipse.emf.texo.server.store.BaseDao"/>
     <annotatedEClassifiers xsi:type="annotationsmodel:AnnotatedEClass">
       <eClass href="bz423760.ecore#//Test423760"/>
-      <eClassAnnotations xsi:type="modelannotations:EClassModelGenAnnotation" name="Test423760" qualifiedClassName="org.eclipse.emf.texo.test.model.issues.bz423760.Test423760" simpleClassName="Test423760" generateCode="true" ownerEPackageAnnotation="//@annotatedEPackages.0/@ePackageAnnotations.0" hasSuperEClass="false" serializable="false" abstract="false" daoQualifiedClassName="org.eclipse.emf.texo.test.model.issues.bz423760.dao.Test423760Dao"/>
+      <eClassAnnotations xsi:type="modelannotations:EClassModelGenAnnotation" name="Test423760" qualifiedClassName="org.eclipse.emf.texo.test.model.issues.bz423760.Test423760" simpleClassName="Test423760" generateCode="true" ownerEPackageAnnotation="//@annotatedEPackages.0/@ePackageAnnotations.0" serializable="false" abstract="false" daoQualifiedClassName="org.eclipse.emf.texo.test.model.issues.bz423760.dao.Test423760Dao"/>
       <eClassAnnotations xsi:type="ormannotations:EClassORMAnnotation">
         <entity name="TestABC"/>
       </eClassAnnotations>

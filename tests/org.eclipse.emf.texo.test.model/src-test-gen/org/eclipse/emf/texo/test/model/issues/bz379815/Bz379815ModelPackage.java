@@ -75,6 +75,20 @@ public class Bz379815ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int VARINPUTTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int VARINPUTTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int VARINPUTTYPE_CONDITION_FEATURE_ID = 2;
 
   /**
@@ -96,6 +110,20 @@ public class Bz379815ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int VARCONDITIONTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int VARCONDITIONTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int VARCONDITIONTYPE_POLICYTYPE_FEATURE_ID = 2;
 
   /**
@@ -104,6 +132,20 @@ public class Bz379815ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int VARPOLICYTYPETYPE_CLASSIFIER_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int VARPOLICYTYPETYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int VARPOLICYTYPETYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

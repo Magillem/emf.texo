@@ -3,9 +3,7 @@
 package org.eclipse.emf.texo.test.emfmodel.identifiable.impl;
 
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiablePackage;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable;
 
@@ -20,22 +18,22 @@ import org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable;
  */
 public class NotIdentifiableImpl extends EObjectImpl implements NotIdentifiable {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected NotIdentifiableImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return IdentifiablePackage.Literals.NOT_IDENTIFIABLE;
-	}
+    return IdentifiablePackage.Literals.NOT_IDENTIFIABLE;
+  }
 
 } //NotIdentifiableImpl

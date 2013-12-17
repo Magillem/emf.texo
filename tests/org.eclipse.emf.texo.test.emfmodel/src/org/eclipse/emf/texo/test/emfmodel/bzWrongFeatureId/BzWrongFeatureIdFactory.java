@@ -14,29 +14,29 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface BzWrongFeatureIdFactory extends EFactory {
 	/**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc -->
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	BzWrongFeatureIdFactory eINSTANCE = org.eclipse.emf.texo.test.emfmodel.bzWrongFeatureId.impl.BzWrongFeatureIdFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Concrete Class</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Concrete Class</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Concrete Class</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Concrete Class</em>'.
+   * @generated
+   */
 	ConcreteClass createConcreteClass();
 
 	/**
-	 * Returns the package supported by this factory.
-	 * <!-- begin-user-doc -->
+   * Returns the package supported by this factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the package supported by this factory.
-	 * @generated
-	 */
+   * @return the package supported by this factory.
+   * @generated
+   */
 	BzWrongFeatureIdPackage getBzWrongFeatureIdPackage();
 
 } //BzWrongFeatureIdFactory

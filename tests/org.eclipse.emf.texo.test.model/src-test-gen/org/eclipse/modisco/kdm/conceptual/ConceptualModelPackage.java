@@ -70,6 +70,76 @@ public class ConceptualModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int CONCEPTUALMODEL_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_AUDIT_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_EXTENSION_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_NAME_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALMODEL_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int CONCEPTUALMODEL_CONCEPTUALELEMENT_FEATURE_ID = 10;
 
   /**
@@ -78,6 +148,125 @@ public class ConceptualModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ABSTRACTCONCEPTUALELEMENT_CLASSIFIER_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALELEMENT_OUTAGGREGATED_FEATURE_ID = 16;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -119,6 +308,48 @@ public class ConceptualModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ABSTRACTCONCEPTUALRELATIONSHIP_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALRELATIONSHIP_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALRELATIONSHIP_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALRELATIONSHIP_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALRELATIONSHIP_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCONCEPTUALRELATIONSHIP_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int TERMUNIT_CLASSIFIER_ID = 2;
 
   /**
@@ -126,7 +357,301 @@ public class ConceptualModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int TERMUNIT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TERMUNIT_ABSTRACTION_FEATURE_ID = 20;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int CONCEPTUALCONTAINER_CLASSIFIER_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALCONTAINER_ABSTRACTION_FEATURE_ID = 20;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -147,7 +672,203 @@ public class ConceptualModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int FACTUNIT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_ABSTRACTION_FEATURE_ID = 20;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FACTUNIT_CONCEPTUALELEMENT_FEATURE_ID = 21;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int CONCEPTUALRELATIONSHIP_CLASSIFIER_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALRELATIONSHIP_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALRELATIONSHIP_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALRELATIONSHIP_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALRELATIONSHIP_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALRELATIONSHIP_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALRELATIONSHIP_TAGGEDVALUE_FEATURE_ID = 5;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -175,7 +896,315 @@ public class ConceptualModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int BEHAVIORUNIT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_ABSTRACTION_FEATURE_ID = 20;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BEHAVIORUNIT_CONCEPTUALELEMENT_FEATURE_ID = 21;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int RULEUNIT_CLASSIFIER_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_ABSTRACTION_FEATURE_ID = 20;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RULEUNIT_CONCEPTUALELEMENT_FEATURE_ID = 21;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -189,7 +1218,203 @@ public class ConceptualModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int SCENARIOUNIT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_ABSTRACTION_FEATURE_ID = 20;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENARIOUNIT_CONCEPTUALELEMENT_FEATURE_ID = 21;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int CONCEPTUALFLOW_CLASSIFIER_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALFLOW_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALFLOW_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALFLOW_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALFLOW_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALFLOW_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALFLOW_TAGGEDVALUE_FEATURE_ID = 5;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -217,7 +1442,301 @@ public class ConceptualModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int CONCEPTUALELEMENT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALELEMENT_ABSTRACTION_FEATURE_ID = 20;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int CONCEPTUALROLE_CLASSIFIER_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_ATTRIBUTE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_ANNOTATION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_STEREOTYPE_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_TAGGEDVALUE_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_NAME_FEATURE_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_MODEL_FEATURE_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_OWNER_FEATURE_ID = 8;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_OWNEDELEMENT_FEATURE_ID = 9;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_OUTBOUND_FEATURE_ID = 10;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_INBOUND_FEATURE_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_OWNEDRELATION_FEATURE_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_GROUP_FEATURE_ID = 13;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_GROUPEDELEMENT_FEATURE_ID = 14;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_INAGGREGATED_FEATURE_ID = 15;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_OUTAGGREGATED_FEATURE_ID = 16;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_SOURCE_FEATURE_ID = 17;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_IMPLEMENTATION_FEATURE_ID = 18;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_CONCEPTUALRELATION_FEATURE_ID = 19;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCEPTUALROLE_ABSTRACTION_FEATURE_ID = 20;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

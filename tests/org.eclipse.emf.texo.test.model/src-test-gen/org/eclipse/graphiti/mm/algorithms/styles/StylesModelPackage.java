@@ -99,6 +99,27 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int STYLE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int STYLE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int STYLE_STYLES_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int STYLE_ID_FEATURE_ID = 11;
 
   /**
@@ -232,6 +253,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ABSTRACTSTYLE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTSTYLE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ABSTRACTSTYLE_BACKGROUND_FEATURE_ID = 2;
 
   /**
@@ -295,6 +330,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int COLOR_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int COLOR_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int COLOR_RED_FEATURE_ID = 2;
 
   /**
@@ -317,6 +366,20 @@ public class StylesModelPackage extends ModelPackage {
    * @generated
    */
   public static final int FONT_CLASSIFIER_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FONT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FONT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -358,6 +421,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int POINT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int POINT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int POINT_X_FEATURE_ID = 2;
 
   /**
@@ -393,6 +470,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int PRECISIONPOINT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PRECISIONPOINT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int PRECISIONPOINT_X_FEATURE_ID = 2;
 
   /**
@@ -408,6 +499,20 @@ public class StylesModelPackage extends ModelPackage {
    * @generated
    */
   public static final int TEXTSTYLEREGION_CLASSIFIER_ID = 12;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLEREGION_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLEREGION_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -442,6 +547,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int RENDERINGSTYLE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int RENDERINGSTYLE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int RENDERINGSTYLE_ADAPTEDGRADIENTCOLOREDAREAS_FEATURE_ID = 2;
 
   /**
@@ -450,6 +569,20 @@ public class StylesModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ADAPTEDGRADIENTCOLOREDAREAS_CLASSIFIER_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ADAPTEDGRADIENTCOLOREDAREAS_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ADAPTEDGRADIENTCOLOREDAREAS_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -484,6 +617,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int GRADIENTCOLOREDLOCATION_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GRADIENTCOLOREDLOCATION_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int GRADIENTCOLOREDLOCATION_LOCATIONTYPE_FEATURE_ID = 2;
 
   /**
@@ -512,6 +659,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int GRADIENTCOLOREDAREA_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GRADIENTCOLOREDAREA_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int GRADIENTCOLOREDAREA_START_FEATURE_ID = 2;
 
   /**
@@ -533,6 +694,20 @@ public class StylesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int GRADIENTCOLOREDAREAS_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GRADIENTCOLOREDAREAS_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int GRADIENTCOLOREDAREAS_GRADIENTCOLOR_FEATURE_ID = 2;
 
   /**
@@ -548,6 +723,20 @@ public class StylesModelPackage extends ModelPackage {
    * @generated
    */
   public static final int TEXTSTYLE_CLASSIFIER_ID = 11;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEXTSTYLE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

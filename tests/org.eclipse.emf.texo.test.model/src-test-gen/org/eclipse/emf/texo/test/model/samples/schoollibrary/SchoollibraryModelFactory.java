@@ -266,6 +266,18 @@ public class SchoollibraryModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SchoollibraryModelPackage.SCHOOLBOOK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SchoollibraryModelPackage.SCHOOLBOOK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SchoollibraryModelPackage.SCHOOLBOOK_TITLE_FEATURE_ID:
+        return getTarget().getTitle();
+      case SchoollibraryModelPackage.SCHOOLBOOK_PAGES_FEATURE_ID:
+        return getTarget().getPages();
+      case SchoollibraryModelPackage.SCHOOLBOOK_CATEGORY_FEATURE_ID:
+        return getTarget().getCategory();
+      case SchoollibraryModelPackage.SCHOOLBOOK_AUTHOR_FEATURE_ID:
+        return getTarget().getAuthor();
       case SchoollibraryModelPackage.SCHOOLBOOK_VALUE_FEATURE_ID:
         return getTarget().getValue();
       default:
@@ -350,6 +362,16 @@ public class SchoollibraryModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SchoollibraryModelPackage.SCHOOLLIBRARY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SchoollibraryModelPackage.SCHOOLLIBRARY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SchoollibraryModelPackage.SCHOOLLIBRARY_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SchoollibraryModelPackage.SCHOOLLIBRARY_WRITERS_FEATURE_ID:
+        return getTarget().getWriters();
+      case SchoollibraryModelPackage.SCHOOLLIBRARY_BOOKS_FEATURE_ID:
+        return getTarget().getBooks();
       case SchoollibraryModelPackage.SCHOOLLIBRARY_LOCATION_FEATURE_ID:
         return getTarget().getLocation();
       default:

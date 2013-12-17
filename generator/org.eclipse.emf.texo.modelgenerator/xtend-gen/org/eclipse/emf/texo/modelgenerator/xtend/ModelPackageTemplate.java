@@ -250,8 +250,8 @@ public class ModelPackageTemplate extends BaseTemplate {
         _builder.append(";");
         _builder.newLineIfNotEmpty();
         {
-          EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations = eClassAnnotation.getEStructuralFeatureModelGenAnnotations();
-          for(final EStructuralFeatureModelGenAnnotation featureAnnotation : _eStructuralFeatureModelGenAnnotations) {
+          EList<EStructuralFeatureModelGenAnnotation> _eAllStructuralFeatureModelGenAnnotations = eClassAnnotation.getEAllStructuralFeatureModelGenAnnotations();
+          for(final EStructuralFeatureModelGenAnnotation featureAnnotation : _eAllStructuralFeatureModelGenAnnotations) {
             _builder.newLine();
             _builder.append("    ");
             _builder.append("/**");
@@ -691,8 +691,8 @@ public class ModelPackageTemplate extends BaseTemplate {
         _builder.append("}");
         _builder.newLine();
         {
-          EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_1 = eClassAnnotation_3.getEStructuralFeatureModelGenAnnotations();
-          for(final EStructuralFeatureModelGenAnnotation featureAnnotation_1 : _eStructuralFeatureModelGenAnnotations_1) {
+          EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations = eClassAnnotation_3.getEStructuralFeatureModelGenAnnotations();
+          for(final EStructuralFeatureModelGenAnnotation featureAnnotation_1 : _eStructuralFeatureModelGenAnnotations) {
             _builder.newLine();
             _builder.append("    ");
             _builder.append("/**");

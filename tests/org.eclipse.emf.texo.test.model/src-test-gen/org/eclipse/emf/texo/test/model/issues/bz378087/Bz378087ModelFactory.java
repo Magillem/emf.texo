@@ -166,6 +166,10 @@ public class Bz378087ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case Bz378087ModelPackage.TEST_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case Bz378087ModelPackage.TEST_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case Bz378087ModelPackage.TEST_CLASS__FEATURE_ID:
         return getTarget().getClass_();
       default:

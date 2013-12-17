@@ -298,6 +298,10 @@ public class SimpletypesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SimpletypesModelPackage.SIMPLELIST_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SimpletypesModelPackage.SIMPLELIST_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SimpletypesModelPackage.SIMPLELIST_CODE_FEATURE_ID:
         return getTarget().getCode();
       case SimpletypesModelPackage.SIMPLELIST_BOO_FEATURE_ID:
@@ -524,6 +528,10 @@ public class SimpletypesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SimpletypesModelPackage.SIMPLETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SimpletypesModelPackage.SIMPLETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SimpletypesModelPackage.SIMPLETYPE_CODE_FEATURE_ID:
         return getTarget().getCode();
       case SimpletypesModelPackage.SIMPLETYPE_BOO_FEATURE_ID:
@@ -666,6 +674,10 @@ public class SimpletypesModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SimpletypesModelPackage.SIMPLETYPEOBJECT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SimpletypesModelPackage.SIMPLETYPEOBJECT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SimpletypesModelPackage.SIMPLETYPEOBJECT_CODE_FEATURE_ID:
         return getTarget().getCode();
       case SimpletypesModelPackage.SIMPLETYPEOBJECT_BOO_FEATURE_ID:

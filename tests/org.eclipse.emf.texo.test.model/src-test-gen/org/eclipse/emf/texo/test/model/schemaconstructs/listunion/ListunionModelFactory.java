@@ -690,6 +690,10 @@ public class ListunionModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ListunionModelPackage.STATESBYCOUNTRY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ListunionModelPackage.STATESBYCOUNTRY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ListunionModelPackage.STATESBYCOUNTRY_COUNTRY_FEATURE_ID:
         return getTarget().getCountry();
       case ListunionModelPackage.STATESBYCOUNTRY_ALLSTATES_FEATURE_ID:

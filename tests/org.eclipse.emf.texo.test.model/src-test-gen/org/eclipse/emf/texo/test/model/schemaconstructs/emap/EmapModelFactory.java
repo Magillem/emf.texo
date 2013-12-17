@@ -197,6 +197,10 @@ public class EmapModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EmapModelPackage.BOOK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EmapModelPackage.BOOK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case EmapModelPackage.BOOK_TITLE_FEATURE_ID:
         return getTarget().getTitle();
       case EmapModelPackage.BOOK_WRITERS_FEATURE_ID:
@@ -286,6 +290,10 @@ public class EmapModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EmapModelPackage.WRITER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EmapModelPackage.WRITER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case EmapModelPackage.WRITER_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
@@ -370,6 +378,10 @@ public class EmapModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EmapModelPackage.BOOKSTORE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EmapModelPackage.BOOKSTORE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case EmapModelPackage.BOOKSTORE_NAME_FEATURE_ID:
         return getTarget().getName();
       case EmapModelPackage.BOOKSTORE_WRITERSBYBOOK_FEATURE_ID:

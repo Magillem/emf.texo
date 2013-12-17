@@ -405,6 +405,26 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.EVENTMODEL_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.EVENTMODEL_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.EVENTMODEL_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.EVENTMODEL_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.EVENTMODEL_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.EVENTMODEL_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.EVENTMODEL_AUDIT_FEATURE_ID:
+        return getTarget().getAudit();
+      case EventModelPackage.EVENTMODEL_EXTENSION_FEATURE_ID:
+        return getTarget().getExtension();
+      case EventModelPackage.EVENTMODEL_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.EVENTMODEL_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
       case EventModelPackage.EVENTMODEL_EVENTELEMENT_FEATURE_ID:
         return getTarget().getEventElement();
       default:
@@ -494,6 +514,40 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.ABSTRACTEVENTELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.ABSTRACTEVENTELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
       case EventModelPackage.ABSTRACTEVENTELEMENT_SOURCE_FEATURE_ID:
         return getTarget().getSource();
       case EventModelPackage.ABSTRACTEVENTELEMENT_EVENTRELATION_FEATURE_ID:
@@ -616,6 +670,18 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.ABSTRACTEVENTRELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.ABSTRACTEVENTRELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.ABSTRACTEVENTRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.ABSTRACTEVENTRELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.ABSTRACTEVENTRELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.ABSTRACTEVENTRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -693,6 +759,48 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.EVENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.EVENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.EVENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.EVENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.EVENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.EVENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.EVENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.EVENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.EVENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.EVENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.EVENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.EVENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.EVENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.EVENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.EVENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.EVENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.EVENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.EVENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.EVENT_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.EVENT_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.EVENT_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case EventModelPackage.EVENT_KIND_FEATURE_ID:
         return getTarget().getKind();
       default:
@@ -778,6 +886,18 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.EVENTRELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.EVENTRELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.EVENTRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.EVENTRELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.EVENTRELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.EVENTRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case EventModelPackage.EVENTRELATIONSHIP_TO_FEATURE_ID:
         return getTarget().getTo();
       case EventModelPackage.EVENTRELATIONSHIP_FROM_FEATURE_ID:
@@ -867,6 +987,48 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.EVENTRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.EVENTRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.EVENTRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.EVENTRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.EVENTRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.EVENTRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.EVENTRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.EVENTRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.EVENTRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.EVENTRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.EVENTRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.EVENTRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.EVENTRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.EVENTRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.EVENTRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.EVENTRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.EVENTRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.EVENTRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.EVENTRESOURCE_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.EVENTRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.EVENTRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case EventModelPackage.EVENTRESOURCE_EVENTELEMENT_FEATURE_ID:
         return getTarget().getEventElement();
       default:
@@ -955,6 +1117,50 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.STATE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.STATE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.STATE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.STATE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.STATE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.STATE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.STATE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.STATE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.STATE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.STATE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.STATE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.STATE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.STATE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.STATE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.STATE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.STATE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.STATE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.STATE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.STATE_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.STATE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.STATE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case EventModelPackage.STATE_EVENTELEMENT_FEATURE_ID:
+        return getTarget().getEventElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1032,6 +1238,50 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.TRANSITION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.TRANSITION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.TRANSITION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.TRANSITION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.TRANSITION_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.TRANSITION_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.TRANSITION_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.TRANSITION_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.TRANSITION_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.TRANSITION_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.TRANSITION_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.TRANSITION_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.TRANSITION_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.TRANSITION_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.TRANSITION_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.TRANSITION_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.TRANSITION_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.TRANSITION_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.TRANSITION_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.TRANSITION_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.TRANSITION_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case EventModelPackage.TRANSITION_EVENTELEMENT_FEATURE_ID:
+        return getTarget().getEventElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1109,6 +1359,50 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.ONENTRY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.ONENTRY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.ONENTRY_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.ONENTRY_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.ONENTRY_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.ONENTRY_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.ONENTRY_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.ONENTRY_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.ONENTRY_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.ONENTRY_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.ONENTRY_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.ONENTRY_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.ONENTRY_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.ONENTRY_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.ONENTRY_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.ONENTRY_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.ONENTRY_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.ONENTRY_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.ONENTRY_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.ONENTRY_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.ONENTRY_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case EventModelPackage.ONENTRY_EVENTELEMENT_FEATURE_ID:
+        return getTarget().getEventElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1186,6 +1480,50 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.ONEXIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.ONEXIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.ONEXIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.ONEXIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.ONEXIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.ONEXIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.ONEXIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.ONEXIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.ONEXIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.ONEXIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.ONEXIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.ONEXIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.ONEXIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.ONEXIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.ONEXIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.ONEXIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.ONEXIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.ONEXIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.ONEXIT_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.ONEXIT_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.ONEXIT_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case EventModelPackage.ONEXIT_EVENTELEMENT_FEATURE_ID:
+        return getTarget().getEventElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1263,6 +1601,48 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.EVENTACTION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.EVENTACTION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.EVENTACTION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.EVENTACTION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.EVENTACTION_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.EVENTACTION_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.EVENTACTION_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.EVENTACTION_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.EVENTACTION_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.EVENTACTION_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.EVENTACTION_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.EVENTACTION_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.EVENTACTION_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.EVENTACTION_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.EVENTACTION_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.EVENTACTION_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.EVENTACTION_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.EVENTACTION_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.EVENTACTION_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.EVENTACTION_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.EVENTACTION_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case EventModelPackage.EVENTACTION_KIND_FEATURE_ID:
         return getTarget().getKind();
       case EventModelPackage.EVENTACTION_EVENTELEMENT_FEATURE_ID:
@@ -1357,6 +1737,18 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.READSSTATE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.READSSTATE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.READSSTATE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.READSSTATE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.READSSTATE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.READSSTATE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case EventModelPackage.READSSTATE_TO_FEATURE_ID:
         return getTarget().getTo();
       case EventModelPackage.READSSTATE_FROM_FEATURE_ID:
@@ -1447,6 +1839,18 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.PRODUCESEVENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.PRODUCESEVENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.PRODUCESEVENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.PRODUCESEVENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.PRODUCESEVENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.PRODUCESEVENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case EventModelPackage.PRODUCESEVENT_TO_FEATURE_ID:
         return getTarget().getTo();
       case EventModelPackage.PRODUCESEVENT_FROM_FEATURE_ID:
@@ -1536,6 +1940,18 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.CONSUMESEVENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.CONSUMESEVENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.CONSUMESEVENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.CONSUMESEVENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.CONSUMESEVENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.CONSUMESEVENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case EventModelPackage.CONSUMESEVENT_TO_FEATURE_ID:
         return getTarget().getTo();
       case EventModelPackage.CONSUMESEVENT_FROM_FEATURE_ID:
@@ -1625,6 +2041,18 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.NEXTSTATE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.NEXTSTATE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.NEXTSTATE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.NEXTSTATE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.NEXTSTATE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.NEXTSTATE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case EventModelPackage.NEXTSTATE_TO_FEATURE_ID:
         return getTarget().getTo();
       case EventModelPackage.NEXTSTATE_FROM_FEATURE_ID:
@@ -1714,6 +2142,50 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.INITIALSTATE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.INITIALSTATE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.INITIALSTATE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.INITIALSTATE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.INITIALSTATE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.INITIALSTATE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.INITIALSTATE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.INITIALSTATE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.INITIALSTATE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.INITIALSTATE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.INITIALSTATE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.INITIALSTATE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.INITIALSTATE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.INITIALSTATE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.INITIALSTATE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.INITIALSTATE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.INITIALSTATE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.INITIALSTATE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.INITIALSTATE_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.INITIALSTATE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.INITIALSTATE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case EventModelPackage.INITIALSTATE_EVENTELEMENT_FEATURE_ID:
+        return getTarget().getEventElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1791,6 +2263,48 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.EVENTELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.EVENTELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.EVENTELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.EVENTELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.EVENTELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.EVENTELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case EventModelPackage.EVENTELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case EventModelPackage.EVENTELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case EventModelPackage.EVENTELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case EventModelPackage.EVENTELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case EventModelPackage.EVENTELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case EventModelPackage.EVENTELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case EventModelPackage.EVENTELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case EventModelPackage.EVENTELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case EventModelPackage.EVENTELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case EventModelPackage.EVENTELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case EventModelPackage.EVENTELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case EventModelPackage.EVENTELEMENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case EventModelPackage.EVENTELEMENT_EVENTRELATION_FEATURE_ID:
+        return getTarget().getEventRelation();
+      case EventModelPackage.EVENTELEMENT_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case EventModelPackage.EVENTELEMENT_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1869,6 +2383,18 @@ public class EventModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EventModelPackage.HASSTATE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EventModelPackage.HASSTATE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case EventModelPackage.HASSTATE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case EventModelPackage.HASSTATE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case EventModelPackage.HASSTATE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case EventModelPackage.HASSTATE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case EventModelPackage.HASSTATE_TO_FEATURE_ID:
         return getTarget().getTo();
       case EventModelPackage.HASSTATE_FROM_FEATURE_ID:

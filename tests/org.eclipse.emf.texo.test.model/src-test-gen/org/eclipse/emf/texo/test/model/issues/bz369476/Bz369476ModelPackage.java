@@ -50,6 +50,20 @@ public class Bz369476ModelPackage extends ModelPackage {
   public static final int TEST_CLASSIFIER_ID = 0;
 
   /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEST_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEST_DB_VERSION_FEATURE_ID = 1;
+
+  /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated

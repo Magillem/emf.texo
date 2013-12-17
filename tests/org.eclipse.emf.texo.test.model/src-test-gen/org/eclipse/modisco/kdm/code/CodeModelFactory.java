@@ -1546,6 +1546,26 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CODEMODEL_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CODEMODEL_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CODEMODEL_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CODEMODEL_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CODEMODEL_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CODEMODEL_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CODEMODEL_AUDIT_FEATURE_ID:
+        return getTarget().getAudit();
+      case CodeModelPackage.CODEMODEL_EXTENSION_FEATURE_ID:
+        return getTarget().getExtension();
+      case CodeModelPackage.CODEMODEL_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CODEMODEL_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
       case CodeModelPackage.CODEMODEL_CODEELEMENT_FEATURE_ID:
         return getTarget().getCodeElement();
       default:
@@ -1635,6 +1655,40 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.ABSTRACTCODEELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.ABSTRACTCODEELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
       case CodeModelPackage.ABSTRACTCODEELEMENT_SOURCE_FEATURE_ID:
         return getTarget().getSource();
       case CodeModelPackage.ABSTRACTCODEELEMENT_COMMENT_FEATURE_ID:
@@ -1756,6 +1810,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.COMMENTUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.COMMENTUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.COMMENTUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.COMMENTUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.COMMENTUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.COMMENTUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.COMMENTUNIT_TEXT_FEATURE_ID:
         return getTarget().getText();
       default:
@@ -1841,6 +1907,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.ABSTRACTCODERELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.ABSTRACTCODERELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.ABSTRACTCODERELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.ABSTRACTCODERELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.ABSTRACTCODERELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.ABSTRACTCODERELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1918,6 +1996,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CODEITEM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CODEITEM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CODEITEM_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CODEITEM_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CODEITEM_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CODEITEM_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CODEITEM_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CODEITEM_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CODEITEM_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CODEITEM_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CODEITEM_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CODEITEM_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CODEITEM_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CODEITEM_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CODEITEM_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CODEITEM_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CODEITEM_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CODEITEM_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CODEITEM_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CODEITEM_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CODEITEM_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1995,6 +2115,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.COMPUTATIONALOBJECT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.COMPUTATIONALOBJECT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.COMPUTATIONALOBJECT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.COMPUTATIONALOBJECT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.COMPUTATIONALOBJECT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.COMPUTATIONALOBJECT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.COMPUTATIONALOBJECT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.COMPUTATIONALOBJECT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.COMPUTATIONALOBJECT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.COMPUTATIONALOBJECT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.COMPUTATIONALOBJECT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.COMPUTATIONALOBJECT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.COMPUTATIONALOBJECT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.COMPUTATIONALOBJECT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.COMPUTATIONALOBJECT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.COMPUTATIONALOBJECT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.COMPUTATIONALOBJECT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.COMPUTATIONALOBJECT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.COMPUTATIONALOBJECT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.COMPUTATIONALOBJECT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.COMPUTATIONALOBJECT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2072,6 +2234,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.DATATYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.DATATYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.DATATYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.DATATYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.DATATYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.DATATYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.DATATYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.DATATYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.DATATYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.DATATYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.DATATYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.DATATYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.DATATYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.DATATYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.DATATYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.DATATYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.DATATYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.DATATYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.DATATYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.DATATYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.DATATYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2149,6 +2353,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.MODULE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.MODULE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.MODULE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.MODULE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.MODULE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.MODULE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.MODULE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.MODULE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.MODULE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.MODULE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.MODULE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.MODULE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.MODULE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.MODULE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.MODULE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.MODULE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.MODULE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.MODULE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.MODULE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.MODULE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.MODULE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.MODULE_CODEELEMENT_FEATURE_ID:
         return getTarget().getCodeElement();
       default:
@@ -2237,6 +2483,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.COMPILATIONUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.COMPILATIONUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.COMPILATIONUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.COMPILATIONUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.COMPILATIONUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.COMPILATIONUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.COMPILATIONUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.COMPILATIONUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.COMPILATIONUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.COMPILATIONUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.COMPILATIONUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.COMPILATIONUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.COMPILATIONUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.COMPILATIONUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.COMPILATIONUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.COMPILATIONUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.COMPILATIONUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.COMPILATIONUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.COMPILATIONUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.COMPILATIONUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.COMPILATIONUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.COMPILATIONUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2314,6 +2604,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.SHAREDUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.SHAREDUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.SHAREDUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.SHAREDUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.SHAREDUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.SHAREDUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.SHAREDUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.SHAREDUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.SHAREDUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.SHAREDUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.SHAREDUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.SHAREDUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.SHAREDUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.SHAREDUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.SHAREDUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.SHAREDUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.SHAREDUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.SHAREDUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.SHAREDUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.SHAREDUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.SHAREDUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.SHAREDUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2391,6 +2725,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.LANGUAGEUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.LANGUAGEUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.LANGUAGEUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.LANGUAGEUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.LANGUAGEUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.LANGUAGEUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.LANGUAGEUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.LANGUAGEUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.LANGUAGEUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.LANGUAGEUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.LANGUAGEUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.LANGUAGEUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.LANGUAGEUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.LANGUAGEUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.LANGUAGEUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.LANGUAGEUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.LANGUAGEUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.LANGUAGEUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.LANGUAGEUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.LANGUAGEUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.LANGUAGEUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.LANGUAGEUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2468,6 +2846,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CODEASSEMBLY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CODEASSEMBLY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CODEASSEMBLY_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CODEASSEMBLY_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CODEASSEMBLY_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CODEASSEMBLY_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CODEASSEMBLY_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CODEASSEMBLY_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CODEASSEMBLY_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CODEASSEMBLY_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CODEASSEMBLY_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CODEASSEMBLY_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CODEASSEMBLY_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CODEASSEMBLY_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CODEASSEMBLY_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CODEASSEMBLY_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CODEASSEMBLY_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CODEASSEMBLY_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CODEASSEMBLY_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CODEASSEMBLY_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CODEASSEMBLY_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.CODEASSEMBLY_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2545,6 +2967,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.PACKAGE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.PACKAGE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.PACKAGE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.PACKAGE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.PACKAGE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.PACKAGE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.PACKAGE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.PACKAGE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.PACKAGE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.PACKAGE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.PACKAGE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.PACKAGE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.PACKAGE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.PACKAGE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.PACKAGE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.PACKAGE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.PACKAGE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.PACKAGE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.PACKAGE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.PACKAGE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.PACKAGE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.PACKAGE_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2622,6 +3088,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CONTROLELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CONTROLELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CONTROLELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CONTROLELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CONTROLELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CONTROLELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CONTROLELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CONTROLELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CONTROLELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CONTROLELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CONTROLELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CONTROLELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CONTROLELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CONTROLELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CONTROLELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CONTROLELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CONTROLELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CONTROLELEMENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CONTROLELEMENT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CONTROLELEMENT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CONTROLELEMENT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.CONTROLELEMENT_TYPE_FEATURE_ID:
         return getTarget().getType();
       case CodeModelPackage.CONTROLELEMENT_CODEELEMENT_FEATURE_ID:
@@ -2715,6 +3223,52 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CALLABLEUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CALLABLEUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CALLABLEUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CALLABLEUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CALLABLEUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CALLABLEUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CALLABLEUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CALLABLEUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CALLABLEUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CALLABLEUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CALLABLEUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CALLABLEUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CALLABLEUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CALLABLEUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CALLABLEUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CALLABLEUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CALLABLEUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CALLABLEUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CALLABLEUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CALLABLEUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CALLABLEUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.CALLABLEUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.CALLABLEUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       case CodeModelPackage.CALLABLEUNIT_KIND_FEATURE_ID:
         return getTarget().getKind();
       default:
@@ -2799,6 +3353,52 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.METHODUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.METHODUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.METHODUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.METHODUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.METHODUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.METHODUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.METHODUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.METHODUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.METHODUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.METHODUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.METHODUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.METHODUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.METHODUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.METHODUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.METHODUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.METHODUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.METHODUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.METHODUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.METHODUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.METHODUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.METHODUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.METHODUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.METHODUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       case CodeModelPackage.METHODUNIT_KIND_FEATURE_ID:
         return getTarget().getKind();
       case CodeModelPackage.METHODUNIT_EXPORT_FEATURE_ID:
@@ -2888,6 +3488,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.DATAELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.DATAELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.DATAELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.DATAELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.DATAELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.DATAELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.DATAELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.DATAELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.DATAELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.DATAELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.DATAELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.DATAELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.DATAELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.DATAELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.DATAELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.DATAELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.DATAELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.DATAELEMENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.DATAELEMENT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.DATAELEMENT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.DATAELEMENT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.DATAELEMENT_TYPE_FEATURE_ID:
         return getTarget().getType();
       case CodeModelPackage.DATAELEMENT_EXT_FEATURE_ID:
@@ -2991,6 +3633,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.STORABLEUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.STORABLEUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.STORABLEUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.STORABLEUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.STORABLEUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.STORABLEUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.STORABLEUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.STORABLEUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.STORABLEUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.STORABLEUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.STORABLEUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.STORABLEUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.STORABLEUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.STORABLEUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.STORABLEUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.STORABLEUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.STORABLEUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.STORABLEUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.STORABLEUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.STORABLEUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.STORABLEUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.STORABLEUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.STORABLEUNIT_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.STORABLEUNIT_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.STORABLEUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       case CodeModelPackage.STORABLEUNIT_KIND_FEATURE_ID:
         return getTarget().getKind();
       default:
@@ -3075,6 +3767,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.ITEMUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.ITEMUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.ITEMUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.ITEMUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.ITEMUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.ITEMUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.ITEMUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.ITEMUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.ITEMUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.ITEMUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.ITEMUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.ITEMUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.ITEMUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.ITEMUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.ITEMUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.ITEMUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.ITEMUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.ITEMUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.ITEMUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.ITEMUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.ITEMUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.ITEMUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.ITEMUNIT_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.ITEMUNIT_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.ITEMUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3152,6 +3894,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.INDEXUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.INDEXUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.INDEXUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.INDEXUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.INDEXUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.INDEXUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.INDEXUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.INDEXUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.INDEXUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.INDEXUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.INDEXUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.INDEXUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.INDEXUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.INDEXUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.INDEXUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.INDEXUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.INDEXUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.INDEXUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.INDEXUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.INDEXUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.INDEXUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.INDEXUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.INDEXUNIT_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.INDEXUNIT_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.INDEXUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3229,6 +4021,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.MEMBERUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.MEMBERUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.MEMBERUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.MEMBERUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.MEMBERUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.MEMBERUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.MEMBERUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.MEMBERUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.MEMBERUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.MEMBERUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.MEMBERUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.MEMBERUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.MEMBERUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.MEMBERUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.MEMBERUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.MEMBERUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.MEMBERUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.MEMBERUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.MEMBERUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.MEMBERUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.MEMBERUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.MEMBERUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.MEMBERUNIT_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.MEMBERUNIT_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.MEMBERUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       case CodeModelPackage.MEMBERUNIT_EXPORT_FEATURE_ID:
         return getTarget().getExport();
       default:
@@ -3313,6 +4155,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.PARAMETERUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.PARAMETERUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.PARAMETERUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.PARAMETERUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.PARAMETERUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.PARAMETERUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.PARAMETERUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.PARAMETERUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.PARAMETERUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.PARAMETERUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.PARAMETERUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.PARAMETERUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.PARAMETERUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.PARAMETERUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.PARAMETERUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.PARAMETERUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.PARAMETERUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.PARAMETERUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.PARAMETERUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.PARAMETERUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.PARAMETERUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.PARAMETERUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.PARAMETERUNIT_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.PARAMETERUNIT_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.PARAMETERUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       case CodeModelPackage.PARAMETERUNIT_KIND_FEATURE_ID:
         return getTarget().getKind();
       case CodeModelPackage.PARAMETERUNIT_POS_FEATURE_ID:
@@ -3402,6 +4294,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.VALUEELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.VALUEELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.VALUEELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.VALUEELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.VALUEELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.VALUEELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.VALUEELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.VALUEELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.VALUEELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.VALUEELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.VALUEELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.VALUEELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.VALUEELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.VALUEELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.VALUEELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.VALUEELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.VALUEELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.VALUEELEMENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.VALUEELEMENT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.VALUEELEMENT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.VALUEELEMENT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.VALUEELEMENT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.VALUEELEMENT_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.VALUEELEMENT_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.VALUEELEMENT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3479,6 +4421,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.VALUE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.VALUE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.VALUE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.VALUE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.VALUE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.VALUE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.VALUE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.VALUE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.VALUE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.VALUE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.VALUE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.VALUE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.VALUE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.VALUE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.VALUE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.VALUE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.VALUE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.VALUE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.VALUE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.VALUE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.VALUE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.VALUE_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.VALUE_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.VALUE_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.VALUE_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3556,6 +4548,56 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.VALUELIST_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.VALUELIST_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.VALUELIST_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.VALUELIST_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.VALUELIST_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.VALUELIST_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.VALUELIST_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.VALUELIST_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.VALUELIST_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.VALUELIST_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.VALUELIST_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.VALUELIST_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.VALUELIST_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.VALUELIST_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.VALUELIST_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.VALUELIST_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.VALUELIST_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.VALUELIST_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.VALUELIST_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.VALUELIST_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.VALUELIST_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.VALUELIST_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.VALUELIST_EXT_FEATURE_ID:
+        return getTarget().getExt();
+      case CodeModelPackage.VALUELIST_SIZE_FEATURE_ID:
+        return getTarget().getSize();
+      case CodeModelPackage.VALUELIST_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       case CodeModelPackage.VALUELIST_VALUEELEMENT_FEATURE_ID:
         return getTarget().getValueElement();
       default:
@@ -3644,6 +4686,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.PRIMITIVETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.PRIMITIVETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.PRIMITIVETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.PRIMITIVETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.PRIMITIVETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.PRIMITIVETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.PRIMITIVETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.PRIMITIVETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.PRIMITIVETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.PRIMITIVETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.PRIMITIVETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.PRIMITIVETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.PRIMITIVETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.PRIMITIVETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.PRIMITIVETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.PRIMITIVETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.PRIMITIVETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.PRIMITIVETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.PRIMITIVETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.PRIMITIVETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.PRIMITIVETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3721,6 +4805,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.BOOLEANTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.BOOLEANTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.BOOLEANTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.BOOLEANTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.BOOLEANTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.BOOLEANTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.BOOLEANTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.BOOLEANTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.BOOLEANTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.BOOLEANTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.BOOLEANTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.BOOLEANTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.BOOLEANTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.BOOLEANTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.BOOLEANTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.BOOLEANTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.BOOLEANTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.BOOLEANTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.BOOLEANTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.BOOLEANTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.BOOLEANTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3798,6 +4924,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CHARTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CHARTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CHARTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CHARTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CHARTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CHARTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CHARTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CHARTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CHARTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CHARTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CHARTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CHARTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CHARTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CHARTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CHARTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CHARTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CHARTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CHARTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CHARTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CHARTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CHARTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3875,6 +5043,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.ORDINALTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.ORDINALTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.ORDINALTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.ORDINALTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.ORDINALTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.ORDINALTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.ORDINALTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.ORDINALTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.ORDINALTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.ORDINALTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.ORDINALTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.ORDINALTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.ORDINALTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.ORDINALTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.ORDINALTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.ORDINALTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.ORDINALTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.ORDINALTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.ORDINALTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.ORDINALTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.ORDINALTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3952,6 +5162,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.DATETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.DATETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.DATETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.DATETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.DATETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.DATETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.DATETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.DATETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.DATETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.DATETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.DATETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.DATETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.DATETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.DATETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.DATETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.DATETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.DATETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.DATETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.DATETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.DATETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.DATETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4029,6 +5281,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.TIMETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.TIMETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.TIMETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.TIMETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.TIMETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.TIMETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.TIMETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.TIMETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.TIMETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.TIMETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.TIMETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.TIMETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.TIMETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.TIMETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.TIMETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.TIMETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.TIMETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.TIMETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.TIMETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.TIMETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.TIMETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4106,6 +5400,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.INTEGERTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.INTEGERTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.INTEGERTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.INTEGERTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.INTEGERTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.INTEGERTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.INTEGERTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.INTEGERTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.INTEGERTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.INTEGERTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.INTEGERTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.INTEGERTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.INTEGERTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.INTEGERTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.INTEGERTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.INTEGERTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.INTEGERTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.INTEGERTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.INTEGERTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.INTEGERTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.INTEGERTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4183,6 +5519,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.DECIMALTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.DECIMALTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.DECIMALTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.DECIMALTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.DECIMALTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.DECIMALTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.DECIMALTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.DECIMALTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.DECIMALTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.DECIMALTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.DECIMALTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.DECIMALTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.DECIMALTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.DECIMALTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.DECIMALTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.DECIMALTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.DECIMALTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.DECIMALTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.DECIMALTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.DECIMALTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.DECIMALTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4260,6 +5638,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.SCALEDTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.SCALEDTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.SCALEDTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.SCALEDTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.SCALEDTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.SCALEDTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.SCALEDTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.SCALEDTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.SCALEDTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.SCALEDTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.SCALEDTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.SCALEDTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.SCALEDTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.SCALEDTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.SCALEDTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.SCALEDTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.SCALEDTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.SCALEDTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.SCALEDTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.SCALEDTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.SCALEDTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4337,6 +5757,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.FLOATTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.FLOATTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.FLOATTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.FLOATTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.FLOATTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.FLOATTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.FLOATTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.FLOATTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.FLOATTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.FLOATTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.FLOATTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.FLOATTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.FLOATTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.FLOATTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.FLOATTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.FLOATTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.FLOATTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.FLOATTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.FLOATTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.FLOATTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.FLOATTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4414,6 +5876,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.VOIDTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.VOIDTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.VOIDTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.VOIDTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.VOIDTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.VOIDTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.VOIDTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.VOIDTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.VOIDTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.VOIDTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.VOIDTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.VOIDTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.VOIDTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.VOIDTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.VOIDTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.VOIDTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.VOIDTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.VOIDTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.VOIDTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.VOIDTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.VOIDTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4491,6 +5995,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.STRINGTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.STRINGTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.STRINGTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.STRINGTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.STRINGTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.STRINGTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.STRINGTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.STRINGTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.STRINGTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.STRINGTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.STRINGTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.STRINGTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.STRINGTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.STRINGTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.STRINGTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.STRINGTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.STRINGTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.STRINGTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.STRINGTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.STRINGTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.STRINGTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4568,6 +6114,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.BITTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.BITTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.BITTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.BITTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.BITTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.BITTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.BITTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.BITTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.BITTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.BITTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.BITTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.BITTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.BITTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.BITTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.BITTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.BITTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.BITTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.BITTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.BITTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.BITTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.BITTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4645,6 +6233,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.BITSTRINGTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.BITSTRINGTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.BITSTRINGTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.BITSTRINGTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.BITSTRINGTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.BITSTRINGTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.BITSTRINGTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.BITSTRINGTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.BITSTRINGTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.BITSTRINGTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.BITSTRINGTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.BITSTRINGTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.BITSTRINGTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.BITSTRINGTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.BITSTRINGTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.BITSTRINGTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.BITSTRINGTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.BITSTRINGTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.BITSTRINGTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.BITSTRINGTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.BITSTRINGTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4722,6 +6352,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.OCTETTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.OCTETTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.OCTETTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.OCTETTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.OCTETTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.OCTETTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.OCTETTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.OCTETTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.OCTETTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.OCTETTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.OCTETTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.OCTETTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.OCTETTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.OCTETTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.OCTETTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.OCTETTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.OCTETTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.OCTETTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.OCTETTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.OCTETTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.OCTETTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4799,6 +6471,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.OCTETSTRINGTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.OCTETSTRINGTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.OCTETSTRINGTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.OCTETSTRINGTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.OCTETSTRINGTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.OCTETSTRINGTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.OCTETSTRINGTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.OCTETSTRINGTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.OCTETSTRINGTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.OCTETSTRINGTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.OCTETSTRINGTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.OCTETSTRINGTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.OCTETSTRINGTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.OCTETSTRINGTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.OCTETSTRINGTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.OCTETSTRINGTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.OCTETSTRINGTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.OCTETSTRINGTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.OCTETSTRINGTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.OCTETSTRINGTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.OCTETSTRINGTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -4876,6 +6590,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.ENUMERATEDTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.ENUMERATEDTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.ENUMERATEDTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.ENUMERATEDTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.ENUMERATEDTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.ENUMERATEDTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.ENUMERATEDTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.ENUMERATEDTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.ENUMERATEDTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.ENUMERATEDTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.ENUMERATEDTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.ENUMERATEDTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.ENUMERATEDTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.ENUMERATEDTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.ENUMERATEDTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.ENUMERATEDTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.ENUMERATEDTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.ENUMERATEDTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.ENUMERATEDTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.ENUMERATEDTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.ENUMERATEDTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.ENUMERATEDTYPE_VALUE_FEATURE_ID:
         return getTarget().getValue();
       case CodeModelPackage.ENUMERATEDTYPE_CODEELEMENT_FEATURE_ID:
@@ -4975,6 +6731,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.COMPOSITETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.COMPOSITETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.COMPOSITETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.COMPOSITETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.COMPOSITETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.COMPOSITETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.COMPOSITETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.COMPOSITETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.COMPOSITETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.COMPOSITETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.COMPOSITETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.COMPOSITETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.COMPOSITETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.COMPOSITETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.COMPOSITETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.COMPOSITETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.COMPOSITETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.COMPOSITETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.COMPOSITETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.COMPOSITETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.COMPOSITETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.COMPOSITETYPE_ITEMUNIT_FEATURE_ID:
         return getTarget().getItemUnit();
       default:
@@ -5063,6 +6861,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CHOICETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CHOICETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CHOICETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CHOICETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CHOICETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CHOICETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CHOICETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CHOICETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CHOICETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CHOICETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CHOICETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CHOICETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CHOICETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CHOICETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CHOICETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CHOICETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CHOICETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CHOICETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CHOICETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CHOICETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CHOICETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.CHOICETYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -5140,6 +6982,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.RECORDTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.RECORDTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.RECORDTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.RECORDTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.RECORDTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.RECORDTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.RECORDTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.RECORDTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.RECORDTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.RECORDTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.RECORDTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.RECORDTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.RECORDTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.RECORDTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.RECORDTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.RECORDTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.RECORDTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.RECORDTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.RECORDTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.RECORDTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.RECORDTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.RECORDTYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -5217,6 +7103,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.DERIVEDTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.DERIVEDTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.DERIVEDTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.DERIVEDTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.DERIVEDTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.DERIVEDTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.DERIVEDTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.DERIVEDTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.DERIVEDTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.DERIVEDTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.DERIVEDTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.DERIVEDTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.DERIVEDTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.DERIVEDTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.DERIVEDTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.DERIVEDTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.DERIVEDTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.DERIVEDTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.DERIVEDTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.DERIVEDTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.DERIVEDTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.DERIVEDTYPE_ITEMUNIT_FEATURE_ID:
         return getTarget().getItemUnit();
       default:
@@ -5301,6 +7229,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.ARRAYTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.ARRAYTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.ARRAYTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.ARRAYTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.ARRAYTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.ARRAYTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.ARRAYTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.ARRAYTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.ARRAYTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.ARRAYTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.ARRAYTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.ARRAYTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.ARRAYTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.ARRAYTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.ARRAYTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.ARRAYTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.ARRAYTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.ARRAYTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.ARRAYTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.ARRAYTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.ARRAYTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.ARRAYTYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       case CodeModelPackage.ARRAYTYPE_SIZE_FEATURE_ID:
         return getTarget().getSize();
       case CodeModelPackage.ARRAYTYPE_INDEXUNIT_FEATURE_ID:
@@ -5390,6 +7362,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.POINTERTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.POINTERTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.POINTERTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.POINTERTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.POINTERTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.POINTERTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.POINTERTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.POINTERTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.POINTERTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.POINTERTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.POINTERTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.POINTERTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.POINTERTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.POINTERTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.POINTERTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.POINTERTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.POINTERTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.POINTERTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.POINTERTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.POINTERTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.POINTERTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.POINTERTYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -5467,6 +7483,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.RANGETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.RANGETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.RANGETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.RANGETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.RANGETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.RANGETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.RANGETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.RANGETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.RANGETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.RANGETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.RANGETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.RANGETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.RANGETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.RANGETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.RANGETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.RANGETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.RANGETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.RANGETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.RANGETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.RANGETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.RANGETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.RANGETYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       case CodeModelPackage.RANGETYPE_LOWER_FEATURE_ID:
         return getTarget().getLower();
       case CodeModelPackage.RANGETYPE_UPPER_FEATURE_ID:
@@ -5556,6 +7616,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.BAGTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.BAGTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.BAGTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.BAGTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.BAGTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.BAGTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.BAGTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.BAGTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.BAGTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.BAGTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.BAGTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.BAGTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.BAGTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.BAGTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.BAGTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.BAGTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.BAGTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.BAGTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.BAGTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.BAGTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.BAGTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.BAGTYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       case CodeModelPackage.BAGTYPE_SIZE_FEATURE_ID:
         return getTarget().getSize();
       default:
@@ -5640,6 +7744,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.SETTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.SETTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.SETTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.SETTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.SETTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.SETTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.SETTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.SETTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.SETTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.SETTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.SETTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.SETTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.SETTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.SETTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.SETTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.SETTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.SETTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.SETTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.SETTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.SETTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.SETTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.SETTYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       case CodeModelPackage.SETTYPE_SIZE_FEATURE_ID:
         return getTarget().getSize();
       default:
@@ -5724,6 +7872,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.SEQUENCETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.SEQUENCETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.SEQUENCETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.SEQUENCETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.SEQUENCETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.SEQUENCETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.SEQUENCETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.SEQUENCETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.SEQUENCETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.SEQUENCETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.SEQUENCETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.SEQUENCETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.SEQUENCETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.SEQUENCETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.SEQUENCETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.SEQUENCETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.SEQUENCETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.SEQUENCETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.SEQUENCETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.SEQUENCETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.SEQUENCETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.SEQUENCETYPE_ITEMUNIT_FEATURE_ID:
+        return getTarget().getItemUnit();
       case CodeModelPackage.SEQUENCETYPE_SIZE_FEATURE_ID:
         return getTarget().getSize();
       default:
@@ -5808,6 +8000,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.SIGNATURE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.SIGNATURE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.SIGNATURE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.SIGNATURE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.SIGNATURE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.SIGNATURE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.SIGNATURE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.SIGNATURE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.SIGNATURE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.SIGNATURE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.SIGNATURE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.SIGNATURE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.SIGNATURE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.SIGNATURE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.SIGNATURE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.SIGNATURE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.SIGNATURE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.SIGNATURE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.SIGNATURE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.SIGNATURE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.SIGNATURE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.SIGNATURE_PARAMETERUNIT_FEATURE_ID:
         return getTarget().getParameterUnit();
       default:
@@ -5896,6 +8130,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.DEFINEDTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.DEFINEDTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.DEFINEDTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.DEFINEDTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.DEFINEDTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.DEFINEDTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.DEFINEDTYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.DEFINEDTYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.DEFINEDTYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.DEFINEDTYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.DEFINEDTYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.DEFINEDTYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.DEFINEDTYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.DEFINEDTYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.DEFINEDTYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.DEFINEDTYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.DEFINEDTYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.DEFINEDTYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.DEFINEDTYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.DEFINEDTYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.DEFINEDTYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.DEFINEDTYPE_TYPE_FEATURE_ID:
         return getTarget().getType();
       case CodeModelPackage.DEFINEDTYPE_CODEELEMENT_FEATURE_ID:
@@ -5985,6 +8261,52 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.TYPEUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.TYPEUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.TYPEUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.TYPEUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.TYPEUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.TYPEUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.TYPEUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.TYPEUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.TYPEUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.TYPEUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.TYPEUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.TYPEUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.TYPEUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.TYPEUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.TYPEUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.TYPEUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.TYPEUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.TYPEUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.TYPEUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.TYPEUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.TYPEUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.TYPEUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.TYPEUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -6062,6 +8384,52 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.SYNONYMUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.SYNONYMUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.SYNONYMUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.SYNONYMUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.SYNONYMUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.SYNONYMUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.SYNONYMUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.SYNONYMUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.SYNONYMUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.SYNONYMUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.SYNONYMUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.SYNONYMUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.SYNONYMUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.SYNONYMUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.SYNONYMUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.SYNONYMUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.SYNONYMUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.SYNONYMUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.SYNONYMUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.SYNONYMUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.SYNONYMUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.SYNONYMUNIT_TYPE_FEATURE_ID:
+        return getTarget().getType();
+      case CodeModelPackage.SYNONYMUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -6139,6 +8507,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CLASSUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CLASSUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CLASSUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CLASSUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CLASSUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CLASSUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CLASSUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CLASSUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CLASSUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CLASSUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CLASSUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CLASSUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CLASSUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CLASSUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CLASSUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CLASSUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CLASSUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CLASSUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CLASSUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CLASSUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CLASSUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.CLASSUNIT_ISABSTRACT_FEATURE_ID:
         return getTarget().getIsAbstract();
       case CodeModelPackage.CLASSUNIT_CODEELEMENT_FEATURE_ID:
@@ -6232,6 +8642,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.INTERFACEUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.INTERFACEUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.INTERFACEUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.INTERFACEUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.INTERFACEUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.INTERFACEUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.INTERFACEUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.INTERFACEUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.INTERFACEUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.INTERFACEUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.INTERFACEUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.INTERFACEUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.INTERFACEUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.INTERFACEUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.INTERFACEUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.INTERFACEUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.INTERFACEUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.INTERFACEUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.INTERFACEUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.INTERFACEUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.INTERFACEUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.INTERFACEUNIT_CODEELEMENT_FEATURE_ID:
         return getTarget().getCodeElement();
       default:
@@ -6320,6 +8772,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.TEMPLATEUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.TEMPLATEUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.TEMPLATEUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.TEMPLATEUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.TEMPLATEUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.TEMPLATEUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.TEMPLATEUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.TEMPLATEUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.TEMPLATEUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.TEMPLATEUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.TEMPLATEUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.TEMPLATEUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.TEMPLATEUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.TEMPLATEUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.TEMPLATEUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.TEMPLATEUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.TEMPLATEUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.TEMPLATEUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.TEMPLATEUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.TEMPLATEUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.TEMPLATEUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.TEMPLATEUNIT_CODEELEMENT_FEATURE_ID:
         return getTarget().getCodeElement();
       default:
@@ -6408,6 +8902,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.TEMPLATEPARAMETER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.TEMPLATEPARAMETER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.TEMPLATEPARAMETER_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.TEMPLATEPARAMETER_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.TEMPLATEPARAMETER_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.TEMPLATEPARAMETER_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.TEMPLATEPARAMETER_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.TEMPLATEPARAMETER_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.TEMPLATEPARAMETER_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.TEMPLATEPARAMETER_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.TEMPLATEPARAMETER_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.TEMPLATEPARAMETER_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.TEMPLATEPARAMETER_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.TEMPLATEPARAMETER_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.TEMPLATEPARAMETER_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.TEMPLATEPARAMETER_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.TEMPLATEPARAMETER_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.TEMPLATEPARAMETER_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.TEMPLATEPARAMETER_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.TEMPLATEPARAMETER_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.TEMPLATEPARAMETER_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -6485,6 +9021,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.TEMPLATETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.TEMPLATETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.TEMPLATETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.TEMPLATETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.TEMPLATETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.TEMPLATETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.TEMPLATETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.TEMPLATETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.TEMPLATETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.TEMPLATETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.TEMPLATETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.TEMPLATETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.TEMPLATETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.TEMPLATETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.TEMPLATETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.TEMPLATETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.TEMPLATETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.TEMPLATETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.TEMPLATETYPE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.TEMPLATETYPE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.TEMPLATETYPE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -6562,6 +9140,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.INSTANCEOF_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.INSTANCEOF_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.INSTANCEOF_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.INSTANCEOF_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.INSTANCEOF_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.INSTANCEOF_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.INSTANCEOF_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.INSTANCEOF_FROM_FEATURE_ID:
@@ -6651,6 +9241,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.PARAMETERTO_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.PARAMETERTO_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.PARAMETERTO_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.PARAMETERTO_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.PARAMETERTO_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.PARAMETERTO_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.PARAMETERTO_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.PARAMETERTO_FROM_FEATURE_ID:
@@ -6740,6 +9342,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.IMPLEMENTS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.IMPLEMENTS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.IMPLEMENTS_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.IMPLEMENTS_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.IMPLEMENTS_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.IMPLEMENTS_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.IMPLEMENTS_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.IMPLEMENTS_FROM_FEATURE_ID:
@@ -6830,6 +9444,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.IMPLEMENTATIONOF_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.IMPLEMENTATIONOF_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.IMPLEMENTATIONOF_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.IMPLEMENTATIONOF_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.IMPLEMENTATIONOF_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.IMPLEMENTATIONOF_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.IMPLEMENTATIONOF_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.IMPLEMENTATIONOF_FROM_FEATURE_ID:
@@ -6919,6 +9545,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.HASTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.HASTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.HASTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.HASTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.HASTYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.HASTYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.HASTYPE_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.HASTYPE_FROM_FEATURE_ID:
@@ -7008,6 +9646,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.HASVALUE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.HASVALUE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.HASVALUE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.HASVALUE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.HASVALUE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.HASVALUE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.HASVALUE_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.HASVALUE_FROM_FEATURE_ID:
@@ -7097,6 +9747,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.EXTENDS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.EXTENDS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.EXTENDS_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.EXTENDS_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.EXTENDS_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.EXTENDS_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.EXTENDS_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.EXTENDS_FROM_FEATURE_ID:
@@ -7187,6 +9849,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.PREPROCESSORDIRECTIVE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.PREPROCESSORDIRECTIVE_CODEELEMENT_FEATURE_ID:
         return getTarget().getCodeElement();
       default:
@@ -7275,6 +9979,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.MACROUNIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.MACROUNIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.MACROUNIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.MACROUNIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.MACROUNIT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.MACROUNIT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.MACROUNIT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.MACROUNIT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.MACROUNIT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.MACROUNIT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.MACROUNIT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.MACROUNIT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.MACROUNIT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.MACROUNIT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.MACROUNIT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.MACROUNIT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.MACROUNIT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.MACROUNIT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.MACROUNIT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.MACROUNIT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.MACROUNIT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.MACROUNIT_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       case CodeModelPackage.MACROUNIT_KIND_FEATURE_ID:
         return getTarget().getKind();
       default:
@@ -7359,6 +10107,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.MACRODIRECTIVE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.MACRODIRECTIVE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.MACRODIRECTIVE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.MACRODIRECTIVE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.MACRODIRECTIVE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.MACRODIRECTIVE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.MACRODIRECTIVE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.MACRODIRECTIVE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.MACRODIRECTIVE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.MACRODIRECTIVE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.MACRODIRECTIVE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.MACRODIRECTIVE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.MACRODIRECTIVE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.MACRODIRECTIVE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.MACRODIRECTIVE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.MACRODIRECTIVE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.MACRODIRECTIVE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.MACRODIRECTIVE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.MACRODIRECTIVE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.MACRODIRECTIVE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.MACRODIRECTIVE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.MACRODIRECTIVE_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -7437,6 +10229,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.INCLUDEDIRECTIVE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.INCLUDEDIRECTIVE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.INCLUDEDIRECTIVE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.INCLUDEDIRECTIVE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.INCLUDEDIRECTIVE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.INCLUDEDIRECTIVE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.INCLUDEDIRECTIVE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.INCLUDEDIRECTIVE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.INCLUDEDIRECTIVE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.INCLUDEDIRECTIVE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.INCLUDEDIRECTIVE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.INCLUDEDIRECTIVE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.INCLUDEDIRECTIVE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.INCLUDEDIRECTIVE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.INCLUDEDIRECTIVE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.INCLUDEDIRECTIVE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.INCLUDEDIRECTIVE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.INCLUDEDIRECTIVE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.INCLUDEDIRECTIVE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.INCLUDEDIRECTIVE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.INCLUDEDIRECTIVE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.INCLUDEDIRECTIVE_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -7515,6 +10351,50 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CONDITIONALDIRECTIVE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
+      case CodeModelPackage.CONDITIONALDIRECTIVE_CODEELEMENT_FEATURE_ID:
+        return getTarget().getCodeElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -7592,6 +10472,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.EXPANDS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.EXPANDS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.EXPANDS_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.EXPANDS_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.EXPANDS_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.EXPANDS_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.EXPANDS_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.EXPANDS_FROM_FEATURE_ID:
@@ -7681,6 +10573,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.GENERATEDFROM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.GENERATEDFROM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.GENERATEDFROM_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.GENERATEDFROM_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.GENERATEDFROM_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.GENERATEDFROM_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.GENERATEDFROM_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.GENERATEDFROM_FROM_FEATURE_ID:
@@ -7770,6 +10674,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.INCLUDES_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.INCLUDES_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.INCLUDES_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.INCLUDES_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.INCLUDES_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.INCLUDES_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.INCLUDES_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.INCLUDES_FROM_FEATURE_ID:
@@ -7859,6 +10775,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.VARIANTTO_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.VARIANTTO_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.VARIANTTO_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.VARIANTTO_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.VARIANTTO_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.VARIANTTO_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.VARIANTTO_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.VARIANTTO_FROM_FEATURE_ID:
@@ -7948,6 +10876,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.REDEFINES_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.REDEFINES_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.REDEFINES_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.REDEFINES_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.REDEFINES_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.REDEFINES_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.REDEFINES_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.REDEFINES_FROM_FEATURE_ID:
@@ -8037,6 +10977,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.NAMESPACE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.NAMESPACE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.NAMESPACE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.NAMESPACE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.NAMESPACE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.NAMESPACE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.NAMESPACE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.NAMESPACE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.NAMESPACE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.NAMESPACE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.NAMESPACE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.NAMESPACE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.NAMESPACE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.NAMESPACE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.NAMESPACE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.NAMESPACE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.NAMESPACE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.NAMESPACE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.NAMESPACE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.NAMESPACE_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.NAMESPACE_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       case CodeModelPackage.NAMESPACE_GROUPEDCODE_FEATURE_ID:
         return getTarget().getGroupedCode();
       default:
@@ -8125,6 +11107,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.VISIBLEIN_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.VISIBLEIN_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.VISIBLEIN_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.VISIBLEIN_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.VISIBLEIN_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.VISIBLEIN_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.VISIBLEIN_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.VISIBLEIN_FROM_FEATURE_ID:
@@ -8214,6 +11208,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.IMPORTS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.IMPORTS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.IMPORTS_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.IMPORTS_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.IMPORTS_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.IMPORTS_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.IMPORTS_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.IMPORTS_FROM_FEATURE_ID:
@@ -8303,6 +11309,48 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CODEELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CODEELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CODEELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CODEELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CODEELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CODEELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case CodeModelPackage.CODEELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case CodeModelPackage.CODEELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case CodeModelPackage.CODEELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case CodeModelPackage.CODEELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case CodeModelPackage.CODEELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case CodeModelPackage.CODEELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case CodeModelPackage.CODEELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case CodeModelPackage.CODEELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case CodeModelPackage.CODEELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case CodeModelPackage.CODEELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case CodeModelPackage.CODEELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case CodeModelPackage.CODEELEMENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case CodeModelPackage.CODEELEMENT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case CodeModelPackage.CODEELEMENT_CODERELATION_FEATURE_ID:
+        return getTarget().getCodeRelation();
+      case CodeModelPackage.CODEELEMENT_ENTRYFLOW_FEATURE_ID:
+        return getTarget().getEntryFlow();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -8381,6 +11429,18 @@ public class CodeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CodeModelPackage.CODERELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CodeModelPackage.CODERELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case CodeModelPackage.CODERELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case CodeModelPackage.CODERELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case CodeModelPackage.CODERELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case CodeModelPackage.CODERELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case CodeModelPackage.CODERELATIONSHIP_TO_FEATURE_ID:
         return getTarget().getTo();
       case CodeModelPackage.CODERELATIONSHIP_FROM_FEATURE_ID:

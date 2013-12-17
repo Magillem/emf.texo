@@ -194,6 +194,10 @@ public class DocumentrootModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case DocumentrootModelPackage.COMPLEXTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case DocumentrootModelPackage.COMPLEXTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case DocumentrootModelPackage.COMPLEXTYPE_TEST_FEATURE_ID:
         return getTarget().getTest();
       default:
@@ -278,6 +282,10 @@ public class DocumentrootModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case DocumentrootModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case DocumentrootModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case DocumentrootModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case DocumentrootModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:

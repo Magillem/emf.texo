@@ -10,8 +10,8 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-import org.eclipse.emf.texo.test.emfmodel.bz403743.Bz403743Package;
-import org.eclipse.emf.texo.test.emfmodel.bz403743.impl.Bz403743PackageImpl;
+import org.eclipse.emf.texo.test.emfmodel.bzWrongFeatureId.BzWrongFeatureIdPackage;
+import org.eclipse.emf.texo.test.emfmodel.bzWrongFeatureId.impl.BzWrongFeatureIdPackageImpl;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.Identifiable;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiableFactory;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiableInterface;
@@ -26,262 +26,262 @@ import org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable;
  */
 public class IdentifiablePackageImpl extends EPackageImpl implements IdentifiablePackage {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	private EClass identifiableEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	private EClass identifiableInterfaceEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	private EClass notIdentifiableEClass = null;
 
 	/**
-	 * Creates an instance of the model <b>Package</b>, registered with
-	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-	 * package URI value.
-	 * <p>Note: the correct way to create the package is via the static
-	 * factory method {@link #init init()}, which also performs
-	 * initialization of the package, or returns the registered package,
-	 * if one already exists.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the model <b>Package</b>, registered with
+   * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+   * package URI value.
+   * <p>Note: the correct way to create the package is via the static
+   * factory method {@link #init init()}, which also performs
+   * initialization of the package, or returns the registered package,
+   * if one already exists.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiablePackage#eNS_URI
-	 * @see #init()
-	 * @generated
-	 */
+   * @see org.eclipse.emf.ecore.EPackage.Registry
+   * @see org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiablePackage#eNS_URI
+   * @see #init()
+   * @generated
+   */
 	private IdentifiablePackageImpl() {
-		super(eNS_URI, IdentifiableFactory.eINSTANCE);
-	}
+    super(eNS_URI, IdentifiableFactory.eINSTANCE);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
-	 * <p>This method is used to initialize {@link IdentifiablePackage#eINSTANCE} when that field is accessed.
-	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-	 * <!-- begin-user-doc -->
+   * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+   * 
+   * <p>This method is used to initialize {@link IdentifiablePackage#eINSTANCE} when that field is accessed.
+   * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #eNS_URI
-	 * @see #createPackageContents()
-	 * @see #initializePackageContents()
-	 * @generated
-	 */
+   * @see #eNS_URI
+   * @see #createPackageContents()
+   * @see #initializePackageContents()
+   * @generated
+   */
 	public static IdentifiablePackage init() {
-		if (isInited) return (IdentifiablePackage)EPackage.Registry.INSTANCE.getEPackage(IdentifiablePackage.eNS_URI);
+    if (isInited) return (IdentifiablePackage)EPackage.Registry.INSTANCE.getEPackage(IdentifiablePackage.eNS_URI);
 
-		// Obtain or create and register package
-		IdentifiablePackageImpl theIdentifiablePackage = (IdentifiablePackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof IdentifiablePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new IdentifiablePackageImpl());
+    // Obtain or create and register package
+    IdentifiablePackageImpl theIdentifiablePackage = (IdentifiablePackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof IdentifiablePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new IdentifiablePackageImpl());
 
-		isInited = true;
+    isInited = true;
 
-		// Obtain or create and register interdependencies
-		Bz403743PackageImpl theBz403743Package = (Bz403743PackageImpl)(EPackage.Registry.INSTANCE.getEPackage(Bz403743Package.eNS_URI) instanceof Bz403743PackageImpl ? EPackage.Registry.INSTANCE.getEPackage(Bz403743Package.eNS_URI) : Bz403743Package.eINSTANCE);
+    // Obtain or create and register interdependencies
+    BzWrongFeatureIdPackageImpl theBzWrongFeatureIdPackage = (BzWrongFeatureIdPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(BzWrongFeatureIdPackage.eNS_URI) instanceof BzWrongFeatureIdPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(BzWrongFeatureIdPackage.eNS_URI) : BzWrongFeatureIdPackage.eINSTANCE);
 
-		// Create package meta-data objects
-		theIdentifiablePackage.createPackageContents();
-		theBz403743Package.createPackageContents();
+    // Create package meta-data objects
+    theIdentifiablePackage.createPackageContents();
+    theBzWrongFeatureIdPackage.createPackageContents();
 
-		// Initialize created meta-data
-		theIdentifiablePackage.initializePackageContents();
-		theBz403743Package.initializePackageContents();
+    // Initialize created meta-data
+    theIdentifiablePackage.initializePackageContents();
+    theBzWrongFeatureIdPackage.initializePackageContents();
 
-		// Mark meta-data to indicate it can't be changed
-		theIdentifiablePackage.freeze();
+    // Mark meta-data to indicate it can't be changed
+    theIdentifiablePackage.freeze();
 
   
-		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(IdentifiablePackage.eNS_URI, theIdentifiablePackage);
-		return theIdentifiablePackage;
-	}
+    // Update the registry and return the package
+    EPackage.Registry.INSTANCE.put(IdentifiablePackage.eNS_URI, theIdentifiablePackage);
+    return theIdentifiablePackage;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EClass getIdentifiable() {
-		return identifiableEClass;
-	}
+    return identifiableEClass;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EAttribute getIdentifiable_Db_Id() {
-		return (EAttribute)identifiableEClass.getEStructuralFeatures().get(0);
-	}
+    return (EAttribute)identifiableEClass.getEStructuralFeatures().get(0);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EAttribute getIdentifiable_Db_version() {
-		return (EAttribute)identifiableEClass.getEStructuralFeatures().get(1);
-	}
+    return (EAttribute)identifiableEClass.getEStructuralFeatures().get(1);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EClass getIdentifiableInterface() {
-		return identifiableInterfaceEClass;
-	}
+    return identifiableInterfaceEClass;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EAttribute getIdentifiableInterface_Db_Id() {
-		return (EAttribute)identifiableInterfaceEClass.getEStructuralFeatures().get(0);
-	}
+    return (EAttribute)identifiableInterfaceEClass.getEStructuralFeatures().get(0);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EAttribute getIdentifiableInterface_Db_version() {
-		return (EAttribute)identifiableInterfaceEClass.getEStructuralFeatures().get(1);
-	}
+    return (EAttribute)identifiableInterfaceEClass.getEStructuralFeatures().get(1);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EClass getNotIdentifiable() {
-		return notIdentifiableEClass;
-	}
+    return notIdentifiableEClass;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public IdentifiableFactory getIdentifiableFactory() {
-		return (IdentifiableFactory)getEFactoryInstance();
-	}
+    return (IdentifiableFactory)getEFactoryInstance();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	private boolean isCreated = false;
 
 	/**
-	 * Creates the meta-model objects for the package.  This method is
-	 * guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
+   * Creates the meta-model objects for the package.  This method is
+   * guarded to have no affect on any invocation but its first.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void createPackageContents() {
-		if (isCreated) return;
-		isCreated = true;
+    if (isCreated) return;
+    isCreated = true;
 
-		// Create classes and their features
-		identifiableEClass = createEClass(IDENTIFIABLE);
-		createEAttribute(identifiableEClass, IDENTIFIABLE__DB_ID);
-		createEAttribute(identifiableEClass, IDENTIFIABLE__DB_VERSION);
+    // Create classes and their features
+    identifiableEClass = createEClass(IDENTIFIABLE);
+    createEAttribute(identifiableEClass, IDENTIFIABLE__DB_ID);
+    createEAttribute(identifiableEClass, IDENTIFIABLE__DB_VERSION);
 
-		identifiableInterfaceEClass = createEClass(IDENTIFIABLE_INTERFACE);
-		createEAttribute(identifiableInterfaceEClass, IDENTIFIABLE_INTERFACE__DB_ID);
-		createEAttribute(identifiableInterfaceEClass, IDENTIFIABLE_INTERFACE__DB_VERSION);
+    identifiableInterfaceEClass = createEClass(IDENTIFIABLE_INTERFACE);
+    createEAttribute(identifiableInterfaceEClass, IDENTIFIABLE_INTERFACE__DB_ID);
+    createEAttribute(identifiableInterfaceEClass, IDENTIFIABLE_INTERFACE__DB_VERSION);
 
-		notIdentifiableEClass = createEClass(NOT_IDENTIFIABLE);
-	}
+    notIdentifiableEClass = createEClass(NOT_IDENTIFIABLE);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	private boolean isInitialized = false;
 
 	/**
-	 * Complete the initialization of the package and its meta-model.  This
-	 * method is guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
+   * Complete the initialization of the package and its meta-model.  This
+   * method is guarded to have no affect on any invocation but its first.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public void initializePackageContents() {
-		if (isInitialized) return;
-		isInitialized = true;
+    if (isInitialized) return;
+    isInitialized = true;
 
-		// Initialize package
-		setName(eNAME);
-		setNsPrefix(eNS_PREFIX);
-		setNsURI(eNS_URI);
+    // Initialize package
+    setName(eNAME);
+    setNsPrefix(eNS_PREFIX);
+    setNsURI(eNS_URI);
 
-		// Create type parameters
+    // Create type parameters
 
-		// Set bounds for type parameters
+    // Set bounds for type parameters
 
-		// Add supertypes to classes
+    // Add supertypes to classes
 
-		// Initialize classes and features; add operations and parameters
-		initEClass(identifiableEClass, Identifiable.class, "Identifiable", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIdentifiable_Db_Id(), ecorePackage.getELongObject(), "db_Id", null, 0, 1, Identifiable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getIdentifiable_Db_version(), ecorePackage.getEIntegerObject(), "db_version", null, 0, 1, Identifiable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    // Initialize classes and features; add operations and parameters
+    initEClass(identifiableEClass, Identifiable.class, "Identifiable", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getIdentifiable_Db_Id(), ecorePackage.getELongObject(), "db_Id", null, 0, 1, Identifiable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIdentifiable_Db_version(), ecorePackage.getEIntegerObject(), "db_version", null, 0, 1, Identifiable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(identifiableInterfaceEClass, IdentifiableInterface.class, "IdentifiableInterface", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIdentifiableInterface_Db_Id(), ecorePackage.getELongObject(), "db_Id", null, 0, 1, IdentifiableInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getIdentifiableInterface_Db_version(), ecorePackage.getEIntegerObject(), "db_version", null, 0, 1, IdentifiableInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(identifiableInterfaceEClass, IdentifiableInterface.class, "IdentifiableInterface", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getIdentifiableInterface_Db_Id(), ecorePackage.getELongObject(), "db_Id", null, 0, 1, IdentifiableInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIdentifiableInterface_Db_version(), ecorePackage.getEIntegerObject(), "db_version", null, 0, 1, IdentifiableInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(notIdentifiableEClass, NotIdentifiable.class, "NotIdentifiable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(notIdentifiableEClass, NotIdentifiable.class, "NotIdentifiable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		// Create resource
-		createResource(eNS_URI);
+    // Create resource
+    createResource(eNS_URI);
 
-		// Create annotations
-		// org.eclipse.emf.texo
-		createOrgAnnotations();
-	}
+    // Create annotations
+    // org.eclipse.emf.texo
+    createOrgAnnotations();
+  }
 
 	/**
-	 * Initializes the annotations for <b>org.eclipse.emf.texo</b>.
-	 * <!-- begin-user-doc -->
+   * Initializes the annotations for <b>org.eclipse.emf.texo</b>.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected void createOrgAnnotations() {
-		String source = "org.eclipse.emf.texo";		
-		addAnnotation
-		  (getIdentifiable_Db_Id(), 
-		   source, 
-		   new String[] {
-			 "id", "true"
-		   });		
-		addAnnotation
-		  (getIdentifiableInterface_Db_Id(), 
-		   source, 
-		   new String[] {
-			 "id", "true"
-		   });
-	}
+    String source = "org.eclipse.emf.texo";		
+    addAnnotation
+      (getIdentifiable_Db_Id(), 
+       source, 
+       new String[] {
+       "id", "true"
+       });		
+    addAnnotation
+      (getIdentifiableInterface_Db_Id(), 
+       source, 
+       new String[] {
+       "id", "true"
+       });
+  }
 
 } //IdentifiablePackageImpl

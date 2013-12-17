@@ -342,6 +342,28 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_NODE_FEATURE_ID:
+        return getTarget().getNode();
+      case WorkflowModelPackage.CONDITIONALOUTPUTPORT_EDGES_FEATURE_ID:
+        return getTarget().getEdges();
       case WorkflowModelPackage.CONDITIONALOUTPUTPORT_CONDITION_FEATURE_ID:
         return getTarget().getCondition();
       default:
@@ -426,6 +448,24 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.WORKFLOW_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.WORKFLOW_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.WORKFLOW_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.WORKFLOW_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.WORKFLOW_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.WORKFLOW_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.WORKFLOW_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.WORKFLOW_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.WORKFLOW_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
       case WorkflowModelPackage.WORKFLOW_NODES_FEATURE_ID:
         return getTarget().getNodes();
       case WorkflowModelPackage.WORKFLOW_EDGES_FEATURE_ID:
@@ -537,6 +577,10 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.WORKFLOWELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.WORKFLOWELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case WorkflowModelPackage.WORKFLOWELEMENT_NAME_FEATURE_ID:
         return getTarget().getName();
       case WorkflowModelPackage.WORKFLOWELEMENT_COMMENT_FEATURE_ID:
@@ -650,6 +694,24 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.WORKFLOWNODE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.WORKFLOWNODE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.WORKFLOWNODE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.WORKFLOWNODE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.WORKFLOWNODE_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.WORKFLOWNODE_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.WORKFLOWNODE_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.WORKFLOWNODE_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.WORKFLOWNODE_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
       case WorkflowModelPackage.WORKFLOWNODE_WORKFLOW_FEATURE_ID:
         return getTarget().getWorkflow();
       case WorkflowModelPackage.WORKFLOWNODE_OUTPUTS_FEATURE_ID:
@@ -766,6 +828,24 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.EDGE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.EDGE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.EDGE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.EDGE_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.EDGE_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.EDGE_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.EDGE_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.EDGE_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.EDGE_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
       case WorkflowModelPackage.EDGE_WORKFLOW_FEATURE_ID:
         return getTarget().getWorkflow();
       case WorkflowModelPackage.EDGE_TARGET_FEATURE_ID:
@@ -859,6 +939,24 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.COMMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.COMMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.COMMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.COMMENT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.COMMENT_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.COMMENT_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.COMMENT_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.COMMENT_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.COMMENT_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
       case WorkflowModelPackage.COMMENT_WORKFLOW_FEATURE_ID:
         return getTarget().getWorkflow();
       default:
@@ -942,6 +1040,24 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.OUTPUTPORT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.OUTPUTPORT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.OUTPUTPORT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.OUTPUTPORT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.OUTPUTPORT_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.OUTPUTPORT_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.OUTPUTPORT_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.OUTPUTPORT_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.OUTPUTPORT_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
       case WorkflowModelPackage.OUTPUTPORT_NODE_FEATURE_ID:
         return getTarget().getNode();
       case WorkflowModelPackage.OUTPUTPORT_EDGES_FEATURE_ID:
@@ -1035,6 +1151,24 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.PORT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.PORT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.PORT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.PORT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.PORT_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.PORT_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.PORT_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.PORT_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.PORT_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1111,6 +1245,24 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.INPUTPORT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.INPUTPORT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.INPUTPORT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.INPUTPORT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.INPUTPORT_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.INPUTPORT_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.INPUTPORT_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.INPUTPORT_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.INPUTPORT_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
       case WorkflowModelPackage.INPUTPORT_NODE_FEATURE_ID:
         return getTarget().getNode();
       case WorkflowModelPackage.INPUTPORT_EDGES_FEATURE_ID:
@@ -1204,6 +1356,28 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.FAULT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.FAULT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.FAULT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.FAULT_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.FAULT_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.FAULT_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.FAULT_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.FAULT_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.FAULT_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
+      case WorkflowModelPackage.FAULT_NODE_FEATURE_ID:
+        return getTarget().getNode();
+      case WorkflowModelPackage.FAULT_EDGES_FEATURE_ID:
+        return getTarget().getEdges();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1281,6 +1455,34 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.COMPOUNDTASK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.COMPOUNDTASK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.COMPOUNDTASK_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.COMPOUNDTASK_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.COMPOUNDTASK_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.COMPOUNDTASK_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.COMPOUNDTASK_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.COMPOUNDTASK_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.COMPOUNDTASK_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
+      case WorkflowModelPackage.COMPOUNDTASK_WORKFLOW_FEATURE_ID:
+        return getTarget().getWorkflow();
+      case WorkflowModelPackage.COMPOUNDTASK_OUTPUTS_FEATURE_ID:
+        return getTarget().getOutputs();
+      case WorkflowModelPackage.COMPOUNDTASK_INPUTS_FEATURE_ID:
+        return getTarget().getInputs();
+      case WorkflowModelPackage.COMPOUNDTASK_ISSTART_FEATURE_ID:
+        return getTarget().isIsStart();
+      case WorkflowModelPackage.COMPOUNDTASK_ISFINISH_FEATURE_ID:
+        return getTarget().isIsFinish();
       case WorkflowModelPackage.COMPOUNDTASK_SUBWORKFLOW_FEATURE_ID:
         return getTarget().getSubworkflow();
       default:
@@ -1364,6 +1566,34 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.TRANSFORMATIONTASK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_WORKFLOW_FEATURE_ID:
+        return getTarget().getWorkflow();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_OUTPUTS_FEATURE_ID:
+        return getTarget().getOutputs();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_INPUTS_FEATURE_ID:
+        return getTarget().getInputs();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_ISSTART_FEATURE_ID:
+        return getTarget().isIsStart();
+      case WorkflowModelPackage.TRANSFORMATIONTASK_ISFINISH_FEATURE_ID:
+        return getTarget().isIsFinish();
       case WorkflowModelPackage.TRANSFORMATIONTASK_TRANSFORMEXPRESSION_FEATURE_ID:
         return getTarget().getTransformExpression();
       default:
@@ -1448,6 +1678,34 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.CONDITIONALTASK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.CONDITIONALTASK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.CONDITIONALTASK_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.CONDITIONALTASK_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.CONDITIONALTASK_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.CONDITIONALTASK_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.CONDITIONALTASK_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.CONDITIONALTASK_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.CONDITIONALTASK_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
+      case WorkflowModelPackage.CONDITIONALTASK_WORKFLOW_FEATURE_ID:
+        return getTarget().getWorkflow();
+      case WorkflowModelPackage.CONDITIONALTASK_OUTPUTS_FEATURE_ID:
+        return getTarget().getOutputs();
+      case WorkflowModelPackage.CONDITIONALTASK_INPUTS_FEATURE_ID:
+        return getTarget().getInputs();
+      case WorkflowModelPackage.CONDITIONALTASK_ISSTART_FEATURE_ID:
+        return getTarget().isIsStart();
+      case WorkflowModelPackage.CONDITIONALTASK_ISFINISH_FEATURE_ID:
+        return getTarget().isIsFinish();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1525,6 +1783,36 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.LOOPTASK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.LOOPTASK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.LOOPTASK_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.LOOPTASK_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.LOOPTASK_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.LOOPTASK_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.LOOPTASK_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.LOOPTASK_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.LOOPTASK_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
+      case WorkflowModelPackage.LOOPTASK_WORKFLOW_FEATURE_ID:
+        return getTarget().getWorkflow();
+      case WorkflowModelPackage.LOOPTASK_OUTPUTS_FEATURE_ID:
+        return getTarget().getOutputs();
+      case WorkflowModelPackage.LOOPTASK_INPUTS_FEATURE_ID:
+        return getTarget().getInputs();
+      case WorkflowModelPackage.LOOPTASK_ISSTART_FEATURE_ID:
+        return getTarget().isIsStart();
+      case WorkflowModelPackage.LOOPTASK_ISFINISH_FEATURE_ID:
+        return getTarget().isIsFinish();
+      case WorkflowModelPackage.LOOPTASK_SUBWORKFLOW_FEATURE_ID:
+        return getTarget().getSubworkflow();
       case WorkflowModelPackage.LOOPTASK_WHILECONDITION_FEATURE_ID:
         return getTarget().getWhileCondition();
       default:
@@ -1609,6 +1897,34 @@ public class WorkflowModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case WorkflowModelPackage.TASK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case WorkflowModelPackage.TASK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case WorkflowModelPackage.TASK_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case WorkflowModelPackage.TASK_COMMENT_FEATURE_ID:
+        return getTarget().getComment();
+      case WorkflowModelPackage.TASK_X_FEATURE_ID:
+        return getTarget().getX();
+      case WorkflowModelPackage.TASK_Y_FEATURE_ID:
+        return getTarget().getY();
+      case WorkflowModelPackage.TASK_WIDTH_FEATURE_ID:
+        return getTarget().getWidth();
+      case WorkflowModelPackage.TASK_HEIGHT_FEATURE_ID:
+        return getTarget().getHeight();
+      case WorkflowModelPackage.TASK_WORKFLOWELEMENTID_FEATURE_ID:
+        return getTarget().getWorkFlowElementId();
+      case WorkflowModelPackage.TASK_WORKFLOW_FEATURE_ID:
+        return getTarget().getWorkflow();
+      case WorkflowModelPackage.TASK_OUTPUTS_FEATURE_ID:
+        return getTarget().getOutputs();
+      case WorkflowModelPackage.TASK_INPUTS_FEATURE_ID:
+        return getTarget().getInputs();
+      case WorkflowModelPackage.TASK_ISSTART_FEATURE_ID:
+        return getTarget().isIsStart();
+      case WorkflowModelPackage.TASK_ISFINISH_FEATURE_ID:
+        return getTarget().isIsFinish();
       default:
         return super.eGet(eStructuralFeature);
       }

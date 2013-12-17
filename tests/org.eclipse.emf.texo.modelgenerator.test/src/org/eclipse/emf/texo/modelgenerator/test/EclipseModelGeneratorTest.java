@@ -259,6 +259,9 @@ public class EclipseModelGeneratorTest extends TestCase {
     if (eClass == identifiableEClass) {
       return;
     }
+    if (eClass.getEPackage().getNsURI().equals(IDENTIFIABLE_NSURI)) {
+      return;
+    }
     for (EClass eSuperClass : eClass.getESuperTypes()) {
       if (!eSuperClass.isInterface()) {
         addSuperType(eSuperClass, identifiableEClass);

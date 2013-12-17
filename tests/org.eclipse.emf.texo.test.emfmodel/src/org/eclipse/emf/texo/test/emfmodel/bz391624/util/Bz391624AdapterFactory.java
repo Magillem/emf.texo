@@ -4,14 +4,13 @@ package org.eclipse.emf.texo.test.emfmodel.bz391624.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.eclipse.emf.texo.test.emfmodel.bz391624.*;
-
+import org.eclipse.emf.texo.test.emfmodel.bz391624.Author;
+import org.eclipse.emf.texo.test.emfmodel.bz391624.Book;
+import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Package;
 import org.eclipse.emf.texo.test.emfmodel.identifiable.Identifiable;
+import org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable;
 
 /**
  * <!-- begin-user-doc -->
@@ -82,6 +81,10 @@ public class Bz391624AdapterFactory extends AdapterFactoryImpl {
 				return createIdentifiableAdapter();
 			}
 			@Override
+			public Adapter caseNotIdentifiable(NotIdentifiable object) {
+				return createNotIdentifiableAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -140,6 +143,20 @@ public class Bz391624AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createIdentifiableAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable <em>Not Identifiable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable
+	 * @generated
+	 */
+	public Adapter createNotIdentifiableAdapter() {
 		return null;
 	}
 

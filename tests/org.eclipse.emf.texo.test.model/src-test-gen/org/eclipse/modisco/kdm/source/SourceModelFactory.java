@@ -402,6 +402,26 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.INVENTORYMODEL_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.INVENTORYMODEL_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.INVENTORYMODEL_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.INVENTORYMODEL_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.INVENTORYMODEL_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.INVENTORYMODEL_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.INVENTORYMODEL_AUDIT_FEATURE_ID:
+        return getTarget().getAudit();
+      case SourceModelPackage.INVENTORYMODEL_EXTENSION_FEATURE_ID:
+        return getTarget().getExtension();
+      case SourceModelPackage.INVENTORYMODEL_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.INVENTORYMODEL_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
       case SourceModelPackage.INVENTORYMODEL_INVENTORYELEMENT_FEATURE_ID:
         return getTarget().getInventoryElement();
       default:
@@ -491,6 +511,40 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.ABSTRACTINVENTORYELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
       case SourceModelPackage.ABSTRACTINVENTORYELEMENT_INVENTORYRELATIONSHIP_FEATURE_ID:
         return getTarget().getInventoryRelationship();
       default:
@@ -580,6 +634,18 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.ABSTRACTINVENTORYRELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.ABSTRACTINVENTORYRELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.ABSTRACTINVENTORYRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.ABSTRACTINVENTORYRELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.ABSTRACTINVENTORYRELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.ABSTRACTINVENTORYRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -657,6 +723,42 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.INVENTORYITEM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.INVENTORYITEM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.INVENTORYITEM_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.INVENTORYITEM_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.INVENTORYITEM_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.INVENTORYITEM_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.INVENTORYITEM_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.INVENTORYITEM_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.INVENTORYITEM_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.INVENTORYITEM_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.INVENTORYITEM_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.INVENTORYITEM_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.INVENTORYITEM_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.INVENTORYITEM_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.INVENTORYITEM_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.INVENTORYITEM_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.INVENTORYITEM_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.INVENTORYITEM_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
       case SourceModelPackage.INVENTORYITEM_VERSION_FEATURE_ID:
         return getTarget().getVersion();
       case SourceModelPackage.INVENTORYITEM_PATH_FEATURE_ID:
@@ -746,6 +848,46 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.SOURCEFILE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.SOURCEFILE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.SOURCEFILE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.SOURCEFILE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.SOURCEFILE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.SOURCEFILE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.SOURCEFILE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.SOURCEFILE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.SOURCEFILE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.SOURCEFILE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.SOURCEFILE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.SOURCEFILE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.SOURCEFILE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.SOURCEFILE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.SOURCEFILE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.SOURCEFILE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.SOURCEFILE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.SOURCEFILE_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.SOURCEFILE_VERSION_FEATURE_ID:
+        return getTarget().getVersion();
+      case SourceModelPackage.SOURCEFILE_PATH_FEATURE_ID:
+        return getTarget().getPath();
       case SourceModelPackage.SOURCEFILE_LANGUAGE_FEATURE_ID:
         return getTarget().getLanguage();
       case SourceModelPackage.SOURCEFILE_ENCODING_FEATURE_ID:
@@ -835,6 +977,46 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.IMAGE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.IMAGE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.IMAGE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.IMAGE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.IMAGE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.IMAGE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.IMAGE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.IMAGE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.IMAGE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.IMAGE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.IMAGE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.IMAGE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.IMAGE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.IMAGE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.IMAGE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.IMAGE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.IMAGE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.IMAGE_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.IMAGE_VERSION_FEATURE_ID:
+        return getTarget().getVersion();
+      case SourceModelPackage.IMAGE_PATH_FEATURE_ID:
+        return getTarget().getPath();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -912,6 +1094,46 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.CONFIGURATION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.CONFIGURATION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.CONFIGURATION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.CONFIGURATION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.CONFIGURATION_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.CONFIGURATION_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.CONFIGURATION_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.CONFIGURATION_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.CONFIGURATION_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.CONFIGURATION_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.CONFIGURATION_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.CONFIGURATION_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.CONFIGURATION_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.CONFIGURATION_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.CONFIGURATION_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.CONFIGURATION_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.CONFIGURATION_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.CONFIGURATION_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.CONFIGURATION_VERSION_FEATURE_ID:
+        return getTarget().getVersion();
+      case SourceModelPackage.CONFIGURATION_PATH_FEATURE_ID:
+        return getTarget().getPath();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -989,6 +1211,46 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.RESOURCEDESCRIPTION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.RESOURCEDESCRIPTION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.RESOURCEDESCRIPTION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.RESOURCEDESCRIPTION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.RESOURCEDESCRIPTION_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.RESOURCEDESCRIPTION_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.RESOURCEDESCRIPTION_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.RESOURCEDESCRIPTION_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.RESOURCEDESCRIPTION_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.RESOURCEDESCRIPTION_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.RESOURCEDESCRIPTION_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.RESOURCEDESCRIPTION_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.RESOURCEDESCRIPTION_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.RESOURCEDESCRIPTION_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.RESOURCEDESCRIPTION_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.RESOURCEDESCRIPTION_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.RESOURCEDESCRIPTION_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.RESOURCEDESCRIPTION_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.RESOURCEDESCRIPTION_VERSION_FEATURE_ID:
+        return getTarget().getVersion();
+      case SourceModelPackage.RESOURCEDESCRIPTION_PATH_FEATURE_ID:
+        return getTarget().getPath();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1066,6 +1328,46 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.BINARYFILE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.BINARYFILE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.BINARYFILE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.BINARYFILE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.BINARYFILE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.BINARYFILE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.BINARYFILE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.BINARYFILE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.BINARYFILE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.BINARYFILE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.BINARYFILE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.BINARYFILE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.BINARYFILE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.BINARYFILE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.BINARYFILE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.BINARYFILE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.BINARYFILE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.BINARYFILE_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.BINARYFILE_VERSION_FEATURE_ID:
+        return getTarget().getVersion();
+      case SourceModelPackage.BINARYFILE_PATH_FEATURE_ID:
+        return getTarget().getPath();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1143,6 +1445,46 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.EXECUTABLEFILE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.EXECUTABLEFILE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.EXECUTABLEFILE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.EXECUTABLEFILE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.EXECUTABLEFILE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.EXECUTABLEFILE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.EXECUTABLEFILE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.EXECUTABLEFILE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.EXECUTABLEFILE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.EXECUTABLEFILE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.EXECUTABLEFILE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.EXECUTABLEFILE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.EXECUTABLEFILE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.EXECUTABLEFILE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.EXECUTABLEFILE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.EXECUTABLEFILE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.EXECUTABLEFILE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.EXECUTABLEFILE_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.EXECUTABLEFILE_VERSION_FEATURE_ID:
+        return getTarget().getVersion();
+      case SourceModelPackage.EXECUTABLEFILE_PATH_FEATURE_ID:
+        return getTarget().getPath();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1221,6 +1563,42 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.INVENTORYCONTAINER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.INVENTORYCONTAINER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.INVENTORYCONTAINER_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.INVENTORYCONTAINER_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.INVENTORYCONTAINER_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.INVENTORYCONTAINER_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.INVENTORYCONTAINER_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.INVENTORYCONTAINER_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.INVENTORYCONTAINER_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.INVENTORYCONTAINER_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.INVENTORYCONTAINER_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.INVENTORYCONTAINER_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.INVENTORYCONTAINER_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.INVENTORYCONTAINER_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.INVENTORYCONTAINER_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.INVENTORYCONTAINER_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.INVENTORYCONTAINER_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.INVENTORYCONTAINER_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
       case SourceModelPackage.INVENTORYCONTAINER_INVENTORYELEMENT_FEATURE_ID:
         return getTarget().getInventoryElement();
       default:
@@ -1309,6 +1687,44 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.DIRECTORY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.DIRECTORY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.DIRECTORY_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.DIRECTORY_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.DIRECTORY_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.DIRECTORY_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.DIRECTORY_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.DIRECTORY_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.DIRECTORY_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.DIRECTORY_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.DIRECTORY_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.DIRECTORY_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.DIRECTORY_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.DIRECTORY_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.DIRECTORY_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.DIRECTORY_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.DIRECTORY_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.DIRECTORY_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.DIRECTORY_INVENTORYELEMENT_FEATURE_ID:
+        return getTarget().getInventoryElement();
       case SourceModelPackage.DIRECTORY_PATH_FEATURE_ID:
         return getTarget().getPath();
       default:
@@ -1393,6 +1809,44 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.PROJECT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.PROJECT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.PROJECT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.PROJECT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.PROJECT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.PROJECT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.PROJECT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.PROJECT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.PROJECT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.PROJECT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.PROJECT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.PROJECT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.PROJECT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.PROJECT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.PROJECT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.PROJECT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.PROJECT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.PROJECT_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
+      case SourceModelPackage.PROJECT_INVENTORYELEMENT_FEATURE_ID:
+        return getTarget().getInventoryElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1470,6 +1924,18 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.DEPENDSON_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.DEPENDSON_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.DEPENDSON_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.DEPENDSON_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.DEPENDSON_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.DEPENDSON_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case SourceModelPackage.DEPENDSON_TO_FEATURE_ID:
         return getTarget().getTo();
       case SourceModelPackage.DEPENDSON_FROM_FEATURE_ID:
@@ -1559,6 +2025,14 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.SOURCEREF_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.SOURCEREF_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.SOURCEREF_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.SOURCEREF_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case SourceModelPackage.SOURCEREF_REGION_FEATURE_ID:
         return getTarget().getRegion();
       case SourceModelPackage.SOURCEREF_LANGUAGE_FEATURE_ID:
@@ -1659,6 +2133,14 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.SOURCEREGION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.SOURCEREGION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.SOURCEREGION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.SOURCEREGION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case SourceModelPackage.SOURCEREGION_FILE_FEATURE_ID:
         return getTarget().getFile();
       case SourceModelPackage.SOURCEREGION_STARTLINE_FEATURE_ID:
@@ -1774,6 +2256,42 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.INVENTORYELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.INVENTORYELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.INVENTORYELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.INVENTORYELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.INVENTORYELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.INVENTORYELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case SourceModelPackage.INVENTORYELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case SourceModelPackage.INVENTORYELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case SourceModelPackage.INVENTORYELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case SourceModelPackage.INVENTORYELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case SourceModelPackage.INVENTORYELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case SourceModelPackage.INVENTORYELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case SourceModelPackage.INVENTORYELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case SourceModelPackage.INVENTORYELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case SourceModelPackage.INVENTORYELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case SourceModelPackage.INVENTORYELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case SourceModelPackage.INVENTORYELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case SourceModelPackage.INVENTORYELEMENT_INVENTORYRELATIONSHIP_FEATURE_ID:
+        return getTarget().getInventoryRelationship();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1852,6 +2370,18 @@ public class SourceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SourceModelPackage.INVENTORYRELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SourceModelPackage.INVENTORYRELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case SourceModelPackage.INVENTORYRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case SourceModelPackage.INVENTORYRELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case SourceModelPackage.INVENTORYRELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case SourceModelPackage.INVENTORYRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case SourceModelPackage.INVENTORYRELATIONSHIP_TO_FEATURE_ID:
         return getTarget().getTo();
       case SourceModelPackage.INVENTORYRELATIONSHIP_FROM_FEATURE_ID:

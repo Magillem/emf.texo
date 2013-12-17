@@ -72,6 +72,48 @@ public class SchoollibraryModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int SCHOOLBOOK_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLBOOK_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLBOOK_TITLE_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLBOOK_PAGES_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLBOOK_CATEGORY_FEATURE_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLBOOK_AUTHOR_FEATURE_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int SCHOOLBOOK_VALUE_FEATURE_ID = 6;
 
   /**
@@ -80,6 +122,41 @@ public class SchoollibraryModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SCHOOLLIBRARY_CLASSIFIER_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLLIBRARY_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLLIBRARY_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLLIBRARY_NAME_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLLIBRARY_WRITERS_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCHOOLLIBRARY_BOOKS_FEATURE_ID = 4;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

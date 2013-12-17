@@ -4,11 +4,11 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.texo.model.AbstractModelFeatureMapEntry;
-import org.eclipse.emf.texo.model.AbstractModelObject;
 import org.eclipse.emf.texo.model.ModelFactory;
 import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
+import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelFactory;
 
 /**
  * The <b>{@link ModelFactory}</b> for the types of this model: bz423760. It contains code to create instances
@@ -142,10 +142,12 @@ public class Bz423760ModelFactory implements ModelFactory {
    * 
    * @generated
    */
-  public static class Test423760ModelObject<E extends Test423760> extends AbstractModelObject<E> {
+  public static class Test423760ModelObject<E extends Test423760> extends
+      IdentifiableModelFactory.IdentifiableModelObject<E> {
     /**
      * @generated
      */
+    @Override
     public EClass eClass() {
       return Bz423760ModelPackage.INSTANCE.getTest423760EClass();
     }
@@ -153,6 +155,7 @@ public class Bz423760ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public ModelPackage getModelPackage() {
       return Bz423760ModelPackage.INSTANCE;
     }
@@ -164,6 +167,10 @@ public class Bz423760ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case Bz423760ModelPackage.TEST423760_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case Bz423760ModelPackage.TEST423760_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case Bz423760ModelPackage.TEST423760_NAME_FEATURE_ID:
         return getTarget().getName();
       default:

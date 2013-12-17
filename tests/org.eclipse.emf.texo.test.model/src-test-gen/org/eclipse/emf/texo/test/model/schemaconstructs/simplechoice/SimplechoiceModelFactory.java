@@ -176,6 +176,10 @@ public class SimplechoiceModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SimplechoiceModelPackage.PERSON_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SimplechoiceModelPackage.PERSON_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SimplechoiceModelPackage.PERSON_NAME_FEATURE_ID:
         return getTarget().getName();
       case SimplechoiceModelPackage.PERSON_GROUP_FEATURE_ID:

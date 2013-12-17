@@ -886,6 +886,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.SIMCARD_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.SIMCARD_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.SIMCARD_PHONENUMBER_FEATURE_ID:
         return getTarget().getPhoneNumber();
       case ModelModelPackage.SIMCARD_NUMBER_FEATURE_ID:
@@ -975,6 +979,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.SIMCONTRACT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.SIMCONTRACT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.SIMCONTRACT_CONTRACTNUMBER_FEATURE_ID:
         return getTarget().getContractNumber();
       case ModelModelPackage.SIMCONTRACT_NAME_FEATURE_ID:
@@ -1074,6 +1082,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.PAYMENTINFO_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.PAYMENTINFO_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.PAYMENTINFO_TARIFF_FEATURE_ID:
         return getTarget().getTariff();
       case ModelModelPackage.PAYMENTINFO_FACTPAYMENTS_FEATURE_ID:
@@ -1159,6 +1171,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.SIMCARDXSIMCONTRACT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.SIMCARDXSIMCONTRACT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.SIMCARDXSIMCONTRACT_SIMCARD_FEATURE_ID:
         return getTarget().getSimCard();
       case ModelModelPackage.SIMCARDXSIMCONTRACT_SIMCONTRACT_FEATURE_ID:
@@ -1247,6 +1263,22 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.SIMTARIFF_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.SIMTARIFF_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case ModelModelPackage.SIMTARIFF_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case ModelModelPackage.SIMTARIFF_ACTIVE_FEATURE_ID:
+        return getTarget().isActive();
+      case ModelModelPackage.SIMTARIFF_VOLUMEPAYMENTS_FEATURE_ID:
+        return getTarget().getVolumePayments();
+      case ModelModelPackage.SIMTARIFF_PERIODICALPAYMENTS_FEATURE_ID:
+        return getTarget().getPeriodicalPayments();
+      case ModelModelPackage.SIMTARIFF_INITIALPAYMENT_FEATURE_ID:
+        return getTarget().getInitialPayment();
+      case ModelModelPackage.SIMTARIFF_SERVICES_FEATURE_ID:
+        return getTarget().getServices();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1323,6 +1355,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.TARIFF_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.TARIFF_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.TARIFF_NAME_FEATURE_ID:
         return getTarget().getName();
       case ModelModelPackage.TARIFF_ACTIVE_FEATURE_ID:
@@ -1420,6 +1456,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.PAYMENTITEM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.PAYMENTITEM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.PAYMENTITEM_SUM_FEATURE_ID:
         return getTarget().getSum();
       case ModelModelPackage.PAYMENTITEM_CURRENCY_FEATURE_ID:
@@ -1523,6 +1563,20 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.VOLUMEPAYMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.VOLUMEPAYMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case ModelModelPackage.VOLUMEPAYMENT_SUM_FEATURE_ID:
+        return getTarget().getSum();
+      case ModelModelPackage.VOLUMEPAYMENT_CURRENCY_FEATURE_ID:
+        return getTarget().getCurrency();
+      case ModelModelPackage.VOLUMEPAYMENT_DATE_FEATURE_ID:
+        return getTarget().getDate();
+      case ModelModelPackage.VOLUMEPAYMENT_DESCRIPTION_FEATURE_ID:
+        return getTarget().getDescription();
+      case ModelModelPackage.VOLUMEPAYMENT_PAYMENTTYPE_FEATURE_ID:
+        return getTarget().getPaymentType();
       case ModelModelPackage.VOLUMEPAYMENT_VOLUME_FEATURE_ID:
         return getTarget().getVolume();
       case ModelModelPackage.VOLUMEPAYMENT_UNIT_FEATURE_ID:
@@ -1615,6 +1669,20 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.PERIODICALPAYMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.PERIODICALPAYMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case ModelModelPackage.PERIODICALPAYMENT_SUM_FEATURE_ID:
+        return getTarget().getSum();
+      case ModelModelPackage.PERIODICALPAYMENT_CURRENCY_FEATURE_ID:
+        return getTarget().getCurrency();
+      case ModelModelPackage.PERIODICALPAYMENT_DATE_FEATURE_ID:
+        return getTarget().getDate();
+      case ModelModelPackage.PERIODICALPAYMENT_DESCRIPTION_FEATURE_ID:
+        return getTarget().getDescription();
+      case ModelModelPackage.PERIODICALPAYMENT_PAYMENTTYPE_FEATURE_ID:
+        return getTarget().getPaymentType();
       case ModelModelPackage.PERIODICALPAYMENT_PERIODICITY_FEATURE_ID:
         return getTarget().getPeriodicity();
       default:
@@ -1698,6 +1766,20 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.ONETIMEPAYMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.ONETIMEPAYMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case ModelModelPackage.ONETIMEPAYMENT_SUM_FEATURE_ID:
+        return getTarget().getSum();
+      case ModelModelPackage.ONETIMEPAYMENT_CURRENCY_FEATURE_ID:
+        return getTarget().getCurrency();
+      case ModelModelPackage.ONETIMEPAYMENT_DATE_FEATURE_ID:
+        return getTarget().getDate();
+      case ModelModelPackage.ONETIMEPAYMENT_DESCRIPTION_FEATURE_ID:
+        return getTarget().getDescription();
+      case ModelModelPackage.ONETIMEPAYMENT_PAYMENTTYPE_FEATURE_ID:
+        return getTarget().getPaymentType();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1774,6 +1856,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.SERVICE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.SERVICE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.SERVICE_NAME_FEATURE_ID:
         return getTarget().getName();
       case ModelModelPackage.SERVICE_ACTIVE_FEATURE_ID:
@@ -1877,6 +1963,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.UNITS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.UNITS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.UNITS_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
@@ -1960,6 +2050,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.PRICE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.PRICE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2037,6 +2131,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CARPRODUCER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CARPRODUCER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.CARPRODUCER_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
@@ -2121,6 +2219,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CARMODEL_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CARMODEL_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.CARMODEL_PRODUCER_FEATURE_ID:
         return getTarget().getProducer();
       case ModelModelPackage.CARMODEL_NAME_FEATURE_ID:
@@ -2210,6 +2312,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CARREGINFO_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CARREGINFO_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.CARREGINFO_OWNER_FEATURE_ID:
         return getTarget().getOwner();
       case ModelModelPackage.CARREGINFO_REGNUMBER_FEATURE_ID:
@@ -2444,6 +2550,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.PERSON_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.PERSON_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.PERSON_SURNAME_FEATURE_ID:
         return getTarget().getSurname();
       case ModelModelPackage.PERSON_NAME_FEATURE_ID:
@@ -2564,6 +2674,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CAR_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CAR_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.CAR_MODEL_FEATURE_ID:
         return getTarget().getModel();
       case ModelModelPackage.CAR_REGINFO_FEATURE_ID:
@@ -2658,6 +2772,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CARPASSPORT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CARPASSPORT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.CARPASSPORT_SERIES_FEATURE_ID:
         return getTarget().getSeries();
       case ModelModelPackage.CARPASSPORT_NUMBER_FEATURE_ID:
@@ -2756,6 +2874,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.PHONE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.PHONE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.PHONE_NUMBER_FEATURE_ID:
         return getTarget().getNumber();
       case ModelModelPackage.PHONE_DESCRIPTION_FEATURE_ID:
@@ -2844,6 +2966,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.ADDRESS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.ADDRESS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.ADDRESS_ZIPCODE_FEATURE_ID:
         return getTarget().getZipCode();
       case ModelModelPackage.ADDRESS_COUNTRY_FEATURE_ID:
@@ -2958,6 +3084,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.PASSPORT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.PASSPORT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.PASSPORT_SERIES_FEATURE_ID:
         return getTarget().getSeries();
       case ModelModelPackage.PASSPORT_NUMBER_FEATURE_ID:
@@ -3057,6 +3187,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.DRIVINGLICENSE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.DRIVINGLICENSE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.DRIVINGLICENSE_SERIES_FEATURE_ID:
         return getTarget().getSeries();
       case ModelModelPackage.DRIVINGLICENSE_NUMBER_FEATURE_ID:
@@ -3156,6 +3290,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CONTRACT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CONTRACT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.CONTRACT_SIGNDATE_FEATURE_ID:
         return getTarget().getSignDate();
       case ModelModelPackage.CONTRACT_SIMCARD_FEATURE_ID:
@@ -3262,6 +3400,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.SECRETQUESTION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.SECRETQUESTION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.SECRETQUESTION_QUESTION_FEATURE_ID:
         return getTarget().getQuestion();
       case ModelModelPackage.SECRETQUESTION_CORRECTANSWER_FEATURE_ID:
@@ -3365,6 +3507,22 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CLIENTTARIFF_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CLIENTTARIFF_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case ModelModelPackage.CLIENTTARIFF_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case ModelModelPackage.CLIENTTARIFF_ACTIVE_FEATURE_ID:
+        return getTarget().isActive();
+      case ModelModelPackage.CLIENTTARIFF_VOLUMEPAYMENTS_FEATURE_ID:
+        return getTarget().getVolumePayments();
+      case ModelModelPackage.CLIENTTARIFF_PERIODICALPAYMENTS_FEATURE_ID:
+        return getTarget().getPeriodicalPayments();
+      case ModelModelPackage.CLIENTTARIFF_INITIALPAYMENT_FEATURE_ID:
+        return getTarget().getInitialPayment();
+      case ModelModelPackage.CLIENTTARIFF_SERVICES_FEATURE_ID:
+        return getTarget().getServices();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3442,6 +3600,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.CONTRACTPACKAGE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.CONTRACTPACKAGE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.CONTRACTPACKAGE_CLIENT_FEATURE_ID:
         return getTarget().getClient();
       case ModelModelPackage.CONTRACTPACKAGE_USER_FEATURE_ID:
@@ -3532,6 +3694,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.USER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.USER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.USER_LOGIN_FEATURE_ID:
         return getTarget().getLogin();
       case ModelModelPackage.USER_PASSWORD_FEATURE_ID:
@@ -3626,6 +3792,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.USERGROUP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.USERGROUP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3702,6 +3872,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.MESSAGE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.MESSAGE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.MESSAGE_TEXT_FEATURE_ID:
         return getTarget().getText();
       case ModelModelPackage.MESSAGE_TYPE_FEATURE_ID:
@@ -3805,6 +3979,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.EVENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.EVENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.EVENT_EVENTTYPE_FEATURE_ID:
         return getTarget().getEventType();
       case ModelModelPackage.EVENT_MESSAGE_FEATURE_ID:
@@ -3899,6 +4077,10 @@ public class ModelModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ModelModelPackage.COORDINATES_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ModelModelPackage.COORDINATES_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ModelModelPackage.COORDINATES_X_FEATURE_ID:
         return getTarget().getX();
       case ModelModelPackage.COORDINATES_Y_FEATURE_ID:

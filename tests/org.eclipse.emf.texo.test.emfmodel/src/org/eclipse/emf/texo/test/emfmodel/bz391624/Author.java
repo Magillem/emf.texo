@@ -2,7 +2,7 @@
  */
 package org.eclipse.emf.texo.test.emfmodel.bz391624;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Author extends EObject {
+public interface Author extends NotIdentifiable {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

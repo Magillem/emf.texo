@@ -166,6 +166,10 @@ public class SocietyModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SocietyModelPackage.SOCIETY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SocietyModelPackage.SOCIETY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SocietyModelPackage.SOCIETY_NAME_FEATURE_ID:
         return getTarget().getName();
       default:

@@ -92,7 +92,7 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
     public Object eGet(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature) {
         final int featureID = eClass().getFeatureID(eStructuralFeature);
         switch (featureID) {
-        «FOR featureAnnotation : eClassModelGenAnnotation.EStructuralFeatureModelGenAnnotations»
+        «FOR featureAnnotation : eClassModelGenAnnotation.EAllStructuralFeatureModelGenAnnotations»
         	«IF featureAnnotation.generateCode»
             case «ePackageAnnotation.qualifiedClassName».«TemplateUtil::toUpperCase(eClassModelGenAnnotation.name)»_«TemplateUtil::toUpperCase(featureAnnotation.name)»_FEATURE_ID:
                 return getTarget().«featureAnnotation.getter»();

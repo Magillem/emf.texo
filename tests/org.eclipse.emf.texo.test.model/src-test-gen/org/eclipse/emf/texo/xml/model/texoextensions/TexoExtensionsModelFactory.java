@@ -178,6 +178,10 @@ public class TexoExtensionsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case TexoExtensionsModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case TexoExtensionsModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case TexoExtensionsModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case TexoExtensionsModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:

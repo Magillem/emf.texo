@@ -80,6 +80,20 @@ public class PlayModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ACTTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ACTTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ACTTYPE_SCENE_FEATURE_ID = 2;
 
   /**
@@ -102,6 +116,20 @@ public class PlayModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SCENETYPE_CLASSIFIER_ID = 6;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENETYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SCENETYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -144,6 +172,20 @@ public class PlayModelPackage extends ModelPackage {
    * @generated
    */
   public static final int DOCUMENTROOT_CLASSIFIER_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -290,6 +332,20 @@ public class PlayModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int FMTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int FMTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int FMTYPE_P_FEATURE_ID = 2;
 
   /**
@@ -298,6 +354,20 @@ public class PlayModelPackage extends ModelPackage {
    * @generated
    */
   public static final int PERSONAETYPE_CLASSIFIER_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PERSONAETYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PERSONAETYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -339,6 +409,20 @@ public class PlayModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int PERSONAGROUPTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PERSONAGROUPTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int PERSONAGROUPTYPE_PERSONA_FEATURE_ID = 2;
 
   /**
@@ -354,6 +438,20 @@ public class PlayModelPackage extends ModelPackage {
    * @generated
    */
   public static final int PLAYTYPE_CLASSIFIER_ID = 5;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PLAYTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PLAYTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -403,6 +501,20 @@ public class PlayModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SPEECHTYPE_CLASSIFIER_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SPEECHTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SPEECHTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

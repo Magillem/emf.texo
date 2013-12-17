@@ -294,6 +294,10 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SchemaprimerpoModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SchemaprimerpoModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SchemaprimerpoModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case SchemaprimerpoModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -405,6 +409,10 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SchemaprimerpoModelPackage.PURCHASEORDER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SchemaprimerpoModelPackage.PURCHASEORDER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SchemaprimerpoModelPackage.PURCHASEORDER_SHIPTO_FEATURE_ID:
         return getTarget().getShipTo();
       case SchemaprimerpoModelPackage.PURCHASEORDER_BILLTO_FEATURE_ID:
@@ -515,6 +523,10 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SchemaprimerpoModelPackage.ITEM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SchemaprimerpoModelPackage.ITEM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SchemaprimerpoModelPackage.ITEM_PRODUCTNAME_FEATURE_ID:
         return getTarget().getProductName();
       case SchemaprimerpoModelPackage.ITEM_QUANTITY_FEATURE_ID:
@@ -624,6 +636,10 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SchemaprimerpoModelPackage.USADDRESS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SchemaprimerpoModelPackage.USADDRESS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SchemaprimerpoModelPackage.USADDRESS_NAME_FEATURE_ID:
         return getTarget().getName();
       case SchemaprimerpoModelPackage.USADDRESS_STREET_FEATURE_ID:

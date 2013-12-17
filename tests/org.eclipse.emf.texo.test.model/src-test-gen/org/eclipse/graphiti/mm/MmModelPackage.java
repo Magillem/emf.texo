@@ -63,6 +63,20 @@ public class MmModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int PROPERTY_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PROPERTY_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int PROPERTY_KEY_FEATURE_ID = 2;
 
   /**
@@ -84,6 +98,20 @@ public class MmModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int PROPERTYCONTAINER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PROPERTYCONTAINER_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int PROPERTYCONTAINER_PROPERTIES_FEATURE_ID = 2;
 
   /**
@@ -98,7 +126,42 @@ public class MmModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int GRAPHICSALGORITHMCONTAINER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GRAPHICSALGORITHMCONTAINER_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GRAPHICSALGORITHMCONTAINER_PROPERTIES_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int STYLECONTAINER_CLASSIFIER_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int STYLECONTAINER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int STYLECONTAINER_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

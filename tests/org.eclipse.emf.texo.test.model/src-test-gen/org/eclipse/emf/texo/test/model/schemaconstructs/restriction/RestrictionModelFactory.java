@@ -184,6 +184,20 @@ public class RestrictionModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case RestrictionModelPackage.MEMBER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case RestrictionModelPackage.MEMBER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case RestrictionModelPackage.MEMBER_NUMPOSTS_FEATURE_ID:
+        return getTarget().getNumPosts();
+      case RestrictionModelPackage.MEMBER_SIGNATURE_FEATURE_ID:
+        return getTarget().getSignature();
+      case RestrictionModelPackage.MEMBER_EMAIL_FEATURE_ID:
+        return getTarget().getEmail();
+      case RestrictionModelPackage.MEMBER_FIRSTSUBSCRIBED_FEATURE_ID:
+        return getTarget().getFirstSubscribed();
+      case RestrictionModelPackage.MEMBER_MAILREADER_FEATURE_ID:
+        return getTarget().getMailReader();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -261,6 +275,10 @@ public class RestrictionModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case RestrictionModelPackage.XMLDEVIANT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case RestrictionModelPackage.XMLDEVIANT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case RestrictionModelPackage.XMLDEVIANT_NUMPOSTS_FEATURE_ID:
         return getTarget().getNumPosts();
       case RestrictionModelPackage.XMLDEVIANT_SIGNATURE_FEATURE_ID:

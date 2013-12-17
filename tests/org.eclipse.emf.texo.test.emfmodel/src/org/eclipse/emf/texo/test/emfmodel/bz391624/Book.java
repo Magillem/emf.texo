@@ -3,7 +3,6 @@
 package org.eclipse.emf.texo.test.emfmodel.bz391624;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.texo.test.emfmodel.identifiable.Identifiable;
 
 /**

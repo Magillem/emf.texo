@@ -169,6 +169,10 @@ public class CompetitionModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case CompetitionModelPackage.COMPETITION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case CompetitionModelPackage.COMPETITION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case CompetitionModelPackage.COMPETITION_NAME_FEATURE_ID:
         return getTarget().getName();
       case CompetitionModelPackage.COMPETITION_TEAMS_FEATURE_ID:

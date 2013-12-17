@@ -617,6 +617,26 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.PLATFORMMODEL_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.PLATFORMMODEL_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.PLATFORMMODEL_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.PLATFORMMODEL_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.PLATFORMMODEL_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.PLATFORMMODEL_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.PLATFORMMODEL_AUDIT_FEATURE_ID:
+        return getTarget().getAudit();
+      case PlatformModelPackage.PLATFORMMODEL_EXTENSION_FEATURE_ID:
+        return getTarget().getExtension();
+      case PlatformModelPackage.PLATFORMMODEL_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.PLATFORMMODEL_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
       case PlatformModelPackage.PLATFORMMODEL_PLATFORMELEMENT_FEATURE_ID:
         return getTarget().getPlatformElement();
       default:
@@ -706,6 +726,40 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_SOURCE_FEATURE_ID:
         return getTarget().getSource();
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_PLATFORMRELATION_FEATURE_ID:
@@ -828,6 +882,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.ABSTRACTPLATFORMRELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.ABSTRACTPLATFORMRELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.ABSTRACTPLATFORMRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.ABSTRACTPLATFORMRELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.ABSTRACTPLATFORMRELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.ABSTRACTPLATFORMRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -905,6 +971,48 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.RESOURCETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.RESOURCETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.RESOURCETYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.RESOURCETYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.RESOURCETYPE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.RESOURCETYPE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.RESOURCETYPE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.RESOURCETYPE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.RESOURCETYPE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.RESOURCETYPE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.RESOURCETYPE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.RESOURCETYPE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.RESOURCETYPE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.RESOURCETYPE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.RESOURCETYPE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.RESOURCETYPE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.RESOURCETYPE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.RESOURCETYPE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.RESOURCETYPE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.RESOURCETYPE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.RESOURCETYPE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case PlatformModelPackage.RESOURCETYPE_PLATFORMELEMENT_FEATURE_ID:
         return getTarget().getPlatformElement();
       default:
@@ -993,6 +1101,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.NAMINGRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.NAMINGRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.NAMINGRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.NAMINGRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.NAMINGRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.NAMINGRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.NAMINGRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.NAMINGRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.NAMINGRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.NAMINGRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.NAMINGRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.NAMINGRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.NAMINGRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.NAMINGRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.NAMINGRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.NAMINGRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.NAMINGRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.NAMINGRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.NAMINGRESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.NAMINGRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.NAMINGRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.NAMINGRESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1070,6 +1222,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.MARSHALLEDRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.MARSHALLEDRESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1147,6 +1343,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.MESSAGINGRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.MESSAGINGRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.MESSAGINGRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.MESSAGINGRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.MESSAGINGRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.MESSAGINGRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.MESSAGINGRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.MESSAGINGRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.MESSAGINGRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.MESSAGINGRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.MESSAGINGRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.MESSAGINGRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.MESSAGINGRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.MESSAGINGRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.MESSAGINGRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.MESSAGINGRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.MESSAGINGRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.MESSAGINGRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.MESSAGINGRESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.MESSAGINGRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.MESSAGINGRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.MESSAGINGRESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1224,6 +1464,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.FILERESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.FILERESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.FILERESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.FILERESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.FILERESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.FILERESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.FILERESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.FILERESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.FILERESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.FILERESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.FILERESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.FILERESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.FILERESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.FILERESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.FILERESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.FILERESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.FILERESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.FILERESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.FILERESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.FILERESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.FILERESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.FILERESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1301,6 +1585,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.EXECUTIONRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.EXECUTIONRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.EXECUTIONRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.EXECUTIONRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.EXECUTIONRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.EXECUTIONRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.EXECUTIONRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.EXECUTIONRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.EXECUTIONRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.EXECUTIONRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.EXECUTIONRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.EXECUTIONRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.EXECUTIONRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.EXECUTIONRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.EXECUTIONRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.EXECUTIONRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.EXECUTIONRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.EXECUTIONRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.EXECUTIONRESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.EXECUTIONRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.EXECUTIONRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.EXECUTIONRESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1378,6 +1706,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.LOCKRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.LOCKRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.LOCKRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.LOCKRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.LOCKRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.LOCKRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.LOCKRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.LOCKRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.LOCKRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.LOCKRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.LOCKRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.LOCKRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.LOCKRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.LOCKRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.LOCKRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.LOCKRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.LOCKRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.LOCKRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.LOCKRESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.LOCKRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.LOCKRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.LOCKRESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1455,6 +1827,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.STREAMRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.STREAMRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.STREAMRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.STREAMRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.STREAMRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.STREAMRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.STREAMRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.STREAMRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.STREAMRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.STREAMRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.STREAMRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.STREAMRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.STREAMRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.STREAMRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.STREAMRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.STREAMRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.STREAMRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.STREAMRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.STREAMRESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.STREAMRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.STREAMRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.STREAMRESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1532,6 +1948,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.DATAMANAGER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.DATAMANAGER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.DATAMANAGER_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.DATAMANAGER_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.DATAMANAGER_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.DATAMANAGER_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.DATAMANAGER_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.DATAMANAGER_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.DATAMANAGER_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.DATAMANAGER_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.DATAMANAGER_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.DATAMANAGER_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.DATAMANAGER_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.DATAMANAGER_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.DATAMANAGER_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.DATAMANAGER_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.DATAMANAGER_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.DATAMANAGER_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.DATAMANAGER_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.DATAMANAGER_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.DATAMANAGER_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.DATAMANAGER_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1609,6 +2069,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.PLATFORMEVENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.PLATFORMEVENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.PLATFORMEVENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.PLATFORMEVENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.PLATFORMEVENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.PLATFORMEVENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.PLATFORMEVENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.PLATFORMEVENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.PLATFORMEVENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.PLATFORMEVENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.PLATFORMEVENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.PLATFORMEVENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.PLATFORMEVENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.PLATFORMEVENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.PLATFORMEVENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.PLATFORMEVENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.PLATFORMEVENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.PLATFORMEVENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.PLATFORMEVENT_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.PLATFORMEVENT_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.PLATFORMEVENT_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.PLATFORMEVENT_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       case PlatformModelPackage.PLATFORMEVENT_KIND_FEATURE_ID:
         return getTarget().getKind();
       default:
@@ -1693,6 +2197,48 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.PLATFORMACTION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.PLATFORMACTION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.PLATFORMACTION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.PLATFORMACTION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.PLATFORMACTION_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.PLATFORMACTION_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.PLATFORMACTION_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.PLATFORMACTION_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.PLATFORMACTION_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.PLATFORMACTION_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.PLATFORMACTION_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.PLATFORMACTION_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.PLATFORMACTION_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.PLATFORMACTION_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.PLATFORMACTION_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.PLATFORMACTION_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.PLATFORMACTION_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.PLATFORMACTION_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.PLATFORMACTION_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.PLATFORMACTION_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.PLATFORMACTION_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case PlatformModelPackage.PLATFORMACTION_KIND_FEATURE_ID:
         return getTarget().getKind();
       case PlatformModelPackage.PLATFORMACTION_PLATFORMELEMENT_FEATURE_ID:
@@ -1786,6 +2332,52 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.EXTERNALACTOR_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.EXTERNALACTOR_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.EXTERNALACTOR_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.EXTERNALACTOR_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.EXTERNALACTOR_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.EXTERNALACTOR_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.EXTERNALACTOR_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.EXTERNALACTOR_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.EXTERNALACTOR_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.EXTERNALACTOR_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.EXTERNALACTOR_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.EXTERNALACTOR_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.EXTERNALACTOR_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.EXTERNALACTOR_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.EXTERNALACTOR_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.EXTERNALACTOR_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.EXTERNALACTOR_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.EXTERNALACTOR_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.EXTERNALACTOR_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.EXTERNALACTOR_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.EXTERNALACTOR_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.EXTERNALACTOR_KIND_FEATURE_ID:
+        return getTarget().getKind();
+      case PlatformModelPackage.EXTERNALACTOR_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -1863,6 +2455,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.BINDSTO_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.BINDSTO_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.BINDSTO_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.BINDSTO_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.BINDSTO_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.BINDSTO_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.BINDSTO_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.BINDSTO_FROM_FEATURE_ID:
@@ -1952,6 +2556,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.REQUIRES_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.REQUIRES_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.REQUIRES_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.REQUIRES_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.REQUIRES_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.REQUIRES_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.REQUIRES_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.REQUIRES_FROM_FEATURE_ID:
@@ -2042,6 +2658,48 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.DEPLOYEDCOMPONENT_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case PlatformModelPackage.DEPLOYEDCOMPONENT_GROUPEDCODE_FEATURE_ID:
         return getTarget().getGroupedCode();
       default:
@@ -2131,6 +2789,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.MANAGESRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.MANAGESRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.MANAGESRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.MANAGESRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.MANAGESRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.MANAGESRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.MANAGESRESOURCE_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.MANAGESRESOURCE_FROM_FEATURE_ID:
@@ -2221,6 +2891,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.READSRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.READSRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.READSRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.READSRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.READSRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.READSRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.READSRESOURCE_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.READSRESOURCE_FROM_FEATURE_ID:
@@ -2311,6 +2993,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.WRITESRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.WRITESRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.WRITESRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.WRITESRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.WRITESRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.WRITESRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.WRITESRESOURCE_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.WRITESRESOURCE_FROM_FEATURE_ID:
@@ -2401,6 +3095,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.DEFINEDBY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.DEFINEDBY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.DEFINEDBY_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.DEFINEDBY_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.DEFINEDBY_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.DEFINEDBY_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.DEFINEDBY_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.DEFINEDBY_FROM_FEATURE_ID:
@@ -2491,6 +3197,48 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_GROUPEDCOMPONENT_FEATURE_ID:
         return getTarget().getGroupedComponent();
       default:
@@ -2579,6 +3327,48 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.MACHINE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.MACHINE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.MACHINE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.MACHINE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.MACHINE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.MACHINE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.MACHINE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.MACHINE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.MACHINE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.MACHINE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.MACHINE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.MACHINE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.MACHINE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.MACHINE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.MACHINE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.MACHINE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.MACHINE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.MACHINE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.MACHINE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.MACHINE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.MACHINE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case PlatformModelPackage.MACHINE_DEPLOYEDCOMPONENT_FEATURE_ID:
         return getTarget().getDeployedComponent();
       case PlatformModelPackage.MACHINE_DEPLOYEDRESOURCE_FEATURE_ID:
@@ -2679,6 +3469,48 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.DEPLOYEDRESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.DEPLOYEDRESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       case PlatformModelPackage.DEPLOYEDRESOURCE_PLATFORMELEMENT_FEATURE_ID:
         return getTarget().getPlatformElement();
       default:
@@ -2767,6 +3599,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.RUNTIMERESOURCE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.RUNTIMERESOURCE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.RUNTIMERESOURCE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.RUNTIMERESOURCE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.RUNTIMERESOURCE_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.RUNTIMERESOURCE_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.RUNTIMERESOURCE_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.RUNTIMERESOURCE_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.RUNTIMERESOURCE_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.RUNTIMERESOURCE_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.RUNTIMERESOURCE_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.RUNTIMERESOURCE_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.RUNTIMERESOURCE_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.RUNTIMERESOURCE_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.RUNTIMERESOURCE_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.RUNTIMERESOURCE_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.RUNTIMERESOURCE_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.RUNTIMERESOURCE_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.RUNTIMERESOURCE_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.RUNTIMERESOURCE_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.RUNTIMERESOURCE_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.RUNTIMERESOURCE_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2844,6 +3720,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.PROCESS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.PROCESS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.PROCESS_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.PROCESS_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.PROCESS_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.PROCESS_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.PROCESS_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.PROCESS_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.PROCESS_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.PROCESS_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.PROCESS_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.PROCESS_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.PROCESS_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.PROCESS_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.PROCESS_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.PROCESS_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.PROCESS_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.PROCESS_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.PROCESS_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.PROCESS_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.PROCESS_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.PROCESS_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2921,6 +3841,50 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.THREAD_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.THREAD_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.THREAD_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.THREAD_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.THREAD_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.THREAD_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.THREAD_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.THREAD_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.THREAD_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.THREAD_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.THREAD_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.THREAD_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.THREAD_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.THREAD_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.THREAD_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.THREAD_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.THREAD_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.THREAD_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.THREAD_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.THREAD_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.THREAD_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
+      case PlatformModelPackage.THREAD_PLATFORMELEMENT_FEATURE_ID:
+        return getTarget().getPlatformElement();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -2998,6 +3962,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.LOADS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.LOADS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.LOADS_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.LOADS_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.LOADS_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.LOADS_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.LOADS_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.LOADS_FROM_FEATURE_ID:
@@ -3087,6 +4063,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.SPAWNS_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.SPAWNS_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.SPAWNS_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.SPAWNS_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.SPAWNS_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.SPAWNS_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.SPAWNS_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.SPAWNS_FROM_FEATURE_ID:
@@ -3177,6 +4165,48 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.PLATFORMELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.PLATFORMELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.PLATFORMELEMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.PLATFORMELEMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.PLATFORMELEMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.PLATFORMELEMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case PlatformModelPackage.PLATFORMELEMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
+      case PlatformModelPackage.PLATFORMELEMENT_MODEL_FEATURE_ID:
+        return getTarget().getModel();
+      case PlatformModelPackage.PLATFORMELEMENT_OWNER_FEATURE_ID:
+        return getTarget().getOwner();
+      case PlatformModelPackage.PLATFORMELEMENT_OWNEDELEMENT_FEATURE_ID:
+        return getTarget().getOwnedElement();
+      case PlatformModelPackage.PLATFORMELEMENT_OUTBOUND_FEATURE_ID:
+        return getTarget().getOutbound();
+      case PlatformModelPackage.PLATFORMELEMENT_INBOUND_FEATURE_ID:
+        return getTarget().getInbound();
+      case PlatformModelPackage.PLATFORMELEMENT_OWNEDRELATION_FEATURE_ID:
+        return getTarget().getOwnedRelation();
+      case PlatformModelPackage.PLATFORMELEMENT_GROUP_FEATURE_ID:
+        return getTarget().getGroup();
+      case PlatformModelPackage.PLATFORMELEMENT_GROUPEDELEMENT_FEATURE_ID:
+        return getTarget().getGroupedElement();
+      case PlatformModelPackage.PLATFORMELEMENT_INAGGREGATED_FEATURE_ID:
+        return getTarget().getInAggregated();
+      case PlatformModelPackage.PLATFORMELEMENT_OUTAGGREGATED_FEATURE_ID:
+        return getTarget().getOutAggregated();
+      case PlatformModelPackage.PLATFORMELEMENT_SOURCE_FEATURE_ID:
+        return getTarget().getSource();
+      case PlatformModelPackage.PLATFORMELEMENT_PLATFORMRELATION_FEATURE_ID:
+        return getTarget().getPlatformRelation();
+      case PlatformModelPackage.PLATFORMELEMENT_ABSTRACTION_FEATURE_ID:
+        return getTarget().getAbstraction();
+      case PlatformModelPackage.PLATFORMELEMENT_IMPLEMENTATION_FEATURE_ID:
+        return getTarget().getImplementation();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -3255,6 +4285,18 @@ public class PlatformModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case PlatformModelPackage.PLATFORMRELATIONSHIP_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case PlatformModelPackage.PLATFORMRELATIONSHIP_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case PlatformModelPackage.PLATFORMRELATIONSHIP_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case PlatformModelPackage.PLATFORMRELATIONSHIP_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case PlatformModelPackage.PLATFORMRELATIONSHIP_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case PlatformModelPackage.PLATFORMRELATIONSHIP_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case PlatformModelPackage.PLATFORMRELATIONSHIP_TO_FEATURE_ID:
         return getTarget().getTo();
       case PlatformModelPackage.PLATFORMRELATIONSHIP_FROM_FEATURE_ID:

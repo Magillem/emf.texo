@@ -5,12 +5,12 @@ package org.eclipse.emf.texo.test.emfmodel.bz391624.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
-import org.eclipse.emf.texo.test.emfmodel.bz391624.*;
+import org.eclipse.emf.texo.test.emfmodel.bz391624.Author;
+import org.eclipse.emf.texo.test.emfmodel.bz391624.Book;
+import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Factory;
+import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Package;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ public class Bz391624FactoryImpl extends EFactoryImpl implements Bz391624Factory
 	 */
 	public static Bz391624Factory init() {
 		try {
-			Bz391624Factory theBz391624Factory = (Bz391624Factory)EPackage.Registry.INSTANCE.getEFactory("http://www.eclipse.org/emf/texo/test/model/issues/bz391624"); 
+			Bz391624Factory theBz391624Factory = (Bz391624Factory)EPackage.Registry.INSTANCE.getEFactory(Bz391624Package.eNS_URI);
 			if (theBz391624Factory != null) {
 				return theBz391624Factory;
 			}

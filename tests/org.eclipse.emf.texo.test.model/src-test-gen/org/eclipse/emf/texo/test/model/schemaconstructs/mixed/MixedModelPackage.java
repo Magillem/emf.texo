@@ -59,6 +59,20 @@ public class MixedModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int DOCUMENTROOT_MIXED_FEATURE_ID = 2;
 
   /**
@@ -88,6 +102,20 @@ public class MixedModelPackage extends ModelPackage {
    * @generated
    */
   public static final int LETTERBODYTYPE_CLASSIFIER_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int LETTERBODYTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int LETTERBODYTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -130,6 +158,20 @@ public class MixedModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SALUTATIONTYPE_CLASSIFIER_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SALUTATIONTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SALUTATIONTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

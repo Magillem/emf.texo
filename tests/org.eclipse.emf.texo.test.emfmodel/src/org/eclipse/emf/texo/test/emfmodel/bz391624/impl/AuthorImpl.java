@@ -3,14 +3,11 @@
 package org.eclipse.emf.texo.test.emfmodel.bz391624.impl;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Author;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Package;
+import org.eclipse.emf.texo.test.emfmodel.identifiable.impl.NotIdentifiableImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +22,7 @@ import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Package;
  *
  * @generated
  */
-public class AuthorImpl extends EObjectImpl implements Author {
+public class AuthorImpl extends NotIdentifiableImpl implements Author {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->

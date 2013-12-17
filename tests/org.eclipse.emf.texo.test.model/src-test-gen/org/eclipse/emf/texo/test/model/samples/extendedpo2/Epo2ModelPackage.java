@@ -88,6 +88,20 @@ public class Epo2ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ITEM_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ITEM_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ITEM_ORDER_FEATURE_ID = 2;
 
   /**
@@ -138,6 +152,20 @@ public class Epo2ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int PURCHASEORDER_CLASSIFIER_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PURCHASEORDER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PURCHASEORDER_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -214,6 +242,34 @@ public class Epo2ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int USADDRESS_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int USADDRESS_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int USADDRESS_NAME_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int USADDRESS_COUNTRY_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int USADDRESS_STREET_FEATURE_ID = 4;
 
   /**
@@ -249,6 +305,20 @@ public class Epo2ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ADDRESS_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ADDRESS_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ADDRESS_NAME_FEATURE_ID = 2;
 
   /**
@@ -270,6 +340,20 @@ public class Epo2ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int CUSTOMER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CUSTOMER_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int CUSTOMER_CUSTOMERID_FEATURE_ID = 2;
 
   /**
@@ -285,6 +369,20 @@ public class Epo2ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SUPPLIER_CLASSIFIER_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SUPPLIER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SUPPLIER_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -333,6 +431,34 @@ public class Epo2ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int GLOBALADDRESS_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GLOBALADDRESS_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GLOBALADDRESS_NAME_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GLOBALADDRESS_COUNTRY_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int GLOBALADDRESS_LOCATION_FEATURE_ID = 5;
 
   /**
@@ -348,6 +474,20 @@ public class Epo2ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int GLOBALLOCATION_CLASSIFIER_ID = 7;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GLOBALLOCATION_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int GLOBALLOCATION_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

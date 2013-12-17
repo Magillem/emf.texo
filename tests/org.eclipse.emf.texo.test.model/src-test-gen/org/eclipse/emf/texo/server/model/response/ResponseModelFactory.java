@@ -223,6 +223,10 @@ public class ResponseModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ResponseModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ResponseModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ResponseModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case ResponseModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -339,6 +343,10 @@ public class ResponseModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ResponseModelPackage.ERRORTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ResponseModelPackage.ERRORTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ResponseModelPackage.ERRORTYPE_ERRORCLASS_FEATURE_ID:
         return getTarget().getErrorClass();
       case ResponseModelPackage.ERRORTYPE_MESSAGE_FEATURE_ID:
@@ -438,6 +446,10 @@ public class ResponseModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ResponseModelPackage.RESPONSETYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ResponseModelPackage.RESPONSETYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ResponseModelPackage.RESPONSETYPE_STATUS_FEATURE_ID:
         return getTarget().getStatus();
       case ResponseModelPackage.RESPONSETYPE_STARTROW_FEATURE_ID:
@@ -547,6 +559,10 @@ public class ResponseModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ResponseModelPackage.RESULTTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ResponseModelPackage.RESULTTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ResponseModelPackage.RESULTTYPE_UPDATED_FEATURE_ID:
         return getTarget().getUpdated();
       case ResponseModelPackage.RESULTTYPE_INSERTED_FEATURE_ID:

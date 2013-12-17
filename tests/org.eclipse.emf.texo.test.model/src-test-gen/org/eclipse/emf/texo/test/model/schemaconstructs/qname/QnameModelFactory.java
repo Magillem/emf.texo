@@ -194,6 +194,10 @@ public class QnameModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case QnameModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case QnameModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case QnameModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case QnameModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -299,6 +303,10 @@ public class QnameModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case QnameModelPackage.MYTEST_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case QnameModelPackage.MYTEST_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case QnameModelPackage.MYTEST_DESCRIPTION_FEATURE_ID:
         return getTarget().getDescription();
       case QnameModelPackage.MYTEST_NAME_FEATURE_ID:

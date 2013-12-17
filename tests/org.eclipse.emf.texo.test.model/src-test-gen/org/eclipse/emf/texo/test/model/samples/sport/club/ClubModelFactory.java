@@ -232,6 +232,12 @@ public class ClubModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ClubModelPackage.CLUB_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ClubModelPackage.CLUB_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case ClubModelPackage.CLUB_NAME_FEATURE_ID:
+        return getTarget().getName();
       case ClubModelPackage.CLUB_TEAMS_FEATURE_ID:
         return getTarget().getTeams();
       default:
@@ -320,6 +326,10 @@ public class ClubModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ClubModelPackage.TEAM_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ClubModelPackage.TEAM_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ClubModelPackage.TEAM_NAME_FEATURE_ID:
         return getTarget().getName();
       case ClubModelPackage.TEAM_MEMBERS_FEATURE_ID:
@@ -413,6 +423,10 @@ public class ClubModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case ClubModelPackage.MEMBER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ClubModelPackage.MEMBER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ClubModelPackage.MEMBER_NAME_FEATURE_ID:
         return getTarget().getName();
       case ClubModelPackage.MEMBER_LASTNAME_FEATURE_ID:

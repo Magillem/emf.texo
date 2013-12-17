@@ -72,6 +72,20 @@ public class LibraryModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int BOOK_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int BOOK_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int BOOK_TITLE_FEATURE_ID = 2;
 
   /**
@@ -107,6 +121,20 @@ public class LibraryModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int LIBRARY_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int LIBRARY_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int LIBRARY_NAME_FEATURE_ID = 2;
 
   /**
@@ -129,6 +157,20 @@ public class LibraryModelPackage extends ModelPackage {
    * @generated
    */
   public static final int WRITER_CLASSIFIER_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int WRITER_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int WRITER_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

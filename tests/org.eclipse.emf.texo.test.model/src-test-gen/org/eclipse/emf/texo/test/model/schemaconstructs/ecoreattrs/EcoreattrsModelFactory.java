@@ -238,6 +238,10 @@ public class EcoreattrsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EcoreattrsModelPackage.ELEMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EcoreattrsModelPackage.ELEMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case EcoreattrsModelPackage.ELEMENT_NAMEMAP_FEATURE_ID:
         return getTarget().getNameMap();
       case EcoreattrsModelPackage.ELEMENT_NAMES_FEATURE_ID:
@@ -334,6 +338,10 @@ public class EcoreattrsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EcoreattrsModelPackage.NAMELIST_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EcoreattrsModelPackage.NAMELIST_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case EcoreattrsModelPackage.NAMELIST_FIRSTNAME_FEATURE_ID:
         return getTarget().getFirstName();
       case EcoreattrsModelPackage.NAMELIST_MIDDLENAME_FEATURE_ID:
@@ -427,6 +435,10 @@ public class EcoreattrsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EcoreattrsModelPackage.FEATURE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EcoreattrsModelPackage.FEATURE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case EcoreattrsModelPackage.FEATURE_AMAP_FEATURE_ID:
         return getTarget().getAMap();
       case EcoreattrsModelPackage.FEATURE_NAME_FEATURE_ID:
@@ -527,6 +539,10 @@ public class EcoreattrsModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case EcoreattrsModelPackage.MIXED_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case EcoreattrsModelPackage.MIXED_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case EcoreattrsModelPackage.MIXED_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case EcoreattrsModelPackage.MIXED_NAME_FEATURE_ID:

@@ -58,6 +58,20 @@ public class IncludeModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int INCLUDE1_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int INCLUDE1_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int INCLUDE1_CODE_FEATURE_ID = 2;
 
   /**
@@ -73,6 +87,20 @@ public class IncludeModelPackage extends ModelPackage {
    * @generated
    */
   public static final int INCLUDE2_CLASSIFIER_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int INCLUDE2_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int INCLUDE2_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

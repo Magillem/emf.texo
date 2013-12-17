@@ -393,6 +393,10 @@ public class SunBooksModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SunBooksModelPackage.AUTHORSTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SunBooksModelPackage.AUTHORSTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SunBooksModelPackage.AUTHORSTYPE_AUTHORNAME_FEATURE_ID:
         return getTarget().getAuthorName();
       default:
@@ -482,6 +486,10 @@ public class SunBooksModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SunBooksModelPackage.BOOKSTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SunBooksModelPackage.BOOKSTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SunBooksModelPackage.BOOKSTYPE_BOOK_FEATURE_ID:
         return getTarget().getBook();
       default:
@@ -571,6 +579,10 @@ public class SunBooksModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SunBooksModelPackage.BOOKTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SunBooksModelPackage.BOOKTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SunBooksModelPackage.BOOKTYPE_NAME_FEATURE_ID:
         return getTarget().getName();
       case SunBooksModelPackage.BOOKTYPE_ISBN_FEATURE_ID:
@@ -695,6 +707,10 @@ public class SunBooksModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SunBooksModelPackage.PROMOTIONTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SunBooksModelPackage.PROMOTIONTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SunBooksModelPackage.PROMOTIONTYPE_DISCOUNT_FEATURE_ID:
         return getTarget().getDiscount();
       case SunBooksModelPackage.PROMOTIONTYPE_NONE_FEATURE_ID:
@@ -784,6 +800,10 @@ public class SunBooksModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SunBooksModelPackage.COLLECTIONTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SunBooksModelPackage.COLLECTIONTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SunBooksModelPackage.COLLECTIONTYPE_BOOKS_FEATURE_ID:
         return getTarget().getBooks();
       default:
@@ -868,6 +888,10 @@ public class SunBooksModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case SunBooksModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SunBooksModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SunBooksModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case SunBooksModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:

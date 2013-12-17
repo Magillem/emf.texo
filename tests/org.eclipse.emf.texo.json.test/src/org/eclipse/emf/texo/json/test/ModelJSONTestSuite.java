@@ -42,7 +42,7 @@ public class ModelJSONTestSuite {
     // modelPackages.add(SocietyModelPackage.INSTANCE);
     // modelPackages.add(ClubModelPackage.INSTANCE);
     // modelPackages.add(CompetitionModelPackage.INSTANCE);
-    // modelPackages.add(Bz403161_2ModelPackage.INSTANCE);
+    // modelPackages.add(Bz391624ModelPackage.INSTANCE);
     // modelPackages.add(TypesModelPackage.INSTANCE);
 
     // anytype is not supported, result in Object as item/target entity

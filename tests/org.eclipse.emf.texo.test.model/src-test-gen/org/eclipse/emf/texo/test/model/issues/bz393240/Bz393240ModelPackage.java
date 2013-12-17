@@ -58,6 +58,20 @@ public class Bz393240ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int APPLICATION_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int APPLICATION_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int APPLICATION_NAME_FEATURE_ID = 2;
 
   /**
@@ -66,6 +80,20 @@ public class Bz393240ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int DOCUMENTROOT_CLASSIFIER_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

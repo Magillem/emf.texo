@@ -6,7 +6,6 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiablePackage;
 
 /**
@@ -120,7 +119,7 @@ public interface Bz391624Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTHOR__NAME = 0;
+	int AUTHOR__NAME = IdentifiablePackage.NOT_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Author</em>' class.
@@ -129,7 +128,7 @@ public interface Bz391624Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTHOR_FEATURE_COUNT = 1;
+	int AUTHOR_FEATURE_COUNT = IdentifiablePackage.NOT_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 
 	/**

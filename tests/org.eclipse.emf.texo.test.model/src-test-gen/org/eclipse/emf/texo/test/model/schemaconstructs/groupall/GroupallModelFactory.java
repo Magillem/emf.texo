@@ -277,6 +277,10 @@ public class GroupallModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case GroupallModelPackage.ADDRESSGROUPTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case GroupallModelPackage.ADDRESSGROUPTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case GroupallModelPackage.ADDRESSGROUPTYPE_GROUPNAME_FEATURE_ID:
         return getTarget().getGroupName();
       case GroupallModelPackage.ADDRESSGROUPTYPE_SHIPTO_FEATURE_ID:
@@ -376,6 +380,10 @@ public class GroupallModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case GroupallModelPackage.ADDRESSTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case GroupallModelPackage.ADDRESSTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case GroupallModelPackage.ADDRESSTYPE_GROUP_FEATURE_ID:
         return getTarget().getGroup();
       case GroupallModelPackage.ADDRESSTYPE_NAME_FEATURE_ID:
@@ -487,6 +495,10 @@ public class GroupallModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case GroupallModelPackage.ADDRESSLIST_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case GroupallModelPackage.ADDRESSLIST_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case GroupallModelPackage.ADDRESSLIST_GROUPNAME_FEATURE_ID:
         return getTarget().getGroupName();
       case GroupallModelPackage.ADDRESSLIST_ADDRS_FEATURE_ID:
@@ -603,6 +615,10 @@ public class GroupallModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case GroupallModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case GroupallModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case GroupallModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case GroupallModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -724,6 +740,10 @@ public class GroupallModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case GroupallModelPackage.SIMPLEALLTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case GroupallModelPackage.SIMPLEALLTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case GroupallModelPackage.SIMPLEALLTYPE_AAA_FEATURE_ID:
         return getTarget().getAaa();
       case GroupallModelPackage.SIMPLEALLTYPE_BBB_FEATURE_ID:
@@ -817,6 +837,10 @@ public class GroupallModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case GroupallModelPackage.SIMPLEALLMAPTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case GroupallModelPackage.SIMPLEALLMAPTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case GroupallModelPackage.SIMPLEALLMAPTYPE_ALLMAP_FEATURE_ID:
         return getTarget().getAllMap();
       case GroupallModelPackage.SIMPLEALLMAPTYPE_AAA_FEATURE_ID:

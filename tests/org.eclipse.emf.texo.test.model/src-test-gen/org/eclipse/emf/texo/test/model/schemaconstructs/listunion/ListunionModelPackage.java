@@ -158,6 +158,20 @@ public class ListunionModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int STATESBYCOUNTRY_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int STATESBYCOUNTRY_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int STATESBYCOUNTRY_COUNTRY_FEATURE_ID = 2;
 
   /**

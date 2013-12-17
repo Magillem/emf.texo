@@ -167,6 +167,10 @@ public class MainModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case MainModelPackage.MAINTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case MainModelPackage.MAINTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case MainModelPackage.MAINTYPE_NAME_FEATURE_ID:
         return getTarget().getName();
       default:

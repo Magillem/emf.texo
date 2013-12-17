@@ -56,6 +56,20 @@ public class Bz404132ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int TEST404132_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int TEST404132_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int TEST404132_NAME_FEATURE_ID = 2;
 
   /**

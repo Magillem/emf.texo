@@ -6,14 +6,11 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Author;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Book;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Factory;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Package;
-
 import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiablePackage;
 
 /**
@@ -204,6 +201,7 @@ public class Bz391624PackageImpl extends EPackageImpl implements Bz391624Package
 
 		// Add supertypes to classes
 		bookEClass.getESuperTypes().add(theIdentifiablePackage.getIdentifiable());
+		authorEClass.getESuperTypes().add(theIdentifiablePackage.getNotIdentifiable());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(bookEClass, Book.class, "Book", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

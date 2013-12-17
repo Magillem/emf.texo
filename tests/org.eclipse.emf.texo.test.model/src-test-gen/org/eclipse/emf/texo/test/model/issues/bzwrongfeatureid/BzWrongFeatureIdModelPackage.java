@@ -58,6 +58,20 @@ public class BzWrongFeatureIdModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ABSTRACTCLASS_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ABSTRACTCLASS_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ABSTRACTCLASS_NAME_FEATURE_ID = 2;
 
   /**
@@ -80,6 +94,27 @@ public class BzWrongFeatureIdModelPackage extends ModelPackage {
    * @generated
    */
   public static final int CONCRETECLASS_CLASSIFIER_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCRETECLASS_DB_ID_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCRETECLASS_DB_VERSION_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CONCRETECLASS_NAME_FEATURE_ID = 3;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

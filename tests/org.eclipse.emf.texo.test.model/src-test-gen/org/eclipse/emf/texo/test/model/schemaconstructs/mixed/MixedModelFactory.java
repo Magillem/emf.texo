@@ -226,6 +226,10 @@ public class MixedModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case MixedModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case MixedModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case MixedModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case MixedModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -332,6 +336,10 @@ public class MixedModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case MixedModelPackage.LETTERBODYTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case MixedModelPackage.LETTERBODYTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case MixedModelPackage.LETTERBODYTYPE_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case MixedModelPackage.LETTERBODYTYPE_SALUTATION_FEATURE_ID:
@@ -443,6 +451,10 @@ public class MixedModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case MixedModelPackage.SALUTATIONTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case MixedModelPackage.SALUTATIONTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case MixedModelPackage.SALUTATIONTYPE_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case MixedModelPackage.SALUTATIONTYPE_NAME_FEATURE_ID:

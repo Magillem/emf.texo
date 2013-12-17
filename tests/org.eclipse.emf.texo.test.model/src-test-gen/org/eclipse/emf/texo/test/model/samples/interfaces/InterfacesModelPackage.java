@@ -60,6 +60,20 @@ public class InterfacesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int DESCRIBABLEIDENTIFIABLECONCRETE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DESCRIBABLEIDENTIFIABLECONCRETE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int DESCRIBABLEIDENTIFIABLECONCRETE_NAME_FEATURE_ID = 4;
 
   /**
@@ -116,6 +130,20 @@ public class InterfacesModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int DESCRIBABLECONCRETE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DESCRIBABLECONCRETE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int DESCRIBABLECONCRETE_NAME_FEATURE_ID = 3;
 
   /**
@@ -131,6 +159,20 @@ public class InterfacesModelPackage extends ModelPackage {
    * @generated
    */
   public static final int IDENTIFIABLECONCRETE_CLASSIFIER_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int IDENTIFIABLECONCRETE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int IDENTIFIABLECONCRETE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

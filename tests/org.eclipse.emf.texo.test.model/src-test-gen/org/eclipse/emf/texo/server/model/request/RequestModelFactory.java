@@ -238,6 +238,10 @@ public class RequestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case RequestModelPackage.ACTIONTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case RequestModelPackage.ACTIONTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case RequestModelPackage.ACTIONTYPE_UPDATE_FEATURE_ID:
         return getTarget().getUpdate();
       case RequestModelPackage.ACTIONTYPE_INSERT_FEATURE_ID:
@@ -349,6 +353,10 @@ public class RequestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case RequestModelPackage.DOCUMENTROOT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case RequestModelPackage.DOCUMENTROOT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case RequestModelPackage.DOCUMENTROOT_MIXED_FEATURE_ID:
         return getTarget().getMixed();
       case RequestModelPackage.DOCUMENTROOT_XMLNSPREFIXMAP_FEATURE_ID:
@@ -465,6 +473,10 @@ public class RequestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case RequestModelPackage.QUERYTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case RequestModelPackage.QUERYTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case RequestModelPackage.QUERYTYPE_NAMEDQUERY_FEATURE_ID:
         return getTarget().getNamedQuery();
       case RequestModelPackage.QUERYTYPE_QUERY_FEATURE_ID:
@@ -586,6 +598,10 @@ public class RequestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case RequestModelPackage.QUERYREFERINGOBJECTSTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case RequestModelPackage.QUERYREFERINGOBJECTSTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case RequestModelPackage.QUERYREFERINGOBJECTSTYPE_TARGETURI_FEATURE_ID:
         return getTarget().getTargetUri();
       case RequestModelPackage.QUERYREFERINGOBJECTSTYPE_INCLUDECONTAINERREFERENCES_FEATURE_ID:
@@ -680,6 +696,10 @@ public class RequestModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case RequestModelPackage.PARAMETER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case RequestModelPackage.PARAMETER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case RequestModelPackage.PARAMETER_NAME_FEATURE_ID:
         return getTarget().getName();
       case RequestModelPackage.PARAMETER_VALUE_FEATURE_ID:

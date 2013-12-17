@@ -62,6 +62,20 @@ public class GroupallModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ADDRESSGROUPTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ADDRESSGROUPTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ADDRESSGROUPTYPE_GROUPNAME_FEATURE_ID = 2;
 
   /**
@@ -97,6 +111,20 @@ public class GroupallModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int ADDRESSTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ADDRESSTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int ADDRESSTYPE_GROUP_FEATURE_ID = 2;
 
   /**
@@ -119,6 +147,20 @@ public class GroupallModelPackage extends ModelPackage {
    * @generated
    */
   public static final int ADDRESSLIST_CLASSIFIER_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ADDRESSLIST_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int ADDRESSLIST_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -154,6 +196,20 @@ public class GroupallModelPackage extends ModelPackage {
    * @generated
    */
   public static final int DOCUMENTROOT_CLASSIFIER_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DOCUMENTROOT_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int DOCUMENTROOT_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -216,6 +272,20 @@ public class GroupallModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int SIMPLEALLTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SIMPLEALLTYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int SIMPLEALLTYPE_AAA_FEATURE_ID = 2;
 
   /**
@@ -238,6 +308,20 @@ public class GroupallModelPackage extends ModelPackage {
    * @generated
    */
   public static final int SIMPLEALLMAPTYPE_CLASSIFIER_ID = 4;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SIMPLEALLMAPTYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SIMPLEALLMAPTYPE_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

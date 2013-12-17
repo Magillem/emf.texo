@@ -297,6 +297,14 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.ATTRIBUTE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.ATTRIBUTE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.ATTRIBUTE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.ATTRIBUTE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case KdmModelPackage.ATTRIBUTE_TAG_FEATURE_ID:
         return getTarget().getTag();
       case KdmModelPackage.ATTRIBUTE_VALUE_FEATURE_ID:
@@ -386,6 +394,14 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.ANNOTATION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.ANNOTATION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.ANNOTATION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.ANNOTATION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case KdmModelPackage.ANNOTATION_TEXT_FEATURE_ID:
         return getTarget().getText();
       default:
@@ -470,6 +486,14 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.STEREOTYPE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.STEREOTYPE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.STEREOTYPE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.STEREOTYPE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case KdmModelPackage.STEREOTYPE_TAG_FEATURE_ID:
         return getTarget().getTag();
       case KdmModelPackage.STEREOTYPE_NAME_FEATURE_ID:
@@ -570,6 +594,14 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.EXTENDEDVALUE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.EXTENDEDVALUE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.EXTENDEDVALUE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.EXTENDEDVALUE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case KdmModelPackage.EXTENDEDVALUE_TAG_FEATURE_ID:
         return getTarget().getTag();
       default:
@@ -654,6 +686,24 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.KDMMODEL_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.KDMMODEL_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.KDMMODEL_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.KDMMODEL_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case KdmModelPackage.KDMMODEL_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case KdmModelPackage.KDMMODEL_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case KdmModelPackage.KDMMODEL_AUDIT_FEATURE_ID:
+        return getTarget().getAudit();
+      case KdmModelPackage.KDMMODEL_EXTENSION_FEATURE_ID:
+        return getTarget().getExtension();
+      case KdmModelPackage.KDMMODEL_NAME_FEATURE_ID:
+        return getTarget().getName();
       case KdmModelPackage.KDMMODEL_OWNEDELEMENT_FEATURE_ID:
         return getTarget().getOwnedElement();
       default:
@@ -736,6 +786,18 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.KDMFRAMEWORK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.KDMFRAMEWORK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.KDMFRAMEWORK_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.KDMFRAMEWORK_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case KdmModelPackage.KDMFRAMEWORK_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case KdmModelPackage.KDMFRAMEWORK_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
       case KdmModelPackage.KDMFRAMEWORK_AUDIT_FEATURE_ID:
         return getTarget().getAudit();
       case KdmModelPackage.KDMFRAMEWORK_EXTENSION_FEATURE_ID:
@@ -842,6 +904,14 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.AUDIT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.AUDIT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.AUDIT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.AUDIT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case KdmModelPackage.AUDIT_DESCRIPTION_FEATURE_ID:
         return getTarget().getDescription();
       case KdmModelPackage.AUDIT_AUTHOR_FEATURE_ID:
@@ -937,6 +1007,14 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.EXTENSIONFAMILY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.EXTENSIONFAMILY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.EXTENSIONFAMILY_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.EXTENSIONFAMILY_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case KdmModelPackage.EXTENSIONFAMILY_STEREOTYPE_FEATURE_ID:
         return getTarget().getStereotype();
       case KdmModelPackage.EXTENSIONFAMILY_NAME_FEATURE_ID:
@@ -1032,6 +1110,24 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.SEGMENT_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.SEGMENT_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.SEGMENT_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.SEGMENT_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case KdmModelPackage.SEGMENT_STEREOTYPE_FEATURE_ID:
+        return getTarget().getStereotype();
+      case KdmModelPackage.SEGMENT_TAGGEDVALUE_FEATURE_ID:
+        return getTarget().getTaggedValue();
+      case KdmModelPackage.SEGMENT_AUDIT_FEATURE_ID:
+        return getTarget().getAudit();
+      case KdmModelPackage.SEGMENT_EXTENSION_FEATURE_ID:
+        return getTarget().getExtension();
+      case KdmModelPackage.SEGMENT_NAME_FEATURE_ID:
+        return getTarget().getName();
       case KdmModelPackage.SEGMENT_SEGMENT_FEATURE_ID:
         return getTarget().getSegment();
       case KdmModelPackage.SEGMENT_MODEL_FEATURE_ID:
@@ -1131,6 +1227,14 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.TAGDEFINITION_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.TAGDEFINITION_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.TAGDEFINITION_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.TAGDEFINITION_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
       case KdmModelPackage.TAGDEFINITION_TAG_FEATURE_ID:
         return getTarget().getTag();
       case KdmModelPackage.TAGDEFINITION_TYPE_FEATURE_ID:
@@ -1220,6 +1324,16 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.TAGGEDVALUE_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.TAGGEDVALUE_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.TAGGEDVALUE_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.TAGGEDVALUE_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case KdmModelPackage.TAGGEDVALUE_TAG_FEATURE_ID:
+        return getTarget().getTag();
       case KdmModelPackage.TAGGEDVALUE_VALUE_FEATURE_ID:
         return getTarget().getValue();
       default:
@@ -1304,6 +1418,16 @@ public class KdmModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case KdmModelPackage.TAGGEDREF_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case KdmModelPackage.TAGGEDREF_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
+      case KdmModelPackage.TAGGEDREF_ATTRIBUTE_FEATURE_ID:
+        return getTarget().getAttribute();
+      case KdmModelPackage.TAGGEDREF_ANNOTATION_FEATURE_ID:
+        return getTarget().getAnnotation();
+      case KdmModelPackage.TAGGEDREF_TAG_FEATURE_ID:
+        return getTarget().getTag();
       case KdmModelPackage.TAGGEDREF_REF_FEATURE_ID:
         return getTarget().getRef();
       default:

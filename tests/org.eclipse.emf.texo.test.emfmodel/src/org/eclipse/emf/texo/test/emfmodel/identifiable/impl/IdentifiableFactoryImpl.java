@@ -9,12 +9,11 @@ package org.eclipse.emf.texo.test.emfmodel.identifiable.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
-import org.eclipse.emf.texo.test.emfmodel.identifiable.*;
+import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiableFactory;
+import org.eclipse.emf.texo.test.emfmodel.identifiable.IdentifiablePackage;
+import org.eclipse.emf.texo.test.emfmodel.identifiable.NotIdentifiable;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,76 +23,76 @@ import org.eclipse.emf.texo.test.emfmodel.identifiable.*;
  */
 public class IdentifiableFactoryImpl extends EFactoryImpl implements IdentifiableFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static IdentifiableFactory init() {
-		try {
-			IdentifiableFactory theIdentifiableFactory = (IdentifiableFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.eclipse.org/emf/texo/test/model/base/identifiable"); 
-			if (theIdentifiableFactory != null) {
-				return theIdentifiableFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new IdentifiableFactoryImpl();
-	}
+    try {
+      IdentifiableFactory theIdentifiableFactory = (IdentifiableFactory)EPackage.Registry.INSTANCE.getEFactory(IdentifiablePackage.eNS_URI);
+      if (theIdentifiableFactory != null) {
+        return theIdentifiableFactory;
+      }
+    }
+    catch (Exception exception) {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new IdentifiableFactoryImpl();
+  }
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public IdentifiableFactoryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case IdentifiablePackage.NOT_IDENTIFIABLE: return createNotIdentifiable();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID()) {
+      case IdentifiablePackage.NOT_IDENTIFIABLE: return createNotIdentifiable();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NotIdentifiable createNotIdentifiable() {
-		NotIdentifiableImpl notIdentifiable = new NotIdentifiableImpl();
-		return notIdentifiable;
-	}
+    NotIdentifiableImpl notIdentifiable = new NotIdentifiableImpl();
+    return notIdentifiable;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public IdentifiablePackage getIdentifiablePackage() {
-		return (IdentifiablePackage)getEPackage();
-	}
+    return (IdentifiablePackage)getEPackage();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * @deprecated
+   * @generated
+   */
 	@Deprecated
 	public static IdentifiablePackage getPackage() {
-		return IdentifiablePackage.eINSTANCE;
-	}
+    return IdentifiablePackage.eINSTANCE;
+  }
 
 } //IdentifiableFactoryImpl

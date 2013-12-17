@@ -183,6 +183,10 @@ public class IncludeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case IncludeModelPackage.INCLUDE1_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case IncludeModelPackage.INCLUDE1_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case IncludeModelPackage.INCLUDE1_CODE_FEATURE_ID:
         return getTarget().getCode();
       case IncludeModelPackage.INCLUDE1_INCLUDE2_FEATURE_ID:
@@ -272,6 +276,10 @@ public class IncludeModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case IncludeModelPackage.INCLUDE2_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case IncludeModelPackage.INCLUDE2_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case IncludeModelPackage.INCLUDE2_CODE_FEATURE_ID:
         return getTarget().getCode();
       default:

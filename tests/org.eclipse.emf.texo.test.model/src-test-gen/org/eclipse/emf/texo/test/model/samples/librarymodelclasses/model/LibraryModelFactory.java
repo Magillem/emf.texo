@@ -236,6 +236,10 @@ public class LibraryModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case LibraryModelPackage.BOOK_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case LibraryModelPackage.BOOK_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case LibraryModelPackage.BOOK_TITLE_FEATURE_ID:
         return getTarget().getTitle();
       case LibraryModelPackage.BOOK_PAGES_FEATURE_ID:
@@ -334,6 +338,10 @@ public class LibraryModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case LibraryModelPackage.LIBRARY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case LibraryModelPackage.LIBRARY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case LibraryModelPackage.LIBRARY_NAME_FEATURE_ID:
         return getTarget().getName();
       case LibraryModelPackage.LIBRARY_WRITERS_FEATURE_ID:
@@ -438,6 +446,10 @@ public class LibraryModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
+      case LibraryModelPackage.WRITER_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case LibraryModelPackage.WRITER_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case LibraryModelPackage.WRITER_NAME_FEATURE_ID:
         return getTarget().getName();
       case LibraryModelPackage.WRITER_BOOKS_FEATURE_ID:

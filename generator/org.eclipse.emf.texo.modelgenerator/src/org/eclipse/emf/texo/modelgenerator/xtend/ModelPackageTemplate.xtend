@@ -100,7 +100,7 @@ public class «ePackageModelGenAnnotation.simpleClassName» extends org.eclipse.
      * @generated
      */
     public static final int «TemplateUtil::toUpperCase(eClassAnnotation.name)»_CLASSIFIER_ID = «eClassAnnotation.EClass.classifierID»;
-    «FOR featureAnnotation : eClassAnnotation.EStructuralFeatureModelGenAnnotations»
+    «FOR featureAnnotation : eClassAnnotation.EAllStructuralFeatureModelGenAnnotations»
 
     /**
      * <!-- begin-user-doc -->

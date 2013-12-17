@@ -72,6 +72,20 @@ public class Bz379796ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int PRICETYPE_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int PRICETYPE_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int PRICETYPE_VALUEELEMENT_FEATURE_ID = 2;
 
   /**

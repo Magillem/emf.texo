@@ -68,6 +68,20 @@ public class Bz306546ModelPackage extends ModelPackage {
    * 
    * @generated
    */
+  public static final int MYSERIALIZABLECLASS_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int MYSERIALIZABLECLASS_DB_VERSION_FEATURE_ID = 1;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
   public static final int MYSERIALIZABLECLASS_SOMETHINGINTERESTING_FEATURE_ID = 2;
 
   /**
@@ -90,6 +104,20 @@ public class Bz306546ModelPackage extends ModelPackage {
    * @generated
    */
   public static final int NONEMF_CLASSIFIER_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int NONEMF_DB_ID_FEATURE_ID = 0;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int NONEMF_DB_VERSION_FEATURE_ID = 1;
 
   /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
