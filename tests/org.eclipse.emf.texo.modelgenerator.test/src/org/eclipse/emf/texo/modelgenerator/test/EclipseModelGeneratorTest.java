@@ -63,7 +63,6 @@ public class EclipseModelGeneratorTest extends TestCase {
   private static final String DEFAULT_EXTENDS = "org.eclipse.emf.texo.test.model.base.identifiable.Identifiable"; //$NON-NLS-1$
 
   private static final String TEST_MODEL_PROJECT = "org.eclipse.emf.texo.test.model"; //$NON-NLS-1$
-  private static final String MODELGENERATOR_TEST_PROJECT = "org.eclipse.emf.texo.modelgenerator.test"; //$NON-NLS-1$
 
   private static final EPackage.Registry SHARED_REGISTRY = GeneratorUtils.createEPackageRegistry();
 
@@ -74,11 +73,9 @@ public class EclipseModelGeneratorTest extends TestCase {
 
   public void testGenerateModels() throws Exception {
     // needed refresh/build the project so that the xcore files get resolved correctly
-    final IProject project = EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
+    final IProject project = EclipseGeneratorUtils.getProject(TestModel.MODELGENERATOR_TEST_PROJECT);
     project.getWorkspace().getRoot().refreshLocal(100, null);
-    // project.build(IncrementalProjectBuilder.FULL_BUILD, null);
-
-    EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
+    project.refreshLocal(100, null);
 
     testORMOptions.setAddOrderColumnToListMappings(true);
     testORMOptions.setEnforceUniqueNames(true);
@@ -126,7 +123,8 @@ public class EclipseModelGeneratorTest extends TestCase {
 
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {
-        final URI uri = getModelPlatformUri(ecoreFileName);
+        final URI uri = TestModel.getModelPlatformUri(ecoreFileName);
+        System.err.println(uri.toString());
         uris.add(uri);
       }
 
@@ -177,18 +175,13 @@ public class EclipseModelGeneratorTest extends TestCase {
     }
   }
 
-  protected URI getModelPlatformUri(final String fileName) {
-    final String path = "platform:/plugin/" + MODELGENERATOR_TEST_PROJECT + "/src/org/eclipse/emf/texo/modelgenerator/test/models/" + fileName; //$NON-NLS-1$ //$NON-NLS-2$
-    return URI.create(path);
-  }
-
   protected void addSuperType(final List<EPackage> ePackages, final EPackage.Registry packageRegistry) throws Exception {
 
     // first check if there is already an identifiable, if so use that one
     EClass identifiableEClass = getIdentifiableSuperEClass(ePackages);
     if (identifiableEClass == null) {
       final List<EPackage> identifiableEPackages = GeneratorUtils.readEPackages(
-          Collections.singletonList(TestModel.getModelUrl("base/identifiable.ecore").toURI()), packageRegistry, false); //$NON-NLS-1$
+          Collections.singletonList(TestModel.getModelPlatformUri("base/identifiable.ecore")), packageRegistry, false); //$NON-NLS-1$
 
       for (EPackage ePackage : identifiableEPackages) {
         if (ePackage.getNsURI().equals(IDENTIFIABLE_NSURI)) {

@@ -18,6 +18,7 @@
 package org.eclipse.emf.texo.modelgenerator.test.models;
 
 import java.io.File;
+import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +32,7 @@ import org.eclipse.emf.texo.utils.Check;
  * @version $Revision: 1.13 $
  */
 public class TestModel {
+  public static final String MODELGENERATOR_TEST_PROJECT = "org.eclipse.emf.texo.modelgenerator.test"; //$NON-NLS-1$
 
   /**
    * Convenience method to load a model located in this plugin.
@@ -43,6 +45,11 @@ public class TestModel {
     final URL url = TestModel.class.getResource(modelFileName);
     Check.isNotNull(url, "Test model " + modelFileName + " not found in /models directory"); //$NON-NLS-1$//$NON-NLS-2$
     return url;
+  }
+
+  public static URI getModelPlatformUri(final String fileName) {
+    final String path = "platform:/resource/" + MODELGENERATOR_TEST_PROJECT + "/src/org/eclipse/emf/texo/modelgenerator/test/models/" + fileName; //$NON-NLS-1$ //$NON-NLS-2$
+    return URI.create(path);
   }
 
   /**

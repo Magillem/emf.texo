@@ -41,7 +41,7 @@ public class EclipseModelGeneratorSingleModelTest extends EclipseModelGeneratorT
   @Override
   protected List<String> getModelFileRelativePaths() {
     final List<String> modelFiles = new ArrayList<String>();
-    modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
+    //    modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
     //    modelFiles.add("samples/extlibrary.ecore"); //$NON-NLS-1$
     //    modelFiles.add("samples/library.ecore"); //$NON-NLS-1$
     //    modelFiles.add("issues/bz393240.xsd"); //$NON-NLS-1$
@@ -49,7 +49,7 @@ public class EclipseModelGeneratorSingleModelTest extends EclipseModelGeneratorT
     //    modelFiles.add("samples/library.ecore"); //$NON-NLS-1$
     //    modelFiles.add("samples/sport-society.xcore"); //$NON-NLS-1$
     //    modelFiles.add("samples/sport-club.xcore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/sport-competition.xcore"); //$NON-NLS-1$
+    modelFiles.add("samples/sport-competition.xcore"); //$NON-NLS-1$
     //    modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
     //    modelFiles.add("texo/TexoDataRequest.xsd"); //$NON-NLS-1$
     //    modelFiles.add("texo/TexoDataResponse.xsd"); //$NON-NLS-1$
