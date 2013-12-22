@@ -150,9 +150,9 @@ public class EclipseModelGeneratorTest extends TestCase {
       // and read the epackages we are generating for
       final List<EPackage> ePackages = GeneratorUtils.readEPackages(uris, resourceSet, packageRegistry, false);
 
-      for (String key : packageRegistry.keySet()) {
-        System.err.println(key + " --> " + ((EPackage) packageRegistry.get(key)).getName());
-      }
+      // for (String key : packageRegistry.keySet()) {
+      // System.err.println(key + " --> " + ((EPackage) packageRegistry.get(key)).getName());
+      // }
 
       if (true || !isGenerateTexoModels()) {
         addSuperType(ePackages, packageRegistry);

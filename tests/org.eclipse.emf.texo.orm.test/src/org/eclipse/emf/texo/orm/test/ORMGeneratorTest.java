@@ -134,7 +134,14 @@ public class ORMGeneratorTest extends TestCase {
         for (String dep : deps) {
           depUris.add(TestModel.getModelPlatformUri(dep));
         }
-        GeneratorUtils.readEPackages(depUris, resourceSet, registry, false);
+        // register all the dependent epackages also using the resource uri, this is needed in case of xcore
+        // which resolves using resource uris
+        final List<EPackage> depEPackages = GeneratorUtils.readEPackages(depUris, resourceSet, registry, false);
+        for (EPackage depEPackage : depEPackages) {
+          if (depEPackage.eResource() != null && depEPackage.eResource().getURI() != null) {
+            registry.put(depEPackage.eResource().getURI().toString(), depEPackage);
+          }
+        }
       }
 
       final List<EPackage> ePackages = GeneratorUtils.readEPackages(Collections.singletonList(modelUri), resourceSet,
