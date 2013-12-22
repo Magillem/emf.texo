@@ -244,12 +244,30 @@ public class GeneratorUtils {
    * 
    * @param uris
    *          the array of URI's pointing to ecore or xsd files
+   * @param resourceSet
+   *          the resourceSet to use, if null then a new one is created
    * @param registry
    *          the registry to use when reading epackages
    * @return the EPackages
    */
   public static List<EPackage> readEPackages(final List<java.net.URI> uris, EPackage.Registry registry,
       boolean useWsUris) {
+    return readEPackages(uris, null, registry, useWsUris);
+  }
+
+  /**
+   * Reads EPackages from a set of ecore or xsd files.
+   * 
+   * @param uris
+   *          the array of URI's pointing to ecore or xsd files
+   * @param resourceSet
+   *          the resourceSet to use, if null then a new one is created
+   * @param registry
+   *          the registry to use when reading epackages
+   * @return the EPackages
+   */
+  public static List<EPackage> readEPackages(final List<java.net.URI> uris, ResourceSet resourceSet,
+      EPackage.Registry registry, boolean useWsUris) {
     final List<URI> emfUris = new ArrayList<URI>();
     for (final java.net.URI uri : uris) {
       final String uriStr = uri.toString();
@@ -259,7 +277,7 @@ public class GeneratorUtils {
         emfUris.add(URI.createURI(uriStr));
       }
     }
-    return readEPackagesUsingEMFURI(emfUris, registry);
+    return readEPackagesUsingEMFURI(emfUris, resourceSet, registry);
   }
 
   /**
@@ -272,15 +290,26 @@ public class GeneratorUtils {
    * @return the EPackages
    */
   public static List<EPackage> readEPackagesUsingEMFURI(final List<URI> uris, EPackage.Registry registry) {
+    return readEPackagesUsingEMFURI(uris, null, registry);
+  }
+
+  /**
+   * Reads EPackages from a set of ecore or xsd files.
+   * 
+   * @param uris
+   *          the array of EMF URI's pointing to ecore or xsd files
+   * @param registry
+   *          the registry to use when reading epackages
+   * @return the EPackages
+   */
+  public static List<EPackage> readEPackagesUsingEMFURI(final List<URI> uris, ResourceSet resourceSet,
+      EPackage.Registry registry) {
 
     final List<EPackage> ePackages = new ArrayList<EPackage>();
-    final ResourceSet rs = new ResourceSetImpl();
-    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
-        new EcoreResourceFactoryImpl());
-    //    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xcore", //$NON-NLS-1$
-    // new XcoreResourceFactory());
-    rs.setPackageRegistry(registry);
-    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
+    ResourceSet rs = resourceSet;
+    if (rs == null) {
+      rs = createGenerationResourceSet(registry);
+    }
 
     // note passing resourcesets package registry to the xsdecore builder
     // this ensures that epackages which refer to eachother are handled
@@ -332,6 +361,23 @@ public class GeneratorUtils {
       }
     }
     return ePackages;
+  }
+
+  /**
+   * Create a resource set which can be used in code generation.
+   * 
+   * @param registry
+   * @return a new {@link ResourceSet}
+   */
+  public static ResourceSet createGenerationResourceSet(EPackage.Registry registry) {
+    final ResourceSet rs = new ResourceSetImpl();
+    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
+        new EcoreResourceFactoryImpl());
+    //    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xcore", //$NON-NLS-1$
+    // new XcoreResourceFactory());
+    rs.setPackageRegistry(registry);
+    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
+    return rs;
   }
 
   private static void checkDiagnostics(XSDEcoreBuilder ecoreBuilder) {

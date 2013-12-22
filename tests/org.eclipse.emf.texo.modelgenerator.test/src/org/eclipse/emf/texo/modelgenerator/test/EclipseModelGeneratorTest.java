@@ -28,6 +28,7 @@ import org.eclipse.core.resources.IProject;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.generator.AnnotationManager;
 import org.eclipse.emf.texo.generator.ArtifactGenerator;
@@ -72,10 +73,6 @@ public class EclipseModelGeneratorTest extends TestCase {
   private ORMMappingOptions safeORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
-    // needed refresh/build the project so that the xcore files get resolved correctly
-    final IProject project = EclipseGeneratorUtils.getProject(TestModel.MODELGENERATOR_TEST_PROJECT);
-    project.getWorkspace().getRoot().refreshLocal(100, null);
-    project.refreshLocal(100, null);
 
     testORMOptions.setAddOrderColumnToListMappings(true);
     testORMOptions.setEnforceUniqueNames(true);
@@ -121,16 +118,41 @@ public class EclipseModelGeneratorTest extends TestCase {
         }
       }
 
+      final EPackage.Registry packageRegistry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
+          .createEPackageRegistry();
+      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(packageRegistry);
+
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {
         final URI uri = TestModel.getModelPlatformUri(ecoreFileName);
         System.err.println(uri.toString());
         uris.add(uri);
+
+        // read the deps
+        final List<String> deps = TestModel.getModelDependencies(ecoreFileName);
+        if (deps.size() > 0) {
+          final List<URI> depUris = new ArrayList<URI>();
+          for (String dep : deps) {
+            depUris.add(TestModel.getModelPlatformUri(dep));
+          }
+          // register all the dependent epackages also using the resource uri, this is needed in case of xcore
+          // which resolves using resource uris
+          final List<EPackage> depEPackages = GeneratorUtils
+              .readEPackages(depUris, resourceSet, packageRegistry, false);
+          for (EPackage depEPackage : depEPackages) {
+            if (depEPackage.eResource() != null && depEPackage.eResource().getURI() != null) {
+              packageRegistry.put(depEPackage.eResource().getURI().toString(), depEPackage);
+            }
+          }
+        }
       }
 
-      final EPackage.Registry packageRegistry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
-          .createEPackageRegistry();
-      final List<EPackage> ePackages = GeneratorUtils.readEPackages(uris, packageRegistry, false);
+      // and read the epackages we are generating for
+      final List<EPackage> ePackages = GeneratorUtils.readEPackages(uris, resourceSet, packageRegistry, false);
+
+      for (String key : packageRegistry.keySet()) {
+        System.err.println(key + " --> " + ((EPackage) packageRegistry.get(key)).getName());
+      }
 
       if (true || !isGenerateTexoModels()) {
         addSuperType(ePackages, packageRegistry);

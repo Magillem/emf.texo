@@ -18,8 +18,6 @@ package org.eclipse.emf.texo.orm.test.samples;
 
 import java.math.BigInteger;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.json.ModelJSONConverter;
 import org.eclipse.emf.texo.model.ModelResolver;
@@ -29,6 +27,7 @@ import org.eclipse.emf.texo.test.model.samples.jpamixed.JpamixedModelPackage;
 import org.eclipse.emf.texo.test.model.samples.jpamixed.LetterBodyType;
 import org.eclipse.emf.texo.test.model.samples.jpamixed.LetterBodyTypeMixedFeatureGroup;
 import org.eclipse.emf.texo.test.model.samples.jpamixed.SalutationType;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**

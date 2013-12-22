@@ -36,6 +36,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.texo.generator.EclipseGeneratorUtils;
 import org.eclipse.emf.texo.generator.GeneratorUtils;
 import org.eclipse.emf.texo.generator.ModelController;
@@ -112,11 +113,6 @@ public class ORMGeneratorTest extends TestCase {
     }
   }
 
-  protected java.net.URI getModelPlatformUri(final String fileName) {
-    final String path = "platform:/plugin/" + MODELGENERATOR_TEST_PROJECT + "/src/org/eclipse/emf/texo/modelgenerator/test/models/" + fileName; //$NON-NLS-1$ //$NON-NLS-2$
-    return java.net.URI.create(path);
-  }
-
   protected boolean useSharedEPackageRegistry() {
     return false;
   }
@@ -125,9 +121,24 @@ public class ORMGeneratorTest extends TestCase {
     try {
       final File mappingFileDir = new File(targetMappingFileDir, modelFilePath).getParentFile();
 
-      final java.net.URI modelUri = getModelPlatformUri(modelFilePath);
-      final List<EPackage> ePackages = GeneratorUtils.readEPackages(Collections.singletonList(modelUri),
-          useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils.createEPackageRegistry(), false);
+      final java.net.URI modelUri = TestModel.getModelPlatformUri(modelFilePath);
+
+      final EPackage.Registry registry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
+          .createEPackageRegistry();
+      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(registry);
+
+      // read the deps
+      final List<String> deps = TestModel.getModelDependencies(modelFilePath);
+      if (deps.size() > 0) {
+        final List<java.net.URI> depUris = new ArrayList<java.net.URI>();
+        for (String dep : deps) {
+          depUris.add(TestModel.getModelPlatformUri(dep));
+        }
+        GeneratorUtils.readEPackages(depUris, resourceSet, registry, false);
+      }
+
+      final List<EPackage> ePackages = GeneratorUtils.readEPackages(Collections.singletonList(modelUri), resourceSet,
+          registry, false);
 
       // create the uri to store the mapping file
       final String ormFileName = ePackages.get(0).getName() + ORM_SUFFIX;

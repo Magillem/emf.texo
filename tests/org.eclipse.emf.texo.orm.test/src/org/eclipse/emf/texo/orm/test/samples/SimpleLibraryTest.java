@@ -24,12 +24,11 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 
-import junit.framework.Assert;
-
 import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
 import org.eclipse.emf.texo.orm.test.JPATest;
 import org.eclipse.emf.texo.test.model.samples.library.Writer;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
+import org.junit.Assert;
 
 /**
  * Tests persistence of library testcase

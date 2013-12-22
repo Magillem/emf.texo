@@ -159,6 +159,21 @@ public class TestModel {
   }
 
   /**
+   * @return for specific models return their dependencies to other models so they can be loaded also
+   */
+  public static List<String> getModelDependencies(final String fileName) {
+    final List<String> result = new ArrayList<String>();
+    if (fileName.equals("samples/sport-competition.xcore")) { //$NON-NLS-1$
+      result.add("samples/sport-society.xcore");//$NON-NLS-1$
+      result.add("samples/sport-club.xcore");//$NON-NLS-1$
+    }
+    if (fileName.equals("samples/sport-club.xcore")) { //$NON-NLS-1$
+      result.add("samples/sport-club.xcore");//$NON-NLS-1$
+    }
+    return result;
+  }
+
+  /**
    * @return all models located in the TestModel class package and below. The return path is relative from the TestModel
    *         class location.
    */
