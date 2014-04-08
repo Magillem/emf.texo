@@ -1,0 +1,8 @@
+@Ecore(nsURI="http://www.eclipse.org/emf/texo/test/model/base/identifiable")
+package org.eclipse.emf.texo.test.model.base.identifiable
+
+class Identifiable
+{
+	Long db_Id
+	Long db_version
+} 

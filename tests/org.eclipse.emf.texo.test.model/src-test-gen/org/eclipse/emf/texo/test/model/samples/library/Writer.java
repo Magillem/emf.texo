@@ -5,11 +5,13 @@ import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
+import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -24,6 +26,8 @@ import org.eclipse.persistence.annotations.Converters;
  */
 @TestAnnotationOne("type")
 @Entity(name = "library_Writer")
+@Table(name = "library_Writer")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Writer extends Identifiable {
@@ -34,7 +38,7 @@ public class Writer extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "name", nullable = true)
+  @Column(name = "name")
   private String name = null;
 
   /**

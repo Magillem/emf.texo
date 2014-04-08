@@ -3,12 +3,14 @@ package org.eclipse.emf.texo.test.model.samples.library;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -32,7 +34,9 @@ import org.eclipse.persistence.annotations.TenantDiscriminatorColumns;
 @Entity(name = "library_Book")
 @Multitenant()
 @TenantDiscriminatorColumns({ @TenantDiscriminatorColumn(name = "test") })
+@Table(name = "library_Book")
 @Indexes({ @Index(columnNames = { "title" }, unique = false) })
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Book extends Identifiable {
@@ -45,7 +49,7 @@ public class Book extends Identifiable {
   @TestAnnotationOne("field")
   @TestAnnotationTwo("field")
   @Basic()
-  @Column(name = "title", nullable = true)
+  @Column(name = "title")
   @Index()
   private String title = null;
 
@@ -55,7 +59,7 @@ public class Book extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "pages", nullable = true)
+  @Column(name = "pages")
   private int pages = 100;
 
   /**
@@ -64,7 +68,7 @@ public class Book extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "category", nullable = true)
+  @Column(name = "category")
   @Enumerated(EnumType.STRING)
   private BookCategory category = BookCategory.SCIENCEFICTION;
 
@@ -74,7 +78,7 @@ public class Book extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = false)
-  @JoinColumns({ @JoinColumn(name = "library_Book_author", nullable = true) })
+  @JoinColumns({ @JoinColumn(name = "library_Book_author") })
   private Writer author = null;
 
   /**
