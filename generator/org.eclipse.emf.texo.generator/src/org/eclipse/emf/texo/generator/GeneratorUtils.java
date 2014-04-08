@@ -376,7 +376,7 @@ public class GeneratorUtils {
     //    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xcore", //$NON-NLS-1$
     // new XcoreResourceFactory());
     rs.setPackageRegistry(registry);
-    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
+    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(false));
     return rs;
   }
 
