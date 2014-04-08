@@ -170,7 +170,7 @@ public class TestModel {
     }
     if (fileName.equals("samples/sport-club.xcore")) { //$NON-NLS-1$
       result.add("base/identifiable.ecore");//$NON-NLS-1$
-      result.add("samples/sport-club.xcore");//$NON-NLS-1$
+      result.add("samples/sport-society.xcore");//$NON-NLS-1$
     }
     return result;
   }

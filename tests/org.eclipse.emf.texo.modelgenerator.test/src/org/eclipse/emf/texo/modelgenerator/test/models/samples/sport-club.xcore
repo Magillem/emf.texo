@@ -1,20 +1,19 @@
 package org.eclipse.emf.texo.test.model.samples.sport.club
 
 import org.eclipse.emf.texo.test.model.samples.sport.society.Society
-import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable
 
 class Club extends Society
 {
 	contains Team[] teams
 } 
 
-class Team extends Identifiable
+class Team
 {
 	String name
 	refers Member[] members
 } 
 
-class Member extends Identifiable
+class Member
 {
 	String name
 	String lastName

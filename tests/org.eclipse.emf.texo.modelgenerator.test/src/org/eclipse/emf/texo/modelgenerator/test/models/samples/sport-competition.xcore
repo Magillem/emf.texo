@@ -1,9 +1,8 @@
 package org.eclipse.emf.texo.test.model.samples.sport.competition
 
 import org.eclipse.emf.texo.test.model.samples.sport.club.Team
-import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable
 
-class Competition extends Identifiable {
+class Competition {
 	String name
 	refers Team[] teams
 }

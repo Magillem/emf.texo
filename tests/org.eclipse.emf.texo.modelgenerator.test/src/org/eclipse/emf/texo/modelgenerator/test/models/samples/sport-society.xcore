@@ -1,8 +1,6 @@
 package org.eclipse.emf.texo.test.model.samples.sport.society
 
-import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable
-
-class Society extends Identifiable
+class Society
 {
 	String name
 }
