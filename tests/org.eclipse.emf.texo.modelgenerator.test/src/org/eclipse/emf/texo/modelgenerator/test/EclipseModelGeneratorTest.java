@@ -45,6 +45,8 @@ import org.eclipse.emf.texo.orm.annotator.ORMMappingOptions;
 import org.eclipse.emf.texo.provider.IdProvider;
 import org.eclipse.emf.texo.provider.TitleProvider;
 import org.eclipse.emf.texo.utils.ModelUtils;
+import org.eclipse.xtext.EcoreUtil2;
+import org.eclipse.xtext.util.CancelIndicator;
 
 /**
  * Test the generation of model code through the Eclipse plugin. Needs to be run as a junit plugin test.
@@ -73,6 +75,11 @@ public class EclipseModelGeneratorTest extends TestCase {
   private ORMMappingOptions safeORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
+    final IProject testProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
+    // testProject.refreshLocal(100, new NullProgressMonitor());
+    // testProject.build(IncrementalProjectBuilder.CLEAN_BUILD, "org.eclipse.xtext.ui.shared.xtextBuilder",
+    // Collections.EMPTY_MAP, new NullProgressMonitor());
+    // testProject.build(IncrementalProjectBuilder.FULL_BUILD, new NullProgressMonitor());
 
     testORMOptions.setAddOrderColumnToListMappings(true);
     testORMOptions.setEnforceUniqueNames(true);
@@ -93,7 +100,6 @@ public class EclipseModelGeneratorTest extends TestCase {
 
     for (String modelFile : getModelFileRelativePaths()) {
       System.err.println("Generating modelfile " + modelFile); //$NON-NLS-1$
-      final IProject testProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
       if (modelFile.contains("employee.xsd")) { //$NON-NLS-1$
         testProject.setPersistentProperty(TexoResourceManager.TEMPLATE_FOLDER_PROPERTY, "templates"); //$NON-NLS-1$
       } else {
@@ -108,6 +114,7 @@ public class EclipseModelGeneratorTest extends TestCase {
   }
 
   private void generate(final String[] ecoreFileNames) throws Exception {
+
     try {
       ORMMappingOptions.setDefaultOptions(testORMOptions);
       final List<String> safelyMappedModels = TestModel.getSafelyMappedModels();
@@ -125,7 +132,6 @@ public class EclipseModelGeneratorTest extends TestCase {
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {
         final URI uri = TestModel.getModelPlatformUri(ecoreFileName);
-        System.err.println(uri.toString());
         uris.add(uri);
 
         // read the deps
@@ -161,6 +167,10 @@ public class EclipseModelGeneratorTest extends TestCase {
         for (EPackage ePackage : ePackages) {
           hasIdentifiable = hasIdentifiable
               || ePackage.getNsURI().equals("http://www.eclipse.org/emf/texo/test/model/base/identifiable"); //$NON-NLS-1$
+          if (ePackage.eResource() != null) {
+            EcoreUtil2.resolveLazyCrossReferences(ePackage.eResource(), CancelIndicator.NullImpl);
+          }
+
         }
 
         // give everyone the identifiable as super, except the identifiable

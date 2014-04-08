@@ -14,6 +14,7 @@
     <orm:attributes>
       <orm:basic name="name">
         <orm:column name="name"/>
+        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
       <orm:one-to-many name="trips">
         <orm:order-column name="travel_Journey_trips_ind"/>
@@ -32,6 +33,7 @@
     <orm:attributes>
       <orm:basic name="name2">
         <orm:column name="name2"/>
+        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
       <orm:many-to-one name="destination">
         <orm:join-column name="travel_Trip_destination"/>
@@ -51,9 +53,11 @@
     <orm:attributes>
       <orm:basic name="name">
         <orm:column name="name"/>
+        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
       <orm:basic name="reis">
         <orm:column name="reis"/>
+        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
     </orm:attributes>
   </orm:entity>

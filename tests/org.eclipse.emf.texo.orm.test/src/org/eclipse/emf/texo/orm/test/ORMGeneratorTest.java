@@ -29,7 +29,6 @@ import java.util.List;
 import junit.framework.TestCase;
 
 import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
@@ -59,7 +58,6 @@ public class ORMGeneratorTest extends TestCase {
 
   private static final String TEST_ORM_PROJECT = "org.eclipse.emf.texo.orm.test"; //$NON-NLS-1$
   private static final String TEST_MODEL_PROJECT = "org.eclipse.emf.texo.test.model"; //$NON-NLS-1$
-  private static final String MODELGENERATOR_TEST_PROJECT = "org.eclipse.emf.texo.modelgenerator.test"; //$NON-NLS-1$
 
   private static final String SRC_GEN = "src-test-gen"; //$NON-NLS-1$
   private static final String SRC = "src"; //$NON-NLS-1$
@@ -77,10 +75,6 @@ public class ORMGeneratorTest extends TestCase {
   private ORMMappingOptions testORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
-    // needed refresh/build the project so that the xcore files get resolved correctly
-    final IProject project = EclipseGeneratorUtils.getProject(MODELGENERATOR_TEST_PROJECT);
-    project.getWorkspace().getRoot().refreshLocal(100, null);
-    project.build(IncrementalProjectBuilder.FULL_BUILD, null);
 
     // generate all the db names for the orms
     testORMOptions.setAddOrderColumnToListMappings(true);

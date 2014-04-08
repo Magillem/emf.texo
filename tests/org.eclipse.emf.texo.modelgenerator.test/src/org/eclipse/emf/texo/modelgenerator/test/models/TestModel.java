@@ -80,7 +80,7 @@ public class TestModel {
     urls.add("samples/jpamixed.ecore");//$NON-NLS-1$
     urls.add("samples/types.ecore");//$NON-NLS-1$
     urls.add("samples/Workflow.ecore");//$NON-NLS-1$
-    urls.add("samples/FeatureMapTest.ecore");//$NON-NLS-1$
+    urls.add("samples/FeatureMapTest.ecore");//$NON-NLS-1$ 
     urls.add("samples/sport-society.xcore");//$NON-NLS-1$
     urls.add("samples/sport-club.xcore");//$NON-NLS-1$
     urls.add("samples/sport-competition.xcore");//$NON-NLS-1$
@@ -164,10 +164,12 @@ public class TestModel {
   public static List<String> getModelDependencies(final String fileName) {
     final List<String> result = new ArrayList<String>();
     if (fileName.equals("samples/sport-competition.xcore")) { //$NON-NLS-1$
+      result.add("base/identifiable.ecore");//$NON-NLS-1$
       result.add("samples/sport-society.xcore");//$NON-NLS-1$
       result.add("samples/sport-club.xcore");//$NON-NLS-1$
     }
     if (fileName.equals("samples/sport-club.xcore")) { //$NON-NLS-1$
+      result.add("base/identifiable.ecore");//$NON-NLS-1$
       result.add("samples/sport-club.xcore");//$NON-NLS-1$
     }
     return result;
