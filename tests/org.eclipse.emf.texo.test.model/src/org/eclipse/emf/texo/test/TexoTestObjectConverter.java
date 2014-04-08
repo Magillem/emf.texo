@@ -41,6 +41,13 @@ public class TexoTestObjectConverter implements Converter {
     if (objectValue == null) {
       return null;
     }
+    // simple cases, don't convert
+    if (objectValue instanceof String) {
+      return objectValue;
+    }
+    if (objectValue instanceof Number) {
+      return objectValue;
+    }
     final ModelJSONConverter jsonConverter = ComponentProvider.getInstance().newInstance(ModelJSONConverter.class);
     jsonConverter.setMaxChildLevelsToConvert(0);
     jsonConverter.setConvertNonContainedReferencedObjects(false);
@@ -56,7 +63,9 @@ public class TexoTestObjectConverter implements Converter {
           JSONModelConverter.class);
       return modelJSONConverter.convert(new JSONObject((String) dataValue));
     } catch (JSONException e) {
-      throw new IllegalArgumentException("Argument " + dataValue, e);
+      // throw new IllegalArgumentException("Argument " + dataValue, e);
+      // hope for the best..
+      return dataValue;
     }
   }
 

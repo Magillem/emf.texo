@@ -46,6 +46,8 @@ import org.eclipse.emf.texo.modelgenerator.modelannotations.ModelcodegeneratorPa
 import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
 import org.eclipse.emf.texo.orm.annotator.ORMGenerator;
 import org.eclipse.emf.texo.orm.annotator.ORMMappingOptions;
+import org.eclipse.xtext.EcoreUtil2;
+import org.eclipse.xtext.util.CancelIndicator;
 
 /**
  * Generates the ORM for specified models. The generated orm files are stored in the src/META-INF folder.
@@ -140,6 +142,12 @@ public class ORMGeneratorTest extends TestCase {
 
       final List<EPackage> ePackages = GeneratorUtils.readEPackages(Collections.singletonList(modelUri), resourceSet,
           registry, false);
+
+      for (EPackage ePackage : ePackages) {
+        if (ePackage.eResource() != null) {
+          EcoreUtil2.resolveLazyCrossReferences(ePackage.eResource(), CancelIndicator.NullImpl);
+        }
+      }
 
       // create the uri to store the mapping file
       final String ormFileName = ePackages.get(0).getName() + ORM_SUFFIX;
