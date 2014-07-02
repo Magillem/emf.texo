@@ -34,10 +34,11 @@ import org.eclipse.emf.texo.utils.ModelUtils;
 import org.eclipse.emf.texo.xml.ModelXMLLoader;
 import org.eclipse.emf.texo.xml.ModelXMLSaver;
 import org.eclipse.emf.texo.xml.XMLWebServiceObjectResolver;
-import org.eclipse.jetty.client.ContentExchange;
 import org.eclipse.jetty.client.HttpClient;
-import org.eclipse.jetty.http.HttpMethods;
-import org.eclipse.jetty.io.ByteArrayBuffer;
+import org.eclipse.jetty.client.api.ContentResponse;
+import org.eclipse.jetty.client.api.Request;
+import org.eclipse.jetty.client.util.BytesContentProvider;
+import org.eclipse.jetty.http.HttpMethod;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -65,7 +66,6 @@ public abstract class BaseWSWebTest extends BaseTest {
       stopClient();
     }
     httpClient = new HttpClient();
-    httpClient.setConnectorType(HttpClient.CONNECTOR_SELECT_CHANNEL);
     httpClient.start();
   }
 
@@ -93,27 +93,20 @@ public abstract class BaseWSWebTest extends BaseTest {
     doServerTearDown();
   }
 
-  protected ContentExchange doRequest(String wsPartOfUrl, String method, String content) throws Exception {
+  protected ContentResponse doRequest(String wsPartOfUrl, HttpMethod method, String content) throws Exception {
     if (httpClient == null) {
       startClient();
     }
 
-    ContentExchange contentExchange = new ContentExchange();
-    contentExchange.setURL(getURL() + "/" + encodeWsPart(wsPartOfUrl)); //$NON-NLS-1$ 
-    contentExchange.setMethod(method);
-
-    System.err.println(">>>>>>>>>>>>>>>>>>>>>");
-    System.err.println(getURL() + "/" + wsPartOfUrl);
-    System.err.println(method);
-    System.err.println("<<<<<<<<<<<<<<<<<<<<<");
+    final Request request = httpClient.newRequest(getURL() + "/" + encodeWsPart(wsPartOfUrl)); //$NON-NLS-1$ 
+    request.method(method);
 
     if (content != null) {
-      contentExchange.setRequestContent(new ByteArrayBuffer(content.getBytes(CHARACTER_ENCODING)));
+      request.content(new BytesContentProvider(content.getBytes(CHARACTER_ENCODING)), "text/plain");
     }
 
-    httpClient.send(contentExchange);
-    contentExchange.waitForDone();
-    return contentExchange;
+    final ContentResponse response = request.send();
+    return response;
   }
 
   private String encodeWsPart(String wsPart) throws Exception {
@@ -133,32 +126,32 @@ public abstract class BaseWSWebTest extends BaseTest {
 
   protected void doDeleteRequest(String wsPart, int expectedResponse) {
     try {
-      final ContentExchange contentExchange = doRequest(wsPart, HttpMethods.DELETE, null);
+      final ContentResponse response = doRequest(wsPart, HttpMethod.DELETE, null);
       System.err.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-      System.err.println(contentExchange.getResponseContent());
-      Assert.assertEquals(expectedResponse, contentExchange.getResponseStatus());
+      System.err.println(response.getContent());
+      Assert.assertEquals(expectedResponse, response.getStatus());
     } catch (final Exception e) {
       throw new IllegalStateException(e);
     }
   }
 
   protected String doContentRequest(String wsPart, String content, int expectedResponse, String expectedContent,
-      String method) {
+      HttpMethod method) {
     try {
 
-      final ContentExchange contentExchange = doRequest(wsPart, method, content);
+      final ContentResponse contentResponse = doRequest(wsPart, method, content);
 
       System.err.println(content);
 
-      dumpError(expectedResponse, contentExchange);
+      dumpError(expectedResponse, contentResponse);
 
-      Assert.assertEquals(expectedResponse, contentExchange.getResponseStatus());
+      Assert.assertEquals(expectedResponse, contentResponse.getStatus());
 
       if (expectedResponse == 500) {
         // no content available anyway
         return ""; //$NON-NLS-1$
       }
-      final String retContent = contentExchange.getResponseContent();
+      final String retContent = contentResponse.getContentAsString();
       System.err.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>");
       System.err.println(retContent);
 
@@ -229,14 +222,14 @@ public abstract class BaseWSWebTest extends BaseTest {
 
   protected String doGetRequest(String wsPart, String testContent, int responseCode) {
     try {
-      final ContentExchange contentExchange = doRequest(wsPart, HttpMethods.GET, null);
-      dumpError(responseCode, contentExchange);
-      final String content = contentExchange.getResponseContent();
+      final ContentResponse contentResponse = doRequest(wsPart, HttpMethod.GET, null);
+      dumpError(responseCode, contentResponse);
+      final String content = contentResponse.getContentAsString();
       System.err.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
       System.err.println(content);
 
-      Assert.assertEquals(responseCode, contentExchange.getResponseStatus());
+      Assert.assertEquals(responseCode, contentResponse.getStatus());
       if (testContent != null && content.indexOf(testContent) == -1) {
         System.err.println(content);
         Assert.fail();
@@ -247,10 +240,10 @@ public abstract class BaseWSWebTest extends BaseTest {
     }
   }
 
-  private void dumpError(int expectedResponseCode, ContentExchange contentExchange) throws Exception {
-    if (expectedResponseCode != contentExchange.getResponseStatus()
-        && contentExchange.getResponseStatus() == HttpServletResponse.SC_INTERNAL_SERVER_ERROR) {
-      final String content = contentExchange.getResponseContent();
+  private void dumpError(int expectedResponseCode, ContentResponse response) throws Exception {
+    if (expectedResponseCode != response.getStatus()
+        && response.getStatus() == HttpServletResponse.SC_INTERNAL_SERVER_ERROR) {
+      final String content = response.getContentAsString();
       if (content.contains("response:error")) { //$NON-NLS-1$
         final ErrorType errorType = (ErrorType) deserialize(content).get(0);
         System.err.println(errorType.getMessage());

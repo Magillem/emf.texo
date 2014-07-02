@@ -43,7 +43,7 @@ import org.eclipse.emf.texo.test.model.samples.library.Writer;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelFactory;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 import org.eclipse.emf.texo.utils.ModelUtils;
-import org.eclipse.jetty.http.HttpMethods;
+import org.eclipse.jetty.http.HttpMethod;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -192,7 +192,7 @@ public class WSMainTest extends BaseWSWebTest {
       libResult.getWriters().remove(w);
       libResult.setName("updated"); //$NON-NLS-1$
       content = serialize(libResult);
-      doContentRequest(getObjectUrlPart(libResult), content, HttpServletResponse.SC_OK, null, HttpMethods.PUT);
+      doContentRequest(getObjectUrlPart(libResult), content, HttpServletResponse.SC_OK, null, HttpMethod.PUT);
       checkExists(w, false);
       for (Book bk : w.getBooks()) {
         checkExists(bk, false);
@@ -220,7 +220,7 @@ public class WSMainTest extends BaseWSWebTest {
       w.setName("name" + i); //$NON-NLS-1$
       final String content = serialize(w);
       final String resultStr = doContentRequest(LibraryModelPackage.INSTANCE.getWriterEClass().getName(), content,
-          HttpServletResponse.SC_OK, null, HttpMethods.POST);
+          HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResultType result = (ResultType) deserialize(resultStr).get(0);
       Assert.assertEquals(1, result.getInserted().size());
       Assert.assertEquals(0, result.getUpdated().size());
@@ -274,7 +274,7 @@ public class WSMainTest extends BaseWSWebTest {
       w.setName("name" + i); //$NON-NLS-1$
       final String content = serialize(w);
       doContentRequest(ModelUtils.getQualifiedNameFromEClass(LibraryModelPackage.INSTANCE.getWriterEClass()), content,
-          HttpServletResponse.SC_OK, null, HttpMethods.POST);
+          HttpServletResponse.SC_OK, null, HttpMethod.POST);
     }
 
     // get all the writers which start with a 2, in total there are 11 (the ones 20-29 and 2)
@@ -329,7 +329,7 @@ public class WSMainTest extends BaseWSWebTest {
 
       final String content = serialize(queryType);
       final String resultStr = doContentRequest("?" + ServiceConstants.PARAM_RETRIEVAL + "=true", content,
-          HttpServletResponse.SC_OK, null, HttpMethods.POST);
+          HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResponseType result = (ResponseType) deserialize(resultStr).get(0);
       Assert.assertEquals(11, result.getTotalRows());
       Assert.assertEquals(11, result.getData().size());
@@ -353,7 +353,7 @@ public class WSMainTest extends BaseWSWebTest {
 
       final String content = serialize(queryType);
       final String resultStr = doContentRequest("?" + ServiceConstants.PARAM_RETRIEVAL + "=true", content,
-          HttpServletResponse.SC_OK, null, HttpMethods.POST);
+          HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResponseType result = (ResponseType) deserialize(resultStr).get(0);
       Assert.assertEquals(11, result.getTotalRows());
       Assert.assertEquals(11, result.getData().size());
@@ -409,7 +409,7 @@ public class WSMainTest extends BaseWSWebTest {
       final String content = serialize(createTestDataInstance());
       final String resultStr = doContentRequest(
           ModelUtils.getQualifiedNameFromEClass(LibraryModelPackage.INSTANCE.getWriterEClass()), content,
-          HttpServletResponse.SC_OK, null, HttpMethods.POST);
+          HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResultType result = (ResultType) deserialize(resultStr).get(0);
       lib = (Library) result.getInserted().get(0);
       Assert.assertTrue(lib.getDb_Id() != null);
@@ -434,7 +434,7 @@ public class WSMainTest extends BaseWSWebTest {
       final String content = serialize(w);
       final String resultStr = doContentRequest(
           ModelUtils.getQualifiedNameFromEClass(LibraryModelPackage.INSTANCE.getWriterEClass()), content,
-          HttpServletResponse.SC_OK, null, HttpMethods.POST);
+          HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResultType resultType = (ResultType) deserialize(resultStr).get(0);
       final Writer wResult = (Writer) resultType.getUpdated().get(0);
       Assert.assertNotSame(w, wResult);
@@ -461,7 +461,7 @@ public class WSMainTest extends BaseWSWebTest {
       final String content = serialize(w);
       final String resultStr = doContentRequest(
           ModelUtils.getQualifiedNameFromEClass(LibraryModelPackage.INSTANCE.getWriterEClass()), content,
-          HttpServletResponse.SC_OK, null, HttpMethods.POST);
+          HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResultType resultType = (ResultType) deserialize(resultStr).get(0);
       final Writer wResult = (Writer) resultType.getUpdated().get(0);
       Assert.assertNotSame(w, wResult);
