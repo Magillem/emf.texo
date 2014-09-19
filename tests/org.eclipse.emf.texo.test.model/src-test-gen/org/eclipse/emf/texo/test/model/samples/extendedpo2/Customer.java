@@ -46,7 +46,7 @@ public class Customer extends Identifiable {
 
   /**
    * Returns the value of '<em><b>customerID</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>customerID</b></em>' feature
@@ -58,7 +58,7 @@ public class Customer extends Identifiable {
 
   /**
    * Sets the '{@link Customer#getCustomerID() <em>customerID</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCustomerID
@@ -71,7 +71,7 @@ public class Customer extends Identifiable {
 
   /**
    * Returns the value of '<em><b>orders</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>orders</b></em>' feature
@@ -128,7 +128,7 @@ public class Customer extends Identifiable {
 
   /**
    * Sets the '{@link Customer#getOrders() <em>orders</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOrders

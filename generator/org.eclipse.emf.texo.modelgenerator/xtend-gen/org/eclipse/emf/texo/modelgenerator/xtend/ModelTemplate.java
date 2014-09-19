@@ -41,20 +41,18 @@ public class ModelTemplate extends BaseMainTemplate {
         EClass _eClass = eClassAnnotation.getEClass();
         boolean _isInterface = _eClass.isInterface();
         if (_isInterface) {
-          InterfaceTemplate _interfaceTemplate = new InterfaceTemplate();
-          InterfaceTemplate template = _interfaceTemplate;
+          InterfaceTemplate template = new InterfaceTemplate();
           ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
           template.setArtifactGenerator(_artifactGenerator);
           template.generate(eClassAnnotation);
-          Map<String,String> _files = template.getFiles();
+          Map<String, String> _files = template.getFiles();
           this.addFiles(_files);
         } else {
-          EntityTemplate _entityTemplate = new EntityTemplate();
-          EntityTemplate template_1 = _entityTemplate;
+          EntityTemplate template_1 = new EntityTemplate();
           ArtifactGenerator _artifactGenerator_1 = this.getArtifactGenerator();
           template_1.setArtifactGenerator(_artifactGenerator_1);
           template_1.generate(eClassAnnotation);
-          Map<String,String> _files_1 = template_1.getFiles();
+          Map<String, String> _files_1 = template_1.getFiles();
           this.addFiles(_files_1);
         }
         this.doExecuteXPandTemplate("org::eclipse::emf::texo::modelgenerator::templates::addition", eClassAnnotation);
@@ -63,12 +61,11 @@ public class ModelTemplate extends BaseMainTemplate {
     EList<EEnumModelGenAnnotation> _eEnumModelGenAnnotations = ePackageAnnotation.getEEnumModelGenAnnotations();
     for (final EEnumModelGenAnnotation eEnumAnnotation : _eEnumModelGenAnnotations) {
       {
-        EnumTemplate _enumTemplate = new EnumTemplate();
-        EnumTemplate template = _enumTemplate;
+        EnumTemplate template = new EnumTemplate();
         ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
         template.setArtifactGenerator(_artifactGenerator);
         template.generate(eEnumAnnotation);
-        Map<String,String> _files = template.getFiles();
+        Map<String, String> _files = template.getFiles();
         this.addFiles(_files);
         this.doExecuteXPandTemplate("org::eclipse::emf::texo::modelgenerator::templates::addition", eEnumAnnotation);
       }
@@ -76,31 +73,28 @@ public class ModelTemplate extends BaseMainTemplate {
     boolean _isAddRuntimeModelBehavior = ePackageAnnotation.isAddRuntimeModelBehavior();
     if (_isAddRuntimeModelBehavior) {
       {
-        ModelPackageTemplate _modelPackageTemplate = new ModelPackageTemplate();
-        ModelPackageTemplate template = _modelPackageTemplate;
+        ModelPackageTemplate template = new ModelPackageTemplate();
         ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
         template.setArtifactGenerator(_artifactGenerator);
         template.generate(ePackageAnnotation, doDao);
-        Map<String,String> _files = template.getFiles();
+        Map<String, String> _files = template.getFiles();
         this.addFiles(_files);
       }
       {
-        ModelFactoryTemplate _modelFactoryTemplate = new ModelFactoryTemplate();
-        ModelFactoryTemplate template = _modelFactoryTemplate;
+        ModelFactoryTemplate template = new ModelFactoryTemplate();
         ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
         template.setArtifactGenerator(_artifactGenerator);
         template.generate(ePackageAnnotation);
-        Map<String,String> _files = template.getFiles();
+        Map<String, String> _files = template.getFiles();
         this.addFiles(_files);
       }
       boolean _isHandleEcoreFile = ePackageAnnotation.isHandleEcoreFile();
       if (_isHandleEcoreFile) {
-        EcoreFileTemplate _ecoreFileTemplate = new EcoreFileTemplate();
-        EcoreFileTemplate template = _ecoreFileTemplate;
+        EcoreFileTemplate template = new EcoreFileTemplate();
         ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
         template.setArtifactGenerator(_artifactGenerator);
         template.generate(ePackageAnnotation);
-        Map<String,String> _files = template.getFiles();
+        Map<String, String> _files = template.getFiles();
         this.addFiles(_files);
       }
       if (doDao) {
@@ -109,12 +103,11 @@ public class ModelTemplate extends BaseMainTemplate {
           String _daoQualifiedClassName = eClassAnnotation_1.getDaoQualifiedClassName();
           boolean _notEquals = (!Objects.equal(_daoQualifiedClassName, null));
           if (_notEquals) {
-            DaoTemplate _daoTemplate = new DaoTemplate();
-            DaoTemplate template_1 = _daoTemplate;
+            DaoTemplate template_1 = new DaoTemplate();
             ArtifactGenerator _artifactGenerator_1 = this.getArtifactGenerator();
             template_1.setArtifactGenerator(_artifactGenerator_1);
             template_1.generate(eClassAnnotation_1);
-            Map<String,String> _files_1 = template_1.getFiles();
+            Map<String, String> _files_1 = template_1.getFiles();
             this.addFiles(_files_1);
           }
         }

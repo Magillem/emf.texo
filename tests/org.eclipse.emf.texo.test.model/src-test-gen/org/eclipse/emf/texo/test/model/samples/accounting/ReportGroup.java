@@ -63,7 +63,7 @@ public class ReportGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -75,7 +75,7 @@ public class ReportGroup extends Identifiable {
 
   /**
    * Sets the '{@link ReportGroup#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -88,7 +88,7 @@ public class ReportGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>reportGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>reportGroup</b></em>' feature
@@ -145,7 +145,7 @@ public class ReportGroup extends Identifiable {
 
   /**
    * Sets the '{@link ReportGroup#getReportGroup() <em>reportGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newReportGroup
@@ -158,7 +158,7 @@ public class ReportGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>account</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>account</b></em>' feature
@@ -215,7 +215,7 @@ public class ReportGroup extends Identifiable {
 
   /**
    * Sets the '{@link ReportGroup#getAccount() <em>account</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAccount

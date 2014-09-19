@@ -44,8 +44,7 @@ public class ModelPackageTemplate extends BaseTemplate {
   }
   
   public List<String> getTemplateOverrides() {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    List<String> list = _arrayList;
+    List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::modelpackage");
     list.add("org::eclipse::emf::texo::modelgenerator::xtend::ModelPackageTemplate");
     return list;

@@ -46,7 +46,7 @@ public class WorkDay extends Identifiable {
 
   /**
    * Returns the value of '<em><b>dayOfWeek</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dayOfWeek</b></em>' feature
@@ -58,7 +58,7 @@ public class WorkDay extends Identifiable {
 
   /**
    * Sets the '{@link WorkDay#getDayOfWeek() <em>dayOfWeek</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDayOfWeek
@@ -71,7 +71,7 @@ public class WorkDay extends Identifiable {
 
   /**
    * Returns the value of '<em><b>duration</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>duration</b></em>' feature
@@ -83,7 +83,7 @@ public class WorkDay extends Identifiable {
 
   /**
    * Sets the '{@link WorkDay#getDuration() <em>duration</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDuration
@@ -96,7 +96,7 @@ public class WorkDay extends Identifiable {
 
   /**
    * Returns the value of '<em><b>startTime</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>startTime</b></em>' feature
@@ -108,7 +108,7 @@ public class WorkDay extends Identifiable {
 
   /**
    * Sets the '{@link WorkDay#getStartTime() <em>startTime</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStartTime

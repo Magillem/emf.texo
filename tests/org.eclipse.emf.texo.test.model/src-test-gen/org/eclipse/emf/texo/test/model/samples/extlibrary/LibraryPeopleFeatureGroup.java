@@ -172,7 +172,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>writers</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>writers</b></em>' feature
@@ -184,7 +184,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Library#getWriters() <em>writers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWriters
@@ -198,7 +198,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>employees</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>employees</b></em>' feature
@@ -210,7 +210,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Library#getEmployees() <em>employees</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEmployees
@@ -224,7 +224,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>borrowers</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>borrowers</b></em>' feature
@@ -236,7 +236,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Library#getBorrowers() <em>borrowers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBorrowers

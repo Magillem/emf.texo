@@ -42,7 +42,7 @@ public class GlobalAddress extends Address {
 
   /**
    * Returns the value of '<em><b>location</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>location</b></em>' feature
@@ -54,7 +54,7 @@ public class GlobalAddress extends Address {
 
   /**
    * Sets the '{@link GlobalAddress#getLocation() <em>location</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLocation
@@ -67,7 +67,7 @@ public class GlobalAddress extends Address {
 
   /**
    * Returns the value of '<em><b>countryCode</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>countryCode</b></em>' feature
@@ -79,7 +79,7 @@ public class GlobalAddress extends Address {
 
   /**
    * Sets the '{@link GlobalAddress#getCountryCode() <em>countryCode</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountryCode

@@ -53,7 +53,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -65,7 +65,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -78,7 +78,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>customers</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>customers</b></em>' feature
@@ -135,7 +135,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getCustomers() <em>customers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCustomers
@@ -148,7 +148,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>orders</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>orders</b></em>' feature
@@ -205,7 +205,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getOrders() <em>orders</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOrders
@@ -218,7 +218,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>pendingOrders</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pendingOrders</b></em>' feature
@@ -233,7 +233,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shippedOrders</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shippedOrders</b></em>' feature

@@ -72,7 +72,7 @@ public class Task extends Identifiable {
 
   /**
    * Returns the value of '<em><b>capacityEntry</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>capacityEntry</b></em>' feature
@@ -84,7 +84,7 @@ public class Task extends Identifiable {
 
   /**
    * Sets the '{@link Task#getCapacityEntry() <em>capacityEntry</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCapacityEntry
@@ -97,7 +97,7 @@ public class Task extends Identifiable {
 
   /**
    * Returns the value of '<em><b>production</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>production</b></em>' feature
@@ -109,7 +109,7 @@ public class Task extends Identifiable {
 
   /**
    * Sets the '{@link Task#getProduction() <em>production</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProduction
@@ -122,7 +122,7 @@ public class Task extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -134,7 +134,7 @@ public class Task extends Identifiable {
 
   /**
    * Sets the '{@link Task#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -147,7 +147,7 @@ public class Task extends Identifiable {
 
   /**
    * Returns the value of '<em><b>taskId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>taskId</b></em>' feature
@@ -159,7 +159,7 @@ public class Task extends Identifiable {
 
   /**
    * Sets the '{@link Task#getTaskId() <em>taskId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTaskId
@@ -172,7 +172,7 @@ public class Task extends Identifiable {
 
   /**
    * Returns the value of '<em><b>timePerPice</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>timePerPice</b></em>' feature
@@ -184,7 +184,7 @@ public class Task extends Identifiable {
 
   /**
    * Sets the '{@link Task#getTimePerPice() <em>timePerPice</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTimePerPice
@@ -197,7 +197,7 @@ public class Task extends Identifiable {
 
   /**
    * Returns the value of '<em><b>timePerPreperation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>timePerPreperation</b></em>' feature
@@ -209,7 +209,7 @@ public class Task extends Identifiable {
 
   /**
    * Sets the '{@link Task#getTimePerPreperation() <em>timePerPreperation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTimePerPreperation

@@ -53,7 +53,7 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -109,7 +109,7 @@ public class CapaModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -226,12 +226,12 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CapacityEntry</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CapacityEntryModelObject<E extends CapacityEntry> extends
@@ -319,12 +319,12 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Machine</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MachineModelObject<E extends Machine> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -438,12 +438,12 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>WorkWeek</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WorkWeekModelObject<E extends WorkWeek> extends
@@ -538,12 +538,12 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Task</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TaskModelObject<E extends Task> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -650,12 +650,12 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MachineList</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MachineListModelObject<E extends MachineList> extends
@@ -743,12 +743,12 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Production</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ProductionModelObject<E extends Production> extends
@@ -856,12 +856,12 @@ public class CapaModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>WorkDay</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WorkDayModelObject<E extends WorkDay> extends IdentifiableModelFactory.IdentifiableModelObject<E> {

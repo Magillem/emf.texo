@@ -28,7 +28,7 @@ public class Employee extends Person {
 
   /**
    * Returns the value of '<em><b>manager</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>manager</b></em>' feature
@@ -40,7 +40,7 @@ public class Employee extends Person {
 
   /**
    * Sets the '{@link Employee#getManager() <em>manager</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newManager

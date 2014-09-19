@@ -59,7 +59,7 @@ public class Library extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -71,7 +71,7 @@ public class Library extends Identifiable {
 
   /**
    * Sets the '{@link Library#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -84,7 +84,7 @@ public class Library extends Identifiable {
 
   /**
    * Returns the value of '<em><b>writers</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>writers</b></em>' feature
@@ -141,7 +141,7 @@ public class Library extends Identifiable {
 
   /**
    * Sets the '{@link Library#getWriters() <em>writers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWriters
@@ -154,7 +154,7 @@ public class Library extends Identifiable {
 
   /**
    * Returns the value of '<em><b>books</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>books</b></em>' feature
@@ -211,7 +211,7 @@ public class Library extends Identifiable {
 
   /**
    * Sets the '{@link Library#getBooks() <em>books</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBooks

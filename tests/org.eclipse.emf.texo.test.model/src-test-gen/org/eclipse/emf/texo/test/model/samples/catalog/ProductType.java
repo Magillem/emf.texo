@@ -63,7 +63,7 @@ public class ProductType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>code</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>code</b></em>' feature
@@ -75,7 +75,7 @@ public class ProductType extends Identifiable {
 
   /**
    * Sets the '{@link ProductType#getCode() <em>code</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCode
@@ -115,7 +115,7 @@ public class ProductType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>remark</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>remark</b></em>' feature
@@ -172,7 +172,7 @@ public class ProductType extends Identifiable {
 
   /**
    * Sets the '{@link ProductType#getRemark() <em>remark</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRemark
@@ -185,7 +185,7 @@ public class ProductType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>price</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>price</b></em>' feature
@@ -197,7 +197,7 @@ public class ProductType extends Identifiable {
 
   /**
    * Sets the '{@link ProductType#getPrice() <em>price</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPrice

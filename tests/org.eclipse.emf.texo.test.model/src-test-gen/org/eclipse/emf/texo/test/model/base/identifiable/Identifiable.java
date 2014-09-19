@@ -37,7 +37,7 @@ public abstract class Identifiable {
 
   /**
    * Returns the value of '<em><b>db_Id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>db_Id</b></em>' feature
@@ -49,7 +49,7 @@ public abstract class Identifiable {
 
   /**
    * Sets the '{@link Identifiable#getDb_Id() <em>db_Id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDb_Id
@@ -62,7 +62,7 @@ public abstract class Identifiable {
 
   /**
    * Returns the value of '<em><b>db_version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>db_version</b></em>' feature
@@ -74,7 +74,7 @@ public abstract class Identifiable {
 
   /**
    * Sets the '{@link Identifiable#getDb_version() <em>db_version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDb_version

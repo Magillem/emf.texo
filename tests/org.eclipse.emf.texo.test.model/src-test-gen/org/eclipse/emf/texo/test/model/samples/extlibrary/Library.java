@@ -93,7 +93,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -105,7 +105,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -118,7 +118,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>writers</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>writers</b></em>' feature
@@ -131,7 +131,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getWriters() <em>writers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWriters
@@ -144,7 +144,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>employees</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>employees</b></em>' feature
@@ -157,7 +157,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getEmployees() <em>employees</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEmployees
@@ -171,7 +171,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>borrowers</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>borrowers</b></em>' feature
@@ -184,7 +184,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getBorrowers() <em>borrowers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBorrowers
@@ -198,7 +198,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>stock</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stock</b></em>' feature
@@ -255,7 +255,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getStock() <em>stock</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStock
@@ -268,7 +268,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>books</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>books</b></em>' feature
@@ -325,7 +325,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getBooks() <em>books</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBooks
@@ -338,7 +338,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>branches</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>branches</b></em>' feature
@@ -395,7 +395,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getBranches() <em>branches</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBranches
@@ -408,7 +408,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>parentBranch</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>parentBranch</b></em>' feature
@@ -420,7 +420,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getParentBranch() <em>parentBranch</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newParentBranch
@@ -433,7 +433,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>people</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>people</b></em>' feature
@@ -445,7 +445,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getPeople() <em>people</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPeople
@@ -458,7 +458,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>address</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>address</b></em>' feature
@@ -470,7 +470,7 @@ public class Library extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Library#getAddress() <em>address</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAddress

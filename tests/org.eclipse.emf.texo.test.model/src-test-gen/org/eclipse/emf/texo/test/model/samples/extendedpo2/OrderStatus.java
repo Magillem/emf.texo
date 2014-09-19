@@ -79,7 +79,7 @@ public enum OrderStatus {
   /**
    * Returns the '<em><b>OrderStatus</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the OrderStatus, the literal enum class

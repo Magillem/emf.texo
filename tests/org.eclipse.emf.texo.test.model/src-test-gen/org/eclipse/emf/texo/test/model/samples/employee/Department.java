@@ -53,7 +53,7 @@ public class Department extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -65,7 +65,7 @@ public class Department extends Identifiable {
 
   /**
    * Sets the '{@link Department#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -78,7 +78,7 @@ public class Department extends Identifiable {
 
   /**
    * Returns the value of '<em><b>employees</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>employees</b></em>' feature
@@ -134,7 +134,7 @@ public class Department extends Identifiable {
 
   /**
    * Sets the '{@link Department#getEmployees() <em>employees</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEmployees

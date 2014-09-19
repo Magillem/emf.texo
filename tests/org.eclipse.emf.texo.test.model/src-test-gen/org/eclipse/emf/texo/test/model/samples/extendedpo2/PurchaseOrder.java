@@ -103,7 +103,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>items</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>items</b></em>' feature
@@ -160,7 +160,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getItems() <em>items</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newItems
@@ -173,7 +173,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>billTo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>billTo</b></em>' feature
@@ -185,7 +185,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getBillTo() <em>billTo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBillTo
@@ -198,7 +198,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shipTo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shipTo</b></em>' feature
@@ -210,7 +210,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getShipTo() <em>shipTo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShipTo
@@ -223,7 +223,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -235,7 +235,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getComment() <em>comment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -248,7 +248,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>orderDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>orderDate</b></em>' feature
@@ -260,7 +260,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getOrderDate() <em>orderDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOrderDate
@@ -273,7 +273,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>status</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>status</b></em>' feature
@@ -285,7 +285,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getStatus() <em>status</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStatus
@@ -298,7 +298,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>totalAmount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>totalAmount</b></em>' feature
@@ -313,7 +313,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>customer</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>customer</b></em>' feature
@@ -325,7 +325,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getCustomer() <em>customer</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCustomer
@@ -338,7 +338,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>previousOrder</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>previousOrder</b></em>' feature
@@ -350,7 +350,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getPreviousOrder() <em>previousOrder</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPreviousOrder

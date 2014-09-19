@@ -56,7 +56,7 @@ public class Report extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -68,7 +68,7 @@ public class Report extends Identifiable {
 
   /**
    * Sets the '{@link Report#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -81,7 +81,7 @@ public class Report extends Identifiable {
 
   /**
    * Returns the value of '<em><b>debitReportGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>debitReportGroup</b></em>' feature
@@ -93,7 +93,7 @@ public class Report extends Identifiable {
 
   /**
    * Sets the '{@link Report#getDebitReportGroup() <em>debitReportGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDebitReportGroup
@@ -106,7 +106,7 @@ public class Report extends Identifiable {
 
   /**
    * Returns the value of '<em><b>creditReportGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>creditReportGroup</b></em>' feature
@@ -118,7 +118,7 @@ public class Report extends Identifiable {
 
   /**
    * Sets the '{@link Report#getCreditReportGroup() <em>creditReportGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCreditReportGroup

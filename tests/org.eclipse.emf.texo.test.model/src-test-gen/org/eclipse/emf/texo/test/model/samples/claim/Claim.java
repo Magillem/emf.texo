@@ -72,7 +72,7 @@ public class Claim extends Identifiable {
 
   /**
    * Returns the value of '<em><b>claimCompositeKey</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>claimCompositeKey</b></em>' feature
@@ -84,7 +84,7 @@ public class Claim extends Identifiable {
 
   /**
    * Sets the '{@link Claim#getClaimCompositeKey() <em>claimCompositeKey</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newClaimCompositeKey
@@ -176,7 +176,7 @@ public class Claim extends Identifiable {
 
   /**
    * Returns the value of '<em><b>claimLine</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>claimLine</b></em>' feature
@@ -233,7 +233,7 @@ public class Claim extends Identifiable {
 
   /**
    * Sets the '{@link Claim#getClaimLine() <em>claimLine</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newClaimLine

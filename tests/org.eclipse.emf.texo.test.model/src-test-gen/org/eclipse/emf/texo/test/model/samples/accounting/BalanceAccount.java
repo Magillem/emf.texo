@@ -39,7 +39,7 @@ public class BalanceAccount extends Account {
 
   /**
    * Returns the value of '<em><b>report</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>report</b></em>' feature
@@ -96,7 +96,7 @@ public class BalanceAccount extends Account {
 
   /**
    * Sets the '{@link BalanceAccount#getReport() <em>report</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newReport

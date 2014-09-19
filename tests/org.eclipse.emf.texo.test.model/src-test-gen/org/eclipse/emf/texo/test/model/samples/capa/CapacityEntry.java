@@ -38,7 +38,7 @@ public class CapacityEntry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>capacityEntryId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>capacityEntryId</b></em>' feature
@@ -50,7 +50,7 @@ public class CapacityEntry extends Identifiable {
 
   /**
    * Sets the '{@link CapacityEntry#getCapacityEntryId() <em>capacityEntryId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCapacityEntryId
@@ -63,7 +63,7 @@ public class CapacityEntry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -75,7 +75,7 @@ public class CapacityEntry extends Identifiable {
 
   /**
    * Sets the '{@link CapacityEntry#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

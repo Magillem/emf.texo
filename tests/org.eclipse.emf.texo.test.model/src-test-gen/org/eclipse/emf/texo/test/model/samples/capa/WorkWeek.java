@@ -44,7 +44,7 @@ public class WorkWeek extends Identifiable {
 
   /**
    * Returns the value of '<em><b>days</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>days</b></em>' feature
@@ -101,7 +101,7 @@ public class WorkWeek extends Identifiable {
 
   /**
    * Sets the '{@link WorkWeek#getDays() <em>days</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDays
@@ -114,7 +114,7 @@ public class WorkWeek extends Identifiable {
 
   /**
    * Returns the value of '<em><b>workWeekId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>workWeekId</b></em>' feature
@@ -126,7 +126,7 @@ public class WorkWeek extends Identifiable {
 
   /**
    * Sets the '{@link WorkWeek#getWorkWeekId() <em>workWeekId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWorkWeekId

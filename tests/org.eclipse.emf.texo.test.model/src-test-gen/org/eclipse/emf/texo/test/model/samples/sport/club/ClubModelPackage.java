@@ -15,13 +15,12 @@ import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelPackag
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.ClubDao;
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.MemberDao;
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.TeamDao;
-import org.eclipse.emf.texo.test.model.samples.sport.society.SocietyModelPackage;
 import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
  * The <b>Package</b> for the model '<em><b>club</b></em>'. It contains initialization code and access to the Factory to
  * instantiate types of this package.
- * 
+ *
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
@@ -68,28 +67,21 @@ public class ClubModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int CLUB_DB_ID_FEATURE_ID = 0;
+  public static final int CLUB_DB_ID_FEATURE_ID = -1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int CLUB_DB_VERSION_FEATURE_ID = 1;
+  public static final int CLUB_DB_VERSION_FEATURE_ID = -1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int CLUB_NAME_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CLUB_TEAMS_FEATURE_ID = 3;
+  public static final int CLUB_TEAMS_FEATURE_ID = 0;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -184,9 +176,9 @@ public class ClubModelPackage extends ModelPackage {
 
   /**
    * Initializes this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return an initialized instance of this class
-   * 
+   *
    * @generated
    */
   public static ClubModelPackage initialize() {
@@ -205,7 +197,6 @@ public class ClubModelPackage extends ModelPackage {
 
     isInitialized = true;
 
-    SocietyModelPackage.initialize();
     IdentifiableModelPackage.initialize();
 
     // force the initialization of the EFactory proxy
@@ -228,7 +219,7 @@ public class ClubModelPackage extends ModelPackage {
 
   /**
    * Returns the {@link ModelFactory} of this ModelPackage. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the {@link ClubModelFactory} instance.
    * @generated
    */
@@ -240,7 +231,7 @@ public class ClubModelPackage extends ModelPackage {
   /**
    * Returns the nsUri of the {@link EPackage} managed by this Package instance. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @return the nsUri of the EPackage
    * @generated
    */

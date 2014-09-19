@@ -36,7 +36,7 @@ public class BookOnTape extends AudioVisualItem {
 
   /**
    * Returns the value of '<em><b>reader</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>reader</b></em>' feature
@@ -48,7 +48,7 @@ public class BookOnTape extends AudioVisualItem {
 
   /**
    * Sets the '{@link BookOnTape#getReader() <em>reader</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newReader
@@ -61,7 +61,7 @@ public class BookOnTape extends AudioVisualItem {
 
   /**
    * Returns the value of '<em><b>author</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>author</b></em>' feature
@@ -73,7 +73,7 @@ public class BookOnTape extends AudioVisualItem {
 
   /**
    * Sets the '{@link BookOnTape#getAuthor() <em>author</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAuthor

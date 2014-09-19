@@ -43,7 +43,7 @@ public class Vat extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -55,7 +55,7 @@ public class Vat extends Identifiable {
 
   /**
    * Sets the '{@link Vat#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -68,7 +68,7 @@ public class Vat extends Identifiable {
 
   /**
    * Returns the value of '<em><b>rate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>rate</b></em>' feature
@@ -80,7 +80,7 @@ public class Vat extends Identifiable {
 
   /**
    * Sets the '{@link Vat#getRate() <em>rate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRate

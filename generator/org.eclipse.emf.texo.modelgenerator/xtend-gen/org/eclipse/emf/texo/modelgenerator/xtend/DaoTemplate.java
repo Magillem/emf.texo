@@ -39,8 +39,7 @@ public class DaoTemplate extends BaseTemplate {
   }
   
   public List<String> getTemplateOverrides() {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    List<String> list = _arrayList;
+    List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::dao");
     list.add("org::eclipse::emf::texo::modelgenerator::xtend::DaoTemplate");
     return list;

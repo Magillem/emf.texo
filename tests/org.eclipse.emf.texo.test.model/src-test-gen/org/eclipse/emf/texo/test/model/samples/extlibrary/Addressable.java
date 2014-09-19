@@ -10,7 +10,7 @@ import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableInterface;
 public interface Addressable extends IdentifiableInterface {
   /**
    * Returns the value of '<em><b>address</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>address</b></em>' feature
@@ -20,7 +20,7 @@ public interface Addressable extends IdentifiableInterface {
 
   /**
    * Sets the '{@link Addressable#getAddress() <em>address</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAddress

@@ -30,7 +30,7 @@ public class StringType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -42,7 +42,7 @@ public class StringType extends Identifiable {
 
   /**
    * Sets the '{@link StringType#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

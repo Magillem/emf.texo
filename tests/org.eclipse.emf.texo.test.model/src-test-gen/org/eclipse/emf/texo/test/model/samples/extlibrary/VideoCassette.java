@@ -32,7 +32,7 @@ public class VideoCassette extends AudioVisualItem {
 
   /**
    * Returns the value of '<em><b>cast</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>cast</b></em>' feature
@@ -89,7 +89,7 @@ public class VideoCassette extends AudioVisualItem {
 
   /**
    * Sets the '{@link VideoCassette#getCast() <em>cast</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCast

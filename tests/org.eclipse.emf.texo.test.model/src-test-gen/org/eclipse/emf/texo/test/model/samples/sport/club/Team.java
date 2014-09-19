@@ -44,7 +44,7 @@ public class Team extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -56,7 +56,7 @@ public class Team extends Identifiable {
 
   /**
    * Sets the '{@link Team#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -69,7 +69,7 @@ public class Team extends Identifiable {
 
   /**
    * Returns the value of '<em><b>members</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>members</b></em>' feature
@@ -126,7 +126,7 @@ public class Team extends Identifiable {
 
   /**
    * Sets the '{@link Team#getMembers() <em>members</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMembers

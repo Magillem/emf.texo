@@ -43,7 +43,7 @@ public abstract class AudioVisualItem extends CirculatingItem {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -55,7 +55,7 @@ public abstract class AudioVisualItem extends CirculatingItem {
 
   /**
    * Sets the '{@link AudioVisualItem#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -68,7 +68,7 @@ public abstract class AudioVisualItem extends CirculatingItem {
 
   /**
    * Returns the value of '<em><b>minutesLength</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>minutesLength</b></em>' feature
@@ -80,7 +80,7 @@ public abstract class AudioVisualItem extends CirculatingItem {
 
   /**
    * Sets the '{@link AudioVisualItem#getMinutesLength() <em>minutesLength</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMinutesLength
@@ -93,7 +93,7 @@ public abstract class AudioVisualItem extends CirculatingItem {
 
   /**
    * Returns the value of '<em><b>damaged</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>damaged</b></em>' feature
@@ -105,7 +105,7 @@ public abstract class AudioVisualItem extends CirculatingItem {
 
   /**
    * Sets the '{@link AudioVisualItem#isDamaged() <em>damaged</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDamaged

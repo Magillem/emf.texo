@@ -57,7 +57,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -137,7 +137,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -303,12 +303,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Book</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BookModelObject<E extends Book> extends CirculatingItemModelObject<E> {
@@ -412,12 +412,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Item</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ItemModelObject<E extends Item> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -499,12 +499,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Lendable</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LendableModelObject<E extends Lendable> extends AbstractModelObject<E> {
@@ -590,12 +590,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CirculatingItem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CirculatingItemModelObject<E extends CirculatingItem> extends ItemModelObject<E> {
@@ -689,12 +689,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Writer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WriterModelObject<E extends Writer> extends PersonModelObject<E> {
@@ -792,12 +792,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Addressable</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AddressableModelObject<E extends Addressable> extends AbstractModelObject<E> {
@@ -873,12 +873,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Person</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PersonModelObject<E extends Person> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -970,12 +970,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Library</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LibraryModelObject<E extends Library> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -1145,12 +1145,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Employee</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EmployeeModelObject<E extends Employee> extends PersonModelObject<E> {
@@ -1238,12 +1238,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Borrower</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BorrowerModelObject<E extends Borrower> extends PersonModelObject<E> {
@@ -1336,12 +1336,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Periodical</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PeriodicalModelObject<E extends Periodical> extends ItemModelObject<E> {
@@ -1430,12 +1430,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AudioVisualItem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AudioVisualItemModelObject<E extends AudioVisualItem> extends CirculatingItemModelObject<E> {
@@ -1534,12 +1534,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BookOnTape</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BookOnTapeModelObject<E extends BookOnTape> extends AudioVisualItemModelObject<E> {
@@ -1639,12 +1639,12 @@ public class ExtlibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>VideoCassette</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class VideoCassetteModelObject<E extends VideoCassette> extends AudioVisualItemModelObject<E> {

@@ -38,7 +38,7 @@ public abstract class Address extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -50,7 +50,7 @@ public abstract class Address extends Identifiable {
 
   /**
    * Sets the '{@link Address#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -63,7 +63,7 @@ public abstract class Address extends Identifiable {
 
   /**
    * Returns the value of '<em><b>country</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>country</b></em>' feature
@@ -75,7 +75,7 @@ public abstract class Address extends Identifiable {
 
   /**
    * Sets the '{@link Address#getCountry() <em>country</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountry

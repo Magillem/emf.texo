@@ -41,8 +41,7 @@ public class FeatureGroupTemplate extends BaseTemplate {
   }
   
   public List<String> getTemplateOverrides() {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    List<String> list = _arrayList;
+    List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::featuregroup");
     list.add("org::eclipse::emf::texo::modelgenerator::xtend::FeatureGroupTemplate");
     return list;
@@ -115,7 +114,7 @@ public class FeatureGroupTemplate extends BaseTemplate {
         String _trim = _featureMapClassExtends_1.trim();
         int _length = _trim.length();
         boolean _greaterThan = (_length > 0);
-        _and = (_notEquals_1 && _greaterThan);
+        _and = _greaterThan;
       }
       if (_and) {
         _builder.append(" extends ");
@@ -582,7 +581,7 @@ public class FeatureGroupTemplate extends BaseTemplate {
           } else {
             EStructuralFeatureModelGenAnnotation _featureMapFeature = memberFeatureAnnotation_1.getFeatureMapFeature();
             boolean _equals = Objects.equal(_featureMapFeature, eStructuralFeatureModelGenAnnotation);
-            _and_1 = (_isGenerateCode_1 && _equals);
+            _and_1 = _equals;
           }
           if (_and_1) {
             _builder.append("    ");

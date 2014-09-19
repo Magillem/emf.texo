@@ -48,7 +48,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>price</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>price</b></em>' feature
@@ -60,7 +60,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getPrice() <em>price</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPrice
@@ -73,7 +73,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>quantityTo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>quantityTo</b></em>' feature
@@ -85,7 +85,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getQuantityTo() <em>quantityTo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newQuantityTo
@@ -98,7 +98,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>supplier</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>supplier</b></em>' feature
@@ -110,7 +110,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getSupplier() <em>supplier</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSupplier

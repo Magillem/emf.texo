@@ -34,7 +34,7 @@ public class Writer extends Person {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -49,7 +49,7 @@ public class Writer extends Person {
 
   /**
    * Sets the '{@link Writer#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -65,7 +65,7 @@ public class Writer extends Person {
 
   /**
    * Returns the value of '<em><b>books</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>books</b></em>' feature
@@ -122,7 +122,7 @@ public class Writer extends Person {
 
   /**
    * Sets the '{@link Writer#getBooks() <em>books</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBooks

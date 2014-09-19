@@ -62,7 +62,7 @@ public class CatalogType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -74,7 +74,7 @@ public class CatalogType extends Identifiable {
 
   /**
    * Sets the '{@link CatalogType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -87,7 +87,7 @@ public class CatalogType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -99,7 +99,7 @@ public class CatalogType extends Identifiable {
 
   /**
    * Sets the '{@link CatalogType#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription
@@ -112,7 +112,7 @@ public class CatalogType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>subCatalog</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>subCatalog</b></em>' feature
@@ -169,7 +169,7 @@ public class CatalogType extends Identifiable {
 
   /**
    * Sets the '{@link CatalogType#getSubCatalog() <em>subCatalog</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSubCatalog

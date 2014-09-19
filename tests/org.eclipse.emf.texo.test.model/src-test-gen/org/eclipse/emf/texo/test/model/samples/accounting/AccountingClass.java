@@ -95,7 +95,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -107,7 +107,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link AccountingClass#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -120,7 +120,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>accountGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>accountGroup</b></em>' feature
@@ -177,7 +177,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link AccountingClass#getAccountGroup() <em>accountGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAccountGroup
@@ -190,7 +190,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>vat</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>vat</b></em>' feature
@@ -247,7 +247,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link AccountingClass#getVat() <em>vat</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVat
@@ -260,7 +260,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>vatAccount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>vatAccount</b></em>' feature
@@ -272,7 +272,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link AccountingClass#getVatAccount() <em>vatAccount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVatAccount
@@ -285,7 +285,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>report</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>report</b></em>' feature
@@ -297,7 +297,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link AccountingClass#getReport() <em>report</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newReport
@@ -310,7 +310,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>journalGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>journalGroup</b></em>' feature
@@ -367,7 +367,7 @@ public class AccountingClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link AccountingClass#getJournalGroup() <em>journalGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newJournalGroup

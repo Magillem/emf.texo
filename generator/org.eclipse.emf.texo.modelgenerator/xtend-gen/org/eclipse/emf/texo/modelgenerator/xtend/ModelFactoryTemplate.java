@@ -46,14 +46,12 @@ public class ModelFactoryTemplate extends BaseTemplate {
     String _generateFeatureMaps = this.generateFeatureMaps(_modelController_2, ePackageModelGenAnnotation);
     String _plus_1 = (content + _generateFeatureMaps);
     content = _plus_1;
-    String _plus_2 = (content + "}");
-    content = _plus_2;
+    content = (content + "}");
     this.addFile(fileName, content);
   }
   
   public List<String> getTemplateOverrides() {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    List<String> list = _arrayList;
+    List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::modelfactory");
     list.add("org::eclipse::emf::texo::modelgenerator::xtend::ModelFactoryTemplate");
     return list;
@@ -159,13 +157,13 @@ public class ModelFactoryTemplate extends BaseTemplate {
             EClass _eClass_1 = eClassAnnotation.getEClass();
             boolean _isInterface = _eClass_1.isInterface();
             boolean _not_1 = (!_isInterface);
-            _and_1 = (_not && _not_1);
+            _and_1 = _not_1;
           }
           if (!_and_1) {
             _and = false;
           } else {
             boolean _isGenerateCode = eClassAnnotation.isGenerateCode();
-            _and = (_and_1 && _isGenerateCode);
+            _and = _isGenerateCode;
           }
           if (_and) {
             _builder.append("    ");
@@ -510,13 +508,13 @@ public class ModelFactoryTemplate extends BaseTemplate {
             EClass _eClass_3 = eClassAnnotation_4.getEClass();
             boolean _isInterface_1 = _eClass_3.isInterface();
             boolean _not_4 = (!_isInterface_1);
-            _and_3 = (_not_3 && _not_4);
+            _and_3 = _not_4;
           }
           if (!_and_3) {
             _and_2 = false;
           } else {
             boolean _isGenerateCode_4 = eClassAnnotation_4.isGenerateCode();
-            _and_2 = (_and_3 && _isGenerateCode_4);
+            _and_2 = _isGenerateCode_4;
           }
           if (_and_2) {
             _builder.append("    ");
@@ -995,20 +993,18 @@ public class ModelFactoryTemplate extends BaseTemplate {
           _and = false;
         } else {
           boolean _isGenerateCode = eClassAnnotation.isGenerateCode();
-          _and = (_notEquals && _isGenerateCode);
+          _and = _isGenerateCode;
         }
         if (_and) {
-          ModelObjectTemplate _modelObjectTemplate = new ModelObjectTemplate();
-          ModelObjectTemplate template = _modelObjectTemplate;
+          ModelObjectTemplate template = new ModelObjectTemplate();
           ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
           template.setArtifactGenerator(_artifactGenerator);
-          String _plus = (result + "\n\n");
           String _generateContent = template.generateContent(eClassAnnotation);
-          String _plus_1 = (_plus + _generateContent);
-          result = _plus_1;
+          String _plus = ((result + "\n\n") + _generateContent);
+          result = _plus;
         }
       }
-      _xblockexpression = (result);
+      _xblockexpression = result;
     }
     return _xblockexpression;
   }
@@ -1025,19 +1021,17 @@ public class ModelFactoryTemplate extends BaseTemplate {
           for (final EStructuralFeatureModelGenAnnotation featureAnnotation : _featureMapFeatures) {
             boolean _isGenerateCode_1 = featureAnnotation.isGenerateCode();
             if (_isGenerateCode_1) {
-              ModelFeatureMapTemplate _modelFeatureMapTemplate = new ModelFeatureMapTemplate();
-              ModelFeatureMapTemplate template = _modelFeatureMapTemplate;
+              ModelFeatureMapTemplate template = new ModelFeatureMapTemplate();
               ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
               template.setArtifactGenerator(_artifactGenerator);
-              String _plus = (result + "\n\n");
               String _generateContent = template.generateContent(featureAnnotation);
-              String _plus_1 = (_plus + _generateContent);
-              result = _plus_1;
+              String _plus = ((result + "\n\n") + _generateContent);
+              result = _plus;
             }
           }
         }
       }
-      _xblockexpression = (result);
+      _xblockexpression = result;
     }
     return _xblockexpression;
   }

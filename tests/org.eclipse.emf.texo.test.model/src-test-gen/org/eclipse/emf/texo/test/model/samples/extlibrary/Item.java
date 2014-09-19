@@ -34,7 +34,7 @@ public abstract class Item extends Identifiable {
 
   /**
    * Returns the value of '<em><b>publicationDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>publicationDate</b></em>' feature
@@ -46,7 +46,7 @@ public abstract class Item extends Identifiable {
 
   /**
    * Sets the '{@link Item#getPublicationDate() <em>publicationDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPublicationDate

@@ -31,8 +31,7 @@ public class ModelFeatureMapTemplate extends BaseTemplate {
       EPackageModelGenAnnotation _ownerEPackageAnnotation = eClassAnnotation.getOwnerEPackageAnnotation();
       EPackageModelGenAnnotation ePackageAnnotation = ((EPackageModelGenAnnotation) _ownerEPackageAnnotation);
       ModelController _modelController = this.getModelController();
-      String _generateContent = this.generateContent(_modelController, eStructuralFeatureModelGenAnnotation, eClassAnnotation, ePackageAnnotation);
-      _xblockexpression = (_generateContent);
+      _xblockexpression = this.generateContent(_modelController, eStructuralFeatureModelGenAnnotation, eClassAnnotation, ePackageAnnotation);
     }
     return _xblockexpression;
   }
@@ -43,8 +42,7 @@ public class ModelFeatureMapTemplate extends BaseTemplate {
    * override assumes that the overrider will generate a file
    */
   public List<String> getTemplateOverrides() {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    List<String> list = _arrayList;
+    List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::modelfeaturemap");
     list.add("org::eclipse::emf::texo::modelgenerator::xtend::ModelFeatureMapTemplate");
     return list;

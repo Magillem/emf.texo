@@ -46,7 +46,7 @@ public class Person extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>firstName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>firstName</b></em>' feature
@@ -58,7 +58,7 @@ public class Person extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Person#getFirstName() <em>firstName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFirstName
@@ -71,7 +71,7 @@ public class Person extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>lastName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lastName</b></em>' feature
@@ -83,7 +83,7 @@ public class Person extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Person#getLastName() <em>lastName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLastName
@@ -96,7 +96,7 @@ public class Person extends Identifiable implements Addressable {
 
   /**
    * Returns the value of '<em><b>address</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>address</b></em>' feature
@@ -108,7 +108,7 @@ public class Person extends Identifiable implements Addressable {
 
   /**
    * Sets the '{@link Person#getAddress() <em>address</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAddress

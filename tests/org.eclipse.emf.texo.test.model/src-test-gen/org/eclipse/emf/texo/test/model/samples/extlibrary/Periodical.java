@@ -35,7 +35,7 @@ public abstract class Periodical extends Item {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -47,7 +47,7 @@ public abstract class Periodical extends Item {
 
   /**
    * Sets the '{@link Periodical#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -60,7 +60,7 @@ public abstract class Periodical extends Item {
 
   /**
    * Returns the value of '<em><b>issuesPerYear</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>issuesPerYear</b></em>' feature
@@ -72,7 +72,7 @@ public abstract class Periodical extends Item {
 
   /**
    * Sets the '{@link Periodical#getIssuesPerYear() <em>issuesPerYear</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIssuesPerYear

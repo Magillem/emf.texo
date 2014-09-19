@@ -75,7 +75,7 @@ public class Production extends Identifiable {
 
   /**
    * Returns the value of '<em><b>article</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>article</b></em>' feature
@@ -87,7 +87,7 @@ public class Production extends Identifiable {
 
   /**
    * Sets the '{@link Production#getArticle() <em>article</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newArticle
@@ -100,7 +100,7 @@ public class Production extends Identifiable {
 
   /**
    * Returns the value of '<em><b>dueTime</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dueTime</b></em>' feature
@@ -112,7 +112,7 @@ public class Production extends Identifiable {
 
   /**
    * Sets the '{@link Production#getDueTime() <em>dueTime</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDueTime
@@ -125,7 +125,7 @@ public class Production extends Identifiable {
 
   /**
    * Returns the value of '<em><b>missingAmount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>missingAmount</b></em>' feature
@@ -137,7 +137,7 @@ public class Production extends Identifiable {
 
   /**
    * Sets the '{@link Production#getMissingAmount() <em>missingAmount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMissingAmount
@@ -150,7 +150,7 @@ public class Production extends Identifiable {
 
   /**
    * Returns the value of '<em><b>productionId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>productionId</b></em>' feature
@@ -162,7 +162,7 @@ public class Production extends Identifiable {
 
   /**
    * Sets the '{@link Production#getProductionId() <em>productionId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProductionId
@@ -175,7 +175,7 @@ public class Production extends Identifiable {
 
   /**
    * Returns the value of '<em><b>startTime</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>startTime</b></em>' feature
@@ -187,7 +187,7 @@ public class Production extends Identifiable {
 
   /**
    * Sets the '{@link Production#getStartTime() <em>startTime</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStartTime
@@ -200,7 +200,7 @@ public class Production extends Identifiable {
 
   /**
    * Returns the value of '<em><b>totalAmount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>totalAmount</b></em>' feature
@@ -212,7 +212,7 @@ public class Production extends Identifiable {
 
   /**
    * Sets the '{@link Production#getTotalAmount() <em>totalAmount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTotalAmount

@@ -65,7 +65,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -77,7 +77,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Sets the '{@link BookStore#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -90,7 +90,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Returns the value of '<em><b>booksByWriter</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>booksByWriter</b></em>' feature
@@ -102,7 +102,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Sets the '{@link BookStore#getBooksByWriter() <em>booksByWriter</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBooksByWriter
@@ -115,7 +115,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Returns the value of '<em><b>keyWords</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>keyWords</b></em>' feature
@@ -127,7 +127,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Sets the '{@link BookStore#getKeyWords() <em>keyWords</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKeyWords
@@ -140,7 +140,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Returns the value of '<em><b>namesByWriter</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>namesByWriter</b></em>' feature
@@ -152,7 +152,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Sets the '{@link BookStore#getNamesByWriter() <em>namesByWriter</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNamesByWriter

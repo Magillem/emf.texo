@@ -44,9 +44,9 @@ public class EntityTemplate extends BaseTemplate {
         EClass _eClass = eClassModelGenAnnotation.getEClass();
         boolean _isDocumentRoot = TemplateUtil.isDocumentRoot(_eClass);
         boolean _not = (!_isDocumentRoot);
-        _or = (_isAddRuntimeModelBehavior || _not);
+        _or = _not;
       }
-      _and = (_isGenerateCode && _or);
+      _and = _or;
     }
     if (_and) {
       boolean _executeOverrides = this.executeOverrides(eClassModelGenAnnotation);
@@ -63,8 +63,7 @@ public class EntityTemplate extends BaseTemplate {
   }
   
   public List<String> getTemplateOverrides() {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    List<String> list = _arrayList;
+    List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::entity");
     list.add("org::eclipse::emf::texo::modelgenerator::xtend::EntityTemplate");
     return list;
@@ -193,7 +192,7 @@ public class EntityTemplate extends BaseTemplate {
             EStructuralFeature _eStructuralFeature = featureAnnotation.getEStructuralFeature();
             boolean _isVolatile = _eStructuralFeature.isVolatile();
             boolean _not = (!_isVolatile);
-            _and = (_isGenerateCode && _not);
+            _and = _not;
           }
           if (_and) {
             _builder.newLine();
@@ -276,19 +275,19 @@ public class EntityTemplate extends BaseTemplate {
                 _and_3 = false;
               } else {
                 boolean _isMany = featureAnnotation_1.isMany();
-                _and_3 = (_not_1 && _isMany);
+                _and_3 = _isMany;
               }
               if (!_and_3) {
                 _and_2 = false;
               } else {
                 boolean _isReference = featureAnnotation_1.isReference();
-                _and_2 = (_and_3 && _isReference);
+                _and_2 = _isReference;
               }
               if (!_and_2) {
                 _and_1 = false;
               } else {
                 boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                _and_1 = (_and_2 && _isGenerateSafeManyAccess);
+                _and_1 = _isGenerateSafeManyAccess;
               }
               if (_and_1) {
                 _builder.append("* Note: the returned collection is Unmodifiable use the {#addTo");
@@ -375,13 +374,13 @@ public class EntityTemplate extends BaseTemplate {
                     _and_5 = false;
                   } else {
                     boolean _isReference_1 = featureAnnotation_1.isReference();
-                    _and_5 = (_isMany_1 && _isReference_1);
+                    _and_5 = _isReference_1;
                   }
                   if (!_and_5) {
                     _and_4 = false;
                   } else {
                     boolean _isGenerateSafeManyAccess_1 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                    _and_4 = (_and_5 && _isGenerateSafeManyAccess_1);
+                    _and_4 = _isGenerateSafeManyAccess_1;
                   }
                   if (_and_4) {
                     {
@@ -487,9 +486,9 @@ public class EntityTemplate extends BaseTemplate {
                 } else {
                   EReferenceModelGenAnnotation _oppositeModelGenAnnotation = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
                   boolean _notEquals_4 = (!Objects.equal(_oppositeModelGenAnnotation, null));
-                  _and_6 = (_isReference_2 && _notEquals_4);
+                  _and_6 = _notEquals_4;
                 }
-                _or = (_isChangeable || _and_6);
+                _or = _and_6;
               }
               if (_or) {
                 {
@@ -502,13 +501,13 @@ public class EntityTemplate extends BaseTemplate {
                     _and_9 = false;
                   } else {
                     boolean _isMany_3 = featureAnnotation_1.isMany();
-                    _and_9 = (_equals && _isMany_3);
+                    _and_9 = _isMany_3;
                   }
                   if (!_and_9) {
                     _and_8 = false;
                   } else {
                     boolean _isReference_3 = featureAnnotation_1.isReference();
-                    _and_8 = (_and_9 && _isReference_3);
+                    _and_8 = _isReference_3;
                   }
                   if (!_and_8) {
                     _and_7 = false;
@@ -519,9 +518,9 @@ public class EntityTemplate extends BaseTemplate {
                       _or_1 = true;
                     } else {
                       boolean _isGenerateSafeManyAccess_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                      _or_1 = (_isGenerateBidirectionalAssociationSupport || _isGenerateSafeManyAccess_2);
+                      _or_1 = _isGenerateSafeManyAccess_2;
                     }
-                    _and_7 = (_and_8 && _or_1);
+                    _and_7 = _or_1;
                   }
                   if (_and_7) {
                     _builder.append("/**");
@@ -601,7 +600,7 @@ public class EntityTemplate extends BaseTemplate {
                             _and_10 = false;
                           } else {
                             boolean _isGenerateBidirectionalAssociationSupport_1 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                            _and_10 = (_notEquals_5 && _isGenerateBidirectionalAssociationSupport_1);
+                            _and_10 = _isGenerateBidirectionalAssociationSupport_1;
                           }
                           if (_and_10) {
                             _builder.append("    ");
@@ -752,7 +751,7 @@ public class EntityTemplate extends BaseTemplate {
                             _and_11 = false;
                           } else {
                             boolean _isGenerateBidirectionalAssociationSupport_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                            _and_11 = (_notEquals_6 && _isGenerateBidirectionalAssociationSupport_2);
+                            _and_11 = _isGenerateBidirectionalAssociationSupport_2;
                           }
                           if (_and_11) {
                             _builder.append("    ");
@@ -780,7 +779,7 @@ public class EntityTemplate extends BaseTemplate {
                                     _builder.append("    ");
                                     String _validJavaMemberName_26 = featureAnnotation_1.getValidJavaMemberName();
                                     _builder.append(_validJavaMemberName_26, "        ");
-                                    _builder.append("Value.remove(oppositeAnnotation.validJavaMemberName)\u00BB(this);");
+                                    _builder.append("Value.remove(oppositeAnnotation.validJavaMemberName)»(this);");
                                     _builder.newLineIfNotEmpty();
                                   }
                                 }
@@ -975,7 +974,7 @@ public class EntityTemplate extends BaseTemplate {
                         _and_12 = false;
                       } else {
                         boolean _isGenerateSafeManyAccess_5 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                        _and_12 = (_isReference_4 && _isGenerateSafeManyAccess_5);
+                        _and_12 = _isGenerateSafeManyAccess_5;
                       }
                       if (_and_12) {
                         {
@@ -1014,7 +1013,7 @@ public class EntityTemplate extends BaseTemplate {
                                 _and_13 = false;
                               } else {
                                 boolean _isGenerateBidirectionalAssociationSupport_3 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                                _and_13 = (_notEquals_8 && _isGenerateBidirectionalAssociationSupport_3);
+                                _and_13 = _isGenerateBidirectionalAssociationSupport_3;
                               }
                               if (_and_13) {
                                 EReferenceModelGenAnnotation oppositeAnnotation_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
@@ -1287,7 +1286,7 @@ public class EntityTemplate extends BaseTemplate {
           } else {
             boolean _isReference_5 = featureAnnotation_2.isReference();
             boolean _not_7 = (!_isReference_5);
-            _and_15 = (_isGenerateCode_2 && _not_7);
+            _and_15 = _not_7;
           }
           if (!_and_15) {
             _and_14 = false;
@@ -1295,7 +1294,7 @@ public class EntityTemplate extends BaseTemplate {
             EStructuralFeature _eStructuralFeature_22 = featureAnnotation_2.getEStructuralFeature();
             boolean _isMany_10 = _eStructuralFeature_22.isMany();
             boolean _not_8 = (!_isMany_10);
-            _and_14 = (_and_15 && _not_8);
+            _and_14 = _not_8;
           }
           if (_and_14) {
             _builder.append("         ");
@@ -1327,12 +1326,11 @@ public class EntityTemplate extends BaseTemplate {
     for (final EStructuralFeatureModelGenAnnotation featureAnnotation : _featureMapFeatures) {
       boolean _isGenerateCode = featureAnnotation.isGenerateCode();
       if (_isGenerateCode) {
-        FeatureGroupTemplate _featureGroupTemplate = new FeatureGroupTemplate();
-        FeatureGroupTemplate template = _featureGroupTemplate;
+        FeatureGroupTemplate template = new FeatureGroupTemplate();
         ArtifactGenerator _artifactGenerator = this.getArtifactGenerator();
         template.setArtifactGenerator(_artifactGenerator);
         template.generate(featureAnnotation);
-        Map<String,String> _files = template.getFiles();
+        Map<String, String> _files = template.getFiles();
         this.addFiles(_files);
       }
     }

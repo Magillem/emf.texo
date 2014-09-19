@@ -57,7 +57,7 @@ public class Member extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -69,7 +69,7 @@ public class Member extends Identifiable {
 
   /**
    * Sets the '{@link Member#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -82,7 +82,7 @@ public class Member extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lastName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lastName</b></em>' feature
@@ -94,7 +94,7 @@ public class Member extends Identifiable {
 
   /**
    * Sets the '{@link Member#getLastName() <em>lastName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLastName
@@ -107,7 +107,7 @@ public class Member extends Identifiable {
 
   /**
    * Returns the value of '<em><b>age</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>age</b></em>' feature
@@ -119,7 +119,7 @@ public class Member extends Identifiable {
 
   /**
    * Sets the '{@link Member#getAge() <em>age</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAge
@@ -132,7 +132,7 @@ public class Member extends Identifiable {
 
   /**
    * Returns the value of '<em><b>gender</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>gender</b></em>' feature
@@ -144,7 +144,7 @@ public class Member extends Identifiable {
 
   /**
    * Sets the '{@link Member#getGender() <em>gender</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGender

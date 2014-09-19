@@ -58,7 +58,7 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -123,7 +123,7 @@ public class AccountingModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -294,12 +294,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Accounting</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AccountingClassModelObject<E extends AccountingClass> extends
@@ -424,12 +424,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Account</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AccountModelObject<E extends Account> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -511,12 +511,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AccountGroup</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AccountGroupModelObject<E extends AccountGroup> extends
@@ -609,12 +609,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Vat</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class VatModelObject<E extends Vat> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -701,12 +701,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BalanceAccount</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BalanceAccountModelObject<E extends BalanceAccount> extends AccountModelObject<E> {
@@ -795,12 +795,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Report</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReportModelObject<E extends Report> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -892,12 +892,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>JournalGroup</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class JournalGroupModelObject<E extends JournalGroup> extends
@@ -1001,12 +1001,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ReportGroup</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReportGroupModelObject<E extends ReportGroup> extends
@@ -1222,12 +1222,12 @@ public class AccountingModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PLAccount</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PLAccountModelObject<E extends PLAccount> extends AccountModelObject<E> {

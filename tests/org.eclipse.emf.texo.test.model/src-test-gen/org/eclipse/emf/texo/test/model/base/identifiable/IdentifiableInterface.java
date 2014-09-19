@@ -9,7 +9,7 @@ package org.eclipse.emf.texo.test.model.base.identifiable;
 public interface IdentifiableInterface {
   /**
    * Returns the value of '<em><b>db_Id</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>db_Id</b></em>' feature
@@ -19,7 +19,7 @@ public interface IdentifiableInterface {
 
   /**
    * Sets the '{@link IdentifiableInterface#getDb_Id() <em>db_Id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDb_Id
@@ -30,7 +30,7 @@ public interface IdentifiableInterface {
 
   /**
    * Returns the value of '<em><b>db_version</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>db_version</b></em>' feature
@@ -40,7 +40,7 @@ public interface IdentifiableInterface {
 
   /**
    * Sets the '{@link IdentifiableInterface#getDb_version() <em>db_version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDb_version

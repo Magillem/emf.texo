@@ -104,7 +104,7 @@ public class Book extends Identifiable {
 
   /**
    * Returns the value of '<em><b>pages</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pages</b></em>' feature
@@ -117,7 +117,7 @@ public class Book extends Identifiable {
 
   /**
    * Sets the '{@link Book#getPages() <em>pages</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPages
@@ -130,7 +130,7 @@ public class Book extends Identifiable {
 
   /**
    * Returns the value of '<em><b>category</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>category</b></em>' feature
@@ -142,7 +142,7 @@ public class Book extends Identifiable {
 
   /**
    * Sets the '{@link Book#getCategory() <em>category</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCategory
@@ -155,7 +155,7 @@ public class Book extends Identifiable {
 
   /**
    * Returns the value of '<em><b>author</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>author</b></em>' feature
@@ -167,7 +167,7 @@ public class Book extends Identifiable {
 
   /**
    * Sets the '{@link Book#getAuthor() <em>author</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAuthor

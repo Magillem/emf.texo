@@ -54,7 +54,7 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -113,7 +113,7 @@ public class Epo2ModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -332,12 +332,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Item</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ItemModelObject<E extends Item> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -449,12 +449,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PurchaseOrder</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PurchaseOrderModelObject<E extends PurchaseOrder> extends
@@ -581,12 +581,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>USAddress</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class USAddressModelObject<E extends USAddress> extends AddressModelObject<E> {
@@ -687,12 +687,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Address</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AddressModelObject<E extends Address> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -779,12 +779,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Customer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CustomerModelObject<E extends Customer> extends
@@ -877,12 +877,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Supplier</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SupplierModelObject<E extends Supplier> extends
@@ -992,12 +992,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GlobalAddress</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GlobalAddressModelObject<E extends GlobalAddress> extends AddressModelObject<E> {
@@ -1095,12 +1095,12 @@ public class Epo2ModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GlobalLocation</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GlobalLocationModelObject<E extends GlobalLocation> extends

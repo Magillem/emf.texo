@@ -69,7 +69,7 @@ public class Employee extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -81,7 +81,7 @@ public class Employee extends Identifiable {
 
   /**
    * Sets the '{@link Employee#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -94,7 +94,7 @@ public class Employee extends Identifiable {
 
   /**
    * Returns the value of '<em><b>salary</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>salary</b></em>' feature
@@ -106,7 +106,7 @@ public class Employee extends Identifiable {
 
   /**
    * Sets the '{@link Employee#getSalary() <em>salary</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSalary
@@ -119,7 +119,7 @@ public class Employee extends Identifiable {
 
   /**
    * Returns the value of '<em><b>age</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>age</b></em>' feature
@@ -131,7 +131,7 @@ public class Employee extends Identifiable {
 
   /**
    * Sets the '{@link Employee#getAge() <em>age</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAge
@@ -158,7 +158,7 @@ public class Employee extends Identifiable {
 
   /**
    * Sets the '{@link Employee#getHireDate() <em>hireDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newHireDate

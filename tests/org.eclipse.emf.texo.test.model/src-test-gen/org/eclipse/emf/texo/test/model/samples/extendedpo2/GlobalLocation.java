@@ -30,7 +30,7 @@ public class GlobalLocation extends Identifiable {
 
   /**
    * Returns the value of '<em><b>countryCode</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>countryCode</b></em>' feature
@@ -42,7 +42,7 @@ public class GlobalLocation extends Identifiable {
 
   /**
    * Sets the '{@link GlobalLocation#getCountryCode() <em>countryCode</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountryCode

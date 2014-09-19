@@ -35,7 +35,7 @@ public class MachineList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>machines</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>machines</b></em>' feature
@@ -92,7 +92,7 @@ public class MachineList extends Identifiable {
 
   /**
    * Sets the '{@link MachineList#getMachines() <em>machines</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMachines

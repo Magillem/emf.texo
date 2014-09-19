@@ -180,7 +180,7 @@ public class ORMGeneratorTest extends TestCase {
     }
 
     String persistenceXMLTemplate = readFileAsString(new File(ormMetaInfDir, PERSISTENCE_XML_TEMPLATE)
-        .getAbsolutePath());
+    .getAbsolutePath());
 
     persistenceXMLTemplate = persistenceXMLTemplate.replace(PERSISTENCE_UNIT_PARAM, ePackageName);
 

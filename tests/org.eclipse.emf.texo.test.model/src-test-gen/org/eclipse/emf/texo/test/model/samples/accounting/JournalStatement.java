@@ -88,7 +88,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -100,7 +100,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Sets the '{@link JournalStatement#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription
@@ -113,7 +113,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>date</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>date</b></em>' feature
@@ -125,7 +125,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Sets the '{@link JournalStatement#getDate() <em>date</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDate
@@ -138,7 +138,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>amount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>amount</b></em>' feature
@@ -150,7 +150,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Sets the '{@link JournalStatement#getAmount() <em>amount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAmount
@@ -163,7 +163,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>debitAccount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>debitAccount</b></em>' feature
@@ -175,7 +175,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Sets the '{@link JournalStatement#getDebitAccount() <em>debitAccount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDebitAccount
@@ -188,7 +188,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>creditAccount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>creditAccount</b></em>' feature
@@ -200,7 +200,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Sets the '{@link JournalStatement#getCreditAccount() <em>creditAccount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCreditAccount
@@ -213,7 +213,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>vat</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>vat</b></em>' feature
@@ -225,7 +225,7 @@ public class JournalStatement extends Identifiable {
 
   /**
    * Sets the '{@link JournalStatement#getVat() <em>vat</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVat

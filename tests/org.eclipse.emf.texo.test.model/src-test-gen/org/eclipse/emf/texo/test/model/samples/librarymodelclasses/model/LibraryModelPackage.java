@@ -195,9 +195,9 @@ public class LibraryModelPackage extends ModelPackage {
 
   /**
    * Initializes this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return an initialized instance of this class
-   * 
+   *
    * @generated
    */
   public static LibraryModelPackage initialize() {
@@ -239,7 +239,7 @@ public class LibraryModelPackage extends ModelPackage {
 
   /**
    * Returns the {@link ModelFactory} of this ModelPackage. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the {@link LibraryModelFactory} instance.
    * @generated
    */
@@ -251,7 +251,7 @@ public class LibraryModelPackage extends ModelPackage {
   /**
    * Returns the nsUri of the {@link EPackage} managed by this Package instance. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @return the nsUri of the EPackage
    * @generated
    */

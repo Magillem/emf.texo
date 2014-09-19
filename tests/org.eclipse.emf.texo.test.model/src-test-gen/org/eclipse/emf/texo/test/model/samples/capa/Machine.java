@@ -77,7 +77,7 @@ public class Machine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>workWeek</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>workWeek</b></em>' feature
@@ -89,7 +89,7 @@ public class Machine extends Identifiable {
 
   /**
    * Sets the '{@link Machine#getWorkWeek() <em>workWeek</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWorkWeek
@@ -102,7 +102,7 @@ public class Machine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>tasks</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>tasks</b></em>' feature
@@ -159,7 +159,7 @@ public class Machine extends Identifiable {
 
   /**
    * Sets the '{@link Machine#getTasks() <em>tasks</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTasks
@@ -172,7 +172,7 @@ public class Machine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>machineId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>machineId</b></em>' feature
@@ -184,7 +184,7 @@ public class Machine extends Identifiable {
 
   /**
    * Sets the '{@link Machine#getMachineId() <em>machineId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMachineId
@@ -197,7 +197,7 @@ public class Machine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>machineSearchString</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>machineSearchString</b></em>' feature
@@ -209,7 +209,7 @@ public class Machine extends Identifiable {
 
   /**
    * Sets the '{@link Machine#getMachineSearchString() <em>machineSearchString</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMachineSearchString
@@ -222,7 +222,7 @@ public class Machine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>multiplicity</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>multiplicity</b></em>' feature
@@ -234,7 +234,7 @@ public class Machine extends Identifiable {
 
   /**
    * Sets the '{@link Machine#getMultiplicity() <em>multiplicity</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMultiplicity
@@ -247,7 +247,7 @@ public class Machine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>taskSearchString</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>taskSearchString</b></em>' feature
@@ -259,7 +259,7 @@ public class Machine extends Identifiable {
 
   /**
    * Sets the '{@link Machine#getTaskSearchString() <em>taskSearchString</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTaskSearchString

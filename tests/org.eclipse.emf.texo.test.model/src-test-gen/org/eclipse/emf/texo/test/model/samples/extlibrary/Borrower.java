@@ -34,7 +34,7 @@ public class Borrower extends Person {
 
   /**
    * Returns the value of '<em><b>borrowed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>borrowed</b></em>' feature
@@ -91,7 +91,7 @@ public class Borrower extends Person {
 
   /**
    * Sets the '{@link Borrower#getBorrowed() <em>borrowed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBorrowed

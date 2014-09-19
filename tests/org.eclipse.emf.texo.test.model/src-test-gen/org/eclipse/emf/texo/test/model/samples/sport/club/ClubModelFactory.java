@@ -1,6 +1,7 @@
 package org.eclipse.emf.texo.test.model.samples.sport.club;
 
 import java.util.List;
+import org.eclipse.emf._2002.ecore.EcoreModelFactory;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -10,7 +11,6 @@ import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelFactory;
-import org.eclipse.emf.texo.test.model.samples.sport.society.SocietyModelFactory;
 
 /**
  * The <b>{@link ModelFactory}</b> for the types of this model: club. It contains code to create instances
@@ -45,7 +45,7 @@ public class ClubModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -89,7 +89,7 @@ public class ClubModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -200,15 +200,15 @@ public class ClubModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Club</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
-  public static class ClubModelObject<E extends Club> extends SocietyModelFactory.SocietyModelObject<E> {
+  public static class ClubModelObject<E extends Club> extends EcoreModelFactory.EObjectModelObject<E> {
     /**
      * @generated
      */
@@ -236,8 +236,6 @@ public class ClubModelFactory implements ModelFactory {
         return getTarget().getDb_Id();
       case ClubModelPackage.CLUB_DB_VERSION_FEATURE_ID:
         return getTarget().getDb_version();
-      case ClubModelPackage.CLUB_NAME_FEATURE_ID:
-        return getTarget().getName();
       case ClubModelPackage.CLUB_TEAMS_FEATURE_ID:
         return getTarget().getTeams();
       default:
@@ -294,12 +292,12 @@ public class ClubModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Team</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TeamModelObject<E extends Team> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -391,12 +389,12 @@ public class ClubModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Member</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MemberModelObject<E extends Member> extends IdentifiableModelFactory.IdentifiableModelObject<E> {

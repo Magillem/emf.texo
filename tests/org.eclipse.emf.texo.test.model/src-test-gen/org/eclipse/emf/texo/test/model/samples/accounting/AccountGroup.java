@@ -51,7 +51,7 @@ public class AccountGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -63,7 +63,7 @@ public class AccountGroup extends Identifiable {
 
   /**
    * Sets the '{@link AccountGroup#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -76,7 +76,7 @@ public class AccountGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>account</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>account</b></em>' feature
@@ -133,7 +133,7 @@ public class AccountGroup extends Identifiable {
 
   /**
    * Sets the '{@link AccountGroup#getAccount() <em>account</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAccount

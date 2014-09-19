@@ -42,8 +42,7 @@ public class InterfaceTemplate extends BaseTemplate {
   }
   
   public List<String> getTemplateOverrides() {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    List<String> list = _arrayList;
+    List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::interface");
     list.add("org::eclipse::emf::texo::modelgenerator::xtend::InterfaceTemplate");
     return list;
@@ -181,9 +180,9 @@ public class InterfaceTemplate extends BaseTemplate {
                 } else {
                   EReferenceModelGenAnnotation _oppositeModelGenAnnotation = ((EReferenceModelGenAnnotation) featureAnnotation).getOppositeModelGenAnnotation();
                   boolean _notEquals_1 = (!Objects.equal(_oppositeModelGenAnnotation, null));
-                  _and = (_isReference && _notEquals_1);
+                  _and = _notEquals_1;
                 }
-                _or = (_isChangeable || _and);
+                _or = _and;
               }
               if (_or) {
                 {
@@ -196,13 +195,13 @@ public class InterfaceTemplate extends BaseTemplate {
                     _and_3 = false;
                   } else {
                     boolean _isMany = featureAnnotation.isMany();
-                    _and_3 = (_equals && _isMany);
+                    _and_3 = _isMany;
                   }
                   if (!_and_3) {
                     _and_2 = false;
                   } else {
                     boolean _isReference_1 = featureAnnotation.isReference();
-                    _and_2 = (_and_3 && _isReference_1);
+                    _and_2 = _isReference_1;
                   }
                   if (!_and_2) {
                     _and_1 = false;
@@ -213,9 +212,9 @@ public class InterfaceTemplate extends BaseTemplate {
                       _or_1 = true;
                     } else {
                       boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation).isGenerateSafeManyAccess();
-                      _or_1 = (_isGenerateBidirectionalAssociationSupport || _isGenerateSafeManyAccess);
+                      _or_1 = _isGenerateSafeManyAccess;
                     }
-                    _and_1 = (_and_2 && _or_1);
+                    _and_1 = _or_1;
                   }
                   if (_and_1) {
                     _builder.append("/**");

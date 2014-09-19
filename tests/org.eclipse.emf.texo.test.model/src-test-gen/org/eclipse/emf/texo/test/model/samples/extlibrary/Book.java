@@ -59,7 +59,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -71,7 +71,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Sets the '{@link Book#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -84,7 +84,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Returns the value of '<em><b>pages</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pages</b></em>' feature
@@ -96,7 +96,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Sets the '{@link Book#getPages() <em>pages</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPages
@@ -109,7 +109,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Returns the value of '<em><b>category</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>category</b></em>' feature
@@ -121,7 +121,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Sets the '{@link Book#getCategory() <em>category</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCategory
@@ -134,7 +134,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Returns the value of '<em><b>author</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>author</b></em>' feature
@@ -146,7 +146,7 @@ public class Book extends CirculatingItem {
 
   /**
    * Sets the '{@link Book#getAuthor() <em>author</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAuthor

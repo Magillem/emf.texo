@@ -30,22 +30,19 @@ public class TemplateUtil {
   public static String daoClassFileName(final EClassModelGenAnnotation eClassModelGenAnnotation) {
     String _daoQualifiedClassName = eClassModelGenAnnotation.getDaoQualifiedClassName();
     String _replaceAll = _daoQualifiedClassName.replaceAll("\\.", "/");
-    String _plus = (_replaceAll + ".java");
-    return _plus;
+    return (_replaceAll + ".java");
   }
   
   public static String classFileName(final EStructuralFeatureModelGenAnnotation eStructuralFeatureModelGenAnnotation) {
     String _featureMapQualifiedClassName = eStructuralFeatureModelGenAnnotation.getFeatureMapQualifiedClassName();
     String _replaceAll = _featureMapQualifiedClassName.replaceAll("\\.", "/");
-    String _plus = (_replaceAll + ".java");
-    return _plus;
+    return (_replaceAll + ".java");
   }
   
   public static String packageFileName(final EPackageModelGenAnnotation ePackageModelGenAnnotation) {
     String _qualifiedClassName = ePackageModelGenAnnotation.getQualifiedClassName();
     String _replaceAll = _qualifiedClassName.replaceAll("\\.", "/");
-    String _plus = (_replaceAll + ".java");
-    return _plus;
+    return (_replaceAll + ".java");
   }
   
   public static String ecoreFileName(final EPackageModelGenAnnotation ePackageModelGenAnnotation) {
@@ -54,8 +51,7 @@ public class TemplateUtil {
     String _name = ePackageModelGenAnnotation.getName();
     String _plus_1 = (_plus + _name);
     String _replaceAll = _plus_1.replaceAll("\\.", "/");
-    String _plus_2 = (_replaceAll + ".ecore");
-    return _plus_2;
+    return (_replaceAll + ".ecore");
   }
   
   public static String modelFactoryFileName(final EPackageModelGenAnnotation ePackageModelGenAnnotation) {
@@ -64,57 +60,46 @@ public class TemplateUtil {
     String _simpleModelFactoryClassName = ePackageModelGenAnnotation.getSimpleModelFactoryClassName();
     String _plus_1 = (_plus + _simpleModelFactoryClassName);
     String _replaceAll = _plus_1.replaceAll("\\.", "/");
-    String _plus_2 = (_replaceAll + ".java");
-    return _plus_2;
+    return (_replaceAll + ".java");
   }
   
   public static String toLowerCase(final String value) {
-    String _lowerCase = ModelUtils.toLowerCase(value);
-    return _lowerCase;
+    return ModelUtils.toLowerCase(value);
   }
   
   public static String toUpperCase(final String value) {
-    String _upperCase = ModelUtils.toUpperCase(value);
-    return _upperCase;
+    return ModelUtils.toUpperCase(value);
   }
   
   public static String toFirstLower(final String value) {
-    String _lowerCaseFirst = ModelUtils.lowerCaseFirst(value);
-    return _lowerCaseFirst;
+    return ModelUtils.lowerCaseFirst(value);
   }
   
   public static String toFirstUpper(final String value) {
-    String _upCaseFirst = ModelUtils.upCaseFirst(value);
-    return _upCaseFirst;
+    return ModelUtils.upCaseFirst(value);
   }
   
   public static boolean isDocumentRoot(final EClass eClass) {
-    boolean _isDocumentRoot = GenUtils.isDocumentRoot(eClass);
-    return _isDocumentRoot;
+    return GenUtils.isDocumentRoot(eClass);
   }
   
   public static String format(final String value) {
-    String _formatIdentifier = GenUtils.formatIdentifier(value);
-    return _formatIdentifier;
+    return GenUtils.formatIdentifier(value);
   }
   
   public static boolean isMixed(final EStructuralFeature eStructuralFeature) {
-    boolean _isMixed = ModelUtils.isMixed(eStructuralFeature);
-    return _isMixed;
+    return ModelUtils.isMixed(eStructuralFeature);
   }
   
   public static String getDocumentation(final ENamedElement eNamedElement) {
-    String _documentation = ModelUtils.getDocumentation(eNamedElement);
-    return _documentation;
+    return ModelUtils.getDocumentation(eNamedElement);
   }
   
   public static String cast(final String value) {
-    String _cast = GenUtils.cast(value);
-    return _cast;
+    return GenUtils.cast(value);
   }
   
   public static String correctTypeDef(final String value) {
-    String _correctTypeDef = GenUtils.correctTypeDef(value);
-    return _correctTypeDef;
+    return GenUtils.correctTypeDef(value);
   }
 }

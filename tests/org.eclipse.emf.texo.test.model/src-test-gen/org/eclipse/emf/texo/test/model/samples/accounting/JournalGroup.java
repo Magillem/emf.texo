@@ -61,7 +61,7 @@ public class JournalGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -73,7 +73,7 @@ public class JournalGroup extends Identifiable {
 
   /**
    * Sets the '{@link JournalGroup#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -86,7 +86,7 @@ public class JournalGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>journalGroups</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>journalGroups</b></em>' feature
@@ -143,7 +143,7 @@ public class JournalGroup extends Identifiable {
 
   /**
    * Sets the '{@link JournalGroup#getJournalGroups() <em>journalGroups</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newJournalGroups
@@ -156,7 +156,7 @@ public class JournalGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>journalStatements</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>journalStatements</b></em>' feature
@@ -213,7 +213,7 @@ public class JournalGroup extends Identifiable {
 
   /**
    * Sets the '{@link JournalGroup#getJournalStatements() <em>journalStatements</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newJournalStatements

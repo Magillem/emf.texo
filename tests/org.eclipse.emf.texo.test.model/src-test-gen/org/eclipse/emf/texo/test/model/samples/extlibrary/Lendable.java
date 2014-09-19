@@ -11,7 +11,7 @@ import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableInterface;
 public interface Lendable extends IdentifiableInterface {
   /**
    * Returns the value of '<em><b>copies</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>copies</b></em>' feature
@@ -21,7 +21,7 @@ public interface Lendable extends IdentifiableInterface {
 
   /**
    * Sets the '{@link Lendable#getCopies() <em>copies</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCopies
@@ -32,7 +32,7 @@ public interface Lendable extends IdentifiableInterface {
 
   /**
    * Returns the value of '<em><b>borrowers</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>borrowers</b></em>' feature
@@ -71,7 +71,7 @@ public interface Lendable extends IdentifiableInterface {
 
   /**
    * Sets the '{@link Lendable#getBorrowers() <em>borrowers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBorrowers

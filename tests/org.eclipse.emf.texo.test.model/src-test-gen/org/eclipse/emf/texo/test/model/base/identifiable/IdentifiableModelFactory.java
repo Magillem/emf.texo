@@ -39,7 +39,7 @@ public class IdentifiableModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -83,7 +83,7 @@ public class IdentifiableModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -140,12 +140,12 @@ public class IdentifiableModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Identifiable</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IdentifiableModelObject<E extends Identifiable> extends AbstractModelObject<E> {
@@ -226,12 +226,12 @@ public class IdentifiableModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>NotIdentifiable</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class NotIdentifiableModelObject<E extends NotIdentifiable> extends AbstractModelObject<E> {
@@ -300,12 +300,12 @@ public class IdentifiableModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>IdentifiableInterface</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IdentifiableInterfaceModelObject<E extends IdentifiableInterface> extends AbstractModelObject<E> {

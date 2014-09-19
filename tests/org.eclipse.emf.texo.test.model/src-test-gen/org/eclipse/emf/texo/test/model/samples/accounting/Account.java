@@ -39,7 +39,7 @@ public abstract class Account extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -51,7 +51,7 @@ public abstract class Account extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link Account#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
