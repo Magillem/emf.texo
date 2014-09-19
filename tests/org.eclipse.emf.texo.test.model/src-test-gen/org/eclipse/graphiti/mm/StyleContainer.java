@@ -34,7 +34,7 @@ public abstract class StyleContainer extends Identifiable {
 
   /**
    * Returns the value of '<em><b>styles</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>styles</b></em>' feature
@@ -91,7 +91,7 @@ public abstract class StyleContainer extends Identifiable {
 
   /**
    * Sets the '{@link StyleContainer#getStyles() <em>styles</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStyles

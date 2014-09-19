@@ -29,7 +29,7 @@ public class FixPointAnchor extends AdvancedAnchor {
 
   /**
    * Returns the value of '<em><b>location</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>location</b></em>' feature
@@ -41,7 +41,7 @@ public class FixPointAnchor extends AdvancedAnchor {
 
   /**
    * Sets the '{@link FixPointAnchor#getLocation() <em>location</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLocation

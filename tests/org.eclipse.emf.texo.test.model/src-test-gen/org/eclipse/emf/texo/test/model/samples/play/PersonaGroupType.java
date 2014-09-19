@@ -46,7 +46,7 @@ public class PersonaGroupType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>persona</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>persona</b></em>' feature
@@ -58,7 +58,7 @@ public class PersonaGroupType extends Identifiable {
 
   /**
    * Sets the '{@link PersonaGroupType#getPersona() <em>persona</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPersona
@@ -71,7 +71,7 @@ public class PersonaGroupType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>groupDescription</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>groupDescription</b></em>' feature
@@ -83,7 +83,7 @@ public class PersonaGroupType extends Identifiable {
 
   /**
    * Sets the '{@link PersonaGroupType#getGroupDescription() <em>groupDescription</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroupDescription

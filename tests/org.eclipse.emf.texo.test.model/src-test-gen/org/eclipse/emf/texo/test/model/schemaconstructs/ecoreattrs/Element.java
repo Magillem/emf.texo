@@ -37,7 +37,7 @@ public class Element extends Identifiable {
 
   /**
    * Returns the value of '<em><b>nameMap</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>nameMap</b></em>' feature
@@ -49,7 +49,7 @@ public class Element extends Identifiable {
 
   /**
    * Sets the '{@link Element#getNameMap() <em>nameMap</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNameMap
@@ -62,7 +62,7 @@ public class Element extends Identifiable {
 
   /**
    * Returns the value of '<em><b>names</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>names</b></em>' feature
@@ -74,7 +74,7 @@ public class Element extends Identifiable {
 
   /**
    * Sets the '{@link Element#getNames() <em>names</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNames

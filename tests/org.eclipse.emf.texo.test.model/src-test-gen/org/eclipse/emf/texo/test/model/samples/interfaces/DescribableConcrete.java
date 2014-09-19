@@ -39,7 +39,7 @@ public class DescribableConcrete extends Identifiable implements Describable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -51,7 +51,7 @@ public class DescribableConcrete extends Identifiable implements Describable {
 
   /**
    * Sets the '{@link DescribableConcrete#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -64,7 +64,7 @@ public class DescribableConcrete extends Identifiable implements Describable {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -76,7 +76,7 @@ public class DescribableConcrete extends Identifiable implements Describable {
 
   /**
    * Sets the '{@link DescribableConcrete#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription

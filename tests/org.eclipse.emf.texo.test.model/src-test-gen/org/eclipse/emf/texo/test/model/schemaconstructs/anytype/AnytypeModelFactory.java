@@ -47,7 +47,7 @@ public class AnytypeModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -100,7 +100,7 @@ public class AnytypeModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -197,12 +197,12 @@ public class AnytypeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>A</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AModelObject<E extends A> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -299,12 +299,12 @@ public class AnytypeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>B</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BModelObject<E extends B> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -386,12 +386,12 @@ public class AnytypeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>C</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CModelObject<E extends C> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -466,12 +466,12 @@ public class AnytypeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TestAny</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TestAnyModelObject<E extends TestAny> extends IdentifiableModelFactory.IdentifiableModelObject<E> {

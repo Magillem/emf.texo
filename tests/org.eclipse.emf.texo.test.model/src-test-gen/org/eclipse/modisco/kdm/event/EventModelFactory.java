@@ -77,7 +77,7 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -166,7 +166,7 @@ public class EventModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -373,12 +373,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>EventModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EventModelModelObject<E extends EventModel> extends KdmModelFactory.KDMModelModelObject<E> {
@@ -481,12 +481,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractEventElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractEventElementModelObject<E extends AbstractEventElement> extends
@@ -637,12 +637,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractEventRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractEventRelationshipModelObject<E extends AbstractEventRelationship> extends
@@ -727,12 +727,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Event</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EventModelObject<E extends Event> extends AbstractEventElementModelObject<E> {
@@ -853,12 +853,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>EventRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EventRelationshipModelObject<E extends EventRelationship> extends
@@ -955,12 +955,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>EventResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EventResourceModelObject<E extends EventResource> extends AbstractEventElementModelObject<E> {
@@ -1085,12 +1085,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>State</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StateModelObject<E extends State> extends EventResourceModelObject<E> {
@@ -1206,12 +1206,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Transition</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TransitionModelObject<E extends Transition> extends EventResourceModelObject<E> {
@@ -1327,12 +1327,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OnEntry</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OnEntryModelObject<E extends OnEntry> extends TransitionModelObject<E> {
@@ -1448,12 +1448,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OnExit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OnExitModelObject<E extends OnExit> extends TransitionModelObject<E> {
@@ -1569,12 +1569,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>EventAction</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EventActionModelObject<E extends EventAction> extends AbstractEventElementModelObject<E> {
@@ -1704,12 +1704,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ReadsState</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReadsStateModelObject<E extends ReadsState> extends
@@ -1806,12 +1806,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ProducesEvent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ProducesEventModelObject<E extends ProducesEvent> extends
@@ -1908,12 +1908,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConsumesEvent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConsumesEventModelObject<E extends ConsumesEvent> extends AbstractEventRelationshipModelObject<E> {
@@ -2009,12 +2009,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>NextState</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class NextStateModelObject<E extends NextState> extends AbstractEventRelationshipModelObject<E> {
@@ -2110,12 +2110,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InitialState</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InitialStateModelObject<E extends InitialState> extends StateModelObject<E> {
@@ -2231,12 +2231,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>EventElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EventElementModelObject<E extends EventElement> extends AbstractEventElementModelObject<E> {
@@ -2350,12 +2350,12 @@ public class EventModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>HasState</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class HasStateModelObject<E extends HasState> extends

@@ -58,7 +58,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>aggregated</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>aggregated</b></em>' feature
@@ -115,7 +115,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractStructureElement#getAggregated() <em>aggregated</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAggregated
@@ -128,7 +128,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>implementation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>implementation</b></em>' feature
@@ -185,7 +185,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractStructureElement#getImplementation() <em>implementation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newImplementation
@@ -198,7 +198,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>structureElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>structureElement</b></em>' feature
@@ -255,7 +255,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractStructureElement#getStructureElement() <em>structureElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStructureElement
@@ -268,7 +268,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>structureRelationship</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>structureRelationship</b></em>' feature
@@ -325,7 +325,7 @@ public abstract class AbstractStructureElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractStructureElement#getStructureRelationship() <em>structureRelationship</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStructureRelationship

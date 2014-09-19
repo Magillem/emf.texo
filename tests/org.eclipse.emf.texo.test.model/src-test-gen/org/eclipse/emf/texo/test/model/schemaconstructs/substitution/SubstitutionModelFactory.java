@@ -54,7 +54,7 @@ public class SubstitutionModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -119,7 +119,7 @@ public class SubstitutionModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -416,12 +416,12 @@ public class SubstitutionModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ComplexNumber</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ComplexNumberModelObject<E extends ComplexNumber> extends
@@ -509,12 +509,12 @@ public class SubstitutionModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DocumentRoot</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DocumentRootModelObject<E extends DocumentRoot> extends
@@ -648,12 +648,12 @@ public class SubstitutionModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>EvenComplexNumberType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EvenComplexNumberTypeModelObject<E extends EvenComplexNumberType> extends
@@ -733,12 +733,12 @@ public class SubstitutionModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MultiNumberType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MultiNumberTypeModelObject<E extends MultiNumberType> extends
@@ -835,12 +835,12 @@ public class SubstitutionModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>NumberType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class NumberTypeModelObject<E extends NumberType> extends
@@ -950,12 +950,12 @@ public class SubstitutionModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OddComplexNumberType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OddComplexNumberTypeModelObject<E extends OddComplexNumberType> extends

@@ -65,7 +65,7 @@ public enum SecretQuestionType {
   /**
    * Returns the '<em><b>SecretQuestionType</b></em>' literal with the specified literal value. <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the SecretQuestionType, the literal enum class

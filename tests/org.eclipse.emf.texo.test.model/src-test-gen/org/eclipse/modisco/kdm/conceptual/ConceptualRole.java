@@ -28,7 +28,7 @@ public class ConceptualRole extends AbstractConceptualElement {
 
   /**
    * Returns the value of '<em><b>conceptualElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>conceptualElement</b></em>' feature
@@ -40,7 +40,7 @@ public class ConceptualRole extends AbstractConceptualElement {
 
   /**
    * Sets the '{@link ConceptualRole#getConceptualElement() <em>conceptualElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newConceptualElement

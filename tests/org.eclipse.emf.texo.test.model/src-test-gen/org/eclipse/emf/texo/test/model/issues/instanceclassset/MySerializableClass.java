@@ -60,7 +60,7 @@ public class MySerializableClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>somethingInteresting</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>somethingInteresting</b></em>' feature
@@ -72,7 +72,7 @@ public class MySerializableClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link MySerializableClass#getSomethingInteresting() <em>somethingInteresting</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSomethingInteresting
@@ -85,7 +85,7 @@ public class MySerializableClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>nonEMF</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>nonEMF</b></em>' feature
@@ -97,7 +97,7 @@ public class MySerializableClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link MySerializableClass#getNonEMF() <em>nonEMF</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNonEMF
@@ -110,7 +110,7 @@ public class MySerializableClass extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>nonEMFs</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>nonEMFs</b></em>' feature
@@ -167,7 +167,7 @@ public class MySerializableClass extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link MySerializableClass#getNonEMFs() <em>nonEMFs</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNonEMFs

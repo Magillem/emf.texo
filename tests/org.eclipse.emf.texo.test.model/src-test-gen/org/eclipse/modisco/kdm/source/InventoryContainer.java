@@ -31,7 +31,7 @@ public class InventoryContainer extends AbstractInventoryElement {
 
   /**
    * Returns the value of '<em><b>inventoryElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>inventoryElement</b></em>' feature
@@ -88,7 +88,7 @@ public class InventoryContainer extends AbstractInventoryElement {
 
   /**
    * Sets the '{@link InventoryContainer#getInventoryElement() <em>inventoryElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInventoryElement

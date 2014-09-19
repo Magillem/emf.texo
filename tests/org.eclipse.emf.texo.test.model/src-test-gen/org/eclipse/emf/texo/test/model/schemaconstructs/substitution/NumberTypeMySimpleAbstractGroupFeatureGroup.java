@@ -159,7 +159,7 @@ public class NumberTypeMySimpleAbstractGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mySimpleAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mySimpleAbstract</b></em>' feature
@@ -171,7 +171,7 @@ public class NumberTypeMySimpleAbstractGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link NumberType#getMySimpleAbstract() <em>mySimpleAbstract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMySimpleAbstract

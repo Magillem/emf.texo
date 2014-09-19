@@ -144,7 +144,7 @@ public enum Orientation {
   /**
    * Returns the '<em><b>Orientation</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the Orientation, the literal enum class

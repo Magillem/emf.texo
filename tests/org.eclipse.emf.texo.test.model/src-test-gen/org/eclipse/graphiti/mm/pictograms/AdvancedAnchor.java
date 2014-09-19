@@ -27,7 +27,7 @@ public abstract class AdvancedAnchor extends Anchor {
 
   /**
    * Returns the value of '<em><b>useAnchorLocationAsConnectionEndpoint</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>useAnchorLocationAsConnectionEndpoint</b></em>' feature
@@ -40,7 +40,7 @@ public abstract class AdvancedAnchor extends Anchor {
   /**
    * Sets the '{@link AdvancedAnchor#isUseAnchorLocationAsConnectionEndpoint()
    * <em>useAnchorLocationAsConnectionEndpoint</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUseAnchorLocationAsConnectionEndpoint

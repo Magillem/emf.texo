@@ -52,7 +52,7 @@ public class ActType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>scene</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>scene</b></em>' feature
@@ -109,7 +109,7 @@ public class ActType extends Identifiable {
 
   /**
    * Sets the '{@link ActType#getScene() <em>scene</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newScene
@@ -122,7 +122,7 @@ public class ActType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>pindex</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pindex</b></em>' feature
@@ -134,7 +134,7 @@ public class ActType extends Identifiable {
 
   /**
    * Sets the '{@link ActType#getPindex() <em>pindex</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPindex
@@ -147,7 +147,7 @@ public class ActType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -159,7 +159,7 @@ public class ActType extends Identifiable {
 
   /**
    * Sets the '{@link ActType#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle

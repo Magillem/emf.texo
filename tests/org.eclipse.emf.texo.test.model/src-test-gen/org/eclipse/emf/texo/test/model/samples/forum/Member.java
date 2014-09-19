@@ -56,7 +56,7 @@ public class Member extends Identifiable {
 
   /**
    * Returns the value of '<em><b>nickname</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>nickname</b></em>' feature
@@ -68,7 +68,7 @@ public class Member extends Identifiable {
 
   /**
    * Sets the '{@link Member#getNickname() <em>nickname</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNickname
@@ -81,7 +81,7 @@ public class Member extends Identifiable {
 
   /**
    * Returns the value of '<em><b>posts</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>posts</b></em>' feature
@@ -138,7 +138,7 @@ public class Member extends Identifiable {
 
   /**
    * Sets the '{@link Member#getPosts() <em>posts</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPosts
@@ -151,7 +151,7 @@ public class Member extends Identifiable {
 
   /**
    * Returns the value of '<em><b>created</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>created</b></em>' feature
@@ -208,7 +208,7 @@ public class Member extends Identifiable {
 
   /**
    * Sets the '{@link Member#getCreated() <em>created</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCreated

@@ -46,7 +46,7 @@ public class Color extends Identifiable {
 
   /**
    * Returns the value of '<em><b>red</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>red</b></em>' feature
@@ -58,7 +58,7 @@ public class Color extends Identifiable {
 
   /**
    * Sets the '{@link Color#getRed() <em>red</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRed
@@ -71,7 +71,7 @@ public class Color extends Identifiable {
 
   /**
    * Returns the value of '<em><b>green</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>green</b></em>' feature
@@ -83,7 +83,7 @@ public class Color extends Identifiable {
 
   /**
    * Sets the '{@link Color#getGreen() <em>green</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGreen
@@ -96,7 +96,7 @@ public class Color extends Identifiable {
 
   /**
    * Returns the value of '<em><b>blue</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>blue</b></em>' feature
@@ -108,7 +108,7 @@ public class Color extends Identifiable {
 
   /**
    * Sets the '{@link Color#getBlue() <em>blue</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBlue

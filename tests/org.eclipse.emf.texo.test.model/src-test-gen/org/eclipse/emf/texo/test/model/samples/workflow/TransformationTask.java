@@ -30,7 +30,7 @@ public class TransformationTask extends WorkflowNode {
 
   /**
    * Returns the value of '<em><b>transformExpression</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>transformExpression</b></em>' feature
@@ -42,7 +42,7 @@ public class TransformationTask extends WorkflowNode {
 
   /**
    * Sets the '{@link TransformationTask#getTransformExpression() <em>transformExpression</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTransformExpression

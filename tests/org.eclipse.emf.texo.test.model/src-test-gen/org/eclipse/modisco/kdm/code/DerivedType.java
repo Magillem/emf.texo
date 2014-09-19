@@ -28,7 +28,7 @@ public class DerivedType extends Datatype {
 
   /**
    * Returns the value of '<em><b>itemUnit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>itemUnit</b></em>' feature
@@ -40,7 +40,7 @@ public class DerivedType extends Datatype {
 
   /**
    * Sets the '{@link DerivedType#getItemUnit() <em>itemUnit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newItemUnit

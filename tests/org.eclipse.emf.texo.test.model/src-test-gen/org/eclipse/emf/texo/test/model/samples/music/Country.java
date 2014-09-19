@@ -46,7 +46,7 @@ public class Country extends Identifiable {
 
   /**
    * Returns the value of '<em><b>code</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>code</b></em>' feature
@@ -58,7 +58,7 @@ public class Country extends Identifiable {
 
   /**
    * Sets the '{@link Country#getCode() <em>code</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCode
@@ -71,7 +71,7 @@ public class Country extends Identifiable {
 
   /**
    * Returns the value of '<em><b>version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>version</b></em>' feature
@@ -83,7 +83,7 @@ public class Country extends Identifiable {
 
   /**
    * Sets the '{@link Country#getVersion() <em>version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVersion
@@ -96,7 +96,7 @@ public class Country extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -108,7 +108,7 @@ public class Country extends Identifiable {
 
   /**
    * Sets the '{@link Country#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

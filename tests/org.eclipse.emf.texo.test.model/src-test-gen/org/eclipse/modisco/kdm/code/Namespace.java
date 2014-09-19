@@ -30,7 +30,7 @@ public class Namespace extends CodeItem {
 
   /**
    * Returns the value of '<em><b>groupedCode</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>groupedCode</b></em>' feature
@@ -87,7 +87,7 @@ public class Namespace extends CodeItem {
 
   /**
    * Sets the '{@link Namespace#getGroupedCode() <em>groupedCode</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroupedCode

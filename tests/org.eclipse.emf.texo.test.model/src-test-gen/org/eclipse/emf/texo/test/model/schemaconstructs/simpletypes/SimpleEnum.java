@@ -63,7 +63,7 @@ public enum SimpleEnum {
   /**
    * Returns the '<em><b>SimpleEnum</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the SimpleEnum, the literal enum class

@@ -48,7 +48,7 @@ public class TextStyleRegion extends Identifiable {
 
   /**
    * Returns the value of '<em><b>start</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>start</b></em>' feature
@@ -60,7 +60,7 @@ public class TextStyleRegion extends Identifiable {
 
   /**
    * Sets the '{@link TextStyleRegion#getStart() <em>start</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStart
@@ -73,7 +73,7 @@ public class TextStyleRegion extends Identifiable {
 
   /**
    * Returns the value of '<em><b>end</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>end</b></em>' feature
@@ -85,7 +85,7 @@ public class TextStyleRegion extends Identifiable {
 
   /**
    * Sets the '{@link TextStyleRegion#getEnd() <em>end</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnd
@@ -98,7 +98,7 @@ public class TextStyleRegion extends Identifiable {
 
   /**
    * Returns the value of '<em><b>style</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>style</b></em>' feature
@@ -110,7 +110,7 @@ public class TextStyleRegion extends Identifiable {
 
   /**
    * Sets the '{@link TextStyleRegion#getStyle() <em>style</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStyle

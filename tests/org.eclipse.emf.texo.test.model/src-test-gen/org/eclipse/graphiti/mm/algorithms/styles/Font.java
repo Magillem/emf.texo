@@ -54,7 +54,7 @@ public class Font extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -66,7 +66,7 @@ public class Font extends Identifiable {
 
   /**
    * Sets the '{@link Font#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -79,7 +79,7 @@ public class Font extends Identifiable {
 
   /**
    * Returns the value of '<em><b>size</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>size</b></em>' feature
@@ -91,7 +91,7 @@ public class Font extends Identifiable {
 
   /**
    * Sets the '{@link Font#getSize() <em>size</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSize
@@ -104,7 +104,7 @@ public class Font extends Identifiable {
 
   /**
    * Returns the value of '<em><b>italic</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>italic</b></em>' feature
@@ -116,7 +116,7 @@ public class Font extends Identifiable {
 
   /**
    * Sets the '{@link Font#isItalic() <em>italic</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newItalic
@@ -129,7 +129,7 @@ public class Font extends Identifiable {
 
   /**
    * Returns the value of '<em><b>bold</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bold</b></em>' feature
@@ -141,7 +141,7 @@ public class Font extends Identifiable {
 
   /**
    * Sets the '{@link Font#isBold() <em>bold</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBold

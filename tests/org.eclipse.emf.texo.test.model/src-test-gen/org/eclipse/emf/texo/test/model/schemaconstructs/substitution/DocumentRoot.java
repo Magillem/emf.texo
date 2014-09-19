@@ -37,7 +37,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -49,7 +49,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -62,7 +62,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xMLNSPrefixMap</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xMLNSPrefixMap</b></em>' feature
@@ -74,7 +74,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXMLNSPrefixMap() <em>xMLNSPrefixMap</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXMLNSPrefixMap
@@ -87,7 +87,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xSISchemaLocation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xSISchemaLocation</b></em>' feature
@@ -99,7 +99,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXSISchemaLocation() <em>xSISchemaLocation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXSISchemaLocation
@@ -112,7 +112,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>even</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>even</b></em>' feature
@@ -125,7 +125,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getEven() <em>even</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEven
@@ -139,7 +139,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mySimpleAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mySimpleAbstract</b></em>' feature
@@ -152,7 +152,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>evenComplexNumber</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>evenComplexNumber</b></em>' feature
@@ -165,7 +165,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getEvenComplexNumber() <em>evenComplexNumber</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEvenComplexNumber
@@ -179,7 +179,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myComplexAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myComplexAbstract</b></em>' feature
@@ -192,7 +192,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>multiNumber</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>multiNumber</b></em>' feature
@@ -205,7 +205,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMultiNumber() <em>multiNumber</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMultiNumber
@@ -219,7 +219,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>number</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>number</b></em>' feature
@@ -232,7 +232,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getNumber() <em>number</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNumber
@@ -246,7 +246,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>odd</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>odd</b></em>' feature
@@ -259,7 +259,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getOdd() <em>odd</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOdd
@@ -273,7 +273,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>oddComplexNumber</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>oddComplexNumber</b></em>' feature
@@ -286,7 +286,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getOddComplexNumber() <em>oddComplexNumber</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOddComplexNumber

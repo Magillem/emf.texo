@@ -33,7 +33,7 @@ public class ComplexContentType extends AbstractContentElement {
 
   /**
    * Returns the value of '<em><b>contentElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>contentElement</b></em>' feature
@@ -90,7 +90,7 @@ public class ComplexContentType extends AbstractContentElement {
 
   /**
    * Sets the '{@link ComplexContentType#getContentElement() <em>contentElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newContentElement

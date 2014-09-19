@@ -30,7 +30,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -42,7 +42,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

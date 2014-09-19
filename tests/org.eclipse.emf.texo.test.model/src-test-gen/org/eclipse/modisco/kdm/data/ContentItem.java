@@ -39,7 +39,7 @@ public class ContentItem extends AbstractContentElement {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -51,7 +51,7 @@ public class ContentItem extends AbstractContentElement {
 
   /**
    * Sets the '{@link ContentItem#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType
@@ -64,7 +64,7 @@ public class ContentItem extends AbstractContentElement {
 
   /**
    * Returns the value of '<em><b>contentElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>contentElement</b></em>' feature
@@ -121,7 +121,7 @@ public class ContentItem extends AbstractContentElement {
 
   /**
    * Sets the '{@link ContentItem#getContentElement() <em>contentElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newContentElement

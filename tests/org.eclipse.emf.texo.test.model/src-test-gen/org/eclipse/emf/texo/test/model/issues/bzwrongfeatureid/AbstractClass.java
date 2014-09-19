@@ -28,7 +28,7 @@ public abstract class AbstractClass extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -40,7 +40,7 @@ public abstract class AbstractClass extends Identifiable {
 
   /**
    * Sets the '{@link AbstractClass#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

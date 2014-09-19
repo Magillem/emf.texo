@@ -60,7 +60,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Returns the value of '<em><b>start</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>start</b></em>' feature
@@ -72,7 +72,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Sets the '{@link Connection#getStart() <em>start</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStart
@@ -85,7 +85,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Returns the value of '<em><b>end</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>end</b></em>' feature
@@ -97,7 +97,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Sets the '{@link Connection#getEnd() <em>end</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnd
@@ -110,7 +110,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Returns the value of '<em><b>parent</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>parent</b></em>' feature
@@ -122,7 +122,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Sets the '{@link Connection#getParent() <em>parent</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newParent
@@ -135,7 +135,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Returns the value of '<em><b>connectionDecorators</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>connectionDecorators</b></em>' feature
@@ -192,7 +192,7 @@ public class Connection extends AnchorContainer {
 
   /**
    * Sets the '{@link Connection#getConnectionDecorators() <em>connectionDecorators</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newConnectionDecorators

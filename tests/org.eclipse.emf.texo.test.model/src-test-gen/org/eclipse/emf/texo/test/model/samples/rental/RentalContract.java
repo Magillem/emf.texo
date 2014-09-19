@@ -73,7 +73,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Returns the value of '<em><b>rentToBusinessPartner</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>rentToBusinessPartner</b></em>' feature
@@ -85,7 +85,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Sets the '{@link RentalContract#getRentToBusinessPartner() <em>rentToBusinessPartner</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRentToBusinessPartner
@@ -98,7 +98,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Returns the value of '<em><b>startDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>startDate</b></em>' feature
@@ -110,7 +110,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Sets the '{@link RentalContract#getStartDate() <em>startDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStartDate
@@ -123,7 +123,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Returns the value of '<em><b>endDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>endDate</b></em>' feature
@@ -135,7 +135,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Sets the '{@link RentalContract#getEndDate() <em>endDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEndDate
@@ -148,7 +148,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Returns the value of '<em><b>cost</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>cost</b></em>' feature
@@ -160,7 +160,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Sets the '{@link RentalContract#getCost() <em>cost</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCost
@@ -173,7 +173,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Returns the value of '<em><b>rentalContractLines</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>rentalContractLines</b></em>' feature
@@ -230,7 +230,7 @@ public class RentalContract extends Identifiable {
 
   /**
    * Sets the '{@link RentalContract#getRentalContractLines() <em>rentalContractLines</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRentalContractLines

@@ -32,7 +32,7 @@ public class Module extends CodeItem {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -89,7 +89,7 @@ public class Module extends CodeItem {
 
   /**
    * Sets the '{@link Module#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

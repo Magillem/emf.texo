@@ -44,7 +44,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -56,7 +56,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -69,7 +69,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>group</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>group</b></em>' feature
@@ -81,7 +81,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getGroup() <em>group</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroup
@@ -94,7 +94,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>b</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>b</b></em>' feature
@@ -106,7 +106,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getB() <em>b</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newB
@@ -119,7 +119,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>c</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>c</b></em>' feature
@@ -131,7 +131,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getC() <em>c</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newC

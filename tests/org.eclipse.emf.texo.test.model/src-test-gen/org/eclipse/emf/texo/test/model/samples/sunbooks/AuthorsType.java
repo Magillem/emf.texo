@@ -36,7 +36,7 @@ public class AuthorsType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>authorName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>authorName</b></em>' feature
@@ -48,7 +48,7 @@ public class AuthorsType extends Identifiable {
 
   /**
    * Sets the '{@link AuthorsType#getAuthorName() <em>authorName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAuthorName

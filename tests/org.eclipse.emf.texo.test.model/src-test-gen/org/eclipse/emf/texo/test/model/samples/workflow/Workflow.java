@@ -55,7 +55,7 @@ public class Workflow extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>nodes</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>nodes</b></em>' feature
@@ -112,7 +112,7 @@ public class Workflow extends WorkflowElement {
 
   /**
    * Sets the '{@link Workflow#getNodes() <em>nodes</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNodes
@@ -125,7 +125,7 @@ public class Workflow extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>edges</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>edges</b></em>' feature
@@ -182,7 +182,7 @@ public class Workflow extends WorkflowElement {
 
   /**
    * Sets the '{@link Workflow#getEdges() <em>edges</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEdges
@@ -195,7 +195,7 @@ public class Workflow extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>comments</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comments</b></em>' feature
@@ -252,7 +252,7 @@ public class Workflow extends WorkflowElement {
 
   /**
    * Sets the '{@link Workflow#getComments() <em>comments</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComments

@@ -171,7 +171,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -183,7 +183,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -196,7 +196,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -208,7 +208,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription
@@ -221,7 +221,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>font</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>font</b></em>' feature
@@ -233,7 +233,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getFont() <em>font</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFont
@@ -246,7 +246,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>horizontalAlignment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>horizontalAlignment</b></em>' feature
@@ -258,7 +258,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getHorizontalAlignment() <em>horizontalAlignment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newHorizontalAlignment
@@ -271,7 +271,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>verticalAlignment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>verticalAlignment</b></em>' feature
@@ -283,7 +283,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getVerticalAlignment() <em>verticalAlignment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVerticalAlignment
@@ -296,7 +296,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>angle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>angle</b></em>' feature
@@ -308,7 +308,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getAngle() <em>angle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAngle
@@ -321,7 +321,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>stretchH</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stretchH</b></em>' feature
@@ -333,7 +333,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getStretchH() <em>stretchH</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStretchH
@@ -346,7 +346,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>stretchV</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stretchV</b></em>' feature
@@ -358,7 +358,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getStretchV() <em>stretchV</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStretchV
@@ -371,7 +371,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>proportional</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>proportional</b></em>' feature
@@ -383,7 +383,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getProportional() <em>proportional</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProportional
@@ -396,7 +396,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>styleContainer</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>styleContainer</b></em>' feature
@@ -408,7 +408,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getStyleContainer() <em>styleContainer</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStyleContainer
@@ -421,7 +421,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>background</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>background</b></em>' feature
@@ -433,7 +433,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getBackground() <em>background</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBackground
@@ -446,7 +446,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>foreground</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>foreground</b></em>' feature
@@ -458,7 +458,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getForeground() <em>foreground</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newForeground
@@ -471,7 +471,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>lineWidth</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineWidth</b></em>' feature
@@ -483,7 +483,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getLineWidth() <em>lineWidth</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineWidth
@@ -496,7 +496,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>lineStyle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineStyle</b></em>' feature
@@ -508,7 +508,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getLineStyle() <em>lineStyle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineStyle
@@ -521,7 +521,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>filled</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>filled</b></em>' feature
@@ -533,7 +533,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getFilled() <em>filled</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFilled
@@ -546,7 +546,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>lineVisible</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineVisible</b></em>' feature
@@ -558,7 +558,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getLineVisible() <em>lineVisible</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineVisible
@@ -571,7 +571,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>renderingStyle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>renderingStyle</b></em>' feature
@@ -583,7 +583,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getRenderingStyle() <em>renderingStyle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRenderingStyle
@@ -596,7 +596,7 @@ public class Style extends StyleContainer {
 
   /**
    * Returns the value of '<em><b>transparency</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>transparency</b></em>' feature
@@ -608,7 +608,7 @@ public class Style extends StyleContainer {
 
   /**
    * Sets the '{@link Style#getTransparency() <em>transparency</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTransparency

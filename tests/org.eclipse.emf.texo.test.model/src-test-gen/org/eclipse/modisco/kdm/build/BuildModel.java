@@ -31,7 +31,7 @@ public class BuildModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>buildElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>buildElement</b></em>' feature
@@ -88,7 +88,7 @@ public class BuildModel extends KDMModel {
 
   /**
    * Sets the '{@link BuildModel#getBuildElement() <em>buildElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBuildElement

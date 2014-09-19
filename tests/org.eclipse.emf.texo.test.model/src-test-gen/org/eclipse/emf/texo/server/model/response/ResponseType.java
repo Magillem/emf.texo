@@ -69,7 +69,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>status</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>status</b></em>' feature
@@ -81,7 +81,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Sets the '{@link ResponseType#getStatus() <em>status</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStatus
@@ -94,7 +94,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>startRow</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>startRow</b></em>' feature
@@ -106,7 +106,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Sets the '{@link ResponseType#getStartRow() <em>startRow</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStartRow
@@ -119,7 +119,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>endRow</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>endRow</b></em>' feature
@@ -131,7 +131,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Sets the '{@link ResponseType#getEndRow() <em>endRow</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEndRow
@@ -144,7 +144,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>totalRows</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>totalRows</b></em>' feature
@@ -156,7 +156,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Sets the '{@link ResponseType#getTotalRows() <em>totalRows</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTotalRows
@@ -169,7 +169,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>data</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>data</b></em>' feature
@@ -226,7 +226,7 @@ public class ResponseType extends Identifiable {
 
   /**
    * Sets the '{@link ResponseType#getData() <em>data</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newData

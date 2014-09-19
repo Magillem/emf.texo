@@ -44,7 +44,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -56,7 +56,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -69,7 +69,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>group</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>group</b></em>' feature
@@ -81,7 +81,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getGroup() <em>group</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroup
@@ -94,7 +94,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>age</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>age</b></em>' feature
@@ -106,7 +106,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getAge() <em>age</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAge
@@ -119,7 +119,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>length</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>length</b></em>' feature
@@ -131,7 +131,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getLength() <em>length</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLength

@@ -63,7 +63,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>source</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>source</b></em>' feature
@@ -120,7 +120,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractCodeElement#getSource() <em>source</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSource
@@ -133,7 +133,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -190,7 +190,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractCodeElement#getComment() <em>comment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -203,7 +203,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>codeRelation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeRelation</b></em>' feature
@@ -260,7 +260,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractCodeElement#getCodeRelation() <em>codeRelation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeRelation
@@ -273,7 +273,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>entryFlow</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>entryFlow</b></em>' feature
@@ -330,7 +330,7 @@ public abstract class AbstractCodeElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractCodeElement#getEntryFlow() <em>entryFlow</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEntryFlow

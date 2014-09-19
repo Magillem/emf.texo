@@ -183,7 +183,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -195,7 +195,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -209,7 +209,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -221,7 +221,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -235,7 +235,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -247,7 +247,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -261,7 +261,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -273,7 +273,7 @@ public class SalutationTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link SalutationType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

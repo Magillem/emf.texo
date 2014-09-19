@@ -10,7 +10,7 @@ import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableInterface;
 public interface IdentifiedType extends IdentifiableInterface {
   /**
    * Returns the value of '<em><b>identifier</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>identifier</b></em>' feature
@@ -20,7 +20,7 @@ public interface IdentifiedType extends IdentifiableInterface {
 
   /**
    * Sets the '{@link IdentifiedType#getIdentifier() <em>identifier</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIdentifier

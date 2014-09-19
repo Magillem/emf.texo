@@ -33,7 +33,7 @@ public class ColumnSet extends DataContainer {
 
   /**
    * Returns the value of '<em><b>itemUnit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>itemUnit</b></em>' feature
@@ -90,7 +90,7 @@ public class ColumnSet extends DataContainer {
 
   /**
    * Sets the '{@link ColumnSet#getItemUnit() <em>itemUnit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newItemUnit

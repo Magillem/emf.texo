@@ -83,7 +83,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -95,7 +95,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Sets the '{@link TestAny#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -108,7 +108,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Returns the value of '<em><b>singleAnyType</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>singleAnyType</b></em>' feature
@@ -120,7 +120,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Sets the '{@link TestAny#getSingleAnyType() <em>singleAnyType</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSingleAnyType
@@ -133,7 +133,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Returns the value of '<em><b>multiAnyType</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>multiAnyType</b></em>' feature
@@ -190,7 +190,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Sets the '{@link TestAny#getMultiAnyType() <em>multiAnyType</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMultiAnyType
@@ -203,7 +203,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Returns the value of '<em><b>a</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>a</b></em>' feature
@@ -215,7 +215,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Sets the '{@link TestAny#getA() <em>a</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newA
@@ -228,7 +228,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myAny</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myAny</b></em>' feature
@@ -240,7 +240,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Sets the '{@link TestAny#getMyAny() <em>myAny</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyAny
@@ -253,7 +253,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Returns the value of '<em><b>any</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>any</b></em>' feature
@@ -265,7 +265,7 @@ public class TestAny extends Identifiable {
 
   /**
    * Sets the '{@link TestAny#getAny() <em>any</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAny

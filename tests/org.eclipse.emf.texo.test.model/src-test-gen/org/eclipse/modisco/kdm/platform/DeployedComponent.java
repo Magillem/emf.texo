@@ -32,7 +32,7 @@ public class DeployedComponent extends AbstractPlatformElement {
 
   /**
    * Returns the value of '<em><b>groupedCode</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>groupedCode</b></em>' feature
@@ -89,7 +89,7 @@ public class DeployedComponent extends AbstractPlatformElement {
 
   /**
    * Sets the '{@link DeployedComponent#getGroupedCode() <em>groupedCode</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroupedCode

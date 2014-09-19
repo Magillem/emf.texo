@@ -44,7 +44,7 @@ public class Audit extends Element {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -56,7 +56,7 @@ public class Audit extends Element {
 
   /**
    * Sets the '{@link Audit#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription
@@ -69,7 +69,7 @@ public class Audit extends Element {
 
   /**
    * Returns the value of '<em><b>author</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>author</b></em>' feature
@@ -81,7 +81,7 @@ public class Audit extends Element {
 
   /**
    * Sets the '{@link Audit#getAuthor() <em>author</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAuthor
@@ -94,7 +94,7 @@ public class Audit extends Element {
 
   /**
    * Returns the value of '<em><b>date</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>date</b></em>' feature
@@ -106,7 +106,7 @@ public class Audit extends Element {
 
   /**
    * Sets the '{@link Audit#getDate() <em>date</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDate

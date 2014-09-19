@@ -40,7 +40,7 @@ public class GradientColoredArea extends Identifiable {
 
   /**
    * Returns the value of '<em><b>start</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>start</b></em>' feature
@@ -52,7 +52,7 @@ public class GradientColoredArea extends Identifiable {
 
   /**
    * Sets the '{@link GradientColoredArea#getStart() <em>start</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStart
@@ -65,7 +65,7 @@ public class GradientColoredArea extends Identifiable {
 
   /**
    * Returns the value of '<em><b>end</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>end</b></em>' feature
@@ -77,7 +77,7 @@ public class GradientColoredArea extends Identifiable {
 
   /**
    * Sets the '{@link GradientColoredArea#getEnd() <em>end</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnd

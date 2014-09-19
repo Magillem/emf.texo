@@ -27,7 +27,7 @@ public class SequenceType extends DerivedType {
 
   /**
    * Returns the value of '<em><b>size</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>size</b></em>' feature
@@ -39,7 +39,7 @@ public class SequenceType extends DerivedType {
 
   /**
    * Sets the '{@link SequenceType#getSize() <em>size</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSize

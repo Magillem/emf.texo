@@ -128,7 +128,7 @@ public enum StorableKind {
   /**
    * Returns the '<em><b>StorableKind</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the StorableKind, the literal enum class

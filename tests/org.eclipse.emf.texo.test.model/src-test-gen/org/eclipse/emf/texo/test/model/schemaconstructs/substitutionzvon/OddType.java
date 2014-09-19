@@ -111,7 +111,7 @@ public enum OddType {
   /**
    * Returns the '<em><b>OddType</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the OddType, the literal enum class

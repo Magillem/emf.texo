@@ -65,7 +65,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -133,7 +133,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -270,12 +270,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GraphicsAlgorithm</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GraphicsAlgorithmModelObject<E extends GraphicsAlgorithm> extends
@@ -442,12 +442,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Polyline</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PolylineModelObject<E extends Polyline> extends GraphicsAlgorithmModelObject<E> {
@@ -568,12 +568,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Ellipse</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EllipseModelObject<E extends Ellipse> extends GraphicsAlgorithmModelObject<E> {
@@ -683,12 +683,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Text</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TextModelObject<E extends Text> extends AbstractTextModelObject<E> {
@@ -810,12 +810,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractText</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractTextModelObject<E extends AbstractText> extends GraphicsAlgorithmModelObject<E> {
@@ -961,12 +961,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Polygon</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PolygonModelObject<E extends Polygon> extends PolylineModelObject<E> {
@@ -1078,12 +1078,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Rectangle</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RectangleModelObject<E extends Rectangle> extends GraphicsAlgorithmModelObject<E> {
@@ -1193,12 +1193,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RoundedRectangle</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RoundedRectangleModelObject<E extends RoundedRectangle> extends GraphicsAlgorithmModelObject<E> {
@@ -1320,12 +1320,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Image</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ImageModelObject<E extends Image> extends GraphicsAlgorithmModelObject<E> {
@@ -1457,12 +1457,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PlatformGraphicsAlgorithm</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PlatformGraphicsAlgorithmModelObject<E extends PlatformGraphicsAlgorithm> extends
@@ -1580,12 +1580,12 @@ public class AlgorithmsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MultiText</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MultiTextModelObject<E extends MultiText> extends AbstractTextModelObject<E> {

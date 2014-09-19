@@ -38,7 +38,7 @@ public class PromotionType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>discount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>discount</b></em>' feature
@@ -50,7 +50,7 @@ public class PromotionType extends Identifiable {
 
   /**
    * Sets the '{@link PromotionType#getDiscount() <em>discount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDiscount
@@ -63,7 +63,7 @@ public class PromotionType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>none</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>none</b></em>' feature
@@ -75,7 +75,7 @@ public class PromotionType extends Identifiable {
 
   /**
    * Sets the '{@link PromotionType#getNone() <em>none</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNone

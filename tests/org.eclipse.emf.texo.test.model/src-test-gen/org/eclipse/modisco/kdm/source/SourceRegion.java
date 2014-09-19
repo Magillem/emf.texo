@@ -78,7 +78,7 @@ public class SourceRegion extends Element {
 
   /**
    * Returns the value of '<em><b>file</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>file</b></em>' feature
@@ -90,7 +90,7 @@ public class SourceRegion extends Element {
 
   /**
    * Sets the '{@link SourceRegion#getFile() <em>file</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFile
@@ -103,7 +103,7 @@ public class SourceRegion extends Element {
 
   /**
    * Returns the value of '<em><b>startLine</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>startLine</b></em>' feature
@@ -115,7 +115,7 @@ public class SourceRegion extends Element {
 
   /**
    * Sets the '{@link SourceRegion#getStartLine() <em>startLine</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStartLine
@@ -128,7 +128,7 @@ public class SourceRegion extends Element {
 
   /**
    * Returns the value of '<em><b>startPosition</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>startPosition</b></em>' feature
@@ -140,7 +140,7 @@ public class SourceRegion extends Element {
 
   /**
    * Sets the '{@link SourceRegion#getStartPosition() <em>startPosition</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStartPosition
@@ -153,7 +153,7 @@ public class SourceRegion extends Element {
 
   /**
    * Returns the value of '<em><b>endLine</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>endLine</b></em>' feature
@@ -165,7 +165,7 @@ public class SourceRegion extends Element {
 
   /**
    * Sets the '{@link SourceRegion#getEndLine() <em>endLine</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEndLine
@@ -178,7 +178,7 @@ public class SourceRegion extends Element {
 
   /**
    * Returns the value of '<em><b>endPosition</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>endPosition</b></em>' feature
@@ -190,7 +190,7 @@ public class SourceRegion extends Element {
 
   /**
    * Sets the '{@link SourceRegion#getEndPosition() <em>endPosition</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEndPosition
@@ -203,7 +203,7 @@ public class SourceRegion extends Element {
 
   /**
    * Returns the value of '<em><b>language</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>language</b></em>' feature
@@ -215,7 +215,7 @@ public class SourceRegion extends Element {
 
   /**
    * Sets the '{@link SourceRegion#getLanguage() <em>language</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLanguage
@@ -228,7 +228,7 @@ public class SourceRegion extends Element {
 
   /**
    * Returns the value of '<em><b>path</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>path</b></em>' feature
@@ -240,7 +240,7 @@ public class SourceRegion extends Element {
 
   /**
    * Sets the '{@link SourceRegion#getPath() <em>path</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPath

@@ -63,7 +63,7 @@ public enum PindexType {
   /**
    * Returns the '<em><b>PindexType</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the PindexType, the literal enum class

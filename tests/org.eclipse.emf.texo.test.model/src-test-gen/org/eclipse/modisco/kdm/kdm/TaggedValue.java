@@ -27,7 +27,7 @@ public class TaggedValue extends ExtendedValue {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -39,7 +39,7 @@ public class TaggedValue extends ExtendedValue {
 
   /**
    * Sets the '{@link TaggedValue#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

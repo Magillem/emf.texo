@@ -52,7 +52,7 @@ public class Post extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -64,7 +64,7 @@ public class Post extends Identifiable {
 
   /**
    * Sets the '{@link Post#getComment() <em>comment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -77,7 +77,7 @@ public class Post extends Identifiable {
 
   /**
    * Returns the value of '<em><b>author</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>author</b></em>' feature
@@ -89,7 +89,7 @@ public class Post extends Identifiable {
 
   /**
    * Sets the '{@link Post#getAuthor() <em>author</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAuthor
@@ -102,7 +102,7 @@ public class Post extends Identifiable {
 
   /**
    * Returns the value of '<em><b>topic</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>topic</b></em>' feature
@@ -114,7 +114,7 @@ public class Post extends Identifiable {
 
   /**
    * Sets the '{@link Post#getTopic() <em>topic</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTopic

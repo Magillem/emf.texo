@@ -73,7 +73,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -85,7 +85,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Sets the '{@link USAddress#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -98,7 +98,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Returns the value of '<em><b>street</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>street</b></em>' feature
@@ -110,7 +110,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Sets the '{@link USAddress#getStreet() <em>street</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStreet
@@ -123,7 +123,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Returns the value of '<em><b>city</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>city</b></em>' feature
@@ -135,7 +135,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Sets the '{@link USAddress#getCity() <em>city</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCity
@@ -148,7 +148,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Returns the value of '<em><b>state</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>state</b></em>' feature
@@ -160,7 +160,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Sets the '{@link USAddress#getState() <em>state</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newState
@@ -173,7 +173,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Returns the value of '<em><b>zip</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>zip</b></em>' feature
@@ -185,7 +185,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Sets the '{@link USAddress#getZip() <em>zip</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newZip
@@ -198,7 +198,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Returns the value of '<em><b>country</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>country</b></em>' feature
@@ -210,7 +210,7 @@ public class USAddress extends Identifiable {
 
   /**
    * Sets the '{@link USAddress#getCountry() <em>country</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountry

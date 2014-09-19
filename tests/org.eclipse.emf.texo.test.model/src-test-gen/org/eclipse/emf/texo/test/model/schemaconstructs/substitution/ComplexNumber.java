@@ -39,7 +39,7 @@ public class ComplexNumber extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -51,7 +51,7 @@ public class ComplexNumber extends Identifiable {
 
   /**
    * Sets the '{@link ComplexNumber#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue
@@ -64,7 +64,7 @@ public class ComplexNumber extends Identifiable {
 
   /**
    * Returns the value of '<em><b>unit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>unit</b></em>' feature
@@ -76,7 +76,7 @@ public class ComplexNumber extends Identifiable {
 
   /**
    * Sets the '{@link ComplexNumber#getUnit() <em>unit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUnit

@@ -30,7 +30,7 @@ public class ResourceType extends AbstractPlatformElement {
 
   /**
    * Returns the value of '<em><b>platformElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>platformElement</b></em>' feature
@@ -87,7 +87,7 @@ public class ResourceType extends AbstractPlatformElement {
 
   /**
    * Sets the '{@link ResourceType#getPlatformElement() <em>platformElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPlatformElement

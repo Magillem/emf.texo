@@ -30,7 +30,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -42,7 +42,7 @@ public class PurchaseOrder extends Identifiable {
 
   /**
    * Sets the '{@link PurchaseOrder#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

@@ -28,7 +28,7 @@ public class SchoolLibrary extends Library {
 
   /**
    * Returns the value of '<em><b>location</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>location</b></em>' feature
@@ -40,7 +40,7 @@ public class SchoolLibrary extends Library {
 
   /**
    * Sets the '{@link SchoolLibrary#getLocation() <em>location</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLocation

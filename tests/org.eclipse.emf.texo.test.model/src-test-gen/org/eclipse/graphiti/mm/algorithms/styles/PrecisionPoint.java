@@ -38,7 +38,7 @@ public class PrecisionPoint extends Identifiable {
 
   /**
    * Returns the value of '<em><b>x</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>x</b></em>' feature
@@ -50,7 +50,7 @@ public class PrecisionPoint extends Identifiable {
 
   /**
    * Sets the '{@link PrecisionPoint#getX() <em>x</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newX
@@ -63,7 +63,7 @@ public class PrecisionPoint extends Identifiable {
 
   /**
    * Returns the value of '<em><b>y</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>y</b></em>' feature
@@ -75,7 +75,7 @@ public class PrecisionPoint extends Identifiable {
 
   /**
    * Sets the '{@link PrecisionPoint#getY() <em>y</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newY

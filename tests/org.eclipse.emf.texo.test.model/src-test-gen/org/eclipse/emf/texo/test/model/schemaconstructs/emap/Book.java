@@ -46,7 +46,7 @@ public class Book extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -58,7 +58,7 @@ public class Book extends Identifiable {
 
   /**
    * Sets the '{@link Book#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -71,7 +71,7 @@ public class Book extends Identifiable {
 
   /**
    * Returns the value of '<em><b>writers</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>writers</b></em>' feature
@@ -83,7 +83,7 @@ public class Book extends Identifiable {
 
   /**
    * Sets the '{@link Book#getWriters() <em>writers</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWriters

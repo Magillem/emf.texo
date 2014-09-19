@@ -78,7 +78,7 @@ public class Item extends Identifiable {
 
   /**
    * Returns the value of '<em><b>productName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>productName</b></em>' feature
@@ -90,7 +90,7 @@ public class Item extends Identifiable {
 
   /**
    * Sets the '{@link Item#getProductName() <em>productName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProductName
@@ -103,7 +103,7 @@ public class Item extends Identifiable {
 
   /**
    * Returns the value of '<em><b>quantity</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>quantity</b></em>' feature
@@ -115,7 +115,7 @@ public class Item extends Identifiable {
 
   /**
    * Sets the '{@link Item#getQuantity() <em>quantity</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newQuantity
@@ -128,7 +128,7 @@ public class Item extends Identifiable {
 
   /**
    * Returns the value of '<em><b>uSPrice</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>uSPrice</b></em>' feature
@@ -140,7 +140,7 @@ public class Item extends Identifiable {
 
   /**
    * Sets the '{@link Item#getUSPrice() <em>uSPrice</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUSPrice
@@ -153,7 +153,7 @@ public class Item extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -165,7 +165,7 @@ public class Item extends Identifiable {
 
   /**
    * Sets the '{@link Item#getComment() <em>comment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -178,7 +178,7 @@ public class Item extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shipDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shipDate</b></em>' feature
@@ -190,7 +190,7 @@ public class Item extends Identifiable {
 
   /**
    * Sets the '{@link Item#getShipDate() <em>shipDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShipDate
@@ -203,7 +203,7 @@ public class Item extends Identifiable {
 
   /**
    * Returns the value of '<em><b>partNum</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>partNum</b></em>' feature
@@ -215,7 +215,7 @@ public class Item extends Identifiable {
 
   /**
    * Sets the '{@link Item#getPartNum() <em>partNum</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPartNum

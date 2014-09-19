@@ -38,7 +38,7 @@ public class ParameterUnit extends DataElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -50,7 +50,7 @@ public class ParameterUnit extends DataElement {
 
   /**
    * Sets the '{@link ParameterUnit#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -63,7 +63,7 @@ public class ParameterUnit extends DataElement {
 
   /**
    * Returns the value of '<em><b>pos</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pos</b></em>' feature
@@ -75,7 +75,7 @@ public class ParameterUnit extends DataElement {
 
   /**
    * Sets the '{@link ParameterUnit#getPos() <em>pos</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPos

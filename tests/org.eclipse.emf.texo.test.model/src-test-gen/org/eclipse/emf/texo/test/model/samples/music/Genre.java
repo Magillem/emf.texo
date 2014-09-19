@@ -46,7 +46,7 @@ public class Genre extends Identifiable {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -58,7 +58,7 @@ public class Genre extends Identifiable {
 
   /**
    * Sets the '{@link Genre#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -71,7 +71,7 @@ public class Genre extends Identifiable {
 
   /**
    * Returns the value of '<em><b>version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>version</b></em>' feature
@@ -83,7 +83,7 @@ public class Genre extends Identifiable {
 
   /**
    * Sets the '{@link Genre#getVersion() <em>version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVersion
@@ -96,7 +96,7 @@ public class Genre extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -108,7 +108,7 @@ public class Genre extends Identifiable {
 
   /**
    * Sets the '{@link Genre#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

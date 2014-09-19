@@ -84,7 +84,7 @@ public class Artist extends Identifiable {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -96,7 +96,7 @@ public class Artist extends Identifiable {
 
   /**
    * Sets the '{@link Artist#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -109,7 +109,7 @@ public class Artist extends Identifiable {
 
   /**
    * Returns the value of '<em><b>version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>version</b></em>' feature
@@ -121,7 +121,7 @@ public class Artist extends Identifiable {
 
   /**
    * Sets the '{@link Artist#getVersion() <em>version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVersion
@@ -134,7 +134,7 @@ public class Artist extends Identifiable {
 
   /**
    * Returns the value of '<em><b>firstName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>firstName</b></em>' feature
@@ -146,7 +146,7 @@ public class Artist extends Identifiable {
 
   /**
    * Sets the '{@link Artist#getFirstName() <em>firstName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFirstName
@@ -159,7 +159,7 @@ public class Artist extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lastName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lastName</b></em>' feature
@@ -171,7 +171,7 @@ public class Artist extends Identifiable {
 
   /**
    * Sets the '{@link Artist#getLastName() <em>lastName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLastName
@@ -184,7 +184,7 @@ public class Artist extends Identifiable {
 
   /**
    * Returns the value of '<em><b>birthDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>birthDate</b></em>' feature
@@ -196,7 +196,7 @@ public class Artist extends Identifiable {
 
   /**
    * Sets the '{@link Artist#getBirthDate() <em>birthDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBirthDate
@@ -209,7 +209,7 @@ public class Artist extends Identifiable {
 
   /**
    * Returns the value of '<em><b>country</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>country</b></em>' feature
@@ -221,7 +221,7 @@ public class Artist extends Identifiable {
 
   /**
    * Sets the '{@link Artist#getCountry() <em>country</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountry
@@ -234,7 +234,7 @@ public class Artist extends Identifiable {
 
   /**
    * Returns the value of '<em><b>genre</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>genre</b></em>' feature
@@ -246,7 +246,7 @@ public class Artist extends Identifiable {
 
   /**
    * Sets the '{@link Artist#getGenre() <em>genre</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGenre

@@ -30,7 +30,7 @@ public class Test extends Identifiable {
 
   /**
    * Returns the value of '<em><b>class</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>class</b></em>' feature
@@ -42,7 +42,7 @@ public class Test extends Identifiable {
 
   /**
    * Sets the '{@link Test#getClass_() <em>class</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newClass_

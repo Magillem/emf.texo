@@ -49,7 +49,7 @@ public class Edge extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>workflow</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>workflow</b></em>' feature
@@ -61,7 +61,7 @@ public class Edge extends WorkflowElement {
 
   /**
    * Sets the '{@link Edge#getWorkflow() <em>workflow</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWorkflow
@@ -74,7 +74,7 @@ public class Edge extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>target</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>target</b></em>' feature
@@ -86,7 +86,7 @@ public class Edge extends WorkflowElement {
 
   /**
    * Sets the '{@link Edge#getTarget() <em>target</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTarget
@@ -99,7 +99,7 @@ public class Edge extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>source</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>source</b></em>' feature
@@ -111,7 +111,7 @@ public class Edge extends WorkflowElement {
 
   /**
    * Sets the '{@link Edge#getSource() <em>source</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSource

@@ -79,7 +79,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -91,7 +91,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Sets the '{@link WorkflowElement#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -104,7 +104,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -116,7 +116,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Sets the '{@link WorkflowElement#getComment() <em>comment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -129,7 +129,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>x</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>x</b></em>' feature
@@ -141,7 +141,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Sets the '{@link WorkflowElement#getX() <em>x</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newX
@@ -154,7 +154,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>y</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>y</b></em>' feature
@@ -166,7 +166,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Sets the '{@link WorkflowElement#getY() <em>y</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newY
@@ -179,7 +179,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>width</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>width</b></em>' feature
@@ -191,7 +191,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Sets the '{@link WorkflowElement#getWidth() <em>width</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWidth
@@ -204,7 +204,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>height</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>height</b></em>' feature
@@ -216,7 +216,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Sets the '{@link WorkflowElement#getHeight() <em>height</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newHeight
@@ -229,7 +229,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Returns the value of '<em><b>workFlowElementId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>workFlowElementId</b></em>' feature
@@ -244,7 +244,7 @@ public abstract class WorkflowElement extends Identifiable {
 
   /**
    * Sets the '{@link WorkflowElement#getWorkFlowElementId() <em>workFlowElementId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWorkFlowElementId

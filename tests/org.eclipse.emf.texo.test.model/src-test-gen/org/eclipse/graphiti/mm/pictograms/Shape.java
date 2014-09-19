@@ -31,7 +31,7 @@ public class Shape extends AnchorContainer {
 
   /**
    * Returns the value of '<em><b>container</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>container</b></em>' feature
@@ -43,7 +43,7 @@ public class Shape extends AnchorContainer {
 
   /**
    * Sets the '{@link Shape#getContainer() <em>container</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newContainer

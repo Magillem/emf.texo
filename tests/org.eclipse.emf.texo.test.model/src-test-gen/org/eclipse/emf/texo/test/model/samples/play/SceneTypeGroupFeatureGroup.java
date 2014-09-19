@@ -164,7 +164,7 @@ public class SceneTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stageDirections</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stageDirections</b></em>' feature
@@ -176,7 +176,7 @@ public class SceneTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link SceneType#getStageDirections() <em>stageDirections</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStageDirections
@@ -190,7 +190,7 @@ public class SceneTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>speech</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>speech</b></em>' feature
@@ -202,7 +202,7 @@ public class SceneTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link SceneType#getSpeech() <em>speech</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSpeech

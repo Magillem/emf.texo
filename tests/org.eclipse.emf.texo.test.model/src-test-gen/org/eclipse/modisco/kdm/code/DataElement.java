@@ -56,7 +56,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -68,7 +68,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Sets the '{@link DataElement#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType
@@ -81,7 +81,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Returns the value of '<em><b>ext</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>ext</b></em>' feature
@@ -93,7 +93,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Sets the '{@link DataElement#getExt() <em>ext</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newExt
@@ -106,7 +106,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Returns the value of '<em><b>size</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>size</b></em>' feature
@@ -118,7 +118,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Sets the '{@link DataElement#getSize() <em>size</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSize
@@ -131,7 +131,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -188,7 +188,7 @@ public class DataElement extends ComputationalObject {
 
   /**
    * Sets the '{@link DataElement#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

@@ -32,7 +32,7 @@ public class ContainerShape extends Shape {
 
   /**
    * Returns the value of '<em><b>children</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>children</b></em>' feature
@@ -89,7 +89,7 @@ public class ContainerShape extends Shape {
 
   /**
    * Sets the '{@link ContainerShape#getChildren() <em>children</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newChildren

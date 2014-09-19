@@ -28,7 +28,7 @@ public class Annotation extends Element {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -40,7 +40,7 @@ public class Annotation extends Element {
 
   /**
    * Sets the '{@link Annotation#getText() <em>text</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText

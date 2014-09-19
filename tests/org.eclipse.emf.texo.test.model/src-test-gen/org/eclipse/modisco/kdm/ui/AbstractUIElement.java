@@ -64,7 +64,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>source</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>source</b></em>' feature
@@ -121,7 +121,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractUIElement#getSource() <em>source</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSource
@@ -134,7 +134,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>UIRelation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>UIRelation</b></em>' feature
@@ -191,7 +191,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractUIElement#getUIRelation() <em>UIRelation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUIRelation
@@ -204,7 +204,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>implementation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>implementation</b></em>' feature
@@ -261,7 +261,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractUIElement#getImplementation() <em>implementation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newImplementation
@@ -274,7 +274,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>abstraction</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>abstraction</b></em>' feature
@@ -331,7 +331,7 @@ public abstract class AbstractUIElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractUIElement#getAbstraction() <em>abstraction</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAbstraction

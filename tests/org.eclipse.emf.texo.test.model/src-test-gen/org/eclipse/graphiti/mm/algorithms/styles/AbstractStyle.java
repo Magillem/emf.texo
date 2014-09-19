@@ -91,7 +91,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>background</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>background</b></em>' feature
@@ -103,7 +103,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getBackground() <em>background</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBackground
@@ -116,7 +116,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>foreground</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>foreground</b></em>' feature
@@ -128,7 +128,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getForeground() <em>foreground</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newForeground
@@ -141,7 +141,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lineWidth</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineWidth</b></em>' feature
@@ -153,7 +153,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getLineWidth() <em>lineWidth</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineWidth
@@ -166,7 +166,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lineStyle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineStyle</b></em>' feature
@@ -178,7 +178,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getLineStyle() <em>lineStyle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineStyle
@@ -191,7 +191,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>filled</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>filled</b></em>' feature
@@ -203,7 +203,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getFilled() <em>filled</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFilled
@@ -216,7 +216,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lineVisible</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineVisible</b></em>' feature
@@ -228,7 +228,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getLineVisible() <em>lineVisible</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineVisible
@@ -241,7 +241,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>renderingStyle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>renderingStyle</b></em>' feature
@@ -253,7 +253,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getRenderingStyle() <em>renderingStyle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRenderingStyle
@@ -266,7 +266,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>transparency</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>transparency</b></em>' feature
@@ -278,7 +278,7 @@ public abstract class AbstractStyle extends Identifiable {
 
   /**
    * Sets the '{@link AbstractStyle#getTransparency() <em>transparency</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTransparency

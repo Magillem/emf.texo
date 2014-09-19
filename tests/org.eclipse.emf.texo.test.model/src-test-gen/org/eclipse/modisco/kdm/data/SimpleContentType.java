@@ -40,7 +40,7 @@ public class SimpleContentType extends ComplexContentType {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -97,7 +97,7 @@ public class SimpleContentType extends ComplexContentType {
 
   /**
    * Sets the '{@link SimpleContentType#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType
@@ -110,7 +110,7 @@ public class SimpleContentType extends ComplexContentType {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -122,7 +122,7 @@ public class SimpleContentType extends ComplexContentType {
 
   /**
    * Sets the '{@link SimpleContentType#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind

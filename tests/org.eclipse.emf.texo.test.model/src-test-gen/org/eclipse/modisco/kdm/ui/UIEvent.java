@@ -27,7 +27,7 @@ public class UIEvent extends AbstractUIElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -39,7 +39,7 @@ public class UIEvent extends AbstractUIElement {
 
   /**
    * Sets the '{@link UIEvent#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind

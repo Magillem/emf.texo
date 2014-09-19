@@ -32,7 +32,7 @@ public class TemplateUnit extends Datatype {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -89,7 +89,7 @@ public class TemplateUnit extends Datatype {
 
   /**
    * Sets the '{@link TemplateUnit#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

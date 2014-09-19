@@ -160,7 +160,7 @@ public class PersonGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>age</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>age</b></em>' feature
@@ -172,7 +172,7 @@ public class PersonGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Person#getAge() <em>age</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAge
@@ -186,7 +186,7 @@ public class PersonGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>length</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>length</b></em>' feature
@@ -198,7 +198,7 @@ public class PersonGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Person#getLength() <em>length</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLength

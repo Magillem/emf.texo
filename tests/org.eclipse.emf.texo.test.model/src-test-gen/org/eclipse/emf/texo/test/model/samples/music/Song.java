@@ -54,7 +54,7 @@ public class Song extends Identifiable {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -66,7 +66,7 @@ public class Song extends Identifiable {
 
   /**
    * Sets the '{@link Song#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -79,7 +79,7 @@ public class Song extends Identifiable {
 
   /**
    * Returns the value of '<em><b>version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>version</b></em>' feature
@@ -91,7 +91,7 @@ public class Song extends Identifiable {
 
   /**
    * Sets the '{@link Song#getVersion() <em>version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVersion
@@ -104,7 +104,7 @@ public class Song extends Identifiable {
 
   /**
    * Returns the value of '<em><b>track</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>track</b></em>' feature
@@ -116,7 +116,7 @@ public class Song extends Identifiable {
 
   /**
    * Sets the '{@link Song#getTrack() <em>track</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTrack
@@ -129,7 +129,7 @@ public class Song extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -141,7 +141,7 @@ public class Song extends Identifiable {
 
   /**
    * Sets the '{@link Song#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

@@ -284,7 +284,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -296,7 +296,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -310,7 +310,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -322,7 +322,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -336,7 +336,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -348,7 +348,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -362,7 +362,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>act</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>act</b></em>' feature
@@ -374,7 +374,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getAct() <em>act</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAct
@@ -388,7 +388,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>fm</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>fm</b></em>' feature
@@ -400,7 +400,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getFm() <em>fm</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFm
@@ -414,7 +414,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>groupDescription</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>groupDescription</b></em>' feature
@@ -426,7 +426,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getGroupDescription() <em>groupDescription</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroupDescription
@@ -440,7 +440,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>line</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>line</b></em>' feature
@@ -452,7 +452,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getLine() <em>line</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLine
@@ -466,7 +466,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>p</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>p</b></em>' feature
@@ -478,7 +478,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getP() <em>p</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newP
@@ -492,7 +492,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>persona</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>persona</b></em>' feature
@@ -504,7 +504,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getPersona() <em>persona</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPersona
@@ -518,7 +518,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>personae</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>personae</b></em>' feature
@@ -530,7 +530,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getPersonae() <em>personae</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPersonae
@@ -544,7 +544,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>personaGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>personaGroup</b></em>' feature
@@ -556,7 +556,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getPersonaGroup() <em>personaGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPersonaGroup
@@ -570,7 +570,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>play</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>play</b></em>' feature
@@ -582,7 +582,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getPlay() <em>play</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPlay
@@ -596,7 +596,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>playSubTitle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>playSubTitle</b></em>' feature
@@ -608,7 +608,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getPlaySubTitle() <em>playSubTitle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPlaySubTitle
@@ -622,7 +622,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>scene</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>scene</b></em>' feature
@@ -634,7 +634,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getScene() <em>scene</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newScene
@@ -648,7 +648,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>sceneDescription</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>sceneDescription</b></em>' feature
@@ -660,7 +660,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getSceneDescription() <em>sceneDescription</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSceneDescription
@@ -674,7 +674,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>speaker</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>speaker</b></em>' feature
@@ -686,7 +686,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getSpeaker() <em>speaker</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSpeaker
@@ -700,7 +700,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>speech</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>speech</b></em>' feature
@@ -712,7 +712,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getSpeech() <em>speech</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSpeech
@@ -726,7 +726,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stageDirections</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stageDirections</b></em>' feature
@@ -738,7 +738,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getStageDirections() <em>stageDirections</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStageDirections
@@ -752,7 +752,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -764,7 +764,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle

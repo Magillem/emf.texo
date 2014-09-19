@@ -52,7 +52,7 @@ public class GradientColoredLocation extends Identifiable {
 
   /**
    * Returns the value of '<em><b>locationType</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>locationType</b></em>' feature
@@ -64,7 +64,7 @@ public class GradientColoredLocation extends Identifiable {
 
   /**
    * Sets the '{@link GradientColoredLocation#getLocationType() <em>locationType</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLocationType
@@ -77,7 +77,7 @@ public class GradientColoredLocation extends Identifiable {
 
   /**
    * Returns the value of '<em><b>locationValue</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>locationValue</b></em>' feature
@@ -89,7 +89,7 @@ public class GradientColoredLocation extends Identifiable {
 
   /**
    * Sets the '{@link GradientColoredLocation#getLocationValue() <em>locationValue</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLocationValue
@@ -102,7 +102,7 @@ public class GradientColoredLocation extends Identifiable {
 
   /**
    * Returns the value of '<em><b>color</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>color</b></em>' feature
@@ -114,7 +114,7 @@ public class GradientColoredLocation extends Identifiable {
 
   /**
    * Sets the '{@link GradientColoredLocation#getColor() <em>color</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newColor

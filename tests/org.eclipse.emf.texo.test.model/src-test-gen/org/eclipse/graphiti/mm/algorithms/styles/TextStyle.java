@@ -91,7 +91,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>underline</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>underline</b></em>' feature
@@ -103,7 +103,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#isUnderline() <em>underline</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUnderline
@@ -116,7 +116,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>underlineStyle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>underlineStyle</b></em>' feature
@@ -128,7 +128,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#getUnderlineStyle() <em>underlineStyle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUnderlineStyle
@@ -141,7 +141,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>strikeout</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>strikeout</b></em>' feature
@@ -153,7 +153,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#isStrikeout() <em>strikeout</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStrikeout
@@ -166,7 +166,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>font</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>font</b></em>' feature
@@ -178,7 +178,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#getFont() <em>font</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFont
@@ -191,7 +191,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>foreground</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>foreground</b></em>' feature
@@ -203,7 +203,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#getForeground() <em>foreground</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newForeground
@@ -216,7 +216,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>background</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>background</b></em>' feature
@@ -228,7 +228,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#getBackground() <em>background</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBackground
@@ -241,7 +241,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>underlineColor</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>underlineColor</b></em>' feature
@@ -253,7 +253,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#getUnderlineColor() <em>underlineColor</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUnderlineColor
@@ -266,7 +266,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Returns the value of '<em><b>strikeoutColor</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>strikeoutColor</b></em>' feature
@@ -278,7 +278,7 @@ public class TextStyle extends Identifiable {
 
   /**
    * Sets the '{@link TextStyle#getStrikeoutColor() <em>strikeoutColor</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStrikeoutColor

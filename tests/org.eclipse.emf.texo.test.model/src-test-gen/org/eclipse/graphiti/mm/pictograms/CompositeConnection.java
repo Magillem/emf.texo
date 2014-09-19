@@ -33,7 +33,7 @@ public class CompositeConnection extends Connection {
 
   /**
    * Returns the value of '<em><b>children</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>children</b></em>' feature
@@ -90,7 +90,7 @@ public class CompositeConnection extends Connection {
 
   /**
    * Sets the '{@link CompositeConnection#getChildren() <em>children</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newChildren

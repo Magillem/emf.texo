@@ -77,7 +77,7 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -172,7 +172,7 @@ public class BuildModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -399,12 +399,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractBuildElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractBuildElementModelObject<E extends AbstractBuildElement> extends
@@ -522,12 +522,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractBuildRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractBuildRelationshipModelObject<E extends AbstractBuildRelationship> extends
@@ -612,12 +612,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildResourceModelObject<E extends BuildResource> extends AbstractBuildElementModelObject<E> {
@@ -758,12 +758,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildDescription</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildDescriptionModelObject<E extends BuildDescription> extends BuildResourceModelObject<E> {
@@ -895,12 +895,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SymbolicLink</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SymbolicLinkModelObject<E extends SymbolicLink> extends AbstractBuildElementModelObject<E> {
@@ -1008,12 +1008,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>LinksTo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LinksToModelObject<E extends LinksTo> extends AbstractBuildRelationshipModelObject<E> {
@@ -1109,12 +1109,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Consumes</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConsumesModelObject<E extends Consumes> extends AbstractBuildRelationshipModelObject<E> {
@@ -1210,12 +1210,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildStep</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildStepModelObject<E extends BuildStep> extends BuildResourceModelObject<E> {
@@ -1329,12 +1329,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildModelModelObject<E extends BuildModel> extends KdmModelFactory.KDMModelModelObject<E> {
@@ -1437,12 +1437,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildComponent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildComponentModelObject<E extends BuildComponent> extends BuildResourceModelObject<E> {
@@ -1556,12 +1556,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Supplier</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SupplierModelObject<E extends Supplier> extends AbstractBuildElementModelObject<E> {
@@ -1669,12 +1669,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Tool</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ToolModelObject<E extends Tool> extends AbstractBuildElementModelObject<E> {
@@ -1782,12 +1782,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildElementModelObject<E extends BuildElement> extends AbstractBuildElementModelObject<E> {
@@ -1895,12 +1895,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildRelationshipModelObject<E extends BuildRelationship> extends
@@ -1997,12 +1997,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SuppliedBy</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SuppliedByModelObject<E extends SuppliedBy> extends AbstractBuildRelationshipModelObject<E> {
@@ -2098,12 +2098,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Library</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LibraryModelObject<E extends Library> extends BuildResourceModelObject<E> {
@@ -2217,12 +2217,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Produces</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ProducesModelObject<E extends Produces> extends AbstractBuildRelationshipModelObject<E> {
@@ -2318,12 +2318,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SupportedBy</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SupportedByModelObject<E extends SupportedBy> extends AbstractBuildRelationshipModelObject<E> {
@@ -2419,12 +2419,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BuildProduct</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BuildProductModelObject<E extends BuildProduct> extends BuildResourceModelObject<E> {
@@ -2538,12 +2538,12 @@ public class BuildModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DescribedBy</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DescribedByModelObject<E extends DescribedBy> extends AbstractBuildRelationshipModelObject<E> {

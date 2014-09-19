@@ -50,7 +50,7 @@ public class RequestModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -103,7 +103,7 @@ public class RequestModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -205,12 +205,12 @@ public class RequestModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ActionType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ActionTypeModelObject<E extends ActionType> extends
@@ -320,12 +320,12 @@ public class RequestModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DocumentRoot</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DocumentRootModelObject<E extends DocumentRoot> extends
@@ -440,12 +440,12 @@ public class RequestModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>QueryType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class QueryTypeModelObject<E extends QueryType> extends
@@ -565,12 +565,12 @@ public class RequestModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>QueryReferingObjectsType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class QueryReferingObjectsTypeModelObject<E extends QueryReferingObjectsType> extends
@@ -663,12 +663,12 @@ public class RequestModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Parameter</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ParameterModelObject<E extends Parameter> extends

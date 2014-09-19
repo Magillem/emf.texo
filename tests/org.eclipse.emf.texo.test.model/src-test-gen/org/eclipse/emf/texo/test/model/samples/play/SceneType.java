@@ -55,7 +55,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>group</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>group</b></em>' feature
@@ -67,7 +67,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Sets the '{@link SceneType#getGroup() <em>group</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroup
@@ -80,7 +80,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stageDirections</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stageDirections</b></em>' feature
@@ -93,7 +93,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Sets the '{@link SceneType#getStageDirections() <em>stageDirections</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStageDirections
@@ -107,7 +107,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>speech</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>speech</b></em>' feature
@@ -120,7 +120,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Sets the '{@link SceneType#getSpeech() <em>speech</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSpeech
@@ -133,7 +133,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>pindex</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pindex</b></em>' feature
@@ -145,7 +145,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Sets the '{@link SceneType#getPindex() <em>pindex</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPindex
@@ -158,7 +158,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -170,7 +170,7 @@ public class SceneType extends Identifiable {
 
   /**
    * Sets the '{@link SceneType#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle

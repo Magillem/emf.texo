@@ -34,7 +34,7 @@ public class FreeFormConnection extends Connection {
 
   /**
    * Returns the value of '<em><b>bendpoints</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bendpoints</b></em>' feature
@@ -91,7 +91,7 @@ public class FreeFormConnection extends Connection {
 
   /**
    * Sets the '{@link FreeFormConnection#getBendpoints() <em>bendpoints</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBendpoints

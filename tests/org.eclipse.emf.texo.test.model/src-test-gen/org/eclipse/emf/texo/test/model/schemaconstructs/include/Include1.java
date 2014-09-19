@@ -40,7 +40,7 @@ public class Include1 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>code</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>code</b></em>' feature
@@ -52,7 +52,7 @@ public class Include1 extends Identifiable {
 
   /**
    * Sets the '{@link Include1#getCode() <em>code</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCode
@@ -65,7 +65,7 @@ public class Include1 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>include2</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>include2</b></em>' feature
@@ -77,7 +77,7 @@ public class Include1 extends Identifiable {
 
   /**
    * Sets the '{@link Include1#getInclude2() <em>include2</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInclude2

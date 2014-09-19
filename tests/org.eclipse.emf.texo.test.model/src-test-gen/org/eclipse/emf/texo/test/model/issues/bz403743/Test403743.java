@@ -42,7 +42,7 @@ public class Test403743 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -54,7 +54,7 @@ public class Test403743 extends Identifiable {
 
   /**
    * Sets the '{@link Test403743#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -67,7 +67,7 @@ public class Test403743 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>children</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>children</b></em>' feature
@@ -124,7 +124,7 @@ public class Test403743 extends Identifiable {
 
   /**
    * Sets the '{@link Test403743#getChildren() <em>children</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newChildren

@@ -32,7 +32,7 @@ public enum MessageIOTypes {
   /**
    * Returns the '<em><b>MessageIOTypes</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the MessageIOTypes, the literal enum class

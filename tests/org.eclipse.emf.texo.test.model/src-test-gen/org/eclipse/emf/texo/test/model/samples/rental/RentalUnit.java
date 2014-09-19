@@ -30,7 +30,7 @@ public abstract class RentalUnit extends Identifiable {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -42,7 +42,7 @@ public abstract class RentalUnit extends Identifiable {
 
   /**
    * Sets the '{@link RentalUnit#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription

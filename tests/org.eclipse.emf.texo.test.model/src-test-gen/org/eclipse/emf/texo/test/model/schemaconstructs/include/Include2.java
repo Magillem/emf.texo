@@ -30,7 +30,7 @@ public class Include2 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>code</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>code</b></em>' feature
@@ -42,7 +42,7 @@ public class Include2 extends Identifiable {
 
   /**
    * Sets the '{@link Include2#getCode() <em>code</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCode

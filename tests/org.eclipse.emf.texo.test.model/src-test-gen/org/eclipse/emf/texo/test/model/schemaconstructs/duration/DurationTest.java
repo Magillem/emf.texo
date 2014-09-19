@@ -54,7 +54,7 @@ public class DurationTest extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -66,7 +66,7 @@ public class DurationTest extends Identifiable {
 
   /**
    * Sets the '{@link DurationTest#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -79,7 +79,7 @@ public class DurationTest extends Identifiable {
 
   /**
    * Returns the value of '<em><b>duration</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>duration</b></em>' feature
@@ -91,7 +91,7 @@ public class DurationTest extends Identifiable {
 
   /**
    * Sets the '{@link DurationTest#getDuration() <em>duration</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDuration
@@ -104,7 +104,7 @@ public class DurationTest extends Identifiable {
 
   /**
    * Returns the value of '<em><b>durations</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>durations</b></em>' feature
@@ -116,7 +116,7 @@ public class DurationTest extends Identifiable {
 
   /**
    * Sets the '{@link DurationTest#getDurations() <em>durations</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDurations

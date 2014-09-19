@@ -56,7 +56,7 @@ public class ResultType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>updated</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>updated</b></em>' feature
@@ -113,7 +113,7 @@ public class ResultType extends Identifiable {
 
   /**
    * Sets the '{@link ResultType#getUpdated() <em>updated</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUpdated
@@ -126,7 +126,7 @@ public class ResultType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>inserted</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>inserted</b></em>' feature
@@ -183,7 +183,7 @@ public class ResultType extends Identifiable {
 
   /**
    * Sets the '{@link ResultType#getInserted() <em>inserted</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInserted
@@ -196,7 +196,7 @@ public class ResultType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>deleted</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>deleted</b></em>' feature
@@ -253,7 +253,7 @@ public class ResultType extends Identifiable {
 
   /**
    * Sets the '{@link ResultType#getDeleted() <em>deleted</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDeleted

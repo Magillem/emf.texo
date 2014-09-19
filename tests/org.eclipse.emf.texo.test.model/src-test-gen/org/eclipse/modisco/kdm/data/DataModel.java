@@ -31,7 +31,7 @@ public class DataModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>dataElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dataElement</b></em>' feature
@@ -88,7 +88,7 @@ public class DataModel extends KDMModel {
 
   /**
    * Sets the '{@link DataModel#getDataElement() <em>dataElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDataElement

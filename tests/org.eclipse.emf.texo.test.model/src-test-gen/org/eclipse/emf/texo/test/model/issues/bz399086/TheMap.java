@@ -44,7 +44,7 @@ public class TheMap extends Identifiable {
 
   /**
    * Returns the value of '<em><b>refContent</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>refContent</b></em>' feature
@@ -56,7 +56,7 @@ public class TheMap extends Identifiable {
 
   /**
    * Sets the '{@link TheMap#getRefContent() <em>refContent</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRefContent
@@ -69,7 +69,7 @@ public class TheMap extends Identifiable {
 
   /**
    * Returns the value of '<em><b>valueContent</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>valueContent</b></em>' feature
@@ -81,7 +81,7 @@ public class TheMap extends Identifiable {
 
   /**
    * Sets the '{@link TheMap#getValueContent() <em>valueContent</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValueContent

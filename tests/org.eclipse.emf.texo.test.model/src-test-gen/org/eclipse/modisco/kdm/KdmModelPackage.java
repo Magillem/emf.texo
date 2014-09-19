@@ -22,7 +22,7 @@ import org.eclipse.modisco.kdm.ui.UiModelPackage;
 /**
  * The <b>Package</b> for the model '<em><b>kdm</b></em>'. It contains initialization code and access to the Factory to
  * instantiate types of this package.
- * 
+ *
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
@@ -59,9 +59,9 @@ public class KdmModelPackage extends ModelPackage {
 
   /**
    * Initializes this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return an initialized instance of this class
-   * 
+   *
    * @generated
    */
   public static KdmModelPackage initialize() {
@@ -104,7 +104,7 @@ public class KdmModelPackage extends ModelPackage {
 
   /**
    * Returns the {@link ModelFactory} of this ModelPackage. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the {@link KdmModelFactory} instance.
    * @generated
    */
@@ -116,7 +116,7 @@ public class KdmModelPackage extends ModelPackage {
   /**
    * Returns the nsUri of the {@link EPackage} managed by this Package instance. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @return the nsUri of the EPackage
    * @generated
    */

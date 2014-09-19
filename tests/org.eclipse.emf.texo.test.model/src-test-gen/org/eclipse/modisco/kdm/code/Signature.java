@@ -32,7 +32,7 @@ public class Signature extends Datatype {
 
   /**
    * Returns the value of '<em><b>parameterUnit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>parameterUnit</b></em>' feature
@@ -89,7 +89,7 @@ public class Signature extends Datatype {
 
   /**
    * Sets the '{@link Signature#getParameterUnit() <em>parameterUnit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newParameterUnit

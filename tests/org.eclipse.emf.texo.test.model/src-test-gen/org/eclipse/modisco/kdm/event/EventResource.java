@@ -30,7 +30,7 @@ public class EventResource extends AbstractEventElement {
 
   /**
    * Returns the value of '<em><b>eventElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>eventElement</b></em>' feature
@@ -87,7 +87,7 @@ public class EventResource extends AbstractEventElement {
 
   /**
    * Sets the '{@link EventResource#getEventElement() <em>eventElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEventElement

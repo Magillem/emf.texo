@@ -51,7 +51,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -63,7 +63,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link Image#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -76,7 +76,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>stretchH</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stretchH</b></em>' feature
@@ -88,7 +88,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link Image#getStretchH() <em>stretchH</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStretchH
@@ -101,7 +101,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>stretchV</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stretchV</b></em>' feature
@@ -113,7 +113,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link Image#getStretchV() <em>stretchV</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStretchV
@@ -126,7 +126,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>proportional</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>proportional</b></em>' feature
@@ -138,7 +138,7 @@ public class Image extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link Image#getProportional() <em>proportional</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProportional

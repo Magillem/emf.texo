@@ -46,7 +46,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -58,7 +58,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Sets the '{@link BookStore#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -71,7 +71,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Returns the value of '<em><b>writersByBook</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>writersByBook</b></em>' feature
@@ -83,7 +83,7 @@ public class BookStore extends Identifiable {
 
   /**
    * Sets the '{@link BookStore#getWritersByBook() <em>writersByBook</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWritersByBook

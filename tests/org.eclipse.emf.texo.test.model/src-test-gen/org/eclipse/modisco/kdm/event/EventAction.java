@@ -39,7 +39,7 @@ public class EventAction extends AbstractEventElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -51,7 +51,7 @@ public class EventAction extends AbstractEventElement {
 
   /**
    * Sets the '{@link EventAction#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -64,7 +64,7 @@ public class EventAction extends AbstractEventElement {
 
   /**
    * Returns the value of '<em><b>eventElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>eventElement</b></em>' feature
@@ -121,7 +121,7 @@ public class EventAction extends AbstractEventElement {
 
   /**
    * Sets the '{@link EventAction#getEventElement() <em>eventElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEventElement

@@ -10,7 +10,7 @@ import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableInterface;
 public interface Describable extends IdentifiableInterface {
   /**
    * Returns the value of '<em><b>description</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -20,7 +20,7 @@ public interface Describable extends IdentifiableInterface {
 
   /**
    * Sets the '{@link Describable#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription

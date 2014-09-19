@@ -80,7 +80,7 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -172,7 +172,7 @@ public class UiModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -389,12 +389,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractUIElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractUIElementModelObject<E extends AbstractUIElement> extends
@@ -545,12 +545,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractUIRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractUIRelationshipModelObject<E extends AbstractUIRelationship> extends
@@ -635,12 +635,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIResourceModelObject<E extends UIResource> extends AbstractUIElementModelObject<E> {
@@ -765,12 +765,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIDisplay</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIDisplayModelObject<E extends UIDisplay> extends UIResourceModelObject<E> {
@@ -886,12 +886,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Screen</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ScreenModelObject<E extends Screen> extends UIDisplayModelObject<E> {
@@ -1007,12 +1007,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Report</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReportModelObject<E extends Report> extends UIDisplayModelObject<E> {
@@ -1128,12 +1128,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIModelModelObject<E extends UIModel> extends KdmModelFactory.KDMModelModelObject<E> {
@@ -1236,12 +1236,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UILayout</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UILayoutModelObject<E extends UILayout> extends AbstractUIRelationshipModelObject<E> {
@@ -1337,12 +1337,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIField</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIFieldModelObject<E extends UIField> extends UIResourceModelObject<E> {
@@ -1458,12 +1458,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DisplaysImage</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DisplaysImageModelObject<E extends DisplaysImage> extends AbstractUIRelationshipModelObject<E> {
@@ -1559,12 +1559,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Displays</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DisplaysModelObject<E extends Displays> extends AbstractUIRelationshipModelObject<E> {
@@ -1660,12 +1660,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIFlow</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIFlowModelObject<E extends UIFlow> extends AbstractUIRelationshipModelObject<E> {
@@ -1761,12 +1761,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIElementModelObject<E extends UIElement> extends AbstractUIElementModelObject<E> {
@@ -1880,12 +1880,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIRelationshipModelObject<E extends UIRelationship> extends AbstractUIRelationshipModelObject<E> {
@@ -1981,12 +1981,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIAction</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIActionModelObject<E extends UIAction> extends AbstractUIElementModelObject<E> {
@@ -2116,12 +2116,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UIEvent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UIEventModelObject<E extends UIEvent> extends AbstractUIElementModelObject<E> {
@@ -2242,12 +2242,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ReadsUI</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReadsUIModelObject<E extends ReadsUI> extends
@@ -2344,12 +2344,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>WritesUI</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WritesUIModelObject<E extends WritesUI> extends
@@ -2446,12 +2446,12 @@ public class UiModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ManagesUI</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ManagesUIModelObject<E extends ManagesUI> extends

@@ -31,7 +31,7 @@ public class CollectionType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>books</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>books</b></em>' feature
@@ -43,7 +43,7 @@ public class CollectionType extends Identifiable {
 
   /**
    * Sets the '{@link CollectionType#getBooks() <em>books</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBooks

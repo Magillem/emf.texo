@@ -31,7 +31,7 @@ public class StructureModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>structureElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>structureElement</b></em>' feature
@@ -88,7 +88,7 @@ public class StructureModel extends KDMModel {
 
   /**
    * Sets the '{@link StructureModel#getStructureElement() <em>structureElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStructureElement

@@ -62,7 +62,7 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -142,7 +142,7 @@ public class WorkflowModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -309,12 +309,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConditionalOutputPort</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConditionalOutputPortModelObject<E extends ConditionalOutputPort> extends
@@ -416,12 +416,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Workflow</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WorkflowModelObject<E extends Workflow> extends WorkflowElementModelObject<E> {
@@ -544,12 +544,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>WorkflowElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WorkflowElementModelObject<E extends WorkflowElement> extends
@@ -662,12 +662,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>WorkflowNode</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WorkflowNodeModelObject<E extends WorkflowNode> extends WorkflowElementModelObject<E> {
@@ -796,12 +796,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Edge</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EdgeModelObject<E extends Edge> extends WorkflowElementModelObject<E> {
@@ -907,12 +907,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Comment</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CommentModelObject<E extends Comment> extends WorkflowElementModelObject<E> {
@@ -1008,12 +1008,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OutputPort</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OutputPortModelObject<E extends OutputPort> extends PortModelObject<E> {
@@ -1119,12 +1119,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Port</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PortModelObject<E extends Port> extends WorkflowElementModelObject<E> {
@@ -1213,12 +1213,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InputPort</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InputPortModelObject<E extends InputPort> extends PortModelObject<E> {
@@ -1324,12 +1324,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Fault</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FaultModelObject<E extends Fault> extends OutputPortModelObject<E> {
@@ -1423,12 +1423,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CompoundTask</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CompoundTaskModelObject<E extends CompoundTask> extends WorkflowNodeModelObject<E> {
@@ -1646,12 +1646,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConditionalTask</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConditionalTaskModelObject<E extends ConditionalTask> extends WorkflowNodeModelObject<E> {
@@ -1751,12 +1751,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>LoopTask</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LoopTaskModelObject<E extends LoopTask> extends CompoundTaskModelObject<E> {
@@ -1865,12 +1865,12 @@ public class WorkflowModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Task</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TaskModelObject<E extends Task> extends WorkflowNodeModelObject<E> {

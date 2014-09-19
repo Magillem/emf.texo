@@ -30,7 +30,7 @@ public abstract class AnchorContainer extends PictogramElement {
 
   /**
    * Returns the value of '<em><b>anchors</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>anchors</b></em>' feature
@@ -87,7 +87,7 @@ public abstract class AnchorContainer extends PictogramElement {
 
   /**
    * Sets the '{@link AnchorContainer#getAnchors() <em>anchors</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAnchors

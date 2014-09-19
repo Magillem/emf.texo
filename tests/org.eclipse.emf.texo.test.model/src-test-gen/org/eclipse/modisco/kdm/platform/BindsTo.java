@@ -36,7 +36,7 @@ public class BindsTo extends AbstractPlatformRelationship {
 
   /**
    * Returns the value of '<em><b>to</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>to</b></em>' feature
@@ -48,7 +48,7 @@ public class BindsTo extends AbstractPlatformRelationship {
 
   /**
    * Sets the '{@link BindsTo#getTo() <em>to</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTo
@@ -61,7 +61,7 @@ public class BindsTo extends AbstractPlatformRelationship {
 
   /**
    * Returns the value of '<em><b>from</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>from</b></em>' feature
@@ -73,7 +73,7 @@ public class BindsTo extends AbstractPlatformRelationship {
 
   /**
    * Sets the '{@link BindsTo#getFrom() <em>from</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFrom

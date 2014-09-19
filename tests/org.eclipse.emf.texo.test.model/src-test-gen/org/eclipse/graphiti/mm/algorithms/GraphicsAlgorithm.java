@@ -168,7 +168,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>graphicsAlgorithmChildren</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>graphicsAlgorithmChildren</b></em>' feature
@@ -225,7 +225,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getGraphicsAlgorithmChildren() <em>graphicsAlgorithmChildren</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGraphicsAlgorithmChildren
@@ -239,7 +239,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>parentGraphicsAlgorithm</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>parentGraphicsAlgorithm</b></em>' feature
@@ -251,7 +251,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getParentGraphicsAlgorithm() <em>parentGraphicsAlgorithm</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newParentGraphicsAlgorithm
@@ -265,7 +265,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>pictogramElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pictogramElement</b></em>' feature
@@ -277,7 +277,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getPictogramElement() <em>pictogramElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPictogramElement
@@ -290,7 +290,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>width</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>width</b></em>' feature
@@ -302,7 +302,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getWidth() <em>width</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWidth
@@ -315,7 +315,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>height</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>height</b></em>' feature
@@ -327,7 +327,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getHeight() <em>height</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newHeight
@@ -340,7 +340,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>x</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>x</b></em>' feature
@@ -352,7 +352,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getX() <em>x</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newX
@@ -365,7 +365,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>y</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>y</b></em>' feature
@@ -377,7 +377,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getY() <em>y</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newY
@@ -390,7 +390,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>style</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>style</b></em>' feature
@@ -402,7 +402,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getStyle() <em>style</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStyle
@@ -415,7 +415,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>background</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>background</b></em>' feature
@@ -427,7 +427,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getBackground() <em>background</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBackground
@@ -440,7 +440,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>foreground</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>foreground</b></em>' feature
@@ -452,7 +452,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getForeground() <em>foreground</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newForeground
@@ -465,7 +465,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>lineWidth</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineWidth</b></em>' feature
@@ -477,7 +477,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getLineWidth() <em>lineWidth</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineWidth
@@ -490,7 +490,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>lineStyle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineStyle</b></em>' feature
@@ -502,7 +502,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getLineStyle() <em>lineStyle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineStyle
@@ -515,7 +515,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>filled</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>filled</b></em>' feature
@@ -527,7 +527,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getFilled() <em>filled</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFilled
@@ -540,7 +540,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>lineVisible</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lineVisible</b></em>' feature
@@ -552,7 +552,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getLineVisible() <em>lineVisible</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLineVisible
@@ -565,7 +565,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>renderingStyle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>renderingStyle</b></em>' feature
@@ -577,7 +577,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getRenderingStyle() <em>renderingStyle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRenderingStyle
@@ -590,7 +590,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>transparency</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>transparency</b></em>' feature
@@ -602,7 +602,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link GraphicsAlgorithm#getTransparency() <em>transparency</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTransparency

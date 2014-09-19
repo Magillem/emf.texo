@@ -80,7 +80,7 @@ public enum TopicCategory {
   /**
    * Returns the '<em><b>TopicCategory</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the TopicCategory, the literal enum class

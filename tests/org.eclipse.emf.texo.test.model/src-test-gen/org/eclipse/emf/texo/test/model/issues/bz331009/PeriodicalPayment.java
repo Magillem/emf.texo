@@ -33,7 +33,7 @@ public class PeriodicalPayment extends PaymentItem {
 
   /**
    * Returns the value of '<em><b>periodicity</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>periodicity</b></em>' feature
@@ -45,7 +45,7 @@ public class PeriodicalPayment extends PaymentItem {
 
   /**
    * Sets the '{@link PeriodicalPayment#getPeriodicity() <em>periodicity</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPeriodicity

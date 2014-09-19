@@ -229,7 +229,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -241,7 +241,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -255,7 +255,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -267,7 +267,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -281,7 +281,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -293,7 +293,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -307,7 +307,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>even</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>even</b></em>' feature
@@ -319,7 +319,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getEven() <em>even</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEven
@@ -333,7 +333,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mySimpleAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mySimpleAbstract</b></em>' feature
@@ -345,7 +345,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMySimpleAbstract() <em>mySimpleAbstract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMySimpleAbstract
@@ -359,7 +359,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>evenComplexNumber</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>evenComplexNumber</b></em>' feature
@@ -371,7 +371,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getEvenComplexNumber() <em>evenComplexNumber</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEvenComplexNumber
@@ -385,7 +385,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myComplexAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myComplexAbstract</b></em>' feature
@@ -397,7 +397,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMyComplexAbstract() <em>myComplexAbstract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyComplexAbstract
@@ -411,7 +411,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>multiNumber</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>multiNumber</b></em>' feature
@@ -423,7 +423,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMultiNumber() <em>multiNumber</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMultiNumber
@@ -437,7 +437,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>number</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>number</b></em>' feature
@@ -449,7 +449,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getNumber() <em>number</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNumber
@@ -463,7 +463,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>odd</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>odd</b></em>' feature
@@ -475,7 +475,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getOdd() <em>odd</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOdd
@@ -489,7 +489,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>oddComplexNumber</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>oddComplexNumber</b></em>' feature
@@ -501,7 +501,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getOddComplexNumber() <em>oddComplexNumber</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOddComplexNumber

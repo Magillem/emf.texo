@@ -31,7 +31,7 @@ public class CompoundTask extends WorkflowNode {
 
   /**
    * Returns the value of '<em><b>subworkflow</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>subworkflow</b></em>' feature
@@ -43,7 +43,7 @@ public class CompoundTask extends WorkflowNode {
 
   /**
    * Sets the '{@link CompoundTask#getSubworkflow() <em>subworkflow</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSubworkflow

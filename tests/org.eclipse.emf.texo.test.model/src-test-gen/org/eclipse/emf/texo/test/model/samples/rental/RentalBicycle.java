@@ -40,7 +40,7 @@ public class RentalBicycle extends RentalUnit {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -52,7 +52,7 @@ public class RentalBicycle extends RentalUnit {
 
   /**
    * Sets the '{@link RentalBicycle#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType
@@ -65,7 +65,7 @@ public class RentalBicycle extends RentalUnit {
 
   /**
    * Returns the value of '<em><b>rentalCar</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>rentalCar</b></em>' feature
@@ -77,7 +77,7 @@ public class RentalBicycle extends RentalUnit {
 
   /**
    * Sets the '{@link RentalBicycle#getRentalCar() <em>rentalCar</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRentalCar

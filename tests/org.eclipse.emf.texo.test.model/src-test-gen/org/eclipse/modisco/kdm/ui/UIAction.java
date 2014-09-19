@@ -39,7 +39,7 @@ public class UIAction extends AbstractUIElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -51,7 +51,7 @@ public class UIAction extends AbstractUIElement {
 
   /**
    * Sets the '{@link UIAction#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -64,7 +64,7 @@ public class UIAction extends AbstractUIElement {
 
   /**
    * Returns the value of '<em><b>UIElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>UIElement</b></em>' feature
@@ -121,7 +121,7 @@ public class UIAction extends AbstractUIElement {
 
   /**
    * Sets the '{@link UIAction#getUIElement() <em>UIElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUIElement

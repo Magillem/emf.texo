@@ -32,7 +32,7 @@ public class InterfaceUnit extends Datatype {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -89,7 +89,7 @@ public class InterfaceUnit extends Datatype {
 
   /**
    * Sets the '{@link InterfaceUnit#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

@@ -30,7 +30,7 @@ public class ComplexAAA extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -42,7 +42,7 @@ public class ComplexAAA extends Identifiable {
 
   /**
    * Sets the '{@link ComplexAAA#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

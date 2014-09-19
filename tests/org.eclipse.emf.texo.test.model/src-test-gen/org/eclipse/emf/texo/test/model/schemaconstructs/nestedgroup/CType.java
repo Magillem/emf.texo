@@ -38,7 +38,7 @@ public class CType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>cname</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>cname</b></em>' feature
@@ -50,7 +50,7 @@ public class CType extends Identifiable {
 
   /**
    * Sets the '{@link CType#getCname() <em>cname</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCname
@@ -63,7 +63,7 @@ public class CType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>cvalue</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>cvalue</b></em>' feature
@@ -75,7 +75,7 @@ public class CType extends Identifiable {
 
   /**
    * Sets the '{@link CType#getCvalue() <em>cvalue</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCvalue

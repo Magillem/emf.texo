@@ -41,7 +41,7 @@ public class EnumeratedType extends Datatype {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -98,7 +98,7 @@ public class EnumeratedType extends Datatype {
 
   /**
    * Sets the '{@link EnumeratedType#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue
@@ -111,7 +111,7 @@ public class EnumeratedType extends Datatype {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -168,7 +168,7 @@ public class EnumeratedType extends Datatype {
 
   /**
    * Sets the '{@link EnumeratedType#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

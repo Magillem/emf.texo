@@ -172,7 +172,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -184,7 +184,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -198,7 +198,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -210,7 +210,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -224,7 +224,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -236,7 +236,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment

@@ -30,7 +30,7 @@ public class MemberUnit extends DataElement {
 
   /**
    * Returns the value of '<em><b>export</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>export</b></em>' feature
@@ -42,7 +42,7 @@ public class MemberUnit extends DataElement {
 
   /**
    * Sets the '{@link MemberUnit#getExport() <em>export</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newExport

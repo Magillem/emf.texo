@@ -112,7 +112,7 @@ public enum ComparisonType {
   /**
    * Returns the '<em><b>ComparisonType</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the ComparisonType, the literal enum class

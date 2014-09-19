@@ -57,7 +57,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>groupName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>groupName</b></em>' feature
@@ -69,7 +69,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Sets the '{@link AddressGroupType#getGroupName() <em>groupName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroupName
@@ -82,7 +82,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shipTo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shipTo</b></em>' feature
@@ -94,7 +94,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Sets the '{@link AddressGroupType#getShipTo() <em>shipTo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShipTo
@@ -107,7 +107,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>billTo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>billTo</b></em>' feature
@@ -119,7 +119,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Sets the '{@link AddressGroupType#getBillTo() <em>billTo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBillTo
@@ -132,7 +132,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simpleAddress</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simpleAddress</b></em>' feature
@@ -144,7 +144,7 @@ public class AddressGroupType extends Identifiable {
 
   /**
    * Sets the '{@link AddressGroupType#getSimpleAddress() <em>simpleAddress</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimpleAddress

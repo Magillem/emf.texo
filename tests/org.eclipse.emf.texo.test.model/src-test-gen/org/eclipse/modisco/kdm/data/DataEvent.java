@@ -27,7 +27,7 @@ public class DataEvent extends DataResource {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -39,7 +39,7 @@ public class DataEvent extends DataResource {
 
   /**
    * Sets the '{@link DataEvent#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind

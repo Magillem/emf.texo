@@ -107,7 +107,7 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -238,7 +238,7 @@ public class PlatformModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -585,12 +585,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PlatformModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PlatformModelModelObject<E extends PlatformModel> extends KdmModelFactory.KDMModelModelObject<E> {
@@ -693,12 +693,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractPlatformElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractPlatformElementModelObject<E extends AbstractPlatformElement> extends
@@ -849,12 +849,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractPlatformRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractPlatformRelationshipModelObject<E extends AbstractPlatformRelationship> extends
@@ -939,12 +939,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ResourceType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ResourceTypeModelObject<E extends ResourceType> extends AbstractPlatformElementModelObject<E> {
@@ -1069,12 +1069,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>NamingResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class NamingResourceModelObject<E extends NamingResource> extends ResourceTypeModelObject<E> {
@@ -1190,12 +1190,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MarshalledResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MarshalledResourceModelObject<E extends MarshalledResource> extends ResourceTypeModelObject<E> {
@@ -1311,12 +1311,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MessagingResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MessagingResourceModelObject<E extends MessagingResource> extends ResourceTypeModelObject<E> {
@@ -1432,12 +1432,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>FileResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FileResourceModelObject<E extends FileResource> extends ResourceTypeModelObject<E> {
@@ -1553,12 +1553,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ExecutionResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ExecutionResourceModelObject<E extends ExecutionResource> extends ResourceTypeModelObject<E> {
@@ -1674,12 +1674,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>LockResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LockResourceModelObject<E extends LockResource> extends ResourceTypeModelObject<E> {
@@ -1795,12 +1795,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>StreamResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StreamResourceModelObject<E extends StreamResource> extends ResourceTypeModelObject<E> {
@@ -1916,12 +1916,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataManager</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataManagerModelObject<E extends DataManager> extends ResourceTypeModelObject<E> {
@@ -2037,12 +2037,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PlatformEvent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PlatformEventModelObject<E extends PlatformEvent> extends ResourceTypeModelObject<E> {
@@ -2165,12 +2165,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PlatformAction</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PlatformActionModelObject<E extends PlatformAction> extends AbstractPlatformElementModelObject<E> {
@@ -2300,12 +2300,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ExternalActor</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ExternalActorModelObject<E extends ExternalActor> extends PlatformActionModelObject<E> {
@@ -2423,12 +2423,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BindsTo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BindsToModelObject<E extends BindsTo> extends AbstractPlatformRelationshipModelObject<E> {
@@ -2524,12 +2524,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Requires</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RequiresModelObject<E extends Requires> extends AbstractPlatformRelationshipModelObject<E> {
@@ -2625,12 +2625,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DeployedComponent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DeployedComponentModelObject<E extends DeployedComponent> extends
@@ -2756,12 +2756,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ManagesResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ManagesResourceModelObject<E extends ManagesResource> extends
@@ -2858,12 +2858,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ReadsResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReadsResourceModelObject<E extends ReadsResource> extends
@@ -2960,12 +2960,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>WritesResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WritesResourceModelObject<E extends WritesResource> extends
@@ -3062,12 +3062,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DefinedBy</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DefinedByModelObject<E extends DefinedBy> extends
@@ -3164,12 +3164,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DeployedSoftwareSystem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DeployedSoftwareSystemModelObject<E extends DeployedSoftwareSystem> extends
@@ -3295,12 +3295,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Machine</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MachineModelObject<E extends Machine> extends AbstractPlatformElementModelObject<E> {
@@ -3436,12 +3436,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DeployedResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DeployedResourceModelObject<E extends DeployedResource> extends
@@ -3567,12 +3567,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RuntimeResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RuntimeResourceModelObject<E extends RuntimeResource> extends ResourceTypeModelObject<E> {
@@ -3688,12 +3688,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Process</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ProcessModelObject<E extends Process> extends RuntimeResourceModelObject<E> {
@@ -3809,12 +3809,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Thread</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ThreadModelObject<E extends Thread> extends RuntimeResourceModelObject<E> {
@@ -3930,12 +3930,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Loads</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LoadsModelObject<E extends Loads> extends AbstractPlatformRelationshipModelObject<E> {
@@ -4031,12 +4031,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Spawns</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SpawnsModelObject<E extends Spawns> extends AbstractPlatformRelationshipModelObject<E> {
@@ -4132,12 +4132,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PlatformElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PlatformElementModelObject<E extends PlatformElement> extends
@@ -4252,12 +4252,12 @@ public class PlatformModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PlatformRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PlatformRelationshipModelObject<E extends PlatformRelationship> extends

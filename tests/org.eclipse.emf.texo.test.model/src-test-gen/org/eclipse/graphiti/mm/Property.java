@@ -38,7 +38,7 @@ public class Property extends Identifiable {
 
   /**
    * Returns the value of '<em><b>key</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>key</b></em>' feature
@@ -50,7 +50,7 @@ public class Property extends Identifiable {
 
   /**
    * Sets the '{@link Property#getKey() <em>key</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKey
@@ -63,7 +63,7 @@ public class Property extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -75,7 +75,7 @@ public class Property extends Identifiable {
 
   /**
    * Sets the '{@link Property#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

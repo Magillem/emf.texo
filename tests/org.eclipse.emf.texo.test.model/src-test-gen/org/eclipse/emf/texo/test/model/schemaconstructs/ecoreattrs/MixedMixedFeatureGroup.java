@@ -191,7 +191,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -203,7 +203,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -217,7 +217,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -229,7 +229,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -243,7 +243,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -255,7 +255,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -269,7 +269,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -281,7 +281,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Mixed#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -295,7 +295,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -307,7 +307,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Mixed#getValue_() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue_

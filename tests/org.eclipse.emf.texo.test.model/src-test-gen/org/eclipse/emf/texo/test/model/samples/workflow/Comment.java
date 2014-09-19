@@ -31,7 +31,7 @@ public class Comment extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>workflow</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>workflow</b></em>' feature
@@ -43,7 +43,7 @@ public class Comment extends WorkflowElement {
 
   /**
    * Sets the '{@link Comment#getWorkflow() <em>workflow</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWorkflow

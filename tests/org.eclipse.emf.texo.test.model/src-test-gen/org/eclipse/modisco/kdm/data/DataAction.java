@@ -49,7 +49,7 @@ public class DataAction extends AbstractDataElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -61,7 +61,7 @@ public class DataAction extends AbstractDataElement {
 
   /**
    * Sets the '{@link DataAction#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -74,7 +74,7 @@ public class DataAction extends AbstractDataElement {
 
   /**
    * Returns the value of '<em><b>implementation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>implementation</b></em>' feature
@@ -131,7 +131,7 @@ public class DataAction extends AbstractDataElement {
 
   /**
    * Sets the '{@link DataAction#getImplementation() <em>implementation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newImplementation
@@ -144,7 +144,7 @@ public class DataAction extends AbstractDataElement {
 
   /**
    * Returns the value of '<em><b>dataElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dataElement</b></em>' feature
@@ -201,7 +201,7 @@ public class DataAction extends AbstractDataElement {
 
   /**
    * Sets the '{@link DataAction#getDataElement() <em>dataElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDataElement

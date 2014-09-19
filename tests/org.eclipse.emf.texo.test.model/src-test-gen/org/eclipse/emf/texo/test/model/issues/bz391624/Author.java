@@ -22,7 +22,7 @@ public class Author extends NotIdentifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -34,7 +34,7 @@ public class Author extends NotIdentifiable {
 
   /**
    * Sets the '{@link Author#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

@@ -162,7 +162,7 @@ public class AddressTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -174,7 +174,7 @@ public class AddressTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link AddressType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -188,7 +188,7 @@ public class AddressTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>longName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>longName</b></em>' feature
@@ -200,7 +200,7 @@ public class AddressTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link AddressType#getLongName() <em>longName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLongName

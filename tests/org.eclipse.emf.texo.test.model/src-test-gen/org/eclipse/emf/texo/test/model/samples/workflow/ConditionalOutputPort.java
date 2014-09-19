@@ -30,7 +30,7 @@ public class ConditionalOutputPort extends OutputPort {
 
   /**
    * Returns the value of '<em><b>condition</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>condition</b></em>' feature
@@ -42,7 +42,7 @@ public class ConditionalOutputPort extends OutputPort {
 
   /**
    * Sets the '{@link ConditionalOutputPort#getCondition() <em>condition</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCondition

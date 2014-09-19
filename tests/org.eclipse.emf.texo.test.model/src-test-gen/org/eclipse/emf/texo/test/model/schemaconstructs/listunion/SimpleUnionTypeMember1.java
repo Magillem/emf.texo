@@ -48,7 +48,7 @@ public enum SimpleUnionTypeMember1 {
   /**
    * Returns the '<em><b>SimpleUnionTypeMember1</b></em>' literal with the specified literal value. <!-- begin-user-doc
    * --> <!-- end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the SimpleUnionTypeMember1, the literal enum class

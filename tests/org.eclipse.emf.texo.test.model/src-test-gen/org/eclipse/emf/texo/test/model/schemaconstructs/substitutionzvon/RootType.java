@@ -45,7 +45,7 @@ public class RootType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myAbstractGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myAbstractGroup</b></em>' feature
@@ -57,7 +57,7 @@ public class RootType extends Identifiable {
 
   /**
    * Sets the '{@link RootType#getMyAbstractGroup() <em>myAbstractGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyAbstractGroup
@@ -70,7 +70,7 @@ public class RootType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myAbstract</b></em>' feature
@@ -83,7 +83,7 @@ public class RootType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myComplexAbstractGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myComplexAbstractGroup</b></em>' feature
@@ -95,7 +95,7 @@ public class RootType extends Identifiable {
 
   /**
    * Sets the '{@link RootType#getMyComplexAbstractGroup() <em>myComplexAbstractGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyComplexAbstractGroup
@@ -108,7 +108,7 @@ public class RootType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myComplexAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myComplexAbstract</b></em>' feature

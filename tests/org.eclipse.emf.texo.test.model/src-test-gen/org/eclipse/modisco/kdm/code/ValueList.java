@@ -32,7 +32,7 @@ public class ValueList extends ValueElement {
 
   /**
    * Returns the value of '<em><b>valueElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>valueElement</b></em>' feature
@@ -89,7 +89,7 @@ public class ValueList extends ValueElement {
 
   /**
    * Sets the '{@link ValueList#getValueElement() <em>valueElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValueElement

@@ -34,7 +34,7 @@ public class CurvedConnection extends Connection {
 
   /**
    * Returns the value of '<em><b>controlPoints</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>controlPoints</b></em>' feature
@@ -91,7 +91,7 @@ public class CurvedConnection extends Connection {
 
   /**
    * Sets the '{@link CurvedConnection#getControlPoints() <em>controlPoints</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newControlPoints

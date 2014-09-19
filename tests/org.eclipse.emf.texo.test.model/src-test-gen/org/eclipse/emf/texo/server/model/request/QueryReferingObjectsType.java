@@ -47,7 +47,7 @@ public class QueryReferingObjectsType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>targetUri</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>targetUri</b></em>' feature
@@ -59,7 +59,7 @@ public class QueryReferingObjectsType extends Identifiable {
 
   /**
    * Sets the '{@link QueryReferingObjectsType#getTargetUri() <em>targetUri</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTargetUri
@@ -72,7 +72,7 @@ public class QueryReferingObjectsType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>includeContainerReferences</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>includeContainerReferences</b></em>' feature
@@ -85,7 +85,7 @@ public class QueryReferingObjectsType extends Identifiable {
   /**
    * Sets the '{@link QueryReferingObjectsType#getIncludeContainerReferences() <em>includeContainerReferences</em>}'
    * feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIncludeContainerReferences
@@ -99,7 +99,7 @@ public class QueryReferingObjectsType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>maxResults</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>maxResults</b></em>' feature
@@ -111,7 +111,7 @@ public class QueryReferingObjectsType extends Identifiable {
 
   /**
    * Sets the '{@link QueryReferingObjectsType#getMaxResults() <em>maxResults</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMaxResults

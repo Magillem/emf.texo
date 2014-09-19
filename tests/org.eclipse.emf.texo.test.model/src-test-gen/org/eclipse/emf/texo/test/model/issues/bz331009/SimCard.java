@@ -72,7 +72,7 @@ public class SimCard extends Identifiable {
 
   /**
    * Returns the value of '<em><b>number</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>number</b></em>' feature
@@ -84,7 +84,7 @@ public class SimCard extends Identifiable {
 
   /**
    * Sets the '{@link SimCard#getNumber() <em>number</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNumber

@@ -30,7 +30,7 @@ public class ComplexType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>test</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>test</b></em>' feature
@@ -42,7 +42,7 @@ public class ComplexType extends Identifiable {
 
   /**
    * Sets the '{@link ComplexType#getTest() <em>test</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTest

@@ -30,7 +30,7 @@ public class MacroUnit extends PreprocessorDirective {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -42,7 +42,7 @@ public class MacroUnit extends PreprocessorDirective {
 
   /**
    * Sets the '{@link MacroUnit#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind

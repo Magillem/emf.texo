@@ -36,7 +36,7 @@ public class Attribute extends Element {
 
   /**
    * Returns the value of '<em><b>tag</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>tag</b></em>' feature
@@ -48,7 +48,7 @@ public class Attribute extends Element {
 
   /**
    * Sets the '{@link Attribute#getTag() <em>tag</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTag
@@ -61,7 +61,7 @@ public class Attribute extends Element {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -73,7 +73,7 @@ public class Attribute extends Element {
 
   /**
    * Sets the '{@link Attribute#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

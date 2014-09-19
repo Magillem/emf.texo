@@ -100,7 +100,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>valueElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>valueElement</b></em>' feature
@@ -112,7 +112,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getValueElement() <em>valueElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValueElement
@@ -125,7 +125,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>nillableValueElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>nillableValueElement</b></em>' feature
@@ -137,7 +137,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getNillableValueElement() <em>nillableValueElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNillableValueElement
@@ -150,7 +150,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>requiredValueElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>requiredValueElement</b></em>' feature
@@ -162,7 +162,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getRequiredValueElement() <em>requiredValueElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRequiredValueElement
@@ -175,7 +175,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comparisonElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comparisonElement</b></em>' feature
@@ -187,7 +187,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getComparisonElement() <em>comparisonElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComparisonElement
@@ -200,7 +200,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>requiredComparisonElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>requiredComparisonElement</b></em>' feature
@@ -212,7 +212,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getRequiredComparisonElement() <em>requiredComparisonElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRequiredComparisonElement
@@ -225,7 +225,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comparison</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comparison</b></em>' feature
@@ -237,7 +237,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getComparison() <em>comparison</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComparison
@@ -250,7 +250,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>requiredComparison</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>requiredComparison</b></em>' feature
@@ -262,7 +262,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getRequiredComparison() <em>requiredComparison</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRequiredComparison
@@ -275,7 +275,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>requiredValue</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>requiredValue</b></em>' feature
@@ -287,7 +287,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getRequiredValue() <em>requiredValue</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRequiredValue
@@ -300,7 +300,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -312,7 +312,7 @@ public class PriceType extends Identifiable {
 
   /**
    * Sets the '{@link PriceType#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

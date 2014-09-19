@@ -31,7 +31,7 @@ public class PreprocessorDirective extends AbstractCodeElement {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -88,7 +88,7 @@ public class PreprocessorDirective extends AbstractCodeElement {
 
   /**
    * Sets the '{@link PreprocessorDirective#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

@@ -36,7 +36,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -48,7 +48,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -61,7 +61,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xMLNSPrefixMap</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xMLNSPrefixMap</b></em>' feature
@@ -73,7 +73,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXMLNSPrefixMap() <em>xMLNSPrefixMap</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXMLNSPrefixMap
@@ -86,7 +86,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xSISchemaLocation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xSISchemaLocation</b></em>' feature
@@ -98,7 +98,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXSISchemaLocation() <em>xSISchemaLocation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXSISchemaLocation
@@ -111,7 +111,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>address</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>address</b></em>' feature
@@ -124,7 +124,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getAddress() <em>address</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAddress
@@ -138,7 +138,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>addressGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>addressGroup</b></em>' feature
@@ -151,7 +151,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getAddressGroup() <em>addressGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAddressGroup
@@ -165,7 +165,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simpleAll</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simpleAll</b></em>' feature
@@ -178,7 +178,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getSimpleAll() <em>simpleAll</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimpleAll
@@ -192,7 +192,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simpleAllMap</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simpleAllMap</b></em>' feature
@@ -205,7 +205,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getSimpleAllMap() <em>simpleAllMap</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimpleAllMap

@@ -36,7 +36,7 @@ public class BoxRelativeAnchor extends AdvancedAnchor {
 
   /**
    * Returns the value of '<em><b>relativeWidth</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>relativeWidth</b></em>' feature
@@ -48,7 +48,7 @@ public class BoxRelativeAnchor extends AdvancedAnchor {
 
   /**
    * Sets the '{@link BoxRelativeAnchor#getRelativeWidth() <em>relativeWidth</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRelativeWidth
@@ -61,7 +61,7 @@ public class BoxRelativeAnchor extends AdvancedAnchor {
 
   /**
    * Returns the value of '<em><b>relativeHeight</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>relativeHeight</b></em>' feature
@@ -73,7 +73,7 @@ public class BoxRelativeAnchor extends AdvancedAnchor {
 
   /**
    * Sets the '{@link BoxRelativeAnchor#getRelativeHeight() <em>relativeHeight</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRelativeHeight

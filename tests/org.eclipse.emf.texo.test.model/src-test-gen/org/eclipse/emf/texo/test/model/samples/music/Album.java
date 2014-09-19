@@ -106,7 +106,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -118,7 +118,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -131,7 +131,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>version</b></em>' feature
@@ -143,7 +143,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getVersion() <em>version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVersion
@@ -156,7 +156,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -168,7 +168,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -181,7 +181,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>artist</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>artist</b></em>' feature
@@ -193,7 +193,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getArtist() <em>artist</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newArtist
@@ -206,7 +206,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>releaseDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>releaseDate</b></em>' feature
@@ -218,7 +218,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getReleaseDate() <em>releaseDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newReleaseDate
@@ -231,7 +231,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>genres</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>genres</b></em>' feature
@@ -288,7 +288,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getGenres() <em>genres</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGenres
@@ -301,7 +301,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>songs</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>songs</b></em>' feature
@@ -358,7 +358,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getSongs() <em>songs</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSongs
@@ -371,7 +371,7 @@ public class Album extends Identifiable {
 
   /**
    * Returns the value of '<em><b>ratings</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>ratings</b></em>' feature
@@ -383,7 +383,7 @@ public class Album extends Identifiable {
 
   /**
    * Sets the '{@link Album#getRatings() <em>ratings</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRatings

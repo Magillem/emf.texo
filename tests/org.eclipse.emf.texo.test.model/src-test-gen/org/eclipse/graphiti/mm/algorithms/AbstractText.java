@@ -81,7 +81,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>font</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>font</b></em>' feature
@@ -93,7 +93,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link AbstractText#getFont() <em>font</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFont
@@ -106,7 +106,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>horizontalAlignment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>horizontalAlignment</b></em>' feature
@@ -118,7 +118,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link AbstractText#getHorizontalAlignment() <em>horizontalAlignment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newHorizontalAlignment
@@ -131,7 +131,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>verticalAlignment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>verticalAlignment</b></em>' feature
@@ -143,7 +143,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link AbstractText#getVerticalAlignment() <em>verticalAlignment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVerticalAlignment
@@ -156,7 +156,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>angle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>angle</b></em>' feature
@@ -168,7 +168,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link AbstractText#getAngle() <em>angle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAngle
@@ -181,7 +181,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -193,7 +193,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link AbstractText#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue
@@ -206,7 +206,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>styleRegions</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>styleRegions</b></em>' feature
@@ -263,7 +263,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link AbstractText#getStyleRegions() <em>styleRegions</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStyleRegions

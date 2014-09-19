@@ -56,7 +56,7 @@ public class ActionType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>update</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>update</b></em>' feature
@@ -113,7 +113,7 @@ public class ActionType extends Identifiable {
 
   /**
    * Sets the '{@link ActionType#getUpdate() <em>update</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUpdate
@@ -126,7 +126,7 @@ public class ActionType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>insert</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>insert</b></em>' feature
@@ -183,7 +183,7 @@ public class ActionType extends Identifiable {
 
   /**
    * Sets the '{@link ActionType#getInsert() <em>insert</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInsert
@@ -196,7 +196,7 @@ public class ActionType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>delete</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>delete</b></em>' feature
@@ -253,7 +253,7 @@ public class ActionType extends Identifiable {
 
   /**
    * Sets the '{@link ActionType#getDelete() <em>delete</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDelete

@@ -216,7 +216,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>string</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>string</b></em>' feature
@@ -228,7 +228,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getString() <em>string</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newString
@@ -241,7 +241,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>integer</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>integer</b></em>' feature
@@ -253,7 +253,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getInteger() <em>integer</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInteger
@@ -266,7 +266,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>integerObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>integerObject</b></em>' feature
@@ -278,7 +278,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getIntegerObject() <em>integerObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIntegerObject
@@ -291,7 +291,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>long</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>long</b></em>' feature
@@ -303,7 +303,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getLong_() <em>long</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLong_
@@ -316,7 +316,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>longObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>longObject</b></em>' feature
@@ -328,7 +328,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getLongObject() <em>longObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLongObject
@@ -341,7 +341,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>double</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>double</b></em>' feature
@@ -353,7 +353,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getDouble_() <em>double</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDouble_
@@ -366,7 +366,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doubleObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doubleObject</b></em>' feature
@@ -378,7 +378,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getDoubleObject() <em>doubleObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoubleObject
@@ -391,7 +391,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>float</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>float</b></em>' feature
@@ -403,7 +403,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getFloat_() <em>float</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFloat_
@@ -416,7 +416,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>floatObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>floatObject</b></em>' feature
@@ -428,7 +428,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getFloatObject() <em>floatObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFloatObject
@@ -441,7 +441,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>clazz</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>clazz</b></em>' feature
@@ -453,7 +453,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getClazz() <em>clazz</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newClazz
@@ -466,7 +466,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>char</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>char</b></em>' feature
@@ -478,7 +478,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getChar_() <em>char</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newChar_
@@ -491,7 +491,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>charObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>charObject</b></em>' feature
@@ -503,7 +503,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getCharObject() <em>charObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCharObject
@@ -516,7 +516,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byte</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byte</b></em>' feature
@@ -528,7 +528,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getByte_() <em>byte</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByte_
@@ -541,7 +541,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byteObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byteObject</b></em>' feature
@@ -553,7 +553,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getByteObject() <em>byteObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByteObject
@@ -566,7 +566,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byteArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byteArray</b></em>' feature
@@ -578,7 +578,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getByteArray() <em>byteArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByteArray
@@ -591,7 +591,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>bigDecimal</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bigDecimal</b></em>' feature
@@ -603,7 +603,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getBigDecimal() <em>bigDecimal</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBigDecimal
@@ -616,7 +616,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>bigInteger</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bigInteger</b></em>' feature
@@ -628,7 +628,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getBigInteger() <em>bigInteger</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBigInteger
@@ -641,7 +641,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>enum</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>enum</b></em>' feature
@@ -653,7 +653,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getEnum_() <em>enum</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnum_
@@ -666,7 +666,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>date</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>date</b></em>' feature
@@ -678,7 +678,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getDate() <em>date</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDate
@@ -691,7 +691,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stringArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stringArray</b></em>' feature
@@ -703,7 +703,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getStringArray() <em>stringArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStringArray
@@ -716,7 +716,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>longArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>longArray</b></em>' feature
@@ -728,7 +728,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getLongArray() <em>longArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLongArray
@@ -741,7 +741,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>nextEnum</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>nextEnum</b></em>' feature
@@ -753,7 +753,7 @@ public class SingleTypes extends Identifiable {
 
   /**
    * Sets the '{@link SingleTypes#getNextEnum() <em>nextEnum</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNextEnum

@@ -71,7 +71,7 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -157,7 +157,7 @@ public class PictogramsModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -334,12 +334,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Shape</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ShapeModelObject<E extends Shape> extends AnchorContainerModelObject<E> {
@@ -434,12 +434,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PictogramElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PictogramElementModelObject<E extends PictogramElement> extends
@@ -540,12 +540,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AnchorContainer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AnchorContainerModelObject<E extends AnchorContainer> extends PictogramElementModelObject<E> {
@@ -642,12 +642,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ContainerShape</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContainerShapeModelObject<E extends ContainerShape> extends ShapeModelObject<E> {
@@ -748,12 +748,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Diagram</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DiagramModelObject<E extends Diagram> extends ContainerShapeModelObject<E> {
@@ -935,12 +935,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Connection</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConnectionModelObject<E extends Connection> extends AnchorContainerModelObject<E> {
@@ -1054,12 +1054,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PictogramLink</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PictogramLinkModelObject<E extends PictogramLink> extends
@@ -1154,12 +1154,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Anchor</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AnchorModelObject<E extends Anchor> extends PictogramElementModelObject<E> {
@@ -1279,12 +1279,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConnectionDecorator</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConnectionDecoratorModelObject<E extends ConnectionDecorator> extends ShapeModelObject<E> {
@@ -1391,12 +1391,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>FixPointAnchor</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FixPointAnchorModelObject<E extends FixPointAnchor> extends AdvancedAnchorModelObject<E> {
@@ -1499,12 +1499,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AdvancedAnchor</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AdvancedAnchorModelObject<E extends AdvancedAnchor> extends AnchorModelObject<E> {
@@ -1605,12 +1605,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BoxRelativeAnchor</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BoxRelativeAnchorModelObject<E extends BoxRelativeAnchor> extends AdvancedAnchorModelObject<E> {
@@ -1718,12 +1718,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ChopboxAnchor</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ChopboxAnchorModelObject<E extends ChopboxAnchor> extends AnchorModelObject<E> {
@@ -1817,12 +1817,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>FreeFormConnection</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FreeFormConnectionModelObject<E extends FreeFormConnection> extends ConnectionModelObject<E> {
@@ -1929,12 +1929,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ManhattanConnection</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ManhattanConnectionModelObject<E extends ManhattanConnection> extends ConnectionModelObject<E> {
@@ -2030,12 +2030,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CurvedConnection</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CurvedConnectionModelObject<E extends CurvedConnection> extends ConnectionModelObject<E> {
@@ -2142,12 +2142,12 @@ public class PictogramsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CompositeConnection</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CompositeConnectionModelObject<E extends CompositeConnection> extends ConnectionModelObject<E> {

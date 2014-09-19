@@ -40,7 +40,7 @@ public class RentalCar extends RentalUnit {
 
   /**
    * Returns the value of '<em><b>size</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>size</b></em>' feature
@@ -52,7 +52,7 @@ public class RentalCar extends RentalUnit {
 
   /**
    * Sets the '{@link RentalCar#getSize() <em>size</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSize
@@ -65,7 +65,7 @@ public class RentalCar extends RentalUnit {
 
   /**
    * Returns the value of '<em><b>currentDriver</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>currentDriver</b></em>' feature
@@ -77,7 +77,7 @@ public class RentalCar extends RentalUnit {
 
   /**
    * Sets the '{@link RentalCar#getCurrentDriver() <em>currentDriver</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCurrentDriver

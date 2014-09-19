@@ -39,7 +39,7 @@ public class IdentifiableConcrete extends Identifiable implements IdentifiedType
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -51,7 +51,7 @@ public class IdentifiableConcrete extends Identifiable implements IdentifiedType
 
   /**
    * Sets the '{@link IdentifiableConcrete#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -64,7 +64,7 @@ public class IdentifiableConcrete extends Identifiable implements IdentifiedType
 
   /**
    * Returns the value of '<em><b>identifier</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>identifier</b></em>' feature
@@ -76,7 +76,7 @@ public class IdentifiableConcrete extends Identifiable implements IdentifiedType
 
   /**
    * Sets the '{@link IdentifiableConcrete#getIdentifier() <em>identifier</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIdentifier

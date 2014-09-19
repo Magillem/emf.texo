@@ -131,7 +131,7 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -301,7 +301,7 @@ public class DataModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -768,12 +768,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataModelModelObject<E extends DataModel> extends KdmModelFactory.KDMModelModelObject<E> {
@@ -876,12 +876,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractDataElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractDataElementModelObject<E extends AbstractDataElement> extends
@@ -1021,12 +1021,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractDataRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractDataRelationshipModelObject<E extends AbstractDataRelationship> extends
@@ -1111,12 +1111,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataResource</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataResourceModelObject<E extends DataResource> extends AbstractDataElementModelObject<E> {
@@ -1228,12 +1228,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>IndexElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IndexElementModelObject<E extends IndexElement> extends DataResourceModelObject<E> {
@@ -1356,12 +1356,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UniqueKey</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UniqueKeyModelObject<E extends UniqueKey> extends IndexElementModelObject<E> {
@@ -1475,12 +1475,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Index</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IndexModelObject<E extends Index> extends IndexElementModelObject<E> {
@@ -1594,12 +1594,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>KeyRelation</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class KeyRelationModelObject<E extends KeyRelation> extends AbstractDataRelationshipModelObject<E> {
@@ -1695,12 +1695,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ReferenceKey</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReferenceKeyModelObject<E extends ReferenceKey> extends IndexElementModelObject<E> {
@@ -1814,12 +1814,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataContainer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataContainerModelObject<E extends DataContainer> extends DataResourceModelObject<E> {
@@ -1942,12 +1942,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Catalog</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CatalogModelObject<E extends Catalog> extends DataContainerModelObject<E> {
@@ -2061,12 +2061,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RelationalSchema</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RelationalSchemaModelObject<E extends RelationalSchema> extends DataContainerModelObject<E> {
@@ -2191,12 +2191,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ColumnSet</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ColumnSetModelObject<E extends ColumnSet> extends DataContainerModelObject<E> {
@@ -2321,12 +2321,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RelationalTable</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RelationalTableModelObject<E extends RelationalTable> extends ColumnSetModelObject<E> {
@@ -2442,12 +2442,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RelationalView</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RelationalViewModelObject<E extends RelationalView> extends ColumnSetModelObject<E> {
@@ -2563,12 +2563,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RecordFile</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RecordFileModelObject<E extends RecordFile> extends ColumnSetModelObject<E> {
@@ -2684,12 +2684,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataEvent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataEventModelObject<E extends DataEvent> extends DataResourceModelObject<E> {
@@ -2808,12 +2808,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>XMLSchema</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class XMLSchemaModelObject<E extends XMLSchema> extends AbstractDataElementModelObject<E> {
@@ -2936,12 +2936,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractContentElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractContentElementModelObject<E extends AbstractContentElement> extends
@@ -3054,12 +3054,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ComplexContentType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ComplexContentTypeModelObject<E extends ComplexContentType> extends
@@ -3183,12 +3183,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AllContent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AllContentModelObject<E extends AllContent> extends ComplexContentTypeModelObject<E> {
@@ -3302,12 +3302,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SeqContent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SeqContentModelObject<E extends SeqContent> extends ComplexContentTypeModelObject<E> {
@@ -3421,12 +3421,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ChoiceContent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ChoiceContentModelObject<E extends ChoiceContent> extends ComplexContentTypeModelObject<E> {
@@ -3540,12 +3540,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ContentItem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContentItemModelObject<E extends ContentItem> extends AbstractContentElementModelObject<E> {
@@ -3673,12 +3673,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GroupContent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GroupContentModelObject<E extends GroupContent> extends ContentItemModelObject<E> {
@@ -3794,12 +3794,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ContentRestriction</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContentRestrictionModelObject<E extends ContentRestriction> extends
@@ -3924,12 +3924,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SimpleContentType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SimpleContentTypeModelObject<E extends SimpleContentType> extends
@@ -4062,12 +4062,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ExtendedDataElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ExtendedDataElementModelObject<E extends ExtendedDataElement> extends
@@ -4180,12 +4180,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataRelationshipModelObject<E extends DataRelationship> extends
@@ -4282,12 +4282,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MixedContent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MixedContentModelObject<E extends MixedContent> extends ComplexContentTypeModelObject<E> {
@@ -4401,12 +4401,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ContentReference</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContentReferenceModelObject<E extends ContentReference> extends ContentItemModelObject<E> {
@@ -4522,12 +4522,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataAction</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataActionModelObject<E extends DataAction> extends AbstractDataElementModelObject<E> {
@@ -4666,12 +4666,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ReadsColumnSet</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReadsColumnSetModelObject<E extends ReadsColumnSet> extends
@@ -4768,12 +4768,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ContentAttribute</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContentAttributeModelObject<E extends ContentAttribute> extends ContentItemModelObject<E> {
@@ -4889,12 +4889,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TypedBy</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TypedByModelObject<E extends TypedBy> extends AbstractDataRelationshipModelObject<E> {
@@ -4990,12 +4990,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ReferenceTo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ReferenceToModelObject<E extends ReferenceTo> extends AbstractDataRelationshipModelObject<E> {
@@ -5091,12 +5091,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RestrictionOf</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RestrictionOfModelObject<E extends RestrictionOf> extends AbstractDataRelationshipModelObject<E> {
@@ -5192,12 +5192,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ExtensionTo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ExtensionToModelObject<E extends ExtensionTo> extends AbstractDataRelationshipModelObject<E> {
@@ -5293,12 +5293,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DatatypeOf</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DatatypeOfModelObject<E extends DatatypeOf> extends AbstractDataRelationshipModelObject<E> {
@@ -5394,12 +5394,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>HasContent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class HasContentModelObject<E extends HasContent> extends
@@ -5496,12 +5496,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>WritesColumnSet</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class WritesColumnSetModelObject<E extends WritesColumnSet> extends
@@ -5598,12 +5598,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ProducesDataEvent</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ProducesDataEventModelObject<E extends ProducesDataEvent> extends
@@ -5700,12 +5700,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataSegment</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataSegmentModelObject<E extends DataSegment> extends ColumnSetModelObject<E> {
@@ -5821,12 +5821,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ContentElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContentElementModelObject<E extends ContentElement> extends ContentItemModelObject<E> {
@@ -5942,12 +5942,12 @@ public class DataModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ManagesData</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ManagesDataModelObject<E extends ManagesData> extends

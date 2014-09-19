@@ -45,7 +45,7 @@ public class GradientColoredAreas extends Identifiable {
 
   /**
    * Returns the value of '<em><b>gradientColor</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>gradientColor</b></em>' feature
@@ -102,7 +102,7 @@ public class GradientColoredAreas extends Identifiable {
 
   /**
    * Sets the '{@link GradientColoredAreas#getGradientColor() <em>gradientColor</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGradientColor
@@ -115,7 +115,7 @@ public class GradientColoredAreas extends Identifiable {
 
   /**
    * Returns the value of '<em><b>styleAdaption</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>styleAdaption</b></em>' feature
@@ -127,7 +127,7 @@ public class GradientColoredAreas extends Identifiable {
 
   /**
    * Sets the '{@link GradientColoredAreas#getStyleAdaption() <em>styleAdaption</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStyleAdaption

@@ -186,7 +186,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>code</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>code</b></em>' feature
@@ -198,7 +198,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getCode() <em>code</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCode
@@ -211,7 +211,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>boo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>boo</b></em>' feature
@@ -223,7 +223,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getBoo() <em>boo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBoo
@@ -236,7 +236,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byt</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byt</b></em>' feature
@@ -248,7 +248,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getByt() <em>byt</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByt
@@ -261,7 +261,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doubl</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doubl</b></em>' feature
@@ -273,7 +273,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getDoubl() <em>doubl</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoubl
@@ -286,7 +286,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>floa</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>floa</b></em>' feature
@@ -298,7 +298,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getFloa() <em>floa</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFloa
@@ -311,7 +311,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>inte</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>inte</b></em>' feature
@@ -323,7 +323,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getInte() <em>inte</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInte
@@ -336,7 +336,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>long</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>long</b></em>' feature
@@ -348,7 +348,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getLong_() <em>long</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLong_
@@ -361,7 +361,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shor</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shor</b></em>' feature
@@ -373,7 +373,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getShor() <em>shor</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShor
@@ -386,7 +386,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>enu</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>enu</b></em>' feature
@@ -398,7 +398,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getEnu() <em>enu</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnu
@@ -411,7 +411,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>dat</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dat</b></em>' feature
@@ -423,7 +423,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getDat() <em>dat</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDat
@@ -436,7 +436,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>limitedstring</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>limitedstring</b></em>' feature
@@ -448,7 +448,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getLimitedstring() <em>limitedstring</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLimitedstring
@@ -461,7 +461,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stri</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stri</b></em>' feature
@@ -473,7 +473,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getStri() <em>stri</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStri
@@ -486,7 +486,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>intArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>intArray</b></em>' feature
@@ -498,7 +498,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getIntArray() <em>intArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIntArray
@@ -511,7 +511,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doubleArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doubleArray</b></em>' feature
@@ -523,7 +523,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getDoubleArray() <em>doubleArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoubleArray
@@ -536,7 +536,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stringArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stringArray</b></em>' feature
@@ -548,7 +548,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getStringArray() <em>stringArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStringArray
@@ -561,7 +561,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byteArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byteArray</b></em>' feature
@@ -573,7 +573,7 @@ public class SimpleList extends Identifiable {
 
   /**
    * Sets the '{@link SimpleList#getByteArray() <em>byteArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByteArray

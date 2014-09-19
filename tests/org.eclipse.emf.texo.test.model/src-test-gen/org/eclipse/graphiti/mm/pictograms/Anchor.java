@@ -56,7 +56,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Returns the value of '<em><b>parent</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>parent</b></em>' feature
@@ -68,7 +68,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Sets the '{@link Anchor#getParent() <em>parent</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newParent
@@ -81,7 +81,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Returns the value of '<em><b>outgoingConnections</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>outgoingConnections</b></em>' feature
@@ -138,7 +138,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Sets the '{@link Anchor#getOutgoingConnections() <em>outgoingConnections</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOutgoingConnections
@@ -151,7 +151,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Returns the value of '<em><b>incomingConnections</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>incomingConnections</b></em>' feature
@@ -208,7 +208,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Sets the '{@link Anchor#getIncomingConnections() <em>incomingConnections</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIncomingConnections
@@ -221,7 +221,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Returns the value of '<em><b>referencedGraphicsAlgorithm</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>referencedGraphicsAlgorithm</b></em>' feature
@@ -233,7 +233,7 @@ public abstract class Anchor extends PictogramElement {
 
   /**
    * Sets the '{@link Anchor#getReferencedGraphicsAlgorithm() <em>referencedGraphicsAlgorithm</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newReferencedGraphicsAlgorithm

@@ -57,7 +57,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -69,7 +69,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -82,7 +82,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xMLNSPrefixMap</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xMLNSPrefixMap</b></em>' feature
@@ -94,7 +94,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXMLNSPrefixMap() <em>xMLNSPrefixMap</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXMLNSPrefixMap
@@ -107,7 +107,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xSISchemaLocation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xSISchemaLocation</b></em>' feature
@@ -119,7 +119,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXSISchemaLocation() <em>xSISchemaLocation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXSISchemaLocation
@@ -132,7 +132,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -144,7 +144,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -157,7 +157,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -169,7 +169,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -182,7 +182,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -194,7 +194,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType

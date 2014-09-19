@@ -30,7 +30,7 @@ public class Sub1Type extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -42,7 +42,7 @@ public class Sub1Type extends Identifiable {
 
   /**
    * Sets the '{@link Sub1Type#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

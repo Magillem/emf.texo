@@ -49,7 +49,7 @@ public class MusicModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -99,7 +99,7 @@ public class MusicModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -230,12 +230,12 @@ public class MusicModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Artist</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ArtistModelObject<E extends Artist> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -347,12 +347,12 @@ public class MusicModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Country</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CountryModelObject<E extends Country> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -444,12 +444,12 @@ public class MusicModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Genre</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GenreModelObject<E extends Genre> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -541,12 +541,12 @@ public class MusicModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Album</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AlbumModelObject<E extends Album> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -680,12 +680,12 @@ public class MusicModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Song</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SongModelObject<E extends Song> extends IdentifiableModelFactory.IdentifiableModelObject<E> {

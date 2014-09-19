@@ -36,7 +36,7 @@ public class ContentRestriction extends AbstractContentElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -48,7 +48,7 @@ public class ContentRestriction extends AbstractContentElement {
 
   /**
    * Sets the '{@link ContentRestriction#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -61,7 +61,7 @@ public class ContentRestriction extends AbstractContentElement {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -73,7 +73,7 @@ public class ContentRestriction extends AbstractContentElement {
 
   /**
    * Sets the '{@link ContentRestriction#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

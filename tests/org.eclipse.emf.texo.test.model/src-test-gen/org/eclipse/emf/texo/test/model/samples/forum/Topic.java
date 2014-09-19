@@ -69,7 +69,7 @@ public class Topic extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -81,7 +81,7 @@ public class Topic extends Identifiable {
 
   /**
    * Sets the '{@link Topic#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -94,7 +94,7 @@ public class Topic extends Identifiable {
 
   /**
    * Returns the value of '<em><b>category</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>category</b></em>' feature
@@ -106,7 +106,7 @@ public class Topic extends Identifiable {
 
   /**
    * Sets the '{@link Topic#getCategory() <em>category</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCategory
@@ -119,7 +119,7 @@ public class Topic extends Identifiable {
 
   /**
    * Returns the value of '<em><b>creator</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>creator</b></em>' feature
@@ -131,7 +131,7 @@ public class Topic extends Identifiable {
 
   /**
    * Sets the '{@link Topic#getCreator() <em>creator</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCreator
@@ -144,7 +144,7 @@ public class Topic extends Identifiable {
 
   /**
    * Returns the value of '<em><b>posts</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>posts</b></em>' feature
@@ -201,7 +201,7 @@ public class Topic extends Identifiable {
 
   /**
    * Sets the '{@link Topic#getPosts() <em>posts</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPosts

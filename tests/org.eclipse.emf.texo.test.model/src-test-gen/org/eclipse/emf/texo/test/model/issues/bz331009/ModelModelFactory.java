@@ -100,7 +100,7 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -234,7 +234,7 @@ public class ModelModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -854,12 +854,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SimCard</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SimCardModelObject<E extends SimCard> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -946,12 +946,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SimContract</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SimContractModelObject<E extends SimContract> extends
@@ -1049,12 +1049,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PaymentInfo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PaymentInfoModelObject<E extends PaymentInfo> extends
@@ -1231,12 +1231,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SimTariff</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SimTariffModelObject<E extends SimTariff> extends TariffModelObject<E> {
@@ -1323,12 +1323,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Tariff</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TariffModelObject<E extends Tariff> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -1423,12 +1423,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PaymentItem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PaymentItemModelObject<E extends PaymentItem> extends
@@ -1531,12 +1531,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>VolumePayment</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class VolumePaymentModelObject<E extends VolumePayment> extends PaymentItemModelObject<E> {
@@ -1734,12 +1734,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OneTimePayment</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OneTimePaymentModelObject<E extends OneTimePayment> extends PaymentItemModelObject<E> {
@@ -1824,12 +1824,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Service</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ServiceModelObject<E extends Service> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -1931,12 +1931,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Units</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UnitsModelObject<E extends Units> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -2018,12 +2018,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Price</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PriceModelObject<E extends Price> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -2098,12 +2098,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CarProducer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CarProducerModelObject<E extends CarProducer> extends
@@ -2186,12 +2186,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CarModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CarModelModelObject<E extends CarModel> extends
@@ -2279,12 +2279,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CarRegInfo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CarRegInfoModelObject<E extends CarRegInfo> extends
@@ -2422,12 +2422,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Document</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DocumentModelObject<E extends Document> extends AbstractModelObject<E> {
@@ -2518,12 +2518,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Person</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PersonModelObject<E extends Person> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -2642,12 +2642,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Car</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CarModelObject<E extends Car> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -2739,12 +2739,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CarPassport</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CarPassportModelObject<E extends CarPassport> extends
@@ -2842,12 +2842,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Phone</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PhoneModelObject<E extends Phone> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -2934,12 +2934,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Address</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AddressModelObject<E extends Address> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -3051,12 +3051,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Passport</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PassportModelObject<E extends Passport> extends
@@ -3154,12 +3154,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DrivingLicense</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DrivingLicenseModelObject<E extends DrivingLicense> extends
@@ -3257,12 +3257,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Contract</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContractModelObject<E extends Contract> extends
@@ -3367,12 +3367,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SecretQuestion</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SecretQuestionModelObject<E extends SecretQuestion> extends
@@ -3475,12 +3475,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ClientTariff</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ClientTariffModelObject<E extends ClientTariff> extends TariffModelObject<E> {
@@ -3567,12 +3567,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ContractPackage</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ContractPackageModelObject<E extends ContractPackage> extends
@@ -3662,12 +3662,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>User</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UserModelObject<E extends User> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -3759,12 +3759,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>UserGroup</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class UserGroupModelObject<E extends UserGroup> extends
@@ -3840,12 +3840,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Message</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MessageModelObject<E extends Message> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -3947,12 +3947,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Event</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EventModelObject<E extends Event> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -4044,12 +4044,12 @@ public class ModelModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Coordinates</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CoordinatesModelObject<E extends Coordinates> extends

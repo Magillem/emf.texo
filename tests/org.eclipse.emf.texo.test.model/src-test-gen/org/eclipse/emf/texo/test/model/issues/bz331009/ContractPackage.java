@@ -64,7 +64,7 @@ public class ContractPackage extends Identifiable {
 
   /**
    * Returns the value of '<em><b>client</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>client</b></em>' feature
@@ -76,7 +76,7 @@ public class ContractPackage extends Identifiable {
 
   /**
    * Sets the '{@link ContractPackage#getClient() <em>client</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newClient
@@ -89,7 +89,7 @@ public class ContractPackage extends Identifiable {
 
   /**
    * Returns the value of '<em><b>user</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>user</b></em>' feature
@@ -101,7 +101,7 @@ public class ContractPackage extends Identifiable {
 
   /**
    * Sets the '{@link ContractPackage#getUser() <em>user</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUser

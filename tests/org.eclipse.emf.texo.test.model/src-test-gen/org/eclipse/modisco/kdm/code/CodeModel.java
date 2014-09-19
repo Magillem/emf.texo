@@ -33,7 +33,7 @@ public class CodeModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -90,7 +90,7 @@ public class CodeModel extends KDMModel {
 
   /**
    * Sets the '{@link CodeModel#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

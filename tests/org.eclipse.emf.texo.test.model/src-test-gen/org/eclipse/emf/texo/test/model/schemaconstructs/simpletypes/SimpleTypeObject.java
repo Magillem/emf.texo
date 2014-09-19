@@ -107,7 +107,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>code</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>code</b></em>' feature
@@ -119,7 +119,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getCode() <em>code</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCode
@@ -132,7 +132,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>boo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>boo</b></em>' feature
@@ -144,7 +144,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getBoo() <em>boo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBoo
@@ -157,7 +157,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byt</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byt</b></em>' feature
@@ -169,7 +169,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getByt() <em>byt</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByt
@@ -182,7 +182,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doubl</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doubl</b></em>' feature
@@ -194,7 +194,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getDoubl() <em>doubl</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoubl
@@ -207,7 +207,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>float</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>float</b></em>' feature
@@ -219,7 +219,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getFloat_() <em>float</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFloat_
@@ -232,7 +232,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>inte</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>inte</b></em>' feature
@@ -244,7 +244,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getInte() <em>inte</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInte
@@ -257,7 +257,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lon</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lon</b></em>' feature
@@ -269,7 +269,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getLon() <em>lon</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLon
@@ -282,7 +282,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shor</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shor</b></em>' feature
@@ -294,7 +294,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getShor() <em>shor</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShor
@@ -307,7 +307,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>enu</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>enu</b></em>' feature
@@ -319,7 +319,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getEnu() <em>enu</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnu
@@ -332,7 +332,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Returns the value of '<em><b>dat</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dat</b></em>' feature
@@ -344,7 +344,7 @@ public class SimpleTypeObject extends Identifiable {
 
   /**
    * Sets the '{@link SimpleTypeObject#getDat() <em>dat</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDat

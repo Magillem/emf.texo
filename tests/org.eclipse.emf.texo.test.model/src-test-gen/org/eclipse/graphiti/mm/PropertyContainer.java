@@ -34,7 +34,7 @@ public abstract class PropertyContainer extends Identifiable {
 
   /**
    * Returns the value of '<em><b>properties</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>properties</b></em>' feature
@@ -91,7 +91,7 @@ public abstract class PropertyContainer extends Identifiable {
 
   /**
    * Sets the '{@link PropertyContainer#getProperties() <em>properties</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProperties

@@ -53,7 +53,7 @@ public class VolumePayment extends PaymentItem {
 
   /**
    * Returns the value of '<em><b>volume</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>volume</b></em>' feature
@@ -65,7 +65,7 @@ public class VolumePayment extends PaymentItem {
 
   /**
    * Sets the '{@link VolumePayment#getVolume() <em>volume</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVolume

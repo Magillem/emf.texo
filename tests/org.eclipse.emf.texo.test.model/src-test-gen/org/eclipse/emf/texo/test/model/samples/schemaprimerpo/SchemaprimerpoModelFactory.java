@@ -51,7 +51,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -101,7 +101,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -261,12 +261,12 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DocumentRoot</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DocumentRootModelObject<E extends DocumentRoot> extends
@@ -376,12 +376,12 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PurchaseOrder</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PurchaseOrderModelObject<E extends PurchaseOrder> extends
@@ -491,12 +491,12 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Item</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ItemModelObject<E extends Item> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -603,12 +603,12 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>USAddress</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class USAddressModelObject<E extends USAddress> extends

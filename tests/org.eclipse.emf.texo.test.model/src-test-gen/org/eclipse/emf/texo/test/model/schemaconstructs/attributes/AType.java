@@ -72,7 +72,7 @@ public class AType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -84,7 +84,7 @@ public class AType extends Identifiable {
 
   /**
    * Sets the '{@link AType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -97,7 +97,7 @@ public class AType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>b</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>b</b></em>' feature
@@ -109,7 +109,7 @@ public class AType extends Identifiable {
 
   /**
    * Sets the '{@link AType#getB() <em>b</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newB
@@ -122,7 +122,7 @@ public class AType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>c</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>c</b></em>' feature
@@ -134,7 +134,7 @@ public class AType extends Identifiable {
 
   /**
    * Sets the '{@link AType#getC() <em>c</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newC
@@ -147,7 +147,7 @@ public class AType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -159,7 +159,7 @@ public class AType extends Identifiable {
 
   /**
    * Sets the '{@link AType#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -172,7 +172,7 @@ public class AType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>d</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>d</b></em>' feature
@@ -184,7 +184,7 @@ public class AType extends Identifiable {
 
   /**
    * Sets the '{@link AType#getD() <em>d</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newD
@@ -197,7 +197,7 @@ public class AType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myR</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myR</b></em>' feature
@@ -209,7 +209,7 @@ public class AType extends Identifiable {
 
   /**
    * Sets the '{@link AType#getMyR() <em>myR</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyR

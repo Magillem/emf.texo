@@ -53,7 +53,7 @@ public class SunBooksModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -109,7 +109,7 @@ public class SunBooksModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -360,12 +360,12 @@ public class SunBooksModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AuthorsType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AuthorsTypeModelObject<E extends AuthorsType> extends
@@ -453,12 +453,12 @@ public class SunBooksModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BooksType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BooksTypeModelObject<E extends BooksType> extends
@@ -546,12 +546,12 @@ public class SunBooksModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BookType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BookTypeModelObject<E extends BookType> extends
@@ -674,12 +674,12 @@ public class SunBooksModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PromotionType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PromotionTypeModelObject<E extends PromotionType> extends
@@ -767,12 +767,12 @@ public class SunBooksModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CollectionType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CollectionTypeModelObject<E extends CollectionType> extends
@@ -855,12 +855,12 @@ public class SunBooksModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DocumentRoot</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DocumentRootModelObject<E extends DocumentRoot> extends

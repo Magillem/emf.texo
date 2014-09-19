@@ -46,7 +46,7 @@ public class SimpleAllType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>aaa</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>aaa</b></em>' feature
@@ -58,7 +58,7 @@ public class SimpleAllType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleAllType#getAaa() <em>aaa</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAaa
@@ -71,7 +71,7 @@ public class SimpleAllType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>bbb</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bbb</b></em>' feature
@@ -83,7 +83,7 @@ public class SimpleAllType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleAllType#getBbb() <em>bbb</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBbb
@@ -96,7 +96,7 @@ public class SimpleAllType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>ccc</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>ccc</b></em>' feature
@@ -108,7 +108,7 @@ public class SimpleAllType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleAllType#getCcc() <em>ccc</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCcc

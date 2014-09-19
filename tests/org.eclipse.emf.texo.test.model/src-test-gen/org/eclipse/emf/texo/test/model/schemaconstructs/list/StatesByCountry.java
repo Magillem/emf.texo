@@ -55,7 +55,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>country</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>country</b></em>' feature
@@ -67,7 +67,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getCountry() <em>country</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountry
@@ -80,7 +80,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>index</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>index</b></em>' feature
@@ -92,7 +92,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getIndex() <em>index</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIndex
@@ -105,7 +105,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>allStates</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>allStates</b></em>' feature
@@ -117,7 +117,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getAllStates() <em>allStates</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAllStates
@@ -130,7 +130,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>sixImportantStates</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>sixImportantStates</b></em>' feature
@@ -142,7 +142,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getSixImportantStates() <em>sixImportantStates</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSixImportantStates

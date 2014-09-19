@@ -166,7 +166,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>string</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>string</b></em>' feature
@@ -178,7 +178,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getString() <em>string</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newString
@@ -191,7 +191,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>integerObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>integerObject</b></em>' feature
@@ -203,7 +203,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getIntegerObject() <em>integerObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIntegerObject
@@ -216,7 +216,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>long</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>long</b></em>' feature
@@ -228,7 +228,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getLong_() <em>long</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLong_
@@ -241,7 +241,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doubleObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doubleObject</b></em>' feature
@@ -253,7 +253,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getDoubleObject() <em>doubleObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoubleObject
@@ -266,7 +266,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>floatObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>floatObject</b></em>' feature
@@ -278,7 +278,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getFloatObject() <em>floatObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFloatObject
@@ -291,7 +291,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>clazz</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>clazz</b></em>' feature
@@ -303,7 +303,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getClazz() <em>clazz</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newClazz
@@ -316,7 +316,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>charObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>charObject</b></em>' feature
@@ -328,7 +328,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getCharObject() <em>charObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCharObject
@@ -341,7 +341,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byteObject</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byteObject</b></em>' feature
@@ -353,7 +353,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getByteObject() <em>byteObject</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByteObject
@@ -366,7 +366,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byteArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byteArray</b></em>' feature
@@ -378,7 +378,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getByteArray() <em>byteArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByteArray
@@ -391,7 +391,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>bigDecimal</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bigDecimal</b></em>' feature
@@ -403,7 +403,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getBigDecimal() <em>bigDecimal</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBigDecimal
@@ -416,7 +416,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>bigInteger</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bigInteger</b></em>' feature
@@ -428,7 +428,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getBigInteger() <em>bigInteger</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBigInteger
@@ -441,7 +441,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>enum</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>enum</b></em>' feature
@@ -453,7 +453,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getEnum_() <em>enum</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnum_
@@ -466,7 +466,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Returns the value of '<em><b>date</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>date</b></em>' feature
@@ -478,7 +478,7 @@ public class ManyTypes extends Identifiable {
 
   /**
    * Sets the '{@link ManyTypes#getDate() <em>date</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDate

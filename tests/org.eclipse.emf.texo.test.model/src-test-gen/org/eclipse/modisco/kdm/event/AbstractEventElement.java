@@ -64,7 +64,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>source</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>source</b></em>' feature
@@ -121,7 +121,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractEventElement#getSource() <em>source</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSource
@@ -134,7 +134,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>eventRelation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>eventRelation</b></em>' feature
@@ -191,7 +191,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractEventElement#getEventRelation() <em>eventRelation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEventRelation
@@ -204,7 +204,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>abstraction</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>abstraction</b></em>' feature
@@ -261,7 +261,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractEventElement#getAbstraction() <em>abstraction</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAbstraction
@@ -274,7 +274,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>implementation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>implementation</b></em>' feature
@@ -331,7 +331,7 @@ public abstract class AbstractEventElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractEventElement#getImplementation() <em>implementation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newImplementation

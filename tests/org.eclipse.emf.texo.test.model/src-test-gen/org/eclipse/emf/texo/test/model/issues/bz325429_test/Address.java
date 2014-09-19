@@ -38,7 +38,7 @@ public class Address extends Identifiable {
 
   /**
    * Returns the value of '<em><b>street</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>street</b></em>' feature
@@ -50,7 +50,7 @@ public class Address extends Identifiable {
 
   /**
    * Sets the '{@link Address#getStreet() <em>street</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStreet
@@ -63,7 +63,7 @@ public class Address extends Identifiable {
 
   /**
    * Returns the value of '<em><b>city</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>city</b></em>' feature
@@ -75,7 +75,7 @@ public class Address extends Identifiable {
 
   /**
    * Sets the '{@link Address#getCity() <em>city</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCity

@@ -60,7 +60,7 @@ public class Event extends Identifiable {
 
   /**
    * Returns the value of '<em><b>eventType</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>eventType</b></em>' feature
@@ -72,7 +72,7 @@ public class Event extends Identifiable {
 
   /**
    * Sets the '{@link Event#getEventType() <em>eventType</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEventType
@@ -110,7 +110,7 @@ public class Event extends Identifiable {
 
   /**
    * Returns the value of '<em><b>coordinates</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>coordinates</b></em>' feature
@@ -122,7 +122,7 @@ public class Event extends Identifiable {
 
   /**
    * Sets the '{@link Event#getCoordinates() <em>coordinates</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCoordinates

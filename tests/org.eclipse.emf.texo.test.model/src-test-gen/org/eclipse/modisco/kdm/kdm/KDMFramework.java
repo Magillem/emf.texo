@@ -48,7 +48,7 @@ public abstract class KDMFramework extends ModelElement {
 
   /**
    * Returns the value of '<em><b>audit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>audit</b></em>' feature
@@ -105,7 +105,7 @@ public abstract class KDMFramework extends ModelElement {
 
   /**
    * Sets the '{@link KDMFramework#getAudit() <em>audit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAudit
@@ -118,7 +118,7 @@ public abstract class KDMFramework extends ModelElement {
 
   /**
    * Returns the value of '<em><b>extension</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>extension</b></em>' feature
@@ -175,7 +175,7 @@ public abstract class KDMFramework extends ModelElement {
 
   /**
    * Sets the '{@link KDMFramework#getExtension() <em>extension</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newExtension
@@ -188,7 +188,7 @@ public abstract class KDMFramework extends ModelElement {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -200,7 +200,7 @@ public abstract class KDMFramework extends ModelElement {
 
   /**
    * Sets the '{@link KDMFramework#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

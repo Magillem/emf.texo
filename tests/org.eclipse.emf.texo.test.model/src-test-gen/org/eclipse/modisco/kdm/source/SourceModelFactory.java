@@ -73,7 +73,7 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -162,7 +162,7 @@ public class SourceModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -369,12 +369,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InventoryModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InventoryModelModelObject<E extends InventoryModel> extends
@@ -478,12 +478,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractInventoryElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractInventoryElementModelObject<E extends AbstractInventoryElement> extends
@@ -601,12 +601,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractInventoryRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractInventoryRelationshipModelObject<E extends AbstractInventoryRelationship> extends
@@ -691,12 +691,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InventoryItem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InventoryItemModelObject<E extends InventoryItem> extends AbstractInventoryElementModelObject<E> {
@@ -816,12 +816,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SourceFile</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SourceFileModelObject<E extends SourceFile> extends InventoryItemModelObject<E> {
@@ -945,12 +945,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Image</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ImageModelObject<E extends Image> extends InventoryItemModelObject<E> {
@@ -1062,12 +1062,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Configuration</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConfigurationModelObject<E extends Configuration> extends InventoryItemModelObject<E> {
@@ -1179,12 +1179,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ResourceDescription</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ResourceDescriptionModelObject<E extends ResourceDescription> extends InventoryItemModelObject<E> {
@@ -1296,12 +1296,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BinaryFile</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BinaryFileModelObject<E extends BinaryFile> extends InventoryItemModelObject<E> {
@@ -1413,12 +1413,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ExecutableFile</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ExecutableFileModelObject<E extends ExecutableFile> extends InventoryItemModelObject<E> {
@@ -1530,12 +1530,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InventoryContainer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InventoryContainerModelObject<E extends InventoryContainer> extends
@@ -1655,12 +1655,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Directory</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DirectoryModelObject<E extends Directory> extends InventoryContainerModelObject<E> {
@@ -1777,12 +1777,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Project</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ProjectModelObject<E extends Project> extends InventoryContainerModelObject<E> {
@@ -1892,12 +1892,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DependsOn</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DependsOnModelObject<E extends DependsOn> extends AbstractInventoryRelationshipModelObject<E> {
@@ -1993,12 +1993,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SourceRef</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SourceRefModelObject<E extends SourceRef> extends CoreModelFactory.ElementModelObject<E> {
@@ -2101,12 +2101,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SourceRegion</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SourceRegionModelObject<E extends SourceRegion> extends CoreModelFactory.ElementModelObject<E> {
@@ -2223,12 +2223,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InventoryElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InventoryElementModelObject<E extends InventoryElement> extends
@@ -2337,12 +2337,12 @@ public class SourceModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InventoryRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InventoryRelationshipModelObject<E extends InventoryRelationship> extends

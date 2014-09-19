@@ -56,7 +56,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>errorClass</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>errorClass</b></em>' feature
@@ -68,7 +68,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Sets the '{@link ErrorType#getErrorClass() <em>errorClass</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newErrorClass
@@ -81,7 +81,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>message</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>message</b></em>' feature
@@ -93,7 +93,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Sets the '{@link ErrorType#getMessage() <em>message</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMessage
@@ -106,7 +106,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stackTrace</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stackTrace</b></em>' feature
@@ -118,7 +118,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Sets the '{@link ErrorType#getStackTrace() <em>stackTrace</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStackTrace
@@ -131,7 +131,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>cause</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>cause</b></em>' feature
@@ -143,7 +143,7 @@ public class ErrorType extends Identifiable {
 
   /**
    * Sets the '{@link ErrorType#getCause() <em>cause</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCause

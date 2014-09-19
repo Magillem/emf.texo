@@ -30,7 +30,7 @@ public class XMLSchema extends AbstractDataElement {
 
   /**
    * Returns the value of '<em><b>contentElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>contentElement</b></em>' feature
@@ -87,7 +87,7 @@ public class XMLSchema extends AbstractDataElement {
 
   /**
    * Sets the '{@link XMLSchema#getContentElement() <em>contentElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newContentElement

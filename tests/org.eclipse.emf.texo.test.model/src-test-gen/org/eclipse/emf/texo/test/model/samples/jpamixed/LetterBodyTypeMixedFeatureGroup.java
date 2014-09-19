@@ -214,7 +214,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -226,7 +226,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -240,7 +240,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -252,7 +252,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -266,7 +266,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -278,7 +278,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -292,7 +292,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>salutation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>salutation</b></em>' feature
@@ -304,7 +304,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getSalutation() <em>salutation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSalutation
@@ -318,7 +318,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>quantity</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>quantity</b></em>' feature
@@ -330,7 +330,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getQuantity() <em>quantity</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newQuantity
@@ -344,7 +344,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>productName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>productName</b></em>' feature
@@ -356,7 +356,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getProductName() <em>productName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProductName
@@ -370,7 +370,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shipDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shipDate</b></em>' feature
@@ -382,7 +382,7 @@ public class LetterBodyTypeMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getShipDate() <em>shipDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShipDate

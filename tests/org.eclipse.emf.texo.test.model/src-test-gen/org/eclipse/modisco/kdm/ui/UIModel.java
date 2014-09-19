@@ -31,7 +31,7 @@ public class UIModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>UIElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>UIElement</b></em>' feature
@@ -88,7 +88,7 @@ public class UIModel extends KDMModel {
 
   /**
    * Sets the '{@link UIModel#getUIElement() <em>UIElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUIElement

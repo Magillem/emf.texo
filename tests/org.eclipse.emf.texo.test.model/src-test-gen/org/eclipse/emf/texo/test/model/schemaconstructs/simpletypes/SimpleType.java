@@ -136,7 +136,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>code</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>code</b></em>' feature
@@ -148,7 +148,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getCode() <em>code</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCode
@@ -161,7 +161,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>boo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>boo</b></em>' feature
@@ -173,7 +173,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#isBoo() <em>boo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBoo
@@ -186,7 +186,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byt</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byt</b></em>' feature
@@ -198,7 +198,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getByt() <em>byt</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByt
@@ -211,7 +211,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doubl</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doubl</b></em>' feature
@@ -223,7 +223,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getDoubl() <em>doubl</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoubl
@@ -236,7 +236,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>float</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>float</b></em>' feature
@@ -248,7 +248,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getFloat_() <em>float</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFloat_
@@ -261,7 +261,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>inte</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>inte</b></em>' feature
@@ -273,7 +273,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getInte() <em>inte</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInte
@@ -286,7 +286,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lon</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lon</b></em>' feature
@@ -298,7 +298,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getLon() <em>lon</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLon
@@ -311,7 +311,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shor</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shor</b></em>' feature
@@ -323,7 +323,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getShor() <em>shor</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShor
@@ -336,7 +336,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>enu</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>enu</b></em>' feature
@@ -348,7 +348,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getEnu() <em>enu</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEnu
@@ -361,7 +361,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>dat</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dat</b></em>' feature
@@ -373,7 +373,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getDat() <em>dat</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDat
@@ -386,7 +386,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>limitedstring</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>limitedstring</b></em>' feature
@@ -398,7 +398,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getLimitedstring() <em>limitedstring</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLimitedstring
@@ -411,7 +411,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>limitedDecimal</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>limitedDecimal</b></em>' feature
@@ -423,7 +423,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getLimitedDecimal() <em>limitedDecimal</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLimitedDecimal
@@ -436,7 +436,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>extraLimitedString</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>extraLimitedString</b></em>' feature
@@ -448,7 +448,7 @@ public class SimpleType extends Identifiable {
 
   /**
    * Sets the '{@link SimpleType#getExtraLimitedString() <em>extraLimitedString</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newExtraLimitedString

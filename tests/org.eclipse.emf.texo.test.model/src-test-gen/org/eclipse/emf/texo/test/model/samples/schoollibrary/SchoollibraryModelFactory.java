@@ -42,7 +42,7 @@ public class SchoollibraryModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -86,7 +86,7 @@ public class SchoollibraryModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -153,12 +153,12 @@ public class SchoollibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Asset</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AssetModelObject<E extends Asset> extends AbstractModelObject<E> {
@@ -234,12 +234,12 @@ public class SchoollibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SchoolBook</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SchoolBookModelObject<E extends SchoolBook> extends LibraryModelFactory.BookModelObject<E> {
@@ -329,12 +329,12 @@ public class SchoollibraryModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SchoolLibrary</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SchoolLibraryModelObject<E extends SchoolLibrary> extends

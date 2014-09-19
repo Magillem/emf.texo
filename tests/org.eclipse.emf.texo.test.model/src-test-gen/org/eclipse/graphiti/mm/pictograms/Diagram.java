@@ -126,7 +126,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>gridUnit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>gridUnit</b></em>' feature
@@ -138,7 +138,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getGridUnit() <em>gridUnit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGridUnit
@@ -151,7 +151,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>diagramTypeId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>diagramTypeId</b></em>' feature
@@ -163,7 +163,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getDiagramTypeId() <em>diagramTypeId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDiagramTypeId
@@ -176,7 +176,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>connections</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>connections</b></em>' feature
@@ -233,7 +233,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getConnections() <em>connections</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newConnections
@@ -246,7 +246,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -258,7 +258,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -271,7 +271,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>snapToGrid</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>snapToGrid</b></em>' feature
@@ -283,7 +283,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#isSnapToGrid() <em>snapToGrid</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSnapToGrid
@@ -327,7 +327,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>colors</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>colors</b></em>' feature
@@ -384,7 +384,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getColors() <em>colors</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newColors
@@ -397,7 +397,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>fonts</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>fonts</b></em>' feature
@@ -454,7 +454,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getFonts() <em>fonts</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFonts
@@ -467,7 +467,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>pictogramLinks</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pictogramLinks</b></em>' feature
@@ -524,7 +524,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getPictogramLinks() <em>pictogramLinks</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPictogramLinks
@@ -537,7 +537,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>verticalGridUnit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>verticalGridUnit</b></em>' feature
@@ -549,7 +549,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getVerticalGridUnit() <em>verticalGridUnit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVerticalGridUnit
@@ -562,7 +562,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>version</b></em>' feature
@@ -574,7 +574,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getVersion() <em>version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVersion
@@ -587,7 +587,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Returns the value of '<em><b>styles</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>styles</b></em>' feature
@@ -644,7 +644,7 @@ public class Diagram extends ContainerShape {
 
   /**
    * Sets the '{@link Diagram#getStyles() <em>styles</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStyles

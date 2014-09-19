@@ -31,7 +31,7 @@ public class EventModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>eventElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>eventElement</b></em>' feature
@@ -88,7 +88,7 @@ public class EventModel extends KDMModel {
 
   /**
    * Sets the '{@link EventModel#getEventElement() <em>eventElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEventElement

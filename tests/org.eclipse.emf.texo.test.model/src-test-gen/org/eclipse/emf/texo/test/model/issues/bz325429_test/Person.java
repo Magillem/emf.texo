@@ -61,7 +61,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>firstname</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>firstname</b></em>' feature
@@ -73,7 +73,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getFirstname() <em>firstname</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFirstname
@@ -86,7 +86,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lastname</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lastname</b></em>' feature
@@ -98,7 +98,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getLastname() <em>lastname</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLastname
@@ -111,7 +111,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>address</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>address</b></em>' feature
@@ -123,7 +123,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getAddress() <em>address</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAddress
@@ -136,7 +136,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>contacts</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>contacts</b></em>' feature
@@ -193,7 +193,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getContacts() <em>contacts</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newContacts

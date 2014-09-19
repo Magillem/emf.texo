@@ -53,7 +53,7 @@ public class AdaptedGradientColoredAreas extends Identifiable {
 
   /**
    * Returns the value of '<em><b>definedStyleId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>definedStyleId</b></em>' feature
@@ -65,7 +65,7 @@ public class AdaptedGradientColoredAreas extends Identifiable {
 
   /**
    * Sets the '{@link AdaptedGradientColoredAreas#getDefinedStyleId() <em>definedStyleId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDefinedStyleId
@@ -78,7 +78,7 @@ public class AdaptedGradientColoredAreas extends Identifiable {
 
   /**
    * Returns the value of '<em><b>adaptedGradientColoredAreas</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>adaptedGradientColoredAreas</b></em>' feature
@@ -136,7 +136,7 @@ public class AdaptedGradientColoredAreas extends Identifiable {
   /**
    * Sets the '{@link AdaptedGradientColoredAreas#getAdaptedGradientColoredAreas() <em>adaptedGradientColoredAreas</em>}
    * ' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAdaptedGradientColoredAreas
@@ -150,7 +150,7 @@ public class AdaptedGradientColoredAreas extends Identifiable {
 
   /**
    * Returns the value of '<em><b>gradientType</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>gradientType</b></em>' feature
@@ -162,7 +162,7 @@ public class AdaptedGradientColoredAreas extends Identifiable {
 
   /**
    * Sets the '{@link AdaptedGradientColoredAreas#getGradientType() <em>gradientType</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGradientType

@@ -159,7 +159,7 @@ public class RootTypeMyAbstractGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myAbstract</b></em>' feature
@@ -171,7 +171,7 @@ public class RootTypeMyAbstractGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link RootType#getMyAbstract() <em>myAbstract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyAbstract

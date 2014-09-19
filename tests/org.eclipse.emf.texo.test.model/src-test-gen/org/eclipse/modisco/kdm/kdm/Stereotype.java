@@ -48,7 +48,7 @@ public class Stereotype extends Element {
 
   /**
    * Returns the value of '<em><b>tag</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>tag</b></em>' feature
@@ -105,7 +105,7 @@ public class Stereotype extends Element {
 
   /**
    * Sets the '{@link Stereotype#getTag() <em>tag</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTag
@@ -118,7 +118,7 @@ public class Stereotype extends Element {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -130,7 +130,7 @@ public class Stereotype extends Element {
 
   /**
    * Sets the '{@link Stereotype#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -143,7 +143,7 @@ public class Stereotype extends Element {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -155,7 +155,7 @@ public class Stereotype extends Element {
 
   /**
    * Sets the '{@link Stereotype#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType

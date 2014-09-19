@@ -59,7 +59,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>source</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>source</b></em>' feature
@@ -116,7 +116,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractConceptualElement#getSource() <em>source</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSource
@@ -129,7 +129,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>implementation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>implementation</b></em>' feature
@@ -186,7 +186,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractConceptualElement#getImplementation() <em>implementation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newImplementation
@@ -199,7 +199,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>conceptualRelation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>conceptualRelation</b></em>' feature
@@ -256,7 +256,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractConceptualElement#getConceptualRelation() <em>conceptualRelation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newConceptualRelation
@@ -270,7 +270,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>abstraction</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>abstraction</b></em>' feature
@@ -327,7 +327,7 @@ public abstract class AbstractConceptualElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractConceptualElement#getAbstraction() <em>abstraction</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAbstraction

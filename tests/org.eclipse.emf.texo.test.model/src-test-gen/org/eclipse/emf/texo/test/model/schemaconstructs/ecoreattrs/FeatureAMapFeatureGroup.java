@@ -163,7 +163,7 @@ public class FeatureAMapFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -175,7 +175,7 @@ public class FeatureAMapFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Feature#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -189,7 +189,7 @@ public class FeatureAMapFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -201,7 +201,7 @@ public class FeatureAMapFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Feature#getValue_() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue_

@@ -28,7 +28,7 @@ public class CommentUnit extends ModelElement {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -40,7 +40,7 @@ public class CommentUnit extends ModelElement {
 
   /**
    * Sets the '{@link CommentUnit#getText() <em>text</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText

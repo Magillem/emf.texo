@@ -48,7 +48,7 @@ public class BuildResource extends AbstractBuildElement {
 
   /**
    * Returns the value of '<em><b>implementation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>implementation</b></em>' feature
@@ -105,7 +105,7 @@ public class BuildResource extends AbstractBuildElement {
 
   /**
    * Sets the '{@link BuildResource#getImplementation() <em>implementation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newImplementation
@@ -118,7 +118,7 @@ public class BuildResource extends AbstractBuildElement {
 
   /**
    * Returns the value of '<em><b>groupedBuild</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>groupedBuild</b></em>' feature
@@ -175,7 +175,7 @@ public class BuildResource extends AbstractBuildElement {
 
   /**
    * Sets the '{@link BuildResource#getGroupedBuild() <em>groupedBuild</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroupedBuild
@@ -188,7 +188,7 @@ public class BuildResource extends AbstractBuildElement {
 
   /**
    * Returns the value of '<em><b>buildElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>buildElement</b></em>' feature
@@ -245,7 +245,7 @@ public class BuildResource extends AbstractBuildElement {
 
   /**
    * Sets the '{@link BuildResource#getBuildElement() <em>buildElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBuildElement

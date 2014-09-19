@@ -301,7 +301,7 @@ public class Person extends Identifiable {
 
   /**
    * Returns the value of '<em><b>drivingLicense</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>drivingLicense</b></em>' feature
@@ -313,7 +313,7 @@ public class Person extends Identifiable {
 
   /**
    * Sets the '{@link Person#getDrivingLicense() <em>drivingLicense</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDrivingLicense

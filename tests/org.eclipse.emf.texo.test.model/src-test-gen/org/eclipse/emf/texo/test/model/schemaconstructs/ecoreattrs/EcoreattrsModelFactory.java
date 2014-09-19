@@ -48,7 +48,7 @@ public class EcoreattrsModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -104,7 +104,7 @@ public class EcoreattrsModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -206,12 +206,12 @@ public class EcoreattrsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Element</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ElementModelObject<E extends Element> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -305,12 +305,12 @@ public class EcoreattrsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>NameList</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class NameListModelObject<E extends NameList> extends
@@ -403,12 +403,12 @@ public class EcoreattrsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Feature</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FeatureModelObject<E extends Feature> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -507,12 +507,12 @@ public class EcoreattrsModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Mixed</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MixedModelObject<E extends Mixed> extends IdentifiableModelFactory.IdentifiableModelObject<E> {

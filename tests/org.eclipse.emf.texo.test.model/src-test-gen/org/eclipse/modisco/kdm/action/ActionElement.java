@@ -52,7 +52,7 @@ public class ActionElement extends AbstractCodeElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -64,7 +64,7 @@ public class ActionElement extends AbstractCodeElement {
 
   /**
    * Sets the '{@link ActionElement#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -77,7 +77,7 @@ public class ActionElement extends AbstractCodeElement {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -134,7 +134,7 @@ public class ActionElement extends AbstractCodeElement {
 
   /**
    * Sets the '{@link ActionElement#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement
@@ -147,7 +147,7 @@ public class ActionElement extends AbstractCodeElement {
 
   /**
    * Returns the value of '<em><b>actionRelation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>actionRelation</b></em>' feature
@@ -204,7 +204,7 @@ public class ActionElement extends AbstractCodeElement {
 
   /**
    * Sets the '{@link ActionElement#getActionRelation() <em>actionRelation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newActionRelation

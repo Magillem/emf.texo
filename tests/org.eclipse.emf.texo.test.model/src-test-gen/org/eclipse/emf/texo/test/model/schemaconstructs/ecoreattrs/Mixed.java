@@ -37,7 +37,7 @@ public class Mixed extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -49,7 +49,7 @@ public class Mixed extends Identifiable {
 
   /**
    * Sets the '{@link Mixed#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -62,7 +62,7 @@ public class Mixed extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -74,7 +74,7 @@ public class Mixed extends Identifiable {
 
   /**
    * Sets the '{@link Mixed#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -87,7 +87,7 @@ public class Mixed extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -99,7 +99,7 @@ public class Mixed extends Identifiable {
 
   /**
    * Sets the '{@link Mixed#getValue_() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue_

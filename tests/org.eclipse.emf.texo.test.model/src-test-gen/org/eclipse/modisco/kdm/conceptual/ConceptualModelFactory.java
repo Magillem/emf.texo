@@ -64,7 +64,7 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -138,7 +138,7 @@ public class ConceptualModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -295,12 +295,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConceptualModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConceptualModelModelObject<E extends ConceptualModel> extends
@@ -404,12 +404,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractConceptualElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractConceptualElementModelObject<E extends AbstractConceptualElement> extends
@@ -560,12 +560,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractConceptualRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractConceptualRelationshipModelObject<E extends AbstractConceptualRelationship> extends
@@ -650,12 +650,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TermUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TermUnitModelObject<E extends TermUnit> extends AbstractConceptualElementModelObject<E> {
@@ -769,12 +769,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConceptualContainer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConceptualContainerModelObject<E extends ConceptualContainer> extends
@@ -900,12 +900,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>FactUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FactUnitModelObject<E extends FactUnit> extends ConceptualContainerModelObject<E> {
@@ -1021,12 +1021,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConceptualRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConceptualRelationshipModelObject<E extends ConceptualRelationship> extends
@@ -1123,12 +1123,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BehaviorUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BehaviorUnitModelObject<E extends BehaviorUnit> extends ConceptualContainerModelObject<E> {
@@ -1244,12 +1244,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RuleUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RuleUnitModelObject<E extends RuleUnit> extends ConceptualContainerModelObject<E> {
@@ -1365,12 +1365,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ScenarioUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ScenarioUnitModelObject<E extends ScenarioUnit> extends ConceptualContainerModelObject<E> {
@@ -1486,12 +1486,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConceptualFlow</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConceptualFlowModelObject<E extends ConceptualFlow> extends
@@ -1588,12 +1588,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConceptualElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConceptualElementModelObject<E extends ConceptualElement> extends
@@ -1708,12 +1708,12 @@ public class ConceptualModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConceptualRole</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConceptualRoleModelObject<E extends ConceptualRole> extends

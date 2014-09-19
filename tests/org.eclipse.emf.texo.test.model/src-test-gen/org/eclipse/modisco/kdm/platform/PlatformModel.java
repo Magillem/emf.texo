@@ -31,7 +31,7 @@ public class PlatformModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>platformElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>platformElement</b></em>' feature
@@ -88,7 +88,7 @@ public class PlatformModel extends KDMModel {
 
   /**
    * Sets the '{@link PlatformModel#getPlatformElement() <em>platformElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPlatformElement

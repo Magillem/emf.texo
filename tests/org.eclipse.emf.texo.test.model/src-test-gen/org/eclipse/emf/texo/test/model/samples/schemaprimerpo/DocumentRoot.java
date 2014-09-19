@@ -36,7 +36,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -48,7 +48,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -61,7 +61,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xMLNSPrefixMap</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xMLNSPrefixMap</b></em>' feature
@@ -73,7 +73,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXMLNSPrefixMap() <em>xMLNSPrefixMap</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXMLNSPrefixMap
@@ -86,7 +86,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xSISchemaLocation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xSISchemaLocation</b></em>' feature
@@ -98,7 +98,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXSISchemaLocation() <em>xSISchemaLocation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXSISchemaLocation
@@ -111,7 +111,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -124,7 +124,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getComment_() <em>comment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment_
@@ -138,7 +138,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>order</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>order</b></em>' feature
@@ -151,7 +151,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getOrder() <em>order</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOrder

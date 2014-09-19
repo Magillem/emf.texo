@@ -99,7 +99,7 @@ public enum Periodicity {
   /**
    * Returns the '<em><b>Periodicity</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the Periodicity, the literal enum class

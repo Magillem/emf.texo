@@ -95,7 +95,7 @@ public enum EvenType {
   /**
    * Returns the '<em><b>EvenType</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the EvenType, the literal enum class

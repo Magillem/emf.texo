@@ -39,7 +39,7 @@ public class MethodUnit extends ControlElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -51,7 +51,7 @@ public class MethodUnit extends ControlElement {
 
   /**
    * Sets the '{@link MethodUnit#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -64,7 +64,7 @@ public class MethodUnit extends ControlElement {
 
   /**
    * Returns the value of '<em><b>export</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>export</b></em>' feature
@@ -76,7 +76,7 @@ public class MethodUnit extends ControlElement {
 
   /**
    * Sets the '{@link MethodUnit#getExport() <em>export</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newExport

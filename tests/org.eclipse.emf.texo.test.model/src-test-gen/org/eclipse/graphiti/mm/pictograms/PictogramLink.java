@@ -44,7 +44,7 @@ public class PictogramLink extends PropertyContainer {
 
   /**
    * Returns the value of '<em><b>pictogramElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>pictogramElement</b></em>' feature
@@ -56,7 +56,7 @@ public class PictogramLink extends PropertyContainer {
 
   /**
    * Sets the '{@link PictogramLink#getPictogramElement() <em>pictogramElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPictogramElement
@@ -69,7 +69,7 @@ public class PictogramLink extends PropertyContainer {
 
   /**
    * Returns the value of '<em><b>businessObjects</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>businessObjects</b></em>' feature
@@ -126,7 +126,7 @@ public class PictogramLink extends PropertyContainer {
 
   /**
    * Sets the '{@link PictogramLink#getBusinessObjects() <em>businessObjects</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBusinessObjects

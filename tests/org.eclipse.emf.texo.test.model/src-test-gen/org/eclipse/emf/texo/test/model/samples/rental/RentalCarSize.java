@@ -79,7 +79,7 @@ public enum RentalCarSize {
   /**
    * Returns the '<em><b>RentalCarSize</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the RentalCarSize, the literal enum class

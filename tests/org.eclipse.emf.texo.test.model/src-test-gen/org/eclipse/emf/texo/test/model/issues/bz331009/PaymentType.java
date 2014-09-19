@@ -65,7 +65,7 @@ public enum PaymentType {
   /**
    * Returns the '<em><b>PaymentType</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the PaymentType, the literal enum class

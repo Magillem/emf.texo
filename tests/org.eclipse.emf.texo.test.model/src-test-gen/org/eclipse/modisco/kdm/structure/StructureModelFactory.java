@@ -57,7 +57,7 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -122,7 +122,7 @@ public class StructureModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -249,12 +249,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractStructureElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractStructureElementModelObject<E extends AbstractStructureElement> extends
@@ -405,12 +405,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractStructureRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractStructureRelationshipModelObject<E extends AbstractStructureRelationship> extends
@@ -495,12 +495,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Subsystem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SubsystemModelObject<E extends Subsystem> extends AbstractStructureElementModelObject<E> {
@@ -614,12 +614,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Layer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LayerModelObject<E extends Layer> extends AbstractStructureElementModelObject<E> {
@@ -733,12 +733,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>StructureModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StructureModelModelObject<E extends StructureModel> extends
@@ -842,12 +842,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Component</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ComponentModelObject<E extends Component> extends AbstractStructureElementModelObject<E> {
@@ -961,12 +961,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SoftwareSystem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SoftwareSystemModelObject<E extends SoftwareSystem> extends
@@ -1081,12 +1081,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>StructureRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StructureRelationshipModelObject<E extends StructureRelationship> extends
@@ -1183,12 +1183,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ArchitectureView</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ArchitectureViewModelObject<E extends ArchitectureView> extends
@@ -1303,12 +1303,12 @@ public class StructureModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>StructureElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StructureElementModelObject<E extends StructureElement> extends

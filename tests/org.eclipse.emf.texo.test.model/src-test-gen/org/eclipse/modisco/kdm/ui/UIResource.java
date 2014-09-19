@@ -30,7 +30,7 @@ public class UIResource extends AbstractUIElement {
 
   /**
    * Returns the value of '<em><b>UIElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>UIElement</b></em>' feature
@@ -87,7 +87,7 @@ public class UIResource extends AbstractUIElement {
 
   /**
    * Sets the '{@link UIResource#getUIElement() <em>UIElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUIElement

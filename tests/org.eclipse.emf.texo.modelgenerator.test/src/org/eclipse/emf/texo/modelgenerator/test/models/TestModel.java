@@ -81,10 +81,10 @@ public class TestModel {
     urls.add("samples/types.ecore");//$NON-NLS-1$
     urls.add("samples/Workflow.ecore");//$NON-NLS-1$
     urls.add("samples/FeatureMapTest.ecore");//$NON-NLS-1$ 
-    //    urls.add("samples/sport-society.xcore");//$NON-NLS-1$
-    //    urls.add("samples/sport-club.xcore");//$NON-NLS-1$
-    //    urls.add("samples/sport-competition.xcore");//$NON-NLS-1$
-    //    urls.add("samples/travel.xcore");//$NON-NLS-1$
+    urls.add("samples/sport-society.xcore");//$NON-NLS-1$
+    urls.add("samples/sport-club.xcore");//$NON-NLS-1$
+    urls.add("samples/sport-competition.xcore");//$NON-NLS-1$
+    urls.add("samples/travel.xcore");//$NON-NLS-1$
     urls.add("schemaconstructs/AnyType.xsd");//$NON-NLS-1$
     urls.add("schemaconstructs/attributes.xsd");//$NON-NLS-1$
     urls.add("schemaconstructs/datetime.xsd");//$NON-NLS-1$

@@ -31,7 +31,7 @@ public class IndexElement extends DataResource {
 
   /**
    * Returns the value of '<em><b>implementation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>implementation</b></em>' feature
@@ -88,7 +88,7 @@ public class IndexElement extends DataResource {
 
   /**
    * Sets the '{@link IndexElement#getImplementation() <em>implementation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newImplementation

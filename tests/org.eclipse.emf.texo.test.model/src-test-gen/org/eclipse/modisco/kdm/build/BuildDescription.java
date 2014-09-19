@@ -41,7 +41,7 @@ public class BuildDescription extends BuildResource {
 
   /**
    * Returns the value of '<em><b>source</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>source</b></em>' feature
@@ -98,7 +98,7 @@ public class BuildDescription extends BuildResource {
 
   /**
    * Sets the '{@link BuildDescription#getSource() <em>source</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSource
@@ -111,7 +111,7 @@ public class BuildDescription extends BuildResource {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -123,7 +123,7 @@ public class BuildDescription extends BuildResource {
 
   /**
    * Sets the '{@link BuildDescription#getText() <em>text</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText

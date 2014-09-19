@@ -96,7 +96,7 @@ public enum UnderlineStyle {
   /**
    * Returns the '<em><b>UnderlineStyle</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the UnderlineStyle, the literal enum class

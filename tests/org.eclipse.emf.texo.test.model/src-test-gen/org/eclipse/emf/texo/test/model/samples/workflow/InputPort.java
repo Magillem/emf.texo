@@ -46,7 +46,7 @@ public class InputPort extends Port {
 
   /**
    * Returns the value of '<em><b>node</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>node</b></em>' feature
@@ -58,7 +58,7 @@ public class InputPort extends Port {
 
   /**
    * Sets the '{@link InputPort#getNode() <em>node</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNode
@@ -71,7 +71,7 @@ public class InputPort extends Port {
 
   /**
    * Returns the value of '<em><b>edges</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>edges</b></em>' feature
@@ -128,7 +128,7 @@ public class InputPort extends Port {
 
   /**
    * Sets the '{@link InputPort#getEdges() <em>edges</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEdges

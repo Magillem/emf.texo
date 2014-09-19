@@ -54,7 +54,7 @@ public class Point extends Identifiable {
 
   /**
    * Returns the value of '<em><b>x</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>x</b></em>' feature
@@ -66,7 +66,7 @@ public class Point extends Identifiable {
 
   /**
    * Sets the '{@link Point#getX() <em>x</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newX
@@ -79,7 +79,7 @@ public class Point extends Identifiable {
 
   /**
    * Returns the value of '<em><b>y</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>y</b></em>' feature
@@ -91,7 +91,7 @@ public class Point extends Identifiable {
 
   /**
    * Sets the '{@link Point#getY() <em>y</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newY
@@ -104,7 +104,7 @@ public class Point extends Identifiable {
 
   /**
    * Returns the value of '<em><b>before</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>before</b></em>' feature
@@ -116,7 +116,7 @@ public class Point extends Identifiable {
 
   /**
    * Sets the '{@link Point#getBefore() <em>before</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBefore
@@ -129,7 +129,7 @@ public class Point extends Identifiable {
 
   /**
    * Returns the value of '<em><b>after</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>after</b></em>' feature
@@ -141,7 +141,7 @@ public class Point extends Identifiable {
 
   /**
    * Sets the '{@link Point#getAfter() <em>after</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAfter

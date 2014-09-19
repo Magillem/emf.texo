@@ -41,7 +41,7 @@ public class EClassA extends Identifiable {
 
   /**
    * Returns the value of '<em><b>byteArray</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>byteArray</b></em>' feature
@@ -53,7 +53,7 @@ public class EClassA extends Identifiable {
 
   /**
    * Sets the '{@link EClassA#getByteArray() <em>byteArray</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newByteArray
@@ -66,7 +66,7 @@ public class EClassA extends Identifiable {
 
   /**
    * Returns the value of '<em><b>base64</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>base64</b></em>' feature
@@ -78,7 +78,7 @@ public class EClassA extends Identifiable {
 
   /**
    * Sets the '{@link EClassA#getBase64() <em>base64</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBase64

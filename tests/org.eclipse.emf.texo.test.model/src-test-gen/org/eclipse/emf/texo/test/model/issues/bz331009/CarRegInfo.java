@@ -143,7 +143,7 @@ public class CarRegInfo extends Identifiable implements Document {
 
   /**
    * Returns the value of '<em><b>owner</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>owner</b></em>' feature
@@ -155,7 +155,7 @@ public class CarRegInfo extends Identifiable implements Document {
 
   /**
    * Sets the '{@link CarRegInfo#getOwner() <em>owner</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOwner

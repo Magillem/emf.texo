@@ -47,7 +47,7 @@ public class VarInputType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>condition</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>condition</b></em>' feature
@@ -59,7 +59,7 @@ public class VarInputType extends Identifiable {
 
   /**
    * Sets the '{@link VarInputType#getCondition() <em>condition</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCondition
@@ -72,7 +72,7 @@ public class VarInputType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>measure</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>measure</b></em>' feature
@@ -84,7 +84,7 @@ public class VarInputType extends Identifiable {
 
   /**
    * Sets the '{@link VarInputType#getMeasure() <em>measure</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMeasure

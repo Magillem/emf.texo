@@ -8,7 +8,7 @@ package org.eclipse.emf.texo.test.model.issues.bzwrongfeatureid;
 public interface TheInterface {
   /**
    * Returns the value of '<em><b>interfaceName</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>interfaceName</b></em>' feature
@@ -18,7 +18,7 @@ public interface TheInterface {
 
   /**
    * Sets the '{@link TheInterface#getInterfaceName() <em>interfaceName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInterfaceName

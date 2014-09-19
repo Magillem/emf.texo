@@ -36,7 +36,7 @@ public abstract class DefinedType extends Datatype {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -48,7 +48,7 @@ public abstract class DefinedType extends Datatype {
 
   /**
    * Sets the '{@link DefinedType#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType
@@ -61,7 +61,7 @@ public abstract class DefinedType extends Datatype {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -73,7 +73,7 @@ public abstract class DefinedType extends Datatype {
 
   /**
    * Sets the '{@link DefinedType#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

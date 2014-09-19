@@ -77,7 +77,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -89,7 +89,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Sets the '{@link PlayType#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -102,7 +102,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>fm</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>fm</b></em>' feature
@@ -114,7 +114,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Sets the '{@link PlayType#getFm() <em>fm</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFm
@@ -127,7 +127,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>personae</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>personae</b></em>' feature
@@ -139,7 +139,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Sets the '{@link PlayType#getPersonae() <em>personae</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPersonae
@@ -152,7 +152,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>sceneDescription</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>sceneDescription</b></em>' feature
@@ -164,7 +164,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Sets the '{@link PlayType#getSceneDescription() <em>sceneDescription</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSceneDescription
@@ -177,7 +177,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>playSubTitle</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>playSubTitle</b></em>' feature
@@ -189,7 +189,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Sets the '{@link PlayType#getPlaySubTitle() <em>playSubTitle</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPlaySubTitle
@@ -202,7 +202,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>act</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>act</b></em>' feature
@@ -259,7 +259,7 @@ public class PlayType extends Identifiable {
 
   /**
    * Sets the '{@link PlayType#getAct() <em>act</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAct

@@ -41,7 +41,7 @@ public class ClassUnit extends Datatype {
 
   /**
    * Returns the value of '<em><b>isAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>isAbstract</b></em>' feature
@@ -53,7 +53,7 @@ public class ClassUnit extends Datatype {
 
   /**
    * Sets the '{@link ClassUnit#getIsAbstract() <em>isAbstract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIsAbstract
@@ -66,7 +66,7 @@ public class ClassUnit extends Datatype {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -123,7 +123,7 @@ public class ClassUnit extends Datatype {
 
   /**
    * Sets the '{@link ClassUnit#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

@@ -38,7 +38,7 @@ public class Segment extends KDMFramework {
 
   /**
    * Returns the value of '<em><b>segment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>segment</b></em>' feature
@@ -95,7 +95,7 @@ public class Segment extends KDMFramework {
 
   /**
    * Sets the '{@link Segment#getSegment() <em>segment</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSegment
@@ -108,7 +108,7 @@ public class Segment extends KDMFramework {
 
   /**
    * Returns the value of '<em><b>model</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>model</b></em>' feature
@@ -165,7 +165,7 @@ public class Segment extends KDMFramework {
 
   /**
    * Sets the '{@link Segment#getModel() <em>model</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newModel

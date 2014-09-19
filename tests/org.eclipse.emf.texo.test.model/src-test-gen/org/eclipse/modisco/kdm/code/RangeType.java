@@ -35,7 +35,7 @@ public class RangeType extends DerivedType {
 
   /**
    * Returns the value of '<em><b>lower</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lower</b></em>' feature
@@ -47,7 +47,7 @@ public class RangeType extends DerivedType {
 
   /**
    * Sets the '{@link RangeType#getLower() <em>lower</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLower
@@ -60,7 +60,7 @@ public class RangeType extends DerivedType {
 
   /**
    * Returns the value of '<em><b>upper</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>upper</b></em>' feature
@@ -72,7 +72,7 @@ public class RangeType extends DerivedType {
 
   /**
    * Sets the '{@link RangeType#getUpper() <em>upper</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newUpper

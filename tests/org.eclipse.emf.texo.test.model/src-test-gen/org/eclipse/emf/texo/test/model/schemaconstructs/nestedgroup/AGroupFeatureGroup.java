@@ -161,7 +161,7 @@ public class AGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>b</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>b</b></em>' feature
@@ -173,7 +173,7 @@ public class AGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link A#getB() <em>b</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newB
@@ -187,7 +187,7 @@ public class AGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>c</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>c</b></em>' feature
@@ -199,7 +199,7 @@ public class AGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link A#getC() <em>c</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newC

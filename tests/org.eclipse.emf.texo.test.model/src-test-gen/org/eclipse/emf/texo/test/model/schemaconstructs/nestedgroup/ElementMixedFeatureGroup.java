@@ -198,7 +198,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -210,7 +210,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -224,7 +224,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -236,7 +236,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -250,7 +250,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -262,7 +262,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -276,7 +276,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -288,7 +288,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Element#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -302,7 +302,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>true</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>true</b></em>' feature
@@ -314,7 +314,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Element#getTrue_() <em>true</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTrue_
@@ -328,7 +328,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>c</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>c</b></em>' feature
@@ -343,7 +343,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Element#getC() <em>c</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newC
@@ -359,7 +359,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>recursive</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>recursive</b></em>' feature
@@ -371,7 +371,7 @@ public class ElementMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Element#getRecursive() <em>recursive</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRecursive

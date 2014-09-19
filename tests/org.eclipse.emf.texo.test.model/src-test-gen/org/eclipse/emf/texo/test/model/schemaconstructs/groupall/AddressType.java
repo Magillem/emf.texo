@@ -35,7 +35,7 @@ public class AddressType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>group</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>group</b></em>' feature
@@ -47,7 +47,7 @@ public class AddressType extends Identifiable {
 
   /**
    * Sets the '{@link AddressType#getGroup() <em>group</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroup
@@ -60,7 +60,7 @@ public class AddressType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -73,7 +73,7 @@ public class AddressType extends Identifiable {
 
   /**
    * Sets the '{@link AddressType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -86,7 +86,7 @@ public class AddressType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>longName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>longName</b></em>' feature
@@ -99,7 +99,7 @@ public class AddressType extends Identifiable {
 
   /**
    * Sets the '{@link AddressType#getLongName() <em>longName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLongName

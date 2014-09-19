@@ -35,7 +35,7 @@ public class ConcreteClass extends AbstractClass implements TheInterface {
 
   /**
    * Returns the value of '<em><b>concreteName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>concreteName</b></em>' feature
@@ -47,7 +47,7 @@ public class ConcreteClass extends AbstractClass implements TheInterface {
 
   /**
    * Sets the '{@link ConcreteClass#getConcreteName() <em>concreteName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newConcreteName
@@ -60,7 +60,7 @@ public class ConcreteClass extends AbstractClass implements TheInterface {
 
   /**
    * Returns the value of '<em><b>interfaceName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>interfaceName</b></em>' feature
@@ -72,7 +72,7 @@ public class ConcreteClass extends AbstractClass implements TheInterface {
 
   /**
    * Sets the '{@link ConcreteClass#getInterfaceName() <em>interfaceName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInterfaceName

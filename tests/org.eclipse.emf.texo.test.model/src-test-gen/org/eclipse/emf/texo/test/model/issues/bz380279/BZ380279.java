@@ -30,7 +30,7 @@ public class BZ380279 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>firstName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>firstName</b></em>' feature
@@ -42,7 +42,7 @@ public class BZ380279 extends Identifiable {
 
   /**
    * Sets the '{@link BZ380279#getFirstName() <em>firstName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFirstName

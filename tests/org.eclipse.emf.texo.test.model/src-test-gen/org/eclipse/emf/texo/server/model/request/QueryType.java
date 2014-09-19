@@ -84,7 +84,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>namedQuery</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>namedQuery</b></em>' feature
@@ -96,7 +96,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Sets the '{@link QueryType#getNamedQuery() <em>namedQuery</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNamedQuery
@@ -109,7 +109,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>query</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>query</b></em>' feature
@@ -121,7 +121,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Sets the '{@link QueryType#getQuery() <em>query</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newQuery
@@ -134,7 +134,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>parameters</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>parameters</b></em>' feature
@@ -191,7 +191,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Sets the '{@link QueryType#getParameters() <em>parameters</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newParameters
@@ -204,7 +204,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>firstResult</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>firstResult</b></em>' feature
@@ -216,7 +216,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Sets the '{@link QueryType#getFirstResult() <em>firstResult</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFirstResult
@@ -229,7 +229,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>maxResults</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>maxResults</b></em>' feature
@@ -241,7 +241,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Sets the '{@link QueryType#getMaxResults() <em>maxResults</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMaxResults
@@ -254,7 +254,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doCount</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doCount</b></em>' feature
@@ -266,7 +266,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Sets the '{@link QueryType#isDoCount() <em>doCount</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoCount
@@ -279,7 +279,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>countOperation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>countOperation</b></em>' feature
@@ -291,7 +291,7 @@ public class QueryType extends Identifiable {
 
   /**
    * Sets the '{@link QueryType#isCountOperation() <em>countOperation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountOperation

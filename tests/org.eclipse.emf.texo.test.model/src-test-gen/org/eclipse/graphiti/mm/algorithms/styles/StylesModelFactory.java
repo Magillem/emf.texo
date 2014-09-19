@@ -64,7 +64,7 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -138,7 +138,7 @@ public class StylesModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -441,12 +441,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Style</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StyleModelObject<E extends Style> extends MmModelFactory.StyleContainerModelObject<E> {
@@ -616,12 +616,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractStyle</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractStyleModelObject<E extends AbstractStyle> extends
@@ -739,12 +739,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Color</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ColorModelObject<E extends Color> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -836,12 +836,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Font</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FontModelObject<E extends Font> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -938,12 +938,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Point</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PointModelObject<E extends Point> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -1040,12 +1040,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PrecisionPoint</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PrecisionPointModelObject<E extends PrecisionPoint> extends
@@ -1133,12 +1133,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TextStyleRegion</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TextStyleRegionModelObject<E extends TextStyleRegion> extends
@@ -1231,12 +1231,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RenderingStyle</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RenderingStyleModelObject<E extends RenderingStyle> extends
@@ -1319,12 +1319,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AdaptedGradientColoredAreas</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AdaptedGradientColoredAreasModelObject<E extends AdaptedGradientColoredAreas> extends
@@ -1424,12 +1424,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GradientColoredLocation</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GradientColoredLocationModelObject<E extends GradientColoredLocation> extends
@@ -1522,12 +1522,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GradientColoredArea</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GradientColoredAreaModelObject<E extends GradientColoredArea> extends
@@ -1615,12 +1615,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GradientColoredAreas</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GradientColoredAreasModelObject<E extends GradientColoredAreas> extends
@@ -1715,12 +1715,12 @@ public class StylesModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TextStyle</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TextStyleModelObject<E extends TextStyle> extends

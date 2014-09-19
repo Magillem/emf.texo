@@ -47,7 +47,7 @@ public class CoreModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -97,7 +97,7 @@ public class CoreModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -256,12 +256,12 @@ public class CoreModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Element</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ElementModelObject<E extends Element> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -359,12 +359,12 @@ public class CoreModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ModelElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ModelElementModelObject<E extends ModelElement> extends ElementModelObject<E> {
@@ -466,12 +466,12 @@ public class CoreModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>KDMEntity</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class KDMEntityModelObject<E extends KDMEntity> extends ModelElementModelObject<E> {
@@ -582,12 +582,12 @@ public class CoreModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>KDMRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class KDMRelationshipModelObject<E extends KDMRelationship> extends ModelElementModelObject<E> {
@@ -671,12 +671,12 @@ public class CoreModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AggregatedRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AggregatedRelationshipModelObject<E extends AggregatedRelationship> extends

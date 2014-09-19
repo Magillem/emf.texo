@@ -28,7 +28,7 @@ public class SchoolBook extends Book implements Asset {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -40,7 +40,7 @@ public class SchoolBook extends Book implements Asset {
 
   /**
    * Sets the '{@link SchoolBook#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

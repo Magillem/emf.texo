@@ -32,7 +32,7 @@ public enum EnumA {
   /**
    * Returns the '<em><b>EnumA</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the EnumA, the literal enum class

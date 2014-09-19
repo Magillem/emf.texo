@@ -47,7 +47,7 @@ public class EClass0 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>toClass1</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>toClass1</b></em>' feature
@@ -59,7 +59,7 @@ public class EClass0 extends Identifiable {
 
   /**
    * Sets the '{@link EClass0#getToClass1() <em>toClass1</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newToClass1
@@ -82,7 +82,7 @@ public class EClass0 extends Identifiable {
    * Returns the value of '<em><b>many</b></em>' feature. Note: the returned collection is Unmodifiable use the
    * {#addToMany(org.eclipse.emf.texo.test.model.issues.bz371509.EClass1 value)} and
    * {@link #removeFromMany(EClass1 value)} methods to modify this feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>many</b></em>' feature
@@ -141,7 +141,7 @@ public class EClass0 extends Identifiable {
 
   /**
    * Sets the '{@link EClass0#getMany() <em>many</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMany

@@ -154,7 +154,7 @@ public class ElementTrue_FeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>c</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>c</b></em>' feature
@@ -166,7 +166,7 @@ public class ElementTrue_FeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Element#getC() <em>c</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newC

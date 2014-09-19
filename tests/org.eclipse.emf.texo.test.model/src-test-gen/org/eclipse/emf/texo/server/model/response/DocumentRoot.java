@@ -36,7 +36,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -48,7 +48,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -61,7 +61,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xMLNSPrefixMap</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xMLNSPrefixMap</b></em>' feature
@@ -73,7 +73,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXMLNSPrefixMap() <em>xMLNSPrefixMap</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXMLNSPrefixMap
@@ -86,7 +86,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>xSISchemaLocation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>xSISchemaLocation</b></em>' feature
@@ -98,7 +98,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getXSISchemaLocation() <em>xSISchemaLocation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newXSISchemaLocation
@@ -111,7 +111,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>error</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>error</b></em>' feature
@@ -124,7 +124,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getError() <em>error</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newError
@@ -138,7 +138,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>response</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>response</b></em>' feature
@@ -151,7 +151,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getResponse() <em>response</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newResponse
@@ -165,7 +165,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Returns the value of '<em><b>result</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>result</b></em>' feature
@@ -178,7 +178,7 @@ public class DocumentRoot extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getResult() <em>result</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newResult

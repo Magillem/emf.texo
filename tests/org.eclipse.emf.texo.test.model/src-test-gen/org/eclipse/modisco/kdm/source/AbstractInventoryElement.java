@@ -32,7 +32,7 @@ public abstract class AbstractInventoryElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>inventoryRelationship</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>inventoryRelationship</b></em>' feature
@@ -89,7 +89,7 @@ public abstract class AbstractInventoryElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractInventoryElement#getInventoryRelationship() <em>inventoryRelationship</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInventoryRelationship

@@ -159,7 +159,7 @@ public class ElementNameMapFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>names</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>names</b></em>' feature
@@ -171,7 +171,7 @@ public class ElementNameMapFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link Element#getNames() <em>names</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNames

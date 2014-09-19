@@ -199,7 +199,7 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -483,7 +483,7 @@ public class CodeModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -1514,12 +1514,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CodeModel</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CodeModelModelObject<E extends CodeModel> extends KdmModelFactory.KDMModelModelObject<E> {
@@ -1622,12 +1622,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractCodeElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractCodeElementModelObject<E extends AbstractCodeElement> extends
@@ -1778,12 +1778,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CommentUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CommentUnitModelObject<E extends CommentUnit> extends CoreModelFactory.ModelElementModelObject<E> {
@@ -1874,12 +1874,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>AbstractCodeRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class AbstractCodeRelationshipModelObject<E extends AbstractCodeRelationship> extends
@@ -1964,12 +1964,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CodeItem</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CodeItemModelObject<E extends CodeItem> extends AbstractCodeElementModelObject<E> {
@@ -2083,12 +2083,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ComputationalObject</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ComputationalObjectModelObject<E extends ComputationalObject> extends CodeItemModelObject<E> {
@@ -2202,12 +2202,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Datatype</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DatatypeModelObject<E extends Datatype> extends CodeItemModelObject<E> {
@@ -2321,12 +2321,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Module</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ModuleModelObject<E extends Module> extends CodeItemModelObject<E> {
@@ -2451,12 +2451,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CompilationUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CompilationUnitModelObject<E extends CompilationUnit> extends ModuleModelObject<E> {
@@ -2572,12 +2572,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SharedUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SharedUnitModelObject<E extends SharedUnit> extends CompilationUnitModelObject<E> {
@@ -2693,12 +2693,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>LanguageUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class LanguageUnitModelObject<E extends LanguageUnit> extends ModuleModelObject<E> {
@@ -2814,12 +2814,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CodeAssembly</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CodeAssemblyModelObject<E extends CodeAssembly> extends ModuleModelObject<E> {
@@ -2935,12 +2935,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Package</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PackageModelObject<E extends Package> extends ModuleModelObject<E> {
@@ -3056,12 +3056,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ControlElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ControlElementModelObject<E extends ControlElement> extends ComputationalObjectModelObject<E> {
@@ -3191,12 +3191,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CallableUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CallableUnitModelObject<E extends CallableUnit> extends ControlElementModelObject<E> {
@@ -3321,12 +3321,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MethodUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MethodUnitModelObject<E extends MethodUnit> extends ControlElementModelObject<E> {
@@ -3456,12 +3456,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DataElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DataElementModelObject<E extends DataElement> extends ComputationalObjectModelObject<E> {
@@ -3601,12 +3601,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>StorableUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StorableUnitModelObject<E extends StorableUnit> extends DataElementModelObject<E> {
@@ -3735,12 +3735,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ItemUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ItemUnitModelObject<E extends ItemUnit> extends DataElementModelObject<E> {
@@ -3862,12 +3862,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>IndexUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IndexUnitModelObject<E extends IndexUnit> extends DataElementModelObject<E> {
@@ -3989,12 +3989,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MemberUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MemberUnitModelObject<E extends MemberUnit> extends DataElementModelObject<E> {
@@ -4123,12 +4123,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ParameterUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ParameterUnitModelObject<E extends ParameterUnit> extends DataElementModelObject<E> {
@@ -4262,12 +4262,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ValueElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ValueElementModelObject<E extends ValueElement> extends DataElementModelObject<E> {
@@ -4389,12 +4389,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Value</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ValueModelObject<E extends Value> extends ValueElementModelObject<E> {
@@ -4516,12 +4516,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ValueList</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ValueListModelObject<E extends ValueList> extends ValueElementModelObject<E> {
@@ -4654,12 +4654,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PrimitiveType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PrimitiveTypeModelObject<E extends PrimitiveType> extends DatatypeModelObject<E> {
@@ -4773,12 +4773,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BooleanType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BooleanTypeModelObject<E extends BooleanType> extends PrimitiveTypeModelObject<E> {
@@ -4892,12 +4892,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CharType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CharTypeModelObject<E extends CharType> extends PrimitiveTypeModelObject<E> {
@@ -5011,12 +5011,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OrdinalType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OrdinalTypeModelObject<E extends OrdinalType> extends PrimitiveTypeModelObject<E> {
@@ -5130,12 +5130,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DateType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DateTypeModelObject<E extends DateType> extends PrimitiveTypeModelObject<E> {
@@ -5249,12 +5249,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TimeType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TimeTypeModelObject<E extends TimeType> extends PrimitiveTypeModelObject<E> {
@@ -5368,12 +5368,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>IntegerType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IntegerTypeModelObject<E extends IntegerType> extends PrimitiveTypeModelObject<E> {
@@ -5487,12 +5487,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DecimalType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DecimalTypeModelObject<E extends DecimalType> extends PrimitiveTypeModelObject<E> {
@@ -5606,12 +5606,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ScaledType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ScaledTypeModelObject<E extends ScaledType> extends PrimitiveTypeModelObject<E> {
@@ -5725,12 +5725,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>FloatType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class FloatTypeModelObject<E extends FloatType> extends PrimitiveTypeModelObject<E> {
@@ -5844,12 +5844,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>VoidType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class VoidTypeModelObject<E extends VoidType> extends PrimitiveTypeModelObject<E> {
@@ -5963,12 +5963,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>StringType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StringTypeModelObject<E extends StringType> extends PrimitiveTypeModelObject<E> {
@@ -6082,12 +6082,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BitType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BitTypeModelObject<E extends BitType> extends PrimitiveTypeModelObject<E> {
@@ -6201,12 +6201,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BitstringType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BitstringTypeModelObject<E extends BitstringType> extends PrimitiveTypeModelObject<E> {
@@ -6320,12 +6320,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OctetType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OctetTypeModelObject<E extends OctetType> extends PrimitiveTypeModelObject<E> {
@@ -6439,12 +6439,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>OctetstringType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class OctetstringTypeModelObject<E extends OctetstringType> extends PrimitiveTypeModelObject<E> {
@@ -6558,12 +6558,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>EnumeratedType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class EnumeratedTypeModelObject<E extends EnumeratedType> extends DatatypeModelObject<E> {
@@ -6699,12 +6699,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CompositeType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CompositeTypeModelObject<E extends CompositeType> extends DatatypeModelObject<E> {
@@ -6829,12 +6829,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ChoiceType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ChoiceTypeModelObject<E extends ChoiceType> extends CompositeTypeModelObject<E> {
@@ -6950,12 +6950,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RecordType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RecordTypeModelObject<E extends RecordType> extends CompositeTypeModelObject<E> {
@@ -7071,12 +7071,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DerivedType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DerivedTypeModelObject<E extends DerivedType> extends DatatypeModelObject<E> {
@@ -7197,12 +7197,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ArrayType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ArrayTypeModelObject<E extends ArrayType> extends DerivedTypeModelObject<E> {
@@ -7330,12 +7330,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PointerType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PointerTypeModelObject<E extends PointerType> extends DerivedTypeModelObject<E> {
@@ -7451,12 +7451,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>RangeType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RangeTypeModelObject<E extends RangeType> extends DerivedTypeModelObject<E> {
@@ -7584,12 +7584,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>BagType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class BagTypeModelObject<E extends BagType> extends DerivedTypeModelObject<E> {
@@ -7712,12 +7712,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SetType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SetTypeModelObject<E extends SetType> extends DerivedTypeModelObject<E> {
@@ -7840,12 +7840,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SequenceType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SequenceTypeModelObject<E extends SequenceType> extends DerivedTypeModelObject<E> {
@@ -7968,12 +7968,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Signature</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SignatureModelObject<E extends Signature> extends DatatypeModelObject<E> {
@@ -8098,12 +8098,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>DefinedType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class DefinedTypeModelObject<E extends DefinedType> extends DatatypeModelObject<E> {
@@ -8229,12 +8229,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TypeUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TypeUnitModelObject<E extends TypeUnit> extends DefinedTypeModelObject<E> {
@@ -8352,12 +8352,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>SynonymUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class SynonymUnitModelObject<E extends SynonymUnit> extends DefinedTypeModelObject<E> {
@@ -8475,12 +8475,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ClassUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ClassUnitModelObject<E extends ClassUnit> extends DatatypeModelObject<E> {
@@ -8610,12 +8610,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InterfaceUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InterfaceUnitModelObject<E extends InterfaceUnit> extends DatatypeModelObject<E> {
@@ -8740,12 +8740,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TemplateUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TemplateUnitModelObject<E extends TemplateUnit> extends DatatypeModelObject<E> {
@@ -8870,12 +8870,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TemplateParameter</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TemplateParameterModelObject<E extends TemplateParameter> extends DatatypeModelObject<E> {
@@ -8989,12 +8989,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>TemplateType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TemplateTypeModelObject<E extends TemplateType> extends DatatypeModelObject<E> {
@@ -9108,12 +9108,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>InstanceOf</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class InstanceOfModelObject<E extends InstanceOf> extends AbstractCodeRelationshipModelObject<E> {
@@ -9209,12 +9209,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ParameterTo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ParameterToModelObject<E extends ParameterTo> extends AbstractCodeRelationshipModelObject<E> {
@@ -9310,12 +9310,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Implements</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ImplementsModelObject<E extends Implements> extends AbstractCodeRelationshipModelObject<E> {
@@ -9411,12 +9411,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ImplementationOf</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ImplementationOfModelObject<E extends ImplementationOf> extends
@@ -9513,12 +9513,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>HasType</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class HasTypeModelObject<E extends HasType> extends AbstractCodeRelationshipModelObject<E> {
@@ -9614,12 +9614,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>HasValue</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class HasValueModelObject<E extends HasValue> extends AbstractCodeRelationshipModelObject<E> {
@@ -9715,12 +9715,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Extends</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ExtendsModelObject<E extends Extends> extends AbstractCodeRelationshipModelObject<E> {
@@ -9816,12 +9816,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>PreprocessorDirective</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PreprocessorDirectiveModelObject<E extends PreprocessorDirective> extends
@@ -9947,12 +9947,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MacroUnit</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MacroUnitModelObject<E extends MacroUnit> extends PreprocessorDirectiveModelObject<E> {
@@ -10075,12 +10075,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>MacroDirective</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MacroDirectiveModelObject<E extends MacroDirective> extends PreprocessorDirectiveModelObject<E> {
@@ -10196,12 +10196,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>IncludeDirective</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IncludeDirectiveModelObject<E extends IncludeDirective> extends
@@ -10318,12 +10318,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>ConditionalDirective</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ConditionalDirectiveModelObject<E extends ConditionalDirective> extends
@@ -10440,12 +10440,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Expands</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ExpandsModelObject<E extends Expands> extends AbstractCodeRelationshipModelObject<E> {
@@ -10541,12 +10541,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GeneratedFrom</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GeneratedFromModelObject<E extends GeneratedFrom> extends AbstractCodeRelationshipModelObject<E> {
@@ -10642,12 +10642,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Includes</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class IncludesModelObject<E extends Includes> extends AbstractCodeRelationshipModelObject<E> {
@@ -10743,12 +10743,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>VariantTo</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class VariantToModelObject<E extends VariantTo> extends AbstractCodeRelationshipModelObject<E> {
@@ -10844,12 +10844,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Redefines</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class RedefinesModelObject<E extends Redefines> extends AbstractCodeRelationshipModelObject<E> {
@@ -10945,12 +10945,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Namespace</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class NamespaceModelObject<E extends Namespace> extends CodeItemModelObject<E> {
@@ -11075,12 +11075,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>VisibleIn</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class VisibleInModelObject<E extends VisibleIn> extends AbstractCodeRelationshipModelObject<E> {
@@ -11176,12 +11176,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Imports</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ImportsModelObject<E extends Imports> extends AbstractCodeRelationshipModelObject<E> {
@@ -11277,12 +11277,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CodeElement</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CodeElementModelObject<E extends CodeElement> extends CodeItemModelObject<E> {
@@ -11396,12 +11396,12 @@ public class CodeModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>CodeRelationship</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class CodeRelationshipModelObject<E extends CodeRelationship> extends

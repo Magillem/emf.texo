@@ -47,7 +47,7 @@ public class DescribableIdentifiableConcrete extends Identifiable implements Des
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -59,7 +59,7 @@ public class DescribableIdentifiableConcrete extends Identifiable implements Des
 
   /**
    * Sets the '{@link DescribableIdentifiableConcrete#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -72,7 +72,7 @@ public class DescribableIdentifiableConcrete extends Identifiable implements Des
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -84,7 +84,7 @@ public class DescribableIdentifiableConcrete extends Identifiable implements Des
 
   /**
    * Sets the '{@link DescribableIdentifiableConcrete#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription
@@ -97,7 +97,7 @@ public class DescribableIdentifiableConcrete extends Identifiable implements Des
 
   /**
    * Returns the value of '<em><b>identifier</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>identifier</b></em>' feature
@@ -109,7 +109,7 @@ public class DescribableIdentifiableConcrete extends Identifiable implements Des
 
   /**
    * Sets the '{@link DescribableIdentifiableConcrete#getIdentifier() <em>identifier</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIdentifier

@@ -40,7 +40,7 @@ public class ExtensionFamily extends Element {
 
   /**
    * Returns the value of '<em><b>stereotype</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stereotype</b></em>' feature
@@ -97,7 +97,7 @@ public class ExtensionFamily extends Element {
 
   /**
    * Sets the '{@link ExtensionFamily#getStereotype() <em>stereotype</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStereotype
@@ -110,7 +110,7 @@ public class ExtensionFamily extends Element {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -122,7 +122,7 @@ public class ExtensionFamily extends Element {
 
   /**
    * Sets the '{@link ExtensionFamily#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

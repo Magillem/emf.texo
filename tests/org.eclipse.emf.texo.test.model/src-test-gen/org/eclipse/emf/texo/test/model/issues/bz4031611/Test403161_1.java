@@ -30,7 +30,7 @@ public class Test403161_1 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -42,7 +42,7 @@ public class Test403161_1 extends Identifiable {
 
   /**
    * Sets the '{@link Test403161_1#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

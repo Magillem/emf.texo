@@ -172,7 +172,7 @@ public class PersonaeTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -184,7 +184,7 @@ public class PersonaeTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link PersonaeType#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -198,7 +198,7 @@ public class PersonaeTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>persona</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>persona</b></em>' feature
@@ -210,7 +210,7 @@ public class PersonaeTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link PersonaeType#getPersona() <em>persona</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPersona
@@ -224,7 +224,7 @@ public class PersonaeTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>personaGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>personaGroup</b></em>' feature
@@ -236,7 +236,7 @@ public class PersonaeTypeGroupFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link PersonaeType#getPersonaGroup() <em>personaGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPersonaGroup

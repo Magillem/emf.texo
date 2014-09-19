@@ -56,7 +56,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -68,7 +68,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -81,7 +81,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>doub</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>doub</b></em>' feature
@@ -93,7 +93,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getDoub() <em>doub</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDoub
@@ -106,7 +106,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lon</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lon</b></em>' feature
@@ -118,7 +118,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getLon() <em>lon</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLon
@@ -131,7 +131,7 @@ public class A extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myB</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myB</b></em>' feature
@@ -143,7 +143,7 @@ public class A extends Identifiable {
 
   /**
    * Sets the '{@link A#getMyB() <em>myB</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyB

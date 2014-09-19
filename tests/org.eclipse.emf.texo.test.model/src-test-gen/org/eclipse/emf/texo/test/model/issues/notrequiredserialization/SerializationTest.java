@@ -31,7 +31,7 @@ public class SerializationTest extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -43,7 +43,7 @@ public class SerializationTest extends Identifiable {
 
   /**
    * Sets the '{@link SerializationTest#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName

@@ -31,7 +31,7 @@ public class ConceptualModel extends KDMModel {
 
   /**
    * Returns the value of '<em><b>conceptualElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>conceptualElement</b></em>' feature
@@ -88,7 +88,7 @@ public class ConceptualModel extends KDMModel {
 
   /**
    * Sets the '{@link ConceptualModel#getConceptualElement() <em>conceptualElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newConceptualElement

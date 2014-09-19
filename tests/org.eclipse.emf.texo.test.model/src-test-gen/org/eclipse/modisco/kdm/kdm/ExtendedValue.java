@@ -29,7 +29,7 @@ public abstract class ExtendedValue extends Element {
 
   /**
    * Returns the value of '<em><b>tag</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>tag</b></em>' feature
@@ -41,7 +41,7 @@ public abstract class ExtendedValue extends Element {
 
   /**
    * Sets the '{@link ExtendedValue#getTag() <em>tag</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTag

@@ -111,7 +111,7 @@ public enum ExportKind {
   /**
    * Returns the '<em><b>ExportKind</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the ExportKind, the literal enum class

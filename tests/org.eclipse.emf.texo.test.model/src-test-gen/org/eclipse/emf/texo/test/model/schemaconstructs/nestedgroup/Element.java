@@ -35,7 +35,7 @@ public class Element extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -47,7 +47,7 @@ public class Element extends Identifiable {
 
   /**
    * Sets the '{@link Element#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -60,7 +60,7 @@ public class Element extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -72,7 +72,7 @@ public class Element extends Identifiable {
 
   /**
    * Sets the '{@link Element#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -85,7 +85,7 @@ public class Element extends Identifiable {
 
   /**
    * Returns the value of '<em><b>true</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>true</b></em>' feature
@@ -97,7 +97,7 @@ public class Element extends Identifiable {
 
   /**
    * Sets the '{@link Element#getTrue_() <em>true</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTrue_
@@ -110,7 +110,7 @@ public class Element extends Identifiable {
 
   /**
    * Returns the value of '<em><b>c</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>c</b></em>' feature
@@ -122,7 +122,7 @@ public class Element extends Identifiable {
 
   /**
    * Sets the '{@link Element#getC() <em>c</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newC
@@ -135,7 +135,7 @@ public class Element extends Identifiable {
 
   /**
    * Returns the value of '<em><b>recursive</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>recursive</b></em>' feature
@@ -147,7 +147,7 @@ public class Element extends Identifiable {
 
   /**
    * Sets the '{@link Element#getRecursive() <em>recursive</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRecursive

@@ -16,7 +16,7 @@ import org.eclipse.emf.texo.utils.ModelUtils;
 /**
  * The <b>Package</b> for the model '<em><b>bz422811</b></em>'. It contains initialization code and access to the
  * Factory to instantiate types of this package.
- * 
+ *
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
@@ -81,9 +81,9 @@ public class Bz422811ModelPackage extends ModelPackage {
 
   /**
    * Initializes this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return an initialized instance of this class
-   * 
+   *
    * @generated
    */
   public static Bz422811ModelPackage initialize() {
@@ -118,7 +118,7 @@ public class Bz422811ModelPackage extends ModelPackage {
 
   /**
    * Returns the {@link ModelFactory} of this ModelPackage. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the {@link Bz422811ModelFactory} instance.
    * @generated
    */
@@ -130,7 +130,7 @@ public class Bz422811ModelPackage extends ModelPackage {
   /**
    * Returns the nsUri of the {@link EPackage} managed by this Package instance. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @return the nsUri of the EPackage
    * @generated
    */

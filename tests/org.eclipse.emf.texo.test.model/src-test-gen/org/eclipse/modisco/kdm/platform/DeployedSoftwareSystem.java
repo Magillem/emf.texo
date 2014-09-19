@@ -31,7 +31,7 @@ public class DeployedSoftwareSystem extends AbstractPlatformElement {
 
   /**
    * Returns the value of '<em><b>groupedComponent</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>groupedComponent</b></em>' feature
@@ -88,7 +88,7 @@ public class DeployedSoftwareSystem extends AbstractPlatformElement {
 
   /**
    * Sets the '{@link DeployedSoftwareSystem#getGroupedComponent() <em>groupedComponent</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroupedComponent

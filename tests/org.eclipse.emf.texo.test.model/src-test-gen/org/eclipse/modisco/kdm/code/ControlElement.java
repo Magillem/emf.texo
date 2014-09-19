@@ -41,7 +41,7 @@ public class ControlElement extends ComputationalObject {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -53,7 +53,7 @@ public class ControlElement extends ComputationalObject {
 
   /**
    * Sets the '{@link ControlElement#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType
@@ -66,7 +66,7 @@ public class ControlElement extends ComputationalObject {
 
   /**
    * Returns the value of '<em><b>codeElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>codeElement</b></em>' feature
@@ -123,7 +123,7 @@ public class ControlElement extends ComputationalObject {
 
   /**
    * Sets the '{@link ControlElement#getCodeElement() <em>codeElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCodeElement

@@ -32,7 +32,7 @@ public abstract class AbstractBuildElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>buildRelation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>buildRelation</b></em>' feature
@@ -89,7 +89,7 @@ public abstract class AbstractBuildElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractBuildElement#getBuildRelation() <em>buildRelation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBuildRelation

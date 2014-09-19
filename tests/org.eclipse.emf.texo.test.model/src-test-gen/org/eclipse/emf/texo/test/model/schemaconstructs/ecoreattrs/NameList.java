@@ -52,7 +52,7 @@ public class NameList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>firstName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>firstName</b></em>' feature
@@ -64,7 +64,7 @@ public class NameList extends Identifiable {
 
   /**
    * Sets the '{@link NameList#getFirstName() <em>firstName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFirstName
@@ -77,7 +77,7 @@ public class NameList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>middleName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>middleName</b></em>' feature
@@ -89,7 +89,7 @@ public class NameList extends Identifiable {
 
   /**
    * Sets the '{@link NameList#getMiddleName() <em>middleName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMiddleName
@@ -102,7 +102,7 @@ public class NameList extends Identifiable {
 
   /**
    * Returns the value of '<em><b>lastName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>lastName</b></em>' feature
@@ -114,7 +114,7 @@ public class NameList extends Identifiable {
 
   /**
    * Sets the '{@link NameList#getLastName() <em>lastName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLastName

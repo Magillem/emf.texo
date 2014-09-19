@@ -35,7 +35,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>group</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>group</b></em>' feature
@@ -47,7 +47,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Sets the '{@link SpeechType#getGroup() <em>group</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGroup
@@ -60,7 +60,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>speaker</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>speaker</b></em>' feature
@@ -73,7 +73,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Sets the '{@link SpeechType#getSpeaker() <em>speaker</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSpeaker
@@ -87,7 +87,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>line</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>line</b></em>' feature
@@ -100,7 +100,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Sets the '{@link SpeechType#getLine() <em>line</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLine
@@ -113,7 +113,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>stageDirections</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>stageDirections</b></em>' feature
@@ -126,7 +126,7 @@ public class SpeechType extends Identifiable {
 
   /**
    * Sets the '{@link SpeechType#getStageDirections() <em>stageDirections</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStageDirections

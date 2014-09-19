@@ -35,7 +35,7 @@ public class SourceFile extends InventoryItem {
 
   /**
    * Returns the value of '<em><b>language</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>language</b></em>' feature
@@ -47,7 +47,7 @@ public class SourceFile extends InventoryItem {
 
   /**
    * Sets the '{@link SourceFile#getLanguage() <em>language</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLanguage
@@ -60,7 +60,7 @@ public class SourceFile extends InventoryItem {
 
   /**
    * Returns the value of '<em><b>encoding</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>encoding</b></em>' feature
@@ -72,7 +72,7 @@ public class SourceFile extends InventoryItem {
 
   /**
    * Sets the '{@link SourceFile#getEncoding() <em>encoding</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEncoding

@@ -35,7 +35,7 @@ public class InventoryItem extends AbstractInventoryElement {
 
   /**
    * Returns the value of '<em><b>version</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>version</b></em>' feature
@@ -47,7 +47,7 @@ public class InventoryItem extends AbstractInventoryElement {
 
   /**
    * Sets the '{@link InventoryItem#getVersion() <em>version</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVersion
@@ -60,7 +60,7 @@ public class InventoryItem extends AbstractInventoryElement {
 
   /**
    * Returns the value of '<em><b>path</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>path</b></em>' feature
@@ -72,7 +72,7 @@ public class InventoryItem extends AbstractInventoryElement {
 
   /**
    * Sets the '{@link InventoryItem#getPath() <em>path</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPath

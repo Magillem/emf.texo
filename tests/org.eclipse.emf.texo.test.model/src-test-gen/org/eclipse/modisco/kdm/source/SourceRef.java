@@ -50,7 +50,7 @@ public class SourceRef extends Element {
 
   /**
    * Returns the value of '<em><b>region</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>region</b></em>' feature
@@ -107,7 +107,7 @@ public class SourceRef extends Element {
 
   /**
    * Sets the '{@link SourceRef#getRegion() <em>region</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRegion
@@ -120,7 +120,7 @@ public class SourceRef extends Element {
 
   /**
    * Returns the value of '<em><b>language</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>language</b></em>' feature
@@ -132,7 +132,7 @@ public class SourceRef extends Element {
 
   /**
    * Sets the '{@link SourceRef#getLanguage() <em>language</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLanguage
@@ -145,7 +145,7 @@ public class SourceRef extends Element {
 
   /**
    * Returns the value of '<em><b>snippet</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>snippet</b></em>' feature
@@ -157,7 +157,7 @@ public class SourceRef extends Element {
 
   /**
    * Sets the '{@link SourceRef#getSnippet() <em>snippet</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSnippet

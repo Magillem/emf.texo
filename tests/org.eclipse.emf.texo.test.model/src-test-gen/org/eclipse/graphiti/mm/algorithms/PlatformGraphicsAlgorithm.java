@@ -28,7 +28,7 @@ public class PlatformGraphicsAlgorithm extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -40,7 +40,7 @@ public class PlatformGraphicsAlgorithm extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link PlatformGraphicsAlgorithm#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId

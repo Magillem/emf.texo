@@ -40,7 +40,7 @@ public class RentalCarDriver extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -52,7 +52,7 @@ public class RentalCarDriver extends Identifiable {
 
   /**
    * Sets the '{@link RentalCarDriver#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -65,7 +65,7 @@ public class RentalCarDriver extends Identifiable {
 
   /**
    * Returns the value of '<em><b>currentRentalCar</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>currentRentalCar</b></em>' feature
@@ -77,7 +77,7 @@ public class RentalCarDriver extends Identifiable {
 
   /**
    * Sets the '{@link RentalCarDriver#getCurrentRentalCar() <em>currentRentalCar</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCurrentRentalCar

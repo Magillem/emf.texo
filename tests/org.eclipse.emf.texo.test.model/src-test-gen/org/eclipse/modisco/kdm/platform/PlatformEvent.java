@@ -27,7 +27,7 @@ public class PlatformEvent extends ResourceType {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -39,7 +39,7 @@ public class PlatformEvent extends ResourceType {
 
   /**
    * Sets the '{@link PlatformEvent#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind

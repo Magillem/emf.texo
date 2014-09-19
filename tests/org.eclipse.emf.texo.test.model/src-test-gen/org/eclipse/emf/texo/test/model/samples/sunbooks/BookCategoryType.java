@@ -95,7 +95,7 @@ public enum BookCategoryType {
   /**
    * Returns the '<em><b>BookCategoryType</b></em>' literal with the specified literal value. <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the BookCategoryType, the literal enum class

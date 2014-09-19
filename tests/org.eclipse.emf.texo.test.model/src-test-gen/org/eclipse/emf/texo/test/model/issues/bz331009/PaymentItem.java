@@ -105,7 +105,7 @@ public abstract class PaymentItem extends Identifiable {
 
   /**
    * Returns the value of '<em><b>currency</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>currency</b></em>' feature
@@ -117,7 +117,7 @@ public abstract class PaymentItem extends Identifiable {
 
   /**
    * Sets the '{@link PaymentItem#getCurrency() <em>currency</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCurrency

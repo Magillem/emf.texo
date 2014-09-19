@@ -8,7 +8,7 @@ package org.eclipse.emf.texo.test.model.samples.schoollibrary;
 public interface Asset {
   /**
    * Returns the value of '<em><b>value</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -18,7 +18,7 @@ public interface Asset {
 
   /**
    * Sets the '{@link Asset#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

@@ -56,7 +56,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>visible</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>visible</b></em>' feature
@@ -68,7 +68,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link PictogramElement#isVisible() <em>visible</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newVisible
@@ -81,7 +81,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>graphicsAlgorithm</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>graphicsAlgorithm</b></em>' feature
@@ -93,7 +93,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link PictogramElement#getGraphicsAlgorithm() <em>graphicsAlgorithm</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newGraphicsAlgorithm
@@ -106,7 +106,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>active</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>active</b></em>' feature
@@ -118,7 +118,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link PictogramElement#isActive() <em>active</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newActive
@@ -131,7 +131,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Returns the value of '<em><b>link</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>link</b></em>' feature
@@ -143,7 +143,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
 
   /**
    * Sets the '{@link PictogramElement#getLink() <em>link</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLink

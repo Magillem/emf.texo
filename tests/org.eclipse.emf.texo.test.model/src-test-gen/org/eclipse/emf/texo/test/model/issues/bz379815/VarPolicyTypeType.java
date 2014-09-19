@@ -38,7 +38,7 @@ public class VarPolicyTypeType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>type</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>type</b></em>' feature
@@ -50,7 +50,7 @@ public class VarPolicyTypeType extends Identifiable {
 
   /**
    * Sets the '{@link VarPolicyTypeType#getType() <em>type</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newType

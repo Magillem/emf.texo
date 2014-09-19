@@ -27,7 +27,7 @@ public class Directory extends InventoryContainer {
 
   /**
    * Returns the value of '<em><b>path</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>path</b></em>' feature
@@ -39,7 +39,7 @@ public class Directory extends InventoryContainer {
 
   /**
    * Sets the '{@link Directory#getPath() <em>path</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPath

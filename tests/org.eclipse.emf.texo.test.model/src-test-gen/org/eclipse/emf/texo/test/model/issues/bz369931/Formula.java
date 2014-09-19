@@ -33,7 +33,7 @@ public class Formula extends Identifiable {
 
   /**
    * Returns the value of '<em><b>formulaType</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>formulaType</b></em>' feature
@@ -45,7 +45,7 @@ public class Formula extends Identifiable {
 
   /**
    * Sets the '{@link Formula#getFormulaType() <em>formulaType</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFormulaType

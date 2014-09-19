@@ -164,7 +164,7 @@ public class AddressListAddrsFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shipTo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shipTo</b></em>' feature
@@ -176,7 +176,7 @@ public class AddressListAddrsFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link AddressList#getShipTo() <em>shipTo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShipTo
@@ -190,7 +190,7 @@ public class AddressListAddrsFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>billTo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>billTo</b></em>' feature
@@ -202,7 +202,7 @@ public class AddressListAddrsFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link AddressList#getBillTo() <em>billTo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBillTo

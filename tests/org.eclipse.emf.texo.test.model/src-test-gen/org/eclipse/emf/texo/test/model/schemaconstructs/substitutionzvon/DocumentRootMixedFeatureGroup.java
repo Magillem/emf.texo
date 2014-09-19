@@ -222,7 +222,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>text</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>text</b></em>' feature
@@ -234,7 +234,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>text</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newText
@@ -248,7 +248,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>CDATA</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>CDATA</b></em>' feature
@@ -260,7 +260,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>cDATA</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCDATA
@@ -274,7 +274,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>comment</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>comment</b></em>' feature
@@ -286,7 +286,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the <em>comment</em> feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComment
@@ -300,7 +300,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>complexEven</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>complexEven</b></em>' feature
@@ -312,7 +312,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getComplexEven() <em>complexEven</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComplexEven
@@ -326,7 +326,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myComplexAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myComplexAbstract</b></em>' feature
@@ -338,7 +338,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMyComplexAbstract() <em>myComplexAbstract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyComplexAbstract
@@ -352,7 +352,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>complexOdd</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>complexOdd</b></em>' feature
@@ -364,7 +364,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getComplexOdd() <em>complexOdd</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newComplexOdd
@@ -378,7 +378,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>even</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>even</b></em>' feature
@@ -390,7 +390,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getEven() <em>even</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEven
@@ -404,7 +404,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myAbstract</b></em>' feature
@@ -416,7 +416,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getMyAbstract() <em>myAbstract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyAbstract
@@ -430,7 +430,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>odd</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>odd</b></em>' feature
@@ -442,7 +442,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getOdd() <em>odd</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOdd
@@ -456,7 +456,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Returns the value of '<em><b>root</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>root</b></em>' feature
@@ -468,7 +468,7 @@ public class DocumentRootMixedFeatureGroup extends Identifiable {
 
   /**
    * Sets the '{@link DocumentRoot#getRoot() <em>root</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRoot

@@ -46,7 +46,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -58,7 +58,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -71,7 +71,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>orders</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>orders</b></em>' feature
@@ -83,7 +83,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getOrders() <em>orders</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOrders
@@ -96,7 +96,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>hardCopyOrderReference</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>hardCopyOrderReference</b></em>' feature
@@ -109,7 +109,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getHardCopyOrderReference() <em>hardCopyOrderReference</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newHardCopyOrderReference
@@ -123,7 +123,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>hardCopyOrderNumber</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>hardCopyOrderNumber</b></em>' feature
@@ -136,7 +136,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getHardCopyOrderNumber() <em>hardCopyOrderNumber</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newHardCopyOrderNumber
@@ -150,7 +150,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>preferredOrders</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>preferredOrders</b></em>' feature
@@ -163,7 +163,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getPreferredOrders() <em>preferredOrders</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPreferredOrders
@@ -177,7 +177,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Returns the value of '<em><b>standardOrders</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>standardOrders</b></em>' feature
@@ -190,7 +190,7 @@ public class Supplier extends Identifiable {
 
   /**
    * Sets the '{@link Supplier#getStandardOrders() <em>standardOrders</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newStandardOrders

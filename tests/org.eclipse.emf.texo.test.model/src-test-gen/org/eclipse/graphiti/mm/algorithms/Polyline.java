@@ -33,7 +33,7 @@ public class Polyline extends GraphicsAlgorithm {
 
   /**
    * Returns the value of '<em><b>points</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>points</b></em>' feature
@@ -90,7 +90,7 @@ public class Polyline extends GraphicsAlgorithm {
 
   /**
    * Sets the '{@link Polyline#getPoints() <em>points</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPoints

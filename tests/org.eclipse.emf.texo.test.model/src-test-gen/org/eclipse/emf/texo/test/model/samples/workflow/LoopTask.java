@@ -29,7 +29,7 @@ public class LoopTask extends CompoundTask {
 
   /**
    * Returns the value of '<em><b>whileCondition</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>whileCondition</b></em>' feature
@@ -41,7 +41,7 @@ public class LoopTask extends CompoundTask {
 
   /**
    * Sets the '{@link LoopTask#getWhileCondition() <em>whileCondition</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWhileCondition

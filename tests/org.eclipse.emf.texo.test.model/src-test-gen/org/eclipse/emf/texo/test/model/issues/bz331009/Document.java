@@ -9,7 +9,7 @@ package org.eclipse.emf.texo.test.model.issues.bz331009;
 public interface Document {
   /**
    * Returns the value of '<em><b>series</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>series</b></em>' feature
@@ -19,7 +19,7 @@ public interface Document {
 
   /**
    * Sets the '{@link Document#getSeries() <em>series</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSeries
@@ -30,7 +30,7 @@ public interface Document {
 
   /**
    * Returns the value of '<em><b>number</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>number</b></em>' feature
@@ -40,7 +40,7 @@ public interface Document {
 
   /**
    * Sets the '{@link Document#getNumber() <em>number</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNumber
@@ -51,7 +51,7 @@ public interface Document {
 
   /**
    * Returns the value of '<em><b>issueDate</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>issueDate</b></em>' feature
@@ -61,7 +61,7 @@ public interface Document {
 
   /**
    * Sets the '{@link Document#getIssueDate() <em>issueDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIssueDate
@@ -72,7 +72,7 @@ public interface Document {
 
   /**
    * Returns the value of '<em><b>issued</em></b>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>issued</b></em>' feature
@@ -82,7 +82,7 @@ public interface Document {
 
   /**
    * Sets the '{@link Document#getIssued() <em>issued</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIssued

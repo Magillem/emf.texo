@@ -54,7 +54,7 @@ public abstract class AbstractDataElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>source</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>source</b></em>' feature
@@ -111,7 +111,7 @@ public abstract class AbstractDataElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractDataElement#getSource() <em>source</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSource
@@ -124,7 +124,7 @@ public abstract class AbstractDataElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>dataRelation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dataRelation</b></em>' feature
@@ -181,7 +181,7 @@ public abstract class AbstractDataElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractDataElement#getDataRelation() <em>dataRelation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDataRelation
@@ -194,7 +194,7 @@ public abstract class AbstractDataElement extends KDMEntity {
 
   /**
    * Returns the value of '<em><b>abstraction</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>abstraction</b></em>' feature
@@ -251,7 +251,7 @@ public abstract class AbstractDataElement extends KDMEntity {
 
   /**
    * Sets the '{@link AbstractDataElement#getAbstraction() <em>abstraction</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAbstraction

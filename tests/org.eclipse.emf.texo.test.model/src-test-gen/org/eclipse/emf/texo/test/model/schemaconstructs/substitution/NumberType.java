@@ -54,7 +54,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -66,7 +66,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Sets the '{@link NumberType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -79,7 +79,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mySimpleAbstractGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mySimpleAbstractGroup</b></em>' feature
@@ -91,7 +91,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Sets the '{@link NumberType#getMySimpleAbstractGroup() <em>mySimpleAbstractGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMySimpleAbstractGroup
@@ -104,7 +104,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mySimpleAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mySimpleAbstract</b></em>' feature
@@ -117,7 +117,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myComplexAbstractGroup</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myComplexAbstractGroup</b></em>' feature
@@ -129,7 +129,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Sets the '{@link NumberType#getMyComplexAbstractGroup() <em>myComplexAbstractGroup</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMyComplexAbstractGroup
@@ -142,7 +142,7 @@ public class NumberType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>myComplexAbstract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>myComplexAbstract</b></em>' feature

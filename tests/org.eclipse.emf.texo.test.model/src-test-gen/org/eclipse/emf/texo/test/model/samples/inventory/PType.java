@@ -90,7 +90,7 @@ public class PType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>id</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>id</b></em>' feature
@@ -102,7 +102,7 @@ public class PType extends Identifiable {
 
   /**
    * Sets the '{@link PType#getId() <em>id</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newId
@@ -115,7 +115,7 @@ public class PType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -127,7 +127,7 @@ public class PType extends Identifiable {
 
   /**
    * Sets the '{@link PType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -140,7 +140,7 @@ public class PType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>base</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>base</b></em>' feature
@@ -152,7 +152,7 @@ public class PType extends Identifiable {
 
   /**
    * Sets the '{@link PType#getBase() <em>base</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBase
@@ -165,7 +165,7 @@ public class PType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>subTypes</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>subTypes</b></em>' feature
@@ -222,7 +222,7 @@ public class PType extends Identifiable {
 
   /**
    * Sets the '{@link PType#getSubTypes() <em>subTypes</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSubTypes
@@ -235,7 +235,7 @@ public class PType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>subNOTypes</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>subNOTypes</b></em>' feature
@@ -289,7 +289,7 @@ public class PType extends Identifiable {
 
   /**
    * Sets the '{@link PType#getSubNOTypes() <em>subNOTypes</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSubNOTypes
@@ -302,7 +302,7 @@ public class PType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>infoReferences</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>infoReferences</b></em>' feature
@@ -356,7 +356,7 @@ public class PType extends Identifiable {
 
   /**
    * Sets the '{@link PType#getInfoReferences() <em>infoReferences</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInfoReferences

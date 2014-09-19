@@ -29,7 +29,7 @@ public class TaggedRef extends ExtendedValue {
 
   /**
    * Returns the value of '<em><b>ref</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>ref</b></em>' feature
@@ -41,7 +41,7 @@ public class TaggedRef extends ExtendedValue {
 
   /**
    * Sets the '{@link TaggedRef#getRef() <em>ref</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRef

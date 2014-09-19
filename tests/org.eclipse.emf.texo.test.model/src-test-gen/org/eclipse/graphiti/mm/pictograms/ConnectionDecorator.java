@@ -49,7 +49,7 @@ public class ConnectionDecorator extends Shape {
 
   /**
    * Returns the value of '<em><b>locationRelative</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>locationRelative</b></em>' feature
@@ -61,7 +61,7 @@ public class ConnectionDecorator extends Shape {
 
   /**
    * Sets the '{@link ConnectionDecorator#isLocationRelative() <em>locationRelative</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLocationRelative
@@ -74,7 +74,7 @@ public class ConnectionDecorator extends Shape {
 
   /**
    * Returns the value of '<em><b>location</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>location</b></em>' feature
@@ -86,7 +86,7 @@ public class ConnectionDecorator extends Shape {
 
   /**
    * Sets the '{@link ConnectionDecorator#getLocation() <em>location</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newLocation
@@ -99,7 +99,7 @@ public class ConnectionDecorator extends Shape {
 
   /**
    * Returns the value of '<em><b>connection</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>connection</b></em>' feature
@@ -111,7 +111,7 @@ public class ConnectionDecorator extends Shape {
 
   /**
    * Sets the '{@link ConnectionDecorator#getConnection() <em>connection</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newConnection

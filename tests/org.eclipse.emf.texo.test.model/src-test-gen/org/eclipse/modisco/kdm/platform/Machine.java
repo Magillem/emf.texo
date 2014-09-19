@@ -38,7 +38,7 @@ public class Machine extends AbstractPlatformElement {
 
   /**
    * Returns the value of '<em><b>deployedComponent</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>deployedComponent</b></em>' feature
@@ -95,7 +95,7 @@ public class Machine extends AbstractPlatformElement {
 
   /**
    * Sets the '{@link Machine#getDeployedComponent() <em>deployedComponent</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDeployedComponent
@@ -108,7 +108,7 @@ public class Machine extends AbstractPlatformElement {
 
   /**
    * Returns the value of '<em><b>deployedResource</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>deployedResource</b></em>' feature
@@ -165,7 +165,7 @@ public class Machine extends AbstractPlatformElement {
 
   /**
    * Sets the '{@link Machine#getDeployedResource() <em>deployedResource</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDeployedResource

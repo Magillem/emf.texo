@@ -28,7 +28,7 @@ public class Test403161_2 extends Test403161_1 {
 
   /**
    * Returns the value of '<em><b>subName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>subName</b></em>' feature
@@ -40,7 +40,7 @@ public class Test403161_2 extends Test403161_1 {
 
   /**
    * Sets the '{@link Test403161_2#getSubName() <em>subName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSubName

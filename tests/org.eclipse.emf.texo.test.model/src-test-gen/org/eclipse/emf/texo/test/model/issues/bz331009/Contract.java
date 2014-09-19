@@ -122,7 +122,7 @@ public class Contract extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simCard</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simCard</b></em>' feature
@@ -134,7 +134,7 @@ public class Contract extends Identifiable {
 
   /**
    * Sets the '{@link Contract#getSimCard() <em>simCard</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimCard
@@ -147,7 +147,7 @@ public class Contract extends Identifiable {
 
   /**
    * Returns the value of '<em><b>paymentInfo</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>paymentInfo</b></em>' feature
@@ -159,7 +159,7 @@ public class Contract extends Identifiable {
 
   /**
    * Sets the '{@link Contract#getPaymentInfo() <em>paymentInfo</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPaymentInfo

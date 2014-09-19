@@ -48,7 +48,7 @@ public class TestADTO extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>testB</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>testB</b></em>' feature
@@ -60,7 +60,7 @@ public class TestADTO extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link TestADTO#getTestB() <em>testB</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTestB
@@ -73,7 +73,7 @@ public class TestADTO extends Identifiable implements Serializable {
 
   /**
    * Returns the value of '<em><b>testEnum</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>testEnum</b></em>' feature
@@ -85,7 +85,7 @@ public class TestADTO extends Identifiable implements Serializable {
 
   /**
    * Sets the '{@link TestADTO#getTestEnum() <em>testEnum</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTestEnum

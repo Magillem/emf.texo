@@ -32,7 +32,7 @@ public class BZ390942 extends Identifiable {
 
   /**
    * Returns the value of '<em><b>value</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>value</b></em>' feature
@@ -44,7 +44,7 @@ public class BZ390942 extends Identifiable {
 
   /**
    * Sets the '{@link BZ390942#getValue() <em>value</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newValue

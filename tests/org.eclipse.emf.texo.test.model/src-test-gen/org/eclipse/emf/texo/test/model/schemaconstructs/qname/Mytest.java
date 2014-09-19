@@ -57,7 +57,7 @@ public class Mytest extends Identifiable {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -69,7 +69,7 @@ public class Mytest extends Identifiable {
 
   /**
    * Sets the '{@link Mytest#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription
@@ -82,7 +82,7 @@ public class Mytest extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -94,7 +94,7 @@ public class Mytest extends Identifiable {
 
   /**
    * Sets the '{@link Mytest#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -107,7 +107,7 @@ public class Mytest extends Identifiable {
 
   /**
    * Returns the value of '<em><b>names</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>names</b></em>' feature
@@ -119,7 +119,7 @@ public class Mytest extends Identifiable {
 
   /**
    * Sets the '{@link Mytest#getNames() <em>names</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNames

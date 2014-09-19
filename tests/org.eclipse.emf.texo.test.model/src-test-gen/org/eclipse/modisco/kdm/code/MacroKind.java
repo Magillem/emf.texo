@@ -111,7 +111,7 @@ public enum MacroKind {
   /**
    * Returns the '<em><b>MacroKind</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the MacroKind, the literal enum class

@@ -111,7 +111,7 @@ public enum CallableKind {
   /**
    * Returns the '<em><b>CallableKind</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the CallableKind, the literal enum class

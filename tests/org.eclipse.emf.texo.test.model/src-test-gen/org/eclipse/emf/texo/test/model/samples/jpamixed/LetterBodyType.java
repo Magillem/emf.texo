@@ -37,7 +37,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mixed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mixed</b></em>' feature
@@ -49,7 +49,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getMixed() <em>mixed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMixed
@@ -62,7 +62,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>salutation</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>salutation</b></em>' feature
@@ -75,7 +75,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getSalutation() <em>salutation</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSalutation
@@ -89,7 +89,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>quantity</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>quantity</b></em>' feature
@@ -102,7 +102,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getQuantity() <em>quantity</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newQuantity
@@ -116,7 +116,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>productName</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>productName</b></em>' feature
@@ -129,7 +129,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getProductName() <em>productName</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newProductName
@@ -143,7 +143,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>shipDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>shipDate</b></em>' feature
@@ -156,7 +156,7 @@ public class LetterBodyType extends Identifiable {
 
   /**
    * Sets the '{@link LetterBodyType#getShipDate() <em>shipDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newShipDate

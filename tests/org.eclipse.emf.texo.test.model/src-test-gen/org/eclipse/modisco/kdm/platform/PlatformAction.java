@@ -39,7 +39,7 @@ public class PlatformAction extends AbstractPlatformElement {
 
   /**
    * Returns the value of '<em><b>kind</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>kind</b></em>' feature
@@ -51,7 +51,7 @@ public class PlatformAction extends AbstractPlatformElement {
 
   /**
    * Sets the '{@link PlatformAction#getKind() <em>kind</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newKind
@@ -64,7 +64,7 @@ public class PlatformAction extends AbstractPlatformElement {
 
   /**
    * Returns the value of '<em><b>platformElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>platformElement</b></em>' feature
@@ -121,7 +121,7 @@ public class PlatformAction extends AbstractPlatformElement {
 
   /**
    * Sets the '{@link PlatformAction#getPlatformElement() <em>platformElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPlatformElement

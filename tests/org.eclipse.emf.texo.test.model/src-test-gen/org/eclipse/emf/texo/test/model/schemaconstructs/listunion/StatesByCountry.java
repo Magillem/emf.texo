@@ -108,7 +108,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>country</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>country</b></em>' feature
@@ -120,7 +120,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getCountry() <em>country</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newCountry
@@ -133,7 +133,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>allStates</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>allStates</b></em>' feature
@@ -145,7 +145,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getAllStates() <em>allStates</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAllStates
@@ -158,7 +158,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>sixImportantStates</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>sixImportantStates</b></em>' feature
@@ -170,7 +170,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getSixImportantStates() <em>sixImportantStates</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSixImportantStates
@@ -183,7 +183,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>zipUnion</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>zipUnion</b></em>' feature
@@ -195,7 +195,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getZipUnion() <em>zipUnion</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newZipUnion
@@ -208,7 +208,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>zipUnions</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>zipUnions</b></em>' feature
@@ -220,7 +220,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getZipUnions() <em>zipUnions</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newZipUnions
@@ -233,7 +233,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simpleUnion</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simpleUnion</b></em>' feature
@@ -245,7 +245,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getSimpleUnion() <em>simpleUnion</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimpleUnion
@@ -258,7 +258,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simpleUnions</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simpleUnions</b></em>' feature
@@ -270,7 +270,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getSimpleUnions() <em>simpleUnions</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimpleUnions
@@ -283,7 +283,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simpleStringUnion</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simpleStringUnion</b></em>' feature
@@ -295,7 +295,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getSimpleStringUnion() <em>simpleStringUnion</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimpleStringUnion
@@ -308,7 +308,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Returns the value of '<em><b>simpleStringUnions</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>simpleStringUnions</b></em>' feature
@@ -320,7 +320,7 @@ public class StatesByCountry extends Identifiable {
 
   /**
    * Sets the '{@link StatesByCountry#getSimpleStringUnions() <em>simpleStringUnions</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSimpleStringUnions

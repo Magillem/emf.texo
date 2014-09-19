@@ -67,7 +67,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Returns the value of '<em><b>numPosts</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>numPosts</b></em>' feature
@@ -79,7 +79,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Sets the '{@link XMLDeviant#getNumPosts() <em>numPosts</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNumPosts
@@ -92,7 +92,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Returns the value of '<em><b>signature</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>signature</b></em>' feature
@@ -104,7 +104,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Sets the '{@link XMLDeviant#getSignature() <em>signature</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newSignature
@@ -117,7 +117,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Returns the value of '<em><b>email</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>email</b></em>' feature
@@ -129,7 +129,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Sets the '{@link XMLDeviant#getEmail() <em>email</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newEmail
@@ -142,7 +142,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Returns the value of '<em><b>firstSubscribed</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>firstSubscribed</b></em>' feature
@@ -154,7 +154,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Sets the '{@link XMLDeviant#getFirstSubscribed() <em>firstSubscribed</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newFirstSubscribed
@@ -167,7 +167,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Returns the value of '<em><b>mailReader</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>mailReader</b></em>' feature
@@ -179,7 +179,7 @@ public class XMLDeviant extends Identifiable {
 
   /**
    * Sets the '{@link XMLDeviant#getMailReader() <em>mailReader</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMailReader

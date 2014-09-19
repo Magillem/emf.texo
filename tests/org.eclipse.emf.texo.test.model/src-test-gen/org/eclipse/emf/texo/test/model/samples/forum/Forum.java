@@ -53,7 +53,7 @@ public class Forum extends Identifiable {
 
   /**
    * Returns the value of '<em><b>title</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>title</b></em>' feature
@@ -65,7 +65,7 @@ public class Forum extends Identifiable {
 
   /**
    * Sets the '{@link Forum#getTitle() <em>title</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTitle
@@ -78,7 +78,7 @@ public class Forum extends Identifiable {
 
   /**
    * Returns the value of '<em><b>members</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>members</b></em>' feature
@@ -135,7 +135,7 @@ public class Forum extends Identifiable {
 
   /**
    * Sets the '{@link Forum#getMembers() <em>members</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newMembers
@@ -148,7 +148,7 @@ public class Forum extends Identifiable {
 
   /**
    * Returns the value of '<em><b>topics</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>topics</b></em>' feature
@@ -205,7 +205,7 @@ public class Forum extends Identifiable {
 
   /**
    * Sets the '{@link Forum#getTopics() <em>topics</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTopics

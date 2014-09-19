@@ -35,7 +35,7 @@ public class BooksType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>book</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>book</b></em>' feature
@@ -92,7 +92,7 @@ public class BooksType extends Identifiable {
 
   /**
    * Sets the '{@link BooksType#getBook() <em>book</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBook

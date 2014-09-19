@@ -41,7 +41,7 @@ public class MmModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -88,7 +88,7 @@ public class MmModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -145,12 +145,12 @@ public class MmModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Property</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PropertyModelObject<E extends Property> extends
@@ -330,12 +330,12 @@ public class MmModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>GraphicsAlgorithmContainer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class GraphicsAlgorithmContainerModelObject<E extends GraphicsAlgorithmContainer> extends
@@ -414,12 +414,12 @@ public class MmModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>StyleContainer</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class StyleContainerModelObject<E extends StyleContainer> extends

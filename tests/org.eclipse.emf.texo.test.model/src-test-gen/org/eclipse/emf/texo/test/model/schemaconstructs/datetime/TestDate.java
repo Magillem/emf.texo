@@ -43,7 +43,7 @@ public class TestDate extends Identifiable {
 
   /**
    * Returns the value of '<em><b>date</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>date</b></em>' feature
@@ -55,7 +55,7 @@ public class TestDate extends Identifiable {
 
   /**
    * Sets the '{@link TestDate#getDate() <em>date</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDate
@@ -68,7 +68,7 @@ public class TestDate extends Identifiable {
 
   /**
    * Returns the value of '<em><b>datetime</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>datetime</b></em>' feature
@@ -80,7 +80,7 @@ public class TestDate extends Identifiable {
 
   /**
    * Sets the '{@link TestDate#getDatetime() <em>datetime</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDatetime

@@ -32,7 +32,7 @@ public class CompositeType extends Datatype {
 
   /**
    * Returns the value of '<em><b>itemUnit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>itemUnit</b></em>' feature
@@ -89,7 +89,7 @@ public class CompositeType extends Datatype {
 
   /**
    * Sets the '{@link CompositeType#getItemUnit() <em>itemUnit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newItemUnit

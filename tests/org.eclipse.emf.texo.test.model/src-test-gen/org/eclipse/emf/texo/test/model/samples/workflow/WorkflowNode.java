@@ -75,7 +75,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>workflow</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>workflow</b></em>' feature
@@ -87,7 +87,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Sets the '{@link WorkflowNode#getWorkflow() <em>workflow</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newWorkflow
@@ -100,7 +100,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>outputs</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>outputs</b></em>' feature
@@ -157,7 +157,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Sets the '{@link WorkflowNode#getOutputs() <em>outputs</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newOutputs
@@ -170,7 +170,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>inputs</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>inputs</b></em>' feature
@@ -227,7 +227,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Sets the '{@link WorkflowNode#getInputs() <em>inputs</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newInputs
@@ -240,7 +240,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>isStart</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>isStart</b></em>' feature
@@ -252,7 +252,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Sets the '{@link WorkflowNode#isIsStart() <em>isStart</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIsStart
@@ -265,7 +265,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Returns the value of '<em><b>isFinish</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>isFinish</b></em>' feature
@@ -277,7 +277,7 @@ public abstract class WorkflowNode extends WorkflowElement {
 
   /**
    * Sets the '{@link WorkflowNode#isIsFinish() <em>isFinish</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newIsFinish

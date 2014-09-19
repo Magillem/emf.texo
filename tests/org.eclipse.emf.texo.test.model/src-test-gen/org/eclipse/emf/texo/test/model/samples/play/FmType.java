@@ -36,7 +36,7 @@ public class FmType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>p</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>p</b></em>' feature
@@ -48,7 +48,7 @@ public class FmType extends Identifiable {
 
   /**
    * Sets the '{@link FmType#getP() <em>p</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newP

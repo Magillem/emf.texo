@@ -19,7 +19,7 @@ import org.eclipse.emf.texo.utils.ModelUtils;
 /**
  * The <b>Package</b> for the model '<em><b>mixed</b></em>'. It contains initialization code and access to the Factory
  * to instantiate types of this package.
- * 
+ *
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
@@ -196,9 +196,9 @@ public class MixedModelPackage extends ModelPackage {
 
   /**
    * Initializes this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return an initialized instance of this class
-   * 
+   *
    * @generated
    */
   public static MixedModelPackage initialize() {
@@ -240,7 +240,7 @@ public class MixedModelPackage extends ModelPackage {
 
   /**
    * Returns the {@link ModelFactory} of this ModelPackage. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the {@link MixedModelFactory} instance.
    * @generated
    */
@@ -252,7 +252,7 @@ public class MixedModelPackage extends ModelPackage {
   /**
    * Returns the nsUri of the {@link EPackage} managed by this Package instance. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @return the nsUri of the EPackage
    * @generated
    */

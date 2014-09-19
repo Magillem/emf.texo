@@ -30,7 +30,7 @@ public class DataContainer extends DataResource {
 
   /**
    * Returns the value of '<em><b>dataElement</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>dataElement</b></em>' feature
@@ -87,7 +87,7 @@ public class DataContainer extends DataResource {
 
   /**
    * Sets the '{@link DataContainer#getDataElement() <em>dataElement</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDataElement

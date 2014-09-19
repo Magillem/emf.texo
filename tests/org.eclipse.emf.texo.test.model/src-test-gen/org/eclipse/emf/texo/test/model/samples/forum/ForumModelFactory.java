@@ -46,7 +46,7 @@ public class ForumModelFactory implements ModelFactory {
 
   /**
    * Wraps an object in a {@link ModelObject}. <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eClass
    *          the EClass of the object
    * @param adaptee
@@ -93,7 +93,7 @@ public class ForumModelFactory implements ModelFactory {
   /**
    * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}. If the feature map entry is null then a
    * new one is created and <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param eFeature
    *          the feature map feature of the object
    * @param adaptee
@@ -249,12 +249,12 @@ public class ForumModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Forum</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class ForumModelObject<E extends Forum> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -357,12 +357,12 @@ public class ForumModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Member</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class MemberModelObject<E extends Member> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -465,12 +465,12 @@ public class ForumModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Topic</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class TopicModelObject<E extends Topic> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
@@ -572,12 +572,12 @@ public class ForumModelFactory implements ModelFactory {
 
   /**
    * The adapter/wrapper for the EClass '<em><b>Post</b></em>'.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @param <E>
    *          the domain model java class
-   * 
+   *
    * @generated
    */
   public static class PostModelObject<E extends Post> extends IdentifiableModelFactory.IdentifiableModelObject<E> {

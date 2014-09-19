@@ -52,7 +52,7 @@ public class RentalContractLine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>rentalContract</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>rentalContract</b></em>' feature
@@ -64,7 +64,7 @@ public class RentalContractLine extends Identifiable {
 
   /**
    * Sets the '{@link RentalContractLine#getRentalContract() <em>rentalContract</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRentalContract
@@ -77,7 +77,7 @@ public class RentalContractLine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>number</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>number</b></em>' feature
@@ -89,7 +89,7 @@ public class RentalContractLine extends Identifiable {
 
   /**
    * Sets the '{@link RentalContractLine#getNumber() <em>number</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newNumber
@@ -102,7 +102,7 @@ public class RentalContractLine extends Identifiable {
 
   /**
    * Returns the value of '<em><b>rentalUnit</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>rentalUnit</b></em>' feature
@@ -114,7 +114,7 @@ public class RentalContractLine extends Identifiable {
 
   /**
    * Sets the '{@link RentalContractLine#getRentalUnit() <em>rentalUnit</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newRentalUnit

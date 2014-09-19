@@ -95,7 +95,7 @@ public enum TypeType {
   /**
    * Returns the '<em><b>TypeType</b></em>' literal with the specified literal value. <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
+   *
    * @param literal
    *          the literal to use to get the enum instance
    * @return the TypeType, the literal enum class

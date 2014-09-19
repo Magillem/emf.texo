@@ -103,7 +103,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -115,7 +115,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -128,7 +128,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>iSBN</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>iSBN</b></em>' feature
@@ -140,7 +140,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getISBN() <em>iSBN</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newISBN
@@ -153,7 +153,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>price</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>price</b></em>' feature
@@ -165,7 +165,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getPrice() <em>price</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPrice
@@ -178,7 +178,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>authors</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>authors</b></em>' feature
@@ -190,7 +190,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getAuthors() <em>authors</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newAuthors
@@ -203,7 +203,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>description</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>description</b></em>' feature
@@ -215,7 +215,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getDescription() <em>description</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDescription
@@ -228,7 +228,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>promotion</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>promotion</b></em>' feature
@@ -240,7 +240,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getPromotion() <em>promotion</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPromotion
@@ -253,7 +253,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>publicationDate</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>publicationDate</b></em>' feature
@@ -265,7 +265,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getPublicationDate() <em>publicationDate</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newPublicationDate
@@ -278,7 +278,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>bookCategory</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>bookCategory</b></em>' feature
@@ -290,7 +290,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getBookCategory() <em>bookCategory</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newBookCategory
@@ -303,7 +303,7 @@ public class BookType extends Identifiable {
 
   /**
    * Returns the value of '<em><b>itemId</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>itemId</b></em>' feature
@@ -315,7 +315,7 @@ public class BookType extends Identifiable {
 
   /**
    * Sets the '{@link BookType#getItemId() <em>itemId</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newItemId
