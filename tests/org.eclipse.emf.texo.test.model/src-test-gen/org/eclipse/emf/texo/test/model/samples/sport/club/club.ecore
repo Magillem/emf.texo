@@ -5,7 +5,7 @@
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
     <details key="basePackage" value="org.eclipse.emf.texo.test.model.samples.sport"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="Club" eSuperTypes="org.eclipse.emf.texo.test.model.samples.sport.society#//Society">
+  <eClassifiers xsi:type="ecore:EClass" name="Club" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EObject">
     <eStructuralFeatures xsi:type="ecore:EReference" name="teams" upperBound="-1"
         eType="#//Team" containment="true" resolveProxies="false">
       <eAnnotations source="org.eclipse.emf.texo">

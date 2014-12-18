@@ -9,7 +9,6 @@ import org.eclipse.emf.texo.model.ModelFactory;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.server.store.DaoRegistry;
-import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelPackage;
 import org.eclipse.emf.texo.test.model.samples.sport.society.dao.SocietyDao;
 import org.eclipse.emf.texo.utils.ModelUtils;
 
@@ -56,49 +55,21 @@ public class SocietyModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int SOCIETY_DB_ID_FEATURE_ID = 0;
+  public static final int SOCIETY_DB_ID_FEATURE_ID = -1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int SOCIETY_DB_VERSION_FEATURE_ID = 1;
+  public static final int SOCIETY_DB_VERSION_FEATURE_ID = -1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int SOCIETY_DB_ID_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SOCIETY_DB_VERSION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SOCIETY_DB_ID_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SOCIETY_DB_VERSION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int SOCIETY_NAME_FEATURE_ID = 4;
+  public static final int SOCIETY_NAME_FEATURE_ID = 0;
 
   /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -129,8 +100,6 @@ public class SocietyModelPackage extends ModelPackage {
     ModelUtils.readEPackagesFromFile(modelPackage);
 
     isInitialized = true;
-
-    IdentifiableModelPackage.initialize();
 
     // force the initialization of the EFactory proxy
     modelPackage.getEPackage();
@@ -170,7 +139,7 @@ public class SocietyModelPackage extends ModelPackage {
   /**
    * Returns the name of the ecore file containing the ecore model of the {@link EPackage} managed here. <!--
    * begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the name of the ecore file
    * @generated
    */

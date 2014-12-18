@@ -161,6 +161,7 @@ public class EclipseModelGeneratorTest extends TestCase {
       // }
 
       if (true || !isGenerateTexoModels()) {
+        // also reads the identifiable.xcore in memory
         addSuperType(ePackages, packageRegistry);
 
         boolean hasIdentifiable = false;
@@ -212,8 +213,9 @@ public class EclipseModelGeneratorTest extends TestCase {
     // first check if there is already an identifiable, if so use that one
     EClass identifiableEClass = getIdentifiableSuperEClass(ePackages);
     if (identifiableEClass == null) {
-      final List<EPackage> identifiableEPackages = GeneratorUtils.readEPackages(
-          Collections.singletonList(TestModel.getModelPlatformUri("base/identifiable.ecore")), packageRegistry, false); //$NON-NLS-1$
+      final List<EPackage> identifiableEPackages = GeneratorUtils
+          .readEPackages(
+              Collections.singletonList(TestModel.getModelPlatformUri("samples/identifiable.xcore")), packageRegistry, false); //$NON-NLS-1$
 
       for (EPackage ePackage : identifiableEPackages) {
         if (ePackage.getNsURI().equals(IDENTIFIABLE_NSURI)) {

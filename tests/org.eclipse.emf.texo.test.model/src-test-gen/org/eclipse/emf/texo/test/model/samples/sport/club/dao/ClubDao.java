@@ -7,7 +7,7 @@ import org.eclipse.emf.texo.test.model.samples.sport.club.ClubModelPackage;
 
 /**
  * The Dao implementation for the model object '<em><b>Club</b></em>'.
- * 
+ *
  * @generated
  */
 public class ClubDao extends BaseDao<Club> {

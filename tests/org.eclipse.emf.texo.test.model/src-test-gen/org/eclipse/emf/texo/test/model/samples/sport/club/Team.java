@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.OrderColumn;
@@ -20,7 +19,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "club_Team")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Team extends Identifiable {
@@ -81,7 +79,7 @@ public class Team extends Identifiable {
 
   /**
    * Adds to the <em>members</em> feature.
-   * 
+   *
    * @param membersValue
    *          the value to add
    * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
@@ -97,12 +95,12 @@ public class Team extends Identifiable {
 
   /**
    * Removes from the <em>members</em> feature.
-   * 
+   *
    * @param membersValue
    *          the value to remove
    * @return true if the value is removed from the collection (it existed in the collection before removing), false
    *         otherwise
-   * 
+   *
    * @generated
    */
   public boolean removeFromMembers(Member membersValue) {

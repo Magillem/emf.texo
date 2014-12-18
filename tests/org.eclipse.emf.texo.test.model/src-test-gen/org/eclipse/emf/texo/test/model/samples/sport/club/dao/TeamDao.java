@@ -7,7 +7,7 @@ import org.eclipse.emf.texo.test.model.samples.sport.club.Team;
 
 /**
  * The Dao implementation for the model object '<em><b>Team</b></em>'.
- * 
+ *
  * @generated
  */
 public class TeamDao extends BaseDao<Team> {

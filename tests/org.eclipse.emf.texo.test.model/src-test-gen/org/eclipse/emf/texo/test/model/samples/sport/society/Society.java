@@ -2,9 +2,9 @@ package org.eclipse.emf.texo.test.model.samples.sport.society;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
-import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
 import org.eclipse.persistence.annotations.Converter;
 import org.eclipse.persistence.annotations.Converters;
 
@@ -16,7 +16,7 @@ import org.eclipse.persistence.annotations.Converters;
 @Entity(name = "society_Society")
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
-public class Society extends Identifiable {
+public class Society extends EObject {
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

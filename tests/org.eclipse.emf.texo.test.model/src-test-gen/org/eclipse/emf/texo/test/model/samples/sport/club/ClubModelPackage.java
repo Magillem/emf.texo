@@ -15,7 +15,6 @@ import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelPackag
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.ClubDao;
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.MemberDao;
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.TeamDao;
-import org.eclipse.emf.texo.test.model.samples.sport.society.SocietyModelPackage;
 import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
@@ -82,42 +81,7 @@ public class ClubModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int CLUB_DB_ID_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CLUB_DB_VERSION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CLUB_DB_ID_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CLUB_DB_VERSION_FEATURE_ID = 3;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CLUB_NAME_FEATURE_ID = 4;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int CLUB_TEAMS_FEATURE_ID = 5;
+  public static final int CLUB_TEAMS_FEATURE_ID = 2;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -233,7 +197,6 @@ public class ClubModelPackage extends ModelPackage {
 
     isInitialized = true;
 
-    SocietyModelPackage.initialize();
     IdentifiableModelPackage.initialize();
 
     // force the initialization of the EFactory proxy
@@ -280,7 +243,7 @@ public class ClubModelPackage extends ModelPackage {
   /**
    * Returns the name of the ecore file containing the ecore model of the {@link EPackage} managed here. <!--
    * begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the name of the ecore file
    * @generated
    */

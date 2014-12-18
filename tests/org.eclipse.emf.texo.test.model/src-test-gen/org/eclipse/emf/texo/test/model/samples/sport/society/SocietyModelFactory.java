@@ -1,5 +1,6 @@
 package org.eclipse.emf.texo.test.model.samples.sport.society;
 
+import org.eclipse.emf._2002.ecore.EcoreModelFactory;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -8,7 +9,6 @@ import org.eclipse.emf.texo.model.ModelFactory;
 import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
-import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelFactory;
 
 /**
  * The <b>{@link ModelFactory}</b> for the types of this model: society. It contains code to create instances
@@ -63,7 +63,7 @@ public class SocietyModelFactory implements ModelFactory {
 
   /**
    * Creates a feature map entry instance for a certain EStructuralFeature.
-   * 
+   *
    * @param eFeature
    *          the feature map feature
    * @return the pojo feature map entry
@@ -142,7 +142,7 @@ public class SocietyModelFactory implements ModelFactory {
    *
    * @generated
    */
-  public static class SocietyModelObject<E extends Society> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
+  public static class SocietyModelObject<E extends Society> extends EcoreModelFactory.EObjectModelObject<E> {
     /**
      * @generated
      */
@@ -166,10 +166,6 @@ public class SocietyModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case SocietyModelPackage.SOCIETY_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case SocietyModelPackage.SOCIETY_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case SocietyModelPackage.SOCIETY_DB_ID_FEATURE_ID:
         return getTarget().getDb_Id();
       case SocietyModelPackage.SOCIETY_DB_VERSION_FEATURE_ID:

@@ -1,6 +1,7 @@
 package org.eclipse.emf.texo.test.model.samples.sport.club;
 
 import java.util.List;
+import org.eclipse.emf._2002.ecore.EcoreModelFactory;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -10,7 +11,6 @@ import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelFactory;
-import org.eclipse.emf.texo.test.model.samples.sport.society.SocietyModelFactory;
 
 /**
  * The <b>{@link ModelFactory}</b> for the types of this model: club. It contains code to create instances
@@ -75,7 +75,7 @@ public class ClubModelFactory implements ModelFactory {
 
   /**
    * Creates a feature map entry instance for a certain EStructuralFeature.
-   * 
+   *
    * @param eFeature
    *          the feature map feature
    * @return the pojo feature map entry
@@ -208,7 +208,7 @@ public class ClubModelFactory implements ModelFactory {
    *
    * @generated
    */
-  public static class ClubModelObject<E extends Club> extends SocietyModelFactory.SocietyModelObject<E> {
+  public static class ClubModelObject<E extends Club> extends EcoreModelFactory.EObjectModelObject<E> {
     /**
      * @generated
      */
@@ -236,12 +236,6 @@ public class ClubModelFactory implements ModelFactory {
         return getTarget().getDb_Id();
       case ClubModelPackage.CLUB_DB_VERSION_FEATURE_ID:
         return getTarget().getDb_version();
-      case ClubModelPackage.CLUB_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case ClubModelPackage.CLUB_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
-      case ClubModelPackage.CLUB_NAME_FEATURE_ID:
-        return getTarget().getName();
       case ClubModelPackage.CLUB_TEAMS_FEATURE_ID:
         return getTarget().getTeams();
       default:
