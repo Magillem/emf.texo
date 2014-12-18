@@ -28,6 +28,7 @@ import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
 import org.eclipse.emf.texo.test.model.samples.extlibrary.ExtlibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.schoollibrary.SchoollibraryModelPackage;
+import org.eclipse.emf.texo.test.model.samples.sport.club.ClubModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.anytype.AnytypeModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.attributes.AttributesModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.duration.DurationModelPackage;
@@ -79,6 +80,8 @@ public class ModelJPATestSuite {
       }
     }
 
+    modelPackages.clear();
+    modelPackages.add(ClubModelPackage.INSTANCE);
     return suite;
   }
 
