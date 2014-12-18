@@ -129,17 +129,15 @@ public class EclipseModelGeneratorTest extends TestCase {
           .createEPackageRegistry();
       final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(packageRegistry);
 
+      // make sure to read the xcore in the package registry
+      GeneratorUtils.readEPackages(
+          Collections.singletonList(TestModel.getModelPlatformUri("samples/identifiable.xcore")), packageRegistry, //$NON-NLS-1$
+          false);
+
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {
         final URI uri = TestModel.getModelPlatformUri(ecoreFileName);
         uris.add(uri);
-
-        // make sure to read the xcore in the package registry
-        if (ecoreFileName.endsWith("xcore")) { //$NON-NLS-1$
-          GeneratorUtils.readEPackages(
-              Collections.singletonList(TestModel.getModelPlatformUri("samples/identifiable.xcore")), packageRegistry, //$NON-NLS-1$
-              false);
-        }
 
         // read the deps
         final List<String> deps = TestModel.getModelDependencies(ecoreFileName);
@@ -219,10 +217,19 @@ public class EclipseModelGeneratorTest extends TestCase {
 
     // first check if there is already an identifiable, if so use that one
     EClass identifiableEClass = getIdentifiableSuperEClass(ePackages);
+
+    // read it from the package registry
     if (identifiableEClass == null) {
-      final List<EPackage> identifiableEPackages = GeneratorUtils
-          .readEPackages(
-              Collections.singletonList(TestModel.getModelPlatformUri("samples/identifiable.xcore")), packageRegistry, false); //$NON-NLS-1$
+      EPackage identifiableEPackage = packageRegistry.getEPackage(IDENTIFIABLE_NSURI);
+      if (identifiableEPackage != null) {
+        identifiableEClass = getIdentifiableSuperEClass(Collections.singletonList(identifiableEPackage));
+      }
+    }
+
+    // not found then read it
+    if (identifiableEClass == null) {
+      final List<EPackage> identifiableEPackages = GeneratorUtils.readEPackages(
+          Collections.singletonList(TestModel.getModelPlatformUri("base/identifiable.ecore")), packageRegistry, false); //$NON-NLS-1$
 
       for (EPackage ePackage : identifiableEPackages) {
         if (ePackage.getNsURI().equals(IDENTIFIABLE_NSURI)) {

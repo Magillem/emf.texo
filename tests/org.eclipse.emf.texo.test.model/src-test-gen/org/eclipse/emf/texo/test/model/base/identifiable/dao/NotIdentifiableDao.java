@@ -7,7 +7,7 @@ import org.eclipse.emf.texo.test.model.base.identifiable.NotIdentifiable;
 
 /**
  * The Dao implementation for the model object '<em><b>NotIdentifiable</b></em>'.
- * 
+ *
  * @generated
  */
 public class NotIdentifiableDao extends BaseDao<NotIdentifiable> {

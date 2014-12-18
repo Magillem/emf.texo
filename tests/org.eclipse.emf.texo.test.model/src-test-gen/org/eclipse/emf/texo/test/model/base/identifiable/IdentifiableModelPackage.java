@@ -71,14 +71,14 @@ public class IdentifiableModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int NOTIDENTIFIABLE_CLASSIFIER_ID = 2;
+  public static final int NOTIDENTIFIABLE_CLASSIFIER_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int IDENTIFIABLEINTERFACE_CLASSIFIER_ID = 1;
+  public static final int IDENTIFIABLEINTERFACE_CLASSIFIER_ID = 2;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

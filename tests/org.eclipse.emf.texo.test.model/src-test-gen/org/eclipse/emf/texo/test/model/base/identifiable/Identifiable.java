@@ -1,20 +1,22 @@
 package org.eclipse.emf.texo.test.model.base.identifiable;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Version;
+import javax.persistence.Basic;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.Entity;
+import org.eclipse.emf.texo.test.TexoTestObjectConverter;
+import org.eclipse.emf.texo.test.TexoTestQNameConverter;
+import org.eclipse.persistence.annotations.Converter;
+import org.eclipse.persistence.annotations.Converters;
 
 /**
  * A representation of the model object '<em><b>Identifiable</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
  */
-@MappedSuperclass()
-@Access(AccessType.FIELD)
+@Entity(name = "identifiable_Identifiable")
+@DiscriminatorColumn(length = 255)
+@Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
+    @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public abstract class Identifiable {
 
   /**
@@ -22,8 +24,7 @@ public abstract class Identifiable {
    * 
    * @generated
    */
-  @Id()
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @Basic()
   private Long db_Id = null;
 
   /**
@@ -31,8 +32,7 @@ public abstract class Identifiable {
    * 
    * @generated
    */
-  @Version()
-  @Access(AccessType.FIELD)
+  @Basic()
   private Integer db_version = null;
 
   /**
