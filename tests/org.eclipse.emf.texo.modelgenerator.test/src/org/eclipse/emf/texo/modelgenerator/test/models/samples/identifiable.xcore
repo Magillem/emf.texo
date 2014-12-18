@@ -1,4 +1,4 @@
-@Ecore(nsURI="http://www.eclipse.org/emf/texo/test/model/base/identifiable")
+@Ecore(name="identifiable", nsURI="http://www.eclipse.org/emf/texo/test/model/base/identifiable")
 package org.eclipse.emf.texo.test.model.base.identifiable
 
 abstract class Identifiable 

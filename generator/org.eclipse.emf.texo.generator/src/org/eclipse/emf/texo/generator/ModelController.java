@@ -142,6 +142,10 @@ public class ModelController implements AnnotationProvider {
 
         // now handle the efeatures
         for (final EReference eref : eClass.getEReferences()) {
+          if (eref.getEReferenceType() == null) {
+            throw new IllegalStateException("EReferenceType is null " + eref.getEContainingClass().getName() + "." //$NON-NLS-1$//$NON-NLS-2$
+                + eref.getName());
+          }
           final EPackage refEPackage = eref.getEReferenceType().getEPackage();
           if (refEPackage != ePackage && !epacks.contains(refEPackage)) {
             epacks.add(refEPackage);
