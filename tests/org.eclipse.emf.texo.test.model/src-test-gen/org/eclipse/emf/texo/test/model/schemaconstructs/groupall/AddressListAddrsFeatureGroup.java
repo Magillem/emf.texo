@@ -134,7 +134,7 @@ public class AddressListAddrsFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private AddressType shipTo;
 
   /**
@@ -142,7 +142,7 @@ public class AddressListAddrsFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private AddressType billTo;
 
   /**

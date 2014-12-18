@@ -134,7 +134,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private Writer writers;
 
   /**
@@ -142,7 +142,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private Employee employees;
 
   /**
@@ -150,7 +150,7 @@ public class LibraryPeopleFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private Borrower borrowers;
 
   /**

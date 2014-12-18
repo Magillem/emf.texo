@@ -4,7 +4,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinTable;
 import javax.persistence.MapKeyColumn;
@@ -21,7 +20,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "emap_BookStore")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class BookStore extends Identifiable {

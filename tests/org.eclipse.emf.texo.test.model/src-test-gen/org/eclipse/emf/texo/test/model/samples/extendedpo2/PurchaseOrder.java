@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -28,7 +27,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "com_example_epo2_PurchaseOrder")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class PurchaseOrder extends Identifiable {
@@ -47,7 +45,7 @@ public class PurchaseOrder extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private Address billTo = null;
 
   /**
@@ -55,7 +53,7 @@ public class PurchaseOrder extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL })
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private Address shipTo = null;
 
   /**
@@ -90,7 +88,7 @@ public class PurchaseOrder extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = false)
-  @JoinColumns({ @JoinColumn() })
+  @JoinColumns({ @JoinColumn(nullable = true) })
   private Customer customer = null;
 
   /**
@@ -98,7 +96,7 @@ public class PurchaseOrder extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
   private PurchaseOrder previousOrder = null;
 
   /**

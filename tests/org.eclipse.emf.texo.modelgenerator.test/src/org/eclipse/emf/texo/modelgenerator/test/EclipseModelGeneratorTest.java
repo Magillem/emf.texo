@@ -134,6 +134,13 @@ public class EclipseModelGeneratorTest extends TestCase {
         final URI uri = TestModel.getModelPlatformUri(ecoreFileName);
         uris.add(uri);
 
+        // make sure to read the xcore in the package registry
+        if (ecoreFileName.endsWith("xcore")) { //$NON-NLS-1$
+          GeneratorUtils.readEPackages(
+              Collections.singletonList(TestModel.getModelPlatformUri("samples/identifiable.xcore")), packageRegistry, //$NON-NLS-1$
+              false);
+        }
+
         // read the deps
         final List<String> deps = TestModel.getModelDependencies(ecoreFileName);
         if (deps.size() > 0) {

@@ -2,9 +2,7 @@ package org.eclipse.emf.texo.test.model.issues.bz331009;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -18,8 +16,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_Address")
-@Table(name = "m_Address")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Address extends Identifiable {
@@ -30,7 +26,7 @@ public class Address extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "zipCode")
+  @Column(name = "zipCode", nullable = true)
   private String zipCode = null;
 
   /**
@@ -39,7 +35,7 @@ public class Address extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "country")
+  @Column(name = "country", nullable = true)
   private String country = null;
 
   /**
@@ -48,7 +44,7 @@ public class Address extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "region")
+  @Column(name = "region", nullable = true)
   private String region = null;
 
   /**
@@ -57,7 +53,7 @@ public class Address extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "city")
+  @Column(name = "city", nullable = true)
   private String city = null;
 
   /**
@@ -66,7 +62,7 @@ public class Address extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "street")
+  @Column(name = "street", nullable = true)
   private String street = null;
 
   /**
@@ -75,7 +71,7 @@ public class Address extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "building")
+  @Column(name = "building", nullable = true)
   private String building = null;
 
   /**
@@ -84,7 +80,7 @@ public class Address extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "flat")
+  @Column(name = "flat", nullable = true)
   private String flat = null;
 
   /**

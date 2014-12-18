@@ -1,6 +1,5 @@
 package org.eclipse.emf.texo.test.model.samples.sport.society;
 
-import org.eclipse.emf._2002.ecore.EcoreModelFactory;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -9,6 +8,7 @@ import org.eclipse.emf.texo.model.ModelFactory;
 import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
+import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelFactory;
 
 /**
  * The <b>{@link ModelFactory}</b> for the types of this model: society. It contains code to create instances
@@ -142,7 +142,7 @@ public class SocietyModelFactory implements ModelFactory {
    *
    * @generated
    */
-  public static class SocietyModelObject<E extends Society> extends EcoreModelFactory.EObjectModelObject<E> {
+  public static class SocietyModelObject<E extends Society> extends IdentifiableModelFactory.IdentifiableModelObject<E> {
     /**
      * @generated
      */

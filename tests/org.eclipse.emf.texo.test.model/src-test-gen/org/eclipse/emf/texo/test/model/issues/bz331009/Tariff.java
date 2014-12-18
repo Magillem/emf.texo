@@ -7,13 +7,11 @@ import javax.persistence.AccessType;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OrderColumn;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -27,8 +25,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_Tariff")
-@Table(name = "m_Tariff")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public abstract class Tariff extends Identifiable {
@@ -39,7 +35,7 @@ public abstract class Tariff extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "name")
+  @Column(name = "name", nullable = true)
   private String name = null;
 
   /**
@@ -48,7 +44,7 @@ public abstract class Tariff extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "active")
+  @Column(name = "active", nullable = true)
   private boolean active = false;
 
   /**

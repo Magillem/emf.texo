@@ -3,12 +3,10 @@ package org.eclipse.emf.texo.test.model.issues.bz379815;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -21,8 +19,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "bz379815_VarInputType")
-@Table(name = "DPL_bz379815_VarInputType")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class VarInputType extends Identifiable {
@@ -33,7 +29,7 @@ public class VarInputType extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.ALL })
-  @JoinColumns({ @JoinColumn(name = "test_condition") })
+  @JoinColumns({ @JoinColumn(name = "test_condition", nullable = true) })
   private VarConditionType condition = null;
 
   /**
@@ -42,7 +38,7 @@ public class VarInputType extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "measure")
+  @Column(name = "measure", nullable = true)
   private String measure = null;
 
   /**

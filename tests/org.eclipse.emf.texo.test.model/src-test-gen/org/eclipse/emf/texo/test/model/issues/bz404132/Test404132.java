@@ -2,9 +2,7 @@ package org.eclipse.emf.texo.test.model.issues.bz404132;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoSessionCustomizer;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
@@ -20,8 +18,6 @@ import org.eclipse.persistence.annotations.Customizer;
  */
 @Entity(name = "bz404132_Test404132")
 @Customizer(value = TexoSessionCustomizer.class)
-@Table(name = "bz404132_Test404132")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Test404132 extends Identifiable {
@@ -32,7 +28,7 @@ public class Test404132 extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "name")
+  @Column(name = "name", nullable = true)
   private String name = null;
 
   /**

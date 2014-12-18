@@ -8,7 +8,6 @@ import javax.persistence.AccessType;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
@@ -16,7 +15,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OrderColumn;
-import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -31,8 +29,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_Person")
-@Table(name = "m_Person")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Person extends Identifiable {
@@ -43,7 +39,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "surname")
+  @Column(name = "surname", nullable = true)
   private String surname = null;
 
   /**
@@ -52,7 +48,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "name")
+  @Column(name = "name", nullable = true)
   private String name = null;
 
   /**
@@ -61,7 +57,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "patronimic")
+  @Column(name = "patronimic", nullable = true)
   private String patronimic = null;
 
   /**
@@ -70,7 +66,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "birthday")
+  @Column(name = "birthday", nullable = true)
   @Temporal(TemporalType.DATE)
   private Date birthday = null;
 
@@ -80,7 +76,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Person_registrationAddress") })
+  @JoinColumns({ @JoinColumn(name = "m_Person_registrationAddress", nullable = true) })
   private Address registrationAddress = null;
 
   /**
@@ -90,7 +86,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Person_factAddress") })
+  @JoinColumns({ @JoinColumn(name = "m_Person_factAddress", nullable = true) })
   private Address factAddress = null;
 
   /**
@@ -99,7 +95,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Person_passport") })
+  @JoinColumns({ @JoinColumn(name = "m_Person_passport", nullable = true) })
   private Passport passport = null;
 
   /**
@@ -108,7 +104,7 @@ public class Person extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Person_drivingLicense") })
+  @JoinColumns({ @JoinColumn(name = "m_Person_drivingLicense", nullable = true) })
   private DrivingLicense drivingLicense = null;
 
   /**

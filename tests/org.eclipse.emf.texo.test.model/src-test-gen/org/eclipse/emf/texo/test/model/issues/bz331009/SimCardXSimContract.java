@@ -1,12 +1,10 @@
 package org.eclipse.emf.texo.test.model.issues.bz331009;
 
 import javax.persistence.CascadeType;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -20,8 +18,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_SimCardXSimContract")
-@Table(name = "m_SimCardXSimContract")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class SimCardXSimContract extends Identifiable {
@@ -32,7 +28,7 @@ public class SimCardXSimContract extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_SimCardXSimContract_simCard") })
+  @JoinColumns({ @JoinColumn(name = "m_SimCardXSimContract_simCard", nullable = true) })
   private SimCard simCard = null;
 
   /**
@@ -41,7 +37,7 @@ public class SimCardXSimContract extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_SimCardXSimContract_simContract") })
+  @JoinColumns({ @JoinColumn(name = "m_SimCardXSimContract_simContract", nullable = true) })
   private SimContract simContract = null;
 
   /**

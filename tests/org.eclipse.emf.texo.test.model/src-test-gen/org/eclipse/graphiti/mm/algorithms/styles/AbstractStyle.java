@@ -2,7 +2,6 @@ package org.eclipse.graphiti.mm.algorithms.styles;
 
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -19,7 +18,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "st_AbstractStyle")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public abstract class AbstractStyle extends Identifiable {
@@ -29,7 +27,7 @@ public abstract class AbstractStyle extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
   private Color background = null;
 
   /**
@@ -37,7 +35,7 @@ public abstract class AbstractStyle extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
   private Color foreground = null;
 
   /**
@@ -78,7 +76,7 @@ public abstract class AbstractStyle extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL })
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private RenderingStyle renderingStyle = null;
 
   /**

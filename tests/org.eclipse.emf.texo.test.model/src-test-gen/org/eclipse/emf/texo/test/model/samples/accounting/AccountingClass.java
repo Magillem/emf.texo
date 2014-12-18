@@ -6,14 +6,12 @@ import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -26,8 +24,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "accounting_Accounting")
-@Table(name = "accounting_Accounting")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class AccountingClass extends Identifiable implements Serializable {
@@ -42,7 +38,7 @@ public class AccountingClass extends Identifiable implements Serializable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "name")
+  @Column(name = "name", nullable = true)
   private String name = null;
 
   /**
@@ -71,7 +67,7 @@ public class AccountingClass extends Identifiable implements Serializable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "accounting_Accounting_vatAccount") })
+  @JoinColumns({ @JoinColumn(name = "accounting_Accounting_vatAccount", nullable = true) })
   private BalanceAccount vatAccount = null;
 
   /**
@@ -80,7 +76,7 @@ public class AccountingClass extends Identifiable implements Serializable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.ALL })
-  @JoinColumns({ @JoinColumn(name = "accounting_Accounting_report") })
+  @JoinColumns({ @JoinColumn(name = "accounting_Accounting_report", nullable = true) })
   private Report report = null;
 
   /**

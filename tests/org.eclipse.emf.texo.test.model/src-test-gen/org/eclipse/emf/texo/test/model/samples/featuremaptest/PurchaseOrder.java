@@ -1,7 +1,6 @@
 package org.eclipse.emf.texo.test.model.samples.featuremaptest;
 
 import javax.persistence.Basic;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -17,7 +16,6 @@ import org.eclipse.persistence.annotations.Converters;
  */
 @Entity(name = "featuremaptest_PurchaseOrder")
 @Table(name = "PUR_ORDER")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class PurchaseOrder extends Identifiable {

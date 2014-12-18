@@ -2,11 +2,9 @@ package org.eclipse.emf.texo.test.model.issues.bz331009;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -20,8 +18,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_SecretQuestion")
-@Table(name = "m_SecretQuestion")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class SecretQuestion extends Identifiable {
@@ -32,7 +28,7 @@ public class SecretQuestion extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "question")
+  @Column(name = "question", nullable = true)
   private String question = null;
 
   /**
@@ -41,7 +37,7 @@ public class SecretQuestion extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "correctAnswer")
+  @Column(name = "correctAnswer", nullable = true)
   private String correctAnswer = null;
 
   /**
@@ -51,7 +47,7 @@ public class SecretQuestion extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "alarmAnswer")
+  @Column(name = "alarmAnswer", nullable = true)
   private String alarmAnswer = null;
 
   /**
@@ -60,7 +56,7 @@ public class SecretQuestion extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "active")
+  @Column(name = "active", nullable = true)
   private boolean active = false;
 
   /**
@@ -69,7 +65,7 @@ public class SecretQuestion extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_type")
+  @Column(name = "T_type", nullable = true)
   @Enumerated(EnumType.STRING)
   private SecretQuestionType type = null;
 

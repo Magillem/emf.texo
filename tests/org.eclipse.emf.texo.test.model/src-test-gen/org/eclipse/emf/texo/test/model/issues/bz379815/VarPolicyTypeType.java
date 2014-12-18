@@ -2,11 +2,9 @@ package org.eclipse.emf.texo.test.model.issues.bz379815;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -20,8 +18,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "bz379815_VarPolicyTypeType")
-@Table(name = "DPL_bz379815_VarPolicyTypeType")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class VarPolicyTypeType extends Identifiable {
@@ -32,7 +28,7 @@ public class VarPolicyTypeType extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "T_type")
+  @Column(name = "T_type", nullable = true)
   @Enumerated(EnumType.STRING)
   private TypeType type = null;
 

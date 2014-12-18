@@ -4,14 +4,12 @@ import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -27,8 +25,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_Message")
-@Table(name = "m_Message")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Message extends Identifiable {
@@ -39,7 +35,7 @@ public class Message extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_text")
+  @Column(name = "T_text", nullable = true)
   private String text = null;
 
   /**
@@ -48,7 +44,7 @@ public class Message extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_type")
+  @Column(name = "T_type", nullable = true)
   @Enumerated(EnumType.STRING)
   private MessageType type = null;
 
@@ -58,7 +54,7 @@ public class Message extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Message_from") })
+  @JoinColumns({ @JoinColumn(name = "m_Message_from", nullable = true) })
   private SimCard from = null;
 
   /**
@@ -67,7 +63,7 @@ public class Message extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Message_to") })
+  @JoinColumns({ @JoinColumn(name = "m_Message_to", nullable = true) })
   private SimCard to = null;
 
   /**
@@ -76,7 +72,7 @@ public class Message extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_dateTime")
+  @Column(name = "T_dateTime", nullable = true)
   @Temporal(TemporalType.DATE)
   private Date dateTime = null;
 

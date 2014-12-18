@@ -3,12 +3,10 @@ package org.eclipse.emf.texo.test.model.samples.accounting;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -21,8 +19,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "accounting_Report")
-@Table(name = "accounting_Report")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Report extends Identifiable {
@@ -33,7 +29,7 @@ public class Report extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "name")
+  @Column(name = "name", nullable = true)
   private String name = null;
 
   /**
@@ -42,7 +38,7 @@ public class Report extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
-  @JoinColumns({ @JoinColumn(name = "accounting_Report_debitReportGroup") })
+  @JoinColumns({ @JoinColumn(name = "accounting_Report_debitReportGroup", nullable = true) })
   private ReportGroup debitReportGroup = null;
 
   /**
@@ -51,7 +47,7 @@ public class Report extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
-  @JoinColumns({ @JoinColumn(name = "accounting_Report_creditReportGroup") })
+  @JoinColumns({ @JoinColumn(name = "accounting_Report_creditReportGroup", nullable = true) })
   private ReportGroup creditReportGroup = null;
 
   /**

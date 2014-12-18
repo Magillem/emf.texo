@@ -3,12 +3,10 @@ package org.eclipse.emf.texo.test.model.issues.bz331009;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -22,8 +20,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_SimContract")
-@Table(name = "m_SimContract")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class SimContract extends Identifiable {
@@ -34,7 +30,7 @@ public class SimContract extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "contractNumber")
+  @Column(name = "contractNumber", nullable = true)
   private String contractNumber = null;
 
   /**
@@ -43,7 +39,7 @@ public class SimContract extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "name")
+  @Column(name = "name", nullable = true)
   private String name = null;
 
   /**
@@ -52,7 +48,7 @@ public class SimContract extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "descritpion")
+  @Column(name = "descritpion", nullable = true)
   private String descritpion = null;
 
   /**
@@ -62,7 +58,7 @@ public class SimContract extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_SimContract_paymentInfo") })
+  @JoinColumns({ @JoinColumn(name = "m_SimContract_paymentInfo", nullable = true) })
   private PaymentInfo paymentInfo = null;
 
   /**

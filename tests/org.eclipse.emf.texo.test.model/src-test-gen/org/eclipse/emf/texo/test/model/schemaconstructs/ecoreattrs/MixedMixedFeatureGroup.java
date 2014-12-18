@@ -160,7 +160,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "name")
+  @Column(name = "name", nullable = true)
   private String name;
 
   /**
@@ -169,7 +169,7 @@ public class MixedMixedFeatureGroup extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "T_value")
+  @Column(name = "T_value", nullable = true)
   private Double value_;
 
   /**

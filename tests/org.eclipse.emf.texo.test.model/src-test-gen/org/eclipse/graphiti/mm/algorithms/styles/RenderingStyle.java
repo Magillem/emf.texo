@@ -1,7 +1,6 @@
 package org.eclipse.graphiti.mm.algorithms.styles;
 
 import javax.persistence.CascadeType;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -16,7 +15,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "st_RenderingStyle")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class RenderingStyle extends Identifiable {
@@ -26,7 +24,7 @@ public class RenderingStyle extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL })
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private AdaptedGradientColoredAreas adaptedGradientColoredAreas = null;
 
   /**

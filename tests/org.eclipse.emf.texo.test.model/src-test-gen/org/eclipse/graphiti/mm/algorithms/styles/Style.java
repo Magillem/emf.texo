@@ -109,7 +109,7 @@ public class Style extends StyleContainer {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
   private Color background = null;
 
   /**
@@ -117,7 +117,7 @@ public class Style extends StyleContainer {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
   private Color foreground = null;
 
   /**
@@ -158,7 +158,7 @@ public class Style extends StyleContainer {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL })
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   private RenderingStyle renderingStyle = null;
 
   /**

@@ -138,7 +138,7 @@ public class MultiNumberTypeMyComplexAbstractGroupFeatureGroup extends Identifia
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
   @Access(AccessType.FIELD)
   private ComplexNumber myComplexAbstract;
 

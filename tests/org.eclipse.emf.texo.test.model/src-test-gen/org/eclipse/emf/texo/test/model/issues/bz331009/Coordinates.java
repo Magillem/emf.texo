@@ -3,9 +3,7 @@ package org.eclipse.emf.texo.test.model.issues.bz331009;
 import java.math.BigDecimal;
 import javax.persistence.Basic;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
-import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -19,8 +17,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_Coordinates")
-@Table(name = "m_Coordinates")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Coordinates extends Identifiable {
@@ -31,7 +27,7 @@ public class Coordinates extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "x", precision = 15, scale = 7)
+  @Column(name = "x", nullable = true, precision = 15, scale = 7)
   private BigDecimal x = null;
 
   /**
@@ -40,7 +36,7 @@ public class Coordinates extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "y", precision = 15, scale = 7)
+  @Column(name = "y", nullable = true, precision = 15, scale = 7)
   private BigDecimal y = null;
 
   /**

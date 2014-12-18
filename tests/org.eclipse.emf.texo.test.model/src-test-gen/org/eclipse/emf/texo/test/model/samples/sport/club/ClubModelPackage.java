@@ -15,6 +15,7 @@ import org.eclipse.emf.texo.test.model.base.identifiable.IdentifiableModelPackag
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.ClubDao;
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.MemberDao;
 import org.eclipse.emf.texo.test.model.samples.sport.club.dao.TeamDao;
+import org.eclipse.emf.texo.test.model.samples.sport.society.SocietyModelPackage;
 import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
@@ -81,7 +82,14 @@ public class ClubModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int CLUB_TEAMS_FEATURE_ID = 2;
+  public static final int CLUB_NAME_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int CLUB_TEAMS_FEATURE_ID = 3;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -197,6 +205,7 @@ public class ClubModelPackage extends ModelPackage {
 
     isInitialized = true;
 
+    SocietyModelPackage.initialize();
     IdentifiableModelPackage.initialize();
 
     // force the initialization of the EFactory proxy

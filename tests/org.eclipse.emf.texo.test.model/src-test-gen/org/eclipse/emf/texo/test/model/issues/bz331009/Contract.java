@@ -8,7 +8,6 @@ import javax.persistence.AccessType;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
@@ -16,7 +15,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OrderColumn;
-import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -32,8 +30,6 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_Contract")
-@Table(name = "m_Contract")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Contract extends Identifiable {
@@ -44,7 +40,7 @@ public class Contract extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "signDate")
+  @Column(name = "signDate", nullable = true)
   @Temporal(TemporalType.DATE)
   private Date signDate = null;
 
@@ -54,7 +50,7 @@ public class Contract extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Contract_simCard") })
+  @JoinColumns({ @JoinColumn(name = "m_Contract_simCard", nullable = true) })
   private SimCard simCard = null;
 
   /**
@@ -63,7 +59,7 @@ public class Contract extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Contract_paymentInfo") })
+  @JoinColumns({ @JoinColumn(name = "m_Contract_paymentInfo", nullable = true) })
   private PaymentInfo paymentInfo = null;
 
   /**
@@ -72,7 +68,7 @@ public class Contract extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_Contract_car") })
+  @JoinColumns({ @JoinColumn(name = "m_Contract_car", nullable = true) })
   private Car car = null;
 
   /**
@@ -92,7 +88,7 @@ public class Contract extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_number")
+  @Column(name = "T_number", nullable = true)
   private String number = null;
 
   /**

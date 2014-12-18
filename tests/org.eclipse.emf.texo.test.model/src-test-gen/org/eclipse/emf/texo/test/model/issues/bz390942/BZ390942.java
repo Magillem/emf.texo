@@ -1,7 +1,6 @@
 package org.eclipse.emf.texo.test.model.issues.bz390942;
 
 import javax.persistence.Basic;
-import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
@@ -16,7 +15,6 @@ import org.eclipse.persistence.annotations.TypeConverter;
  * @generated
  */
 @Entity(name = "bz390942_BZ390942")
-@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class BZ390942 extends Identifiable {
