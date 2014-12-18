@@ -40,7 +40,7 @@ public class Trip extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name2</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name2</b></em>' feature
@@ -52,7 +52,7 @@ public class Trip extends Identifiable {
 
   /**
    * Sets the '{@link Trip#getName2() <em>name2</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName2
@@ -65,7 +65,7 @@ public class Trip extends Identifiable {
 
   /**
    * Returns the value of '<em><b>destination</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>destination</b></em>' feature
@@ -77,7 +77,7 @@ public class Trip extends Identifiable {
 
   /**
    * Sets the '{@link Trip#getDestination() <em>destination</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newDestination

@@ -14,7 +14,6 @@
     <orm:attributes>
       <orm:basic name="name">
         <orm:column name="name"/>
-        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
     </orm:attributes>
   </orm:entity>

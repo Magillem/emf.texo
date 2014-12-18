@@ -6,9 +6,9 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
+import org.eclipse.emf.texo.test.model.samples.sport.society.Society;
 import org.eclipse.persistence.annotations.Converter;
 import org.eclipse.persistence.annotations.Converters;
 
@@ -20,7 +20,7 @@ import org.eclipse.persistence.annotations.Converters;
 @Entity(name = "club_Club")
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
-public class Club extends EObject {
+public class Club extends Society {
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

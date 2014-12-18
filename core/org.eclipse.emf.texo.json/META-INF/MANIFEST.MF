@@ -4,7 +4,7 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.emf.texo.json
 Bundle-Version: 0.1.0.qualifier
 Bundle-Vendor: %pluginProvider
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Import-Package: org.json
 Export-Package: org.eclipse.emf.texo.json;version="0.1.0"
 Require-Bundle: org.eclipse.emf.ecore;bundle-version="[2.7.0, 3.0.0)",

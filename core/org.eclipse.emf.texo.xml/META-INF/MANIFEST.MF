@@ -4,7 +4,7 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.emf.texo.xml
 Bundle-Version: 0.1.0.qualifier
 Bundle-Vendor: %pluginProvider
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ClassPath: .
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.emf.texo;bundle-version="[0.1.0,1.1.0)",

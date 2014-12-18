@@ -4,7 +4,7 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.emf.texo.orm.test
 Bundle-Version: 0.1.0.qualifier
 Bundle-Vendor: %pluginProvider
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.emf.texo.test.model;bundle-version="[0.1.0,1.0.1)",
  javax.persistence;bundle-version="[1.0.0.0,3.0.0)",

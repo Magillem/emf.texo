@@ -45,7 +45,7 @@ public class Competition extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -57,7 +57,7 @@ public class Competition extends Identifiable {
 
   /**
    * Sets the '{@link Competition#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -70,7 +70,7 @@ public class Competition extends Identifiable {
 
   /**
    * Returns the value of '<em><b>teams</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>teams</b></em>' feature
@@ -127,7 +127,7 @@ public class Competition extends Identifiable {
 
   /**
    * Sets the '{@link Competition#getTeams() <em>teams</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newTeams

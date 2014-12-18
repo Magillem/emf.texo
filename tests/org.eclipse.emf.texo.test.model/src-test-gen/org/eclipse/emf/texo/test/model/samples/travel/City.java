@@ -38,7 +38,7 @@ public class City extends Identifiable {
 
   /**
    * Returns the value of '<em><b>name</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>name</b></em>' feature
@@ -50,7 +50,7 @@ public class City extends Identifiable {
 
   /**
    * Sets the '{@link City#getName() <em>name</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newName
@@ -63,7 +63,7 @@ public class City extends Identifiable {
 
   /**
    * Returns the value of '<em><b>reis</b></em>' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @return the value of '<em><b>reis</b></em>' feature
@@ -75,7 +75,7 @@ public class City extends Identifiable {
 
   /**
    * Sets the '{@link City#getReis() <em>reis</em>}' feature.
-   * 
+   *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @param newReis

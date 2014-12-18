@@ -27,7 +27,6 @@
     <orm:attributes>
       <orm:basic name="name">
         <orm:column name="name"/>
-        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
       <orm:many-to-many name="members">
         <orm:order-column name="club_Team_members_ind"/>
@@ -51,15 +50,12 @@
     <orm:attributes>
       <orm:basic name="name">
         <orm:column name="name"/>
-        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
       <orm:basic name="lastName">
         <orm:column name="lastName"/>
-        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
       <orm:basic name="age">
         <orm:column name="age"/>
-        <orm:convert>TexoTestObjectConverter</orm:convert>
       </orm:basic>
       <orm:basic name="gender">
         <orm:column name="gender"/>
