@@ -236,6 +236,10 @@ public class ClubModelFactory implements ModelFactory {
         return getTarget().getDb_Id();
       case ClubModelPackage.CLUB_DB_VERSION_FEATURE_ID:
         return getTarget().getDb_version();
+      case ClubModelPackage.CLUB_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case ClubModelPackage.CLUB_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case ClubModelPackage.CLUB_NAME_FEATURE_ID:
         return getTarget().getName();
       case ClubModelPackage.CLUB_TEAMS_FEATURE_ID:

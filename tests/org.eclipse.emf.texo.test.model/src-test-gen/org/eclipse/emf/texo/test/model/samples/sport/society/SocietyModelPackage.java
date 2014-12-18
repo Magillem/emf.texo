@@ -70,7 +70,35 @@ public class SocietyModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int SOCIETY_NAME_FEATURE_ID = 2;
+  public static final int SOCIETY_DB_ID_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SOCIETY_DB_VERSION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SOCIETY_DB_ID_FEATURE_ID = 2;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SOCIETY_DB_VERSION_FEATURE_ID = 3;
+
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
+   * @generated
+   */
+  public static final int SOCIETY_NAME_FEATURE_ID = 4;
 
   /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->

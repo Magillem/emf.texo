@@ -1,0 +1,13 @@
+package org.eclipse.emf.texo.test.model.base.identifiable
+
+class Identifiable 
+{
+	Long db_Id
+	Integer db_version
+} 
+
+class IdentifiableInterface
+{
+	Long db_Id
+	Integer db_version
+} 

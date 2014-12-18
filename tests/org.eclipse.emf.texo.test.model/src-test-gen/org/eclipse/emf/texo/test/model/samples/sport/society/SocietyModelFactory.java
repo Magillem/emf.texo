@@ -170,6 +170,10 @@ public class SocietyModelFactory implements ModelFactory {
         return getTarget().getDb_Id();
       case SocietyModelPackage.SOCIETY_DB_VERSION_FEATURE_ID:
         return getTarget().getDb_version();
+      case SocietyModelPackage.SOCIETY_DB_ID_FEATURE_ID:
+        return getTarget().getDb_Id();
+      case SocietyModelPackage.SOCIETY_DB_VERSION_FEATURE_ID:
+        return getTarget().getDb_version();
       case SocietyModelPackage.SOCIETY_NAME_FEATURE_ID:
         return getTarget().getName();
       default:
