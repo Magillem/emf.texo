@@ -132,7 +132,7 @@ public class FeatureAMapFeatureGroup extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "name", nullable = true)
+  @Column(name = "name")
   private String name;
 
   /**
@@ -141,7 +141,7 @@ public class FeatureAMapFeatureGroup extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "T_value", nullable = true)
+  @Column(name = "T_value")
   private Double value_;
 
   /**

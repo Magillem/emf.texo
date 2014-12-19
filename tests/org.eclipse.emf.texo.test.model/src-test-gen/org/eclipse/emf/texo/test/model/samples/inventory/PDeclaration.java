@@ -2,7 +2,9 @@ package org.eclipse.emf.texo.test.model.samples.inventory;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -15,6 +17,8 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "inv_PDeclaration")
+@Table(name = "inv_PDeclaration")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class PDeclaration extends Identifiable {
@@ -25,7 +29,7 @@ public class PDeclaration extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "id", nullable = true)
+  @Column(name = "id")
   private long id = 0;
 
   /**
@@ -34,7 +38,7 @@ public class PDeclaration extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "name", nullable = true)
+  @Column(name = "name")
   private String name = null;
 
   /**

@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.CollectionTable;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -28,6 +29,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "org_elver_music_Album")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Album extends Identifiable {
@@ -61,7 +63,7 @@ public class Album extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
   private Artist artist = null;
 
   /**

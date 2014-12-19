@@ -2,6 +2,7 @@ package org.eclipse.emf.texo.test.model.schemaconstructs.datetime;
 
 import java.util.Date;
 import javax.persistence.Basic;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,6 +18,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "datetime_TestDate")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class TestDate extends Identifiable {

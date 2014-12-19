@@ -142,7 +142,7 @@ public class SceneTypeGroupFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
   private SpeechType speech;
 
   /**

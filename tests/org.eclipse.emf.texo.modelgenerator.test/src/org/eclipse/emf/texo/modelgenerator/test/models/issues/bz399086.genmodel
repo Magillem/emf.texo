@@ -23,15 +23,15 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bz399086.ecore#//TheMap/valueContent"/>
     </genClasses>
   </genPackages>
-  <genPackages prefix="Identifiable" ecorePackage="identifiable.ecore#/">
-    <genClasses image="false" ecoreClass="identifiable.ecore#//Identifiable">
+  <genPackages prefix="Identifiable" ecorePackage="../base/identifiable.ecore#/">
+    <genClasses image="false" ecoreClass="../base/identifiable.ecore#//Identifiable">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifiable.ecore#//Identifiable/db_Id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifiable.ecore#//Identifiable/db_version"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="identifiable.ecore#//IdentifiableInterface">
+    <genClasses image="false" ecoreClass="../base/identifiable.ecore#//IdentifiableInterface">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifiable.ecore#//IdentifiableInterface/db_Id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifiable.ecore#//IdentifiableInterface/db_version"/>
     </genClasses>
-    <genClasses ecoreClass="identifiable.ecore#//NotIdentifiable"/>
+    <genClasses ecoreClass="../base/identifiable.ecore#//NotIdentifiable"/>
   </genPackages>
 </genmodel:GenModel>

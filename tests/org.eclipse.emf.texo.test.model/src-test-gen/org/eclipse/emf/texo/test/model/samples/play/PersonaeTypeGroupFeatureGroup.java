@@ -150,7 +150,7 @@ public class PersonaeTypeGroupFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
   private PersonaGroupType personaGroup;
 
   /**

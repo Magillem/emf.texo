@@ -3,6 +3,7 @@ package org.eclipse.graphiti.mm;
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -18,6 +19,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "mm_StyleContainer")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public abstract class StyleContainer extends Identifiable {

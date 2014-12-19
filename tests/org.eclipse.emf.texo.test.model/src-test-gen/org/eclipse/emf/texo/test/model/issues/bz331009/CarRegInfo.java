@@ -4,10 +4,12 @@ import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -23,6 +25,8 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_CarRegInfo")
+@Table(name = "m_CarRegInfo")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class CarRegInfo extends Identifiable implements Document {
@@ -33,7 +37,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-  @JoinColumns({ @JoinColumn(name = "m_CarRegInfo_owner", nullable = true) })
+  @JoinColumns({ @JoinColumn(name = "m_CarRegInfo_owner") })
   private Person owner = null;
 
   /**
@@ -42,7 +46,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @Basic()
-  @Column(name = "regNumber", nullable = true)
+  @Column(name = "regNumber")
   private String regNumber = null;
 
   /**
@@ -52,7 +56,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @Basic()
-  @Column(name = "vin", nullable = true)
+  @Column(name = "vin")
   private String vin = null;
 
   /**
@@ -61,7 +65,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @Basic()
-  @Column(name = "releaseYear", nullable = true)
+  @Column(name = "releaseYear")
   @Temporal(TemporalType.DATE)
   private Date releaseYear = null;
 
@@ -71,7 +75,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @Basic()
-  @Column(name = "engineNumber", nullable = true)
+  @Column(name = "engineNumber")
   private String engineNumber = null;
 
   /**
@@ -80,7 +84,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @Basic()
-  @Column(name = "chassisNumber", nullable = true)
+  @Column(name = "chassisNumber")
   private String chassisNumber = null;
 
   /**
@@ -89,7 +93,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @Basic()
-  @Column(name = "bodyNumber", nullable = true)
+  @Column(name = "bodyNumber")
   private String bodyNumber = null;
 
   /**
@@ -98,7 +102,7 @@ public class CarRegInfo extends Identifiable implements Document {
    * @generated
    */
   @Basic()
-  @Column(name = "color", nullable = true)
+  @Column(name = "color")
   private String color = null;
 
   /**

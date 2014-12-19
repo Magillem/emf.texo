@@ -1,10 +1,12 @@
 package org.eclipse.emf.texo.test.model.issues.bz379815;
 
 import javax.persistence.CascadeType;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -18,6 +20,8 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "bz379815_VarConditionType")
+@Table(name = "DPL_bz379815_VarConditionType")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class VarConditionType extends Identifiable {
@@ -28,7 +32,7 @@ public class VarConditionType extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.ALL })
-  @JoinColumns({ @JoinColumn(name = "bz379815_VarConditionType_policyType", nullable = true) })
+  @JoinColumns({ @JoinColumn(name = "bz379815_VarConditionType_policyType") })
   private VarPolicyTypeType policyType = null;
 
   /**

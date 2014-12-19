@@ -129,11 +129,6 @@ public class EclipseModelGeneratorTest extends TestCase {
           .createEPackageRegistry();
       final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(packageRegistry);
 
-      // make sure to read the xcore in the package registry
-      GeneratorUtils.readEPackages(
-          Collections.singletonList(TestModel.getModelPlatformUri("samples/identifiable.xcore")), packageRegistry, //$NON-NLS-1$
-          false);
-
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {
         final URI uri = TestModel.getModelPlatformUri(ecoreFileName);
@@ -146,13 +141,16 @@ public class EclipseModelGeneratorTest extends TestCase {
           for (String dep : deps) {
             depUris.add(TestModel.getModelPlatformUri(dep));
           }
-          // register all the dependent epackages also using the resource uri, this is needed in case of xcore
-          // which resolves using resource uris
+          // register all the dependent epackages also using the resource uri and the platform uri, this is needed in
+          // case of xcore which resolves using platform uris
           final List<EPackage> depEPackages = GeneratorUtils
               .readEPackages(depUris, resourceSet, packageRegistry, false);
           for (EPackage depEPackage : depEPackages) {
             if (depEPackage.eResource() != null && depEPackage.eResource().getURI() != null) {
-              packageRegistry.put(depEPackage.eResource().getURI().toString(), depEPackage);
+              final String uriStr = depEPackage.eResource().getURI().toString();
+              packageRegistry.put(uriStr, depEPackage);
+              packageRegistry.put(org.eclipse.emf.common.util.URI.createPlatformResourceURI(uriStr, true).toString(),
+                  depEPackage);
             }
           }
         }
@@ -176,7 +174,6 @@ public class EclipseModelGeneratorTest extends TestCase {
           if (ePackage.eResource() != null) {
             EcoreUtil2.resolveLazyCrossReferences(ePackage.eResource(), CancelIndicator.NullImpl);
           }
-
         }
 
         // give everyone the identifiable as super, except the identifiable

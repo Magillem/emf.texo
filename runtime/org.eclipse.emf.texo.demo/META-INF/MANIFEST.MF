@@ -1,14 +1,21 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: org.eclipse.emf.texo.demo
+Bundle-SymbolicName: org.eclipse.emf.texo.demo;singleton:=true
 Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
 Bundle-Activator: org.eclipse.emf.texo.demo.Activator
 Bundle-Vendor: %providerName
+Bundle-Localization: plugin
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;bundle-version="2.7.0",
+ org.eclipse.emf.ecore;bundle-version="2.7.0";visibility:=reexport,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.emf.ecore.xcore.lib,
  org.eclipse.emf.texo;bundle-version="0.1.0",
  javax.persistence;bundle-version="2.0.3",
  org.eclipse.emf.texo.server;bundle-version="0.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: test.abc,
+ test.abc.impl,
+ test.abc.util
 Bundle-ActivationPolicy: lazy

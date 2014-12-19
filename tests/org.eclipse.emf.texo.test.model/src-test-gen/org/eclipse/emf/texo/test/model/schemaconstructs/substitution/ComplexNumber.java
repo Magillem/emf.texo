@@ -2,6 +2,7 @@ package org.eclipse.emf.texo.test.model.schemaconstructs.substitution;
 
 import java.math.BigInteger;
 import javax.persistence.Basic;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
@@ -15,6 +16,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "substitution_ComplexNumber")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class ComplexNumber extends Identifiable {

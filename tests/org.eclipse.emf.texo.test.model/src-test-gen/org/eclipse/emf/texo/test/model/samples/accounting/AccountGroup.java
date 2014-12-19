@@ -5,11 +5,13 @@ import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
+import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -22,6 +24,8 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "accounting_AccountGroup")
+@Table(name = "accounting_AccountGroup")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class AccountGroup extends Identifiable {
@@ -32,7 +36,7 @@ public class AccountGroup extends Identifiable {
    * @generated
    */
   @Basic(optional = false)
-  @Column(name = "name", nullable = true)
+  @Column(name = "name")
   private String name = null;
 
   /**

@@ -2,6 +2,7 @@ package org.eclipse.emf.texo.test.model.samples.travel;
 
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -16,6 +17,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "travel_Trip")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Trip extends Identifiable {
@@ -33,7 +35,7 @@ public class Trip extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
   private City destination = null;
 
   /**

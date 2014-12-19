@@ -2,6 +2,7 @@ package org.eclipse.emf.texo.test.model.issues.bz386923;
 
 import javax.persistence.Basic;
 import javax.persistence.ColumnResult;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EntityResult;
 import javax.persistence.SqlResultSetMapping;
@@ -19,6 +20,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "bz386923_Test386923")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 @SqlResultSetMappings({ @SqlResultSetMapping(entities = {

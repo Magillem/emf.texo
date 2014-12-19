@@ -106,7 +106,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
   private Color background = null;
 
   /**
@@ -114,7 +114,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
   private Color foreground = null;
 
   /**
@@ -155,7 +155,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
+  @ManyToOne(cascade = { CascadeType.ALL })
   private RenderingStyle renderingStyle = null;
 
   /**

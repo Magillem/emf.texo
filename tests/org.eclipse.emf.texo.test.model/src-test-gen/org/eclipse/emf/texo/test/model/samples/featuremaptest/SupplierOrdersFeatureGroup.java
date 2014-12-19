@@ -150,7 +150,7 @@ public class SupplierOrdersFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = false)
   private PurchaseOrder preferredOrders;
 
   /**
@@ -158,7 +158,7 @@ public class SupplierOrdersFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = true)
+  @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = false)
   private PurchaseOrder standardOrders;
 
   /**

@@ -1,6 +1,7 @@
 package org.eclipse.emf.texo.test.model.samples.music;
 
 import javax.persistence.Basic;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
@@ -14,6 +15,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "org_elver_music_Song")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class Song extends Identifiable {

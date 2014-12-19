@@ -2,7 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bz399086" nsURI="http://www.eclipse.org/emf/texo/test/model/issues/bz399086"
     nsPrefix="bz399086">
-  <eClassifiers xsi:type="ecore:EClass" name="MapElement" eSuperTypes="identifiable.ecore#//Identifiable">
+  <eClassifiers xsi:type="ecore:EClass" name="MapElement" eSuperTypes="../base/identifiable.ecore#//Identifiable">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MapElement"/>
       <details key="kind" value="elementOnly"/>
@@ -51,7 +51,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TheMap" eSuperTypes="identifiable.ecore#//Identifiable">
+  <eClassifiers xsi:type="ecore:EClass" name="TheMap" eSuperTypes="../base/identifiable.ecore#//Identifiable">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TheMap"/>
       <details key="kind" value="elementOnly"/>

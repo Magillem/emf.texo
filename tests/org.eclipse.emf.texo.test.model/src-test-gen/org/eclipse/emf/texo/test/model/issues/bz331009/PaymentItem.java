@@ -4,9 +4,11 @@ import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
@@ -22,6 +24,8 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "m_PaymentItem")
+@Table(name = "m_PaymentItem")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public abstract class PaymentItem extends Identifiable {
@@ -32,7 +36,7 @@ public abstract class PaymentItem extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_sum", nullable = true, precision = 15, scale = 7)
+  @Column(name = "T_sum", precision = 15, scale = 7)
   private BigDecimal sum = null;
 
   /**
@@ -41,7 +45,7 @@ public abstract class PaymentItem extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "currency", nullable = true)
+  @Column(name = "currency")
   @Enumerated(EnumType.STRING)
   private Currency currency = null;
 
@@ -51,7 +55,7 @@ public abstract class PaymentItem extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_date", nullable = true)
+  @Column(name = "T_date")
   @Temporal(TemporalType.DATE)
   private Date date = null;
 
@@ -61,7 +65,7 @@ public abstract class PaymentItem extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "description", nullable = true)
+  @Column(name = "description")
   private String description = null;
 
   /**
@@ -70,7 +74,7 @@ public abstract class PaymentItem extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "paymentType", nullable = true)
+  @Column(name = "paymentType")
   @Enumerated(EnumType.STRING)
   private PaymentType paymentType = null;
 

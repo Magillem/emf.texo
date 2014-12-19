@@ -134,7 +134,7 @@ public class SupplierOrdersFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
   private PurchaseOrder preferredOrders;
 
   /**
@@ -142,7 +142,7 @@ public class SupplierOrdersFeatureGroup extends Identifiable {
    * 
    * @generated
    */
-  @ManyToOne(cascade = { CascadeType.ALL }, optional = true)
+  @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
   private PurchaseOrder standardOrders;
 
   /**

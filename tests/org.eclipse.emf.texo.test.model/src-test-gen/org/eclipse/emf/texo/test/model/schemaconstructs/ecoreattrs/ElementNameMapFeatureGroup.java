@@ -137,7 +137,7 @@ public class ElementNameMapFeatureGroup extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.ALL }, optional = false)
-  @JoinColumns({ @JoinColumn(name = "ecoreattrs_Element_names", nullable = true) })
+  @JoinColumns({ @JoinColumn(name = "ecoreattrs_Element_names") })
   private NameList names;
 
   /**

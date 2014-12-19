@@ -2,7 +2,9 @@ package org.eclipse.emf.texo.test.model.samples.workflow;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
@@ -15,6 +17,8 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "workflow_WorkflowElement")
+@Table(name = "workflow_WorkflowElement")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public abstract class WorkflowElement extends Identifiable {
@@ -25,7 +29,7 @@ public abstract class WorkflowElement extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "name", nullable = true)
+  @Column(name = "name")
   private String name = null;
 
   /**
@@ -34,7 +38,7 @@ public abstract class WorkflowElement extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "T_comment", nullable = true)
+  @Column(name = "T_comment")
   private String comment = null;
 
   /**
@@ -43,7 +47,7 @@ public abstract class WorkflowElement extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "x", nullable = true)
+  @Column(name = "x")
   private int x = 0;
 
   /**
@@ -52,7 +56,7 @@ public abstract class WorkflowElement extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "y", nullable = true)
+  @Column(name = "y")
   private int y = 0;
 
   /**
@@ -61,7 +65,7 @@ public abstract class WorkflowElement extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "width", nullable = true)
+  @Column(name = "width")
   private int width = -1;
 
   /**
@@ -70,7 +74,7 @@ public abstract class WorkflowElement extends Identifiable {
    * @generated
    */
   @Basic()
-  @Column(name = "height", nullable = true)
+  @Column(name = "height")
   private int height = -1;
 
   /**

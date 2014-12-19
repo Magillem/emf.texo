@@ -3,6 +3,7 @@ package org.eclipse.emf.texo.test.model.issues.bz399086;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import javax.persistence.CascadeType;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.JoinTable;
@@ -20,6 +21,7 @@ import org.eclipse.persistence.annotations.Converters;
  * @generated
  */
 @Entity(name = "bz399086_TheMap")
+@DiscriminatorColumn(length = 255)
 @Converters({ @Converter(converterClass = TexoTestObjectConverter.class, name = "TexoTestObjectConverter"),
     @Converter(converterClass = TexoTestQNameConverter.class, name = "TexoTestQNameConverter") })
 public class TheMap extends Identifiable {
