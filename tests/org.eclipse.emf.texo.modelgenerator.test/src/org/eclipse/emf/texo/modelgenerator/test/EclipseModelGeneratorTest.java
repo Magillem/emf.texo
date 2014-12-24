@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup;
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.generator.AnnotationManager;
 import org.eclipse.emf.texo.generator.ArtifactGenerator;
@@ -47,6 +48,8 @@ import org.eclipse.emf.texo.provider.TitleProvider;
 import org.eclipse.emf.texo.utils.ModelUtils;
 import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.util.CancelIndicator;
+
+import com.google.inject.Injector;
 
 /**
  * Test the generation of model code through the Eclipse plugin. Needs to be run as a junit plugin test.
@@ -73,6 +76,9 @@ public class EclipseModelGeneratorTest extends TestCase {
 
   private ORMMappingOptions testORMOptions = new ORMMappingOptions();
   private ORMMappingOptions safeORMOptions = new ORMMappingOptions();
+
+  private XcoreStandaloneSetup xcoreStandaloneSetup = new XcoreStandaloneSetup();
+  private Injector injector = xcoreStandaloneSetup.createInjectorAndDoEMFRegistration();
 
   public void testGenerateModels() throws Exception {
     final IProject testProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
@@ -127,7 +133,7 @@ public class EclipseModelGeneratorTest extends TestCase {
 
       final EPackage.Registry packageRegistry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
           .createEPackageRegistry();
-      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(packageRegistry);
+      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(injector, packageRegistry);
 
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {
@@ -165,7 +171,7 @@ public class EclipseModelGeneratorTest extends TestCase {
 
       if (true || !isGenerateTexoModels()) {
         // also reads the identifiable.xcore in memory
-        addSuperType(ePackages, packageRegistry);
+        addSuperType(resourceSet, ePackages, packageRegistry);
 
         boolean hasIdentifiable = false;
         for (EPackage ePackage : ePackages) {
@@ -210,7 +216,8 @@ public class EclipseModelGeneratorTest extends TestCase {
     }
   }
 
-  protected void addSuperType(final List<EPackage> ePackages, final EPackage.Registry packageRegistry) throws Exception {
+  protected void addSuperType(final ResourceSet resourceSet, final List<EPackage> ePackages,
+      final EPackage.Registry packageRegistry) throws Exception {
 
     // first check if there is already an identifiable, if so use that one
     EClass identifiableEClass = getIdentifiableSuperEClass(ePackages);
@@ -225,8 +232,9 @@ public class EclipseModelGeneratorTest extends TestCase {
 
     // not found then read it
     if (identifiableEClass == null) {
-      final List<EPackage> identifiableEPackages = GeneratorUtils.readEPackages(
-          Collections.singletonList(TestModel.getModelPlatformUri("base/identifiable.ecore")), packageRegistry, false); //$NON-NLS-1$
+      final List<EPackage> identifiableEPackages = GeneratorUtils
+          .readEPackages(
+              Collections.singletonList(TestModel.getModelPlatformUri("base/identifiable.ecore")), resourceSet, packageRegistry, false); //$NON-NLS-1$
 
       for (EPackage ePackage : identifiableEPackages) {
         if (ePackage.getNsURI().equals(IDENTIFIABLE_NSURI)) {

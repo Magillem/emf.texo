@@ -36,6 +36,7 @@ import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup;
 import org.eclipse.emf.texo.generator.EclipseGeneratorUtils;
 import org.eclipse.emf.texo.generator.GeneratorUtils;
 import org.eclipse.emf.texo.generator.ModelController;
@@ -48,6 +49,8 @@ import org.eclipse.emf.texo.orm.annotator.ORMGenerator;
 import org.eclipse.emf.texo.orm.annotator.ORMMappingOptions;
 import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.util.CancelIndicator;
+
+import com.google.inject.Injector;
 
 /**
  * Generates the ORM for specified models. The generated orm files are stored in the src/META-INF folder.
@@ -75,6 +78,8 @@ public class ORMGeneratorTest extends TestCase {
 
   private static final EPackage.Registry SHARED_REGISTRY = GeneratorUtils.createEPackageRegistry();
   private ORMMappingOptions testORMOptions = new ORMMappingOptions();
+
+  private Injector injector = new XcoreStandaloneSetup().createInjectorAndDoEMFRegistration();
 
   public void testGenerateModels() throws Exception {
 
@@ -121,7 +126,7 @@ public class ORMGeneratorTest extends TestCase {
 
       final EPackage.Registry registry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
           .createEPackageRegistry();
-      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(registry);
+      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(injector, registry);
 
       // read the deps
       final List<String> deps = TestModel.getModelDependencies(modelFilePath);

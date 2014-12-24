@@ -143,7 +143,7 @@ public class ModelController implements AnnotationProvider {
         // now handle the efeatures
         for (final EReference eref : eClass.getEReferences()) {
           if (eref == null) {
-            throw new IllegalStateException("ERef is null " + eClass.getName());
+            throw new IllegalStateException("ERef is null " + eClass.getName()); //$NON-NLS-1$
           }
           if (eref.getEReferenceType() == null) {
             throw new IllegalStateException("EReferenceType is null " + eref.getEContainingClass().getName() + "." //$NON-NLS-1$//$NON-NLS-2$

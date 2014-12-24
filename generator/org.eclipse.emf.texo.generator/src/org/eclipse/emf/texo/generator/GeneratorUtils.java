@@ -31,10 +31,13 @@ import org.eclipse.emf.ecore.util.BasicExtendedMetaData;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.xcore.XcorePackage;
+import org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup;
+import org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup.XcoreStandaloneRuntimeModule.XcoreStandaloneResourceSetProvider;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
+import org.eclipse.emf.ecore.xml.namespace.XMLNamespacePackage;
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotatedEStructuralFeature;
 import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotationsmodelPackage;
@@ -48,6 +51,10 @@ import org.eclipse.xsd.XSDSchema;
 import org.eclipse.xsd.ecore.XSDEcoreBuilder;
 import org.eclipse.xsd.util.XSDResourceFactoryImpl;
 import org.eclipse.xsd.util.XSDResourceImpl;
+import org.eclipse.xtext.common.types.TypesPackage;
+import org.eclipse.xtext.xbase.XbasePackage;
+
+import com.google.inject.Injector;
 
 /**
  * Model/Ecore related convenience methods to for example read ecore and xsd's.
@@ -196,12 +203,18 @@ public class GeneratorUtils {
    *         Registry.
    */
   public static EPackage.Registry createEPackageRegistry() {
+
     final EPackage.Registry registry = new EPackageRegistryImpl();
-    registry.put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
     registry.put(XcorePackage.eNS_URI, XcorePackage.eINSTANCE);
+    registry.put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
+    registry.put(XbasePackage.eNS_URI, XbasePackage.eINSTANCE);
+    registry.put(TypesPackage.eNS_URI, TypesPackage.eINSTANCE);
     registry.put(GenModelPackage.eNS_URI, GenModelPackage.eINSTANCE);
     registry.put(XMLTypePackage.eNS_URI, XMLTypePackage.eINSTANCE);
+    registry.put(XMLNamespacePackage.eNS_URI, XMLNamespacePackage.eINSTANCE);
+
     registry.put(XSDPackage.eNS_URI, XSDPackage.eINSTANCE);
+
     registry.put(AnnotationsmodelPackage.eNS_URI, AnnotationsmodelPackage.eINSTANCE);
 
     // also add the 2 annotations models, solve using an eannotation in the epackages
@@ -252,7 +265,10 @@ public class GeneratorUtils {
    */
   public static List<EPackage> readEPackages(final List<java.net.URI> uris, EPackage.Registry registry,
       boolean useWsUris) {
-    return readEPackages(uris, null, registry, useWsUris);
+
+    final ResourceSet resourceSet = createGenerationResourceSet(null, registry);
+
+    return readEPackages(uris, resourceSet, registry, useWsUris);
   }
 
   /**
@@ -306,15 +322,12 @@ public class GeneratorUtils {
       EPackage.Registry registry) {
 
     final List<EPackage> ePackages = new ArrayList<EPackage>();
-    ResourceSet rs = resourceSet;
-    if (rs == null) {
-      rs = createGenerationResourceSet(registry);
-    }
 
     // note passing resourcesets package registry to the xsdecore builder
     // this ensures that epackages which refer to eachother are handled
     // correctly
-    final XSDEcoreBuilder ecoreBuilder = new XSDEcoreBuilder(new BasicExtendedMetaData(rs.getPackageRegistry()));
+    final XSDEcoreBuilder ecoreBuilder = new XSDEcoreBuilder(
+        new BasicExtendedMetaData(resourceSet.getPackageRegistry()));
     ecoreBuilder.setValidate(true);
     for (final URI emfURI : uris) {
       if (emfURI.toString().endsWith("xsd")) { //$NON-NLS-1$
@@ -328,7 +341,7 @@ public class GeneratorUtils {
           }
         }
       } else {
-        final Resource res = rs.createResource(emfURI);
+        final Resource res = resourceSet.createResource(emfURI);
         try {
 
           res.load(Collections.EMPTY_MAP);
@@ -338,7 +351,7 @@ public class GeneratorUtils {
             EObject rootObject = res.getContents().get(0);
             Resource metaDataResource = rootObject.eClass().eResource();
             if (metaDataResource != null && metaDataResource.getResourceSet() != null) {
-              rs.getResources().addAll(metaDataResource.getResourceSet().getResources());
+              resourceSet.getResources().addAll(metaDataResource.getResourceSet().getResources());
             }
           }
 
@@ -369,12 +382,15 @@ public class GeneratorUtils {
    * @param registry
    * @return a new {@link ResourceSet}
    */
-  public static ResourceSet createGenerationResourceSet(EPackage.Registry registry) {
-    final ResourceSet rs = new ResourceSetImpl();
-    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
-        new EcoreResourceFactoryImpl());
-    //    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xcore", //$NON-NLS-1$
-    // new XcoreResourceFactory());
+  public static ResourceSet createGenerationResourceSet(Injector injector, EPackage.Registry registry) {
+
+    final ResourceSet rs;
+    if (injector != null) {
+      rs = injector.getInstance(XcoreStandaloneResourceSetProvider.class).get();
+    } else {
+      final Injector inj = new XcoreStandaloneSetup().createInjectorAndDoEMFRegistration();
+      rs = inj.getInstance(XcoreStandaloneResourceSetProvider.class).get();
+    }
     rs.setPackageRegistry(registry);
     rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(false));
     return rs;

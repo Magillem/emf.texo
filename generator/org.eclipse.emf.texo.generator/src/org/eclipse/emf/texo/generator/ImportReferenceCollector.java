@@ -164,7 +164,7 @@ public class ImportReferenceCollector extends ASTVisitor {
   @Override
   public boolean visit(final PackageDeclaration node) {
     packageName = node.getName().getFullyQualifiedName();
-    if (node.getAST().apiLevel() >= AST.JLS4) {
+    if (node.getAST().apiLevel() >= AST.JLS8) {
       doVisitNode(node.getJavadoc());
       doVisitChildren(node.annotations());
     }
@@ -279,7 +279,7 @@ public class ImportReferenceCollector extends ASTVisitor {
   public boolean visit(final MethodDeclaration node) {
     doVisitNode(node.getJavadoc());
 
-    if (node.getAST().apiLevel() >= AST.JLS4) {
+    if (node.getAST().apiLevel() >= AST.JLS8) {
       doVisitChildren(node.modifiers());
       doVisitChildren(node.typeParameters());
     }
@@ -288,7 +288,7 @@ public class ImportReferenceCollector extends ASTVisitor {
       doVisitNode(node.getReturnType2());
     }
     doVisitChildren(node.parameters());
-    Iterator<?> iter = node.thrownExceptions().iterator();
+    Iterator<?> iter = node.thrownExceptionTypes().iterator();
     while (iter.hasNext()) {
       typeRefFound((Name) iter.next());
     }
