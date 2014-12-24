@@ -120,6 +120,17 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		<mkdir dir="${genTargetPlatformPath}" />
 		<mkdir dir="${genWorkspacePath}" />
 		
+		<echo message="Delete some to-be generated files"/>
+		<delete dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen/org/eclipse/emf/texo/test/model/samples/capa"/>
+		<delete dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen/org/eclipse/emf/texo/test/model/samples/employee"/>
+		<delete dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen/org/eclipse/emf/texo/test/model/samples/extendedpo2"/>
+		<echo message="Copy from src-merge-test to src-test-gen, to test merging during generation"/>
+		<copy todir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen" flatten="false">
+			<fileset dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-merge-testing">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		
 		<echo message="Setting jre to ${env.JAVA_HOME}"/>
 		<buckminster command="installJRE" workspace="${genWorkspacePath}">
 		    <cmdargs>
@@ -147,20 +158,10 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		<echo message="Building" />
 		<buckminster command="build" workspace="${genWorkspacePath}">
 			<cmdargs>
+				<arg value="--clean" />
 				<arg value="--thorough" />
 			</cmdargs>		
 		</buckminster>
-			
-		<echo message="Delete some to-be generated files"/>
-		<delete dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen/org/eclipse/emf/texo/test/model/samples/capa"/>
-		<delete dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen/org/eclipse/emf/texo/test/model/samples/employee"/>
-		<delete dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen/org/eclipse/emf/texo/test/model/samples/extendedpo2"/>
-		<echo message="Copy from src-merge-test to src-test-gen, to test merging during generation"/>
-	    <copy todir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-test-gen" flatten="false">
-	    	<fileset dir="${gitPath}/tests/org.eclipse.emf.texo.test.model/src-merge-testing">
-				<include name="**/*"/>
-			</fileset>
-	    </copy>
 
 		<echo message="-----------------------------------"/>
 		<echo message="Generating model code using workspace ${genWorkspacePath}" />
