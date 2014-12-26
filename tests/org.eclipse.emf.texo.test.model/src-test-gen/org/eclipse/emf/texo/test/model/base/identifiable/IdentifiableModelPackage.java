@@ -169,7 +169,7 @@ public class IdentifiableModelPackage extends ModelPackage {
   /**
    * Returns the name of the ecore file containing the ecore model of the {@link EPackage} managed here. <!--
    * begin-user-doc --> <!-- end-user-doc -->
-   * 
+   *
    * @return the name of the ecore file
    * @generated
    */

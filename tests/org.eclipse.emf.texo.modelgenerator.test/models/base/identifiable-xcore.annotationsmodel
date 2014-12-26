@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
 <annotationsmodel:AnnotatedModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:annotationsmodel="http://www.eclipse.org/emf/texo/annotations/model" xmlns:ormannotations="http://www.eclipse.org/emf/texo/orm/ormannotations">
   <annotatedEPackages>
-    <ePackage href="identifiable.ecore#/"/>
+    <ePackage href="identifiable-xcore.xcore#/EPackage"/>
     <annotatedEClassifiers xsi:type="annotationsmodel:AnnotatedEClass">
-      <eClass href="identifiable.ecore#//Identifiable"/>
+      <eClass href="identifiable-xcore.xcore#/EPackage/Identifiable"/>
       <eClassAnnotations xsi:type="ormannotations:EClassORMAnnotation">
         <mappedSuperclass access="FIELD" class=""/>
       </eClassAnnotations>
       <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEAttribute">
-        <eAttribute href="identifiable.ecore#//Identifiable/db_Id"/>
+        <eAttribute href="identifiable-xcore.xcore#/EPackage/Identifiable/db_Id"/>
         <eAttributeAnnotations xsi:type="ormannotations:EAttributeORMAnnotation">
           <id name="db_Id">
             <generatedValue strategy="AUTO"/>
@@ -16,25 +16,25 @@
         </eAttributeAnnotations>
       </annotatedEStructuralFeatures>
       <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEAttribute">
-        <eAttribute href="identifiable.ecore#//Identifiable/db_version"/>
+        <eAttribute href="identifiable-xcore.xcore#/EPackage/Identifiable/db_version"/>
         <eAttributeAnnotations xsi:type="ormannotations:EAttributeORMAnnotation">
           <version convert="" access="FIELD" name="db_version"/>
         </eAttributeAnnotations>
       </annotatedEStructuralFeatures>
     </annotatedEClassifiers>
     <annotatedEClassifiers xsi:type="annotationsmodel:AnnotatedEClass">
-      <eClass href="identifiable.ecore#//NotIdentifiable"/>
+      <eClass href="identifiable-xcore.xcore#/EPackage/NotIdentifiable"/>
       <eClassAnnotations xsi:type="ormannotations:EClassORMAnnotation">
         <transient name=""/>
       </eClassAnnotations>
     </annotatedEClassifiers>
     <annotatedEClassifiers xsi:type="annotationsmodel:AnnotatedEClass">
-      <eClass href="identifiable.ecore#//IdentifiableInterface"/>
+      <eClass href="identifiable-xcore.xcore#/EPackage/IdentifiableInterface"/>
       <eClassAnnotations xsi:type="ormannotations:EClassORMAnnotation">
         <mappedSuperclass access="PROPERTY" class=""/>
       </eClassAnnotations>
       <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEAttribute">
-        <eAttribute href="identifiable.ecore#//IdentifiableInterface/db_Id"/>
+        <eAttribute href="identifiable-xcore.xcore#/EPackage/IdentifiableInterface/db_Id"/>
         <eAttributeAnnotations xsi:type="ormannotations:EAttributeORMAnnotation">
           <id convert="" access="PROPERTY" name="db_Id">
             <generatedValue strategy="AUTO"/>
@@ -42,7 +42,7 @@
         </eAttributeAnnotations>
       </annotatedEStructuralFeatures>
       <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEAttribute">
-        <eAttribute href="identifiable.ecore#//IdentifiableInterface/db_version"/>
+        <eAttribute href="identifiable-xcore.xcore#/EPackage/IdentifiableInterface/db_version"/>
         <eAttributeAnnotations xsi:type="ormannotations:EAttributeORMAnnotation">
           <version convert="" access="PROPERTY" name="db_version"/>
         </eAttributeAnnotations>

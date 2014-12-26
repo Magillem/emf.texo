@@ -41,7 +41,7 @@ import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.modelgenerator.annotator.GenUtils;
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
+import org.eclipse.emf.texo.modelgenerator.test.TestModel;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
 
 /**

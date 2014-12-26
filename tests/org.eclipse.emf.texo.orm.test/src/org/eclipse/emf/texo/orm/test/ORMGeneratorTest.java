@@ -44,7 +44,7 @@ import org.eclipse.emf.texo.modelgenerator.annotator.GenUtils;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EClassModelGenAnnotation;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EStructuralFeatureModelGenAnnotation;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.ModelcodegeneratorPackage;
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
+import org.eclipse.emf.texo.modelgenerator.test.TestModel;
 import org.eclipse.emf.texo.orm.annotator.ORMGenerator;
 import org.eclipse.emf.texo.orm.annotator.ORMMappingOptions;
 import org.eclipse.xtext.EcoreUtil2;

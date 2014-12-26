@@ -9,7 +9,6 @@ import junit.framework.TestCase;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.texo.generator.GeneratorUtils;
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
 
 public class TestAnnotationType extends TestCase {
 

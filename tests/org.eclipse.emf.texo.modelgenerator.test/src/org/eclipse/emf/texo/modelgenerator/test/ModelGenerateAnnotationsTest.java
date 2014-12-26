@@ -35,7 +35,6 @@ import org.eclipse.emf.texo.generator.ModelController;
 import org.eclipse.emf.texo.modelgenerator.annotator.ModelGenAnnotator;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EClassifierModelGenAnnotation;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EPackageModelGenAnnotation;
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
 
 /**
  * Test the generation of annotations for model generation. See the {@link ModelGenAnnotator} class.

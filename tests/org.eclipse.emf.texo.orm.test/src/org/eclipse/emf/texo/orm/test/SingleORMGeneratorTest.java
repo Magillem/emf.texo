@@ -20,7 +20,7 @@ package org.eclipse.emf.texo.orm.test;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
+import org.eclipse.emf.texo.modelgenerator.test.TestModel;
 
 /**
  * Generates the ORM for a single ecore model.

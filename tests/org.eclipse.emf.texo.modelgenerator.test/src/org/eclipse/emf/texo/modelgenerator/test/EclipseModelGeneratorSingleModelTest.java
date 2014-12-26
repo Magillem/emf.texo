@@ -20,8 +20,6 @@ package org.eclipse.emf.texo.modelgenerator.test;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
-
 /**
  * Runs {@link EclipseModelGeneratorTest} for a single model file.
  * 
@@ -48,8 +46,9 @@ public class EclipseModelGeneratorSingleModelTest extends EclipseModelGeneratorT
     //    modelFiles.add("samples/employee.xsd"); //$NON-NLS-1$
     //    modelFiles.add("samples/library.ecore"); //$NON-NLS-1$
     //    modelFiles.add("samples/sport-society.xcore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/sport-club.xcore"); //$NON-NLS-1$
-    modelFiles.add("samples/sport-competition.xcore"); //$NON-NLS-1$
+    //    modelFiles.add("samples/sport-competition.xcore"); //$NON-NLS-1$
+    modelFiles.add("base/identifiable-xcore.xcore"); //$NON-NLS-1$
+    //    modelFiles.add("samples/sport-society.xcore"); //$NON-NLS-1$
     //    modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
     //    modelFiles.add("texo/TexoDataRequest.xsd"); //$NON-NLS-1$
     //    modelFiles.add("texo/TexoDataResponse.xsd"); //$NON-NLS-1$

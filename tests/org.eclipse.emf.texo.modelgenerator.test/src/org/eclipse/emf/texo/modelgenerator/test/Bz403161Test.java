@@ -32,7 +32,6 @@ import org.eclipse.emf.texo.generator.ModelAnnotatorRegistry;
 import org.eclipse.emf.texo.generator.ModelController;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EClassModelGenAnnotation;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.ModelcodegeneratorPackage;
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
 import org.junit.Assert;
 import org.junit.Test;
 

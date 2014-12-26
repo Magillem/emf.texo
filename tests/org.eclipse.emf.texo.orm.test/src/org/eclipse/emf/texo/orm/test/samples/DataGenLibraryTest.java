@@ -18,7 +18,7 @@ package org.eclipse.emf.texo.orm.test.samples;
 
 import java.util.List;
 
-import org.eclipse.emf.texo.modelgenerator.test.models.TestModel;
+import org.eclipse.emf.texo.modelgenerator.test.TestModel;
 import org.eclipse.emf.texo.orm.test.JPATest;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 

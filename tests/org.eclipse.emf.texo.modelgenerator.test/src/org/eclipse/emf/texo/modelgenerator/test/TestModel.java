@@ -15,7 +15,7 @@
  * $Id: TestModel.java,v 1.13 2011/09/04 20:12:20 mtaal Exp $
  */
 
-package org.eclipse.emf.texo.modelgenerator.test.models;
+package org.eclipse.emf.texo.modelgenerator.test;
 
 import java.io.File;
 import java.net.URI;
@@ -48,7 +48,10 @@ public class TestModel {
   }
 
   public static URI getModelPlatformUri(final String fileName) {
-    final String path = "platform:/resource/" + MODELGENERATOR_TEST_PROJECT + "/src/org/eclipse/emf/texo/modelgenerator/test/models/" + fileName; //$NON-NLS-1$ //$NON-NLS-2$
+    if (fileName.startsWith("platform") || fileName.startsWith("classpath")) { //$NON-NLS-1$ //$NON-NLS-2$
+      return URI.create(fileName);
+    }
+    final String path = "platform:/resource/" + MODELGENERATOR_TEST_PROJECT + "/models/" + fileName; //$NON-NLS-1$ //$NON-NLS-2$
     return URI.create(path);
   }
 
@@ -163,17 +166,23 @@ public class TestModel {
    */
   public static List<String> getModelDependencies(final String fileName) {
     final List<String> result = new ArrayList<String>();
+    if (fileName.equals("base/identifiable-xcore.xcore")) { //$NON-NLS-1$
+      result.add("base/XcoreLang.xcore"); //$NON-NLS-1$
+    }
     if (fileName.equals("samples/sport-competition.xcore")) { //$NON-NLS-1$
-      result.add("base/identifiable.xcore");//$NON-NLS-1$
+      result.add("base/XcoreLang.xcore"); //$NON-NLS-1$
+      result.add("base/identifiable-xcore.xcore");//$NON-NLS-1$
       result.add("samples/sport-society.xcore");//$NON-NLS-1$
       result.add("samples/sport-club.xcore");//$NON-NLS-1$
     }
     if (fileName.equals("samples/sport-club.xcore")) { //$NON-NLS-1$
-      result.add("base/identifiable.xcore");//$NON-NLS-1$
+      result.add("base/XcoreLang.xcore"); //$NON-NLS-1$
+      result.add("base/identifiable-xcore.xcore");//$NON-NLS-1$
       result.add("samples/sport-society.xcore");//$NON-NLS-1$
     }
     if (fileName.equals("samples/sport-society.xcore")) { //$NON-NLS-1$
-      result.add("base/identifiable.xcore");//$NON-NLS-1$
+      result.add("base/XcoreLang.xcore"); //$NON-NLS-1$
+      result.add("base/identifiable-xcore.xcore");//$NON-NLS-1$
     }
     return result;
   }
