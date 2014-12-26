@@ -25,14 +25,14 @@ import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EPackageRegistryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.Resource.Diagnostic;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.BasicExtendedMetaData;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.xcore.XcorePackage;
-import org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup;
-import org.eclipse.emf.ecore.xcore.XcoreStandaloneSetup.XcoreStandaloneRuntimeModule.XcoreStandaloneResourceSetProvider;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
@@ -51,7 +51,9 @@ import org.eclipse.xsd.XSDSchema;
 import org.eclipse.xsd.ecore.XSDEcoreBuilder;
 import org.eclipse.xsd.util.XSDResourceFactoryImpl;
 import org.eclipse.xsd.util.XSDResourceImpl;
+import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.common.types.TypesPackage;
+import org.eclipse.xtext.util.CancelIndicator;
 import org.eclipse.xtext.xbase.XbasePackage;
 
 import com.google.inject.Injector;
@@ -344,9 +346,10 @@ public class GeneratorUtils {
         final Resource res = resourceSet.createResource(emfURI);
         try {
 
-          res.load(Collections.EMPTY_MAP);
+          res.load(null);
 
           // code copied from EMF's EcoreEditor
+          // TODO: this code is probably not needed anymore
           if (!res.getContents().isEmpty()) {
             EObject rootObject = res.getContents().get(0);
             Resource metaDataResource = rootObject.eClass().eResource();
@@ -354,6 +357,10 @@ public class GeneratorUtils {
               resourceSet.getResources().addAll(metaDataResource.getResourceSet().getResources());
             }
           }
+
+          // resolve all to force checking to work
+          EcoreUtil2.resolveLazyCrossReferences(res, CancelIndicator.NullImpl);
+          checkErrors(res);
 
           final Iterator<EObject> it = res.getAllContents();
           while (it.hasNext()) {
@@ -367,12 +374,27 @@ public class GeneratorUtils {
               }
             }
           }
+
         } catch (final Exception e) {
           throw new IllegalArgumentException("Exception while loading resource from " //$NON-NLS-1$
               + emfURI.toString(), e);
         }
       }
     }
+
+    // resolve and check them all
+    EcoreUtil.resolveAll(resourceSet);
+
+    // check again for errors
+    for (Resource res : resourceSet.getResources()) {
+      try {
+        checkErrors(res);
+      } catch (final Exception e) {
+        throw new IllegalArgumentException("Exception while resolving proxies for resource " //$NON-NLS-1$
+            + res.getURI().toString(), e);
+      }
+    }
+
     return ePackages;
   }
 
@@ -383,17 +405,35 @@ public class GeneratorUtils {
    * @return a new {@link ResourceSet}
    */
   public static ResourceSet createGenerationResourceSet(Injector injector, EPackage.Registry registry) {
-
-    final ResourceSet rs;
-    if (injector != null) {
-      rs = injector.getInstance(XcoreStandaloneResourceSetProvider.class).get();
-    } else {
-      final Injector inj = new XcoreStandaloneSetup().createInjectorAndDoEMFRegistration();
-      rs = inj.getInstance(XcoreStandaloneResourceSetProvider.class).get();
-    }
+    final ResourceSet rs = new ResourceSetImpl();
+    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
+        new EcoreResourceFactoryImpl());
     rs.setPackageRegistry(registry);
-    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(false));
+    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
     return rs;
+  }
+
+  private static void checkErrors(Resource res) {
+    if (res.getErrors().isEmpty() && res.getWarnings().isEmpty()) {
+      return;
+    }
+    final StringBuilder sb = new StringBuilder();
+    for (Diagnostic diagnostic : res.getErrors()) {
+      if (sb.length() > 0) {
+        sb.append("\n"); //$NON-NLS-1$
+      }
+      sb.append(diagnostic.getLocation() + " (" + diagnostic.getLine() //$NON-NLS-1$
+          + "):" + diagnostic.getMessage());//$NON-NLS-1$
+    }
+    for (Diagnostic diagnostic : res.getWarnings()) {
+      if (sb.length() > 0) {
+        sb.append("\n"); //$NON-NLS-1$
+      }
+      sb.append(diagnostic.getLocation() + " (" + diagnostic.getLine() //$NON-NLS-1$
+          + "):" + diagnostic.getMessage());//$NON-NLS-1$
+    }
+
+    throw new IllegalStateException(sb.toString());
   }
 
   private static void checkDiagnostics(XSDEcoreBuilder ecoreBuilder) {
