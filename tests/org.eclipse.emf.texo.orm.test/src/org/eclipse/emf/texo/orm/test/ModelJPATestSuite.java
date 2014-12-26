@@ -28,6 +28,8 @@ import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
 import org.eclipse.emf.texo.test.model.samples.extlibrary.ExtlibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.schoollibrary.SchoollibraryModelPackage;
+import org.eclipse.emf.texo.test.model.samples.sport.club.ClubModelPackage;
+import org.eclipse.emf.texo.test.model.samples.sport.society.SocietyModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.anytype.AnytypeModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.attributes.AttributesModelPackage;
 import org.eclipse.emf.texo.test.model.schemaconstructs.duration.DurationModelPackage;
@@ -68,15 +70,19 @@ public class ModelJPATestSuite {
     // this does not work nicely with JPA/ORM
     modelPackages.remove(ExtlibraryModelPackage.INSTANCE);
 
-    // modelPackages.clear();
-    // modelPackages.add(ClubModelPackage.INSTANCE);
-
     for (ModelPackage modelPackage : modelPackages) {
       if (modelPackage == SchoollibraryModelPackage.INSTANCE) {
         final List<ModelPackage> testModelPackages = new ArrayList<ModelPackage>();
         testModelPackages.add(SchoollibraryModelPackage.INSTANCE);
         testModelPackages.add(LibraryModelPackage.INSTANCE);
         addTest(testModelPackages, suite, "special-schoollibrary"); //$NON-NLS-1$        
+      } else if (modelPackage == ClubModelPackage.INSTANCE) {
+        // club extends society so need to map both to handle
+        // that parent attributes are also persisted
+        final List<ModelPackage> testModelPackages = new ArrayList<ModelPackage>();
+        testModelPackages.add(ClubModelPackage.INSTANCE);
+        testModelPackages.add(SocietyModelPackage.INSTANCE);
+        addTest(testModelPackages, suite, "special-sports-club"); //$NON-NLS-1$        
       } else {
         addTest(modelPackage, suite);
       }
