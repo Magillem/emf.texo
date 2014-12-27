@@ -91,6 +91,7 @@ public class InventoryItem extends AbstractInventoryElement {
    */
   @Override
   public String toString() {
-    return "InventoryItem " + " [version: " + getVersion() + "]" + " [path: " + getPath() + "]";
+    return "InventoryItem " + " [version: " + getVersion() + "]" + " [path: " + getPath() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -67,6 +67,6 @@ public class AuthorsType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "AuthorsType ";
+    return "AuthorsType " + "{extends: " + super.toString() + "} ";
   }
 }

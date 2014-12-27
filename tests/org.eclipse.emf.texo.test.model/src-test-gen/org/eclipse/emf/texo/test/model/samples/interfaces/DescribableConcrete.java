@@ -95,6 +95,7 @@ public class DescribableConcrete extends Identifiable implements Describable {
    */
   @Override
   public String toString() {
-    return "DescribableConcrete " + " [name: " + getName() + "]" + " [description: " + getDescription() + "]";
+    return "DescribableConcrete " + " [name: " + getName() + "]" + " [description: " + getDescription() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

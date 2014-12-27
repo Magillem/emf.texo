@@ -108,6 +108,6 @@ public class ValueList extends ValueElement {
    */
   @Override
   public String toString() {
-    return "ValueList ";
+    return "ValueList " + "{extends: " + super.toString() + "} ";
   }
 }

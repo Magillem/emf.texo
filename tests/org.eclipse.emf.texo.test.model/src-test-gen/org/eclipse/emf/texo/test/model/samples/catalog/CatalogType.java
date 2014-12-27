@@ -260,6 +260,7 @@ public class CatalogType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "CatalogType " + " [name: " + getName() + "]" + " [description: " + getDescription() + "]";
+    return "CatalogType " + " [name: " + getName() + "]" + " [description: " + getDescription() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

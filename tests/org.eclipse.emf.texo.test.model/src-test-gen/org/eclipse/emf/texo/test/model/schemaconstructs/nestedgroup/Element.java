@@ -167,6 +167,6 @@ public class Element extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Element " + " [name: " + getName() + "]";
+    return "Element " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

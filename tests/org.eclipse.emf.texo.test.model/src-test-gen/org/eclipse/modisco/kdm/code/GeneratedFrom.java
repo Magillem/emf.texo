@@ -92,6 +92,6 @@ public class GeneratedFrom extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "GeneratedFrom ";
+    return "GeneratedFrom " + "{extends: " + super.toString() + "} ";
   }
 }

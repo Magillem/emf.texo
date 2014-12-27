@@ -27,6 +27,6 @@ public class TestBDTO extends Identifiable {
    */
   @Override
   public String toString() {
-    return "TestB ";
+    return "TestB " + "{extends: " + super.toString() + "} ";
   }
 }

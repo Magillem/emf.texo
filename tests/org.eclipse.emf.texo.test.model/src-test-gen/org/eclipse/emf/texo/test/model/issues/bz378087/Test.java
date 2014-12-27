@@ -61,6 +61,6 @@ public class Test extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Test " + " [class_: " + getClass_() + "]";
+    return "Test " + " [class_: " + getClass_() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

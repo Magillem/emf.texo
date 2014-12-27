@@ -150,6 +150,6 @@ public class Writer extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Writer " + " [name: " + getName() + "]";
+    return "Writer " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class RecordType extends CompositeType {
    */
   @Override
   public String toString() {
-    return "RecordType ";
+    return "RecordType " + "{extends: " + super.toString() + "} ";
   }
 }

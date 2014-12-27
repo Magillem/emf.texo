@@ -98,6 +98,6 @@ public class PaymentInfo extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PaymentInfo ";
+    return "PaymentInfo " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -109,6 +109,6 @@ public class Club extends Society {
    */
   @Override
   public String toString() {
-    return "Club ";
+    return "Club " + "{extends: " + super.toString() + "} ";
   }
 }

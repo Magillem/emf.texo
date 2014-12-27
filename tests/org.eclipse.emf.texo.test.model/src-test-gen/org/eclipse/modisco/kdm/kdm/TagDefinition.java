@@ -92,6 +92,7 @@ public class TagDefinition extends Element {
    */
   @Override
   public String toString() {
-    return "TagDefinition " + " [tag: " + getTag() + "]" + " [type: " + getType() + "]";
+    return "TagDefinition " + " [tag: " + getTag() + "]" + " [type: " + getType() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

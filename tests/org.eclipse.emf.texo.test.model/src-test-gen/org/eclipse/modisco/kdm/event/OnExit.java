@@ -24,6 +24,6 @@ public class OnExit extends Transition {
    */
   @Override
   public String toString() {
-    return "OnExit ";
+    return "OnExit " + "{extends: " + super.toString() + "} ";
   }
 }

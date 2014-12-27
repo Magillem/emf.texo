@@ -93,6 +93,6 @@ public class Dispatches extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "Dispatches ";
+    return "Dispatches " + "{extends: " + super.toString() + "} ";
   }
 }

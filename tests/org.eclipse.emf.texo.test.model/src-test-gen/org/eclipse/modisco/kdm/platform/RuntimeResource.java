@@ -24,6 +24,6 @@ public class RuntimeResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "RuntimeResource ";
+    return "RuntimeResource " + "{extends: " + super.toString() + "} ";
   }
 }

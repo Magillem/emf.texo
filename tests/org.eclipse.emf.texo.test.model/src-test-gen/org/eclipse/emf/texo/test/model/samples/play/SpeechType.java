@@ -146,6 +146,6 @@ public class SpeechType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SpeechType ";
+    return "SpeechType " + "{extends: " + super.toString() + "} ";
   }
 }

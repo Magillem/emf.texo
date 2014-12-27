@@ -92,6 +92,6 @@ public class BookOnTape extends AudioVisualItem {
    */
   @Override
   public String toString() {
-    return "BookOnTape ";
+    return "BookOnTape " + "{extends: " + super.toString() + "} ";
   }
 }

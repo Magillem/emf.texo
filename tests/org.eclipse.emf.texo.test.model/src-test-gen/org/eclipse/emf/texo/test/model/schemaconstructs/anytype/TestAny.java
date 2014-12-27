@@ -284,6 +284,6 @@ public class TestAny extends Identifiable {
    */
   @Override
   public String toString() {
-    return "TestAny " + " [name: " + getName() + "]" + " [a: " + getA() + "]";
+    return "TestAny " + " [name: " + getName() + "]" + " [a: " + getA() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -264,6 +264,6 @@ public class BuildResource extends AbstractBuildElement {
    */
   @Override
   public String toString() {
-    return "BuildResource ";
+    return "BuildResource " + "{extends: " + super.toString() + "} ";
   }
 }

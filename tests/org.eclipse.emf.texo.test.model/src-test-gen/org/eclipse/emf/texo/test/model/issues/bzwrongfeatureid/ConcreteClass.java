@@ -92,6 +92,6 @@ public class ConcreteClass extends AbstractClass implements TheInterface {
   @Override
   public String toString() {
     return "ConcreteClass " + " [concreteName: " + getConcreteName() + "]" + " [interfaceName: " + getInterfaceName()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -140,6 +140,6 @@ public abstract class CirculatingItem extends Item implements Lendable {
    */
   @Override
   public String toString() {
-    return "CirculatingItem " + " [copies: " + getCopies() + "]";
+    return "CirculatingItem " + " [copies: " + getCopies() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

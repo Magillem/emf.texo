@@ -230,6 +230,6 @@ public class Library extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Library " + " [name: " + getName() + "]";
+    return "Library " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -145,6 +145,6 @@ public class WorkWeek extends Identifiable {
    */
   @Override
   public String toString() {
-    return "WorkWeek " + " [workWeekId: " + getWorkWeekId() + "]";
+    return "WorkWeek " + " [workWeekId: " + getWorkWeekId() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

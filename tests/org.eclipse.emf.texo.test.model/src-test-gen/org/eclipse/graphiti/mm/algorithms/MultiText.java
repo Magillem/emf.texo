@@ -24,6 +24,6 @@ public class MultiText extends AbstractText {
    */
   @Override
   public String toString() {
-    return "MultiText ";
+    return "MultiText " + "{extends: " + super.toString() + "} ";
   }
 }

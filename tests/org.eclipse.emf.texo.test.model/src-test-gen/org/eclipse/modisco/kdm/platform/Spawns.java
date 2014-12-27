@@ -93,6 +93,6 @@ public class Spawns extends AbstractPlatformRelationship {
    */
   @Override
   public String toString() {
-    return "Spawns ";
+    return "Spawns " + "{extends: " + super.toString() + "} ";
   }
 }

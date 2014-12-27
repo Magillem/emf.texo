@@ -24,6 +24,6 @@ public class CodeElement extends CodeItem {
    */
   @Override
   public String toString() {
-    return "CodeElement ";
+    return "CodeElement " + "{extends: " + super.toString() + "} ";
   }
 }

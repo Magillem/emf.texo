@@ -26,6 +26,6 @@ public abstract class AbstractInventoryRelationship extends KDMRelationship {
    */
   @Override
   public String toString() {
-    return "AbstractInventoryRelationship ";
+    return "AbstractInventoryRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -129,6 +129,7 @@ public class PriceType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PriceType " + " [price: " + getPrice() + "]" + " [quantityTo: " + getQuantityTo() + "]";
+    return "PriceType " + " [price: " + getPrice() + "]" + " [quantityTo: " + getQuantityTo() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -61,6 +61,6 @@ public class MacroUnit extends PreprocessorDirective {
    */
   @Override
   public String toString() {
-    return "MacroUnit " + " [kind: " + getKind() + "]";
+    return "MacroUnit " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

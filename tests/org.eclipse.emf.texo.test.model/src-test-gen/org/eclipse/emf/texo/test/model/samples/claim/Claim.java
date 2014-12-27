@@ -253,6 +253,6 @@ public class Claim extends Identifiable {
   @Override
   public String toString() {
     return "Claim " + " [billingName: " + getBillingName() + "]" + " [claimGroupVSPId: " + getClaimGroupVSPId() + "]"
-        + " [claimStatus: " + getClaimStatus() + "]";
+        + " [claimStatus: " + getClaimStatus() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -98,6 +98,6 @@ public class GlobalAddress extends Address {
    */
   @Override
   public String toString() {
-    return "GlobalAddress " + " [countryCode: " + getCountryCode() + "]";
+    return "GlobalAddress " + " [countryCode: " + getCountryCode() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

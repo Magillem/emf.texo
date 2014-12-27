@@ -61,6 +61,6 @@ public class GlobalLocation extends Identifiable {
    */
   @Override
   public String toString() {
-    return "GlobalLocation " + " [countryCode: " + getCountryCode() + "]";
+    return "GlobalLocation " + " [countryCode: " + getCountryCode() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

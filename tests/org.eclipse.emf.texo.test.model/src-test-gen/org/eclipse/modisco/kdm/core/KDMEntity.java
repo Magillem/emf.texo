@@ -339,6 +339,6 @@ public abstract class KDMEntity extends ModelElement {
    */
   @Override
   public String toString() {
-    return "KDMEntity " + " [name: " + getName() + "]";
+    return "KDMEntity " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

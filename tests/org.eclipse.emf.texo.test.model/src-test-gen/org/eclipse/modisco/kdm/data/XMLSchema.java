@@ -106,6 +106,6 @@ public class XMLSchema extends AbstractDataElement {
    */
   @Override
   public String toString() {
-    return "XMLSchema ";
+    return "XMLSchema " + "{extends: " + super.toString() + "} ";
   }
 }

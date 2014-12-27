@@ -138,6 +138,7 @@ public class User extends Identifiable {
    */
   @Override
   public String toString() {
-    return "User " + " [login: " + getLogin() + "]" + " [password: " + getPassword() + "]";
+    return "User " + " [login: " + getLogin() + "]" + " [password: " + getPassword() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -107,6 +107,6 @@ public class DeployedSoftwareSystem extends AbstractPlatformElement {
    */
   @Override
   public String toString() {
-    return "DeployedSoftwareSystem ";
+    return "DeployedSoftwareSystem " + "{extends: " + super.toString() + "} ";
   }
 }

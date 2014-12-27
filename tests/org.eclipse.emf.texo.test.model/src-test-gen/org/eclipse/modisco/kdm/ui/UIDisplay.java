@@ -24,6 +24,6 @@ public class UIDisplay extends UIResource {
    */
   @Override
   public String toString() {
-    return "UIDisplay ";
+    return "UIDisplay " + "{extends: " + super.toString() + "} ";
   }
 }

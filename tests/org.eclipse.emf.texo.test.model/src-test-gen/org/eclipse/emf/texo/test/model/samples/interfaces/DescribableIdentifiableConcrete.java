@@ -129,6 +129,6 @@ public class DescribableIdentifiableConcrete extends Identifiable implements Des
   @Override
   public String toString() {
     return "DescribableIdentifiableConcrete " + " [name: " + getName() + "]" + " [description: " + getDescription()
-        + "]" + " [identifier: " + getIdentifier() + "]";
+        + "]" + " [identifier: " + getIdentifier() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

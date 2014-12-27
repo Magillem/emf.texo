@@ -209,6 +209,7 @@ public class SecretQuestion extends Identifiable {
   @Override
   public String toString() {
     return "SecretQuestion " + " [question: " + getQuestion() + "]" + " [correctAnswer: " + getCorrectAnswer() + "]"
-        + " [alarmAnswer: " + getAlarmAnswer() + "]" + " [active: " + isActive() + "]" + " [type: " + getType() + "]";
+        + " [alarmAnswer: " + getAlarmAnswer() + "]" + " [active: " + isActive() + "]" + " [type: " + getType() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

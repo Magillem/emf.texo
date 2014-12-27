@@ -60,6 +60,6 @@ public class LoopTask extends CompoundTask {
    */
   @Override
   public String toString() {
-    return "LoopTask " + " [whileCondition: " + getWhileCondition() + "]";
+    return "LoopTask " + " [whileCondition: " + getWhileCondition() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -147,6 +147,6 @@ public class Customer extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Customer " + " [customerID: " + getCustomerID() + "]";
+    return "Customer " + " [customerID: " + getCustomerID() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

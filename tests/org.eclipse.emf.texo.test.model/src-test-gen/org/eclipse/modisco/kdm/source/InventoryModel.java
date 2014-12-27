@@ -114,6 +114,6 @@ public class InventoryModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "InventoryModel ";
+    return "InventoryModel " + "{extends: " + super.toString() + "} ";
   }
 }

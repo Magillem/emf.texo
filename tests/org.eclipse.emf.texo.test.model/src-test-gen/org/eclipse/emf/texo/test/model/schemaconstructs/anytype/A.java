@@ -162,6 +162,7 @@ public class A extends Identifiable {
    */
   @Override
   public String toString() {
-    return "A " + " [name: " + getName() + "]" + " [doub: " + getDoub() + "]" + " [lon: " + getLon() + "]";
+    return "A " + " [name: " + getName() + "]" + " [doub: " + getDoub() + "]" + " [lon: " + getLon() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

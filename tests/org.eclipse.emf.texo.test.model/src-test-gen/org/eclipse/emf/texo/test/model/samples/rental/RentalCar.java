@@ -96,6 +96,6 @@ public class RentalCar extends RentalUnit {
    */
   @Override
   public String toString() {
-    return "RentalCar " + " [size: " + getSize() + "]";
+    return "RentalCar " + " [size: " + getSize() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

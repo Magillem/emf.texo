@@ -386,6 +386,6 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   @Override
   public String toString() {
-    return "Accounting " + " [name: " + getName() + "]";
+    return "Accounting " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

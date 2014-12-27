@@ -24,6 +24,6 @@ public class LockResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "LockResource ";
+    return "LockResource " + "{extends: " + super.toString() + "} ";
   }
 }

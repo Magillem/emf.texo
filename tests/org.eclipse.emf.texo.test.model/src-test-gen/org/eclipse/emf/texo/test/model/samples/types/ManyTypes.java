@@ -497,6 +497,6 @@ public class ManyTypes extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ManyTypes ";
+    return "ManyTypes " + "{extends: " + super.toString() + "} ";
   }
 }

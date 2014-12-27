@@ -110,6 +110,6 @@ public class Borrower extends Person {
    */
   @Override
   public String toString() {
-    return "Borrower ";
+    return "Borrower " + "{extends: " + super.toString() + "} ";
   }
 }

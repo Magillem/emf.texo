@@ -93,6 +93,6 @@ public class Loads extends AbstractPlatformRelationship {
    */
   @Override
   public String toString() {
-    return "Loads ";
+    return "Loads " + "{extends: " + super.toString() + "} ";
   }
 }

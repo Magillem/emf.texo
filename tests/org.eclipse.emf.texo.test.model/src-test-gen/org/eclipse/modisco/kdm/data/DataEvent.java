@@ -58,6 +58,6 @@ public class DataEvent extends DataResource {
    */
   @Override
   public String toString() {
-    return "DataEvent " + " [kind: " + getKind() + "]";
+    return "DataEvent " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

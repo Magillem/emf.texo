@@ -271,6 +271,6 @@ public class Workflow extends WorkflowElement {
    */
   @Override
   public String toString() {
-    return "Workflow ";
+    return "Workflow " + "{extends: " + super.toString() + "} ";
   }
 }

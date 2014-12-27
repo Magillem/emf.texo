@@ -94,6 +94,6 @@ public class InventoryRelationship extends AbstractInventoryRelationship {
    */
   @Override
   public String toString() {
-    return "InventoryRelationship ";
+    return "InventoryRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

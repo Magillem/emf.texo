@@ -24,6 +24,6 @@ public class ConditionalTask extends WorkflowNode {
    */
   @Override
   public String toString() {
-    return "ConditionalTask ";
+    return "ConditionalTask " + "{extends: " + super.toString() + "} ";
   }
 }

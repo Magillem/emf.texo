@@ -108,6 +108,6 @@ public class CompositeType extends Datatype {
    */
   @Override
   public String toString() {
-    return "CompositeType ";
+    return "CompositeType " + "{extends: " + super.toString() + "} ";
   }
 }

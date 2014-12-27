@@ -24,6 +24,6 @@ public class CodeAssembly extends Module {
    */
   @Override
   public String toString() {
-    return "CodeAssembly ";
+    return "CodeAssembly " + "{extends: " + super.toString() + "} ";
   }
 }

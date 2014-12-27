@@ -272,6 +272,6 @@ public class Address extends Identifiable {
   public String toString() {
     return "Address " + " [zipCode: " + getZipCode() + "]" + " [country: " + getCountry() + "]" + " [region: "
         + getRegion() + "]" + " [city: " + getCity() + "]" + " [street: " + getStreet() + "]" + " [building: "
-        + getBuilding() + "]" + " [flat: " + getFlat() + "]";
+        + getBuilding() + "]" + " [flat: " + getFlat() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

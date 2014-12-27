@@ -94,6 +94,6 @@ public class ActionRelationship extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ActionRelationship ";
+    return "ActionRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

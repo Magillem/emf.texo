@@ -24,6 +24,6 @@ public class TimeType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "TimeType ";
+    return "TimeType " + "{extends: " + super.toString() + "} ";
   }
 }

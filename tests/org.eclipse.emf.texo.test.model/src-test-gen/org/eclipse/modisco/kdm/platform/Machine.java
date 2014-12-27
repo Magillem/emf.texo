@@ -184,6 +184,6 @@ public class Machine extends AbstractPlatformElement {
    */
   @Override
   public String toString() {
-    return "Machine ";
+    return "Machine " + "{extends: " + super.toString() + "} ";
   }
 }

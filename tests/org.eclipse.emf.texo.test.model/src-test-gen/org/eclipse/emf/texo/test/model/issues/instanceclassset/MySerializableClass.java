@@ -186,6 +186,7 @@ public class MySerializableClass extends Identifiable implements Serializable {
    */
   @Override
   public String toString() {
-    return "MySerializableClass " + " [somethingInteresting: " + getSomethingInteresting() + "]";
+    return "MySerializableClass " + " [somethingInteresting: " + getSomethingInteresting() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

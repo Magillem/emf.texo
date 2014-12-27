@@ -25,6 +25,6 @@ public class ArchitectureView extends AbstractStructureElement {
    */
   @Override
   public String toString() {
-    return "ArchitectureView ";
+    return "ArchitectureView " + "{extends: " + super.toString() + "} ";
   }
 }

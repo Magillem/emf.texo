@@ -24,6 +24,6 @@ public class DecimalType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "DecimalType ";
+    return "DecimalType " + "{extends: " + super.toString() + "} ";
   }
 }

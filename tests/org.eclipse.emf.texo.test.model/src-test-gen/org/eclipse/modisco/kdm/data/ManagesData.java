@@ -94,6 +94,6 @@ public class ManagesData extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ManagesData ";
+    return "ManagesData " + "{extends: " + super.toString() + "} ";
   }
 }

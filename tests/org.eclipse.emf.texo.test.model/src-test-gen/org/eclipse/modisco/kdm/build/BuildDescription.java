@@ -142,6 +142,6 @@ public class BuildDescription extends BuildResource {
    */
   @Override
   public String toString() {
-    return "BuildDescription " + " [text: " + getText() + "]";
+    return "BuildDescription " + " [text: " + getText() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

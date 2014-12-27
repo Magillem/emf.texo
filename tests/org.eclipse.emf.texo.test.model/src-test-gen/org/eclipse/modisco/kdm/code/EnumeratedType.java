@@ -187,6 +187,6 @@ public class EnumeratedType extends Datatype {
    */
   @Override
   public String toString() {
-    return "EnumeratedType ";
+    return "EnumeratedType " + "{extends: " + super.toString() + "} ";
   }
 }

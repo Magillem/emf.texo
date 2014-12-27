@@ -24,6 +24,6 @@ public class RuleUnit extends ConceptualContainer {
    */
   @Override
   public String toString() {
-    return "RuleUnit ";
+    return "RuleUnit " + "{extends: " + super.toString() + "} ";
   }
 }

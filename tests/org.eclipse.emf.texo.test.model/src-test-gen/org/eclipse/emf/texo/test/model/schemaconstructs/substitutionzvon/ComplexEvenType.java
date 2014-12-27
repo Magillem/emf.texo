@@ -24,6 +24,6 @@ public class ComplexEvenType extends ComplexAAA {
    */
   @Override
   public String toString() {
-    return "ComplexEvenType ";
+    return "ComplexEvenType " + "{extends: " + super.toString() + "} ";
   }
 }

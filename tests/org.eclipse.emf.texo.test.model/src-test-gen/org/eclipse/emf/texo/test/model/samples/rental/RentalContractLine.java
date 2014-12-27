@@ -133,6 +133,6 @@ public class RentalContractLine extends Identifiable {
    */
   @Override
   public String toString() {
-    return "RentalContractLine " + " [number: " + getNumber() + "]";
+    return "RentalContractLine " + " [number: " + getNumber() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -148,6 +148,7 @@ public class SimpleAllMapType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SimpleAllMapType " + " [aaa: " + getAaa() + "]" + " [bbb: " + getBbb() + "]" + " [ccc: " + getCcc() + "]";
+    return "SimpleAllMapType " + " [aaa: " + getAaa() + "]" + " [bbb: " + getBbb() + "]" + " [ccc: " + getCcc() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

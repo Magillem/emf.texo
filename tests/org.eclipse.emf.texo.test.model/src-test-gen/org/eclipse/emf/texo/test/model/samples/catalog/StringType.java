@@ -61,6 +61,6 @@ public class StringType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "StringType " + " [value: " + getValue() + "]";
+    return "StringType " + " [value: " + getValue() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

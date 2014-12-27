@@ -130,6 +130,6 @@ public class Edge extends WorkflowElement {
    */
   @Override
   public String toString() {
-    return "Edge ";
+    return "Edge " + "{extends: " + super.toString() + "} ";
   }
 }

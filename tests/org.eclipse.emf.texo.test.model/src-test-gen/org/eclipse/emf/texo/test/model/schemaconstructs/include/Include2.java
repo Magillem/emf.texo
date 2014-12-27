@@ -61,6 +61,6 @@ public class Include2 extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Include2 " + " [code: " + getCode() + "]";
+    return "Include2 " + " [code: " + getCode() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

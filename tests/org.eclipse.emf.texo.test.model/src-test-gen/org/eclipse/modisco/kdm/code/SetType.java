@@ -58,6 +58,6 @@ public class SetType extends DerivedType {
    */
   @Override
   public String toString() {
-    return "SetType " + " [size: " + getSize() + "]";
+    return "SetType " + " [size: " + getSize() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

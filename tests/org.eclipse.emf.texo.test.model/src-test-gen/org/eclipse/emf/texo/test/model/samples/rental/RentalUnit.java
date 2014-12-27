@@ -61,6 +61,6 @@ public abstract class RentalUnit extends Identifiable {
    */
   @Override
   public String toString() {
-    return "RentalUnit " + " [description: " + getDescription() + "]";
+    return "RentalUnit " + " [description: " + getDescription() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

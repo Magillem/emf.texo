@@ -375,6 +375,6 @@ public class PType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PType " + " [id: " + getId() + "]" + " [name: " + getName() + "]";
+    return "PType " + " [id: " + getId() + "]" + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

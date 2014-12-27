@@ -61,6 +61,6 @@ public class MapElement extends Identifiable {
    */
   @Override
   public String toString() {
-    return "MapElement " + " [name: " + getName() + "]";
+    return "MapElement " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

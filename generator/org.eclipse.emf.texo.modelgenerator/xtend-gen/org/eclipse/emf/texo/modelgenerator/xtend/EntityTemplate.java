@@ -1308,11 +1308,21 @@ public class EntityTemplate extends BaseTemplate {
             _builder.newLineIfNotEmpty();
           }
         }
-        _builder.append("         ");
       }
     }
-    _builder.append(";");
+    _builder.append("         ");
+    {
+      EList<String> _classExtends_2 = eClassModelGenAnnotation.getClassExtends();
+      int _size_2 = _classExtends_2.size();
+      boolean _greaterThan_2 = (_size_2 > 0);
+      if (_greaterThan_2) {
+        _builder.append(" + \"{extends: \" + super.toString() + \"} \"");
+      }
+    }
     _builder.newLineIfNotEmpty();
+    _builder.append("         ");
+    _builder.append(";");
+    _builder.newLine();
     _builder.append("     ");
     _builder.append("}");
     _builder.newLine();

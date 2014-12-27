@@ -92,6 +92,6 @@ public class Implements extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "Implements ";
+    return "Implements " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class FalseFlow extends ControlFlow {
    */
   @Override
   public String toString() {
-    return "FalseFlow ";
+    return "FalseFlow " + "{extends: " + super.toString() + "} ";
   }
 }

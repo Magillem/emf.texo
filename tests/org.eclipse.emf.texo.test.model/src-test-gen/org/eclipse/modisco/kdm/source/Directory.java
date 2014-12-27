@@ -58,6 +58,6 @@ public class Directory extends InventoryContainer {
    */
   @Override
   public String toString() {
-    return "Directory " + " [path: " + getPath() + "]";
+    return "Directory " + " [path: " + getPath() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

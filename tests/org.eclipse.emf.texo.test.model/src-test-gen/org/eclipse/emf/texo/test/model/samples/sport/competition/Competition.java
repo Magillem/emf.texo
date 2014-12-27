@@ -146,6 +146,6 @@ public class Competition extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Competition " + " [name: " + getName() + "]";
+    return "Competition " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

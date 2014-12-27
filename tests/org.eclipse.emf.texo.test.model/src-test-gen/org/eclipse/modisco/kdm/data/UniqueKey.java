@@ -24,6 +24,6 @@ public class UniqueKey extends IndexElement {
    */
   @Override
   public String toString() {
-    return "UniqueKey ";
+    return "UniqueKey " + "{extends: " + super.toString() + "} ";
   }
 }

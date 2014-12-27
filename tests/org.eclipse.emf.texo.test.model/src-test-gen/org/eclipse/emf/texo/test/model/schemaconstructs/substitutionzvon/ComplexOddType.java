@@ -24,6 +24,6 @@ public class ComplexOddType extends ComplexAAA {
    */
   @Override
   public String toString() {
-    return "ComplexOddType ";
+    return "ComplexOddType " + "{extends: " + super.toString() + "} ";
   }
 }

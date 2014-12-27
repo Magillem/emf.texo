@@ -174,6 +174,7 @@ public class Stereotype extends Element {
    */
   @Override
   public String toString() {
-    return "Stereotype " + " [name: " + getName() + "]" + " [type: " + getType() + "]";
+    return "Stereotype " + " [name: " + getName() + "]" + " [type: " + getType() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -61,6 +61,6 @@ public class ConditionalOutputPort extends OutputPort {
    */
   @Override
   public String toString() {
-    return "ConditionalOutputPort " + " [condition: " + getCondition() + "]";
+    return "ConditionalOutputPort " + " [condition: " + getCondition() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

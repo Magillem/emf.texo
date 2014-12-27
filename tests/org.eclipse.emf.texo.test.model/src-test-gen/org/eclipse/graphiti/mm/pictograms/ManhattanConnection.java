@@ -25,6 +25,6 @@ public class ManhattanConnection extends Connection {
    */
   @Override
   public String toString() {
-    return "ManhattanConnection ";
+    return "ManhattanConnection " + "{extends: " + super.toString() + "} ";
   }
 }

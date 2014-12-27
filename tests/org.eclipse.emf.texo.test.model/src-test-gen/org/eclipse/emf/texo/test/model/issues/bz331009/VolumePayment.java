@@ -134,6 +134,7 @@ public class VolumePayment extends PaymentItem {
    */
   @Override
   public String toString() {
-    return "VolumePayment " + " [volume: " + getVolume() + "]" + " [price: " + getPrice() + "]";
+    return "VolumePayment " + " [volume: " + getVolume() + "]" + " [price: " + getPrice() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

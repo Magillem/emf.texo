@@ -28,6 +28,6 @@ public class PLAccount extends Account {
    */
   @Override
   public String toString() {
-    return "PLAccount ";
+    return "PLAccount " + "{extends: " + super.toString() + "} ";
   }
 }

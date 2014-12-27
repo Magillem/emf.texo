@@ -25,6 +25,6 @@ public class ConceptualElement extends AbstractConceptualElement {
    */
   @Override
   public String toString() {
-    return "ConceptualElement ";
+    return "ConceptualElement " + "{extends: " + super.toString() + "} ";
   }
 }

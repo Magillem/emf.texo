@@ -24,6 +24,6 @@ public class SharedUnit extends CompilationUnit {
    */
   @Override
   public String toString() {
-    return "SharedUnit ";
+    return "SharedUnit " + "{extends: " + super.toString() + "} ";
   }
 }

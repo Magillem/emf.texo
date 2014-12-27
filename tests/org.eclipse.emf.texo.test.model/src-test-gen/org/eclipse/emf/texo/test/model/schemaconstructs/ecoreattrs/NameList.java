@@ -134,6 +134,6 @@ public class NameList extends Identifiable {
   @Override
   public String toString() {
     return "NameList " + " [firstName: " + getFirstName() + "]" + " [middleName: " + getMiddleName() + "]"
-        + " [lastName: " + getLastName() + "]";
+        + " [lastName: " + getLastName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

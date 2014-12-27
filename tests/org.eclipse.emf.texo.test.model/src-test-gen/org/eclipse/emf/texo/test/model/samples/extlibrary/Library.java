@@ -489,6 +489,7 @@ public class Library extends Identifiable implements Addressable {
    */
   @Override
   public String toString() {
-    return "Library " + " [name: " + getName() + "]" + " [address: " + getAddress() + "]";
+    return "Library " + " [name: " + getName() + "]" + " [address: " + getAddress() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

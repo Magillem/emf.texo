@@ -62,6 +62,6 @@ public class CollectionType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "CollectionType ";
+    return "CollectionType " + "{extends: " + super.toString() + "} ";
   }
 }

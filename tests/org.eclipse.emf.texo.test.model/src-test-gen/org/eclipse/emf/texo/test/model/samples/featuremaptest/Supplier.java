@@ -210,6 +210,6 @@ public class Supplier extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Supplier " + " [name: " + getName() + "]";
+    return "Supplier " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -131,6 +131,7 @@ public class QueryReferingObjectsType extends Identifiable {
   @Override
   public String toString() {
     return "QueryReferingObjectsType " + " [targetUri: " + getTargetUri() + "]" + " [includeContainerReferences: "
-        + getIncludeContainerReferences() + "]" + " [maxResults: " + getMaxResults() + "]";
+        + getIncludeContainerReferences() + "]" + " [maxResults: " + getMaxResults() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -61,6 +61,6 @@ public class Application extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Application " + " [name: " + getName() + "]";
+    return "Application " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

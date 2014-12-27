@@ -216,6 +216,7 @@ public class ProductType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ProductType " + " [code: " + getCode() + "]" + " [description: " + getDescription() + "]";
+    return "ProductType " + " [code: " + getCode() + "]" + " [description: " + getDescription() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -92,6 +92,6 @@ public class ExceptionFlow extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ExceptionFlow ";
+    return "ExceptionFlow " + "{extends: " + super.toString() + "} ";
   }
 }

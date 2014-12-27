@@ -128,6 +128,6 @@ public class WorkDay extends Identifiable {
   @Override
   public String toString() {
     return "WorkDay " + " [dayOfWeek: " + getDayOfWeek() + "]" + " [duration: " + getDuration() + "]" + " [startTime: "
-        + getStartTime() + "]";
+        + getStartTime() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

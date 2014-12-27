@@ -94,6 +94,6 @@ public class ConceptualRelationship extends AbstractConceptualRelationship {
    */
   @Override
   public String toString() {
-    return "ConceptualRelationship ";
+    return "ConceptualRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

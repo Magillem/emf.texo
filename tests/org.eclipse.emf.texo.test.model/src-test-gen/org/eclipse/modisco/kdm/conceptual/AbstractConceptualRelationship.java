@@ -26,6 +26,6 @@ public abstract class AbstractConceptualRelationship extends KDMRelationship {
    */
   @Override
   public String toString() {
-    return "AbstractConceptualRelationship ";
+    return "AbstractConceptualRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

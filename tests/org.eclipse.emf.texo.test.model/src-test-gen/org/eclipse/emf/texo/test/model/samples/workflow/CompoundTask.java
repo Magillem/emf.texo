@@ -62,6 +62,6 @@ public class CompoundTask extends WorkflowNode {
    */
   @Override
   public String toString() {
-    return "CompoundTask ";
+    return "CompoundTask " + "{extends: " + super.toString() + "} ";
   }
 }

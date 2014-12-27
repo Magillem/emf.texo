@@ -94,6 +94,7 @@ public class SupplierType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SupplierType " + " [name: " + getName() + "]" + " [noOfEmployees: " + getNoOfEmployees() + "]";
+    return "SupplierType " + " [name: " + getName() + "]" + " [noOfEmployees: " + getNoOfEmployees() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

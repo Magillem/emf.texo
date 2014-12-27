@@ -108,6 +108,6 @@ public class Signature extends Datatype {
    */
   @Override
   public String toString() {
-    return "Signature ";
+    return "Signature " + "{extends: " + super.toString() + "} ";
   }
 }

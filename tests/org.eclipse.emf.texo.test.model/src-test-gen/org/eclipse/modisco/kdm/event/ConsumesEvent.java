@@ -92,6 +92,6 @@ public class ConsumesEvent extends AbstractEventRelationship {
    */
   @Override
   public String toString() {
-    return "ConsumesEvent ";
+    return "ConsumesEvent " + "{extends: " + super.toString() + "} ";
   }
 }

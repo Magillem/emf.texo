@@ -30,6 +30,6 @@ public class UserGroup extends Identifiable {
    */
   @Override
   public String toString() {
-    return "UserGroup ";
+    return "UserGroup " + "{extends: " + super.toString() + "} ";
   }
 }

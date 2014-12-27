@@ -26,6 +26,6 @@ public abstract class AbstractBuildRelationship extends KDMRelationship {
    */
   @Override
   public String toString() {
-    return "AbstractBuildRelationship ";
+    return "AbstractBuildRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

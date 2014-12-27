@@ -140,6 +140,6 @@ public class ContentItem extends AbstractContentElement {
    */
   @Override
   public String toString() {
-    return "ContentItem ";
+    return "ContentItem " + "{extends: " + super.toString() + "} ";
   }
 }

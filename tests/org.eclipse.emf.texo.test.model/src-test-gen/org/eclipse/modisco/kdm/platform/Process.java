@@ -24,6 +24,6 @@ public class Process extends RuntimeResource {
    */
   @Override
   public String toString() {
-    return "Process ";
+    return "Process " + "{extends: " + super.toString() + "} ";
   }
 }

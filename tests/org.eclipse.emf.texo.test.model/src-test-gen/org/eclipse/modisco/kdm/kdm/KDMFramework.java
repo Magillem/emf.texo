@@ -219,6 +219,6 @@ public abstract class KDMFramework extends ModelElement {
    */
   @Override
   public String toString() {
-    return "KDMFramework " + " [name: " + getName() + "]";
+    return "KDMFramework " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

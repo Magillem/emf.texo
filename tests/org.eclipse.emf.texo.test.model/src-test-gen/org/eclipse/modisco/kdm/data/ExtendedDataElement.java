@@ -25,6 +25,6 @@ public class ExtendedDataElement extends AbstractDataElement {
    */
   @Override
   public String toString() {
-    return "ExtendedDataElement ";
+    return "ExtendedDataElement " + "{extends: " + super.toString() + "} ";
   }
 }

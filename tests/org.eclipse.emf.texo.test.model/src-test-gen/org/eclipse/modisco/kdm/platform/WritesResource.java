@@ -94,6 +94,6 @@ public class WritesResource extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "WritesResource ";
+    return "WritesResource " + "{extends: " + super.toString() + "} ";
   }
 }

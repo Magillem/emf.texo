@@ -266,6 +266,7 @@ public class Artist extends Identifiable {
   @Override
   public String toString() {
     return "Artist " + " [id: " + getId() + "]" + " [version: " + getVersion() + "]" + " [firstName: " + getFirstName()
-        + "]" + " [lastName: " + getLastName() + "]" + " [birthDate: " + getBirthDate() + "]";
+        + "]" + " [lastName: " + getLastName() + "]" + " [birthDate: " + getBirthDate() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

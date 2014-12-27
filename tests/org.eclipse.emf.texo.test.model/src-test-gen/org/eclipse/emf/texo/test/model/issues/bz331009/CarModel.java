@@ -104,6 +104,6 @@ public class CarModel extends Identifiable {
    */
   @Override
   public String toString() {
-    return "CarModel " + " [name: " + getName() + "]";
+    return "CarModel " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

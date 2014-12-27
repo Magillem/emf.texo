@@ -24,6 +24,6 @@ public class Flow extends ControlFlow {
    */
   @Override
   public String toString() {
-    return "Flow ";
+    return "Flow " + "{extends: " + super.toString() + "} ";
   }
 }

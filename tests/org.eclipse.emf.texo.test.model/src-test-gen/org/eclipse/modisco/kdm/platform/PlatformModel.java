@@ -107,6 +107,6 @@ public class PlatformModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "PlatformModel ";
+    return "PlatformModel " + "{extends: " + super.toString() + "} ";
   }
 }

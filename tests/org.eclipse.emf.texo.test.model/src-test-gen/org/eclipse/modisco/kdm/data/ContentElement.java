@@ -24,6 +24,6 @@ public class ContentElement extends ContentItem {
    */
   @Override
   public String toString() {
-    return "ContentElement ";
+    return "ContentElement " + "{extends: " + super.toString() + "} ";
   }
 }

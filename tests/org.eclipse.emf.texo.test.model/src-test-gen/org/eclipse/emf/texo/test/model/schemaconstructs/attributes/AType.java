@@ -229,6 +229,6 @@ public class AType extends Identifiable {
   @Override
   public String toString() {
     return "AType " + " [name: " + getName() + "]" + " [b: " + getB() + "]" + " [c: " + getC() + "]" + " [id: "
-        + getId() + "]" + " [d: " + getD() + "]";
+        + getId() + "]" + " [d: " + getD() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

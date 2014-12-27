@@ -24,6 +24,6 @@ public class Transition extends EventResource {
    */
   @Override
   public String toString() {
-    return "Transition ";
+    return "Transition " + "{extends: " + super.toString() + "} ";
   }
 }

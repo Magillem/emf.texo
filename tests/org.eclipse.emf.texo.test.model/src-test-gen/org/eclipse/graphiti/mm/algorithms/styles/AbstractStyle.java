@@ -299,6 +299,6 @@ public abstract class AbstractStyle extends Identifiable {
   public String toString() {
     return "AbstractStyle " + " [lineWidth: " + getLineWidth() + "]" + " [lineStyle: " + getLineStyle() + "]"
         + " [filled: " + getFilled() + "]" + " [lineVisible: " + getLineVisible() + "]" + " [transparency: "
-        + getTransparency() + "]";
+        + getTransparency() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

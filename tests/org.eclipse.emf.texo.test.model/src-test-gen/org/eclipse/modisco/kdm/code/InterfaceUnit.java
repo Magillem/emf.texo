@@ -108,6 +108,6 @@ public class InterfaceUnit extends Datatype {
    */
   @Override
   public String toString() {
-    return "InterfaceUnit ";
+    return "InterfaceUnit " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class ExecutableFile extends InventoryItem {
    */
   @Override
   public String toString() {
-    return "ExecutableFile ";
+    return "ExecutableFile " + "{extends: " + super.toString() + "} ";
   }
 }

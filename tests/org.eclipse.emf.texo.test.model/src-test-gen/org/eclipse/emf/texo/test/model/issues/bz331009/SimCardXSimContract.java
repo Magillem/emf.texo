@@ -102,6 +102,6 @@ public class SimCardXSimContract extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SimCardXSimContract ";
+    return "SimCardXSimContract " + "{extends: " + super.toString() + "} ";
   }
 }

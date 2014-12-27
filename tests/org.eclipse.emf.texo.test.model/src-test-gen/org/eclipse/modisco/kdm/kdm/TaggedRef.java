@@ -60,6 +60,6 @@ public class TaggedRef extends ExtendedValue {
    */
   @Override
   public String toString() {
-    return "TaggedRef ";
+    return "TaggedRef " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -107,6 +107,6 @@ public class BuildModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "BuildModel ";
+    return "BuildModel " + "{extends: " + super.toString() + "} ";
   }
 }

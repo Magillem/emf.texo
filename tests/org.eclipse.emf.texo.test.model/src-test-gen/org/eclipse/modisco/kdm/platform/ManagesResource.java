@@ -94,6 +94,6 @@ public class ManagesResource extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ManagesResource ";
+    return "ManagesResource " + "{extends: " + super.toString() + "} ";
   }
 }

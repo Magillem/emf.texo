@@ -58,6 +58,6 @@ public class TaggedValue extends ExtendedValue {
    */
   @Override
   public String toString() {
-    return "TaggedValue " + " [value: " + getValue() + "]";
+    return "TaggedValue " + " [value: " + getValue() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

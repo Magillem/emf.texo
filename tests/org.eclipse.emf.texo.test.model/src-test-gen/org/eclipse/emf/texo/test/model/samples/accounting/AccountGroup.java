@@ -152,6 +152,6 @@ public class AccountGroup extends Identifiable {
    */
   @Override
   public String toString() {
-    return "AccountGroup " + " [name: " + getName() + "]";
+    return "AccountGroup " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

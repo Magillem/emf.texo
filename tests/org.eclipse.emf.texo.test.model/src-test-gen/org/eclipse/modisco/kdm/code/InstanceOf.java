@@ -92,6 +92,6 @@ public class InstanceOf extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "InstanceOf ";
+    return "InstanceOf " + "{extends: " + super.toString() + "} ";
   }
 }

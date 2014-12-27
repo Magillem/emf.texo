@@ -24,6 +24,6 @@ public class CompilationUnit extends Module {
    */
   @Override
   public String toString() {
-    return "CompilationUnit ";
+    return "CompilationUnit " + "{extends: " + super.toString() + "} ";
   }
 }

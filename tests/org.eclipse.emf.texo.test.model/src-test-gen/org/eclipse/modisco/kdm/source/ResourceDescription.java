@@ -25,6 +25,6 @@ public class ResourceDescription extends InventoryItem {
    */
   @Override
   public String toString() {
-    return "ResourceDescription ";
+    return "ResourceDescription " + "{extends: " + super.toString() + "} ";
   }
 }

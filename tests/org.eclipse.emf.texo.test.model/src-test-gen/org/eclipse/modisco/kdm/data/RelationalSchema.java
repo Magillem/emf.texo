@@ -108,6 +108,6 @@ public class RelationalSchema extends DataContainer {
    */
   @Override
   public String toString() {
-    return "RelationalSchema ";
+    return "RelationalSchema " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -212,6 +212,7 @@ public class Person extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Person " + " [firstname: " + getFirstname() + "]" + " [lastname: " + getLastname() + "]";
+    return "Person " + " [firstname: " + getFirstname() + "]" + " [lastname: " + getLastname() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

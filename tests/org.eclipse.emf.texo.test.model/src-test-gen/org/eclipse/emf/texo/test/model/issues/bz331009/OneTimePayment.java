@@ -25,6 +25,6 @@ public class OneTimePayment extends PaymentItem {
    */
   @Override
   public String toString() {
-    return "OneTimePayment ";
+    return "OneTimePayment " + "{extends: " + super.toString() + "} ";
   }
 }

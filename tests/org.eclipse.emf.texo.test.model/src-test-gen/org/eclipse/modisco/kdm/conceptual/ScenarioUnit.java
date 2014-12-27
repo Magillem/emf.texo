@@ -24,6 +24,6 @@ public class ScenarioUnit extends ConceptualContainer {
    */
   @Override
   public String toString() {
-    return "ScenarioUnit ";
+    return "ScenarioUnit " + "{extends: " + super.toString() + "} ";
   }
 }

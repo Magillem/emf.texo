@@ -365,6 +365,7 @@ public class SimpleTypeObject extends Identifiable {
   public String toString() {
     return "SimpleTypeObject " + " [code: " + getCode() + "]" + " [boo: " + getBoo() + "]" + " [byt: " + getByt() + "]"
         + " [doubl: " + getDoubl() + "]" + " [float_: " + getFloat_() + "]" + " [inte: " + getInte() + "]" + " [lon: "
-        + getLon() + "]" + " [shor: " + getShor() + "]" + " [enu: " + getEnu() + "]" + " [dat: " + getDat() + "]";
+        + getLon() + "]" + " [shor: " + getShor() + "]" + " [enu: " + getEnu() + "]" + " [dat: " + getDat() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

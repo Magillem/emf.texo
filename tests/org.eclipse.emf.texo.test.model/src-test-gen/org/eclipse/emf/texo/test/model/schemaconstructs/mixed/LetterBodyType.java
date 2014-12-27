@@ -177,6 +177,6 @@ public class LetterBodyType extends Identifiable {
   @Override
   public String toString() {
     return "LetterBodyType " + " [quantity: " + getQuantity() + "]" + " [productName: " + getProductName() + "]"
-        + " [shipDate: " + getShipDate() + "]";
+        + " [shipDate: " + getShipDate() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

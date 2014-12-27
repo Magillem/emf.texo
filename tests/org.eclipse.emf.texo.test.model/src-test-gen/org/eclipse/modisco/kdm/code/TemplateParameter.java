@@ -25,6 +25,6 @@ public class TemplateParameter extends Datatype {
    */
   @Override
   public String toString() {
-    return "TemplateParameter ";
+    return "TemplateParameter " + "{extends: " + super.toString() + "} ";
   }
 }

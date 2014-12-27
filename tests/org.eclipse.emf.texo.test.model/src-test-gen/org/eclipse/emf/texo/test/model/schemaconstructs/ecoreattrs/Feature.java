@@ -118,6 +118,7 @@ public class Feature extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Feature " + " [name: " + getName() + "]" + " [value_: " + getValue_() + "]";
+    return "Feature " + " [name: " + getName() + "]" + " [value_: " + getValue_() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

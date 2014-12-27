@@ -312,6 +312,6 @@ public class QueryType extends Identifiable {
   public String toString() {
     return "QueryType " + " [namedQuery: " + getNamedQuery() + "]" + " [query: " + getQuery() + "]" + " [firstResult: "
         + getFirstResult() + "]" + " [maxResults: " + getMaxResults() + "]" + " [doCount: " + isDoCount() + "]"
-        + " [countOperation: " + isCountOperation() + "]";
+        + " [countOperation: " + isCountOperation() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

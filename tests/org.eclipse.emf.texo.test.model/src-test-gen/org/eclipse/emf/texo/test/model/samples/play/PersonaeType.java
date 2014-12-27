@@ -147,6 +147,6 @@ public class PersonaeType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PersonaeType ";
+    return "PersonaeType " + "{extends: " + super.toString() + "} ";
   }
 }

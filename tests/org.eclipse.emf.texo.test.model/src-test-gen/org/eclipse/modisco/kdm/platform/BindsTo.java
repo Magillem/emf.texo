@@ -92,6 +92,6 @@ public class BindsTo extends AbstractPlatformRelationship {
    */
   @Override
   public String toString() {
-    return "BindsTo ";
+    return "BindsTo " + "{extends: " + super.toString() + "} ";
   }
 }

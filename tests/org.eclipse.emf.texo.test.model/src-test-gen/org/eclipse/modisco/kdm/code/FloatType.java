@@ -24,6 +24,6 @@ public class FloatType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "FloatType ";
+    return "FloatType " + "{extends: " + super.toString() + "} ";
   }
 }

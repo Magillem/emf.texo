@@ -207,6 +207,7 @@ public class DataElement extends ComputationalObject {
    */
   @Override
   public String toString() {
-    return "DataElement " + " [ext: " + getExt() + "]" + " [size: " + getSize() + "]";
+    return "DataElement " + " [ext: " + getExt() + "]" + " [size: " + getSize() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

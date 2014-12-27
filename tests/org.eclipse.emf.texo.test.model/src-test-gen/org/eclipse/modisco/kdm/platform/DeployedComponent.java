@@ -108,6 +108,6 @@ public class DeployedComponent extends AbstractPlatformElement {
    */
   @Override
   public String toString() {
-    return "DeployedComponent ";
+    return "DeployedComponent " + "{extends: " + super.toString() + "} ";
   }
 }

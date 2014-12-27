@@ -93,6 +93,6 @@ public class Displays extends AbstractUIRelationship {
    */
   @Override
   public String toString() {
-    return "Displays ";
+    return "Displays " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -99,6 +99,7 @@ public class Vat extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Vat " + " [name: " + getName() + "]" + " [rate: " + getRate() + "]";
+    return "Vat " + " [name: " + getName() + "]" + " [rate: " + getRate() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

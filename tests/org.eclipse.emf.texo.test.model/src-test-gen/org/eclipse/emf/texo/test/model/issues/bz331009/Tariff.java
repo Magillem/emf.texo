@@ -203,6 +203,7 @@ public abstract class Tariff extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Tariff " + " [name: " + getName() + "]" + " [active: " + isActive() + "]";
+    return "Tariff " + " [name: " + getName() + "]" + " [active: " + isActive() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

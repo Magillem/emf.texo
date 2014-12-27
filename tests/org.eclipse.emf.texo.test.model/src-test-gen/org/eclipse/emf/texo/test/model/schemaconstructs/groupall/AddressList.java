@@ -154,6 +154,6 @@ public class AddressList extends Identifiable {
    */
   @Override
   public String toString() {
-    return "AddressList " + " [groupName: " + getGroupName() + "]";
+    return "AddressList " + " [groupName: " + getGroupName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

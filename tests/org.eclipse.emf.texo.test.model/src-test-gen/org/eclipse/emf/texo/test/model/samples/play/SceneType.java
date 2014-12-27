@@ -189,6 +189,7 @@ public class SceneType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SceneType " + " [pindex: " + getPindex() + "]" + " [title: " + getTitle() + "]";
+    return "SceneType " + " [pindex: " + getPindex() + "]" + " [title: " + getTitle() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

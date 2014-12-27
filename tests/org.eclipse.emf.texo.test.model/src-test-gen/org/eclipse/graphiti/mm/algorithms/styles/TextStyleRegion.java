@@ -129,6 +129,7 @@ public class TextStyleRegion extends Identifiable {
    */
   @Override
   public String toString() {
-    return "TextStyleRegion " + " [start: " + getStart() + "]" + " [end: " + getEnd() + "]";
+    return "TextStyleRegion " + " [start: " + getStart() + "]" + " [end: " + getEnd() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

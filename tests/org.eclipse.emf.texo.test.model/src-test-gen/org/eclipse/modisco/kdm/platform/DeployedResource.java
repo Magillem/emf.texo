@@ -107,6 +107,6 @@ public class DeployedResource extends AbstractPlatformElement {
    */
   @Override
   public String toString() {
-    return "DeployedResource ";
+    return "DeployedResource " + "{extends: " + super.toString() + "} ";
   }
 }

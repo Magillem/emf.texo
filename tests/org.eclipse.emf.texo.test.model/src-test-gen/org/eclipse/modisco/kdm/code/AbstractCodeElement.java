@@ -349,6 +349,6 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractCodeElement ";
+    return "AbstractCodeElement " + "{extends: " + super.toString() + "} ";
   }
 }

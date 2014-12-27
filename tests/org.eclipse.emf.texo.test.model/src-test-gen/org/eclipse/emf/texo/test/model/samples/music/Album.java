@@ -403,6 +403,6 @@ public class Album extends Identifiable {
   @Override
   public String toString() {
     return "Album " + " [id: " + getId() + "]" + " [version: " + getVersion() + "]" + " [name: " + getName() + "]"
-        + " [releaseDate: " + getReleaseDate() + "]";
+        + " [releaseDate: " + getReleaseDate() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

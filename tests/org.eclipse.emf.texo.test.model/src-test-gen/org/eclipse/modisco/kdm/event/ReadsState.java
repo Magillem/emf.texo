@@ -94,6 +94,6 @@ public class ReadsState extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ReadsState ";
+    return "ReadsState " + "{extends: " + super.toString() + "} ";
   }
 }

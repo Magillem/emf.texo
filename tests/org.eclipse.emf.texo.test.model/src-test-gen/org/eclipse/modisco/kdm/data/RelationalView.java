@@ -24,6 +24,6 @@ public class RelationalView extends ColumnSet {
    */
   @Override
   public String toString() {
-    return "RelationalView ";
+    return "RelationalView " + "{extends: " + super.toString() + "} ";
   }
 }

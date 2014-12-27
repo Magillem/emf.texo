@@ -94,6 +94,6 @@ public class ProducesEvent extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ProducesEvent ";
+    return "ProducesEvent " + "{extends: " + super.toString() + "} ";
   }
 }

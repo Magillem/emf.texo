@@ -92,6 +92,6 @@ public class ReferenceTo extends AbstractDataRelationship {
    */
   @Override
   public String toString() {
-    return "ReferenceTo ";
+    return "ReferenceTo " + "{extends: " + super.toString() + "} ";
   }
 }

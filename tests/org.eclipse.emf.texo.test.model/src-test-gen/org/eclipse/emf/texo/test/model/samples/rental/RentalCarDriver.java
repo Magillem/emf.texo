@@ -96,6 +96,6 @@ public class RentalCarDriver extends Identifiable {
    */
   @Override
   public String toString() {
-    return "RentalCarDriver " + " [name: " + getName() + "]";
+    return "RentalCarDriver " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

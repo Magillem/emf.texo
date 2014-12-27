@@ -24,6 +24,6 @@ public class LanguageUnit extends Module {
    */
   @Override
   public String toString() {
-    return "LanguageUnit ";
+    return "LanguageUnit " + "{extends: " + super.toString() + "} ";
   }
 }

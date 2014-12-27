@@ -234,6 +234,6 @@ public class AggregatedRelationship extends ModelElement {
    */
   @Override
   public String toString() {
-    return "AggregatedRelationship " + " [density: " + getDensity() + "]";
+    return "AggregatedRelationship " + " [density: " + getDensity() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

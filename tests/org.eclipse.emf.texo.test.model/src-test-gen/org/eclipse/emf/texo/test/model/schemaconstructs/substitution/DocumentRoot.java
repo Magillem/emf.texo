@@ -307,6 +307,6 @@ public class DocumentRoot extends Identifiable {
   @Override
   public String toString() {
     return "DocumentRoot " + " [even: " + getEven() + "]" + " [mySimpleAbstract: " + getMySimpleAbstract() + "]"
-        + " [odd: " + getOdd() + "]";
+        + " [odd: " + getOdd() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

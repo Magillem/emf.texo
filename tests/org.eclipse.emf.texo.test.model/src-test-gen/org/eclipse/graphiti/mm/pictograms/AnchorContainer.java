@@ -106,6 +106,6 @@ public abstract class AnchorContainer extends PictogramElement {
    */
   @Override
   public String toString() {
-    return "AnchorContainer ";
+    return "AnchorContainer " + "{extends: " + super.toString() + "} ";
   }
 }

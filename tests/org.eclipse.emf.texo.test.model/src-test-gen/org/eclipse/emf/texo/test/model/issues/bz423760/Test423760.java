@@ -61,6 +61,6 @@ public class Test423760 extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Test423760 " + " [name: " + getName() + "]";
+    return "Test423760 " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

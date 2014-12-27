@@ -92,6 +92,6 @@ public class ControlFlow extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ControlFlow ";
+    return "ControlFlow " + "{extends: " + super.toString() + "} ";
   }
 }

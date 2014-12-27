@@ -24,6 +24,6 @@ public class ChoiceType extends CompositeType {
    */
   @Override
   public String toString() {
-    return "ChoiceType ";
+    return "ChoiceType " + "{extends: " + super.toString() + "} ";
   }
 }

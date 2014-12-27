@@ -345,6 +345,6 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractStructureElement ";
+    return "AbstractStructureElement " + "{extends: " + super.toString() + "} ";
   }
 }

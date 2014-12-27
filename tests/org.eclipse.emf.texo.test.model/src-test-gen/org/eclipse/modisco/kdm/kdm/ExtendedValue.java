@@ -60,6 +60,6 @@ public abstract class ExtendedValue extends Element {
    */
   @Override
   public String toString() {
-    return "ExtendedValue ";
+    return "ExtendedValue " + "{extends: " + super.toString() + "} ";
   }
 }

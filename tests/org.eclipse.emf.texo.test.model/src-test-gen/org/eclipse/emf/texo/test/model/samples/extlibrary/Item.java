@@ -65,6 +65,6 @@ public abstract class Item extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Item " + " [publicationDate: " + getPublicationDate() + "]";
+    return "Item " + " [publicationDate: " + getPublicationDate() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

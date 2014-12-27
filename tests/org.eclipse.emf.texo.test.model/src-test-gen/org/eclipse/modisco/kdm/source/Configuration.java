@@ -24,6 +24,6 @@ public class Configuration extends InventoryItem {
    */
   @Override
   public String toString() {
-    return "Configuration ";
+    return "Configuration " + "{extends: " + super.toString() + "} ";
   }
 }

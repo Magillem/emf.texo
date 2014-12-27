@@ -24,6 +24,6 @@ public class DataSegment extends ColumnSet {
    */
   @Override
   public String toString() {
-    return "DataSegment ";
+    return "DataSegment " + "{extends: " + super.toString() + "} ";
   }
 }

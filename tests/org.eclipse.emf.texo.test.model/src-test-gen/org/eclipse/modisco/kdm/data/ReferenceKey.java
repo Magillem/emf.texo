@@ -24,6 +24,6 @@ public class ReferenceKey extends IndexElement {
    */
   @Override
   public String toString() {
-    return "ReferenceKey ";
+    return "ReferenceKey " + "{extends: " + super.toString() + "} ";
   }
 }

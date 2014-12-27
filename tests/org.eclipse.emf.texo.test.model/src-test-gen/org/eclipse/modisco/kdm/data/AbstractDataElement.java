@@ -270,6 +270,6 @@ public abstract class AbstractDataElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractDataElement ";
+    return "AbstractDataElement " + "{extends: " + super.toString() + "} ";
   }
 }

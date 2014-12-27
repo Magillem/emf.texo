@@ -30,6 +30,6 @@ public class Mother extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Mother ";
+    return "Mother " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -68,6 +68,6 @@ public class VarConditionType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "VarConditionType ";
+    return "VarConditionType " + "{extends: " + super.toString() + "} ";
   }
 }

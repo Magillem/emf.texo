@@ -93,6 +93,6 @@ public class CompliesTo extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "CompliesTo ";
+    return "CompliesTo " + "{extends: " + super.toString() + "} ";
   }
 }

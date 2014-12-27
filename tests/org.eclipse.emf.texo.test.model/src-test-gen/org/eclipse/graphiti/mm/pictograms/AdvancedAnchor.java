@@ -61,6 +61,6 @@ public abstract class AdvancedAnchor extends Anchor {
   @Override
   public String toString() {
     return "AdvancedAnchor " + " [useAnchorLocationAsConnectionEndpoint: " + isUseAnchorLocationAsConnectionEndpoint()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

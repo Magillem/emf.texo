@@ -94,6 +94,6 @@ public class HasState extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "HasState ";
+    return "HasState " + "{extends: " + super.toString() + "} ";
   }
 }

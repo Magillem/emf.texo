@@ -245,6 +245,6 @@ public class JournalStatement extends Identifiable {
   @Override
   public String toString() {
     return "JournalStatement " + " [description: " + getDescription() + "]" + " [date: " + getDate() + "]"
-        + " [amount: " + getAmount() + "]";
+        + " [amount: " + getAmount() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

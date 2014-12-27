@@ -25,6 +25,6 @@ public class StructureElement extends AbstractStructureElement {
    */
   @Override
   public String toString() {
-    return "StructureElement ";
+    return "StructureElement " + "{extends: " + super.toString() + "} ";
   }
 }

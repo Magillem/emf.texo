@@ -24,6 +24,6 @@ public class ExceptionUnit extends BlockUnit {
    */
   @Override
   public String toString() {
-    return "ExceptionUnit ";
+    return "ExceptionUnit " + "{extends: " + super.toString() + "} ";
   }
 }

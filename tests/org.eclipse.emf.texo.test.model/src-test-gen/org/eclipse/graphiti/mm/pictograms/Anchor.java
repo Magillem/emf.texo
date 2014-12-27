@@ -253,6 +253,6 @@ public abstract class Anchor extends PictogramElement {
    */
   @Override
   public String toString() {
-    return "Anchor ";
+    return "Anchor " + "{extends: " + super.toString() + "} ";
   }
 }

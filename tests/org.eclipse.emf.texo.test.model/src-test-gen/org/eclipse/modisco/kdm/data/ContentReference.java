@@ -25,6 +25,6 @@ public class ContentReference extends ContentItem {
    */
   @Override
   public String toString() {
-    return "ContentReference ";
+    return "ContentReference " + "{extends: " + super.toString() + "} ";
   }
 }

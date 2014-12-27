@@ -103,6 +103,6 @@ public class VarInputType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "VarInputType " + " [measure: " + getMeasure() + "]";
+    return "VarInputType " + " [measure: " + getMeasure() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

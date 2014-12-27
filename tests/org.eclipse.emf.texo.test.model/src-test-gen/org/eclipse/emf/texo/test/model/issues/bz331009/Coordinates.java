@@ -101,6 +101,6 @@ public class Coordinates extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Coordinates " + " [x: " + getX() + "]" + " [y: " + getY() + "]";
+    return "Coordinates " + " [x: " + getX() + "]" + " [y: " + getY() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

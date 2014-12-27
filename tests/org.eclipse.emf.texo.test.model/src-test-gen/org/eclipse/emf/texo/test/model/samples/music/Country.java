@@ -128,6 +128,6 @@ public class Country extends Identifiable {
   @Override
   public String toString() {
     return "Country " + " [code: " + getCode() + "]" + " [version: " + getVersion() + "]" + " [name: " + getName()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

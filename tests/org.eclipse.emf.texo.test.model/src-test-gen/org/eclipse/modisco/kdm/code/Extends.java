@@ -92,6 +92,6 @@ public class Extends extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "Extends ";
+    return "Extends " + "{extends: " + super.toString() + "} ";
   }
 }

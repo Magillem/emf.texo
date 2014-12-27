@@ -211,6 +211,6 @@ public class Connection extends AnchorContainer {
    */
   @Override
   public String toString() {
-    return "Connection ";
+    return "Connection " + "{extends: " + super.toString() + "} ";
   }
 }

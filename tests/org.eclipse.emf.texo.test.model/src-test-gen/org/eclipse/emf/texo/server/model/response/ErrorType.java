@@ -163,6 +163,6 @@ public class ErrorType extends Identifiable {
   @Override
   public String toString() {
     return "ErrorType " + " [errorClass: " + getErrorClass() + "]" + " [message: " + getMessage() + "]"
-        + " [stackTrace: " + getStackTrace() + "]";
+        + " [stackTrace: " + getStackTrace() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -109,6 +109,6 @@ public class ComplexContentType extends AbstractContentElement {
    */
   @Override
   public String toString() {
-    return "ComplexContentType ";
+    return "ComplexContentType " + "{extends: " + super.toString() + "} ";
   }
 }

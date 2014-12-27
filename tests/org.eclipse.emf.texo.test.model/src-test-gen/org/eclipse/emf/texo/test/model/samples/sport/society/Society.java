@@ -61,6 +61,6 @@ public class Society extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Society " + " [name: " + getName() + "]";
+    return "Society " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

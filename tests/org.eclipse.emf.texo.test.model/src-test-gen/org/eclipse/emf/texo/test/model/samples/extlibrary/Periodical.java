@@ -91,6 +91,7 @@ public abstract class Periodical extends Item {
    */
   @Override
   public String toString() {
-    return "Periodical " + " [title: " + getTitle() + "]" + " [issuesPerYear: " + getIssuesPerYear() + "]";
+    return "Periodical " + " [title: " + getTitle() + "]" + " [issuesPerYear: " + getIssuesPerYear() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

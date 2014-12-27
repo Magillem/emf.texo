@@ -350,6 +350,6 @@ public abstract class AbstractPlatformElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractPlatformElement ";
+    return "AbstractPlatformElement " + "{extends: " + super.toString() + "} ";
   }
 }

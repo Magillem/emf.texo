@@ -93,6 +93,6 @@ public class Writes extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "Writes ";
+    return "Writes " + "{extends: " + super.toString() + "} ";
   }
 }

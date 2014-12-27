@@ -24,6 +24,6 @@ public class Value extends ValueElement {
    */
   @Override
   public String toString() {
-    return "Value ";
+    return "Value " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -58,6 +58,6 @@ public class PlatformEvent extends ResourceType {
    */
   @Override
   public String toString() {
-    return "PlatformEvent " + " [kind: " + getKind() + "]";
+    return "PlatformEvent " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

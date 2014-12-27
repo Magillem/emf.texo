@@ -92,6 +92,6 @@ public class LinksTo extends AbstractBuildRelationship {
    */
   @Override
   public String toString() {
-    return "LinksTo ";
+    return "LinksTo " + "{extends: " + super.toString() + "} ";
   }
 }

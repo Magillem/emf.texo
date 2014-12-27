@@ -24,6 +24,6 @@ public class ScaledType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "ScaledType ";
+    return "ScaledType " + "{extends: " + super.toString() + "} ";
   }
 }

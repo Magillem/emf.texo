@@ -61,6 +61,6 @@ public class RType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "RType " + " [name: " + getName() + "]";
+    return "RType " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

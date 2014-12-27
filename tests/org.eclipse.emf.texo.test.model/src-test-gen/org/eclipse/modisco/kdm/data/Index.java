@@ -24,6 +24,6 @@ public class Index extends IndexElement {
    */
   @Override
   public String toString() {
-    return "Index ";
+    return "Index " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -29,6 +29,6 @@ public class Price extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Price ";
+    return "Price " + "{extends: " + super.toString() + "} ";
   }
 }

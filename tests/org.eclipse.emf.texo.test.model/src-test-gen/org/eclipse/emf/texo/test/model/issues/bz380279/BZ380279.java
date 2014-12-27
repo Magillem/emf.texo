@@ -61,6 +61,6 @@ public class BZ380279 extends Identifiable {
    */
   @Override
   public String toString() {
-    return "BZ380279 " + " [firstName: " + getFirstName() + "]";
+    return "BZ380279 " + " [firstName: " + getFirstName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

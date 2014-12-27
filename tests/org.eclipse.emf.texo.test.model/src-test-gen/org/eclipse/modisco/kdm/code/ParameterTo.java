@@ -92,6 +92,6 @@ public class ParameterTo extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "ParameterTo ";
+    return "ParameterTo " + "{extends: " + super.toString() + "} ";
   }
 }

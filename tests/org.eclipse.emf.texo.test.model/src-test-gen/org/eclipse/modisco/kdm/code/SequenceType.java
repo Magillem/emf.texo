@@ -58,6 +58,6 @@ public class SequenceType extends DerivedType {
    */
   @Override
   public String toString() {
-    return "SequenceType " + " [size: " + getSize() + "]";
+    return "SequenceType " + " [size: " + getSize() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -127,6 +127,7 @@ public class SimpleAllType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SimpleAllType " + " [aaa: " + getAaa() + "]" + " [bbb: " + getBbb() + "]" + " [ccc: " + getCcc() + "]";
+    return "SimpleAllType " + " [aaa: " + getAaa() + "]" + " [bbb: " + getBbb() + "]" + " [ccc: " + getCcc() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

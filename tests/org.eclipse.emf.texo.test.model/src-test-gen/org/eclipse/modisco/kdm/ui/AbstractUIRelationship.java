@@ -26,6 +26,6 @@ public abstract class AbstractUIRelationship extends KDMRelationship {
    */
   @Override
   public String toString() {
-    return "AbstractUIRelationship ";
+    return "AbstractUIRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

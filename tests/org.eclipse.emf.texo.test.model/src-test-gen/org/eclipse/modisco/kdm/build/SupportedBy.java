@@ -92,6 +92,6 @@ public class SupportedBy extends AbstractBuildRelationship {
    */
   @Override
   public String toString() {
-    return "SupportedBy ";
+    return "SupportedBy " + "{extends: " + super.toString() + "} ";
   }
 }

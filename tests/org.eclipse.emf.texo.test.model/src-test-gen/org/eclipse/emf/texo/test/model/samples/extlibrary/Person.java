@@ -128,6 +128,6 @@ public class Person extends Identifiable implements Addressable {
   @Override
   public String toString() {
     return "Person " + " [firstName: " + getFirstName() + "]" + " [lastName: " + getLastName() + "]" + " [address: "
-        + getAddress() + "]";
+        + getAddress() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

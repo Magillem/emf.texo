@@ -171,6 +171,6 @@ public class BookStore extends Identifiable {
    */
   @Override
   public String toString() {
-    return "BookStore " + " [name: " + getName() + "]";
+    return "BookStore " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

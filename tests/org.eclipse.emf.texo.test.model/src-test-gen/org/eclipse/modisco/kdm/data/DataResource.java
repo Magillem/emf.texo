@@ -24,6 +24,6 @@ public class DataResource extends AbstractDataElement {
    */
   @Override
   public String toString() {
-    return "DataResource ";
+    return "DataResource " + "{extends: " + super.toString() + "} ";
   }
 }

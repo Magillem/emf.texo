@@ -24,6 +24,6 @@ public class EventElement extends AbstractEventElement {
    */
   @Override
   public String toString() {
-    return "EventElement ";
+    return "EventElement " + "{extends: " + super.toString() + "} ";
   }
 }

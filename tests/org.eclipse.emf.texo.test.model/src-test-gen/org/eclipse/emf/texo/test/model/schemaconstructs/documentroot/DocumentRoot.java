@@ -171,6 +171,7 @@ public class DocumentRoot extends Identifiable {
    */
   @Override
   public String toString() {
-    return "DocumentRoot " + " [otherTest: " + getOtherTest() + "]" + " [test: " + getTest() + "]";
+    return "DocumentRoot " + " [otherTest: " + getOtherTest() + "]" + " [test: " + getTest() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class OctetType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "OctetType ";
+    return "OctetType " + "{extends: " + super.toString() + "} ";
   }
 }

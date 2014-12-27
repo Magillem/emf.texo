@@ -162,6 +162,7 @@ public class StatesByCountry extends Identifiable {
   @Override
   public String toString() {
     return "statesByCountry " + " [country: " + getCountry() + "]" + " [index: " + getIndex() + "]" + " [allStates: "
-        + getAllStates() + "]" + " [sixImportantStates: " + getSixImportantStates() + "]";
+        + getAllStates() + "]" + " [sixImportantStates: " + getSixImportantStates() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

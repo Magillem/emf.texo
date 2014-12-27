@@ -110,6 +110,6 @@ public abstract class StyleContainer extends Identifiable {
    */
   @Override
   public String toString() {
-    return "StyleContainer ";
+    return "StyleContainer " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -92,6 +92,6 @@ public class SuppliedBy extends AbstractBuildRelationship {
    */
   @Override
   public String toString() {
-    return "SuppliedBy ";
+    return "SuppliedBy " + "{extends: " + super.toString() + "} ";
   }
 }

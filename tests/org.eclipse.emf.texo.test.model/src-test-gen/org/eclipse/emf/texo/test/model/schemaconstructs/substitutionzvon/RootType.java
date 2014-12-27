@@ -127,6 +127,6 @@ public class RootType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "RootType " + " [myAbstract: " + getMyAbstract() + "]";
+    return "RootType " + " [myAbstract: " + getMyAbstract() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

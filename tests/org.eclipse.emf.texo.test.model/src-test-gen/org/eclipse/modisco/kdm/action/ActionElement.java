@@ -223,6 +223,6 @@ public class ActionElement extends AbstractCodeElement {
    */
   @Override
   public String toString() {
-    return "ActionElement " + " [kind: " + getKind() + "]";
+    return "ActionElement " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

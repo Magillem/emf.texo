@@ -24,6 +24,6 @@ public class Task extends WorkflowNode {
    */
   @Override
   public String toString() {
-    return "Task ";
+    return "Task " + "{extends: " + super.toString() + "} ";
   }
 }

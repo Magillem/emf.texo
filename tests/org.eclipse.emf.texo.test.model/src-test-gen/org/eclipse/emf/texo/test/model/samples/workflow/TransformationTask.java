@@ -61,6 +61,7 @@ public class TransformationTask extends WorkflowNode {
    */
   @Override
   public String toString() {
-    return "TransformationTask " + " [transformExpression: " + getTransformExpression() + "]";
+    return "TransformationTask " + " [transformExpression: " + getTransformExpression() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

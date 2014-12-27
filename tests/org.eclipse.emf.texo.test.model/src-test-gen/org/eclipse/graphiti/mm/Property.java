@@ -94,6 +94,7 @@ public class Property extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Property " + " [key: " + getKey() + "]" + " [value: " + getValue() + "]";
+    return "Property " + " [key: " + getKey() + "]" + " [value: " + getValue() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class DataManager extends ResourceType {
    */
   @Override
   public String toString() {
-    return "DataManager ";
+    return "DataManager " + "{extends: " + super.toString() + "} ";
   }
 }

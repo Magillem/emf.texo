@@ -24,6 +24,6 @@ public class CharType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "CharType ";
+    return "CharType " + "{extends: " + super.toString() + "} ";
   }
 }

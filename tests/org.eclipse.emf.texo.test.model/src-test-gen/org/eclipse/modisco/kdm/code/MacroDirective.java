@@ -24,6 +24,6 @@ public class MacroDirective extends PreprocessorDirective {
    */
   @Override
   public String toString() {
-    return "MacroDirective ";
+    return "MacroDirective " + "{extends: " + super.toString() + "} ";
   }
 }

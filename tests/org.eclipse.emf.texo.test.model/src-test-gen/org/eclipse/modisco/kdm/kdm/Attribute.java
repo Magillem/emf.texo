@@ -92,6 +92,7 @@ public class Attribute extends Element {
    */
   @Override
   public String toString() {
-    return "Attribute " + " [tag: " + getTag() + "]" + " [value: " + getValue() + "]";
+    return "Attribute " + " [tag: " + getTag() + "]" + " [value: " + getValue() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

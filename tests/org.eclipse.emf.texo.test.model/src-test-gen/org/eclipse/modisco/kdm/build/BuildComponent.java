@@ -24,6 +24,6 @@ public class BuildComponent extends BuildResource {
    */
   @Override
   public String toString() {
-    return "BuildComponent ";
+    return "BuildComponent " + "{extends: " + super.toString() + "} ";
   }
 }

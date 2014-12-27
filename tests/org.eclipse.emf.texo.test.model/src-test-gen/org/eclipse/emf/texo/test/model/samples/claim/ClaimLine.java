@@ -224,6 +224,7 @@ public class ClaimLine extends Identifiable {
   @Override
   public String toString() {
     return "ClaimLine " + " [claimLineBilledAmount: " + getClaimLineBilledAmount() + "]" + " [serviceCode: "
-        + getServiceCode() + "]" + " [claimLineStatus: " + getClaimLineStatus() + "]";
+        + getServiceCode() + "]" + " [claimLineStatus: " + getClaimLineStatus() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

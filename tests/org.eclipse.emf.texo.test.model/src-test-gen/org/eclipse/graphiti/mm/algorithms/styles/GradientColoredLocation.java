@@ -134,6 +134,6 @@ public class GradientColoredLocation extends Identifiable {
   @Override
   public String toString() {
     return "GradientColoredLocation " + " [locationType: " + getLocationType() + "]" + " [locationValue: "
-        + getLocationValue() + "]";
+        + getLocationValue() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

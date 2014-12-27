@@ -150,6 +150,6 @@ public class Person extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Person " + " [name: " + getName() + "]";
+    return "Person " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

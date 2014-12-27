@@ -28,6 +28,6 @@ public class Test extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Test ";
+    return "Test " + "{extends: " + super.toString() + "} ";
   }
 }

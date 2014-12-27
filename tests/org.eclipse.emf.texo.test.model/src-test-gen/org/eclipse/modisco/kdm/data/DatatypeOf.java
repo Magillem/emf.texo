@@ -93,6 +93,6 @@ public class DatatypeOf extends AbstractDataRelationship {
    */
   @Override
   public String toString() {
-    return "DatatypeOf ";
+    return "DatatypeOf " + "{extends: " + super.toString() + "} ";
   }
 }

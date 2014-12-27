@@ -24,6 +24,6 @@ public class ClientTariff extends Tariff {
    */
   @Override
   public String toString() {
-    return "ClientTariff ";
+    return "ClientTariff " + "{extends: " + super.toString() + "} ";
   }
 }

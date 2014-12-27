@@ -61,6 +61,6 @@ public class ComplexAAA extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ComplexAAA " + " [value: " + getValue() + "]";
+    return "ComplexAAA " + " [value: " + getValue() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -53,6 +53,6 @@ public class Author extends NotIdentifiable {
    */
   @Override
   public String toString() {
-    return "Author " + " [name: " + getName() + "]";
+    return "Author " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

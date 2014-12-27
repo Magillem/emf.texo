@@ -24,6 +24,6 @@ public class ExternalActor extends PlatformAction {
    */
   @Override
   public String toString() {
-    return "ExternalActor ";
+    return "ExternalActor " + "{extends: " + super.toString() + "} ";
   }
 }

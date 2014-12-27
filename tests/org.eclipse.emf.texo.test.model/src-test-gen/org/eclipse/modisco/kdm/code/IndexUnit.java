@@ -24,6 +24,6 @@ public class IndexUnit extends DataElement {
    */
   @Override
   public String toString() {
-    return "IndexUnit ";
+    return "IndexUnit " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -92,6 +92,6 @@ public class ExitFlow extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ExitFlow ";
+    return "ExitFlow " + "{extends: " + super.toString() + "} ";
   }
 }

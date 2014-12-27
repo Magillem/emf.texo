@@ -69,6 +69,6 @@ public class VarPolicyTypeType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "VarPolicyTypeType " + " [type: " + getType() + "]";
+    return "VarPolicyTypeType " + " [type: " + getType() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

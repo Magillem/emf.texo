@@ -161,6 +161,6 @@ public class Point extends Identifiable {
   @Override
   public String toString() {
     return "Point " + " [x: " + getX() + "]" + " [y: " + getY() + "]" + " [before: " + getBefore() + "]" + " [after: "
-        + getAfter() + "]";
+        + getAfter() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

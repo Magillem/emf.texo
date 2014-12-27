@@ -250,6 +250,7 @@ public class RentalContract extends Identifiable {
   @Override
   public String toString() {
     return "RentalContract " + " [rentToBusinessPartner: " + getRentToBusinessPartner() + "]" + " [startDate: "
-        + getStartDate() + "]" + " [endDate: " + getEndDate() + "]" + " [cost: " + getCost() + "]";
+        + getStartDate() + "]" + " [endDate: " + getEndDate() + "]" + " [cost: " + getCost() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

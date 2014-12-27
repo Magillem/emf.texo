@@ -92,6 +92,6 @@ public class RestrictionOf extends AbstractDataRelationship {
    */
   @Override
   public String toString() {
-    return "RestrictionOf ";
+    return "RestrictionOf " + "{extends: " + super.toString() + "} ";
   }
 }

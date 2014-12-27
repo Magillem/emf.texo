@@ -24,6 +24,6 @@ public class PrimitiveType extends Datatype {
    */
   @Override
   public String toString() {
-    return "PrimitiveType ";
+    return "PrimitiveType " + "{extends: " + super.toString() + "} ";
   }
 }

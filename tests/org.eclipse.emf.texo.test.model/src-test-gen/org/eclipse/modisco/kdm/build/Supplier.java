@@ -24,6 +24,6 @@ public class Supplier extends AbstractBuildElement {
    */
   @Override
   public String toString() {
-    return "Supplier ";
+    return "Supplier " + "{extends: " + super.toString() + "} ";
   }
 }

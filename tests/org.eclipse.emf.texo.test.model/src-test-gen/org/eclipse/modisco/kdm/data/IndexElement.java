@@ -107,6 +107,6 @@ public class IndexElement extends DataResource {
    */
   @Override
   public String toString() {
-    return "IndexElement ";
+    return "IndexElement " + "{extends: " + super.toString() + "} ";
   }
 }

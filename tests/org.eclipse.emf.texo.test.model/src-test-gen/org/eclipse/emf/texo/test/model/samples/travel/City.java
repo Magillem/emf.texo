@@ -94,6 +94,7 @@ public class City extends Identifiable {
    */
   @Override
   public String toString() {
-    return "City " + " [name: " + getName() + "]" + " [reis: " + getReis() + "]";
+    return "City " + " [name: " + getName() + "]" + " [reis: " + getReis() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

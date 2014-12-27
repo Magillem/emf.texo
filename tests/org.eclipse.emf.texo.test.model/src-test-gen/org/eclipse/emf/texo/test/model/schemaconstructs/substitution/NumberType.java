@@ -161,6 +161,7 @@ public class NumberType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "NumberType " + " [name: " + getName() + "]" + " [mySimpleAbstract: " + getMySimpleAbstract() + "]";
+    return "NumberType " + " [name: " + getName() + "]" + " [mySimpleAbstract: " + getMySimpleAbstract() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

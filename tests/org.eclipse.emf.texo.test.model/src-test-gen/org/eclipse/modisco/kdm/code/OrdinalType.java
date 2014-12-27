@@ -24,6 +24,6 @@ public class OrdinalType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "OrdinalType ";
+    return "OrdinalType " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -25,6 +25,6 @@ public class MarshalledResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "MarshalledResource ";
+    return "MarshalledResource " + "{extends: " + super.toString() + "} ";
   }
 }

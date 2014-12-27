@@ -66,6 +66,6 @@ public class Units extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Units " + " [name: " + getName() + "]";
+    return "Units " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

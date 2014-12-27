@@ -137,6 +137,6 @@ public class Report extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Report " + " [name: " + getName() + "]";
+    return "Report " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

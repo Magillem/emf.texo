@@ -345,6 +345,6 @@ public class Person extends Identifiable {
   @Override
   public String toString() {
     return "Person " + " [surname: " + getSurname() + "]" + " [name: " + getName() + "]" + " [patronimic: "
-        + getPatronimic() + "]" + " [birthday: " + getBirthday() + "]";
+        + getPatronimic() + "]" + " [birthday: " + getBirthday() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class SeqContent extends ComplexContentType {
    */
   @Override
   public String toString() {
-    return "SeqContent ";
+    return "SeqContent " + "{extends: " + super.toString() + "} ";
   }
 }

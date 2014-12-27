@@ -106,6 +106,6 @@ public class ResourceType extends AbstractPlatformElement {
    */
   @Override
   public String toString() {
-    return "ResourceType ";
+    return "ResourceType " + "{extends: " + super.toString() + "} ";
   }
 }

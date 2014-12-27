@@ -188,6 +188,6 @@ public class Book extends Identifiable {
   @Override
   public String toString() {
     return "Book " + " [title: " + getTitle() + "]" + " [pages: " + getPages() + "]" + " [category: " + getCategory()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

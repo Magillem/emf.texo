@@ -25,6 +25,6 @@ public class MessagingResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "MessagingResource ";
+    return "MessagingResource " + "{extends: " + super.toString() + "} ";
   }
 }

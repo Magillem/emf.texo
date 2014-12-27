@@ -107,6 +107,6 @@ public class ConceptualModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "ConceptualModel ";
+    return "ConceptualModel " + "{extends: " + super.toString() + "} ";
   }
 }

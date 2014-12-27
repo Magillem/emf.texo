@@ -93,6 +93,6 @@ public class SalutationType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SalutationType " + " [name: " + getName() + "]";
+    return "SalutationType " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

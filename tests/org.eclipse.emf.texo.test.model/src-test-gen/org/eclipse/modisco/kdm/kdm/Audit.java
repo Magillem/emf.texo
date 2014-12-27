@@ -126,6 +126,6 @@ public class Audit extends Element {
   @Override
   public String toString() {
     return "Audit " + " [description: " + getDescription() + "]" + " [author: " + getAuthor() + "]" + " [date: "
-        + getDate() + "]";
+        + getDate() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

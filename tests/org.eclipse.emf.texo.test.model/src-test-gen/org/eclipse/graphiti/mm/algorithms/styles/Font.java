@@ -161,6 +161,6 @@ public class Font extends Identifiable {
   @Override
   public String toString() {
     return "Font " + " [name: " + getName() + "]" + " [size: " + getSize() + "]" + " [italic: " + isItalic() + "]"
-        + " [bold: " + isBold() + "]";
+        + " [bold: " + isBold() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

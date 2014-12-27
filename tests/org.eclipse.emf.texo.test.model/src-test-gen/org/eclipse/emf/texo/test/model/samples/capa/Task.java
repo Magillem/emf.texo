@@ -229,6 +229,7 @@ public class Task extends Identifiable {
   @Override
   public String toString() {
     return "Task " + " [name: " + getName() + "]" + " [taskId: " + getTaskId() + "]" + " [timePerPice: "
-        + getTimePerPice() + "]" + " [timePerPreperation: " + getTimePerPreperation() + "]";
+        + getTimePerPice() + "]" + " [timePerPreperation: " + getTimePerPreperation() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

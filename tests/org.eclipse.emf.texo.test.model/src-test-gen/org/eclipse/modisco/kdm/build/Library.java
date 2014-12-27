@@ -24,6 +24,6 @@ public class Library extends BuildResource {
    */
   @Override
   public String toString() {
-    return "Library ";
+    return "Library " + "{extends: " + super.toString() + "} ";
   }
 }

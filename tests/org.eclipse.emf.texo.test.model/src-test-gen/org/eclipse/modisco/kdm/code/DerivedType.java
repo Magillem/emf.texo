@@ -59,6 +59,6 @@ public class DerivedType extends Datatype {
    */
   @Override
   public String toString() {
-    return "DerivedType ";
+    return "DerivedType " + "{extends: " + super.toString() + "} ";
   }
 }

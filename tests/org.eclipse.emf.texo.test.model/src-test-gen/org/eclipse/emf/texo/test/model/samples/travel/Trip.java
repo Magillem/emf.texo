@@ -96,6 +96,6 @@ public class Trip extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Trip " + " [name2: " + getName2() + "]";
+    return "Trip " + " [name2: " + getName2() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

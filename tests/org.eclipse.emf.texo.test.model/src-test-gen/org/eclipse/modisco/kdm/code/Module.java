@@ -108,6 +108,6 @@ public class Module extends CodeItem {
    */
   @Override
   public String toString() {
-    return "Module ";
+    return "Module " + "{extends: " + super.toString() + "} ";
   }
 }

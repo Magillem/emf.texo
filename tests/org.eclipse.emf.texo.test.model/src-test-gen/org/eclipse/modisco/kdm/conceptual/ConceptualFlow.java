@@ -92,6 +92,6 @@ public class ConceptualFlow extends AbstractConceptualRelationship {
    */
   @Override
   public String toString() {
-    return "ConceptualFlow ";
+    return "ConceptualFlow " + "{extends: " + super.toString() + "} ";
   }
 }

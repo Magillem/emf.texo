@@ -24,6 +24,6 @@ public class SynonymUnit extends DefinedType {
    */
   @Override
   public String toString() {
-    return "SynonymUnit ";
+    return "SynonymUnit " + "{extends: " + super.toString() + "} ";
   }
 }

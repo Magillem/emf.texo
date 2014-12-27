@@ -107,6 +107,6 @@ public class DataModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "DataModel ";
+    return "DataModel " + "{extends: " + super.toString() + "} ";
   }
 }

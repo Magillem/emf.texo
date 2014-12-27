@@ -112,6 +112,6 @@ public class Book extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Book ";
+    return "Book " + "{extends: " + super.toString() + "} ";
   }
 }

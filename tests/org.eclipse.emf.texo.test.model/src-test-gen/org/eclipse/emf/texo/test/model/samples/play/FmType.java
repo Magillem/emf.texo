@@ -67,6 +67,6 @@ public class FmType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "FmType ";
+    return "FmType " + "{extends: " + super.toString() + "} ";
   }
 }

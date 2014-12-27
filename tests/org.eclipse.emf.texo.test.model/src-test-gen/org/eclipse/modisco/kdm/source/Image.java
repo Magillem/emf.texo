@@ -24,6 +24,6 @@ public class Image extends InventoryItem {
    */
   @Override
   public String toString() {
-    return "Image ";
+    return "Image " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class Datatype extends CodeItem {
    */
   @Override
   public String toString() {
-    return "Datatype ";
+    return "Datatype " + "{extends: " + super.toString() + "} ";
   }
 }

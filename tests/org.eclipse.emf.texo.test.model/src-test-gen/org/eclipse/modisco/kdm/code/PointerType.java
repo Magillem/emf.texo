@@ -24,6 +24,6 @@ public class PointerType extends DerivedType {
    */
   @Override
   public String toString() {
-    return "PointerType ";
+    return "PointerType " + "{extends: " + super.toString() + "} ";
   }
 }

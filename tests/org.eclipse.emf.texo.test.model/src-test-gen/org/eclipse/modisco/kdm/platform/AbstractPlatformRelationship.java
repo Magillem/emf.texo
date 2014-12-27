@@ -26,6 +26,6 @@ public abstract class AbstractPlatformRelationship extends KDMRelationship {
    */
   @Override
   public String toString() {
-    return "AbstractPlatformRelationship ";
+    return "AbstractPlatformRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -28,6 +28,6 @@ public abstract class KDMRelationship extends ModelElement {
    */
   @Override
   public String toString() {
-    return "KDMRelationship ";
+    return "KDMRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

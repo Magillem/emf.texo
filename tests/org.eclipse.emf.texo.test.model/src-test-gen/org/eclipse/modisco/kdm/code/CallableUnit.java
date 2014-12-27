@@ -61,6 +61,6 @@ public class CallableUnit extends ControlElement {
    */
   @Override
   public String toString() {
-    return "CallableUnit " + " [kind: " + getKind() + "]";
+    return "CallableUnit " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

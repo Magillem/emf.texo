@@ -93,6 +93,6 @@ public class Creates extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "Creates ";
+    return "Creates " + "{extends: " + super.toString() + "} ";
   }
 }

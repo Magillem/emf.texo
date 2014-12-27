@@ -24,6 +24,6 @@ public class TemplateType extends Datatype {
    */
   @Override
   public String toString() {
-    return "TemplateType ";
+    return "TemplateType " + "{extends: " + super.toString() + "} ";
   }
 }

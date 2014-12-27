@@ -92,6 +92,6 @@ public class DependsOn extends AbstractInventoryRelationship {
    */
   @Override
   public String toString() {
-    return "DependsOn ";
+    return "DependsOn " + "{extends: " + super.toString() + "} ";
   }
 }

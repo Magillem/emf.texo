@@ -58,6 +58,6 @@ public class BagType extends DerivedType {
    */
   @Override
   public String toString() {
-    return "BagType " + " [size: " + getSize() + "]";
+    return "BagType " + " [size: " + getSize() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

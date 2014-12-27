@@ -24,6 +24,6 @@ public class Ellipse extends GraphicsAlgorithm {
    */
   @Override
   public String toString() {
-    return "Ellipse ";
+    return "Ellipse " + "{extends: " + super.toString() + "} ";
   }
 }

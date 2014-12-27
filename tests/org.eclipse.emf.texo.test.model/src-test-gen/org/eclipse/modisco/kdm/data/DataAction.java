@@ -220,6 +220,6 @@ public class DataAction extends AbstractDataElement {
    */
   @Override
   public String toString() {
-    return "DataAction " + " [kind: " + getKind() + "]";
+    return "DataAction " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

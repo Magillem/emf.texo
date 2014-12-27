@@ -24,6 +24,6 @@ public class BinaryFile extends InventoryItem {
    */
   @Override
   public String toString() {
-    return "BinaryFile ";
+    return "BinaryFile " + "{extends: " + super.toString() + "} ";
   }
 }

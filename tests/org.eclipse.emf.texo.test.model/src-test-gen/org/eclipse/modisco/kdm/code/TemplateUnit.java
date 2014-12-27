@@ -108,6 +108,6 @@ public class TemplateUnit extends Datatype {
    */
   @Override
   public String toString() {
-    return "TemplateUnit ";
+    return "TemplateUnit " + "{extends: " + super.toString() + "} ";
   }
 }

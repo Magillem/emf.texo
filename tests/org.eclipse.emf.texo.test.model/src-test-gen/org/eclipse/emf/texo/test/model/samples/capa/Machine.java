@@ -279,6 +279,7 @@ public class Machine extends Identifiable {
   @Override
   public String toString() {
     return "Machine " + " [machineId: " + getMachineId() + "]" + " [machineSearchString: " + getMachineSearchString()
-        + "]" + " [multiplicity: " + getMultiplicity() + "]" + " [taskSearchString: " + getTaskSearchString() + "]";
+        + "]" + " [multiplicity: " + getMultiplicity() + "]" + " [taskSearchString: " + getTaskSearchString() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

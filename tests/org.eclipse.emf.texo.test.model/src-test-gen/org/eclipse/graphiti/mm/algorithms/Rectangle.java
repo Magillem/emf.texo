@@ -24,6 +24,6 @@ public class Rectangle extends GraphicsAlgorithm {
    */
   @Override
   public String toString() {
-    return "Rectangle ";
+    return "Rectangle " + "{extends: " + super.toString() + "} ";
   }
 }

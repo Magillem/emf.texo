@@ -261,6 +261,6 @@ public class SourceRegion extends Element {
   public String toString() {
     return "SourceRegion " + " [startLine: " + getStartLine() + "]" + " [startPosition: " + getStartPosition() + "]"
         + " [endLine: " + getEndLine() + "]" + " [endPosition: " + getEndPosition() + "]" + " [language: "
-        + getLanguage() + "]" + " [path: " + getPath() + "]";
+        + getLanguage() + "]" + " [path: " + getPath() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -97,6 +97,7 @@ public class Contact extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Contact " + " [value: " + getValue() + "]" + " [type: " + getType() + "]";
+    return "Contact " + " [value: " + getValue() + "]" + " [type: " + getType() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

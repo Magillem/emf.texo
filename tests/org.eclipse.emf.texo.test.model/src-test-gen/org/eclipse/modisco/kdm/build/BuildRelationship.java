@@ -94,6 +94,6 @@ public class BuildRelationship extends AbstractBuildRelationship {
    */
   @Override
   public String toString() {
-    return "BuildRelationship ";
+    return "BuildRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

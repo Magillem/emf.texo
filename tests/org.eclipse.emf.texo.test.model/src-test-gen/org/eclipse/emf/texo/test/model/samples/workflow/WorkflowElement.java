@@ -268,6 +268,6 @@ public abstract class WorkflowElement extends Identifiable {
   public String toString() {
     return "WorkflowElement " + " [name: " + getName() + "]" + " [comment: " + getComment() + "]" + " [x: " + getX()
         + "]" + " [y: " + getY() + "]" + " [width: " + getWidth() + "]" + " [height: " + getHeight() + "]"
-        + " [workFlowElementId: " + getWorkFlowElementId() + "]";
+        + " [workFlowElementId: " + getWorkFlowElementId() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

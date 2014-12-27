@@ -92,6 +92,6 @@ public class Produces extends AbstractBuildRelationship {
    */
   @Override
   public String toString() {
-    return "Produces ";
+    return "Produces " + "{extends: " + super.toString() + "} ";
   }
 }

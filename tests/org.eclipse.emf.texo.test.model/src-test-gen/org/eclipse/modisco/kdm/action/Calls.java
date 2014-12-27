@@ -93,6 +93,6 @@ public class Calls extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "Calls ";
+    return "Calls " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -142,6 +142,6 @@ public class ClassUnit extends Datatype {
    */
   @Override
   public String toString() {
-    return "ClassUnit " + " [isAbstract: " + getIsAbstract() + "]";
+    return "ClassUnit " + " [isAbstract: " + getIsAbstract() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

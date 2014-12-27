@@ -24,6 +24,6 @@ public class PlatformElement extends AbstractPlatformElement {
    */
   @Override
   public String toString() {
-    return "PlatformElement ";
+    return "PlatformElement " + "{extends: " + super.toString() + "} ";
   }
 }

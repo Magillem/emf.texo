@@ -24,6 +24,6 @@ public class BuildProduct extends BuildResource {
    */
   @Override
   public String toString() {
-    return "BuildProduct ";
+    return "BuildProduct " + "{extends: " + super.toString() + "} ";
   }
 }

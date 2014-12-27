@@ -127,6 +127,7 @@ public class Genre extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Genre " + " [id: " + getId() + "]" + " [version: " + getVersion() + "]" + " [name: " + getName() + "]";
+    return "Genre " + " [id: " + getId() + "]" + " [version: " + getVersion() + "]" + " [name: " + getName() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

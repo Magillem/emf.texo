@@ -93,6 +93,6 @@ public class BoxRelativeAnchor extends AdvancedAnchor {
   @Override
   public String toString() {
     return "BoxRelativeAnchor " + " [relativeWidth: " + getRelativeWidth() + "]" + " [relativeHeight: "
-        + getRelativeHeight() + "]";
+        + getRelativeHeight() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

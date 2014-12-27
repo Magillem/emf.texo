@@ -92,6 +92,6 @@ public class TypedBy extends AbstractDataRelationship {
    */
   @Override
   public String toString() {
-    return "TypedBy ";
+    return "TypedBy " + "{extends: " + super.toString() + "} ";
   }
 }

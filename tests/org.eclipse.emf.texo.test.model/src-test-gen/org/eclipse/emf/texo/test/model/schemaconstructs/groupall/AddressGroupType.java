@@ -164,6 +164,6 @@ public class AddressGroupType extends Identifiable {
   @Override
   public String toString() {
     return "AddressGroupType " + " [groupName: " + getGroupName() + "]" + " [simpleAddress: " + getSimpleAddress()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

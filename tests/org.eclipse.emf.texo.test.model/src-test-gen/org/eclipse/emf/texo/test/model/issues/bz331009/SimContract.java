@@ -176,6 +176,6 @@ public class SimContract extends Identifiable {
   @Override
   public String toString() {
     return "SimContract " + " [contractNumber: " + getContractNumber() + "]" + " [name: " + getName() + "]"
-        + " [descritpion: " + getDescritpion() + "]";
+        + " [descritpion: " + getDescritpion() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

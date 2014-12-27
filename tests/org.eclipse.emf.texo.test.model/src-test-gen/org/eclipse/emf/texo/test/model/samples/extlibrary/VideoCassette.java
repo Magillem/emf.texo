@@ -108,6 +108,6 @@ public class VideoCassette extends AudioVisualItem {
    */
   @Override
   public String toString() {
-    return "VideoCassette ";
+    return "VideoCassette " + "{extends: " + super.toString() + "} ";
   }
 }

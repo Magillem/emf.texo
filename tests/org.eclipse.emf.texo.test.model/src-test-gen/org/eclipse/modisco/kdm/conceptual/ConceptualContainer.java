@@ -107,6 +107,6 @@ public class ConceptualContainer extends AbstractConceptualElement {
    */
   @Override
   public String toString() {
-    return "ConceptualContainer ";
+    return "ConceptualContainer " + "{extends: " + super.toString() + "} ";
   }
 }

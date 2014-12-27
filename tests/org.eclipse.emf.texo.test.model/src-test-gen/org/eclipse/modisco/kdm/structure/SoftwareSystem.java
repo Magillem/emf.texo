@@ -24,6 +24,6 @@ public class SoftwareSystem extends AbstractStructureElement {
    */
   @Override
   public String toString() {
-    return "SoftwareSystem ";
+    return "SoftwareSystem " + "{extends: " + super.toString() + "} ";
   }
 }

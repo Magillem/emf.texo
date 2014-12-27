@@ -233,6 +233,7 @@ public class Production extends Identifiable {
   public String toString() {
     return "Production " + " [article: " + getArticle() + "]" + " [dueTime: " + getDueTime() + "]"
         + " [missingAmount: " + getMissingAmount() + "]" + " [productionId: " + getProductionId() + "]"
-        + " [startTime: " + getStartTime() + "]" + " [totalAmount: " + getTotalAmount() + "]";
+        + " [startTime: " + getStartTime() + "]" + " [totalAmount: " + getTotalAmount() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

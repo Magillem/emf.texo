@@ -24,6 +24,6 @@ public class ChoiceContent extends ComplexContentType {
    */
   @Override
   public String toString() {
-    return "ChoiceContent ";
+    return "ChoiceContent " + "{extends: " + super.toString() + "} ";
   }
 }

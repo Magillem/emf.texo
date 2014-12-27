@@ -24,6 +24,6 @@ public class BuildStep extends BuildResource {
    */
   @Override
   public String toString() {
-    return "BuildStep ";
+    return "BuildStep " + "{extends: " + super.toString() + "} ";
   }
 }

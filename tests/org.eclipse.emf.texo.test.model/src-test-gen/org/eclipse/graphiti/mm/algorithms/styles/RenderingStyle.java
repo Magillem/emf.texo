@@ -63,6 +63,6 @@ public class RenderingStyle extends Identifiable {
    */
   @Override
   public String toString() {
-    return "RenderingStyle ";
+    return "RenderingStyle " + "{extends: " + super.toString() + "} ";
   }
 }

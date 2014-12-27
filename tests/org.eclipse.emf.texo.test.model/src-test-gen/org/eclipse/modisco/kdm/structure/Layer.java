@@ -24,6 +24,6 @@ public class Layer extends AbstractStructureElement {
    */
   @Override
   public String toString() {
-    return "Layer ";
+    return "Layer " + "{extends: " + super.toString() + "} ";
   }
 }

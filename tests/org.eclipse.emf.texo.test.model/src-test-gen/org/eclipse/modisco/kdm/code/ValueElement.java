@@ -24,6 +24,6 @@ public abstract class ValueElement extends DataElement {
    */
   @Override
   public String toString() {
-    return "ValueElement ";
+    return "ValueElement " + "{extends: " + super.toString() + "} ";
   }
 }

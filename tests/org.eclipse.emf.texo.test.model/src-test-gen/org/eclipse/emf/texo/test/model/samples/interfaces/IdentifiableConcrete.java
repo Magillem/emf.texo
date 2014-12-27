@@ -95,6 +95,7 @@ public class IdentifiableConcrete extends Identifiable implements IdentifiedType
    */
   @Override
   public String toString() {
-    return "IdentifiableConcrete " + " [name: " + getName() + "]" + " [identifier: " + getIdentifier() + "]";
+    return "IdentifiableConcrete " + " [name: " + getName() + "]" + " [identifier: " + getIdentifier() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

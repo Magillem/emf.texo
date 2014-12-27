@@ -94,6 +94,6 @@ public class DisplaysImage extends AbstractUIRelationship {
    */
   @Override
   public String toString() {
-    return "DisplaysImage ";
+    return "DisplaysImage " + "{extends: " + super.toString() + "} ";
   }
 }

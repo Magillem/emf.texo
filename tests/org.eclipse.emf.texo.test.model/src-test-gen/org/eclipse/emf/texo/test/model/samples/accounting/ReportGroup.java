@@ -234,6 +234,6 @@ public class ReportGroup extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ReportGroup " + " [name: " + getName() + "]";
+    return "ReportGroup " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

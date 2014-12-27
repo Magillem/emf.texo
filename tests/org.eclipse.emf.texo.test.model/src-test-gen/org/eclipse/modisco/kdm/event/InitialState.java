@@ -24,6 +24,6 @@ public class InitialState extends State {
    */
   @Override
   public String toString() {
-    return "InitialState ";
+    return "InitialState " + "{extends: " + super.toString() + "} ";
   }
 }

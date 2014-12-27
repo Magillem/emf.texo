@@ -24,6 +24,6 @@ public class BehaviorUnit extends ConceptualContainer {
    */
   @Override
   public String toString() {
-    return "BehaviorUnit ";
+    return "BehaviorUnit " + "{extends: " + super.toString() + "} ";
   }
 }

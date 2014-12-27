@@ -272,6 +272,6 @@ public class ResultType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ResultType ";
+    return "ResultType " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -64,6 +64,6 @@ public class Formula extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Formula " + " [formulaType: " + getFormulaType() + "]";
+    return "Formula " + " [formulaType: " + getFormulaType() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

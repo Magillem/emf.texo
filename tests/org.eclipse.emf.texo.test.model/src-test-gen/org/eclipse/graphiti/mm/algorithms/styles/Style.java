@@ -632,6 +632,6 @@ public class Style extends StyleContainer {
         + getAngle() + "]" + " [stretchH: " + getStretchH() + "]" + " [stretchV: " + getStretchV() + "]"
         + " [proportional: " + getProportional() + "]" + " [lineWidth: " + getLineWidth() + "]" + " [lineStyle: "
         + getLineStyle() + "]" + " [filled: " + getFilled() + "]" + " [lineVisible: " + getLineVisible() + "]"
-        + " [transparency: " + getTransparency() + "]";
+        + " [transparency: " + getTransparency() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

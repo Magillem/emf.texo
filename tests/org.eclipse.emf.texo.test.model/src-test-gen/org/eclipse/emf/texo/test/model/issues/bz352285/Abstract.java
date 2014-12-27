@@ -61,6 +61,6 @@ public class Abstract extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Abstract " + " [name: " + getName() + "]";
+    return "Abstract " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

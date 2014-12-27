@@ -780,6 +780,6 @@ public class SingleTypes extends Identifiable {
         + " [byteObject: " + getByteObject() + "]" + " [byteArray: " + getByteArray() + "]" + " [bigDecimal: "
         + getBigDecimal() + "]" + " [bigInteger: " + getBigInteger() + "]" + " [enum_: " + getEnum_() + "]"
         + " [date: " + getDate() + "]" + " [stringArray: " + getStringArray() + "]" + " [longArray: " + getLongArray()
-        + "]" + " [nextEnum: " + getNextEnum() + "]";
+        + "]" + " [nextEnum: " + getNextEnum() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

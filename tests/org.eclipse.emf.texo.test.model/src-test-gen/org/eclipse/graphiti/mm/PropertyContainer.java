@@ -110,6 +110,6 @@ public abstract class PropertyContainer extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PropertyContainer ";
+    return "PropertyContainer " + "{extends: " + super.toString() + "} ";
   }
 }

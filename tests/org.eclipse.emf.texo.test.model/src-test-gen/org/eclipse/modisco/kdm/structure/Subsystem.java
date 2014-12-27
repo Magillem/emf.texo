@@ -24,6 +24,6 @@ public class Subsystem extends AbstractStructureElement {
    */
   @Override
   public String toString() {
-    return "Subsystem ";
+    return "Subsystem " + "{extends: " + super.toString() + "} ";
   }
 }

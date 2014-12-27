@@ -213,6 +213,7 @@ public class DocumentRoot extends Identifiable {
    */
   @Override
   public String toString() {
-    return "DocumentRoot " + " [id: " + getId() + "]" + " [title: " + getTitle() + "]" + " [type: " + getType() + "]";
+    return "DocumentRoot " + " [id: " + getId() + "]" + " [title: " + getTitle() + "]" + " [type: " + getType() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

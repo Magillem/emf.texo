@@ -95,6 +95,7 @@ public class ComplexNumber extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ComplexNumber " + " [value: " + getValue() + "]" + " [unit: " + getUnit() + "]";
+    return "ComplexNumber " + " [value: " + getValue() + "]" + " [unit: " + getUnit() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

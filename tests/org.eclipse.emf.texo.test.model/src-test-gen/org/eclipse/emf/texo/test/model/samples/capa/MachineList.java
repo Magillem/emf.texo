@@ -111,6 +111,6 @@ public class MachineList extends Identifiable {
    */
   @Override
   public String toString() {
-    return "MachineList ";
+    return "MachineList " + "{extends: " + super.toString() + "} ";
   }
 }

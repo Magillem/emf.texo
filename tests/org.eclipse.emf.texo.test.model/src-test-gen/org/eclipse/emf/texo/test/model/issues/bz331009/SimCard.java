@@ -103,6 +103,7 @@ public class SimCard extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SimCard " + " [phoneNumber: " + getPhoneNumber() + "]" + " [number: " + getNumber() + "]";
+    return "SimCard " + " [phoneNumber: " + getPhoneNumber() + "]" + " [number: " + getNumber() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

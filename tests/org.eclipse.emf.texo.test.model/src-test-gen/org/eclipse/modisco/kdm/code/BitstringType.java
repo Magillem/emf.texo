@@ -24,6 +24,6 @@ public class BitstringType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "BitstringType ";
+    return "BitstringType " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -296,6 +296,7 @@ public abstract class WorkflowNode extends WorkflowElement {
    */
   @Override
   public String toString() {
-    return "WorkflowNode " + " [isStart: " + isIsStart() + "]" + " [isFinish: " + isIsFinish() + "]";
+    return "WorkflowNode " + " [isStart: " + isIsStart() + "]" + " [isFinish: " + isIsFinish() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

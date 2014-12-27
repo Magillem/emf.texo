@@ -108,6 +108,6 @@ public class ContainerShape extends Shape {
    */
   @Override
   public String toString() {
-    return "ContainerShape ";
+    return "ContainerShape " + "{extends: " + super.toString() + "} ";
   }
 }

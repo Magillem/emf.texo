@@ -24,6 +24,6 @@ public class GroupContent extends ContentItem {
    */
   @Override
   public String toString() {
-    return "GroupContent ";
+    return "GroupContent " + "{extends: " + super.toString() + "} ";
   }
 }

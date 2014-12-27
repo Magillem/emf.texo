@@ -24,6 +24,6 @@ public class MixedContent extends ComplexContentType {
    */
   @Override
   public String toString() {
-    return "MixedContent ";
+    return "MixedContent " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public abstract class Port extends WorkflowElement {
    */
   @Override
   public String toString() {
-    return "Port ";
+    return "Port " + "{extends: " + super.toString() + "} ";
   }
 }

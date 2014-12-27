@@ -24,6 +24,6 @@ public class Polygon extends Polyline {
    */
   @Override
   public String toString() {
-    return "Polygon ";
+    return "Polygon " + "{extends: " + super.toString() + "} ";
   }
 }

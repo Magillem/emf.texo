@@ -92,6 +92,6 @@ public class VariantTo extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "VariantTo ";
+    return "VariantTo " + "{extends: " + super.toString() + "} ";
   }
 }

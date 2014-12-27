@@ -24,6 +24,6 @@ public class TryUnit extends ExceptionUnit {
    */
   @Override
   public String toString() {
-    return "TryUnit ";
+    return "TryUnit " + "{extends: " + super.toString() + "} ";
   }
 }

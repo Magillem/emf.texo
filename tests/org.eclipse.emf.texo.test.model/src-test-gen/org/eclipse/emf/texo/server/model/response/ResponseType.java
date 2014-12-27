@@ -246,6 +246,6 @@ public class ResponseType extends Identifiable {
   @Override
   public String toString() {
     return "ResponseType " + " [status: " + getStatus() + "]" + " [startRow: " + getStartRow() + "]" + " [endRow: "
-        + getEndRow() + "]" + " [totalRows: " + getTotalRows() + "]";
+        + getEndRow() + "]" + " [totalRows: " + getTotalRows() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

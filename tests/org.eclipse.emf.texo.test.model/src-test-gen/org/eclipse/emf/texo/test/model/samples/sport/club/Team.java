@@ -145,6 +145,6 @@ public class Team extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Team " + " [name: " + getName() + "]";
+    return "Team " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

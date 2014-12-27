@@ -106,6 +106,6 @@ public class EventResource extends AbstractEventElement {
    */
   @Override
   public String toString() {
-    return "EventResource ";
+    return "EventResource " + "{extends: " + super.toString() + "} ";
   }
 }

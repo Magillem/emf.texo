@@ -95,6 +95,6 @@ public class DefinedBy extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "DefinedBy ";
+    return "DefinedBy " + "{extends: " + super.toString() + "} ";
   }
 }

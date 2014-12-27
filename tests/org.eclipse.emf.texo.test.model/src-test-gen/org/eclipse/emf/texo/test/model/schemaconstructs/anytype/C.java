@@ -27,6 +27,6 @@ public class C extends Identifiable {
    */
   @Override
   public String toString() {
-    return "C ";
+    return "C " + "{extends: " + super.toString() + "} ";
   }
 }

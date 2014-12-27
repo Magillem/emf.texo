@@ -96,6 +96,6 @@ public class RentalBicycle extends RentalUnit {
    */
   @Override
   public String toString() {
-    return "RentalBicycle " + " [type: " + getType() + "]";
+    return "RentalBicycle " + " [type: " + getType() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

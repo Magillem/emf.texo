@@ -24,6 +24,6 @@ public abstract class CodeItem extends AbstractCodeElement {
    */
   @Override
   public String toString() {
-    return "CodeItem ";
+    return "CodeItem " + "{extends: " + super.toString() + "} ";
   }
 }

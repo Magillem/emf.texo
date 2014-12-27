@@ -94,6 +94,6 @@ public class EventRelationship extends AbstractEventRelationship {
    */
   @Override
   public String toString() {
-    return "EventRelationship ";
+    return "EventRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -139,6 +139,6 @@ public class Car extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Car ";
+    return "Car " + "{extends: " + super.toString() + "} ";
   }
 }

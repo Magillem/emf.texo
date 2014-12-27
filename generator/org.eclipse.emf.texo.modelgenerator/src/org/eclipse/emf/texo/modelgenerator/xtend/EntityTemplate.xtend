@@ -322,7 +322,9 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
             «IF featureAnnotation.generateCode && !featureAnnotation.reference && !featureAnnotation.EStructuralFeature.many»
                  + " [«featureAnnotation.name»: " +  «featureAnnotation.getter»() + "]"
               «ENDIF»
-         «ENDFOR»;
+         «ENDFOR»
+         «IF eClassModelGenAnnotation.classExtends.size > 0» + "{extends: " + super.toString() + "} "«ENDIF»
+         ;
      }
 }
 '''

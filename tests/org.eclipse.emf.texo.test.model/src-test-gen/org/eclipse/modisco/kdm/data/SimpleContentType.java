@@ -141,6 +141,6 @@ public class SimpleContentType extends ComplexContentType {
    */
   @Override
   public String toString() {
-    return "SimpleContentType " + " [kind: " + getKind() + "]";
+    return "SimpleContentType " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

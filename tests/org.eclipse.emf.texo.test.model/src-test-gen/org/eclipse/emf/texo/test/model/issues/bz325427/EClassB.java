@@ -61,6 +61,6 @@ public class EClassB extends Identifiable {
    */
   @Override
   public String toString() {
-    return "EClassB " + " [name: " + getName() + "]";
+    return "EClassB " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

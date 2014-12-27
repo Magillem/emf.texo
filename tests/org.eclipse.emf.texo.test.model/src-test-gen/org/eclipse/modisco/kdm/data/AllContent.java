@@ -24,6 +24,6 @@ public class AllContent extends ComplexContentType {
    */
   @Override
   public String toString() {
-    return "AllContent ";
+    return "AllContent " + "{extends: " + super.toString() + "} ";
   }
 }

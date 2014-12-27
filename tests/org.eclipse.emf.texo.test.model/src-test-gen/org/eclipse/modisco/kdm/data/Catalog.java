@@ -24,6 +24,6 @@ public class Catalog extends DataContainer {
    */
   @Override
   public String toString() {
-    return "Catalog ";
+    return "Catalog " + "{extends: " + super.toString() + "} ";
   }
 }

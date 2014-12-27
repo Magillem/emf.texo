@@ -24,6 +24,6 @@ public class UIElement extends AbstractUIElement {
    */
   @Override
   public String toString() {
-    return "UIElement ";
+    return "UIElement " + "{extends: " + super.toString() + "} ";
   }
 }

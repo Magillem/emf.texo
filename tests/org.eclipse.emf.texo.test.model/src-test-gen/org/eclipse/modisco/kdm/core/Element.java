@@ -197,6 +197,6 @@ public abstract class Element extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Element ";
+    return "Element " + "{extends: " + super.toString() + "} ";
   }
 }

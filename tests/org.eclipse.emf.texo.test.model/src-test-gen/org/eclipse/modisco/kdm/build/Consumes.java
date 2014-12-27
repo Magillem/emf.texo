@@ -92,6 +92,6 @@ public class Consumes extends AbstractBuildRelationship {
    */
   @Override
   public String toString() {
-    return "Consumes ";
+    return "Consumes " + "{extends: " + super.toString() + "} ";
   }
 }

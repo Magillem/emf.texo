@@ -145,6 +145,6 @@ public class Journey extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Journey " + " [name: " + getName() + "]";
+    return "Journey " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

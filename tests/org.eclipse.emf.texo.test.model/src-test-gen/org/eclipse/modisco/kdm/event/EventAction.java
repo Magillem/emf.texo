@@ -140,6 +140,6 @@ public class EventAction extends AbstractEventElement {
    */
   @Override
   public String toString() {
-    return "EventAction " + " [kind: " + getKind() + "]";
+    return "EventAction " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class Tool extends AbstractBuildElement {
    */
   @Override
   public String toString() {
-    return "Tool ";
+    return "Tool " + "{extends: " + super.toString() + "} ";
   }
 }

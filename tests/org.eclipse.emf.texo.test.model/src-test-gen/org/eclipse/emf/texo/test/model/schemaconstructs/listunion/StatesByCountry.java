@@ -341,6 +341,7 @@ public class StatesByCountry extends Identifiable {
   public String toString() {
     return "statesByCountry " + " [country: " + getCountry() + "]" + " [allStates: " + getAllStates() + "]"
         + " [sixImportantStates: " + getSixImportantStates() + "]" + " [zipUnion: " + getZipUnion() + "]"
-        + " [simpleUnion: " + getSimpleUnion() + "]" + " [simpleStringUnion: " + getSimpleStringUnion() + "]";
+        + " [simpleUnion: " + getSimpleUnion() + "]" + " [simpleStringUnion: " + getSimpleStringUnion() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

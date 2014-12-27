@@ -102,6 +102,7 @@ public class PersonaGroupType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PersonaGroupType " + " [groupDescription: " + getGroupDescription() + "]";
+    return "PersonaGroupType " + " [groupDescription: " + getGroupDescription() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

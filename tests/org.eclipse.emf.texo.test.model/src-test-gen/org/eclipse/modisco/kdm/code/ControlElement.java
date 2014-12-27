@@ -142,6 +142,6 @@ public class ControlElement extends ComputationalObject {
    */
   @Override
   public String toString() {
-    return "ControlElement ";
+    return "ControlElement " + "{extends: " + super.toString() + "} ";
   }
 }

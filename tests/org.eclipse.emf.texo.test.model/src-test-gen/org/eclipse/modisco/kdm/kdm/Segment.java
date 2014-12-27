@@ -184,6 +184,6 @@ public class Segment extends KDMFramework {
    */
   @Override
   public String toString() {
-    return "Segment ";
+    return "Segment " + "{extends: " + super.toString() + "} ";
   }
 }

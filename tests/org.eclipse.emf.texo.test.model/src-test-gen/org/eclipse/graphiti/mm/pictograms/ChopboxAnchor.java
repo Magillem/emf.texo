@@ -24,6 +24,6 @@ public class ChopboxAnchor extends Anchor {
    */
   @Override
   public String toString() {
-    return "ChopboxAnchor ";
+    return "ChopboxAnchor " + "{extends: " + super.toString() + "} ";
   }
 }

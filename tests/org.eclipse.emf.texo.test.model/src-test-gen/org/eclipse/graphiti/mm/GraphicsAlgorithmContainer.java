@@ -25,6 +25,6 @@ public abstract class GraphicsAlgorithmContainer extends PropertyContainer {
    */
   @Override
   public String toString() {
-    return "GraphicsAlgorithmContainer ";
+    return "GraphicsAlgorithmContainer " + "{extends: " + super.toString() + "} ";
   }
 }

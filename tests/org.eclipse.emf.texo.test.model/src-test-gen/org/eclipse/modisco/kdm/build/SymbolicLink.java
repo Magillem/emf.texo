@@ -24,6 +24,6 @@ public class SymbolicLink extends AbstractBuildElement {
    */
   @Override
   public String toString() {
-    return "SymbolicLink ";
+    return "SymbolicLink " + "{extends: " + super.toString() + "} ";
   }
 }

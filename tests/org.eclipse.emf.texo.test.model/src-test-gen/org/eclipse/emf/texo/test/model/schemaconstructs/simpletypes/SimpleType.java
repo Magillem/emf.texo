@@ -471,6 +471,6 @@ public class SimpleType extends Identifiable {
         + " [doubl: " + getDoubl() + "]" + " [float_: " + getFloat_() + "]" + " [inte: " + getInte() + "]" + " [lon: "
         + getLon() + "]" + " [shor: " + getShor() + "]" + " [enu: " + getEnu() + "]" + " [dat: " + getDat() + "]"
         + " [limitedstring: " + getLimitedstring() + "]" + " [limitedDecimal: " + getLimitedDecimal() + "]"
-        + " [extraLimitedString: " + getExtraLimitedString() + "]";
+        + " [extraLimitedString: " + getExtraLimitedString() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

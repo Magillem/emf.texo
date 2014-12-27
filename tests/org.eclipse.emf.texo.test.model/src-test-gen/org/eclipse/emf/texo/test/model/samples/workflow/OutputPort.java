@@ -147,6 +147,6 @@ public class OutputPort extends Port {
    */
   @Override
   public String toString() {
-    return "OutputPort ";
+    return "OutputPort " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -24,6 +24,6 @@ public class FactUnit extends ConceptualContainer {
    */
   @Override
   public String toString() {
-    return "FactUnit ";
+    return "FactUnit " + "{extends: " + super.toString() + "} ";
   }
 }

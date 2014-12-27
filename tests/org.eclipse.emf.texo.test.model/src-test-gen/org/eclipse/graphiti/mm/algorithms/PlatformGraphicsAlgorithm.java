@@ -59,6 +59,6 @@ public class PlatformGraphicsAlgorithm extends GraphicsAlgorithm {
    */
   @Override
   public String toString() {
-    return "PlatformGraphicsAlgorithm " + " [id: " + getId() + "]";
+    return "PlatformGraphicsAlgorithm " + " [id: " + getId() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

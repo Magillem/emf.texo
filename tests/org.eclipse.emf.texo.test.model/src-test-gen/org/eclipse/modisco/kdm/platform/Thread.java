@@ -24,6 +24,6 @@ public class Thread extends RuntimeResource {
    */
   @Override
   public String toString() {
-    return "Thread ";
+    return "Thread " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -25,6 +25,6 @@ public class OddComplexNumberType extends ComplexNumber {
    */
   @Override
   public String toString() {
-    return "OddComplexNumberType ";
+    return "OddComplexNumberType " + "{extends: " + super.toString() + "} ";
   }
 }

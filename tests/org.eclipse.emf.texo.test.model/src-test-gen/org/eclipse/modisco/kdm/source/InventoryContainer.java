@@ -107,6 +107,6 @@ public class InventoryContainer extends AbstractInventoryElement {
    */
   @Override
   public String toString() {
-    return "InventoryContainer ";
+    return "InventoryContainer " + "{extends: " + super.toString() + "} ";
   }
 }

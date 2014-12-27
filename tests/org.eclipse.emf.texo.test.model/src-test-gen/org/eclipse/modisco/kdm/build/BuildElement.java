@@ -24,6 +24,6 @@ public class BuildElement extends AbstractBuildElement {
    */
   @Override
   public String toString() {
-    return "BuildElement ";
+    return "BuildElement " + "{extends: " + super.toString() + "} ";
   }
 }

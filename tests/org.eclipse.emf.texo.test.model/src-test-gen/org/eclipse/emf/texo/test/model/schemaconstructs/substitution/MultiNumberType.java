@@ -114,6 +114,6 @@ public class MultiNumberType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "MultiNumberType " + " [name: " + getName() + "]";
+    return "MultiNumberType " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

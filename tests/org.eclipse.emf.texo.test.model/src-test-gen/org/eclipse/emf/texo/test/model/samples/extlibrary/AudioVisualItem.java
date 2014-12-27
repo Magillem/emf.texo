@@ -125,6 +125,6 @@ public abstract class AudioVisualItem extends CirculatingItem {
   @Override
   public String toString() {
     return "AudioVisualItem " + " [title: " + getTitle() + "]" + " [minutesLength: " + getMinutesLength() + "]"
-        + " [damaged: " + isDamaged() + "]";
+        + " [damaged: " + isDamaged() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

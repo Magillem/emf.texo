@@ -224,6 +224,6 @@ public class Forum extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Forum " + " [title: " + getTitle() + "]";
+    return "Forum " + " [title: " + getTitle() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

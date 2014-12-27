@@ -127,6 +127,7 @@ public class Color extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Color " + " [red: " + getRed() + "]" + " [green: " + getGreen() + "]" + " [blue: " + getBlue() + "]";
+    return "Color " + " [red: " + getRed() + "]" + " [green: " + getGreen() + "]" + " [blue: " + getBlue() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

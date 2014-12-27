@@ -92,6 +92,6 @@ public class UILayout extends AbstractUIRelationship {
    */
   @Override
   public String toString() {
-    return "UILayout ";
+    return "UILayout " + "{extends: " + super.toString() + "} ";
   }
 }

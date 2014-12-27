@@ -169,6 +169,6 @@ public class CarPassport extends Identifiable implements Document {
   @Override
   public String toString() {
     return "CarPassport " + " [series: " + getSeries() + "]" + " [number: " + getNumber() + "]" + " [issueDate: "
-        + getIssueDate() + "]" + " [issued: " + getIssued() + "]";
+        + getIssueDate() + "]" + " [issued: " + getIssued() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

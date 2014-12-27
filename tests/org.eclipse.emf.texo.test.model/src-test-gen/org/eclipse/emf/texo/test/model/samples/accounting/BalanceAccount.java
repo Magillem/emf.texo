@@ -115,6 +115,6 @@ public class BalanceAccount extends Account {
    */
   @Override
   public String toString() {
-    return "BalanceAccount ";
+    return "BalanceAccount " + "{extends: " + super.toString() + "} ";
   }
 }

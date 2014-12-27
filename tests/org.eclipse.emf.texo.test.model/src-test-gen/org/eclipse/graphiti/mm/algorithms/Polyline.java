@@ -109,6 +109,6 @@ public class Polyline extends GraphicsAlgorithm {
    */
   @Override
   public String toString() {
-    return "Polyline ";
+    return "Polyline " + "{extends: " + super.toString() + "} ";
   }
 }

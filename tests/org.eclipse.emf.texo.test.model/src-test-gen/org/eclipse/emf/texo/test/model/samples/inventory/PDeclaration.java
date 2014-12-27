@@ -99,6 +99,7 @@ public class PDeclaration extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PDeclaration " + " [id: " + getId() + "]" + " [name: " + getName() + "]";
+    return "PDeclaration " + " [id: " + getId() + "]" + " [name: " + getName() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

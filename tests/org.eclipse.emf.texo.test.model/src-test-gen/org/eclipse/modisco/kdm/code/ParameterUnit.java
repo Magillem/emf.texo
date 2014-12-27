@@ -94,6 +94,7 @@ public class ParameterUnit extends DataElement {
    */
   @Override
   public String toString() {
-    return "ParameterUnit " + " [kind: " + getKind() + "]" + " [pos: " + getPos() + "]";
+    return "ParameterUnit " + " [kind: " + getKind() + "]" + " [pos: " + getPos() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -220,6 +220,7 @@ public class Topic extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Topic " + " [title: " + getTitle() + "]" + " [category: " + getCategory() + "]";
+    return "Topic " + " [title: " + getTitle() + "]" + " [category: " + getCategory() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

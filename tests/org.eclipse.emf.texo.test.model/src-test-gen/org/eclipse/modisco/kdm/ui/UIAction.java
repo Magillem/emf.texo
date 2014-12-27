@@ -140,6 +140,6 @@ public class UIAction extends AbstractUIElement {
    */
   @Override
   public String toString() {
-    return "UIAction " + " [kind: " + getKind() + "]";
+    return "UIAction " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

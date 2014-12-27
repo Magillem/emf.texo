@@ -178,6 +178,7 @@ public class ActType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ActType " + " [pindex: " + getPindex() + "]" + " [title: " + getTitle() + "]";
+    return "ActType " + " [pindex: " + getPindex() + "]" + " [title: " + getTitle() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

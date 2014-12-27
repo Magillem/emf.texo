@@ -25,6 +25,6 @@ public class IncludeDirective extends PreprocessorDirective {
    */
   @Override
   public String toString() {
-    return "IncludeDirective ";
+    return "IncludeDirective " + "{extends: " + super.toString() + "} ";
   }
 }

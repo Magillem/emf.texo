@@ -24,6 +24,6 @@ public class TypeUnit extends DefinedType {
    */
   @Override
   public String toString() {
-    return "TypeUnit ";
+    return "TypeUnit " + "{extends: " + super.toString() + "} ";
   }
 }

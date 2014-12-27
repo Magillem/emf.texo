@@ -106,6 +106,6 @@ public class DataContainer extends DataResource {
    */
   @Override
   public String toString() {
-    return "DataContainer ";
+    return "DataContainer " + "{extends: " + super.toString() + "} ";
   }
 }

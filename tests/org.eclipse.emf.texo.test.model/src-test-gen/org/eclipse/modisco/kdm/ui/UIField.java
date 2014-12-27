@@ -24,6 +24,6 @@ public class UIField extends UIResource {
    */
   @Override
   public String toString() {
-    return "UIField ";
+    return "UIField " + "{extends: " + super.toString() + "} ";
   }
 }

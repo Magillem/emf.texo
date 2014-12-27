@@ -163,6 +163,6 @@ public class EClass0 extends Identifiable {
    */
   @Override
   public String toString() {
-    return "EClass0 ";
+    return "EClass0 " + "{extends: " + super.toString() + "} ";
   }
 }

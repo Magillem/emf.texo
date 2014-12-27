@@ -92,6 +92,6 @@ public class Redefines extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "Redefines ";
+    return "Redefines " + "{extends: " + super.toString() + "} ";
   }
 }

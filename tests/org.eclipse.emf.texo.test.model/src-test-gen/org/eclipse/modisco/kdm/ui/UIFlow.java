@@ -92,6 +92,6 @@ public class UIFlow extends AbstractUIRelationship {
    */
   @Override
   public String toString() {
-    return "UIFlow ";
+    return "UIFlow " + "{extends: " + super.toString() + "} ";
   }
 }

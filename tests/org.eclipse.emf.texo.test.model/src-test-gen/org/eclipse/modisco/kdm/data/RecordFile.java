@@ -24,6 +24,6 @@ public class RecordFile extends ColumnSet {
    */
   @Override
   public String toString() {
-    return "RecordFile ";
+    return "RecordFile " + "{extends: " + super.toString() + "} ";
   }
 }

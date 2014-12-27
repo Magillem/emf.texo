@@ -133,6 +133,6 @@ public class Post extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Post " + " [comment: " + getComment() + "]";
+    return "Post " + " [comment: " + getComment() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

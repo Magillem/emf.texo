@@ -119,6 +119,6 @@ public class AddressType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "AddressType ";
+    return "AddressType " + "{extends: " + super.toString() + "} ";
   }
 }

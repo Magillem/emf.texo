@@ -107,6 +107,6 @@ public class StructureModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "StructureModel ";
+    return "StructureModel " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -107,6 +107,6 @@ public class EventModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "EventModel ";
+    return "EventModel " + "{extends: " + super.toString() + "} ";
   }
 }

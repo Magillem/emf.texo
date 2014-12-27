@@ -94,6 +94,6 @@ public class StructureRelationship extends AbstractStructureRelationship {
    */
   @Override
   public String toString() {
-    return "StructureRelationship ";
+    return "StructureRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

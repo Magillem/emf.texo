@@ -624,6 +624,6 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
     return "GraphicsAlgorithm " + " [width: " + getWidth() + "]" + " [height: " + getHeight() + "]" + " [x: " + getX()
         + "]" + " [y: " + getY() + "]" + " [lineWidth: " + getLineWidth() + "]" + " [lineStyle: " + getLineStyle()
         + "]" + " [filled: " + getFilled() + "]" + " [lineVisible: " + getLineVisible() + "]" + " [transparency: "
-        + getTransparency() + "]";
+        + getTransparency() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

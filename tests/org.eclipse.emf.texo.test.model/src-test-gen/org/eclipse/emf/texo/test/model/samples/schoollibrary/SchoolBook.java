@@ -59,6 +59,6 @@ public class SchoolBook extends Book implements Asset {
    */
   @Override
   public String toString() {
-    return "SchoolBook " + " [value: " + getValue() + "]";
+    return "SchoolBook " + " [value: " + getValue() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

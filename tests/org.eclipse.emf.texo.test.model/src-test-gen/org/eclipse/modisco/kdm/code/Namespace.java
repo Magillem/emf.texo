@@ -106,6 +106,6 @@ public class Namespace extends CodeItem {
    */
   @Override
   public String toString() {
-    return "Namespace ";
+    return "Namespace " + "{extends: " + super.toString() + "} ";
   }
 }

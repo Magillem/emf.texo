@@ -272,6 +272,6 @@ public class ActionType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ActionType ";
+    return "ActionType " + "{extends: " + super.toString() + "} ";
   }
 }

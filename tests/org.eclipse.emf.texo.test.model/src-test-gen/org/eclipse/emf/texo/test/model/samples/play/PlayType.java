@@ -279,6 +279,6 @@ public class PlayType extends Identifiable {
   @Override
   public String toString() {
     return "PlayType " + " [title: " + getTitle() + "]" + " [sceneDescription: " + getSceneDescription() + "]"
-        + " [playSubTitle: " + getPlaySubTitle() + "]";
+        + " [playSubTitle: " + getPlaySubTitle() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -91,6 +91,7 @@ public class SourceFile extends InventoryItem {
    */
   @Override
   public String toString() {
-    return "SourceFile " + " [language: " + getLanguage() + "]" + " [encoding: " + getEncoding() + "]";
+    return "SourceFile " + " [language: " + getLanguage() + "]" + " [encoding: " + getEncoding() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

@@ -99,6 +99,7 @@ public class TestDate extends Identifiable {
    */
   @Override
   public String toString() {
-    return "TestDate " + " [date: " + getDate() + "]" + " [datetime: " + getDatetime() + "]";
+    return "TestDate " + " [date: " + getDate() + "]" + " [datetime: " + getDatetime() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

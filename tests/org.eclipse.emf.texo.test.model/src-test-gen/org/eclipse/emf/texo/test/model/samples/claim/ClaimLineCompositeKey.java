@@ -106,6 +106,7 @@ public class ClaimLineCompositeKey extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ClaimLineCompositeKey " + " [claimLineNumber: " + getClaimLineNumber() + "]";
+    return "ClaimLineCompositeKey " + " [claimLineNumber: " + getClaimLineNumber() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

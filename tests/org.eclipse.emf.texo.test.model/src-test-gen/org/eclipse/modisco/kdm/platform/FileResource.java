@@ -24,6 +24,6 @@ public class FileResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "FileResource ";
+    return "FileResource " + "{extends: " + super.toString() + "} ";
   }
 }

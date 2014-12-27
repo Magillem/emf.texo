@@ -24,6 +24,6 @@ public class Package extends Module {
    */
   @Override
   public String toString() {
-    return "Package ";
+    return "Package " + "{extends: " + super.toString() + "} ";
   }
 }

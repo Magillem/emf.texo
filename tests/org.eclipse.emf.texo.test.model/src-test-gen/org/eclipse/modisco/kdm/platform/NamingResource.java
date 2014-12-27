@@ -24,6 +24,6 @@ public class NamingResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "NamingResource ";
+    return "NamingResource " + "{extends: " + super.toString() + "} ";
   }
 }

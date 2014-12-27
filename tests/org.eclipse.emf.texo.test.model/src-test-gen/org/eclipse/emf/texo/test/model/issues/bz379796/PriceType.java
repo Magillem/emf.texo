@@ -336,6 +336,6 @@ public class PriceType extends Identifiable {
         + " [comparisonElement: " + getComparisonElement() + "]" + " [requiredComparisonElement: "
         + getRequiredComparisonElement() + "]" + " [comparison: " + getComparison() + "]" + " [requiredComparison: "
         + getRequiredComparison() + "]" + " [requiredValue: " + getRequiredValue() + "]" + " [value: " + getValue()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

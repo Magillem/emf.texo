@@ -24,6 +24,6 @@ public class Text extends AbstractText {
    */
   @Override
   public String toString() {
-    return "Text ";
+    return "Text " + "{extends: " + super.toString() + "} ";
   }
 }

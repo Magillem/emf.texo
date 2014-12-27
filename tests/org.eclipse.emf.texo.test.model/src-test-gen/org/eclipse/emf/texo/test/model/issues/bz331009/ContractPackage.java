@@ -132,6 +132,6 @@ public class ContractPackage extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ContractPackage ";
+    return "ContractPackage " + "{extends: " + super.toString() + "} ";
   }
 }

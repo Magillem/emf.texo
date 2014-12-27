@@ -25,6 +25,6 @@ public class ExecutionResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "ExecutionResource ";
+    return "ExecutionResource " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -92,6 +92,6 @@ public class HasType extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "HasType ";
+    return "HasType " + "{extends: " + super.toString() + "} ";
   }
 }

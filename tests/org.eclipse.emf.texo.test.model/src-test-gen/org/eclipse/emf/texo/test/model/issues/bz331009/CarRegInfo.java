@@ -455,6 +455,6 @@ public class CarRegInfo extends Identifiable implements Document {
         + getReleaseYear() + "]" + " [engineNumber: " + getEngineNumber() + "]" + " [chassisNumber: "
         + getChassisNumber() + "]" + " [bodyNumber: " + getBodyNumber() + "]" + " [color: " + getColor() + "]"
         + " [series: " + getSeries() + "]" + " [number: " + getNumber() + "]" + " [issueDate: " + getIssueDate() + "]"
-        + " [issued: " + getIssued() + "]";
+        + " [issued: " + getIssued() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

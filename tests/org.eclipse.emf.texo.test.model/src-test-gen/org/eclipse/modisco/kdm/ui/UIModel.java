@@ -107,6 +107,6 @@ public class UIModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "UIModel ";
+    return "UIModel " + "{extends: " + super.toString() + "} ";
   }
 }

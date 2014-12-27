@@ -24,6 +24,6 @@ public class Project extends InventoryContainer {
    */
   @Override
   public String toString() {
-    return "Project ";
+    return "Project " + "{extends: " + super.toString() + "} ";
   }
 }

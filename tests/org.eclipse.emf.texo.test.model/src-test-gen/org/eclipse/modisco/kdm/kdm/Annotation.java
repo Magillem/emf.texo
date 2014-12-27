@@ -59,6 +59,6 @@ public class Annotation extends Element {
    */
   @Override
   public String toString() {
-    return "Annotation " + " [text: " + getText() + "]";
+    return "Annotation " + " [text: " + getText() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

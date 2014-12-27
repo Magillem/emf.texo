@@ -109,6 +109,6 @@ public class CodeModel extends KDMModel {
    */
   @Override
   public String toString() {
-    return "CodeModel ";
+    return "CodeModel " + "{extends: " + super.toString() + "} ";
   }
 }

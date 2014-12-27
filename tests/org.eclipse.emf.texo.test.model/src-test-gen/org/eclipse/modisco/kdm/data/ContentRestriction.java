@@ -92,6 +92,7 @@ public class ContentRestriction extends AbstractContentElement {
    */
   @Override
   public String toString() {
-    return "ContentRestriction " + " [kind: " + getKind() + "]" + " [value: " + getValue() + "]";
+    return "ContentRestriction " + " [kind: " + getKind() + "]" + " [value: " + getValue() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

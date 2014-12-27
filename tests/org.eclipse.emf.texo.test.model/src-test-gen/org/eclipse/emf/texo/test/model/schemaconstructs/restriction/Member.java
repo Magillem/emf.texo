@@ -24,6 +24,6 @@ public class Member extends XMLDeviant {
    */
   @Override
   public String toString() {
-    return "Member ";
+    return "Member " + "{extends: " + super.toString() + "} ";
   }
 }

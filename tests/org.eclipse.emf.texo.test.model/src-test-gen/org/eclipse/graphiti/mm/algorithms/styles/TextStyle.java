@@ -298,6 +298,6 @@ public class TextStyle extends Identifiable {
   @Override
   public String toString() {
     return "TextStyle " + " [underline: " + isUnderline() + "]" + " [underlineStyle: " + getUnderlineStyle() + "]"
-        + " [strikeout: " + isStrikeout() + "]";
+        + " [strikeout: " + isStrikeout() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

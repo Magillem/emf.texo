@@ -58,6 +58,6 @@ public class UIEvent extends AbstractUIElement {
    */
   @Override
   public String toString() {
-    return "UIEvent " + " [kind: " + getKind() + "]";
+    return "UIEvent " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -62,6 +62,6 @@ public class Shape extends AnchorContainer {
    */
   @Override
   public String toString() {
-    return "Shape ";
+    return "Shape " + "{extends: " + super.toString() + "} ";
   }
 }

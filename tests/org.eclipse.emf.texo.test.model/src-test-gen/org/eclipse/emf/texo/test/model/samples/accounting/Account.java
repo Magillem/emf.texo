@@ -70,6 +70,6 @@ public abstract class Account extends Identifiable implements Serializable {
    */
   @Override
   public String toString() {
-    return "Account " + " [name: " + getName() + "]";
+    return "Account " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

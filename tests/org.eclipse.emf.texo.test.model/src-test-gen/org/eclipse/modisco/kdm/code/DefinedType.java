@@ -92,6 +92,6 @@ public abstract class DefinedType extends Datatype {
    */
   @Override
   public String toString() {
-    return "DefinedType ";
+    return "DefinedType " + "{extends: " + super.toString() + "} ";
   }
 }

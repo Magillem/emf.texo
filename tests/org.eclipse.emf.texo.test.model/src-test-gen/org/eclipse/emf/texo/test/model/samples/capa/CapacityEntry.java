@@ -94,6 +94,7 @@ public class CapacityEntry extends Identifiable {
    */
   @Override
   public String toString() {
-    return "CapacityEntry " + " [capacityEntryId: " + getCapacityEntryId() + "]" + " [name: " + getName() + "]";
+    return "CapacityEntry " + " [capacityEntryId: " + getCapacityEntryId() + "]" + " [name: " + getName() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

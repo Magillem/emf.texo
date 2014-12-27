@@ -94,6 +94,7 @@ public abstract class Address extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Address " + " [name: " + getName() + "]" + " [country: " + getCountry() + "]";
+    return "Address " + " [name: " + getName() + "]" + " [country: " + getCountry() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

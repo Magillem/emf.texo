@@ -25,6 +25,6 @@ public class ConditionalDirective extends PreprocessorDirective {
    */
   @Override
   public String toString() {
-    return "ConditionalDirective ";
+    return "ConditionalDirective " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -158,6 +158,6 @@ public class USAddress extends Address {
   @Override
   public String toString() {
     return "USAddress " + " [street: " + getStreet() + "]" + " [city: " + getCity() + "]" + " [state: " + getState()
-        + "]" + " [zip: " + getZip() + "]";
+        + "]" + " [zip: " + getZip() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

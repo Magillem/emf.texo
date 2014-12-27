@@ -200,6 +200,6 @@ public class XMLDeviant extends Identifiable {
   public String toString() {
     return "XMLDeviant " + " [numPosts: " + getNumPosts() + "]" + " [signature: " + getSignature() + "]" + " [email: "
         + getEmail() + "]" + " [firstSubscribed: " + getFirstSubscribed() + "]" + " [mailReader: " + getMailReader()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

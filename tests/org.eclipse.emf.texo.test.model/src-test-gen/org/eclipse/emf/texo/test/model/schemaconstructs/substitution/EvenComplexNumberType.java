@@ -25,6 +25,6 @@ public class EvenComplexNumberType extends ComplexNumber {
    */
   @Override
   public String toString() {
-    return "EvenComplexNumberType ";
+    return "EvenComplexNumberType " + "{extends: " + super.toString() + "} ";
   }
 }

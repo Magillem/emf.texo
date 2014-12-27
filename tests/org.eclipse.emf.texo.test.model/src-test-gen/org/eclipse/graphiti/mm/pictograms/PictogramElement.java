@@ -162,6 +162,7 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
    */
   @Override
   public String toString() {
-    return "PictogramElement " + " [visible: " + isVisible() + "]" + " [active: " + isActive() + "]";
+    return "PictogramElement " + " [visible: " + isVisible() + "]" + " [active: " + isActive() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

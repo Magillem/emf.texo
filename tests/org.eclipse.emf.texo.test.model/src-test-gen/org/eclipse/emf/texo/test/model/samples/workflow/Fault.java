@@ -24,6 +24,6 @@ public class Fault extends OutputPort {
    */
   @Override
   public String toString() {
-    return "Fault ";
+    return "Fault " + "{extends: " + super.toString() + "} ";
   }
 }

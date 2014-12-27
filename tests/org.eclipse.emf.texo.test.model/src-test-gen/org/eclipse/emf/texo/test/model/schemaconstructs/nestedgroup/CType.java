@@ -94,6 +94,7 @@ public class CType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "CType " + " [cname: " + getCname() + "]" + " [cvalue: " + getCvalue() + "]";
+    return "CType " + " [cname: " + getCname() + "]" + " [cvalue: " + getCvalue() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

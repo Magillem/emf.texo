@@ -25,6 +25,6 @@ public abstract class AbstractContentElement extends AbstractDataElement {
    */
   @Override
   public String toString() {
-    return "AbstractContentElement ";
+    return "AbstractContentElement " + "{extends: " + super.toString() + "} ";
   }
 }

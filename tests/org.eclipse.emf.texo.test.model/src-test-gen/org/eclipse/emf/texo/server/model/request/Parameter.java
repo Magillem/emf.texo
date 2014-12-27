@@ -129,6 +129,7 @@ public class Parameter extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Parameter " + " [name: " + getName() + "]" + " [value: " + getValue() + "]" + " [type: " + getType() + "]";
+    return "Parameter " + " [name: " + getName() + "]" + " [value: " + getValue() + "]" + " [type: " + getType() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

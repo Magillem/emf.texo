@@ -109,6 +109,6 @@ public abstract class AbstractInventoryElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractInventoryElement ";
+    return "AbstractInventoryElement " + "{extends: " + super.toString() + "} ";
   }
 }

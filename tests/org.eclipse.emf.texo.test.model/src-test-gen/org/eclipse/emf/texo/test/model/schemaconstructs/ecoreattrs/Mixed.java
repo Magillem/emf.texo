@@ -118,6 +118,7 @@ public class Mixed extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Mixed " + " [name: " + getName() + "]" + " [value_: " + getValue_() + "]";
+    return "Mixed " + " [name: " + getName() + "]" + " [value_: " + getValue_() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }

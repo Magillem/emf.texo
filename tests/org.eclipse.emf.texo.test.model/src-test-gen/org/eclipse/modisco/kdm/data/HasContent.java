@@ -94,6 +94,6 @@ public class HasContent extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "HasContent ";
+    return "HasContent " + "{extends: " + super.toString() + "} ";
   }
 }

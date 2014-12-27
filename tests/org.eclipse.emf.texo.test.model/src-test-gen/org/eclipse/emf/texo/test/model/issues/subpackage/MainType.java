@@ -61,6 +61,6 @@ public class MainType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "MainType " + " [name: " + getName() + "]";
+    return "MainType " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

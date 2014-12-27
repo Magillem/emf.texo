@@ -107,6 +107,6 @@ public class PreprocessorDirective extends AbstractCodeElement {
    */
   @Override
   public String toString() {
-    return "PreprocessorDirective ";
+    return "PreprocessorDirective " + "{extends: " + super.toString() + "} ";
   }
 }

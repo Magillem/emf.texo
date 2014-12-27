@@ -24,6 +24,6 @@ public class Report extends UIDisplay {
    */
   @Override
   public String toString() {
-    return "Report ";
+    return "Report " + "{extends: " + super.toString() + "} ";
   }
 }

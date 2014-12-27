@@ -93,6 +93,6 @@ public class UIRelationship extends AbstractUIRelationship {
    */
   @Override
   public String toString() {
-    return "UIRelationship ";
+    return "UIRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

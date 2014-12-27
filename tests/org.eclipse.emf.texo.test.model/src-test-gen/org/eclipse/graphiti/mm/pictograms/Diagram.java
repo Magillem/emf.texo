@@ -665,6 +665,7 @@ public class Diagram extends ContainerShape {
   public String toString() {
     return "Diagram " + " [gridUnit: " + getGridUnit() + "]" + " [diagramTypeId: " + getDiagramTypeId() + "]"
         + " [name: " + getName() + "]" + " [snapToGrid: " + isSnapToGrid() + "]" + " [showGuides: " + isShowGuides()
-        + "]" + " [verticalGridUnit: " + getVerticalGridUnit() + "]" + " [version: " + getVersion() + "]";
+        + "]" + " [verticalGridUnit: " + getVerticalGridUnit() + "]" + " [version: " + getVersion() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

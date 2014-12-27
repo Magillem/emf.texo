@@ -94,6 +94,7 @@ public class Address extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Address " + " [street: " + getStreet() + "]" + " [city: " + getCity() + "]";
+    return "Address " + " [street: " + getStreet() + "]" + " [city: " + getCity() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

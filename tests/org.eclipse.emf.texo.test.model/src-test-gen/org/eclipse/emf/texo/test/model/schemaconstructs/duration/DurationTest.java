@@ -135,6 +135,7 @@ public class DurationTest extends Identifiable {
    */
   @Override
   public String toString() {
-    return "DurationTest " + " [name: " + getName() + "]" + " [duration: " + getDuration() + "]";
+    return "DurationTest " + " [name: " + getName() + "]" + " [duration: " + getDuration() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

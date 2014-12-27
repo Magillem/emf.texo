@@ -176,6 +176,7 @@ public class SourceRef extends Element {
    */
   @Override
   public String toString() {
-    return "SourceRef " + " [language: " + getLanguage() + "]" + " [snippet: " + getSnippet() + "]";
+    return "SourceRef " + " [language: " + getLanguage() + "]" + " [snippet: " + getSnippet() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

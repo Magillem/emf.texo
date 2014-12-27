@@ -197,6 +197,6 @@ public abstract class ModelElement extends Element {
    */
   @Override
   public String toString() {
-    return "ModelElement ";
+    return "ModelElement " + "{extends: " + super.toString() + "} ";
   }
 }

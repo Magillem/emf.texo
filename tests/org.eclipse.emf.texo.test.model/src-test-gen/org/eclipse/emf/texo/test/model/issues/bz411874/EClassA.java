@@ -97,6 +97,7 @@ public class EClassA extends Identifiable {
    */
   @Override
   public String toString() {
-    return "EClassA " + " [byteArray: " + getByteArray() + "]" + " [base64: " + getBase64() + "]";
+    return "EClassA " + " [byteArray: " + getByteArray() + "]" + " [base64: " + getBase64() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

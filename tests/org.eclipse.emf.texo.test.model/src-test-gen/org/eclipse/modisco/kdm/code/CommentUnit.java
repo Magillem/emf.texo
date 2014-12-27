@@ -59,6 +59,6 @@ public class CommentUnit extends ModelElement {
    */
   @Override
   public String toString() {
-    return "CommentUnit " + " [text: " + getText() + "]";
+    return "CommentUnit " + " [text: " + getText() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

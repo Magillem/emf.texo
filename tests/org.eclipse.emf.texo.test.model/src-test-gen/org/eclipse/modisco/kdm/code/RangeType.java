@@ -91,6 +91,7 @@ public class RangeType extends DerivedType {
    */
   @Override
   public String toString() {
-    return "RangeType " + " [lower: " + getLower() + "]" + " [upper: " + getUpper() + "]";
+    return "RangeType " + " [lower: " + getLower() + "]" + " [upper: " + getUpper() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

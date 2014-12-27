@@ -25,6 +25,6 @@ public class ContentAttribute extends ContentItem {
    */
   @Override
   public String toString() {
-    return "ContentAttribute ";
+    return "ContentAttribute " + "{extends: " + super.toString() + "} ";
   }
 }

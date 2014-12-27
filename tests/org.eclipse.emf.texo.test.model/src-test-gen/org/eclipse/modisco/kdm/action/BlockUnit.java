@@ -24,6 +24,6 @@ public class BlockUnit extends ActionElement {
    */
   @Override
   public String toString() {
-    return "BlockUnit ";
+    return "BlockUnit " + "{extends: " + super.toString() + "} ";
   }
 }

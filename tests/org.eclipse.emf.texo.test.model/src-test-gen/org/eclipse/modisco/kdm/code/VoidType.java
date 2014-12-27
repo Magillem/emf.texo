@@ -24,6 +24,6 @@ public class VoidType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "VoidType ";
+    return "VoidType " + "{extends: " + super.toString() + "} ";
   }
 }

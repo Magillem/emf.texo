@@ -61,6 +61,6 @@ public class StorableUnit extends DataElement {
    */
   @Override
   public String toString() {
-    return "StorableUnit " + " [kind: " + getKind() + "]";
+    return "StorableUnit " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

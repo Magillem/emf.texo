@@ -92,6 +92,6 @@ public class Imports extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "Imports ";
+    return "Imports " + "{extends: " + super.toString() + "} ";
   }
 }

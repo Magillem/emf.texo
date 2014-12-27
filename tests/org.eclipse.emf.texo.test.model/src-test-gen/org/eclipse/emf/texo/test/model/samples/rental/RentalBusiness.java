@@ -61,6 +61,6 @@ public class RentalBusiness extends Identifiable {
    */
   @Override
   public String toString() {
-    return "RentalBusiness " + " [name: " + getName() + "]";
+    return "RentalBusiness " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

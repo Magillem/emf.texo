@@ -92,6 +92,6 @@ public class DescribedBy extends AbstractBuildRelationship {
    */
   @Override
   public String toString() {
-    return "DescribedBy ";
+    return "DescribedBy " + "{extends: " + super.toString() + "} ";
   }
 }

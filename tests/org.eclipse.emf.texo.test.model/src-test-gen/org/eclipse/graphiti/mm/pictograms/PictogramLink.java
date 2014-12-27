@@ -145,6 +145,6 @@ public class PictogramLink extends PropertyContainer {
    */
   @Override
   public String toString() {
-    return "PictogramLink ";
+    return "PictogramLink " + "{extends: " + super.toString() + "} ";
   }
 }

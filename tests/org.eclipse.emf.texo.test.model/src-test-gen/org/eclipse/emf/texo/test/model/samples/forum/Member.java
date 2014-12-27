@@ -227,6 +227,6 @@ public class Member extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Member " + " [nickname: " + getNickname() + "]";
+    return "Member " + " [nickname: " + getNickname() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

@@ -593,6 +593,7 @@ public class SimpleList extends Identifiable {
   @Override
   public String toString() {
     return "SimpleList " + " [code: " + getCode() + "]" + " [intArray: " + getIntArray() + "]" + " [doubleArray: "
-        + getDoubleArray() + "]" + " [stringArray: " + getStringArray() + "]" + " [byteArray: " + getByteArray() + "]";
+        + getDoubleArray() + "]" + " [stringArray: " + getStringArray() + "]" + " [byteArray: " + getByteArray() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

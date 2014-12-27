@@ -104,6 +104,6 @@ public class TestADTO extends Identifiable implements Serializable {
    */
   @Override
   public String toString() {
-    return "TestA " + " [testEnum: " + getTestEnum() + "]";
+    return "TestA " + " [testEnum: " + getTestEnum() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

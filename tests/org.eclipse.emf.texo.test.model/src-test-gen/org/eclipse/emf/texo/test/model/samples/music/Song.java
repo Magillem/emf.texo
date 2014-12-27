@@ -161,6 +161,6 @@ public class Song extends Identifiable {
   @Override
   public String toString() {
     return "Song " + " [id: " + getId() + "]" + " [version: " + getVersion() + "]" + " [track: " + getTrack() + "]"
-        + " [name: " + getName() + "]";
+        + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

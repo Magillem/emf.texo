@@ -548,6 +548,7 @@ public class DocumentRoot extends Identifiable {
     return "DocumentRoot " + " [groupDescription: " + getGroupDescription() + "]" + " [line: " + getLine() + "]"
         + " [p: " + getP() + "]" + " [persona: " + getPersona() + "]" + " [playSubTitle: " + getPlaySubTitle() + "]"
         + " [sceneDescription: " + getSceneDescription() + "]" + " [speaker: " + getSpeaker() + "]"
-        + " [stageDirections: " + getStageDirections() + "]" + " [title: " + getTitle() + "]";
+        + " [stageDirections: " + getStageDirections() + "]" + " [title: " + getTitle() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

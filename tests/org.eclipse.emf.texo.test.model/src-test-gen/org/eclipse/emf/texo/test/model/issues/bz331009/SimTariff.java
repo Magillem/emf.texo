@@ -25,6 +25,6 @@ public class SimTariff extends Tariff {
    */
   @Override
   public String toString() {
-    return "SimTariff ";
+    return "SimTariff " + "{extends: " + super.toString() + "} ";
   }
 }

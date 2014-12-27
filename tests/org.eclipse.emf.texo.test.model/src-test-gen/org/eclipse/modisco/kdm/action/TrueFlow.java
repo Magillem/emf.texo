@@ -24,6 +24,6 @@ public class TrueFlow extends ControlFlow {
    */
   @Override
   public String toString() {
-    return "TrueFlow ";
+    return "TrueFlow " + "{extends: " + super.toString() + "} ";
   }
 }

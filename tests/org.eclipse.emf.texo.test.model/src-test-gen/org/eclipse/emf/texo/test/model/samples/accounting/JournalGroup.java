@@ -232,6 +232,6 @@ public class JournalGroup extends Identifiable {
    */
   @Override
   public String toString() {
-    return "JournalGroup " + " [name: " + getName() + "]";
+    return "JournalGroup " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

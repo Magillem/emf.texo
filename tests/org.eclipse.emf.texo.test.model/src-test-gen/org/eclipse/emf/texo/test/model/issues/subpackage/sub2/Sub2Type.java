@@ -61,6 +61,6 @@ public class Sub2Type extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Sub2Type " + " [name: " + getName() + "]";
+    return "Sub2Type " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

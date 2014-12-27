@@ -92,6 +92,6 @@ public class NextState extends AbstractEventRelationship {
    */
   @Override
   public String toString() {
-    return "NextState ";
+    return "NextState " + "{extends: " + super.toString() + "} ";
   }
 }

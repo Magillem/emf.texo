@@ -102,6 +102,6 @@ public class TheMap extends Identifiable {
    */
   @Override
   public String toString() {
-    return "TheMap ";
+    return "TheMap " + "{extends: " + super.toString() + "} ";
   }
 }

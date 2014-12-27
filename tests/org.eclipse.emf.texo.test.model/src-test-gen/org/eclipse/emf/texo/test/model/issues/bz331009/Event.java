@@ -141,6 +141,6 @@ public class Event extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Event " + " [eventType: " + getEventType() + "]";
+    return "Event " + " [eventType: " + getEventType() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

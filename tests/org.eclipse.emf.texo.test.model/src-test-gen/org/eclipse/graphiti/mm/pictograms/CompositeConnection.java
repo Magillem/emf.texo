@@ -109,6 +109,6 @@ public class CompositeConnection extends Connection {
    */
   @Override
   public String toString() {
-    return "CompositeConnection ";
+    return "CompositeConnection " + "{extends: " + super.toString() + "} ";
   }
 }

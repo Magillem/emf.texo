@@ -110,6 +110,6 @@ public class FreeFormConnection extends Connection {
    */
   @Override
   public String toString() {
-    return "FreeFormConnection ";
+    return "FreeFormConnection " + "{extends: " + super.toString() + "} ";
   }
 }

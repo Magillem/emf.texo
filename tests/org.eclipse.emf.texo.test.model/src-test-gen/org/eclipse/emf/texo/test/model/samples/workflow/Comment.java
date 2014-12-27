@@ -62,6 +62,6 @@ public class Comment extends WorkflowElement {
    */
   @Override
   public String toString() {
-    return "Comment ";
+    return "Comment " + "{extends: " + super.toString() + "} ";
   }
 }

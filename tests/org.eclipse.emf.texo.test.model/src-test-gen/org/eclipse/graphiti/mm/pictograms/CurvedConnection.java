@@ -110,6 +110,6 @@ public class CurvedConnection extends Connection {
    */
   @Override
   public String toString() {
-    return "CurvedConnection ";
+    return "CurvedConnection " + "{extends: " + super.toString() + "} ";
   }
 }

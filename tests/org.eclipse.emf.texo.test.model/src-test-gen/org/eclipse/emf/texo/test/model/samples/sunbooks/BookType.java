@@ -336,6 +336,7 @@ public class BookType extends Identifiable {
   public String toString() {
     return "BookType " + " [name: " + getName() + "]" + " [iSBN: " + getISBN() + "]" + " [price: " + getPrice() + "]"
         + " [description: " + getDescription() + "]" + " [publicationDate: " + getPublicationDate() + "]"
-        + " [bookCategory: " + getBookCategory() + "]" + " [itemId: " + getItemId() + "]";
+        + " [bookCategory: " + getBookCategory() + "]" + " [itemId: " + getItemId() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

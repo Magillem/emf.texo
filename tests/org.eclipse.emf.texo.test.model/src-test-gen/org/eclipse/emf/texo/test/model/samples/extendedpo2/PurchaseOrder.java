@@ -370,6 +370,7 @@ public class PurchaseOrder extends Identifiable {
   @Override
   public String toString() {
     return "PurchaseOrder " + " [comment: " + getComment() + "]" + " [orderDate: " + getOrderDate() + "]"
-        + " [status: " + getStatus() + "]" + " [totalAmount: " + getTotalAmount() + "]";
+        + " [status: " + getStatus() + "]" + " [totalAmount: " + getTotalAmount() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

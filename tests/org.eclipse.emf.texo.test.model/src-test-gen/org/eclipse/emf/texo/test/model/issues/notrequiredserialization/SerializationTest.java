@@ -62,6 +62,6 @@ public class SerializationTest extends Identifiable {
    */
   @Override
   public String toString() {
-    return "SerializationTest " + " [name: " + getName() + "]";
+    return "SerializationTest " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

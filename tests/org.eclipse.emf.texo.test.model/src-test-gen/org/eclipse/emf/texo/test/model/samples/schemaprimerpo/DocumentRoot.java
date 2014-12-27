@@ -171,6 +171,6 @@ public class DocumentRoot extends Identifiable {
    */
   @Override
   public String toString() {
-    return "DocumentRoot " + " [comment_: " + getComment_() + "]";
+    return "DocumentRoot " + " [comment_: " + getComment_() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

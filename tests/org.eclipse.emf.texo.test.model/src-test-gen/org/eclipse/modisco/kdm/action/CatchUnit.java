@@ -24,6 +24,6 @@ public class CatchUnit extends ExceptionUnit {
    */
   @Override
   public String toString() {
-    return "CatchUnit ";
+    return "CatchUnit " + "{extends: " + super.toString() + "} ";
   }
 }

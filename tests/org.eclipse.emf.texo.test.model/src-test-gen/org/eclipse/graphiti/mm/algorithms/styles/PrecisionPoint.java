@@ -94,6 +94,6 @@ public class PrecisionPoint extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PrecisionPoint " + " [x: " + getX() + "]" + " [y: " + getY() + "]";
+    return "PrecisionPoint " + " [x: " + getX() + "]" + " [y: " + getY() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

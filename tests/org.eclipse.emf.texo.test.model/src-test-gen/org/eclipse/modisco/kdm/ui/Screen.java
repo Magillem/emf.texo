@@ -24,6 +24,6 @@ public class Screen extends UIDisplay {
    */
   @Override
   public String toString() {
-    return "Screen ";
+    return "Screen " + "{extends: " + super.toString() + "} ";
   }
 }

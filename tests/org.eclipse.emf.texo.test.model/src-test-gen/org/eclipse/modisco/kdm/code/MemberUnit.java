@@ -61,6 +61,6 @@ public class MemberUnit extends DataElement {
    */
   @Override
   public String toString() {
-    return "MemberUnit " + " [export: " + getExport() + "]";
+    return "MemberUnit " + " [export: " + getExport() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

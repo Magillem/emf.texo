@@ -206,6 +206,7 @@ public class Service extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Service " + " [name: " + getName() + "]" + " [active: " + isActive() + "]";
+    return "Service " + " [name: " + getName() + "]" + " [active: " + isActive() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

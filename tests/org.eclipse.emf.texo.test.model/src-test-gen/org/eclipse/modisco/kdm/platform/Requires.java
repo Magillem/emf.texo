@@ -92,6 +92,6 @@ public class Requires extends AbstractPlatformRelationship {
    */
   @Override
   public String toString() {
-    return "Requires ";
+    return "Requires " + "{extends: " + super.toString() + "} ";
   }
 }

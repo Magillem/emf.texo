@@ -63,6 +63,6 @@ public class BZ390942 extends Identifiable {
    */
   @Override
   public String toString() {
-    return "BZ390942 " + " [value: " + getValue() + "]";
+    return "BZ390942 " + " [value: " + getValue() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

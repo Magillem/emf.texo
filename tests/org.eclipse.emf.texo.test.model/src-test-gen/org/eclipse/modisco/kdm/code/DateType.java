@@ -24,6 +24,6 @@ public class DateType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "DateType ";
+    return "DateType " + "{extends: " + super.toString() + "} ";
   }
 }

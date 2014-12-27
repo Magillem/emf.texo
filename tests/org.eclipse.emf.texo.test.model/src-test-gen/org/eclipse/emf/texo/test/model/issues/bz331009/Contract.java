@@ -240,6 +240,7 @@ public class Contract extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Contract " + " [signDate: " + getSignDate() + "]" + " [number: " + getNumber() + "]";
+    return "Contract " + " [signDate: " + getSignDate() + "]" + " [number: " + getNumber() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

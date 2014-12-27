@@ -93,6 +93,6 @@ public class ArrayType extends DerivedType {
    */
   @Override
   public String toString() {
-    return "ArrayType " + " [size: " + getSize() + "]";
+    return "ArrayType " + " [size: " + getSize() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

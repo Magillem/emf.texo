@@ -24,6 +24,6 @@ public class IntegerType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "IntegerType ";
+    return "IntegerType " + "{extends: " + super.toString() + "} ";
   }
 }

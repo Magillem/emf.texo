@@ -92,6 +92,6 @@ public class ExtensionTo extends AbstractDataRelationship {
    */
   @Override
   public String toString() {
-    return "ExtensionTo ";
+    return "ExtensionTo " + "{extends: " + super.toString() + "} ";
   }
 }

@@ -25,6 +25,6 @@ public class ComputationalObject extends CodeItem {
    */
   @Override
   public String toString() {
-    return "ComputationalObject ";
+    return "ComputationalObject " + "{extends: " + super.toString() + "} ";
   }
 }

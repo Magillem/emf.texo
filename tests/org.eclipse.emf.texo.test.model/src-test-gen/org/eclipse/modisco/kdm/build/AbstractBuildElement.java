@@ -108,6 +108,6 @@ public abstract class AbstractBuildElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractBuildElement ";
+    return "AbstractBuildElement " + "{extends: " + super.toString() + "} ";
   }
 }

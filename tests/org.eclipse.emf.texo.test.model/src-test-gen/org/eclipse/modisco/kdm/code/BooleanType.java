@@ -24,6 +24,6 @@ public class BooleanType extends PrimitiveType {
    */
   @Override
   public String toString() {
-    return "BooleanType ";
+    return "BooleanType " + "{extends: " + super.toString() + "} ";
   }
 }

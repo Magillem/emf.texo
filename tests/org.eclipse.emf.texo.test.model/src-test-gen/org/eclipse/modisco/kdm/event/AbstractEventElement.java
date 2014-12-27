@@ -350,6 +350,6 @@ public abstract class AbstractEventElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractEventElement ";
+    return "AbstractEventElement " + "{extends: " + super.toString() + "} ";
   }
 }

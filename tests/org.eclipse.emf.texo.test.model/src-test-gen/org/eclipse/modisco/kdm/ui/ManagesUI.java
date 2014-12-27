@@ -94,6 +94,6 @@ public class ManagesUI extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ManagesUI ";
+    return "ManagesUI " + "{extends: " + super.toString() + "} ";
   }
 }

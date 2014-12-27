@@ -64,6 +64,6 @@ public class PeriodicalPayment extends PaymentItem {
    */
   @Override
   public String toString() {
-    return "PeriodicalPayment " + " [periodicity: " + getPeriodicity() + "]";
+    return "PeriodicalPayment " + " [periodicity: " + getPeriodicity() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

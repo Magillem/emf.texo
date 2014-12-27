@@ -60,6 +60,6 @@ public class FixPointAnchor extends AdvancedAnchor {
    */
   @Override
   public String toString() {
-    return "FixPointAnchor ";
+    return "FixPointAnchor " + "{extends: " + super.toString() + "} ";
   }
 }

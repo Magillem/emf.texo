@@ -94,6 +94,6 @@ public class PlatformRelationship extends AbstractPlatformRelationship {
    */
   @Override
   public String toString() {
-    return "PlatformRelationship ";
+    return "PlatformRelationship " + "{extends: " + super.toString() + "} ";
   }
 }

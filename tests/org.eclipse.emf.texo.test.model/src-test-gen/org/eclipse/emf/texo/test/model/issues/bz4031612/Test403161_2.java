@@ -59,6 +59,6 @@ public class Test403161_2 extends Test403161_1 {
    */
   @Override
   public String toString() {
-    return "Test403161_2 " + " [subName: " + getSubName() + "]";
+    return "Test403161_2 " + " [subName: " + getSubName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

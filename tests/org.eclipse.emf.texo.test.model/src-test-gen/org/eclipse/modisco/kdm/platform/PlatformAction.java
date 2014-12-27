@@ -140,6 +140,6 @@ public class PlatformAction extends AbstractPlatformElement {
    */
   @Override
   public String toString() {
-    return "PlatformAction " + " [kind: " + getKind() + "]";
+    return "PlatformAction " + " [kind: " + getKind() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

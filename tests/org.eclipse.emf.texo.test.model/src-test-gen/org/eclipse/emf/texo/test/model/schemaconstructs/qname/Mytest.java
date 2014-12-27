@@ -138,6 +138,7 @@ public class Mytest extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Mytest " + " [description: " + getDescription() + "]" + " [name: " + getName() + "]";
+    return "Mytest " + " [description: " + getDescription() + "]" + " [name: " + getName() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

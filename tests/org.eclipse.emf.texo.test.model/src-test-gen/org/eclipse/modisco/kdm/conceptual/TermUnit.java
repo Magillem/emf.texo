@@ -24,6 +24,6 @@ public class TermUnit extends AbstractConceptualElement {
    */
   @Override
   public String toString() {
-    return "TermUnit ";
+    return "TermUnit " + "{extends: " + super.toString() + "} ";
   }
 }

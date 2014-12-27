@@ -93,6 +93,6 @@ public class RoundedRectangle extends GraphicsAlgorithm {
   @Override
   public String toString() {
     return "RoundedRectangle " + " [cornerHeight: " + getCornerHeight() + "]" + " [cornerWidth: " + getCornerWidth()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

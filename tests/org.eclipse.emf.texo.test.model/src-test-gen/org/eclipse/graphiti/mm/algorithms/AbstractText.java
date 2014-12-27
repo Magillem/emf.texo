@@ -283,6 +283,7 @@ public abstract class AbstractText extends GraphicsAlgorithm {
   @Override
   public String toString() {
     return "AbstractText " + " [horizontalAlignment: " + getHorizontalAlignment() + "]" + " [verticalAlignment: "
-        + getVerticalAlignment() + "]" + " [angle: " + getAngle() + "]" + " [value: " + getValue() + "]";
+        + getVerticalAlignment() + "]" + " [angle: " + getAngle() + "]" + " [value: " + getValue() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

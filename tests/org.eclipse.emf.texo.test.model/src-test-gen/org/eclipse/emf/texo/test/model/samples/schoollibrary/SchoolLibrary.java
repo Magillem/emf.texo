@@ -59,6 +59,6 @@ public class SchoolLibrary extends Library {
    */
   @Override
   public String toString() {
-    return "SchoolLibrary " + " [location: " + getLocation() + "]";
+    return "SchoolLibrary " + " [location: " + getLocation() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

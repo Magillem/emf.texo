@@ -109,6 +109,6 @@ public class ColumnSet extends DataContainer {
    */
   @Override
   public String toString() {
-    return "ColumnSet ";
+    return "ColumnSet " + "{extends: " + super.toString() + "} ";
   }
 }

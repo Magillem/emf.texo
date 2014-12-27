@@ -214,6 +214,6 @@ public class Message extends Identifiable {
   @Override
   public String toString() {
     return "Message " + " [text: " + getText() + "]" + " [type: " + getType() + "]" + " [dateTime: " + getDateTime()
-        + "]";
+        + "]" + "{extends: " + super.toString() + "} ";
   }
 }

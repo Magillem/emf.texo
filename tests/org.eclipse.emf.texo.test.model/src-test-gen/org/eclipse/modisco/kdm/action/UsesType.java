@@ -93,6 +93,6 @@ public class UsesType extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "UsesType ";
+    return "UsesType " + "{extends: " + super.toString() + "} ";
   }
 }

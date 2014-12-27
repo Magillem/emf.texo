@@ -230,6 +230,7 @@ public class USAddress extends Identifiable {
   @Override
   public String toString() {
     return "USAddress " + " [name: " + getName() + "]" + " [street: " + getStreet() + "]" + " [city: " + getCity()
-        + "]" + " [state: " + getState() + "]" + " [zip: " + getZip() + "]" + " [country: " + getCountry() + "]";
+        + "]" + " [state: " + getState() + "]" + " [zip: " + getZip() + "]" + " [country: " + getCountry() + "]"
+        + "{extends: " + super.toString() + "} ";
   }
 }

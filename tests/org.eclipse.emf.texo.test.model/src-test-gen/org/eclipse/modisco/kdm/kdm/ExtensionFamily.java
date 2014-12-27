@@ -141,6 +141,6 @@ public class ExtensionFamily extends Element {
    */
   @Override
   public String toString() {
-    return "ExtensionFamily " + " [name: " + getName() + "]";
+    return "ExtensionFamily " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

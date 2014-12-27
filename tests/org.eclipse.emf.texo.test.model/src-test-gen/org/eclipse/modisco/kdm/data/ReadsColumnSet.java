@@ -94,6 +94,6 @@ public class ReadsColumnSet extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "ReadsColumnSet ";
+    return "ReadsColumnSet " + "{extends: " + super.toString() + "} ";
   }
 }

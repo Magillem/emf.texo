@@ -92,6 +92,6 @@ public class KeyRelation extends AbstractDataRelationship {
    */
   @Override
   public String toString() {
-    return "KeyRelation ";
+    return "KeyRelation " + "{extends: " + super.toString() + "} ";
   }
 }

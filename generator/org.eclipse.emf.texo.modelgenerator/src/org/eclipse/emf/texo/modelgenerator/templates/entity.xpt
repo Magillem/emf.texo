@@ -287,7 +287,9 @@ public«IF this.abstract-» abstract«ENDIF-» class «this.simpleClassName-»
 			«IF !featureAnnotation.reference && !featureAnnotation.EStructuralFeature.many-»
 		 		+ " [«featureAnnotation.name»: " +  «featureAnnotation.getter»() + "]"
 	  		«ENDIF-»
-	 	«ENDFOREACH-»;
+	 	«ENDFOREACH-»
+	  	«IF this.classExtends.size > 0-» + "{extends " + super.toString() + "}"«ENDIF-»
+	  	;
 	 }
 }
 «ENDFILE-»

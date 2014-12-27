@@ -93,6 +93,6 @@ public class EntryFlow extends AbstractActionRelationship {
    */
   @Override
   public String toString() {
-    return "EntryFlow ";
+    return "EntryFlow " + "{extends: " + super.toString() + "} ";
   }
 }

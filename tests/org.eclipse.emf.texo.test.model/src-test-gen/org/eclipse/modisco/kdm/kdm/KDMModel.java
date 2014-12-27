@@ -60,6 +60,6 @@ public abstract class KDMModel extends KDMFramework {
    */
   @Override
   public String toString() {
-    return "KDMModel ";
+    return "KDMModel " + "{extends: " + super.toString() + "} ";
   }
 }

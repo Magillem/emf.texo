@@ -212,6 +212,7 @@ public abstract class PaymentItem extends Identifiable {
   @Override
   public String toString() {
     return "PaymentItem " + " [sum: " + getSum() + "]" + " [currency: " + getCurrency() + "]" + " [date: " + getDate()
-        + "]" + " [description: " + getDescription() + "]" + " [paymentType: " + getPaymentType() + "]";
+        + "]" + " [description: " + getDescription() + "]" + " [paymentType: " + getPaymentType() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

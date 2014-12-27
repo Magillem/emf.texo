@@ -95,6 +95,7 @@ public class MethodUnit extends ControlElement {
    */
   @Override
   public String toString() {
-    return "MethodUnit " + " [kind: " + getKind() + "]" + " [export: " + getExport() + "]";
+    return "MethodUnit " + " [kind: " + getKind() + "]" + " [export: " + getExport() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

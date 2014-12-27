@@ -131,6 +131,6 @@ public class ConnectionDecorator extends Shape {
   @Override
   public String toString() {
     return "ConnectionDecorator " + " [locationRelative: " + isLocationRelative() + "]" + " [location: "
-        + getLocation() + "]";
+        + getLocation() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

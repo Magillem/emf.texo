@@ -350,6 +350,6 @@ public abstract class AbstractUIElement extends KDMEntity {
    */
   @Override
   public String toString() {
-    return "AbstractUIElement ";
+    return "AbstractUIElement " + "{extends: " + super.toString() + "} ";
   }
 }

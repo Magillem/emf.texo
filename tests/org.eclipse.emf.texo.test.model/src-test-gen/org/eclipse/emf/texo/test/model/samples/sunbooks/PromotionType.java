@@ -94,6 +94,7 @@ public class PromotionType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "PromotionType " + " [discount: " + getDiscount() + "]" + " [none: " + getNone() + "]";
+    return "PromotionType " + " [discount: " + getDiscount() + "]" + " [none: " + getNone() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

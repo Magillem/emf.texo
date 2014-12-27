@@ -92,6 +92,6 @@ public class VisibleIn extends AbstractCodeRelationship {
    */
   @Override
   public String toString() {
-    return "VisibleIn ";
+    return "VisibleIn " + "{extends: " + super.toString() + "} ";
   }
 }

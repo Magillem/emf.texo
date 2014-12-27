@@ -236,6 +236,6 @@ public class Item extends Identifiable {
   public String toString() {
     return "Item " + " [productName: " + getProductName() + "]" + " [quantity: " + getQuantity() + "]" + " [uSPrice: "
         + getUSPrice() + "]" + " [comment: " + getComment() + "]" + " [shipDate: " + getShipDate() + "]"
-        + " [partNum: " + getPartNum() + "]";
+        + " [partNum: " + getPartNum() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

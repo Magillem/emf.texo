@@ -61,6 +61,6 @@ public class ComplexType extends Identifiable {
    */
   @Override
   public String toString() {
-    return "ComplexType " + " [test: " + getTest() + "]";
+    return "ComplexType " + " [test: " + getTest() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

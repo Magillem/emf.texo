@@ -100,6 +100,7 @@ public class Phone extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Phone " + " [number: " + getNumber() + "]" + " [description: " + getDescription() + "]";
+    return "Phone " + " [number: " + getNumber() + "]" + " [description: " + getDescription() + "]" + "{extends: "
+        + super.toString() + "} ";
   }
 }

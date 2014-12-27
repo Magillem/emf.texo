@@ -24,6 +24,6 @@ public class State extends EventResource {
    */
   @Override
   public String toString() {
-    return "State ";
+    return "State " + "{extends: " + super.toString() + "} ";
   }
 }

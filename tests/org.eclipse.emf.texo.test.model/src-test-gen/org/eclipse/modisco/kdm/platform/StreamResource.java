@@ -24,6 +24,6 @@ public class StreamResource extends ResourceType {
    */
   @Override
   public String toString() {
-    return "StreamResource ";
+    return "StreamResource " + "{extends: " + super.toString() + "} ";
   }
 }

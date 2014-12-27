@@ -108,6 +108,6 @@ public class ClaimCompositeKey extends Identifiable {
   @Override
   public String toString() {
     return "ClaimCompositeKey " + " [claimNumber: " + getClaimNumber() + "]" + " [claimExtensionNumber: "
-        + getClaimExtensionNumber() + "]";
+        + getClaimExtensionNumber() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

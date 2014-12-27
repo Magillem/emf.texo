@@ -106,6 +106,6 @@ public class UIResource extends AbstractUIElement {
    */
   @Override
   public String toString() {
-    return "UIResource ";
+    return "UIResource " + "{extends: " + super.toString() + "} ";
   }
 }

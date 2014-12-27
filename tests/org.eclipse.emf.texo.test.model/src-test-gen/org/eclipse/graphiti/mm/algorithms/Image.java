@@ -158,6 +158,6 @@ public class Image extends GraphicsAlgorithm {
   @Override
   public String toString() {
     return "Image " + " [id: " + getId() + "]" + " [stretchH: " + getStretchH() + "]" + " [stretchV: " + getStretchV()
-        + "]" + " [proportional: " + getProportional() + "]";
+        + "]" + " [proportional: " + getProportional() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

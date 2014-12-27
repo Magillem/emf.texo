@@ -145,6 +145,6 @@ public class Test403743_Main extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Test403743_Main " + " [name: " + getName() + "]";
+    return "Test403743_Main " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

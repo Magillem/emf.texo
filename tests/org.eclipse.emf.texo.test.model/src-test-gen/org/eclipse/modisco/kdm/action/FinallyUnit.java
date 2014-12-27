@@ -24,6 +24,6 @@ public class FinallyUnit extends ExceptionUnit {
    */
   @Override
   public String toString() {
-    return "FinallyUnit ";
+    return "FinallyUnit " + "{extends: " + super.toString() + "} ";
   }
 }

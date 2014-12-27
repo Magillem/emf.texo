@@ -146,6 +146,7 @@ public class GradientColoredAreas extends Identifiable {
    */
   @Override
   public String toString() {
-    return "GradientColoredAreas " + " [styleAdaption: " + getStyleAdaption() + "]";
+    return "GradientColoredAreas " + " [styleAdaption: " + getStyleAdaption() + "]" + "{extends: " + super.toString()
+        + "} ";
   }
 }
