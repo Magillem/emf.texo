@@ -106,7 +106,7 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
     /**
      * @generated
      */
-    «IF eClassModelGenAnnotation.addSuppressUnchecked || eClassModelGenAnnotation.EAllStructuralFeatureModelGenAnnotations.exists(e|e.EStructuralFeature.many && e.EStructuralFeature.changeable)»
+    «IF eClassModelGenAnnotation.addSuppressUnchecked || eClassModelGenAnnotation.EStructuralFeatureModelGenAnnotations.exists(e|e.EStructuralFeature.many && e.EStructuralFeature.changeable)»
     @SuppressWarnings("unchecked")
     «ENDIF»
     @Override

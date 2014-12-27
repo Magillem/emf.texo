@@ -382,7 +382,6 @@ public class SchoollibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
-    @SuppressWarnings("unchecked")
     @Override
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);

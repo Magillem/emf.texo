@@ -540,7 +540,6 @@ public class CoreModelFactory implements ModelFactory {
     /**
      * @generated
      */
-    @SuppressWarnings("unchecked")
     @Override
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -634,7 +633,6 @@ public class CoreModelFactory implements ModelFactory {
     /**
      * @generated
      */
-    @SuppressWarnings("unchecked")
     @Override
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
