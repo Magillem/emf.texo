@@ -16,12 +16,12 @@
  */
 package org.eclipse.emf.texo.orm.test;
 
-import junit.framework.Assert;
 import junit.framework.TestCase;
 
 import org.eclipse.emf.texo.orm.annotator.ORMNamingStrategy;
 import org.eclipse.emf.texo.orm.ormannotations.EPackageORMAnnotation;
 import org.eclipse.emf.texo.orm.ormannotations.OrmannotationsFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
