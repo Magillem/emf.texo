@@ -6,5 +6,6 @@
     <dependencies>
 		<dependency name="org.aopalliance" componentType="osgi.bundle"/>
 		<dependency name="com.google.guava" componentType="osgi.bundle" versionDesignator="[13.0.0,16.0.0]"/>
+		<dependency name="javax.servlet" componentType="osgi.bundle" versionDesignator="[3.1.0,4.0.0]"/>
     </dependencies>
 </cspecExtension>
