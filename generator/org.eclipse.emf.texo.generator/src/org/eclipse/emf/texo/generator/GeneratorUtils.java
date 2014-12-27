@@ -409,7 +409,7 @@ public class GeneratorUtils {
     rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
         new EcoreResourceFactoryImpl());
     rs.setPackageRegistry(registry);
-    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
+    rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(false));
     return rs;
   }
 
