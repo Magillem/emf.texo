@@ -14,4 +14,12 @@
             genModel="model/test.xcore"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated test2 -->
+      <package
+            uri="test.def"
+            class="test.def.DefPackage"
+            genModel="model/test2.xcore"/>
+   </extension>
+
 </plugin>

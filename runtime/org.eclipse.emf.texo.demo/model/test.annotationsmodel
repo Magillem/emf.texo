@@ -4,6 +4,9 @@
     <ePackage href="test.xcore#/EPackage"/>
     <annotatedEClassifiers xsi:type="annotationsmodel:AnnotatedEClass">
       <eClass href="test.xcore#/EPackage/Test"/>
+      <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEAttribute">
+        <eAttribute href="test.xcore#/EPackage/Test/name"/>
+      </annotatedEStructuralFeatures>
     </annotatedEClassifiers>
   </annotatedEPackages>
 </annotationsmodel:AnnotatedModel>

@@ -11,11 +11,15 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;bundle-version="2.7.0";visibility:=reexport,
  org.eclipse.xtext.xbase.lib,
  org.eclipse.emf.ecore.xcore.lib,
+ org.eclipse.emf.texo.demo;visibility:=reexport,
  org.eclipse.emf.texo;bundle-version="0.1.0",
  javax.persistence;bundle-version="2.0.3",
  org.eclipse.emf.texo.server;bundle-version="0.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: test.abc,
  test.abc.impl,
- test.abc.util
+ test.abc.util,
+ test.def,
+ test.def.impl,
+ test.def.util
 Bundle-ActivationPolicy: lazy

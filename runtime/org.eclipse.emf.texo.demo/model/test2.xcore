@@ -1,0 +1,11 @@
+package test.def
+
+import test.abc.Test
+
+class T1 extends Test {
+	
+}
+
+class T2 {
+	String name
+}
