@@ -7,11 +7,13 @@
   </orm:persistence-unit-metadata>
   <orm:access>FIELD</orm:access>
   <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz403743.Test403743_Main" name="bz403743_Test403743_Main">
+    <orm:table name="bz403743_Test403743_Main"/>
+    <orm:discriminator-column length="255"/>
     <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
     <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
     <orm:attributes>
       <orm:basic name="name">
-        <orm:column name="name" nullable="true"/>
+        <orm:column name="name"/>
       </orm:basic>
       <orm:one-to-many name="children">
         <orm:order-column name="bz403743_Test403743_Main_children_ind"/>
@@ -23,11 +25,13 @@
     </orm:attributes>
   </orm:entity>
   <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz403743.Test403743" name="bz403743_Test403743">
+    <orm:table name="bz403743_Test403743"/>
+    <orm:discriminator-column length="255"/>
     <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
     <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
     <orm:attributes>
       <orm:basic name="name">
-        <orm:column name="name" nullable="true"/>
+        <orm:column name="name"/>
       </orm:basic>
       <orm:one-to-many name="children">
         <orm:order-column name="bz403743_Test403743_children_ind"/>

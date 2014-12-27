@@ -4,6 +4,6 @@
 	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0"
 	xmlns="http://www.eclipse.org/buckminster/CSpec-1.0">
     <dependencies>
-    	<dependency name="javax.servlet" componentType="osgi.bundle" versionDesignator="[3.1.0,4.0.0]"/>
+    	<dependency name="javax.servlet" componentType="osgi.bundle" versionDesignator="[3.0.0,4.0.0]"/>
     </dependencies>
 </cspecExtension>
