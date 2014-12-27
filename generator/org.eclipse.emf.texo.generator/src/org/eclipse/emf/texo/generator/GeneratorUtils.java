@@ -51,9 +51,7 @@ import org.eclipse.xsd.XSDSchema;
 import org.eclipse.xsd.ecore.XSDEcoreBuilder;
 import org.eclipse.xsd.util.XSDResourceFactoryImpl;
 import org.eclipse.xsd.util.XSDResourceImpl;
-import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.common.types.TypesPackage;
-import org.eclipse.xtext.util.CancelIndicator;
 import org.eclipse.xtext.xbase.XbasePackage;
 
 import com.google.inject.Injector;
@@ -359,7 +357,6 @@ public class GeneratorUtils {
           }
 
           // resolve all to force checking to work
-          EcoreUtil2.resolveLazyCrossReferences(res, CancelIndicator.NullImpl);
           checkErrors(res);
 
           final Iterator<EObject> it = res.getAllContents();
