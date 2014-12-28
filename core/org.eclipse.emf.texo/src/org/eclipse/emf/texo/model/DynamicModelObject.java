@@ -41,6 +41,10 @@ public class DynamicModelObject implements ModelObject<DynamicModelObject>, Texo
     values.addAll(source.values);
   }
 
+  public Class<?> getTargetClass() {
+    return Object.class;
+  }
+
   /*
    * (non-Javadoc)
    * 

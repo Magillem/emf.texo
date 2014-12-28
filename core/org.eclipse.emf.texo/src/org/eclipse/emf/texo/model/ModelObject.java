@@ -41,6 +41,11 @@ public interface ModelObject<E extends Object> {
   void setTarget(E target);
 
   /**
+   * @return the expected {@link Class} of the target object
+   */
+  Class<?> getTargetClass();
+
+  /**
    * @return the wrapped target object
    */
   E getTarget();

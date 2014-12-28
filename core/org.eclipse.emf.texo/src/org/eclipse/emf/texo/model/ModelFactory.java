@@ -51,7 +51,7 @@ public interface ModelFactory {
    *          the object being wrapped/adapted
    * @return the wrapper {@link ModelObject}
    */
-  ModelObject<?> createModelObject(EClass eClass, Object adaptee);
+  <T> ModelObject<T> createModelObject(EClass eClass, T adaptee);
 
   /**
    * Creates a feature map entry instance for a certain EStructuralFeature.

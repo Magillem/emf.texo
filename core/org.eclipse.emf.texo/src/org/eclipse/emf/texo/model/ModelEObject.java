@@ -46,6 +46,10 @@ public class ModelEObject implements ModelObject<EObject>, TexoComponent {
     return target;
   }
 
+  public Class<?> getTargetClass() {
+    return EObject.class;
+  }
+
   public EClass eClass() {
     return target.eClass();
   }

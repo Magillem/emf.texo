@@ -38,7 +38,19 @@ public abstract class AbstractModelObject<E extends Object> implements ModelObje
    * @see org.eclipse.emf.texo.model.ModelObject#setTarget(java.lang.Object)
    */
   public void setTarget(final E target) {
+    if (!getTargetClass().isInstance(target)) {
+      throw new IllegalArgumentException("Expected object of class " + getTargetClass() + " but it was " + target); //$NON-NLS-1$//$NON-NLS-2$
+    }
     this.target = target;
+  }
+
+  /*
+   * (non-Javadoc)
+   * 
+   * @see org.eclipse.emf.texo.model.ModelObject#getTargetClass()
+   */
+  public Class<?> getTargetClass() {
+    return Object.class;
   }
 
   /*
@@ -78,7 +90,7 @@ public abstract class AbstractModelObject<E extends Object> implements ModelObje
   public boolean eAddTo(final EStructuralFeature eStructuralFeature, final Object value) {
     throw new IllegalArgumentException(
         "EStructuralFeature: " + eStructuralFeature + " not found in EClass or feature is not a Many feature " //$NON-NLS-1$ //$NON-NLS-2$
-            + eClass() + " when adding value " + value); //$NON-NLS-1$
+        + eClass() + " when adding value " + value); //$NON-NLS-1$
   }
 
   /*
@@ -89,7 +101,7 @@ public abstract class AbstractModelObject<E extends Object> implements ModelObje
   public boolean eRemoveFrom(final EStructuralFeature eStructuralFeature, final Object value) {
     throw new IllegalArgumentException(
         "EStructuralFeature: " + eStructuralFeature + " not found in EClass or feature is not a Many feature " //$NON-NLS-1$ //$NON-NLS-2$
-            + eClass() + " when removing value " + value); //$NON-NLS-1$
+        + eClass() + " when removing value " + value); //$NON-NLS-1$
   }
 
   @Override
