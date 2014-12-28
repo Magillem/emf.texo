@@ -20,10 +20,10 @@ package org.eclipse.emf.texo.test;
 import junit.framework.TestCase;
 
 import org.eclipse.emf.texo.model.ModelObject;
-import org.eclipse.emf.texo.test.model.samples.library.Book;
-import org.eclipse.emf.texo.test.model.samples.library.Writer;
-import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelFactory;
-import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz415716.Bz415716ModelFactory;
+import org.eclipse.emf.texo.test.model.issues.bz415716.Bz415716ModelPackage;
+import org.eclipse.emf.texo.test.model.issues.bz415716.TestBz415716_One;
+import org.eclipse.emf.texo.test.model.issues.bz415716.TestBz415716_Two;
 import org.junit.Test;
 
 /**
@@ -37,34 +37,33 @@ public class TestBz415716 extends TestCase {
 
   @Test
   public void test() {
-    final LibraryModelFactory factory = LibraryModelPackage.MODELFACTORY;
+    final Bz415716ModelFactory factory = Bz415716ModelPackage.MODELFACTORY;
     {
-      final Book book = factory.createBook();
-      final Writer writer = factory.createWriter();
+      final TestBz415716_One one = factory.createTestBz415716_One();
+      final TestBz415716_Two two = factory.createTestBz415716_Two();
 
-      assertTrue(writer.addToBooks(book));
-      assertFalse(writer.addToBooks(book));
-      assertTrue(writer.removeFromBooks(book));
-      assertFalse(writer.removeFromBooks(book));
-      assertFalse(writer.removeFromBooks(factory.createBook()));
-      assertTrue(writer.addToBooks(book));
-      book.setAuthor(writer);
+      assertTrue(one.addToTwo(two));
+      assertFalse(one.addToTwo(two));
+      assertTrue(one.removeFromTwo(two));
+      assertFalse(one.removeFromTwo(two));
+      assertFalse(one.removeFromTwo(factory.createTestBz415716_Two()));
+      assertTrue(one.addToTwo(two));
+      two.setOne(one);
     }
     {
-      final Book book = factory.createBook();
-      final Writer writer = factory.createWriter();
-      @SuppressWarnings("unchecked")
-      final ModelObject<Writer> moWriter = factory.createModelObject(LibraryModelPackage.INSTANCE.getWriterEClass(),
-          writer);
+      final TestBz415716_One one = factory.createTestBz415716_One();
+      final TestBz415716_Two two = factory.createTestBz415716_Two();
+      final ModelObject<TestBz415716_One> moOne = factory.createModelObject(
+          Bz415716ModelPackage.INSTANCE.getTestBz415716_OneEClass(), one);
 
-      assertTrue(moWriter.eAddTo(LibraryModelPackage.INSTANCE.getWriter_Books(), book));
-      assertFalse(moWriter.eAddTo(LibraryModelPackage.INSTANCE.getWriter_Books(), book));
-      assertTrue(moWriter.eRemoveFrom(LibraryModelPackage.INSTANCE.getWriter_Books(), book));
-      assertFalse(moWriter.eRemoveFrom(LibraryModelPackage.INSTANCE.getWriter_Books(), book));
-      assertFalse(moWriter.eRemoveFrom(LibraryModelPackage.INSTANCE.getWriter_Books(), factory.createBook()));
-      assertFalse(writer.getBooks().remove(new Object()));
-      assertTrue(moWriter.eAddTo(LibraryModelPackage.INSTANCE.getWriter_Books(), book));
-      assertTrue(moWriter.eRemoveFrom(LibraryModelPackage.INSTANCE.getWriter_Books(), book));
+      assertTrue(moOne.eAddTo(Bz415716ModelPackage.INSTANCE.getTestBz415716_One_Two(), two));
+      assertFalse(moOne.eAddTo(Bz415716ModelPackage.INSTANCE.getTestBz415716_One_Two(), two));
+      assertTrue(moOne.eRemoveFrom(Bz415716ModelPackage.INSTANCE.getTestBz415716_One_Two(), two));
+      assertFalse(moOne.eRemoveFrom(Bz415716ModelPackage.INSTANCE.getTestBz415716_One_Two(), two));
+      assertFalse(moOne.eRemoveFrom(Bz415716ModelPackage.INSTANCE.getTestBz415716_One_Two(),
+          factory.createTestBz415716_Two()));
+      assertTrue(moOne.eAddTo(Bz415716ModelPackage.INSTANCE.getTestBz415716_One_Two(), two));
+      assertTrue(moOne.eRemoveFrom(Bz415716ModelPackage.INSTANCE.getTestBz415716_One_Two(), two));
     }
   }
 }
