@@ -610,33 +610,21 @@ public class EntityTemplate extends BaseTemplate {
                             {
                               boolean _isMany_4 = oppositeAnnotation.isMany();
                               if (_isMany_4) {
-                                {
-                                  boolean _isGenerateSafeManyAccess_3 = oppositeAnnotation.isGenerateSafeManyAccess();
-                                  if (_isGenerateSafeManyAccess_3) {
-                                    _builder.append("    ");
-                                    _builder.append("    ");
-                                    String _validJavaMemberName_13 = featureAnnotation_1.getValidJavaMemberName();
-                                    _builder.append(_validJavaMemberName_13, "        ");
-                                    _builder.append("Value.addTo");
-                                    String _validJavaMemberName_14 = oppositeAnnotation.getValidJavaMemberName();
-                                    String _firstUpper_3 = TemplateUtil.toFirstUpper(_validJavaMemberName_14);
-                                    _builder.append(_firstUpper_3, "        ");
-                                    _builder.append("(this);");
-                                    _builder.newLineIfNotEmpty();
-                                  } else {
-                                    _builder.append("    ");
-                                    _builder.append("    ");
-                                    String _validJavaMemberName_15 = featureAnnotation_1.getValidJavaMemberName();
-                                    _builder.append(_validJavaMemberName_15, "        ");
-                                    _builder.append("Value.add(this);");
-                                    _builder.newLineIfNotEmpty();
-                                  }
-                                }
+                                _builder.append("    ");
+                                _builder.append("    ");
+                                String _validJavaMemberName_13 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_13, "        ");
+                                _builder.append("Value.addTo");
+                                String _validJavaMemberName_14 = oppositeAnnotation.getValidJavaMemberName();
+                                String _firstUpper_3 = TemplateUtil.toFirstUpper(_validJavaMemberName_14);
+                                _builder.append(_firstUpper_3, "        ");
+                                _builder.append("(this);");
+                                _builder.newLineIfNotEmpty();
                               } else {
                                 _builder.append("    ");
                                 _builder.append("    ");
-                                String _validJavaMemberName_16 = featureAnnotation_1.getValidJavaMemberName();
-                                _builder.append(_validJavaMemberName_16, "        ");
+                                String _validJavaMemberName_15 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_15, "        ");
                                 _builder.append("Value.");
                                 String _setter = oppositeAnnotation.getSetter();
                                 _builder.append(_setter, "        ");
@@ -691,8 +679,8 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* @param ");
-                    String _validJavaMemberName_17 = featureAnnotation_1.getValidJavaMemberName();
-                    _builder.append(_validJavaMemberName_17, " ");
+                    String _validJavaMemberName_16 = featureAnnotation_1.getValidJavaMemberName();
+                    _builder.append(_validJavaMemberName_16, " ");
                     _builder.append("Value the value to remove");
                     _builder.newLineIfNotEmpty();
                     _builder.append(" ");
@@ -708,15 +696,15 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append("*/");
                     _builder.newLine();
                     _builder.append("public boolean removeFrom");
-                    String _validJavaMemberName_18 = featureAnnotation_1.getValidJavaMemberName();
-                    String _firstUpper_4 = TemplateUtil.toFirstUpper(_validJavaMemberName_18);
+                    String _validJavaMemberName_17 = featureAnnotation_1.getValidJavaMemberName();
+                    String _firstUpper_4 = TemplateUtil.toFirstUpper(_validJavaMemberName_17);
                     _builder.append(_firstUpper_4, "");
                     _builder.append("(");
                     String _itemType_3 = featureAnnotation_1.getItemType();
                     _builder.append(_itemType_3, "");
                     _builder.append(" ");
-                    String _validJavaMemberName_19 = featureAnnotation_1.getValidJavaMemberName();
-                    _builder.append(_validJavaMemberName_19, "");
+                    String _validJavaMemberName_18 = featureAnnotation_1.getValidJavaMemberName();
+                    _builder.append(_validJavaMemberName_18, "");
                     _builder.append("Value) {");
                     _builder.newLineIfNotEmpty();
                     {
@@ -726,21 +714,21 @@ public class EntityTemplate extends BaseTemplate {
                       if (_not_4) {
                         _builder.append("    ");
                         _builder.append("if (");
+                        String _validJavaMemberName_19 = featureAnnotation_1.getValidJavaMemberName();
+                        _builder.append(_validJavaMemberName_19, "    ");
+                        _builder.append(".contains(");
                         String _validJavaMemberName_20 = featureAnnotation_1.getValidJavaMemberName();
                         _builder.append(_validJavaMemberName_20, "    ");
-                        _builder.append(".contains(");
-                        String _validJavaMemberName_21 = featureAnnotation_1.getValidJavaMemberName();
-                        _builder.append(_validJavaMemberName_21, "    ");
                         _builder.append("Value)) {");
                         _builder.newLineIfNotEmpty();
                         _builder.append("    ");
                         _builder.append("    ");
                         _builder.append("boolean result = ");
+                        String _validJavaMemberName_21 = featureAnnotation_1.getValidJavaMemberName();
+                        _builder.append(_validJavaMemberName_21, "        ");
+                        _builder.append(".remove(");
                         String _validJavaMemberName_22 = featureAnnotation_1.getValidJavaMemberName();
                         _builder.append(_validJavaMemberName_22, "        ");
-                        _builder.append(".remove(");
-                        String _validJavaMemberName_23 = featureAnnotation_1.getValidJavaMemberName();
-                        _builder.append(_validJavaMemberName_23, "        ");
                         _builder.append("Value);");
                         _builder.newLineIfNotEmpty();
                         {
@@ -761,33 +749,21 @@ public class EntityTemplate extends BaseTemplate {
                             {
                               boolean _isMany_5 = oppositeAnnotation_1.isMany();
                               if (_isMany_5) {
-                                {
-                                  boolean _isGenerateSafeManyAccess_4 = oppositeAnnotation_1.isGenerateSafeManyAccess();
-                                  if (_isGenerateSafeManyAccess_4) {
-                                    _builder.append("    ");
-                                    _builder.append("    ");
-                                    String _validJavaMemberName_24 = featureAnnotation_1.getValidJavaMemberName();
-                                    _builder.append(_validJavaMemberName_24, "        ");
-                                    _builder.append("Value.removeFrom");
-                                    String _validJavaMemberName_25 = oppositeAnnotation_1.getValidJavaMemberName();
-                                    String _firstUpper_5 = TemplateUtil.toFirstUpper(_validJavaMemberName_25);
-                                    _builder.append(_firstUpper_5, "        ");
-                                    _builder.append("(this);");
-                                    _builder.newLineIfNotEmpty();
-                                  } else {
-                                    _builder.append("    ");
-                                    _builder.append("    ");
-                                    String _validJavaMemberName_26 = featureAnnotation_1.getValidJavaMemberName();
-                                    _builder.append(_validJavaMemberName_26, "        ");
-                                    _builder.append("Value.remove(oppositeAnnotation.validJavaMemberName)»(this);");
-                                    _builder.newLineIfNotEmpty();
-                                  }
-                                }
+                                _builder.append("    ");
+                                _builder.append("    ");
+                                String _validJavaMemberName_23 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_23, "        ");
+                                _builder.append("Value.removeFrom");
+                                String _validJavaMemberName_24 = oppositeAnnotation_1.getValidJavaMemberName();
+                                String _firstUpper_5 = TemplateUtil.toFirstUpper(_validJavaMemberName_24);
+                                _builder.append(_firstUpper_5, "        ");
+                                _builder.append("(this);");
+                                _builder.newLineIfNotEmpty();
                               } else {
                                 _builder.append("    ");
                                 _builder.append("    ");
-                                String _validJavaMemberName_27 = featureAnnotation_1.getValidJavaMemberName();
-                                _builder.append(_validJavaMemberName_27, "        ");
+                                String _validJavaMemberName_25 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_25, "        ");
                                 _builder.append("Value.");
                                 String _setter_1 = oppositeAnnotation_1.getSetter();
                                 _builder.append(_setter_1, "        ");
@@ -838,8 +814,8 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append("*/");
                     _builder.newLine();
                     _builder.append("public void clear");
-                    String _validJavaMemberName_28 = featureAnnotation_1.getValidJavaMemberName();
-                    String _firstUpper_6 = TemplateUtil.toFirstUpper(_validJavaMemberName_28);
+                    String _validJavaMemberName_26 = featureAnnotation_1.getValidJavaMemberName();
+                    String _firstUpper_6 = TemplateUtil.toFirstUpper(_validJavaMemberName_26);
                     _builder.append(_firstUpper_6, "");
                     _builder.append("() {");
                     _builder.newLineIfNotEmpty();
@@ -850,19 +826,19 @@ public class EntityTemplate extends BaseTemplate {
                       if (_not_5) {
                         _builder.append("    ");
                         _builder.append("while (!");
-                        String _validJavaMemberName_29 = featureAnnotation_1.getValidJavaMemberName();
-                        _builder.append(_validJavaMemberName_29, "    ");
+                        String _validJavaMemberName_27 = featureAnnotation_1.getValidJavaMemberName();
+                        _builder.append(_validJavaMemberName_27, "    ");
                         _builder.append(".isEmpty()) {");
                         _builder.newLineIfNotEmpty();
                         _builder.append("    ");
                         _builder.append("    ");
                         _builder.append("removeFrom");
-                        String _validJavaMemberName_30 = featureAnnotation_1.getValidJavaMemberName();
-                        String _firstUpper_7 = TemplateUtil.toFirstUpper(_validJavaMemberName_30);
+                        String _validJavaMemberName_28 = featureAnnotation_1.getValidJavaMemberName();
+                        String _firstUpper_7 = TemplateUtil.toFirstUpper(_validJavaMemberName_28);
                         _builder.append(_firstUpper_7, "        ");
                         _builder.append("(");
-                        String _validJavaMemberName_31 = featureAnnotation_1.getValidJavaMemberName();
-                        _builder.append(_validJavaMemberName_31, "        ");
+                        String _validJavaMemberName_29 = featureAnnotation_1.getValidJavaMemberName();
+                        _builder.append(_validJavaMemberName_29, "        ");
                         _builder.append(".iterator().next());");
                         _builder.newLineIfNotEmpty();
                         _builder.append("    ");
@@ -924,8 +900,8 @@ public class EntityTemplate extends BaseTemplate {
                 }
                 _builder.append(" ");
                 _builder.append("* @param new");
-                String _validJavaMemberName_32 = featureAnnotation_1.getValidJavaMemberName();
-                String _firstUpper_8 = TemplateUtil.toFirstUpper(_validJavaMemberName_32);
+                String _validJavaMemberName_30 = featureAnnotation_1.getValidJavaMemberName();
+                String _firstUpper_8 = TemplateUtil.toFirstUpper(_validJavaMemberName_30);
                 _builder.append(_firstUpper_8, " ");
                 _builder.append(" the new value of the \'{@link ");
                 String _simpleClassName_2 = eClassModelGenAnnotation.getSimpleClassName();
@@ -957,8 +933,8 @@ public class EntityTemplate extends BaseTemplate {
                 String _type_2 = featureAnnotation_1.getType();
                 _builder.append(_type_2, "");
                 _builder.append(" new");
-                String _validJavaMemberName_33 = featureAnnotation_1.getValidJavaMemberName();
-                String _firstUpper_9 = TemplateUtil.toFirstUpper(_validJavaMemberName_33);
+                String _validJavaMemberName_31 = featureAnnotation_1.getValidJavaMemberName();
+                String _firstUpper_9 = TemplateUtil.toFirstUpper(_validJavaMemberName_31);
                 _builder.append(_firstUpper_9, "");
                 _builder.append(") {");
                 _builder.newLineIfNotEmpty();
@@ -973,16 +949,23 @@ public class EntityTemplate extends BaseTemplate {
                       if (!_isReference_4) {
                         _and_12 = false;
                       } else {
-                        boolean _isGenerateSafeManyAccess_5 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                        _and_12 = _isGenerateSafeManyAccess_5;
+                        boolean _or_2 = false;
+                        boolean _isGenerateBidirectionalAssociationSupport_3 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
+                        if (_isGenerateBidirectionalAssociationSupport_3) {
+                          _or_2 = true;
+                        } else {
+                          boolean _isGenerateSafeManyAccess_3 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
+                          _or_2 = _isGenerateSafeManyAccess_3;
+                        }
+                        _and_12 = _or_2;
                       }
                       if (_and_12) {
                         {
                           boolean _isMany_6 = featureAnnotation_1.isMany();
                           if (_isMany_6) {
                             _builder.append("clear");
-                            String _validJavaMemberName_34 = featureAnnotation_1.getValidJavaMemberName();
-                            String _firstUpper_10 = TemplateUtil.toFirstUpper(_validJavaMemberName_34);
+                            String _validJavaMemberName_32 = featureAnnotation_1.getValidJavaMemberName();
+                            String _firstUpper_10 = TemplateUtil.toFirstUpper(_validJavaMemberName_32);
                             _builder.append(_firstUpper_10, "");
                             _builder.append("();");
                             _builder.newLineIfNotEmpty();
@@ -990,15 +973,15 @@ public class EntityTemplate extends BaseTemplate {
                             String _itemType_4 = featureAnnotation_1.getItemType();
                             _builder.append(_itemType_4, "");
                             _builder.append(" value : new");
-                            String _validJavaMemberName_35 = featureAnnotation_1.getValidJavaMemberName();
-                            String _firstUpper_11 = TemplateUtil.toFirstUpper(_validJavaMemberName_35);
+                            String _validJavaMemberName_33 = featureAnnotation_1.getValidJavaMemberName();
+                            String _firstUpper_11 = TemplateUtil.toFirstUpper(_validJavaMemberName_33);
                             _builder.append(_firstUpper_11, "");
                             _builder.append(") {");
                             _builder.newLineIfNotEmpty();
                             _builder.append("    ");
                             _builder.append("addTo");
-                            String _validJavaMemberName_36 = featureAnnotation_1.getValidJavaMemberName();
-                            String _firstUpper_12 = TemplateUtil.toFirstUpper(_validJavaMemberName_36);
+                            String _validJavaMemberName_34 = featureAnnotation_1.getValidJavaMemberName();
+                            String _firstUpper_12 = TemplateUtil.toFirstUpper(_validJavaMemberName_34);
                             _builder.append(_firstUpper_12, "    ");
                             _builder.append("(value);");
                             _builder.newLineIfNotEmpty();
@@ -1012,72 +995,61 @@ public class EntityTemplate extends BaseTemplate {
                               if (!_notEquals_8) {
                                 _and_13 = false;
                               } else {
-                                boolean _isGenerateBidirectionalAssociationSupport_3 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                                _and_13 = _isGenerateBidirectionalAssociationSupport_3;
+                                boolean _isGenerateBidirectionalAssociationSupport_4 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
+                                _and_13 = _isGenerateBidirectionalAssociationSupport_4;
                               }
                               if (_and_13) {
                                 EReferenceModelGenAnnotation oppositeAnnotation_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
                                 _builder.newLineIfNotEmpty();
                                 _builder.append("if (");
-                                String _validJavaMemberName_37 = featureAnnotation_1.getValidJavaMemberName();
-                                _builder.append(_validJavaMemberName_37, "");
+                                String _validJavaMemberName_35 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_35, "");
                                 _builder.append(" != new");
-                                String _validJavaMemberName_38 = featureAnnotation_1.getValidJavaMemberName();
-                                String _firstUpper_13 = TemplateUtil.toFirstUpper(_validJavaMemberName_38);
+                                String _validJavaMemberName_36 = featureAnnotation_1.getValidJavaMemberName();
+                                String _firstUpper_13 = TemplateUtil.toFirstUpper(_validJavaMemberName_36);
                                 _builder.append(_firstUpper_13, "");
                                 _builder.append(") {");
                                 _builder.newLineIfNotEmpty();
                                 _builder.append("    ");
                                 _builder.append("if (");
-                                String _validJavaMemberName_39 = featureAnnotation_1.getValidJavaMemberName();
-                                _builder.append(_validJavaMemberName_39, "    ");
+                                String _validJavaMemberName_37 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_37, "    ");
                                 _builder.append(" != null) {");
                                 _builder.newLineIfNotEmpty();
                                 {
                                   boolean _isMany_7 = oppositeAnnotation_2.isMany();
                                   if (_isMany_7) {
-                                    {
-                                      boolean _isGenerateSafeManyAccess_6 = ((EReferenceModelGenAnnotation) oppositeAnnotation_2).isGenerateSafeManyAccess();
-                                      if (_isGenerateSafeManyAccess_6) {
-                                        _builder.append("        ");
-                                        String _validJavaMemberName_40 = featureAnnotation_1.getValidJavaMemberName();
-                                        _builder.append(_validJavaMemberName_40, "        ");
-                                        _builder.append(".removeFrom");
-                                        String _validJavaMemberName_41 = oppositeAnnotation_2.getValidJavaMemberName();
-                                        String _firstUpper_14 = TemplateUtil.toFirstUpper(_validJavaMemberName_41);
-                                        _builder.append(_firstUpper_14, "        ");
-                                        _builder.append("(this);");
-                                        _builder.newLineIfNotEmpty();
-                                      } else {
-                                        _builder.append("        ");
-                                        String _validJavaMemberName_42 = featureAnnotation_1.getValidJavaMemberName();
-                                        _builder.append(_validJavaMemberName_42, "        ");
-                                        _builder.append(".remove(this);");
-                                        _builder.newLineIfNotEmpty();
-                                      }
-                                    }
+                                    _builder.append("        ");
+                                    String _validJavaMemberName_38 = featureAnnotation_1.getValidJavaMemberName();
+                                    _builder.append(_validJavaMemberName_38, "        ");
+                                    _builder.append(".removeFrom");
+                                    String _validJavaMemberName_39 = oppositeAnnotation_2.getValidJavaMemberName();
+                                    String _firstUpper_14 = TemplateUtil.toFirstUpper(_validJavaMemberName_39);
+                                    _builder.append(_firstUpper_14, "        ");
+                                    _builder.append("(this);");
+                                    _builder.newLineIfNotEmpty();
                                   } else {
                                     _builder.append("        ");
                                     String _type_3 = featureAnnotation_1.getType();
                                     _builder.append(_type_3, "        ");
                                     _builder.append(" temp");
-                                    String _validJavaMemberName_43 = featureAnnotation_1.getValidJavaMemberName();
-                                    String _firstUpper_15 = TemplateUtil.toFirstUpper(_validJavaMemberName_43);
+                                    String _validJavaMemberName_40 = featureAnnotation_1.getValidJavaMemberName();
+                                    String _firstUpper_15 = TemplateUtil.toFirstUpper(_validJavaMemberName_40);
                                     _builder.append(_firstUpper_15, "        ");
                                     _builder.append(" = ");
-                                    String _validJavaMemberName_44 = featureAnnotation_1.getValidJavaMemberName();
-                                    _builder.append(_validJavaMemberName_44, "        ");
+                                    String _validJavaMemberName_41 = featureAnnotation_1.getValidJavaMemberName();
+                                    _builder.append(_validJavaMemberName_41, "        ");
                                     _builder.append(";");
                                     _builder.newLineIfNotEmpty();
                                     _builder.append("        ");
-                                    String _validJavaMemberName_45 = featureAnnotation_1.getValidJavaMemberName();
-                                    _builder.append(_validJavaMemberName_45, "        ");
+                                    String _validJavaMemberName_42 = featureAnnotation_1.getValidJavaMemberName();
+                                    _builder.append(_validJavaMemberName_42, "        ");
                                     _builder.append(" = null;");
                                     _builder.newLineIfNotEmpty();
                                     _builder.append("        ");
                                     _builder.append("temp");
-                                    String _validJavaMemberName_46 = featureAnnotation_1.getValidJavaMemberName();
-                                    String _firstUpper_16 = TemplateUtil.toFirstUpper(_validJavaMemberName_46);
+                                    String _validJavaMemberName_43 = featureAnnotation_1.getValidJavaMemberName();
+                                    String _firstUpper_16 = TemplateUtil.toFirstUpper(_validJavaMemberName_43);
                                     _builder.append(_firstUpper_16, "        ");
                                     _builder.append(".");
                                     String _setter_3 = oppositeAnnotation_2.getSetter();
@@ -1090,47 +1062,36 @@ public class EntityTemplate extends BaseTemplate {
                                 _builder.append("}");
                                 _builder.newLine();
                                 _builder.append("    ");
-                                String _validJavaMemberName_47 = featureAnnotation_1.getValidJavaMemberName();
-                                _builder.append(_validJavaMemberName_47, "    ");
+                                String _validJavaMemberName_44 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_44, "    ");
                                 _builder.append(" = new");
-                                String _validJavaMemberName_48 = featureAnnotation_1.getValidJavaMemberName();
-                                String _firstUpper_17 = TemplateUtil.toFirstUpper(_validJavaMemberName_48);
+                                String _validJavaMemberName_45 = featureAnnotation_1.getValidJavaMemberName();
+                                String _firstUpper_17 = TemplateUtil.toFirstUpper(_validJavaMemberName_45);
                                 _builder.append(_firstUpper_17, "    ");
                                 _builder.append(";");
                                 _builder.newLineIfNotEmpty();
                                 _builder.append("    ");
                                 _builder.append("if (");
-                                String _validJavaMemberName_49 = featureAnnotation_1.getValidJavaMemberName();
-                                _builder.append(_validJavaMemberName_49, "    ");
+                                String _validJavaMemberName_46 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_46, "    ");
                                 _builder.append(" != null) {");
                                 _builder.newLineIfNotEmpty();
                                 {
                                   boolean _isMany_8 = oppositeAnnotation_2.isMany();
                                   if (_isMany_8) {
-                                    {
-                                      boolean _isGenerateSafeManyAccess_7 = ((EReferenceModelGenAnnotation) oppositeAnnotation_2).isGenerateSafeManyAccess();
-                                      if (_isGenerateSafeManyAccess_7) {
-                                        _builder.append("        ");
-                                        String _validJavaMemberName_50 = featureAnnotation_1.getValidJavaMemberName();
-                                        _builder.append(_validJavaMemberName_50, "        ");
-                                        _builder.append(".addTo");
-                                        String _validJavaMemberName_51 = oppositeAnnotation_2.getValidJavaMemberName();
-                                        String _firstUpper_18 = TemplateUtil.toFirstUpper(_validJavaMemberName_51);
-                                        _builder.append(_firstUpper_18, "        ");
-                                        _builder.append("(this);");
-                                        _builder.newLineIfNotEmpty();
-                                      } else {
-                                        _builder.append("        ");
-                                        String _validJavaMemberName_52 = featureAnnotation_1.getValidJavaMemberName();
-                                        _builder.append(_validJavaMemberName_52, "        ");
-                                        _builder.append(".add(this);");
-                                        _builder.newLineIfNotEmpty();
-                                      }
-                                    }
+                                    _builder.append("        ");
+                                    String _validJavaMemberName_47 = featureAnnotation_1.getValidJavaMemberName();
+                                    _builder.append(_validJavaMemberName_47, "        ");
+                                    _builder.append(".addTo");
+                                    String _validJavaMemberName_48 = oppositeAnnotation_2.getValidJavaMemberName();
+                                    String _firstUpper_18 = TemplateUtil.toFirstUpper(_validJavaMemberName_48);
+                                    _builder.append(_firstUpper_18, "        ");
+                                    _builder.append("(this);");
+                                    _builder.newLineIfNotEmpty();
                                   } else {
                                     _builder.append("        ");
-                                    String _validJavaMemberName_53 = featureAnnotation_1.getValidJavaMemberName();
-                                    _builder.append(_validJavaMemberName_53, "        ");
+                                    String _validJavaMemberName_49 = featureAnnotation_1.getValidJavaMemberName();
+                                    _builder.append(_validJavaMemberName_49, "        ");
                                     _builder.append(".");
                                     String _setter_4 = oppositeAnnotation_2.getSetter();
                                     _builder.append(_setter_4, "        ");
@@ -1144,11 +1105,11 @@ public class EntityTemplate extends BaseTemplate {
                                 _builder.append("}");
                                 _builder.newLine();
                               } else {
-                                String _validJavaMemberName_54 = featureAnnotation_1.getValidJavaMemberName();
-                                _builder.append(_validJavaMemberName_54, "");
+                                String _validJavaMemberName_50 = featureAnnotation_1.getValidJavaMemberName();
+                                _builder.append(_validJavaMemberName_50, "");
                                 _builder.append(" = new");
-                                String _validJavaMemberName_55 = featureAnnotation_1.getValidJavaMemberName();
-                                String _firstUpper_19 = TemplateUtil.toFirstUpper(_validJavaMemberName_55);
+                                String _validJavaMemberName_51 = featureAnnotation_1.getValidJavaMemberName();
+                                String _firstUpper_19 = TemplateUtil.toFirstUpper(_validJavaMemberName_51);
                                 _builder.append(_firstUpper_19, "");
                                 _builder.append(";");
                                 _builder.newLineIfNotEmpty();
@@ -1157,11 +1118,11 @@ public class EntityTemplate extends BaseTemplate {
                           }
                         }
                       } else {
-                        String _validJavaMemberName_56 = featureAnnotation_1.getValidJavaMemberName();
-                        _builder.append(_validJavaMemberName_56, "");
+                        String _validJavaMemberName_52 = featureAnnotation_1.getValidJavaMemberName();
+                        _builder.append(_validJavaMemberName_52, "");
                         _builder.append(" = new");
-                        String _validJavaMemberName_57 = featureAnnotation_1.getValidJavaMemberName();
-                        String _firstUpper_20 = TemplateUtil.toFirstUpper(_validJavaMemberName_57);
+                        String _validJavaMemberName_53 = featureAnnotation_1.getValidJavaMemberName();
+                        String _firstUpper_20 = TemplateUtil.toFirstUpper(_validJavaMemberName_53);
                         _builder.append(_firstUpper_20, "");
                         _builder.append(";");
                         _builder.newLineIfNotEmpty();
@@ -1190,8 +1151,8 @@ public class EntityTemplate extends BaseTemplate {
                           String _upperCase_2 = TemplateUtil.toUpperCase(_name_11);
                           _builder.append(_upperCase_2, "");
                           _builder.append(", new");
-                          String _validJavaMemberName_58 = featureAnnotation_1.getValidJavaMemberName();
-                          String _firstUpper_21 = TemplateUtil.toFirstUpper(_validJavaMemberName_58);
+                          String _validJavaMemberName_54 = featureAnnotation_1.getValidJavaMemberName();
+                          String _firstUpper_21 = TemplateUtil.toFirstUpper(_validJavaMemberName_54);
                           _builder.append(_firstUpper_21, "");
                           _builder.append("));");
                           _builder.newLineIfNotEmpty();
@@ -1212,8 +1173,8 @@ public class EntityTemplate extends BaseTemplate {
                           String _upperCase_3 = TemplateUtil.toUpperCase(_name_12);
                           _builder.append(_upperCase_3, "");
                           _builder.append(", new");
-                          String _validJavaMemberName_59 = featureAnnotation_1.getValidJavaMemberName();
-                          String _firstUpper_22 = TemplateUtil.toFirstUpper(_validJavaMemberName_59);
+                          String _validJavaMemberName_55 = featureAnnotation_1.getValidJavaMemberName();
+                          String _firstUpper_22 = TemplateUtil.toFirstUpper(_validJavaMemberName_55);
                           _builder.append(_firstUpper_22, "");
                           _builder.append(");");
                           _builder.newLineIfNotEmpty();

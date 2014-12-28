@@ -204,7 +204,7 @@ public enum «eEnumModelGenAnnotation.simpleClassName»
     }
 
 «FOR e : eEnum.ELiterals»
-    «var EEnumLiteral el = e as EEnumLiteral»
+    «var EEnumLiteral el = e»
 
     /**
      * <!-- begin-user-doc -->

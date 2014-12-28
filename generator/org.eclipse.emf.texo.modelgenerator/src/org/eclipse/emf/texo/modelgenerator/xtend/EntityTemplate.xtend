@@ -162,11 +162,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                     «IF (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation != null && (featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport»
                     «var oppositeAnnotation = (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation»
                     «IF oppositeAnnotation.many»
-                        «IF oppositeAnnotation.generateSafeManyAccess»
                             «featureAnnotation.validJavaMemberName»Value.addTo«TemplateUtil::toFirstUpper(oppositeAnnotation.validJavaMemberName)»(this);
-                        «ELSE»
-                            «featureAnnotation.validJavaMemberName»Value.add(this);
-                        «ENDIF»
                     «ELSE»
                         «featureAnnotation.validJavaMemberName»Value.«oppositeAnnotation.setter»(this);
                     «ENDIF»
@@ -198,11 +194,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                     «IF (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation != null && (featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport»
                     «var oppositeAnnotation = (featureAnnotation as EReferenceModelGenAnnotation).oppositeModelGenAnnotation»
                     «IF oppositeAnnotation.many»
-                        «IF oppositeAnnotation.generateSafeManyAccess»
-                            «featureAnnotation.validJavaMemberName»Value.removeFrom«TemplateUtil::toFirstUpper(oppositeAnnotation.validJavaMemberName)»(this);
-                        «ELSE»
-                            «featureAnnotation.validJavaMemberName»Value.remove(oppositeAnnotation.validJavaMemberName)»(this);
-                        «ENDIF»
+                        «featureAnnotation.validJavaMemberName»Value.removeFrom«TemplateUtil::toFirstUpper(oppositeAnnotation.validJavaMemberName)»(this);
                     «ELSE»
                         «featureAnnotation.validJavaMemberName»Value.«oppositeAnnotation.setter»(null);
                     «ENDIF»
@@ -249,7 +241,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
             «modelController.getJavaAnnotations(featureAnnotation.EStructuralFeature, "setter", eClassModelGenAnnotation.EClass)»
             public void «featureAnnotation.setter»(«featureAnnotation.type» new«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)») {
             «IF !featureAnnotation.EStructuralFeature.volatile»
-                «IF featureAnnotation.reference && (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»
+                «IF featureAnnotation.reference && ((featureAnnotation as EReferenceModelGenAnnotation).generateBidirectionalAssociationSupport || (featureAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess)»
                     «IF featureAnnotation.many»
                         clear«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»();
                         for («featureAnnotation.itemType» value : new«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)») {
@@ -261,11 +253,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                         if («featureAnnotation.validJavaMemberName» != new«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)») {
                             if («featureAnnotation.validJavaMemberName» != null) {
                                 «IF oppositeAnnotation.many»
-                                    «IF (oppositeAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»
-                                        «featureAnnotation.validJavaMemberName».removeFrom«TemplateUtil::toFirstUpper(oppositeAnnotation.validJavaMemberName)»(this);
-                                    «ELSE»
-                                        «featureAnnotation.validJavaMemberName».remove(this);
-                                    «ENDIF»
+                                    «featureAnnotation.validJavaMemberName».removeFrom«TemplateUtil::toFirstUpper(oppositeAnnotation.validJavaMemberName)»(this);
                                 «ELSE»
                                     «featureAnnotation.type» temp«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)» = «featureAnnotation.validJavaMemberName»;
                                     «featureAnnotation.validJavaMemberName» = null;
@@ -275,11 +263,7 @@ public«IF eClassModelGenAnnotation.abstractValue» abstract«ENDIF» class «eC
                             «featureAnnotation.validJavaMemberName» = new«TemplateUtil::toFirstUpper(featureAnnotation.validJavaMemberName)»;
                             if («featureAnnotation.validJavaMemberName» != null) {
                                 «IF oppositeAnnotation.many»
-                                    «IF (oppositeAnnotation as EReferenceModelGenAnnotation).generateSafeManyAccess»
-                                        «featureAnnotation.validJavaMemberName».addTo«TemplateUtil::toFirstUpper(oppositeAnnotation.validJavaMemberName)»(this);
-                                    «ELSE»
-                                        «featureAnnotation.validJavaMemberName».add(this);
-                                    «ENDIF»
+                                    «featureAnnotation.validJavaMemberName».addTo«TemplateUtil::toFirstUpper(oppositeAnnotation.validJavaMemberName)»(this);
                                 «ELSE»
                                     «featureAnnotation.validJavaMemberName».«oppositeAnnotation.setter»(this);
                                 «ENDIF»

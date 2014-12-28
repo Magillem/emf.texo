@@ -96,7 +96,7 @@ public class «ePackageModelGenAnnotation.simpleModelFactoryClassName» implemen
      * @generated
      */
     @SuppressWarnings( { "unchecked", "rawtypes" })
-    public ModelObject createModelObject(org.eclipse.emf.ecore.EClass eClass, Object adaptee) {
+    public <T> ModelObject<T> createModelObject(org.eclipse.emf.ecore.EClass eClass, T adaptee) {
     «IF !ePackageModelGenAnnotation.EClassModelGenAnnotations.isEmpty»
         ModelObject<Object> modelObject = null;
         switch (eClass.getClassifierID()) {
@@ -111,7 +111,7 @@ public class «ePackageModelGenAnnotation.simpleModelFactoryClassName» implemen
                 throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
         }
         modelObject.setTarget(adaptee);
-        return modelObject;
+        return (ModelObject<T>)modelObject;
     «ELSE»
         throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     «ENDIF»

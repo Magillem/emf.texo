@@ -241,7 +241,7 @@ public class ModelFactoryTemplate extends BaseTemplate {
     _builder.append("@SuppressWarnings( { \"unchecked\", \"rawtypes\" })");
     _builder.newLine();
     _builder.append("    ");
-    _builder.append("public ModelObject createModelObject(org.eclipse.emf.ecore.EClass eClass, Object adaptee) {");
+    _builder.append("public <T> ModelObject<T> createModelObject(org.eclipse.emf.ecore.EClass eClass, T adaptee) {");
     _builder.newLine();
     {
       EList<EClassModelGenAnnotation> _eClassModelGenAnnotations_1 = ePackageModelGenAnnotation.getEClassModelGenAnnotations();
@@ -305,7 +305,7 @@ public class ModelFactoryTemplate extends BaseTemplate {
         _builder.newLine();
         _builder.append("    ");
         _builder.append("    ");
-        _builder.append("return modelObject;");
+        _builder.append("return (ModelObject<T>)modelObject;");
         _builder.newLine();
       } else {
         _builder.append("    ");

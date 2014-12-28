@@ -579,7 +579,7 @@ public class EnumTemplate extends BaseTemplate {
     {
       EList<EEnumLiteral> _eLiterals_2 = eEnum.getELiterals();
       for(final EEnumLiteral e_2 : _eLiterals_2) {
-        EEnumLiteral el_2 = ((EEnumLiteral) e_2);
+        EEnumLiteral el_2 = e_2;
         _builder.newLineIfNotEmpty();
         _builder.newLine();
         _builder.append("/**");

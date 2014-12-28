@@ -210,6 +210,31 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("@Override");
     _builder.newLine();
     _builder.append("    ");
+    _builder.append("public Class<?> getTargetClass() {");
+    _builder.newLine();
+    _builder.append("    \t");
+    _builder.append("return ");
+    String _qualifiedClassName_3 = eClassModelGenAnnotation.getQualifiedClassName();
+    _builder.append(_qualifiedClassName_3, "    \t");
+    _builder.append(".class;");
+    _builder.newLineIfNotEmpty();
+    _builder.append("    ");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("    ");
+    _builder.append("/**");
+    _builder.newLine();
+    _builder.append("     ");
+    _builder.append("* @generated");
+    _builder.newLine();
+    _builder.append("     ");
+    _builder.append("*/");
+    _builder.newLine();
+    _builder.append("    ");
+    _builder.append("@Override");
+    _builder.newLine();
+    _builder.append("    ");
     _builder.append("public Object eGet(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature) {");
     _builder.newLine();
     _builder.append("        ");
@@ -225,8 +250,8 @@ public class ModelObjectTemplate extends BaseTemplate {
           boolean _isGenerateCode = featureAnnotation.isGenerateCode();
           if (_isGenerateCode) {
             _builder.append("case ");
-            String _qualifiedClassName_3 = ePackageAnnotation.getQualifiedClassName();
-            _builder.append(_qualifiedClassName_3, "");
+            String _qualifiedClassName_4 = ePackageAnnotation.getQualifiedClassName();
+            _builder.append(_qualifiedClassName_4, "");
             _builder.append(".");
             String _name_2 = eClassModelGenAnnotation.getName();
             String _upperCase = TemplateUtil.toUpperCase(_name_2);
@@ -328,8 +353,8 @@ public class ModelObjectTemplate extends BaseTemplate {
           if (_and) {
             _builder.append("        ");
             _builder.append("case ");
-            String _qualifiedClassName_4 = ePackageAnnotation.getQualifiedClassName();
-            _builder.append(_qualifiedClassName_4, "        ");
+            String _qualifiedClassName_5 = ePackageAnnotation.getQualifiedClassName();
+            _builder.append(_qualifiedClassName_5, "        ");
             _builder.append(".");
             String _name_4 = eClassModelGenAnnotation.getName();
             String _upperCase_2 = TemplateUtil.toUpperCase(_name_4);
@@ -445,8 +470,8 @@ public class ModelObjectTemplate extends BaseTemplate {
               if (_and_3) {
                 _builder.append("        ");
                 _builder.append("case ");
-                String _qualifiedClassName_5 = ePackageAnnotation.getQualifiedClassName();
-                _builder.append(_qualifiedClassName_5, "        ");
+                String _qualifiedClassName_6 = ePackageAnnotation.getQualifiedClassName();
+                _builder.append(_qualifiedClassName_6, "        ");
                 _builder.append(".");
                 String _name_6 = eClassModelGenAnnotation.getName();
                 String _upperCase_4 = TemplateUtil.toUpperCase(_name_6);
@@ -472,8 +497,8 @@ public class ModelObjectTemplate extends BaseTemplate {
               } else {
                 _builder.append("        ");
                 _builder.append("case ");
-                String _qualifiedClassName_6 = ePackageAnnotation.getQualifiedClassName();
-                _builder.append(_qualifiedClassName_6, "        ");
+                String _qualifiedClassName_7 = ePackageAnnotation.getQualifiedClassName();
+                _builder.append(_qualifiedClassName_7, "        ");
                 _builder.append(".");
                 String _name_8 = eClassModelGenAnnotation.getName();
                 String _upperCase_6 = TemplateUtil.toUpperCase(_name_8);
@@ -587,8 +612,8 @@ public class ModelObjectTemplate extends BaseTemplate {
               if (_and_7) {
                 _builder.append("        ");
                 _builder.append("case ");
-                String _qualifiedClassName_7 = ePackageAnnotation.getQualifiedClassName();
-                _builder.append(_qualifiedClassName_7, "        ");
+                String _qualifiedClassName_8 = ePackageAnnotation.getQualifiedClassName();
+                _builder.append(_qualifiedClassName_8, "        ");
                 _builder.append(".");
                 String _name_10 = eClassModelGenAnnotation.getName();
                 String _upperCase_8 = TemplateUtil.toUpperCase(_name_10);
@@ -613,8 +638,8 @@ public class ModelObjectTemplate extends BaseTemplate {
               } else {
                 _builder.append("        ");
                 _builder.append("case ");
-                String _qualifiedClassName_8 = ePackageAnnotation.getQualifiedClassName();
-                _builder.append(_qualifiedClassName_8, "        ");
+                String _qualifiedClassName_9 = ePackageAnnotation.getQualifiedClassName();
+                _builder.append(_qualifiedClassName_9, "        ");
                 _builder.append(".");
                 String _name_12 = eClassModelGenAnnotation.getName();
                 String _upperCase_10 = TemplateUtil.toUpperCase(_name_12);

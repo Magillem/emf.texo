@@ -89,6 +89,14 @@ extends org.eclipse.emf.texo.model.AbstractModelObject<E>
      * @generated
      */
     @Override
+    public Class<?> getTargetClass() {
+    	return «eClassModelGenAnnotation.qualifiedClassName».class;
+    }
+
+    /**
+     * @generated
+     */
+    @Override
     public Object eGet(org.eclipse.emf.ecore.EStructuralFeature eStructuralFeature) {
         final int featureID = eClass().getFeatureID(eStructuralFeature);
         switch (featureID) {
