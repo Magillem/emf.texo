@@ -19,20 +19,17 @@ package org.eclipse.emf.texo.test.all;
 import org.eclipse.emf.texo.json.test.ModelJSONTestSuite;
 import org.eclipse.emf.texo.server.test.AllServerTests;
 import org.eclipse.emf.texo.test.AllTestsTests;
-import org.eclipse.emf.texo.test.TestBz325427;
 import org.eclipse.emf.texo.test.copycompare.CopyCompareTestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * Combines all junit4 testcases.
- * 
- * >>>>NOTE<<<<: Bz391624Test needs to be done first to ensure proper initialization of package.
+ * Combines all runtime junit testcases.
  * 
  * @author mtaal
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({ AllServerTests.class, AllTestsTests.class, CopyCompareTestSuite.class, ModelJSONTestSuite.class,
-    TestBz325427.class, CombinedTestSuite.class })
+  CombinedTestSuite.class })
 public class CombinedTestSuiteJunit4 {
 }

@@ -170,8 +170,8 @@ public class Bz422811ModelFactory implements ModelFactory {
         return getTarget().getDb_Id();
       case Bz422811ModelPackage.ECLASSA_DB_VERSION_FEATURE_ID:
         return getTarget().getDb_version();
-      case Bz422811ModelPackage.ECLASSA_NAME_FEATURE_ID:
-        return getTarget().getName();
+      case Bz422811ModelPackage.ECLASSA_VALUE_FEATURE_ID:
+        return getTarget().getValue();
       default:
         return super.eGet(eStructuralFeature);
       }
@@ -184,8 +184,8 @@ public class Bz422811ModelFactory implements ModelFactory {
     public void eSet(EStructuralFeature eStructuralFeature, Object value) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz422811ModelPackage.ECLASSA_NAME_FEATURE_ID:
-        getTarget().setName((Float) value);
+      case Bz422811ModelPackage.ECLASSA_VALUE_FEATURE_ID:
+        getTarget().setValue((Float) value);
         return;
       default:
         super.eSet(eStructuralFeature, value);

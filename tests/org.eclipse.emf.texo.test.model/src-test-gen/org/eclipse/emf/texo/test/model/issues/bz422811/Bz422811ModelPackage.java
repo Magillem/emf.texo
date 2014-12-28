@@ -70,7 +70,7 @@ public class Bz422811ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int ECLASSA_NAME_FEATURE_ID = 2;
+  public static final int ECLASSA_VALUE_FEATURE_ID = 2;
 
   /**
    * The static member with the instance of this {@link ModelPackage}. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -162,14 +162,14 @@ public class Bz422811ModelPackage extends ModelPackage {
   }
 
   /**
-   * Returns the {@link EStructuralFeature} '<em><b>EClassA.name</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
+   * Returns the {@link EStructuralFeature} '<em><b>EClassA.value</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc
    * -->
    * 
-   * @return an instance of the {@link EStructuralFeature}: '<em><b>EClassA.name</b></em>'.
+   * @return an instance of the {@link EStructuralFeature}: '<em><b>EClassA.value</b></em>'.
    * @generated
    */
-  public EAttribute getEClassA_Name() {
-    return (EAttribute) getEClassAEClass().getEAllStructuralFeatures().get(ECLASSA_NAME_FEATURE_ID);
+  public EAttribute getEClassA_Value() {
+    return (EAttribute) getEClassAEClass().getEAllStructuralFeatures().get(ECLASSA_VALUE_FEATURE_ID);
   }
 
   /**

@@ -26,31 +26,31 @@ public class EClassA extends Identifiable {
    * @generated
    */
   @Basic()
-  private Float name = null;
+  private Float value = null;
 
   /**
-   * Returns the value of '<em><b>name</b></em>' feature.
+   * Returns the value of '<em><b>value</b></em>' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @return the value of '<em><b>name</b></em>' feature
+   * @return the value of '<em><b>value</b></em>' feature
    * @generated
    */
-  public Float getName() {
-    return name;
+  public Float getValue() {
+    return value;
   }
 
   /**
-   * Sets the '{@link EClassA#getName() <em>name</em>}' feature.
+   * Sets the '{@link EClassA#getValue() <em>value</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @param newName
-   *          the new value of the '{@link EClassA#getName() name}' feature.
+   * @param newValue
+   *          the new value of the '{@link EClassA#getValue() value}' feature.
    * @generated
    */
-  public void setName(Float newName) {
-    name = newName;
+  public void setValue(Float newValue) {
+    value = newValue;
   }
 
   /**
@@ -61,6 +61,6 @@ public class EClassA extends Identifiable {
    */
   @Override
   public String toString() {
-    return "EClassA " + " [name: " + getName() + "]" + "{extends: " + super.toString() + "} ";
+    return "EClassA " + " [value: " + getValue() + "]" + "{extends: " + super.toString() + "} ";
   }
 }

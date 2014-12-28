@@ -24,17 +24,17 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * All the server testcases which are run in the build.
+ * All the general/issue Texo testcases which are run in the build.
  * 
  * @author <a href="mailto:mtaal@elver.org">Martin Taal</a>
  * @version $Revision: 1.10 $
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({ TestXMIMixed.class, TestXMLMixed.class, TestBz325427.class,
-    TestBidirectionalAssociationSupport.class, TestBz363802.class, TestBz379796.class, TestBz380279.class,
-    TestBz393240.class, TestBz411874.class, TestBz415716.class, TestDirectJavaAnnotations.class,
-    TestIdTitleProvider.class, TestMerge.class, TestModelAccess.class, TestNotRequiredSerialization.class,
-    TestSubpackage.class, TestTemplateOverride.class, TestWrongFeatureId.class })
+  TestBidirectionalAssociationSupport.class, TestBz363802.class, TestBz379796.class, TestBz380279.class,
+  TestBz393240.class, TestBz411874.class, TestBz415716.class, TestBz422811.class, TestDirectJavaAnnotations.class,
+  TestIdTitleProvider.class, TestMerge.class, TestModelAccess.class, TestNotRequiredSerialization.class,
+  TestSubpackage.class, TestTemplateOverride.class, TestWrongFeatureId.class, TestBz325427.class })
 public class AllTestsTests extends TestSuite {
 
   // these test cases pass fine when run individually:
