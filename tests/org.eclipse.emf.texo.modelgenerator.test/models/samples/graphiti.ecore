@@ -13,7 +13,7 @@
       eSuperTypes="#//PropertyContainer"/>
   <eClassifiers xsi:type="ecore:EClass" name="StyleContainer" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="styles" ordered="false"
-        upperBound="-1" eType="#//algorithms/styles/Style" containment="true" eOpposite="#//algorithms/styles/Style/styleContainer"/>
+        upperBound="-1" eType="#//algorithms/styles/Style" containment="true"/>
   </eClassifiers>
   <eSubpackages name="pictograms" nsURI="http://eclipse.org/graphiti/mm/pictograms"
       nsPrefix="pi">
@@ -261,7 +261,7 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="proportional" ordered="false"
             unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="styleContainer" ordered="false"
-            unique="false" lowerBound="1" eType="#//StyleContainer" eOpposite="#//StyleContainer/styles"/>
+            unique="false" lowerBound="1" eType="#//StyleContainer"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="AbstractStyle" abstract="true">
         <eStructuralFeatures xsi:type="ecore:EReference" name="background" ordered="false"

@@ -7,25 +7,25 @@
         <xsd:sequence>
             <xsd:element name="title" type="xsd:string"/>
             <xsd:element name="category" type="forum:TopicCategory"/>
-            <xsd:element name="creator" type="xsd:IDREF" ecore:opposite="created" ecore:reference="forum:Member"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" ecore:opposite="topic"
+            <xsd:element name="creator" type="xsd:IDREF" ecore:reference="forum:Member"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0"
             	name="posts" type="xsd:IDREF" ecore:reference="forum:Post"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="Member">
         <xsd:sequence>
             <xsd:element name="nickname" type="xsd:string"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" ecore:opposite="author"
+            <xsd:element maxOccurs="unbounded" minOccurs="0" 
                 name="posts" type="xsd:IDREF" ecore:reference="forum:Post"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" ecore:opposite="creator"
+            <xsd:element maxOccurs="unbounded" minOccurs="0" 
                 name="created" type="xsd:IDREF" ecore:reference="forum:Topic"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="Post">
         <xsd:sequence>
             <xsd:element name="comment" type="xsd:string"/>
-            <xsd:element name="author" type="xsd:IDREF" ecore:opposite="posts" ecore:reference="forum:Member"/>
-            <xsd:element name="topic" type="xsd:IDREF" ecore:opposite="posts" ecore:reference="forum:Topic"/>
+            <xsd:element name="author" type="xsd:IDREF" ecore:reference="forum:Member"/>
+            <xsd:element name="topic" type="xsd:IDREF" ecore:reference="forum:Topic"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="Forum">
