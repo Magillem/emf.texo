@@ -140,7 +140,7 @@ public class DataModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case DataModelPackage.DATAMODEL_CLASSIFIER_ID:
@@ -282,7 +282,7 @@ public class DataModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -796,6 +796,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DataModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -852,7 +859,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.DATAMODEL_DATAELEMENT_FEATURE_ID:
-        return getTarget().addToDataElement((AbstractDataElement) value);
+        return getTarget().getDataElement().add((AbstractDataElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -867,7 +874,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.DATAMODEL_DATAELEMENT_FEATURE_ID:
-        return getTarget().removeFromDataElement((AbstractDataElement) value);
+        return getTarget().getDataElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -900,6 +907,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractDataElement.class;
     }
 
     /**
@@ -985,13 +999,13 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.ABSTRACTDATAELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().addToSource((SourceRef) value);
+        return getTarget().getSource().add((SourceRef) value);
 
       case DataModelPackage.ABSTRACTDATAELEMENT_DATARELATION_FEATURE_ID:
-        return getTarget().addToDataRelation((AbstractDataRelationship) value);
+        return getTarget().getDataRelation().add((AbstractDataRelationship) value);
 
       case DataModelPackage.ABSTRACTDATAELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().addToAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().add((ActionElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1006,13 +1020,13 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.ABSTRACTDATAELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().removeFromSource((SourceRef) value);
+        return getTarget().getSource().remove(value);
 
       case DataModelPackage.ABSTRACTDATAELEMENT_DATARELATION_FEATURE_ID:
-        return getTarget().removeFromDataRelation((AbstractDataRelationship) value);
+        return getTarget().getDataRelation().remove(value);
 
       case DataModelPackage.ABSTRACTDATAELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().removeFromAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1045,6 +1059,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractDataRelationship.class;
     }
 
     /**
@@ -1133,6 +1154,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DataResource.class;
     }
 
     /**
@@ -1254,6 +1282,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return IndexElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1330,7 +1365,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.INDEXELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((ItemUnit) value);
+        return getTarget().getImplementation().add((ItemUnit) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1345,7 +1380,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.INDEXELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((ItemUnit) value);
+        return getTarget().getImplementation().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1377,6 +1412,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return UniqueKey.class;
     }
 
     /**
@@ -1500,6 +1542,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Index.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1618,6 +1667,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return KeyRelation.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1713,6 +1769,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ReferenceKey.class;
     }
 
     /**
@@ -1836,6 +1899,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DataContainer.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1912,7 +1982,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.DATACONTAINER_DATAELEMENT_FEATURE_ID:
-        return getTarget().addToDataElement((DataResource) value);
+        return getTarget().getDataElement().add((DataResource) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1927,7 +1997,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.DATACONTAINER_DATAELEMENT_FEATURE_ID:
-        return getTarget().removeFromDataElement((DataResource) value);
+        return getTarget().getDataElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1959,6 +2029,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Catalog.class;
     }
 
     /**
@@ -2082,6 +2159,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RelationalSchema.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2160,7 +2244,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.RELATIONALSCHEMA_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().add((CodeItem) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -2175,7 +2259,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.RELATIONALSCHEMA_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2207,6 +2291,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ColumnSet.class;
     }
 
     /**
@@ -2290,7 +2381,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.COLUMNSET_ITEMUNIT_FEATURE_ID:
-        return getTarget().addToItemUnit((ItemUnit) value);
+        return getTarget().getItemUnit().add((ItemUnit) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -2305,7 +2396,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.COLUMNSET_ITEMUNIT_FEATURE_ID:
-        return getTarget().removeFromItemUnit((ItemUnit) value);
+        return getTarget().getItemUnit().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2337,6 +2428,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RelationalTable.class;
     }
 
     /**
@@ -2462,6 +2560,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RelationalView.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2582,6 +2687,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RecordFile.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2697,6 +2809,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DataEvent.class;
     }
 
     /**
@@ -2825,6 +2944,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return XMLSchema.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2901,7 +3027,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.XMLSCHEMA_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().addToContentElement((AbstractContentElement) value);
+        return getTarget().getContentElement().add((AbstractContentElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -2916,7 +3042,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.XMLSCHEMA_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().removeFromContentElement((AbstractContentElement) value);
+        return getTarget().getContentElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2949,6 +3075,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractContentElement.class;
     }
 
     /**
@@ -3071,6 +3204,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ComplexContentType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3147,7 +3287,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.COMPLEXCONTENTTYPE_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().addToContentElement((AbstractContentElement) value);
+        return getTarget().getContentElement().add((AbstractContentElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -3162,7 +3302,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.COMPLEXCONTENTTYPE_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().removeFromContentElement((AbstractContentElement) value);
+        return getTarget().getContentElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -3194,6 +3334,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AllContent.class;
     }
 
     /**
@@ -3317,6 +3464,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SeqContent.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3430,6 +3584,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ChoiceContent.class;
     }
 
     /**
@@ -3553,6 +3714,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ContentItem.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3634,7 +3802,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.CONTENTITEM_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().addToContentElement((AbstractContentElement) value);
+        return getTarget().getContentElement().add((AbstractContentElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -3649,7 +3817,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.CONTENTITEM_CONTENTELEMENT_FEATURE_ID:
-        return getTarget().removeFromContentElement((AbstractContentElement) value);
+        return getTarget().getContentElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -3681,6 +3849,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return GroupContent.class;
     }
 
     /**
@@ -3802,6 +3977,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ContentRestriction.class;
     }
 
     /**
@@ -3936,6 +4118,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SimpleContentType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4019,7 +4208,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.SIMPLECONTENTTYPE_TYPE_FEATURE_ID:
-        return getTarget().addToType((ComplexContentType) value);
+        return getTarget().getType().add((ComplexContentType) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -4035,7 +4224,7 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.SIMPLECONTENTTYPE_TYPE_FEATURE_ID:
-        return getTarget().removeFromType((ComplexContentType) value);
+        return getTarget().getType().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -4069,6 +4258,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ExtendedDataElement.class;
     }
 
     /**
@@ -4191,6 +4387,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DataRelationship.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4286,6 +4489,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return MixedContent.class;
     }
 
     /**
@@ -4404,6 +4614,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ContentReference.class;
     }
 
     /**
@@ -4529,6 +4746,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DataAction.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4615,10 +4839,10 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.DATAACTION_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((ActionElement) value);
+        return getTarget().getImplementation().add((ActionElement) value);
 
       case DataModelPackage.DATAACTION_DATAELEMENT_FEATURE_ID:
-        return getTarget().addToDataElement((DataEvent) value);
+        return getTarget().getDataElement().add((DataEvent) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -4633,10 +4857,10 @@ public class DataModelFactory implements ModelFactory {
       switch (featureID) {
 
       case DataModelPackage.DATAACTION_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((ActionElement) value);
+        return getTarget().getImplementation().remove(value);
 
       case DataModelPackage.DATAACTION_DATAELEMENT_FEATURE_ID:
-        return getTarget().removeFromDataElement((DataEvent) value);
+        return getTarget().getDataElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -4669,6 +4893,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ReadsColumnSet.class;
     }
 
     /**
@@ -4769,6 +5000,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ContentAttribute.class;
     }
 
     /**
@@ -4894,6 +5132,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return TypedBy.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4989,6 +5234,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ReferenceTo.class;
     }
 
     /**
@@ -5094,6 +5346,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RestrictionOf.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5194,6 +5453,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ExtensionTo.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5289,6 +5555,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DatatypeOf.class;
     }
 
     /**
@@ -5395,6 +5668,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return HasContent.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5491,6 +5771,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return WritesColumnSet.class;
     }
 
     /**
@@ -5597,6 +5884,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ProducesDataEvent.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5692,6 +5986,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DataSegment.class;
     }
 
     /**
@@ -5817,6 +6118,13 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ContentElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5933,6 +6241,13 @@ public class DataModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DataModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ManagesData.class;
     }
 
     /**

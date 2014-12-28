@@ -45,51 +45,6 @@ public class FreeFormConnection extends Connection {
   }
 
   /**
-   * Adds to the <em>bendpoints</em> feature.
-   * 
-   * @param bendpointsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBendpoints(Point bendpointsValue) {
-    if (!bendpoints.contains(bendpointsValue)) {
-      boolean result = bendpoints.add(bendpointsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>bendpoints</em> feature.
-   * 
-   * @param bendpointsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBendpoints(Point bendpointsValue) {
-    if (bendpoints.contains(bendpointsValue)) {
-      boolean result = bendpoints.remove(bendpointsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>bendpoints</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBendpoints() {
-    while (!bendpoints.isEmpty()) {
-      removeFromBendpoints(bendpoints.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link FreeFormConnection#getBendpoints() <em>bendpoints</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

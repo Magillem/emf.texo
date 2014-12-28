@@ -89,51 +89,6 @@ public class AdaptedGradientColoredAreas extends Identifiable {
   }
 
   /**
-   * Adds to the <em>adaptedGradientColoredAreas</em> feature.
-   * 
-   * @param adaptedGradientColoredAreasValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
-    if (!adaptedGradientColoredAreas.contains(adaptedGradientColoredAreasValue)) {
-      boolean result = adaptedGradientColoredAreas.add(adaptedGradientColoredAreasValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>adaptedGradientColoredAreas</em> feature.
-   * 
-   * @param adaptedGradientColoredAreasValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAdaptedGradientColoredAreas(GradientColoredAreas adaptedGradientColoredAreasValue) {
-    if (adaptedGradientColoredAreas.contains(adaptedGradientColoredAreasValue)) {
-      boolean result = adaptedGradientColoredAreas.remove(adaptedGradientColoredAreasValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>adaptedGradientColoredAreas</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAdaptedGradientColoredAreas() {
-    while (!adaptedGradientColoredAreas.isEmpty()) {
-      removeFromAdaptedGradientColoredAreas(adaptedGradientColoredAreas.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AdaptedGradientColoredAreas#getAdaptedGradientColoredAreas() <em>adaptedGradientColoredAreas</em>}
    * ' feature.
    *

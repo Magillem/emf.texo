@@ -50,51 +50,6 @@ public class BalanceAccount extends Account {
   }
 
   /**
-   * Adds to the <em>report</em> feature.
-   * 
-   * @param reportValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToReport(ReportGroup reportValue) {
-    if (!report.contains(reportValue)) {
-      boolean result = report.add(reportValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>report</em> feature.
-   * 
-   * @param reportValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromReport(ReportGroup reportValue) {
-    if (report.contains(reportValue)) {
-      boolean result = report.remove(reportValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>report</em> feature.
-   * 
-   * @generated
-   */
-  public void clearReport() {
-    while (!report.isEmpty()) {
-      removeFromReport(report.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link BalanceAccount#getReport() <em>report</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

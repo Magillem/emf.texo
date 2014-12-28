@@ -75,51 +75,6 @@ public class ContentItem extends AbstractContentElement {
   }
 
   /**
-   * Adds to the <em>contentElement</em> feature.
-   * 
-   * @param contentElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToContentElement(AbstractContentElement contentElementValue) {
-    if (!contentElement.contains(contentElementValue)) {
-      boolean result = contentElement.add(contentElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>contentElement</em> feature.
-   * 
-   * @param contentElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromContentElement(AbstractContentElement contentElementValue) {
-    if (contentElement.contains(contentElementValue)) {
-      boolean result = contentElement.remove(contentElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>contentElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearContentElement() {
-    while (!contentElement.isEmpty()) {
-      removeFromContentElement(contentElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ContentItem#getContentElement() <em>contentElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

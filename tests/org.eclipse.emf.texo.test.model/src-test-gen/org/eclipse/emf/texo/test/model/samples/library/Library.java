@@ -95,51 +95,6 @@ public class Library extends Identifiable {
   }
 
   /**
-   * Adds to the <em>writers</em> feature.
-   * 
-   * @param writersValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToWriters(Writer writersValue) {
-    if (!writers.contains(writersValue)) {
-      boolean result = writers.add(writersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>writers</em> feature.
-   * 
-   * @param writersValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromWriters(Writer writersValue) {
-    if (writers.contains(writersValue)) {
-      boolean result = writers.remove(writersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>writers</em> feature.
-   * 
-   * @generated
-   */
-  public void clearWriters() {
-    while (!writers.isEmpty()) {
-      removeFromWriters(writers.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Library#getWriters() <em>writers</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -162,51 +117,6 @@ public class Library extends Identifiable {
    */
   public List<Book> getBooks() {
     return books;
-  }
-
-  /**
-   * Adds to the <em>books</em> feature.
-   * 
-   * @param booksValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBooks(Book booksValue) {
-    if (!books.contains(booksValue)) {
-      boolean result = books.add(booksValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>books</em> feature.
-   * 
-   * @param booksValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBooks(Book booksValue) {
-    if (books.contains(booksValue)) {
-      boolean result = books.remove(booksValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>books</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBooks() {
-    while (!books.isEmpty()) {
-      removeFromBooks(books.iterator().next());
-    }
   }
 
   /**

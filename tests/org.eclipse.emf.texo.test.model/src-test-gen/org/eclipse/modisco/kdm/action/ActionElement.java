@@ -88,51 +88,6 @@ public class ActionElement extends AbstractCodeElement {
   }
 
   /**
-   * Adds to the <em>codeElement</em> feature.
-   * 
-   * @param codeElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToCodeElement(AbstractCodeElement codeElementValue) {
-    if (!codeElement.contains(codeElementValue)) {
-      boolean result = codeElement.add(codeElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>codeElement</em> feature.
-   * 
-   * @param codeElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromCodeElement(AbstractCodeElement codeElementValue) {
-    if (codeElement.contains(codeElementValue)) {
-      boolean result = codeElement.remove(codeElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>codeElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearCodeElement() {
-    while (!codeElement.isEmpty()) {
-      removeFromCodeElement(codeElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ActionElement#getCodeElement() <em>codeElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -155,51 +110,6 @@ public class ActionElement extends AbstractCodeElement {
    */
   public List<AbstractActionRelationship> getActionRelation() {
     return actionRelation;
-  }
-
-  /**
-   * Adds to the <em>actionRelation</em> feature.
-   * 
-   * @param actionRelationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToActionRelation(AbstractActionRelationship actionRelationValue) {
-    if (!actionRelation.contains(actionRelationValue)) {
-      boolean result = actionRelation.add(actionRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>actionRelation</em> feature.
-   * 
-   * @param actionRelationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromActionRelation(AbstractActionRelationship actionRelationValue) {
-    if (actionRelation.contains(actionRelationValue)) {
-      boolean result = actionRelation.remove(actionRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>actionRelation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearActionRelation() {
-    while (!actionRelation.isEmpty()) {
-      removeFromActionRelation(actionRelation.iterator().next());
-    }
   }
 
   /**

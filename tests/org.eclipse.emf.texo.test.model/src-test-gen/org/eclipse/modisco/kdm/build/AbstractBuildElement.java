@@ -43,51 +43,6 @@ public abstract class AbstractBuildElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>buildRelation</em> feature.
-   * 
-   * @param buildRelationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBuildRelation(AbstractBuildRelationship buildRelationValue) {
-    if (!buildRelation.contains(buildRelationValue)) {
-      boolean result = buildRelation.add(buildRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>buildRelation</em> feature.
-   * 
-   * @param buildRelationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBuildRelation(AbstractBuildRelationship buildRelationValue) {
-    if (buildRelation.contains(buildRelationValue)) {
-      boolean result = buildRelation.remove(buildRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>buildRelation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBuildRelation() {
-    while (!buildRelation.isEmpty()) {
-      removeFromBuildRelation(buildRelation.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractBuildElement#getBuildRelation() <em>buildRelation</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

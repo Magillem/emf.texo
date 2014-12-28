@@ -61,7 +61,7 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case SubstitutionzvonModelPackage.COMPLEXAAA_CLASSIFIER_ID:
@@ -83,7 +83,7 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -422,6 +422,13 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ComplexAAA.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -509,6 +516,13 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ComplexEvenType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -586,6 +600,13 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return SubstitutionzvonModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ComplexOddType.class;
     }
 
     /**
@@ -669,6 +690,13 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return SubstitutionzvonModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DocumentRoot.class;
     }
 
     /**
@@ -803,6 +831,13 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return SubstitutionzvonModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RootType.class;
     }
 
     /**

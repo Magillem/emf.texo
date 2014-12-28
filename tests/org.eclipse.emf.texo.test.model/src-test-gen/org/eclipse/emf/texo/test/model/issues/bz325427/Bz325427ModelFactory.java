@@ -50,7 +50,7 @@ public class Bz325427ModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case Bz325427ModelPackage.ECLASSB_CLASSIFIER_ID:
@@ -63,7 +63,7 @@ public class Bz325427ModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -245,6 +245,13 @@ public class Bz325427ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return EClassB.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -327,6 +334,13 @@ public class Bz325427ModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return Bz325427ModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return EClassA.class;
     }
 
     /**

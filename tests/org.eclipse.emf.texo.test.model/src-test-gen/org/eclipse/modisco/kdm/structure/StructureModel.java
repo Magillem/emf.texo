@@ -42,51 +42,6 @@ public class StructureModel extends KDMModel {
   }
 
   /**
-   * Adds to the <em>structureElement</em> feature.
-   * 
-   * @param structureElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToStructureElement(AbstractStructureElement structureElementValue) {
-    if (!structureElement.contains(structureElementValue)) {
-      boolean result = structureElement.add(structureElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>structureElement</em> feature.
-   * 
-   * @param structureElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromStructureElement(AbstractStructureElement structureElementValue) {
-    if (structureElement.contains(structureElementValue)) {
-      boolean result = structureElement.remove(structureElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>structureElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearStructureElement() {
-    while (!structureElement.isEmpty()) {
-      removeFromStructureElement(structureElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link StructureModel#getStructureElement() <em>structureElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

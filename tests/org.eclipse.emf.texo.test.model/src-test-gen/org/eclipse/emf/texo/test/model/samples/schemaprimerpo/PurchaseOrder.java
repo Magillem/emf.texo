@@ -159,51 +159,6 @@ public class PurchaseOrder extends Identifiable {
   }
 
   /**
-   * Adds to the <em>items</em> feature.
-   * 
-   * @param itemsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToItems(Item itemsValue) {
-    if (!items.contains(itemsValue)) {
-      boolean result = items.add(itemsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>items</em> feature.
-   * 
-   * @param itemsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromItems(Item itemsValue) {
-    if (items.contains(itemsValue)) {
-      boolean result = items.remove(itemsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>items</em> feature.
-   * 
-   * @generated
-   */
-  public void clearItems() {
-    while (!items.isEmpty()) {
-      removeFromItems(items.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link PurchaseOrder#getItems() <em>items</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

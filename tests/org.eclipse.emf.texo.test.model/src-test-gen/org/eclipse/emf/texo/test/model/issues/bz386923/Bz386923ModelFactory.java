@@ -48,7 +48,7 @@ public class Bz386923ModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case Bz386923ModelPackage.TEST386923_CLASSIFIER_ID:
@@ -58,7 +58,7 @@ public class Bz386923ModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -158,6 +158,13 @@ public class Bz386923ModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return Bz386923ModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Test386923.class;
     }
 
     /**

@@ -67,51 +67,6 @@ public class ActionType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>update</em> feature.
-   * 
-   * @param updateValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToUpdate(Object updateValue) {
-    if (!update.contains(updateValue)) {
-      boolean result = update.add(updateValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>update</em> feature.
-   * 
-   * @param updateValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromUpdate(Object updateValue) {
-    if (update.contains(updateValue)) {
-      boolean result = update.remove(updateValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>update</em> feature.
-   * 
-   * @generated
-   */
-  public void clearUpdate() {
-    while (!update.isEmpty()) {
-      removeFromUpdate(update.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ActionType#getUpdate() <em>update</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -137,51 +92,6 @@ public class ActionType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>insert</em> feature.
-   * 
-   * @param insertValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToInsert(Object insertValue) {
-    if (!insert.contains(insertValue)) {
-      boolean result = insert.add(insertValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>insert</em> feature.
-   * 
-   * @param insertValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromInsert(Object insertValue) {
-    if (insert.contains(insertValue)) {
-      boolean result = insert.remove(insertValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>insert</em> feature.
-   * 
-   * @generated
-   */
-  public void clearInsert() {
-    while (!insert.isEmpty()) {
-      removeFromInsert(insert.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ActionType#getInsert() <em>insert</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -204,51 +114,6 @@ public class ActionType extends Identifiable {
    */
   public List<Object> getDelete() {
     return delete;
-  }
-
-  /**
-   * Adds to the <em>delete</em> feature.
-   * 
-   * @param deleteValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToDelete(Object deleteValue) {
-    if (!delete.contains(deleteValue)) {
-      boolean result = delete.add(deleteValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>delete</em> feature.
-   * 
-   * @param deleteValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromDelete(Object deleteValue) {
-    if (delete.contains(deleteValue)) {
-      boolean result = delete.remove(deleteValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>delete</em> feature.
-   * 
-   * @generated
-   */
-  public void clearDelete() {
-    while (!delete.isEmpty()) {
-      removeFromDelete(delete.iterator().next());
-    }
   }
 
   /**

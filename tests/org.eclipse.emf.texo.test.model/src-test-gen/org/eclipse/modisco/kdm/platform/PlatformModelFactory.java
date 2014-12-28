@@ -116,7 +116,7 @@ public class PlatformModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case PlatformModelPackage.PLATFORMMODEL_CLASSIFIER_ID:
@@ -219,7 +219,7 @@ public class PlatformModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -613,6 +613,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PlatformModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -669,7 +676,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.PLATFORMMODEL_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().addToPlatformElement((AbstractPlatformElement) value);
+        return getTarget().getPlatformElement().add((AbstractPlatformElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -684,7 +691,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.PLATFORMMODEL_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().removeFromPlatformElement((AbstractPlatformElement) value);
+        return getTarget().getPlatformElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -717,6 +724,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractPlatformElement.class;
     }
 
     /**
@@ -807,16 +821,16 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().addToSource((SourceRef) value);
+        return getTarget().getSource().add((SourceRef) value);
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_PLATFORMRELATION_FEATURE_ID:
-        return getTarget().addToPlatformRelation((AbstractPlatformRelationship) value);
+        return getTarget().getPlatformRelation().add((AbstractPlatformRelationship) value);
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().addToAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().add((ActionElement) value);
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((AbstractCodeElement) value);
+        return getTarget().getImplementation().add((AbstractCodeElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -831,16 +845,16 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().removeFromSource((SourceRef) value);
+        return getTarget().getSource().remove(value);
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_PLATFORMRELATION_FEATURE_ID:
-        return getTarget().removeFromPlatformRelation((AbstractPlatformRelationship) value);
+        return getTarget().getPlatformRelation().remove(value);
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().removeFromAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().remove(value);
 
       case PlatformModelPackage.ABSTRACTPLATFORMELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((AbstractCodeElement) value);
+        return getTarget().getImplementation().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -873,6 +887,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractPlatformRelationship.class;
     }
 
     /**
@@ -966,6 +987,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ResourceType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1044,7 +1072,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.RESOURCETYPE_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().addToPlatformElement((AbstractPlatformElement) value);
+        return getTarget().getPlatformElement().add((AbstractPlatformElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1059,7 +1087,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.RESOURCETYPE_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().removeFromPlatformElement((AbstractPlatformElement) value);
+        return getTarget().getPlatformElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1091,6 +1119,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return NamingResource.class;
     }
 
     /**
@@ -1216,6 +1251,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return MarshalledResource.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1331,6 +1373,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return MessagingResource.class;
     }
 
     /**
@@ -1456,6 +1505,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return FileResource.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1571,6 +1627,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ExecutionResource.class;
     }
 
     /**
@@ -1696,6 +1759,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return LockResource.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1811,6 +1881,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return StreamResource.class;
     }
 
     /**
@@ -1936,6 +2013,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DataManager.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2051,6 +2135,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return PlatformEvent.class;
     }
 
     /**
@@ -2183,6 +2274,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PlatformAction.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2266,7 +2364,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.PLATFORMACTION_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().addToPlatformElement((PlatformEvent) value);
+        return getTarget().getPlatformElement().add((PlatformEvent) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -2281,7 +2379,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.PLATFORMACTION_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().removeFromPlatformElement((PlatformEvent) value);
+        return getTarget().getPlatformElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2313,6 +2411,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ExternalActor.class;
     }
 
     /**
@@ -2440,6 +2545,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BindsTo.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2535,6 +2647,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Requires.class;
     }
 
     /**
@@ -2641,6 +2760,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DeployedComponent.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2719,7 +2845,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.DEPLOYEDCOMPONENT_GROUPEDCODE_FEATURE_ID:
-        return getTarget().addToGroupedCode((Module) value);
+        return getTarget().getGroupedCode().add((Module) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -2734,7 +2860,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.DEPLOYEDCOMPONENT_GROUPEDCODE_FEATURE_ID:
-        return getTarget().removeFromGroupedCode((Module) value);
+        return getTarget().getGroupedCode().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2767,6 +2893,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ManagesResource.class;
     }
 
     /**
@@ -2873,6 +3006,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ReadsResource.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2969,6 +3109,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return WritesResource.class;
     }
 
     /**
@@ -3075,6 +3222,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DefinedBy.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3176,6 +3330,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DeployedSoftwareSystem.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3254,7 +3415,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_GROUPEDCOMPONENT_FEATURE_ID:
-        return getTarget().addToGroupedComponent((DeployedComponent) value);
+        return getTarget().getGroupedComponent().add((DeployedComponent) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -3269,7 +3430,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.DEPLOYEDSOFTWARESYSTEM_GROUPEDCOMPONENT_FEATURE_ID:
-        return getTarget().removeFromGroupedComponent((DeployedComponent) value);
+        return getTarget().getGroupedComponent().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -3301,6 +3462,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Machine.class;
     }
 
     /**
@@ -3389,10 +3557,10 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.MACHINE_DEPLOYEDCOMPONENT_FEATURE_ID:
-        return getTarget().addToDeployedComponent((DeployedComponent) value);
+        return getTarget().getDeployedComponent().add((DeployedComponent) value);
 
       case PlatformModelPackage.MACHINE_DEPLOYEDRESOURCE_FEATURE_ID:
-        return getTarget().addToDeployedResource((DeployedResource) value);
+        return getTarget().getDeployedResource().add((DeployedResource) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -3407,10 +3575,10 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.MACHINE_DEPLOYEDCOMPONENT_FEATURE_ID:
-        return getTarget().removeFromDeployedComponent((DeployedComponent) value);
+        return getTarget().getDeployedComponent().remove(value);
 
       case PlatformModelPackage.MACHINE_DEPLOYEDRESOURCE_FEATURE_ID:
-        return getTarget().removeFromDeployedResource((DeployedResource) value);
+        return getTarget().getDeployedResource().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -3443,6 +3611,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DeployedResource.class;
     }
 
     /**
@@ -3526,7 +3701,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.DEPLOYEDRESOURCE_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().addToPlatformElement((ResourceType) value);
+        return getTarget().getPlatformElement().add((ResourceType) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -3541,7 +3716,7 @@ public class PlatformModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlatformModelPackage.DEPLOYEDRESOURCE_PLATFORMELEMENT_FEATURE_ID:
-        return getTarget().removeFromPlatformElement((ResourceType) value);
+        return getTarget().getPlatformElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -3573,6 +3748,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RuntimeResource.class;
     }
 
     /**
@@ -3698,6 +3880,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Process.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3813,6 +4002,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Thread.class;
     }
 
     /**
@@ -3938,6 +4134,13 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Loads.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4033,6 +4236,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Spawns.class;
     }
 
     /**
@@ -4134,6 +4344,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return PlatformElement.class;
     }
 
     /**
@@ -4253,6 +4470,13 @@ public class PlatformModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlatformModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return PlatformRelationship.class;
     }
 
     /**

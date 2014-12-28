@@ -197,6 +197,7 @@ public class Claim extends Identifiable {
   public boolean addToClaimLine(ClaimLine claimLineValue) {
     if (!claimLine.contains(claimLineValue)) {
       boolean result = claimLine.add(claimLineValue);
+      claimLineValue.setClaim(this);
       return result;
     }
     return false;
@@ -215,6 +216,7 @@ public class Claim extends Identifiable {
   public boolean removeFromClaimLine(ClaimLine claimLineValue) {
     if (claimLine.contains(claimLineValue)) {
       boolean result = claimLine.remove(claimLineValue);
+      claimLineValue.setClaim(null);
       return result;
     }
     return false;
@@ -241,7 +243,10 @@ public class Claim extends Identifiable {
    * @generated
    */
   public void setClaimLine(List<ClaimLine> newClaimLine) {
-    claimLine = newClaimLine;
+    clearClaimLine();
+    for (ClaimLine value : newClaimLine) {
+      addToClaimLine(value);
+    }
   }
 
   /**

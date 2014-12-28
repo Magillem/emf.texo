@@ -42,51 +42,6 @@ public class BuildModel extends KDMModel {
   }
 
   /**
-   * Adds to the <em>buildElement</em> feature.
-   * 
-   * @param buildElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBuildElement(AbstractBuildElement buildElementValue) {
-    if (!buildElement.contains(buildElementValue)) {
-      boolean result = buildElement.add(buildElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>buildElement</em> feature.
-   * 
-   * @param buildElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBuildElement(AbstractBuildElement buildElementValue) {
-    if (buildElement.contains(buildElementValue)) {
-      boolean result = buildElement.remove(buildElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>buildElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBuildElement() {
-    while (!buildElement.isEmpty()) {
-      removeFromBuildElement(buildElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link BuildModel#getBuildElement() <em>buildElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

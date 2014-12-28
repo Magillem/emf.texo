@@ -75,51 +75,6 @@ public abstract class AbstractUIElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToSource(SourceRef sourceValue) {
-    if (!source.contains(sourceValue)) {
-      boolean result = source.add(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromSource(SourceRef sourceValue) {
-    if (source.contains(sourceValue)) {
-      boolean result = source.remove(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>source</em> feature.
-   * 
-   * @generated
-   */
-  public void clearSource() {
-    while (!source.isEmpty()) {
-      removeFromSource(source.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractUIElement#getSource() <em>source</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -142,51 +97,6 @@ public abstract class AbstractUIElement extends KDMEntity {
    */
   public Set<AbstractUIRelationship> getUIRelation() {
     return uIRelation;
-  }
-
-  /**
-   * Adds to the <em>UIRelation</em> feature.
-   * 
-   * @param uIRelationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToUIRelation(AbstractUIRelationship uIRelationValue) {
-    if (!uIRelation.contains(uIRelationValue)) {
-      boolean result = uIRelation.add(uIRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>UIRelation</em> feature.
-   * 
-   * @param uIRelationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromUIRelation(AbstractUIRelationship uIRelationValue) {
-    if (uIRelation.contains(uIRelationValue)) {
-      boolean result = uIRelation.remove(uIRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>UIRelation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearUIRelation() {
-    while (!uIRelation.isEmpty()) {
-      removeFromUIRelation(uIRelation.iterator().next());
-    }
   }
 
   /**
@@ -215,51 +125,6 @@ public abstract class AbstractUIElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToImplementation(AbstractCodeElement implementationValue) {
-    if (!implementation.contains(implementationValue)) {
-      boolean result = implementation.add(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromImplementation(AbstractCodeElement implementationValue) {
-    if (implementation.contains(implementationValue)) {
-      boolean result = implementation.remove(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>implementation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearImplementation() {
-    while (!implementation.isEmpty()) {
-      removeFromImplementation(implementation.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractUIElement#getImplementation() <em>implementation</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -282,51 +147,6 @@ public abstract class AbstractUIElement extends KDMEntity {
    */
   public List<ActionElement> getAbstraction() {
     return abstraction;
-  }
-
-  /**
-   * Adds to the <em>abstraction</em> feature.
-   * 
-   * @param abstractionValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAbstraction(ActionElement abstractionValue) {
-    if (!abstraction.contains(abstractionValue)) {
-      boolean result = abstraction.add(abstractionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>abstraction</em> feature.
-   * 
-   * @param abstractionValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAbstraction(ActionElement abstractionValue) {
-    if (abstraction.contains(abstractionValue)) {
-      boolean result = abstraction.remove(abstractionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>abstraction</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAbstraction() {
-    while (!abstraction.isEmpty()) {
-      removeFromAbstraction(abstraction.iterator().next());
-    }
   }
 
   /**

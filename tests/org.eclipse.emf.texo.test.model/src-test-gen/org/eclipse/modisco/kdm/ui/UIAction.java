@@ -75,51 +75,6 @@ public class UIAction extends AbstractUIElement {
   }
 
   /**
-   * Adds to the <em>UIElement</em> feature.
-   * 
-   * @param uIElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToUIElement(UIEvent uIElementValue) {
-    if (!uIElement.contains(uIElementValue)) {
-      boolean result = uIElement.add(uIElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>UIElement</em> feature.
-   * 
-   * @param uIElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromUIElement(UIEvent uIElementValue) {
-    if (uIElement.contains(uIElementValue)) {
-      boolean result = uIElement.remove(uIElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>UIElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearUIElement() {
-    while (!uIElement.isEmpty()) {
-      removeFromUIElement(uIElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link UIAction#getUIElement() <em>UIElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

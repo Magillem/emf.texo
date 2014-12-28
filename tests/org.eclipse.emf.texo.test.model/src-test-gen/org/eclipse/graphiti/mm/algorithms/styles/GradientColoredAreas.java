@@ -56,51 +56,6 @@ public class GradientColoredAreas extends Identifiable {
   }
 
   /**
-   * Adds to the <em>gradientColor</em> feature.
-   * 
-   * @param gradientColorValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToGradientColor(GradientColoredArea gradientColorValue) {
-    if (!gradientColor.contains(gradientColorValue)) {
-      boolean result = gradientColor.add(gradientColorValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>gradientColor</em> feature.
-   * 
-   * @param gradientColorValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromGradientColor(GradientColoredArea gradientColorValue) {
-    if (gradientColor.contains(gradientColorValue)) {
-      boolean result = gradientColor.remove(gradientColorValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>gradientColor</em> feature.
-   * 
-   * @generated
-   */
-  public void clearGradientColor() {
-    while (!gradientColor.isEmpty()) {
-      removeFromGradientColor(gradientColor.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link GradientColoredAreas#getGradientColor() <em>gradientColor</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

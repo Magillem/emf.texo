@@ -61,7 +61,7 @@ public class RentalModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case RentalModelPackage.RENTALBICYCLE_CLASSIFIER_ID:
@@ -89,7 +89,7 @@ public class RentalModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -416,6 +416,13 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RentalBicycle.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -511,6 +518,13 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RentalUnit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -593,6 +607,13 @@ public class RentalModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return RentalModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RentalCar.class;
     }
 
     /**
@@ -693,6 +714,13 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RentalBusiness.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -776,6 +804,13 @@ public class RentalModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return RentalModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RentalCarDriver.class;
     }
 
     /**
@@ -869,6 +904,13 @@ public class RentalModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return RentalModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RentalContract.class;
     }
 
     /**
@@ -981,6 +1023,13 @@ public class RentalModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return RentalModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RentalContractLine.class;
     }
 
     /**

@@ -131,51 +131,6 @@ public class AccountingClass extends Identifiable implements Serializable {
   }
 
   /**
-   * Adds to the <em>accountGroup</em> feature.
-   * 
-   * @param accountGroupValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAccountGroup(AccountGroup accountGroupValue) {
-    if (!accountGroup.contains(accountGroupValue)) {
-      boolean result = accountGroup.add(accountGroupValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>accountGroup</em> feature.
-   * 
-   * @param accountGroupValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAccountGroup(AccountGroup accountGroupValue) {
-    if (accountGroup.contains(accountGroupValue)) {
-      boolean result = accountGroup.remove(accountGroupValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>accountGroup</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAccountGroup() {
-    while (!accountGroup.isEmpty()) {
-      removeFromAccountGroup(accountGroup.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AccountingClass#getAccountGroup() <em>accountGroup</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -198,51 +153,6 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public List<Vat> getVat() {
     return vat;
-  }
-
-  /**
-   * Adds to the <em>vat</em> feature.
-   * 
-   * @param vatValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToVat(Vat vatValue) {
-    if (!vat.contains(vatValue)) {
-      boolean result = vat.add(vatValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>vat</em> feature.
-   * 
-   * @param vatValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromVat(Vat vatValue) {
-    if (vat.contains(vatValue)) {
-      boolean result = vat.remove(vatValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>vat</em> feature.
-   * 
-   * @generated
-   */
-  public void clearVat() {
-    while (!vat.isEmpty()) {
-      removeFromVat(vat.iterator().next());
-    }
   }
 
   /**
@@ -318,51 +228,6 @@ public class AccountingClass extends Identifiable implements Serializable {
    */
   public List<JournalGroup> getJournalGroup() {
     return journalGroup;
-  }
-
-  /**
-   * Adds to the <em>journalGroup</em> feature.
-   * 
-   * @param journalGroupValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToJournalGroup(JournalGroup journalGroupValue) {
-    if (!journalGroup.contains(journalGroupValue)) {
-      boolean result = journalGroup.add(journalGroupValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>journalGroup</em> feature.
-   * 
-   * @param journalGroupValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromJournalGroup(JournalGroup journalGroupValue) {
-    if (journalGroup.contains(journalGroupValue)) {
-      boolean result = journalGroup.remove(journalGroupValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>journalGroup</em> feature.
-   * 
-   * @generated
-   */
-  public void clearJournalGroup() {
-    while (!journalGroup.isEmpty()) {
-      removeFromJournalGroup(journalGroup.iterator().next());
-    }
   }
 
   /**

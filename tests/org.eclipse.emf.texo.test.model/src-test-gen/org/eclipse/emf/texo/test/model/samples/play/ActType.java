@@ -63,51 +63,6 @@ public class ActType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>scene</em> feature.
-   * 
-   * @param sceneValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToScene(SceneType sceneValue) {
-    if (!scene.contains(sceneValue)) {
-      boolean result = scene.add(sceneValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>scene</em> feature.
-   * 
-   * @param sceneValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromScene(SceneType sceneValue) {
-    if (scene.contains(sceneValue)) {
-      boolean result = scene.remove(sceneValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>scene</em> feature.
-   * 
-   * @generated
-   */
-  public void clearScene() {
-    while (!scene.isEmpty()) {
-      removeFromScene(scene.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ActType#getScene() <em>scene</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

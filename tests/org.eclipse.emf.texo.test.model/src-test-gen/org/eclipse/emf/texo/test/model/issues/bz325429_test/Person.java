@@ -147,51 +147,6 @@ public class Person extends Identifiable {
   }
 
   /**
-   * Adds to the <em>contacts</em> feature.
-   * 
-   * @param contactsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToContacts(Contact contactsValue) {
-    if (!contacts.contains(contactsValue)) {
-      boolean result = contacts.add(contactsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>contacts</em> feature.
-   * 
-   * @param contactsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromContacts(Contact contactsValue) {
-    if (contacts.contains(contactsValue)) {
-      boolean result = contacts.remove(contactsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>contacts</em> feature.
-   * 
-   * @generated
-   */
-  public void clearContacts() {
-    while (!contacts.isEmpty()) {
-      removeFromContacts(contacts.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Person#getContacts() <em>contacts</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -53,7 +53,7 @@ public class TravelModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case TravelModelPackage.JOURNEY_CLASSIFIER_ID:
@@ -69,7 +69,7 @@ public class TravelModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -193,6 +193,13 @@ public class TravelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Journey.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -238,7 +245,7 @@ public class TravelModelFactory implements ModelFactory {
       switch (featureID) {
 
       case TravelModelPackage.JOURNEY_TRIPS_FEATURE_ID:
-        return getTarget().addToTrips((Trip) value);
+        return getTarget().getTrips().add((Trip) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -253,7 +260,7 @@ public class TravelModelFactory implements ModelFactory {
       switch (featureID) {
 
       case TravelModelPackage.JOURNEY_TRIPS_FEATURE_ID:
-        return getTarget().removeFromTrips((Trip) value);
+        return getTarget().getTrips().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -285,6 +292,13 @@ public class TravelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return TravelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Trip.class;
     }
 
     /**
@@ -377,6 +391,13 @@ public class TravelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return TravelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return City.class;
     }
 
     /**

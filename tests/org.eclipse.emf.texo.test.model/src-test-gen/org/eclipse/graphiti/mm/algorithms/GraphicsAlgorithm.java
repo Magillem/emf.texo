@@ -189,6 +189,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
   public boolean addToGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
     if (!graphicsAlgorithmChildren.contains(graphicsAlgorithmChildrenValue)) {
       boolean result = graphicsAlgorithmChildren.add(graphicsAlgorithmChildrenValue);
+      graphicsAlgorithmChildrenValue.setParentGraphicsAlgorithm(this);
       return result;
     }
     return false;
@@ -207,6 +208,7 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
   public boolean removeFromGraphicsAlgorithmChildren(GraphicsAlgorithm graphicsAlgorithmChildrenValue) {
     if (graphicsAlgorithmChildren.contains(graphicsAlgorithmChildrenValue)) {
       boolean result = graphicsAlgorithmChildren.remove(graphicsAlgorithmChildrenValue);
+      graphicsAlgorithmChildrenValue.setParentGraphicsAlgorithm(null);
       return result;
     }
     return false;
@@ -234,7 +236,10 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * @generated
    */
   public void setGraphicsAlgorithmChildren(List<GraphicsAlgorithm> newGraphicsAlgorithmChildren) {
-    graphicsAlgorithmChildren = newGraphicsAlgorithmChildren;
+    clearGraphicsAlgorithmChildren();
+    for (GraphicsAlgorithm value : newGraphicsAlgorithmChildren) {
+      addToGraphicsAlgorithmChildren(value);
+    }
   }
 
   /**
@@ -260,7 +265,15 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * @generated
    */
   public void setParentGraphicsAlgorithm(GraphicsAlgorithm newParentGraphicsAlgorithm) {
-    parentGraphicsAlgorithm = newParentGraphicsAlgorithm;
+    if (parentGraphicsAlgorithm != newParentGraphicsAlgorithm) {
+      if (parentGraphicsAlgorithm != null) {
+        parentGraphicsAlgorithm.removeFromGraphicsAlgorithmChildren(this);
+      }
+      parentGraphicsAlgorithm = newParentGraphicsAlgorithm;
+      if (parentGraphicsAlgorithm != null) {
+        parentGraphicsAlgorithm.addToGraphicsAlgorithmChildren(this);
+      }
+    }
   }
 
   /**
@@ -285,7 +298,17 @@ public abstract class GraphicsAlgorithm extends GraphicsAlgorithmContainer {
    * @generated
    */
   public void setPictogramElement(PictogramElement newPictogramElement) {
-    pictogramElement = newPictogramElement;
+    if (pictogramElement != newPictogramElement) {
+      if (pictogramElement != null) {
+        PictogramElement tempPictogramElement = pictogramElement;
+        pictogramElement = null;
+        tempPictogramElement.setGraphicsAlgorithm(null);
+      }
+      pictogramElement = newPictogramElement;
+      if (pictogramElement != null) {
+        pictogramElement.setGraphicsAlgorithm(this);
+      }
+    }
   }
 
   /**

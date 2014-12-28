@@ -119,7 +119,15 @@ public class ConnectionDecorator extends Shape {
    * @generated
    */
   public void setConnection(Connection newConnection) {
-    connection = newConnection;
+    if (connection != newConnection) {
+      if (connection != null) {
+        connection.removeFromConnectionDecorators(this);
+      }
+      connection = newConnection;
+      if (connection != null) {
+        connection.addToConnectionDecorators(this);
+      }
+    }
   }
 
   /**

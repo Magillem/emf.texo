@@ -100,7 +100,15 @@ public class ClaimLine extends Identifiable {
    * @generated
    */
   public void setClaim(Claim newClaim) {
-    claim = newClaim;
+    if (claim != newClaim) {
+      if (claim != null) {
+        claim.removeFromClaimLine(this);
+      }
+      claim = newClaim;
+      if (claim != null) {
+        claim.addToClaimLine(this);
+      }
+    }
   }
 
   /**

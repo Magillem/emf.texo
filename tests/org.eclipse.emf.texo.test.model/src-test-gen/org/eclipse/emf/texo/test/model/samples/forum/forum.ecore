@@ -53,7 +53,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="posts" upperBound="-1"
-        eType="#//Post" resolveProxies="false" eOpposite="#//Post/author">
+        eType="#//Post" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="posts"/>
@@ -63,7 +63,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="created" upperBound="-1"
-        eType="#//Topic" resolveProxies="false" eOpposite="#//Topic/creator">
+        eType="#//Topic" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="created"/>
@@ -89,7 +89,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="author" lowerBound="1"
-        eType="#//Member" resolveProxies="false" eOpposite="#//Member/posts">
+        eType="#//Member" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="author"/>
@@ -99,7 +99,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="topic" lowerBound="1" eType="#//Topic"
-        resolveProxies="false" eOpposite="#//Topic/posts">
+        resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="topic"/>
@@ -134,7 +134,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="creator" lowerBound="1"
-        eType="#//Member" resolveProxies="false" eOpposite="#//Member/created">
+        eType="#//Member" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="creator"/>
@@ -144,7 +144,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="posts" upperBound="-1"
-        eType="#//Post" resolveProxies="false" eOpposite="#//Post/topic">
+        eType="#//Post" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="posts"/>

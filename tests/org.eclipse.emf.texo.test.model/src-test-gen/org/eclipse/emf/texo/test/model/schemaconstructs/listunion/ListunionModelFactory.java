@@ -52,7 +52,7 @@ public class ListunionModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ListunionModelPackage.STATESBYCOUNTRY_CLASSIFIER_ID:
@@ -62,7 +62,7 @@ public class ListunionModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -681,6 +681,13 @@ public class ListunionModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ListunionModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return StatesByCountry.class;
     }
 
     /**

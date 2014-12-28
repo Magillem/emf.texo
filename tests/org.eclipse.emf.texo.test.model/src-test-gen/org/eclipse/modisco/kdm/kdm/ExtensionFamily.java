@@ -51,51 +51,6 @@ public class ExtensionFamily extends Element {
   }
 
   /**
-   * Adds to the <em>stereotype</em> feature.
-   * 
-   * @param stereotypeValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToStereotype(Stereotype stereotypeValue) {
-    if (!stereotype.contains(stereotypeValue)) {
-      boolean result = stereotype.add(stereotypeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>stereotype</em> feature.
-   * 
-   * @param stereotypeValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromStereotype(Stereotype stereotypeValue) {
-    if (stereotype.contains(stereotypeValue)) {
-      boolean result = stereotype.remove(stereotypeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>stereotype</em> feature.
-   * 
-   * @generated
-   */
-  public void clearStereotype() {
-    while (!stereotype.isEmpty()) {
-      removeFromStereotype(stereotype.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ExtensionFamily#getStereotype() <em>stereotype</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

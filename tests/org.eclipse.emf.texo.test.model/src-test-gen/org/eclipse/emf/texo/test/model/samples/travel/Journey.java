@@ -80,51 +80,6 @@ public class Journey extends Identifiable {
   }
 
   /**
-   * Adds to the <em>trips</em> feature.
-   * 
-   * @param tripsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToTrips(Trip tripsValue) {
-    if (!trips.contains(tripsValue)) {
-      boolean result = trips.add(tripsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>trips</em> feature.
-   * 
-   * @param tripsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromTrips(Trip tripsValue) {
-    if (trips.contains(tripsValue)) {
-      boolean result = trips.remove(tripsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>trips</em> feature.
-   * 
-   * @generated
-   */
-  public void clearTrips() {
-    while (!trips.isEmpty()) {
-      removeFromTrips(trips.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Journey#getTrips() <em>trips</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

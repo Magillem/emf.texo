@@ -43,51 +43,6 @@ public class Signature extends Datatype {
   }
 
   /**
-   * Adds to the <em>parameterUnit</em> feature.
-   * 
-   * @param parameterUnitValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToParameterUnit(ParameterUnit parameterUnitValue) {
-    if (!parameterUnit.contains(parameterUnitValue)) {
-      boolean result = parameterUnit.add(parameterUnitValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>parameterUnit</em> feature.
-   * 
-   * @param parameterUnitValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromParameterUnit(ParameterUnit parameterUnitValue) {
-    if (parameterUnit.contains(parameterUnitValue)) {
-      boolean result = parameterUnit.remove(parameterUnitValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>parameterUnit</em> feature.
-   * 
-   * @generated
-   */
-  public void clearParameterUnit() {
-    while (!parameterUnit.isEmpty()) {
-      removeFromParameterUnit(parameterUnit.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Signature#getParameterUnit() <em>parameterUnit</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

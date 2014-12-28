@@ -107,7 +107,15 @@ public class Item extends Identifiable {
    * @generated
    */
   public void setOrder(PurchaseOrder newOrder) {
-    order = newOrder;
+    if (order != newOrder) {
+      if (order != null) {
+        order.removeFromItems(this);
+      }
+      order = newOrder;
+      if (order != null) {
+        order.addToItems(this);
+      }
+    }
   }
 
   /**

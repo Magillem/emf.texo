@@ -73,7 +73,7 @@ public class ConceptualModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ConceptualModelPackage.CONCEPTUALMODEL_CLASSIFIER_ID:
@@ -119,7 +119,7 @@ public class ConceptualModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -324,6 +324,13 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ConceptualModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -380,7 +387,7 @@ public class ConceptualModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ConceptualModelPackage.CONCEPTUALMODEL_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().addToConceptualElement((AbstractConceptualElement) value);
+        return getTarget().getConceptualElement().add((AbstractConceptualElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -395,7 +402,7 @@ public class ConceptualModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ConceptualModelPackage.CONCEPTUALMODEL_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().removeFromConceptualElement((AbstractConceptualElement) value);
+        return getTarget().getConceptualElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -428,6 +435,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractConceptualElement.class;
     }
 
     /**
@@ -518,16 +532,16 @@ public class ConceptualModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().addToSource((SourceRef) value);
+        return getTarget().getSource().add((SourceRef) value);
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((KDMEntity) value);
+        return getTarget().getImplementation().add((KDMEntity) value);
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().addToConceptualRelation((AbstractConceptualRelationship) value);
+        return getTarget().getConceptualRelation().add((AbstractConceptualRelationship) value);
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().addToAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().add((ActionElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -542,16 +556,16 @@ public class ConceptualModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().removeFromSource((SourceRef) value);
+        return getTarget().getSource().remove(value);
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((KDMEntity) value);
+        return getTarget().getImplementation().remove(value);
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_CONCEPTUALRELATION_FEATURE_ID:
-        return getTarget().removeFromConceptualRelation((AbstractConceptualRelationship) value);
+        return getTarget().getConceptualRelation().remove(value);
 
       case ConceptualModelPackage.ABSTRACTCONCEPTUALELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().removeFromAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -584,6 +598,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractConceptualRelationship.class;
     }
 
     /**
@@ -672,6 +693,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return TermUnit.class;
     }
 
     /**
@@ -796,6 +824,13 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ConceptualContainer.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -874,7 +909,7 @@ public class ConceptualModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ConceptualModelPackage.CONCEPTUALCONTAINER_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().addToConceptualElement((AbstractConceptualElement) value);
+        return getTarget().getConceptualElement().add((AbstractConceptualElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -889,7 +924,7 @@ public class ConceptualModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ConceptualModelPackage.CONCEPTUALCONTAINER_CONCEPTUALELEMENT_FEATURE_ID:
-        return getTarget().removeFromConceptualElement((AbstractConceptualElement) value);
+        return getTarget().getConceptualElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -921,6 +956,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return FactUnit.class;
     }
 
     /**
@@ -1047,6 +1089,13 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ConceptualRelationship.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1142,6 +1191,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BehaviorUnit.class;
     }
 
     /**
@@ -1267,6 +1323,13 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RuleUnit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1382,6 +1445,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ScenarioUnit.class;
     }
 
     /**
@@ -1508,6 +1578,13 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ConceptualFlow.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1604,6 +1681,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ConceptualElement.class;
     }
 
     /**
@@ -1723,6 +1807,13 @@ public class ConceptualModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ConceptualModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ConceptualRole.class;
     }
 
     /**

@@ -217,51 +217,6 @@ public abstract class AbstractText extends GraphicsAlgorithm {
   }
 
   /**
-   * Adds to the <em>styleRegions</em> feature.
-   * 
-   * @param styleRegionsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToStyleRegions(TextStyleRegion styleRegionsValue) {
-    if (!styleRegions.contains(styleRegionsValue)) {
-      boolean result = styleRegions.add(styleRegionsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>styleRegions</em> feature.
-   * 
-   * @param styleRegionsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromStyleRegions(TextStyleRegion styleRegionsValue) {
-    if (styleRegions.contains(styleRegionsValue)) {
-      boolean result = styleRegions.remove(styleRegionsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>styleRegions</em> feature.
-   * 
-   * @generated
-   */
-  public void clearStyleRegions() {
-    while (!styleRegions.isEmpty()) {
-      removeFromStyleRegions(styleRegions.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractText#getStyleRegions() <em>styleRegions</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

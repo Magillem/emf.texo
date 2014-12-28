@@ -208,7 +208,7 @@ public class CodeModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case CodeModelPackage.CODEMODEL_CLASSIFIER_ID:
@@ -464,7 +464,7 @@ public class CodeModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -1542,6 +1542,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return CodeModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1598,7 +1605,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.CODEMODEL_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().add((AbstractCodeElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1613,7 +1620,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.CODEMODEL_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1646,6 +1653,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractCodeElement.class;
     }
 
     /**
@@ -1736,16 +1750,16 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().addToSource((SourceRef) value);
+        return getTarget().getSource().add((SourceRef) value);
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_COMMENT_FEATURE_ID:
-        return getTarget().addToComment((CommentUnit) value);
+        return getTarget().getComment().add((CommentUnit) value);
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_CODERELATION_FEATURE_ID:
-        return getTarget().addToCodeRelation((AbstractCodeRelationship) value);
+        return getTarget().getCodeRelation().add((AbstractCodeRelationship) value);
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_ENTRYFLOW_FEATURE_ID:
-        return getTarget().addToEntryFlow((EntryFlow) value);
+        return getTarget().getEntryFlow().add((EntryFlow) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1760,16 +1774,16 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().removeFromSource((SourceRef) value);
+        return getTarget().getSource().remove(value);
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_COMMENT_FEATURE_ID:
-        return getTarget().removeFromComment((CommentUnit) value);
+        return getTarget().getComment().remove(value);
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_CODERELATION_FEATURE_ID:
-        return getTarget().removeFromCodeRelation((AbstractCodeRelationship) value);
+        return getTarget().getCodeRelation().remove(value);
 
       case CodeModelPackage.ABSTRACTCODEELEMENT_ENTRYFLOW_FEATURE_ID:
-        return getTarget().removeFromEntryFlow((EntryFlow) value);
+        return getTarget().getEntryFlow().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1801,6 +1815,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CommentUnit.class;
     }
 
     /**
@@ -1902,6 +1923,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AbstractCodeRelationship.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1985,6 +2013,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CodeItem.class;
     }
 
     /**
@@ -2108,6 +2143,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ComputationalObject.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2221,6 +2263,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Datatype.class;
     }
 
     /**
@@ -2344,6 +2393,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Module.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2422,7 +2478,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.MODULE_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().add((AbstractCodeElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -2437,7 +2493,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.MODULE_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2469,6 +2525,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CompilationUnit.class;
     }
 
     /**
@@ -2594,6 +2657,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SharedUnit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2709,6 +2779,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return LanguageUnit.class;
     }
 
     /**
@@ -2834,6 +2911,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return CodeAssembly.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2949,6 +3033,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Package.class;
     }
 
     /**
@@ -3074,6 +3165,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ControlElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3157,7 +3255,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.CONTROLELEMENT_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().add((AbstractCodeElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -3172,7 +3270,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.CONTROLELEMENT_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -3204,6 +3302,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CallableUnit.class;
     }
 
     /**
@@ -3333,6 +3438,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return MethodUnit.class;
     }
 
     /**
@@ -3472,6 +3584,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DataElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3565,7 +3684,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.DATAELEMENT_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((Datatype) value);
+        return getTarget().getCodeElement().add((Datatype) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -3580,7 +3699,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.DATAELEMENT_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((Datatype) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -3612,6 +3731,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return StorableUnit.class;
     }
 
     /**
@@ -3750,6 +3876,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ItemUnit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3876,6 +4009,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return IndexUnit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3997,6 +4137,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return MemberUnit.class;
     }
 
     /**
@@ -4130,6 +4277,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ParameterUnit.class;
     }
 
     /**
@@ -4273,6 +4427,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ValueElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4394,6 +4555,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Value.class;
     }
 
     /**
@@ -4525,6 +4693,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ValueList.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4611,7 +4786,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.VALUELIST_VALUEELEMENT_FEATURE_ID:
-        return getTarget().addToValueElement((ValueElement) value);
+        return getTarget().getValueElement().add((ValueElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -4626,7 +4801,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.VALUELIST_VALUEELEMENT_FEATURE_ID:
-        return getTarget().removeFromValueElement((ValueElement) value);
+        return getTarget().getValueElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -4658,6 +4833,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return PrimitiveType.class;
     }
 
     /**
@@ -4781,6 +4963,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BooleanType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4894,6 +5083,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CharType.class;
     }
 
     /**
@@ -5017,6 +5213,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return OrdinalType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5130,6 +5333,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DateType.class;
     }
 
     /**
@@ -5253,6 +5463,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return TimeType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5366,6 +5583,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return IntegerType.class;
     }
 
     /**
@@ -5489,6 +5713,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DecimalType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5602,6 +5833,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ScaledType.class;
     }
 
     /**
@@ -5725,6 +5963,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return FloatType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -5838,6 +6083,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return VoidType.class;
     }
 
     /**
@@ -5961,6 +6213,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return StringType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -6074,6 +6333,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BitType.class;
     }
 
     /**
@@ -6197,6 +6463,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BitstringType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -6310,6 +6583,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return OctetType.class;
     }
 
     /**
@@ -6433,6 +6713,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return OctetstringType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -6551,6 +6838,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return EnumeratedType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -6634,10 +6928,10 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.ENUMERATEDTYPE_VALUE_FEATURE_ID:
-        return getTarget().addToValue((Value) value);
+        return getTarget().getValue().add((Value) value);
 
       case CodeModelPackage.ENUMERATEDTYPE_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().add((CodeItem) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -6652,10 +6946,10 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.ENUMERATEDTYPE_VALUE_FEATURE_ID:
-        return getTarget().removeFromValue((Value) value);
+        return getTarget().getValue().remove(value);
 
       case CodeModelPackage.ENUMERATEDTYPE_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -6687,6 +6981,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CompositeType.class;
     }
 
     /**
@@ -6770,7 +7071,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.COMPOSITETYPE_ITEMUNIT_FEATURE_ID:
-        return getTarget().addToItemUnit((ItemUnit) value);
+        return getTarget().getItemUnit().add((ItemUnit) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -6785,7 +7086,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.COMPOSITETYPE_ITEMUNIT_FEATURE_ID:
-        return getTarget().removeFromItemUnit((ItemUnit) value);
+        return getTarget().getItemUnit().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -6817,6 +7118,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ChoiceType.class;
     }
 
     /**
@@ -6942,6 +7250,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return RecordType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -7057,6 +7372,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DerivedType.class;
     }
 
     /**
@@ -7182,6 +7504,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ArrayType.class;
     }
 
     /**
@@ -7319,6 +7648,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PointerType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -7434,6 +7770,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return RangeType.class;
     }
 
     /**
@@ -7571,6 +7914,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BagType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -7693,6 +8043,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SetType.class;
     }
 
     /**
@@ -7825,6 +8182,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SequenceType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -7952,6 +8316,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Signature.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -8030,7 +8401,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.SIGNATURE_PARAMETERUNIT_FEATURE_ID:
-        return getTarget().addToParameterUnit((ParameterUnit) value);
+        return getTarget().getParameterUnit().add((ParameterUnit) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -8045,7 +8416,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.SIGNATURE_PARAMETERUNIT_FEATURE_ID:
-        return getTarget().removeFromParameterUnit((ParameterUnit) value);
+        return getTarget().getParameterUnit().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -8077,6 +8448,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DefinedType.class;
     }
 
     /**
@@ -8212,6 +8590,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return TypeUnit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -8329,6 +8714,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SynonymUnit.class;
     }
 
     /**
@@ -8456,6 +8848,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ClassUnit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -8539,7 +8938,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.CLASSUNIT_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().add((CodeItem) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -8554,7 +8953,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.CLASSUNIT_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -8586,6 +8985,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return InterfaceUnit.class;
     }
 
     /**
@@ -8669,7 +9075,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.INTERFACEUNIT_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().add((CodeItem) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -8684,7 +9090,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.INTERFACEUNIT_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -8716,6 +9122,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return TemplateUnit.class;
     }
 
     /**
@@ -8799,7 +9212,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.TEMPLATEUNIT_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().add((CodeItem) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -8814,7 +9227,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.TEMPLATEUNIT_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((CodeItem) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -8846,6 +9259,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return TemplateParameter.class;
     }
 
     /**
@@ -8969,6 +9389,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return TemplateType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -9087,6 +9514,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return InstanceOf.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -9187,6 +9621,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ParameterTo.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -9282,6 +9723,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Implements.class;
     }
 
     /**
@@ -9388,6 +9836,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ImplementationOf.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -9483,6 +9938,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return HasType.class;
     }
 
     /**
@@ -9588,6 +10050,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return HasValue.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -9683,6 +10152,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Extends.class;
     }
 
     /**
@@ -9789,6 +10265,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PreprocessorDirective.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -9867,7 +10350,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.PREPROCESSORDIRECTIVE_CODEELEMENT_FEATURE_ID:
-        return getTarget().addToCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().add((AbstractCodeElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -9882,7 +10365,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.PREPROCESSORDIRECTIVE_CODEELEMENT_FEATURE_ID:
-        return getTarget().removeFromCodeElement((AbstractCodeElement) value);
+        return getTarget().getCodeElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -9914,6 +10397,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return MacroUnit.class;
     }
 
     /**
@@ -10046,6 +10536,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return MacroDirective.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -10162,6 +10659,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return IncludeDirective.class;
     }
 
     /**
@@ -10288,6 +10792,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ConditionalDirective.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -10408,6 +10919,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Expands.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -10503,6 +11021,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return GeneratedFrom.class;
     }
 
     /**
@@ -10608,6 +11133,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Includes.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -10703,6 +11235,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return VariantTo.class;
     }
 
     /**
@@ -10808,6 +11347,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Redefines.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -10908,6 +11454,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Namespace.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -10986,7 +11539,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.NAMESPACE_GROUPEDCODE_FEATURE_ID:
-        return getTarget().addToGroupedCode((CodeItem) value);
+        return getTarget().getGroupedCode().add((CodeItem) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -11001,7 +11554,7 @@ public class CodeModelFactory implements ModelFactory {
       switch (featureID) {
 
       case CodeModelPackage.NAMESPACE_GROUPEDCODE_FEATURE_ID:
-        return getTarget().removeFromGroupedCode((CodeItem) value);
+        return getTarget().getGroupedCode().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -11033,6 +11586,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return VisibleIn.class;
     }
 
     /**
@@ -11138,6 +11698,13 @@ public class CodeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Imports.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -11233,6 +11800,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CodeElement.class;
     }
 
     /**
@@ -11352,6 +11926,13 @@ public class CodeModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return CodeModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CodeRelationship.class;
     }
 
     /**

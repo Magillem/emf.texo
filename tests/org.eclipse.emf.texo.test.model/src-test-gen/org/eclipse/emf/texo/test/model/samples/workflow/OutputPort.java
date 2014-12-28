@@ -82,51 +82,6 @@ public class OutputPort extends Port {
   }
 
   /**
-   * Adds to the <em>edges</em> feature.
-   * 
-   * @param edgesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToEdges(Edge edgesValue) {
-    if (!edges.contains(edgesValue)) {
-      boolean result = edges.add(edgesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>edges</em> feature.
-   * 
-   * @param edgesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromEdges(Edge edgesValue) {
-    if (edges.contains(edgesValue)) {
-      boolean result = edges.remove(edgesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>edges</em> feature.
-   * 
-   * @generated
-   */
-  public void clearEdges() {
-    while (!edges.isEmpty()) {
-      removeFromEdges(edges.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link OutputPort#getEdges() <em>edges</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

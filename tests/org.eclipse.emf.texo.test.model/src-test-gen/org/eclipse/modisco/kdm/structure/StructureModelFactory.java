@@ -66,7 +66,7 @@ public class StructureModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_CLASSIFIER_ID:
@@ -103,7 +103,7 @@ public class StructureModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -278,6 +278,13 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AbstractStructureElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -363,16 +370,16 @@ public class StructureModelFactory implements ModelFactory {
       switch (featureID) {
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_AGGREGATED_FEATURE_ID:
-        return getTarget().addToAggregated((AggregatedRelationship) value);
+        return getTarget().getAggregated().add((AggregatedRelationship) value);
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((KDMEntity) value);
+        return getTarget().getImplementation().add((KDMEntity) value);
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_STRUCTUREELEMENT_FEATURE_ID:
-        return getTarget().addToStructureElement((AbstractStructureElement) value);
+        return getTarget().getStructureElement().add((AbstractStructureElement) value);
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_STRUCTURERELATIONSHIP_FEATURE_ID:
-        return getTarget().addToStructureRelationship((AbstractStructureRelationship) value);
+        return getTarget().getStructureRelationship().add((AbstractStructureRelationship) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -387,16 +394,16 @@ public class StructureModelFactory implements ModelFactory {
       switch (featureID) {
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_AGGREGATED_FEATURE_ID:
-        return getTarget().removeFromAggregated((AggregatedRelationship) value);
+        return getTarget().getAggregated().remove(value);
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((KDMEntity) value);
+        return getTarget().getImplementation().remove(value);
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_STRUCTUREELEMENT_FEATURE_ID:
-        return getTarget().removeFromStructureElement((AbstractStructureElement) value);
+        return getTarget().getStructureElement().remove(value);
 
       case StructureModelPackage.ABSTRACTSTRUCTUREELEMENT_STRUCTURERELATIONSHIP_FEATURE_ID:
-        return getTarget().removeFromStructureRelationship((AbstractStructureRelationship) value);
+        return getTarget().getStructureRelationship().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -429,6 +436,13 @@ public class StructureModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return StructureModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractStructureRelationship.class;
     }
 
     /**
@@ -517,6 +531,13 @@ public class StructureModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return StructureModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Subsystem.class;
     }
 
     /**
@@ -635,6 +656,13 @@ public class StructureModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return StructureModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Layer.class;
     }
 
     /**
@@ -759,6 +787,13 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return StructureModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -815,7 +850,7 @@ public class StructureModelFactory implements ModelFactory {
       switch (featureID) {
 
       case StructureModelPackage.STRUCTUREMODEL_STRUCTUREELEMENT_FEATURE_ID:
-        return getTarget().addToStructureElement((AbstractStructureElement) value);
+        return getTarget().getStructureElement().add((AbstractStructureElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -830,7 +865,7 @@ public class StructureModelFactory implements ModelFactory {
       switch (featureID) {
 
       case StructureModelPackage.STRUCTUREMODEL_STRUCTUREELEMENT_FEATURE_ID:
-        return getTarget().removeFromStructureElement((AbstractStructureElement) value);
+        return getTarget().getStructureElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -862,6 +897,13 @@ public class StructureModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return StructureModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Component.class;
     }
 
     /**
@@ -986,6 +1028,13 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SoftwareSystem.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1105,6 +1154,13 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return StructureRelationship.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1201,6 +1257,13 @@ public class StructureModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return StructureModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ArchitectureView.class;
     }
 
     /**
@@ -1320,6 +1383,13 @@ public class StructureModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return StructureModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return StructureElement.class;
     }
 
     /**

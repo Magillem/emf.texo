@@ -92,6 +92,7 @@ public class Customer extends Identifiable {
   public boolean addToOrders(PurchaseOrder ordersValue) {
     if (!orders.contains(ordersValue)) {
       boolean result = orders.add(ordersValue);
+      ordersValue.setCustomer(this);
       return result;
     }
     return false;
@@ -110,6 +111,7 @@ public class Customer extends Identifiable {
   public boolean removeFromOrders(PurchaseOrder ordersValue) {
     if (orders.contains(ordersValue)) {
       boolean result = orders.remove(ordersValue);
+      ordersValue.setCustomer(null);
       return result;
     }
     return false;
@@ -136,7 +138,10 @@ public class Customer extends Identifiable {
    * @generated
    */
   public void setOrders(List<PurchaseOrder> newOrders) {
-    orders = newOrders;
+    clearOrders();
+    for (PurchaseOrder value : newOrders) {
+      addToOrders(value);
+    }
   }
 
   /**

@@ -8,11 +8,8 @@ import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
-import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
@@ -54,7 +51,6 @@ public class Topic extends Identifiable {
    * @generated
    */
   @ManyToOne(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH }, optional = false)
-  @JoinColumns({ @JoinColumn() })
   private Member creator = null;
 
   /**
@@ -62,9 +58,8 @@ public class Topic extends Identifiable {
    * 
    * @generated
    */
-  @OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
   @OrderColumn()
-  @JoinTable()
   private List<Post> posts = new ArrayList<Post>();
 
   /**
@@ -152,51 +147,6 @@ public class Topic extends Identifiable {
    */
   public List<Post> getPosts() {
     return posts;
-  }
-
-  /**
-   * Adds to the <em>posts</em> feature.
-   * 
-   * @param postsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToPosts(Post postsValue) {
-    if (!posts.contains(postsValue)) {
-      boolean result = posts.add(postsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>posts</em> feature.
-   * 
-   * @param postsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromPosts(Post postsValue) {
-    if (posts.contains(postsValue)) {
-      boolean result = posts.remove(postsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>posts</em> feature.
-   * 
-   * @generated
-   */
-  public void clearPosts() {
-    while (!posts.isEmpty()) {
-      removeFromPosts(posts.iterator().next());
-    }
   }
 
   /**

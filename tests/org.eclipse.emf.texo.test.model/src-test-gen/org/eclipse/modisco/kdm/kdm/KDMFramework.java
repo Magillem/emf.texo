@@ -59,51 +59,6 @@ public abstract class KDMFramework extends ModelElement {
   }
 
   /**
-   * Adds to the <em>audit</em> feature.
-   * 
-   * @param auditValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAudit(Audit auditValue) {
-    if (!audit.contains(auditValue)) {
-      boolean result = audit.add(auditValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>audit</em> feature.
-   * 
-   * @param auditValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAudit(Audit auditValue) {
-    if (audit.contains(auditValue)) {
-      boolean result = audit.remove(auditValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>audit</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAudit() {
-    while (!audit.isEmpty()) {
-      removeFromAudit(audit.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link KDMFramework#getAudit() <em>audit</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -126,51 +81,6 @@ public abstract class KDMFramework extends ModelElement {
    */
   public Set<ExtensionFamily> getExtension() {
     return extension;
-  }
-
-  /**
-   * Adds to the <em>extension</em> feature.
-   * 
-   * @param extensionValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToExtension(ExtensionFamily extensionValue) {
-    if (!extension.contains(extensionValue)) {
-      boolean result = extension.add(extensionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>extension</em> feature.
-   * 
-   * @param extensionValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromExtension(ExtensionFamily extensionValue) {
-    if (extension.contains(extensionValue)) {
-      boolean result = extension.remove(extensionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>extension</em> feature.
-   * 
-   * @generated
-   */
-  public void clearExtension() {
-    while (!extension.isEmpty()) {
-      removeFromExtension(extension.iterator().next());
-    }
   }
 
   /**

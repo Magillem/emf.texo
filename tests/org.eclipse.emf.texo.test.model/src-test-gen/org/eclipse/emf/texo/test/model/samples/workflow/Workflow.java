@@ -66,51 +66,6 @@ public class Workflow extends WorkflowElement {
   }
 
   /**
-   * Adds to the <em>nodes</em> feature.
-   * 
-   * @param nodesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToNodes(WorkflowNode nodesValue) {
-    if (!nodes.contains(nodesValue)) {
-      boolean result = nodes.add(nodesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>nodes</em> feature.
-   * 
-   * @param nodesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromNodes(WorkflowNode nodesValue) {
-    if (nodes.contains(nodesValue)) {
-      boolean result = nodes.remove(nodesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>nodes</em> feature.
-   * 
-   * @generated
-   */
-  public void clearNodes() {
-    while (!nodes.isEmpty()) {
-      removeFromNodes(nodes.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Workflow#getNodes() <em>nodes</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -136,51 +91,6 @@ public class Workflow extends WorkflowElement {
   }
 
   /**
-   * Adds to the <em>edges</em> feature.
-   * 
-   * @param edgesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToEdges(Edge edgesValue) {
-    if (!edges.contains(edgesValue)) {
-      boolean result = edges.add(edgesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>edges</em> feature.
-   * 
-   * @param edgesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromEdges(Edge edgesValue) {
-    if (edges.contains(edgesValue)) {
-      boolean result = edges.remove(edgesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>edges</em> feature.
-   * 
-   * @generated
-   */
-  public void clearEdges() {
-    while (!edges.isEmpty()) {
-      removeFromEdges(edges.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Workflow#getEdges() <em>edges</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -203,51 +113,6 @@ public class Workflow extends WorkflowElement {
    */
   public List<Comment> getComments() {
     return comments;
-  }
-
-  /**
-   * Adds to the <em>comments</em> feature.
-   * 
-   * @param commentsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToComments(Comment commentsValue) {
-    if (!comments.contains(commentsValue)) {
-      boolean result = comments.add(commentsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>comments</em> feature.
-   * 
-   * @param commentsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromComments(Comment commentsValue) {
-    if (comments.contains(commentsValue)) {
-      boolean result = comments.remove(commentsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>comments</em> feature.
-   * 
-   * @generated
-   */
-  public void clearComments() {
-    while (!comments.isEmpty()) {
-      removeFromComments(comments.iterator().next());
-    }
   }
 
   /**

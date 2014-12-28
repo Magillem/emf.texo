@@ -56,7 +56,7 @@ public class ClaimModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ClaimModelPackage.CLAIM_CLASSIFIER_ID:
@@ -75,7 +75,7 @@ public class ClaimModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -209,6 +209,13 @@ public class ClaimModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Claim.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -321,6 +328,13 @@ public class ClaimModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ClaimCompositeKey.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -409,6 +423,13 @@ public class ClaimModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ClaimModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ClaimLine.class;
     }
 
     /**
@@ -517,6 +538,13 @@ public class ClaimModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ClaimModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ClaimLineCompositeKey.class;
     }
 
     /**

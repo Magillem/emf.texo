@@ -89,7 +89,7 @@ public class UiModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case UiModelPackage.ABSTRACTUIELEMENT_CLASSIFIER_ID:
@@ -153,7 +153,7 @@ public class UiModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -418,6 +418,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AbstractUIElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -503,16 +510,16 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.ABSTRACTUIELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().addToSource((SourceRef) value);
+        return getTarget().getSource().add((SourceRef) value);
 
       case UiModelPackage.ABSTRACTUIELEMENT_UIRELATION_FEATURE_ID:
-        return getTarget().addToUIRelation((AbstractUIRelationship) value);
+        return getTarget().getUIRelation().add((AbstractUIRelationship) value);
 
       case UiModelPackage.ABSTRACTUIELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((AbstractCodeElement) value);
+        return getTarget().getImplementation().add((AbstractCodeElement) value);
 
       case UiModelPackage.ABSTRACTUIELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().addToAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().add((ActionElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -527,16 +534,16 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.ABSTRACTUIELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().removeFromSource((SourceRef) value);
+        return getTarget().getSource().remove(value);
 
       case UiModelPackage.ABSTRACTUIELEMENT_UIRELATION_FEATURE_ID:
-        return getTarget().removeFromUIRelation((AbstractUIRelationship) value);
+        return getTarget().getUIRelation().remove(value);
 
       case UiModelPackage.ABSTRACTUIELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((AbstractCodeElement) value);
+        return getTarget().getImplementation().remove(value);
 
       case UiModelPackage.ABSTRACTUIELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().removeFromAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -569,6 +576,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractUIRelationship.class;
     }
 
     /**
@@ -662,6 +676,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return UIResource.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -740,7 +761,7 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.UIRESOURCE_UIELEMENT_FEATURE_ID:
-        return getTarget().addToUIElement((AbstractUIElement) value);
+        return getTarget().getUIElement().add((AbstractUIElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -755,7 +776,7 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.UIRESOURCE_UIELEMENT_FEATURE_ID:
-        return getTarget().removeFromUIElement((AbstractUIElement) value);
+        return getTarget().getUIElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -787,6 +808,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return UIDisplay.class;
     }
 
     /**
@@ -912,6 +940,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Screen.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1027,6 +1062,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Report.class;
     }
 
     /**
@@ -1152,6 +1194,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return UIModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1208,7 +1257,7 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.UIMODEL_UIELEMENT_FEATURE_ID:
-        return getTarget().addToUIElement((AbstractUIElement) value);
+        return getTarget().getUIElement().add((AbstractUIElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1223,7 +1272,7 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.UIMODEL_UIELEMENT_FEATURE_ID:
-        return getTarget().removeFromUIElement((AbstractUIElement) value);
+        return getTarget().getUIElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1255,6 +1304,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return UILayout.class;
     }
 
     /**
@@ -1355,6 +1411,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return UIField.class;
     }
 
     /**
@@ -1480,6 +1543,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DisplaysImage.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1575,6 +1645,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Displays.class;
     }
 
     /**
@@ -1680,6 +1757,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return UIFlow.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1775,6 +1859,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return UIElement.class;
     }
 
     /**
@@ -1898,6 +1989,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return UIRelationship.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1998,6 +2096,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return UIAction.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2081,7 +2186,7 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.UIACTION_UIELEMENT_FEATURE_ID:
-        return getTarget().addToUIElement((UIEvent) value);
+        return getTarget().getUIElement().add((UIEvent) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -2096,7 +2201,7 @@ public class UiModelFactory implements ModelFactory {
       switch (featureID) {
 
       case UiModelPackage.UIACTION_UIELEMENT_FEATURE_ID:
-        return getTarget().removeFromUIElement((UIEvent) value);
+        return getTarget().getUIElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -2128,6 +2233,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return UIEvent.class;
     }
 
     /**
@@ -2259,6 +2371,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ReadsUI.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2360,6 +2479,13 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return WritesUI.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2456,6 +2582,13 @@ public class UiModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return UiModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ManagesUI.class;
     }
 
     /**

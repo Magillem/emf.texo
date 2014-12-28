@@ -51,7 +51,15 @@ public class Shape extends AnchorContainer {
    * @generated
    */
   public void setContainer(ContainerShape newContainer) {
-    container = newContainer;
+    if (container != newContainer) {
+      if (container != null) {
+        container.removeFromChildren(this);
+      }
+      container = newContainer;
+      if (container != null) {
+        container.addToChildren(this);
+      }
+    }
   }
 
   /**

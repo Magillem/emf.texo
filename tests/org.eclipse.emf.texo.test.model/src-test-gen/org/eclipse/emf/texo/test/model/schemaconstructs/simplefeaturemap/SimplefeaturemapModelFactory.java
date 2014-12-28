@@ -52,7 +52,7 @@ public class SimplefeaturemapModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case SimplefeaturemapModelPackage.PURCHASEORDER_CLASSIFIER_ID:
@@ -65,7 +65,7 @@ public class SimplefeaturemapModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -188,6 +188,13 @@ public class SimplefeaturemapModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PurchaseOrder.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -271,6 +278,13 @@ public class SimplefeaturemapModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return SimplefeaturemapModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Supplier.class;
     }
 
     /**

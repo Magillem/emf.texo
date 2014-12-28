@@ -242,51 +242,6 @@ public class Album extends Identifiable {
   }
 
   /**
-   * Adds to the <em>genres</em> feature.
-   * 
-   * @param genresValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToGenres(Genre genresValue) {
-    if (!genres.contains(genresValue)) {
-      boolean result = genres.add(genresValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>genres</em> feature.
-   * 
-   * @param genresValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromGenres(Genre genresValue) {
-    if (genres.contains(genresValue)) {
-      boolean result = genres.remove(genresValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>genres</em> feature.
-   * 
-   * @generated
-   */
-  public void clearGenres() {
-    while (!genres.isEmpty()) {
-      removeFromGenres(genres.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Album#getGenres() <em>genres</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -309,51 +264,6 @@ public class Album extends Identifiable {
    */
   public List<Song> getSongs() {
     return songs;
-  }
-
-  /**
-   * Adds to the <em>songs</em> feature.
-   * 
-   * @param songsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToSongs(Song songsValue) {
-    if (!songs.contains(songsValue)) {
-      boolean result = songs.add(songsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>songs</em> feature.
-   * 
-   * @param songsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromSongs(Song songsValue) {
-    if (songs.contains(songsValue)) {
-      boolean result = songs.remove(songsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>songs</em> feature.
-   * 
-   * @generated
-   */
-  public void clearSongs() {
-    while (!songs.isEmpty()) {
-      removeFromSongs(songs.iterator().next());
-    }
   }
 
   /**

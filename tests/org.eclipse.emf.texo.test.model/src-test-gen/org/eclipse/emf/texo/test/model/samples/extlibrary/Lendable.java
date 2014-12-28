@@ -41,35 +41,6 @@ public interface Lendable extends IdentifiableInterface {
   public Set<Borrower> getBorrowers();
 
   /**
-   * Adds to the <em>borrowers</em> feature.
-   * 
-   * @param value
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * 
-   * @generated
-   */
-  public boolean addToBorrowers(Borrower value);
-
-  /**
-   * Removes from the <em>borrowers</em> feature.
-   * 
-   * @param value
-   *          the value to remove
-   * @return true if the value is removed from the collection (it was present in the collection), false otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBorrowers(Borrower value);
-
-  /**
-   * Clears the <em>borrowers</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBorrowers();
-
-  /**
    * Sets the '{@link Lendable#getBorrowers() <em>borrowers</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

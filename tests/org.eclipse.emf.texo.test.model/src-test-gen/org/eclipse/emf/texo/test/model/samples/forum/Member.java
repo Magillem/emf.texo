@@ -6,8 +6,7 @@ import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
-import javax.persistence.JoinTable;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import javax.persistence.OrderColumn;
 import org.eclipse.emf.texo.test.TexoTestObjectConverter;
 import org.eclipse.emf.texo.test.TexoTestQNameConverter;
@@ -39,9 +38,8 @@ public class Member extends Identifiable {
    * 
    * @generated
    */
-  @OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
   @OrderColumn()
-  @JoinTable()
   private List<Post> posts = new ArrayList<Post>();
 
   /**
@@ -49,9 +47,8 @@ public class Member extends Identifiable {
    * 
    * @generated
    */
-  @OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
+  @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
   @OrderColumn()
-  @JoinTable()
   private List<Topic> created = new ArrayList<Topic>();
 
   /**
@@ -92,51 +89,6 @@ public class Member extends Identifiable {
   }
 
   /**
-   * Adds to the <em>posts</em> feature.
-   * 
-   * @param postsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToPosts(Post postsValue) {
-    if (!posts.contains(postsValue)) {
-      boolean result = posts.add(postsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>posts</em> feature.
-   * 
-   * @param postsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromPosts(Post postsValue) {
-    if (posts.contains(postsValue)) {
-      boolean result = posts.remove(postsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>posts</em> feature.
-   * 
-   * @generated
-   */
-  public void clearPosts() {
-    while (!posts.isEmpty()) {
-      removeFromPosts(posts.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Member#getPosts() <em>posts</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -159,51 +111,6 @@ public class Member extends Identifiable {
    */
   public List<Topic> getCreated() {
     return created;
-  }
-
-  /**
-   * Adds to the <em>created</em> feature.
-   * 
-   * @param createdValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToCreated(Topic createdValue) {
-    if (!created.contains(createdValue)) {
-      boolean result = created.add(createdValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>created</em> feature.
-   * 
-   * @param createdValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromCreated(Topic createdValue) {
-    if (created.contains(createdValue)) {
-      boolean result = created.remove(createdValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>created</em> feature.
-   * 
-   * @generated
-   */
-  public void clearCreated() {
-    while (!created.isEmpty()) {
-      removeFromCreated(created.iterator().next());
-    }
   }
 
   /**

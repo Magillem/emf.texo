@@ -80,7 +80,15 @@ public class Connection extends AnchorContainer {
    * @generated
    */
   public void setStart(Anchor newStart) {
-    start = newStart;
+    if (start != newStart) {
+      if (start != null) {
+        start.removeFromOutgoingConnections(this);
+      }
+      start = newStart;
+      if (start != null) {
+        start.addToOutgoingConnections(this);
+      }
+    }
   }
 
   /**
@@ -105,7 +113,15 @@ public class Connection extends AnchorContainer {
    * @generated
    */
   public void setEnd(Anchor newEnd) {
-    end = newEnd;
+    if (end != newEnd) {
+      if (end != null) {
+        end.removeFromIncomingConnections(this);
+      }
+      end = newEnd;
+      if (end != null) {
+        end.addToIncomingConnections(this);
+      }
+    }
   }
 
   /**
@@ -130,7 +146,15 @@ public class Connection extends AnchorContainer {
    * @generated
    */
   public void setParent(Diagram newParent) {
-    parent = newParent;
+    if (parent != newParent) {
+      if (parent != null) {
+        parent.removeFromConnections(this);
+      }
+      parent = newParent;
+      if (parent != null) {
+        parent.addToConnections(this);
+      }
+    }
   }
 
   /**
@@ -156,6 +180,7 @@ public class Connection extends AnchorContainer {
   public boolean addToConnectionDecorators(ConnectionDecorator connectionDecoratorsValue) {
     if (!connectionDecorators.contains(connectionDecoratorsValue)) {
       boolean result = connectionDecorators.add(connectionDecoratorsValue);
+      connectionDecoratorsValue.setConnection(this);
       return result;
     }
     return false;
@@ -174,6 +199,7 @@ public class Connection extends AnchorContainer {
   public boolean removeFromConnectionDecorators(ConnectionDecorator connectionDecoratorsValue) {
     if (connectionDecorators.contains(connectionDecoratorsValue)) {
       boolean result = connectionDecorators.remove(connectionDecoratorsValue);
+      connectionDecoratorsValue.setConnection(null);
       return result;
     }
     return false;
@@ -200,7 +226,10 @@ public class Connection extends AnchorContainer {
    * @generated
    */
   public void setConnectionDecorators(List<ConnectionDecorator> newConnectionDecorators) {
-    connectionDecorators = newConnectionDecorators;
+    clearConnectionDecorators();
+    for (ConnectionDecorator value : newConnectionDecorators) {
+      addToConnectionDecorators(value);
+    }
   }
 
   /**

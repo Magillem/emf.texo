@@ -53,7 +53,7 @@ public class TestModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case TestModelPackage.PERSON_CLASSIFIER_ID:
@@ -69,7 +69,7 @@ public class TestModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -227,6 +227,13 @@ public class TestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Person.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -282,7 +289,7 @@ public class TestModelFactory implements ModelFactory {
       switch (featureID) {
 
       case TestModelPackage.PERSON_CONTACTS_FEATURE_ID:
-        return getTarget().addToContacts((Contact) value);
+        return getTarget().getContacts().add((Contact) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -297,7 +304,7 @@ public class TestModelFactory implements ModelFactory {
       switch (featureID) {
 
       case TestModelPackage.PERSON_CONTACTS_FEATURE_ID:
-        return getTarget().removeFromContacts((Contact) value);
+        return getTarget().getContacts().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -329,6 +336,13 @@ public class TestModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return TestModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Address.class;
     }
 
     /**
@@ -421,6 +435,13 @@ public class TestModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return TestModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Contact.class;
     }
 
     /**

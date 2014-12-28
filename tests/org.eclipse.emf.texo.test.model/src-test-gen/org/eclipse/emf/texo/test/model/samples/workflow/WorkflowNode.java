@@ -111,51 +111,6 @@ public abstract class WorkflowNode extends WorkflowElement {
   }
 
   /**
-   * Adds to the <em>outputs</em> feature.
-   * 
-   * @param outputsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToOutputs(OutputPort outputsValue) {
-    if (!outputs.contains(outputsValue)) {
-      boolean result = outputs.add(outputsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>outputs</em> feature.
-   * 
-   * @param outputsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromOutputs(OutputPort outputsValue) {
-    if (outputs.contains(outputsValue)) {
-      boolean result = outputs.remove(outputsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>outputs</em> feature.
-   * 
-   * @generated
-   */
-  public void clearOutputs() {
-    while (!outputs.isEmpty()) {
-      removeFromOutputs(outputs.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link WorkflowNode#getOutputs() <em>outputs</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -178,51 +133,6 @@ public abstract class WorkflowNode extends WorkflowElement {
    */
   public List<InputPort> getInputs() {
     return inputs;
-  }
-
-  /**
-   * Adds to the <em>inputs</em> feature.
-   * 
-   * @param inputsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToInputs(InputPort inputsValue) {
-    if (!inputs.contains(inputsValue)) {
-      boolean result = inputs.add(inputsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>inputs</em> feature.
-   * 
-   * @param inputsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromInputs(InputPort inputsValue) {
-    if (inputs.contains(inputsValue)) {
-      boolean result = inputs.remove(inputsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>inputs</em> feature.
-   * 
-   * @generated
-   */
-  public void clearInputs() {
-    while (!inputs.isEmpty()) {
-      removeFromInputs(inputs.iterator().next());
-    }
   }
 
   /**

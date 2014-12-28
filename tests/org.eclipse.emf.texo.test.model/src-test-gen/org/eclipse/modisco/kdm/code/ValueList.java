@@ -43,51 +43,6 @@ public class ValueList extends ValueElement {
   }
 
   /**
-   * Adds to the <em>valueElement</em> feature.
-   * 
-   * @param valueElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToValueElement(ValueElement valueElementValue) {
-    if (!valueElement.contains(valueElementValue)) {
-      boolean result = valueElement.add(valueElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>valueElement</em> feature.
-   * 
-   * @param valueElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromValueElement(ValueElement valueElementValue) {
-    if (valueElement.contains(valueElementValue)) {
-      boolean result = valueElement.remove(valueElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>valueElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearValueElement() {
-    while (!valueElement.isEmpty()) {
-      removeFromValueElement(valueElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ValueList#getValueElement() <em>valueElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

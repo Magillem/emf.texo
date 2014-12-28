@@ -86,7 +86,7 @@ public class EventModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case EventModelPackage.EVENTMODEL_CLASSIFIER_ID:
@@ -147,7 +147,7 @@ public class EventModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -401,6 +401,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return EventModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -457,7 +464,7 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.EVENTMODEL_EVENTELEMENT_FEATURE_ID:
-        return getTarget().addToEventElement((AbstractEventElement) value);
+        return getTarget().getEventElement().add((AbstractEventElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -472,7 +479,7 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.EVENTMODEL_EVENTELEMENT_FEATURE_ID:
-        return getTarget().removeFromEventElement((AbstractEventElement) value);
+        return getTarget().getEventElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -505,6 +512,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractEventElement.class;
     }
 
     /**
@@ -595,16 +609,16 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().addToSource((SourceRef) value);
+        return getTarget().getSource().add((SourceRef) value);
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_EVENTRELATION_FEATURE_ID:
-        return getTarget().addToEventRelation((AbstractEventRelationship) value);
+        return getTarget().getEventRelation().add((AbstractEventRelationship) value);
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().addToAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().add((ActionElement) value);
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((AbstractCodeElement) value);
+        return getTarget().getImplementation().add((AbstractCodeElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -619,16 +633,16 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_SOURCE_FEATURE_ID:
-        return getTarget().removeFromSource((SourceRef) value);
+        return getTarget().getSource().remove(value);
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_EVENTRELATION_FEATURE_ID:
-        return getTarget().removeFromEventRelation((AbstractEventRelationship) value);
+        return getTarget().getEventRelation().remove(value);
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_ABSTRACTION_FEATURE_ID:
-        return getTarget().removeFromAbstraction((ActionElement) value);
+        return getTarget().getAbstraction().remove(value);
 
       case EventModelPackage.ABSTRACTEVENTELEMENT_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((AbstractCodeElement) value);
+        return getTarget().getImplementation().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -661,6 +675,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractEventRelationship.class;
     }
 
     /**
@@ -749,6 +770,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Event.class;
     }
 
     /**
@@ -880,6 +908,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return EventRelationship.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -980,6 +1015,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return EventResource.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1058,7 +1100,7 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.EVENTRESOURCE_EVENTELEMENT_FEATURE_ID:
-        return getTarget().addToEventElement((AbstractEventElement) value);
+        return getTarget().getEventElement().add((AbstractEventElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1073,7 +1115,7 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.EVENTRESOURCE_EVENTELEMENT_FEATURE_ID:
-        return getTarget().removeFromEventElement((AbstractEventElement) value);
+        return getTarget().getEventElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1105,6 +1147,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return State.class;
     }
 
     /**
@@ -1230,6 +1279,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Transition.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1345,6 +1401,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return OnEntry.class;
     }
 
     /**
@@ -1470,6 +1533,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return OnExit.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1590,6 +1660,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return EventAction.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1673,7 +1750,7 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.EVENTACTION_EVENTELEMENT_FEATURE_ID:
-        return getTarget().addToEventElement((Event) value);
+        return getTarget().getEventElement().add((Event) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1688,7 +1765,7 @@ public class EventModelFactory implements ModelFactory {
       switch (featureID) {
 
       case EventModelPackage.EVENTACTION_EVENTELEMENT_FEATURE_ID:
-        return getTarget().removeFromEventElement((Event) value);
+        return getTarget().getEventElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1721,6 +1798,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ReadsState.class;
     }
 
     /**
@@ -1827,6 +1911,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ProducesEvent.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1922,6 +2013,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ConsumesEvent.class;
     }
 
     /**
@@ -2027,6 +2125,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return NextState.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2122,6 +2227,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return InitialState.class;
     }
 
     /**
@@ -2247,6 +2359,13 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return EventElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2361,6 +2480,13 @@ public class EventModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return EventModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return HasState.class;
     }
 
     /**

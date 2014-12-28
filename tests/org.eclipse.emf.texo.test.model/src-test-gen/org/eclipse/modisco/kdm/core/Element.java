@@ -59,51 +59,6 @@ public abstract class Element extends Identifiable {
   }
 
   /**
-   * Adds to the <em>attribute</em> feature.
-   * 
-   * @param attributeValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAttribute(Attribute attributeValue) {
-    if (!attribute.contains(attributeValue)) {
-      boolean result = attribute.add(attributeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>attribute</em> feature.
-   * 
-   * @param attributeValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAttribute(Attribute attributeValue) {
-    if (attribute.contains(attributeValue)) {
-      boolean result = attribute.remove(attributeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>attribute</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAttribute() {
-    while (!attribute.isEmpty()) {
-      removeFromAttribute(attribute.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Element#getAttribute() <em>attribute</em>}' feature.
    * 
    * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> The set of attributes owned by the given
@@ -128,51 +83,6 @@ public abstract class Element extends Identifiable {
    */
   public Set<Annotation> getAnnotation() {
     return annotation;
-  }
-
-  /**
-   * Adds to the <em>annotation</em> feature.
-   * 
-   * @param annotationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAnnotation(Annotation annotationValue) {
-    if (!annotation.contains(annotationValue)) {
-      boolean result = annotation.add(annotationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>annotation</em> feature.
-   * 
-   * @param annotationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAnnotation(Annotation annotationValue) {
-    if (annotation.contains(annotationValue)) {
-      boolean result = annotation.remove(annotationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>annotation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAnnotation() {
-    while (!annotation.isEmpty()) {
-      removeFromAnnotation(annotation.iterator().next());
-    }
   }
 
   /**

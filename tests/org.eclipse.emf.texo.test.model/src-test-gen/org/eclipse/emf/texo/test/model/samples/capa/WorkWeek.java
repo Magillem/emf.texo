@@ -55,51 +55,6 @@ public class WorkWeek extends Identifiable {
   }
 
   /**
-   * Adds to the <em>days</em> feature.
-   * 
-   * @param daysValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToDays(WorkDay daysValue) {
-    if (!days.contains(daysValue)) {
-      boolean result = days.add(daysValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>days</em> feature.
-   * 
-   * @param daysValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromDays(WorkDay daysValue) {
-    if (days.contains(daysValue)) {
-      boolean result = days.remove(daysValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>days</em> feature.
-   * 
-   * @generated
-   */
-  public void clearDays() {
-    while (!days.isEmpty()) {
-      removeFromDays(days.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link WorkWeek#getDays() <em>days</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

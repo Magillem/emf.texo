@@ -59,7 +59,7 @@ public class RequestModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case RequestModelPackage.ACTIONTYPE_CLASSIFIER_ID:
@@ -81,7 +81,7 @@ public class RequestModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -234,6 +234,13 @@ public class RequestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ActionType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -284,13 +291,13 @@ public class RequestModelFactory implements ModelFactory {
       switch (featureID) {
 
       case RequestModelPackage.ACTIONTYPE_UPDATE_FEATURE_ID:
-        return getTarget().addToUpdate(value);
+        return getTarget().getUpdate().add(value);
 
       case RequestModelPackage.ACTIONTYPE_INSERT_FEATURE_ID:
-        return getTarget().addToInsert(value);
+        return getTarget().getInsert().add(value);
 
       case RequestModelPackage.ACTIONTYPE_DELETE_FEATURE_ID:
-        return getTarget().addToDelete(value);
+        return getTarget().getDelete().add(value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -305,13 +312,13 @@ public class RequestModelFactory implements ModelFactory {
       switch (featureID) {
 
       case RequestModelPackage.ACTIONTYPE_UPDATE_FEATURE_ID:
-        return getTarget().removeFromUpdate((Object) value);
+        return getTarget().getUpdate().remove(value);
 
       case RequestModelPackage.ACTIONTYPE_INSERT_FEATURE_ID:
-        return getTarget().removeFromInsert((Object) value);
+        return getTarget().getInsert().remove(value);
 
       case RequestModelPackage.ACTIONTYPE_DELETE_FEATURE_ID:
-        return getTarget().removeFromDelete((Object) value);
+        return getTarget().getDelete().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -344,6 +351,13 @@ public class RequestModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return RequestModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DocumentRoot.class;
     }
 
     /**
@@ -469,6 +483,13 @@ public class RequestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return QueryType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -539,7 +560,7 @@ public class RequestModelFactory implements ModelFactory {
       switch (featureID) {
 
       case RequestModelPackage.QUERYTYPE_PARAMETERS_FEATURE_ID:
-        return getTarget().addToParameters((Parameter) value);
+        return getTarget().getParameters().add((Parameter) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -555,7 +576,7 @@ public class RequestModelFactory implements ModelFactory {
       switch (featureID) {
 
       case RequestModelPackage.QUERYTYPE_PARAMETERS_FEATURE_ID:
-        return getTarget().removeFromParameters((Parameter) value);
+        return getTarget().getParameters().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -589,6 +610,13 @@ public class RequestModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return RequestModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return QueryReferingObjectsType.class;
     }
 
     /**
@@ -687,6 +715,13 @@ public class RequestModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return RequestModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Parameter.class;
     }
 
     /**

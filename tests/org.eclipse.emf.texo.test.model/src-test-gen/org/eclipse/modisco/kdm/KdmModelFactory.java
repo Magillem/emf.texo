@@ -44,7 +44,7 @@ public class KdmModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
   }
 

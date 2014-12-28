@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orm:entity-mappings xmlns:orm="http://www.eclipse.org/eclipselink/xsds/persistence/orm" version="2.3">
+  <orm:persistence-unit-metadata>
+    <orm:persistence-unit-defaults>
+      <orm:delimited-identifiers/>
+    </orm:persistence-unit-defaults>
+  </orm:persistence-unit-metadata>
+  <orm:access>FIELD</orm:access>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz420913notbidirectional.Bz420913_NotBiDirectional_O" name="bz420913_NotBiDirectional_bz420913_NotBiDirectional_O">
+    <orm:table name="bz420913_NotBiDirectional_bz420913_NotBiDirectional_O"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:one-to-many name="multiBidirectional">
+        <orm:order-column name="bz420913_NotBiDirectional_bz420913_NotBiDirectinl__mltBdrctnl_nd"/>
+        <orm:join-table name="bz420913_NotBiDirectional_bz420913_NotBiDirectional_O_mltBdrctnl">
+          <orm:join-column name="bz420913_NotBiDirectional_bz420913_NotBiDirectional_O_mltBdrctnl"/>
+          <orm:inverse-join-column name="multiBidirectional_bz420913_NotBiDirectionl_bz420913_NtBDrctnl_T"/>
+        </orm:join-table>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-many>
+      <orm:one-to-one mapped-by="singleBidirectional" name="singleBidirectional">
+        <orm:join-column name="bz420913_NotBiDirectional_bz420913_NotBiDirectional__snglBdrctnl"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-one>
+    </orm:attributes>
+  </orm:entity>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz420913notbidirectional.Bz420913_NotBiDirectional_T" name="bz420913_NotBiDirectional_bz420913_NotBiDirectional_T">
+    <orm:table name="bz420913_NotBiDirectional_bz420913_NotBiDirectional_T"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:many-to-one name="multiBidirectional">
+        <orm:join-column name="bz420913_NotBiDirectional_bz420913_NotBiDirectional_T_mltBdrctnl"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+      <orm:one-to-one name="singleBidirectional">
+        <orm:join-column name="bz420913_NotBiDirectional_bz420913_NotBiDirectionl_T_snglBdrctnl"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-one>
+    </orm:attributes>
+  </orm:entity>
+</orm:entity-mappings>

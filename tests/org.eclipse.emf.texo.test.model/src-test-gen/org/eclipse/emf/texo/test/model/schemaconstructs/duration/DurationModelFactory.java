@@ -50,7 +50,7 @@ public class DurationModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case DurationModelPackage.DURATIONTEST_CLASSIFIER_ID:
@@ -60,7 +60,7 @@ public class DurationModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -160,6 +160,13 @@ public class DurationModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return DurationModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DurationTest.class;
     }
 
     /**

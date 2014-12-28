@@ -65,7 +65,7 @@ public class PlayModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case PlayModelPackage.ACTTYPE_CLASSIFIER_ID:
@@ -96,7 +96,7 @@ public class PlayModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -370,6 +370,13 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ActType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -420,7 +427,7 @@ public class PlayModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlayModelPackage.ACTTYPE_SCENE_FEATURE_ID:
-        return getTarget().addToScene((SceneType) value);
+        return getTarget().getScene().add((SceneType) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -436,7 +443,7 @@ public class PlayModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlayModelPackage.ACTTYPE_SCENE_FEATURE_ID:
-        return getTarget().removeFromScene((SceneType) value);
+        return getTarget().getScene().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -470,6 +477,13 @@ public class PlayModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlayModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SceneType.class;
     }
 
     /**
@@ -597,6 +611,13 @@ public class PlayModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlayModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DocumentRoot.class;
     }
 
     /**
@@ -786,6 +807,13 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return FmType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -874,6 +902,13 @@ public class PlayModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlayModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return PersonaeType.class;
     }
 
     /**
@@ -1004,6 +1039,13 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PersonaGroupType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1104,6 +1146,13 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PlayType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1169,7 +1218,7 @@ public class PlayModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlayModelPackage.PLAYTYPE_ACT_FEATURE_ID:
-        return getTarget().addToAct((ActType) value);
+        return getTarget().getAct().add((ActType) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1184,7 +1233,7 @@ public class PlayModelFactory implements ModelFactory {
       switch (featureID) {
 
       case PlayModelPackage.PLAYTYPE_ACT_FEATURE_ID:
-        return getTarget().removeFromAct((ActType) value);
+        return getTarget().getAct().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1217,6 +1266,13 @@ public class PlayModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return PlayModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SpeechType.class;
     }
 
     /**

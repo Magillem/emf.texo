@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bz420913_NotBiDirectional" nsURI="http://www.eclipse.org/emf/texo/test/model/issues/bz420913_NotBiDirectional"
+    nsPrefix="bz420913_NotBiDirectional">
+  <eClassifiers xsi:type="ecore:EClass" name="bz420913_NotBiDirectional_O" eSuperTypes="http://www.eclipse.org/emf/texo/test/model/base/identifiable#//Identifiable">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="singleBidirectional" eType="#//bz420913_NotBiDirectional_T"
+        eOpposite="#//bz420913_NotBiDirectional_T/singleBidirectional">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="singleBidirectional"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="multiBidirectional" upperBound="-1"
+        eType="#//bz420913_NotBiDirectional_T" eOpposite="#//bz420913_NotBiDirectional_T/multiBidirectional">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="multiBidirectional"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="bz420913_NotBiDirectional_T" eSuperTypes="http://www.eclipse.org/emf/texo/test/model/base/identifiable#//Identifiable">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="singleBidirectional" eType="#//bz420913_NotBiDirectional_O"
+        eOpposite="#//bz420913_NotBiDirectional_O/singleBidirectional">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="singleBidirectional"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="multiBidirectional" eType="#//bz420913_NotBiDirectional_O"
+        eOpposite="#//bz420913_NotBiDirectional_O/multiBidirectional">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="multiBidirectional"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

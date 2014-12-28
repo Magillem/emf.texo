@@ -85,7 +85,17 @@ public class RentalCar extends RentalUnit {
    * @generated
    */
   public void setCurrentDriver(RentalCarDriver newCurrentDriver) {
-    currentDriver = newCurrentDriver;
+    if (currentDriver != newCurrentDriver) {
+      if (currentDriver != null) {
+        RentalCarDriver tempCurrentDriver = currentDriver;
+        currentDriver = null;
+        tempCurrentDriver.setCurrentRentalCar(null);
+      }
+      currentDriver = newCurrentDriver;
+      if (currentDriver != null) {
+        currentDriver.setCurrentRentalCar(this);
+      }
+    }
   }
 
   /**

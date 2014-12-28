@@ -52,51 +52,6 @@ public class EnumeratedType extends Datatype {
   }
 
   /**
-   * Adds to the <em>value</em> feature.
-   * 
-   * @param valueValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToValue(Value valueValue) {
-    if (!value.contains(valueValue)) {
-      boolean result = value.add(valueValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>value</em> feature.
-   * 
-   * @param valueValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromValue(Value valueValue) {
-    if (value.contains(valueValue)) {
-      boolean result = value.remove(valueValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>value</em> feature.
-   * 
-   * @generated
-   */
-  public void clearValue() {
-    while (!value.isEmpty()) {
-      removeFromValue(value.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link EnumeratedType#getValue() <em>value</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -119,51 +74,6 @@ public class EnumeratedType extends Datatype {
    */
   public List<CodeItem> getCodeElement() {
     return codeElement;
-  }
-
-  /**
-   * Adds to the <em>codeElement</em> feature.
-   * 
-   * @param codeElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToCodeElement(CodeItem codeElementValue) {
-    if (!codeElement.contains(codeElementValue)) {
-      boolean result = codeElement.add(codeElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>codeElement</em> feature.
-   * 
-   * @param codeElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromCodeElement(CodeItem codeElementValue) {
-    if (codeElement.contains(codeElementValue)) {
-      boolean result = codeElement.remove(codeElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>codeElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearCodeElement() {
-    while (!codeElement.isEmpty()) {
-      removeFromCodeElement(codeElement.iterator().next());
-    }
   }
 
   /**

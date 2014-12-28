@@ -89,50 +89,6 @@ public class Department extends Identifiable {
   }
 
   /**
-   * Adds to the <em>employees</em> feature.
-   * 
-   * @param employeesValue
-   *          value to add
-   * @return true if added, false otherwise
-   * 
-   * @generated
-   */
-  public boolean addToEmployees(Employee employeesValue) {
-    if (!employees.contains(employeesValue)) {
-      employees.add(employeesValue);
-      return true;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>employees</em> feature.
-   * 
-   * @param employeesValue
-   *          value to remove
-   * @return true if removed, false otherwise
-   * @generated
-   */
-  public boolean removeFromEmployees(Employee employeesValue) {
-    if (employees.contains(employeesValue)) {
-      employees.remove(employeesValue);
-      return true;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>employees</em> feature.
-   * 
-   * @generated
-   */
-  public void clearEmployees() {
-    while (!employees.isEmpty()) {
-      removeFromEmployees(employees.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Department#getEmployees() <em>employees</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -45,51 +45,6 @@ public abstract class PropertyContainer extends Identifiable {
   }
 
   /**
-   * Adds to the <em>properties</em> feature.
-   * 
-   * @param propertiesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToProperties(Property propertiesValue) {
-    if (!properties.contains(propertiesValue)) {
-      boolean result = properties.add(propertiesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>properties</em> feature.
-   * 
-   * @param propertiesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromProperties(Property propertiesValue) {
-    if (properties.contains(propertiesValue)) {
-      boolean result = properties.remove(propertiesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>properties</em> feature.
-   * 
-   * @generated
-   */
-  public void clearProperties() {
-    while (!properties.isEmpty()) {
-      removeFromProperties(properties.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link PropertyContainer#getProperties() <em>properties</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

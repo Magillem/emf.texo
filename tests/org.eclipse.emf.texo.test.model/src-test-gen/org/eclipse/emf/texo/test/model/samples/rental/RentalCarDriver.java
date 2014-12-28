@@ -85,7 +85,17 @@ public class RentalCarDriver extends Identifiable {
    * @generated
    */
   public void setCurrentRentalCar(RentalCar newCurrentRentalCar) {
-    currentRentalCar = newCurrentRentalCar;
+    if (currentRentalCar != newCurrentRentalCar) {
+      if (currentRentalCar != null) {
+        RentalCar tempCurrentRentalCar = currentRentalCar;
+        currentRentalCar = null;
+        tempCurrentRentalCar.setCurrentDriver(null);
+      }
+      currentRentalCar = newCurrentRentalCar;
+      if (currentRentalCar != null) {
+        currentRentalCar.setCurrentDriver(this);
+      }
+    }
   }
 
   /**

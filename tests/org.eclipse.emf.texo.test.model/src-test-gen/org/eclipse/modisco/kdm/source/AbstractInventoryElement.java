@@ -43,51 +43,6 @@ public abstract class AbstractInventoryElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>inventoryRelationship</em> feature.
-   * 
-   * @param inventoryRelationshipValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToInventoryRelationship(AbstractInventoryRelationship inventoryRelationshipValue) {
-    if (!inventoryRelationship.contains(inventoryRelationshipValue)) {
-      boolean result = inventoryRelationship.add(inventoryRelationshipValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>inventoryRelationship</em> feature.
-   * 
-   * @param inventoryRelationshipValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromInventoryRelationship(AbstractInventoryRelationship inventoryRelationshipValue) {
-    if (inventoryRelationship.contains(inventoryRelationshipValue)) {
-      boolean result = inventoryRelationship.remove(inventoryRelationshipValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>inventoryRelationship</em> feature.
-   * 
-   * @generated
-   */
-  public void clearInventoryRelationship() {
-    while (!inventoryRelationship.isEmpty()) {
-      removeFromInventoryRelationship(inventoryRelationship.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractInventoryElement#getInventoryRelationship() <em>inventoryRelationship</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -44,51 +44,6 @@ public class CodeModel extends KDMModel {
   }
 
   /**
-   * Adds to the <em>codeElement</em> feature.
-   * 
-   * @param codeElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToCodeElement(AbstractCodeElement codeElementValue) {
-    if (!codeElement.contains(codeElementValue)) {
-      boolean result = codeElement.add(codeElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>codeElement</em> feature.
-   * 
-   * @param codeElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromCodeElement(AbstractCodeElement codeElementValue) {
-    if (codeElement.contains(codeElementValue)) {
-      boolean result = codeElement.remove(codeElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>codeElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearCodeElement() {
-    while (!codeElement.isEmpty()) {
-      removeFromCodeElement(codeElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link CodeModel#getCodeElement() <em>codeElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

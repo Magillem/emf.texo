@@ -46,51 +46,6 @@ public class BooksType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>book</em> feature.
-   * 
-   * @param bookValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBook(BookType bookValue) {
-    if (!book.contains(bookValue)) {
-      boolean result = book.add(bookValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>book</em> feature.
-   * 
-   * @param bookValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBook(BookType bookValue) {
-    if (book.contains(bookValue)) {
-      boolean result = book.remove(bookValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>book</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBook() {
-    while (!book.isEmpty()) {
-      removeFromBook(book.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link BooksType#getBook() <em>book</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

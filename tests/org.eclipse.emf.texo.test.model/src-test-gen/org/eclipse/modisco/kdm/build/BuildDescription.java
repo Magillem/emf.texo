@@ -52,51 +52,6 @@ public class BuildDescription extends BuildResource {
   }
 
   /**
-   * Adds to the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToSource(SourceRef sourceValue) {
-    if (!source.contains(sourceValue)) {
-      boolean result = source.add(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromSource(SourceRef sourceValue) {
-    if (source.contains(sourceValue)) {
-      boolean result = source.remove(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>source</em> feature.
-   * 
-   * @generated
-   */
-  public void clearSource() {
-    while (!source.isEmpty()) {
-      removeFromSource(source.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link BuildDescription#getSource() <em>source</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

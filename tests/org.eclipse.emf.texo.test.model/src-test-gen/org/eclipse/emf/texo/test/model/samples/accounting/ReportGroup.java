@@ -99,51 +99,6 @@ public class ReportGroup extends Identifiable {
   }
 
   /**
-   * Adds to the <em>reportGroup</em> feature.
-   * 
-   * @param reportGroupValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToReportGroup(ReportGroup reportGroupValue) {
-    if (!reportGroup.contains(reportGroupValue)) {
-      boolean result = reportGroup.add(reportGroupValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>reportGroup</em> feature.
-   * 
-   * @param reportGroupValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromReportGroup(ReportGroup reportGroupValue) {
-    if (reportGroup.contains(reportGroupValue)) {
-      boolean result = reportGroup.remove(reportGroupValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>reportGroup</em> feature.
-   * 
-   * @generated
-   */
-  public void clearReportGroup() {
-    while (!reportGroup.isEmpty()) {
-      removeFromReportGroup(reportGroup.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ReportGroup#getReportGroup() <em>reportGroup</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -166,51 +121,6 @@ public class ReportGroup extends Identifiable {
    */
   public List<BalanceAccount> getAccount() {
     return account;
-  }
-
-  /**
-   * Adds to the <em>account</em> feature.
-   * 
-   * @param accountValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAccount(BalanceAccount accountValue) {
-    if (!account.contains(accountValue)) {
-      boolean result = account.add(accountValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>account</em> feature.
-   * 
-   * @param accountValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAccount(BalanceAccount accountValue) {
-    if (account.contains(accountValue)) {
-      boolean result = account.remove(accountValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>account</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAccount() {
-    while (!account.isEmpty()) {
-      removeFromAccount(account.iterator().next());
-    }
   }
 
   /**

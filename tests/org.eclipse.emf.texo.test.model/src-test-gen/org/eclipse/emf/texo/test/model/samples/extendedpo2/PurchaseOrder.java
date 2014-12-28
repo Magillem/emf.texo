@@ -124,6 +124,7 @@ public class PurchaseOrder extends Identifiable {
   public boolean addToItems(Item itemsValue) {
     if (!items.contains(itemsValue)) {
       boolean result = items.add(itemsValue);
+      itemsValue.setOrder(this);
       return result;
     }
     return false;
@@ -142,6 +143,7 @@ public class PurchaseOrder extends Identifiable {
   public boolean removeFromItems(Item itemsValue) {
     if (items.contains(itemsValue)) {
       boolean result = items.remove(itemsValue);
+      itemsValue.setOrder(null);
       return result;
     }
     return false;
@@ -168,7 +170,10 @@ public class PurchaseOrder extends Identifiable {
    * @generated
    */
   public void setItems(List<Item> newItems) {
-    items = newItems;
+    clearItems();
+    for (Item value : newItems) {
+      addToItems(value);
+    }
   }
 
   /**
@@ -333,7 +338,15 @@ public class PurchaseOrder extends Identifiable {
    * @generated
    */
   public void setCustomer(Customer newCustomer) {
-    customer = newCustomer;
+    if (customer != newCustomer) {
+      if (customer != null) {
+        customer.removeFromOrders(this);
+      }
+      customer = newCustomer;
+      if (customer != null) {
+        customer.addToOrders(this);
+      }
+    }
   }
 
   /**

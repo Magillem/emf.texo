@@ -43,51 +43,6 @@ public class DeployedComponent extends AbstractPlatformElement {
   }
 
   /**
-   * Adds to the <em>groupedCode</em> feature.
-   * 
-   * @param groupedCodeValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToGroupedCode(Module groupedCodeValue) {
-    if (!groupedCode.contains(groupedCodeValue)) {
-      boolean result = groupedCode.add(groupedCodeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>groupedCode</em> feature.
-   * 
-   * @param groupedCodeValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromGroupedCode(Module groupedCodeValue) {
-    if (groupedCode.contains(groupedCodeValue)) {
-      boolean result = groupedCode.remove(groupedCodeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>groupedCode</em> feature.
-   * 
-   * @generated
-   */
-  public void clearGroupedCode() {
-    while (!groupedCode.isEmpty()) {
-      removeFromGroupedCode(groupedCode.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link DeployedComponent#getGroupedCode() <em>groupedCode</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

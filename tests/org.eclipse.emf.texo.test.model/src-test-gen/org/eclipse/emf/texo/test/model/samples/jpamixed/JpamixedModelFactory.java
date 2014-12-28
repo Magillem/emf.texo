@@ -57,7 +57,7 @@ public class JpamixedModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case JpamixedModelPackage.DOCUMENTROOT_CLASSIFIER_ID:
@@ -73,7 +73,7 @@ public class JpamixedModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -222,6 +222,13 @@ public class JpamixedModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DocumentRoot.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -327,6 +334,13 @@ public class JpamixedModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return JpamixedModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return LetterBodyType.class;
     }
 
     /**
@@ -442,6 +456,13 @@ public class JpamixedModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return JpamixedModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SalutationType.class;
     }
 
     /**

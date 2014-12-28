@@ -70,51 +70,6 @@ public abstract class AbstractConceptualElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToSource(SourceRef sourceValue) {
-    if (!source.contains(sourceValue)) {
-      boolean result = source.add(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromSource(SourceRef sourceValue) {
-    if (source.contains(sourceValue)) {
-      boolean result = source.remove(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>source</em> feature.
-   * 
-   * @generated
-   */
-  public void clearSource() {
-    while (!source.isEmpty()) {
-      removeFromSource(source.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractConceptualElement#getSource() <em>source</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -137,51 +92,6 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public Set<KDMEntity> getImplementation() {
     return implementation;
-  }
-
-  /**
-   * Adds to the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToImplementation(KDMEntity implementationValue) {
-    if (!implementation.contains(implementationValue)) {
-      boolean result = implementation.add(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromImplementation(KDMEntity implementationValue) {
-    if (implementation.contains(implementationValue)) {
-      boolean result = implementation.remove(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>implementation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearImplementation() {
-    while (!implementation.isEmpty()) {
-      removeFromImplementation(implementation.iterator().next());
-    }
   }
 
   /**
@@ -210,51 +120,6 @@ public abstract class AbstractConceptualElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>conceptualRelation</em> feature.
-   * 
-   * @param conceptualRelationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToConceptualRelation(AbstractConceptualRelationship conceptualRelationValue) {
-    if (!conceptualRelation.contains(conceptualRelationValue)) {
-      boolean result = conceptualRelation.add(conceptualRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>conceptualRelation</em> feature.
-   * 
-   * @param conceptualRelationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromConceptualRelation(AbstractConceptualRelationship conceptualRelationValue) {
-    if (conceptualRelation.contains(conceptualRelationValue)) {
-      boolean result = conceptualRelation.remove(conceptualRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>conceptualRelation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearConceptualRelation() {
-    while (!conceptualRelation.isEmpty()) {
-      removeFromConceptualRelation(conceptualRelation.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractConceptualElement#getConceptualRelation() <em>conceptualRelation</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -278,51 +143,6 @@ public abstract class AbstractConceptualElement extends KDMEntity {
    */
   public Set<ActionElement> getAbstraction() {
     return abstraction;
-  }
-
-  /**
-   * Adds to the <em>abstraction</em> feature.
-   * 
-   * @param abstractionValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAbstraction(ActionElement abstractionValue) {
-    if (!abstraction.contains(abstractionValue)) {
-      boolean result = abstraction.add(abstractionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>abstraction</em> feature.
-   * 
-   * @param abstractionValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAbstraction(ActionElement abstractionValue) {
-    if (abstraction.contains(abstractionValue)) {
-      boolean result = abstraction.remove(abstractionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>abstraction</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAbstraction() {
-    while (!abstraction.isEmpty()) {
-      removeFromAbstraction(abstraction.iterator().next());
-    }
   }
 
   /**

@@ -144,51 +144,6 @@ public class TestAny extends Identifiable {
   }
 
   /**
-   * Adds to the <em>multiAnyType</em> feature.
-   * 
-   * @param multiAnyTypeValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToMultiAnyType(Object multiAnyTypeValue) {
-    if (!multiAnyType.contains(multiAnyTypeValue)) {
-      boolean result = multiAnyType.add(multiAnyTypeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>multiAnyType</em> feature.
-   * 
-   * @param multiAnyTypeValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromMultiAnyType(Object multiAnyTypeValue) {
-    if (multiAnyType.contains(multiAnyTypeValue)) {
-      boolean result = multiAnyType.remove(multiAnyTypeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>multiAnyType</em> feature.
-   * 
-   * @generated
-   */
-  public void clearMultiAnyType() {
-    while (!multiAnyType.isEmpty()) {
-      removeFromMultiAnyType(multiAnyType.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link TestAny#getMultiAnyType() <em>multiAnyType</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

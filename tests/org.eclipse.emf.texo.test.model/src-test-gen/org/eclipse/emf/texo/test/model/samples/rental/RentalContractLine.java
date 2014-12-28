@@ -72,7 +72,15 @@ public class RentalContractLine extends Identifiable {
    * @generated
    */
   public void setRentalContract(RentalContract newRentalContract) {
-    rentalContract = newRentalContract;
+    if (rentalContract != newRentalContract) {
+      if (rentalContract != null) {
+        rentalContract.removeFromRentalContractLines(this);
+      }
+      rentalContract = newRentalContract;
+      if (rentalContract != null) {
+        rentalContract.addToRentalContractLines(this);
+      }
+    }
   }
 
   /**

@@ -67,7 +67,7 @@ public class AccountingModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case AccountingModelPackage.ACCOUNTING_CLASSIFIER_ID:
@@ -104,7 +104,7 @@ public class AccountingModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -323,6 +323,13 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AccountingClass.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -388,13 +395,13 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTING_ACCOUNTGROUP_FEATURE_ID:
-        return getTarget().addToAccountGroup((AccountGroup) value);
+        return getTarget().getAccountGroup().add((AccountGroup) value);
 
       case AccountingModelPackage.ACCOUNTING_VAT_FEATURE_ID:
-        return getTarget().addToVat((Vat) value);
+        return getTarget().getVat().add((Vat) value);
 
       case AccountingModelPackage.ACCOUNTING_JOURNALGROUP_FEATURE_ID:
-        return getTarget().addToJournalGroup((JournalGroup) value);
+        return getTarget().getJournalGroup().add((JournalGroup) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -409,13 +416,13 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTING_ACCOUNTGROUP_FEATURE_ID:
-        return getTarget().removeFromAccountGroup((AccountGroup) value);
+        return getTarget().getAccountGroup().remove(value);
 
       case AccountingModelPackage.ACCOUNTING_VAT_FEATURE_ID:
-        return getTarget().removeFromVat((Vat) value);
+        return getTarget().getVat().remove(value);
 
       case AccountingModelPackage.ACCOUNTING_JOURNALGROUP_FEATURE_ID:
-        return getTarget().removeFromJournalGroup((JournalGroup) value);
+        return getTarget().getJournalGroup().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -447,6 +454,13 @@ public class AccountingModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return AccountingModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Account.class;
     }
 
     /**
@@ -540,6 +554,13 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AccountGroup.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -585,7 +606,7 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTGROUP_ACCOUNT_FEATURE_ID:
-        return getTarget().addToAccount((Account) value);
+        return getTarget().getAccount().add((Account) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -600,7 +621,7 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.ACCOUNTGROUP_ACCOUNT_FEATURE_ID:
-        return getTarget().removeFromAccount((Account) value);
+        return getTarget().getAccount().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -632,6 +653,13 @@ public class AccountingModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return AccountingModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Vat.class;
     }
 
     /**
@@ -729,6 +757,13 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BalanceAccount.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -771,7 +806,7 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.BALANCEACCOUNT_REPORT_FEATURE_ID:
-        return getTarget().addToReport((ReportGroup) value);
+        return getTarget().getReport().add((ReportGroup) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -786,7 +821,7 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.BALANCEACCOUNT_REPORT_FEATURE_ID:
-        return getTarget().removeFromReport((ReportGroup) value);
+        return getTarget().getReport().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -818,6 +853,13 @@ public class AccountingModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return AccountingModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Report.class;
     }
 
     /**
@@ -921,6 +963,13 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return JournalGroup.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -971,10 +1020,10 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALGROUPS_FEATURE_ID:
-        return getTarget().addToJournalGroups((JournalGroup) value);
+        return getTarget().getJournalGroups().add((JournalGroup) value);
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALSTATEMENTS_FEATURE_ID:
-        return getTarget().addToJournalStatements((JournalStatement) value);
+        return getTarget().getJournalStatements().add((JournalStatement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -989,10 +1038,10 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALGROUPS_FEATURE_ID:
-        return getTarget().removeFromJournalGroups((JournalGroup) value);
+        return getTarget().getJournalGroups().remove(value);
 
       case AccountingModelPackage.JOURNALGROUP_JOURNALSTATEMENTS_FEATURE_ID:
-        return getTarget().removeFromJournalStatements((JournalStatement) value);
+        return getTarget().getJournalStatements().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1025,6 +1074,13 @@ public class AccountingModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return AccountingModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ReportGroup.class;
     }
 
     /**
@@ -1080,10 +1136,10 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.REPORTGROUP_REPORTGROUP_FEATURE_ID:
-        return getTarget().addToReportGroup((ReportGroup) value);
+        return getTarget().getReportGroup().add((ReportGroup) value);
 
       case AccountingModelPackage.REPORTGROUP_ACCOUNT_FEATURE_ID:
-        return getTarget().addToAccount((BalanceAccount) value);
+        return getTarget().getAccount().add((BalanceAccount) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1098,10 +1154,10 @@ public class AccountingModelFactory implements ModelFactory {
       switch (featureID) {
 
       case AccountingModelPackage.REPORTGROUP_REPORTGROUP_FEATURE_ID:
-        return getTarget().removeFromReportGroup((ReportGroup) value);
+        return getTarget().getReportGroup().remove(value);
 
       case AccountingModelPackage.REPORTGROUP_ACCOUNT_FEATURE_ID:
-        return getTarget().removeFromAccount((BalanceAccount) value);
+        return getTarget().getAccount().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1133,6 +1189,13 @@ public class AccountingModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return AccountingModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return JournalStatement.class;
     }
 
     /**
@@ -1245,6 +1308,13 @@ public class AccountingModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return AccountingModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return PLAccount.class;
     }
 
     /**

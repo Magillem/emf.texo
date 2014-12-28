@@ -66,7 +66,7 @@ public class KdmModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case KdmModelPackage.ATTRIBUTE_CLASSIFIER_ID:
@@ -109,7 +109,7 @@ public class KdmModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -293,6 +293,13 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Attribute.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -389,6 +396,13 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Annotation.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -480,6 +494,13 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Stereotype.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -534,7 +555,7 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.STEREOTYPE_TAG_FEATURE_ID:
-        return getTarget().addToTag((TagDefinition) value);
+        return getTarget().getTag().add((TagDefinition) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -550,7 +571,7 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.STEREOTYPE_TAG_FEATURE_ID:
-        return getTarget().removeFromTag((TagDefinition) value);
+        return getTarget().getTag().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -583,6 +604,13 @@ public class KdmModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return KdmModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ExtendedValue.class;
     }
 
     /**
@@ -674,6 +702,13 @@ public class KdmModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return KdmModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return KDMModel.class;
     }
 
     /**
@@ -778,6 +813,13 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return KDMFramework.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -836,10 +878,10 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.KDMFRAMEWORK_AUDIT_FEATURE_ID:
-        return getTarget().addToAudit((Audit) value);
+        return getTarget().getAudit().add((Audit) value);
 
       case KdmModelPackage.KDMFRAMEWORK_EXTENSION_FEATURE_ID:
-        return getTarget().addToExtension((ExtensionFamily) value);
+        return getTarget().getExtension().add((ExtensionFamily) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -855,10 +897,10 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.KDMFRAMEWORK_AUDIT_FEATURE_ID:
-        return getTarget().removeFromAudit((Audit) value);
+        return getTarget().getAudit().remove(value);
 
       case KdmModelPackage.KDMFRAMEWORK_EXTENSION_FEATURE_ID:
-        return getTarget().removeFromExtension((ExtensionFamily) value);
+        return getTarget().getExtension().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -891,6 +933,13 @@ public class KdmModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return KdmModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Audit.class;
     }
 
     /**
@@ -998,6 +1047,13 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ExtensionFamily.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1047,7 +1103,7 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.EXTENSIONFAMILY_STEREOTYPE_FEATURE_ID:
-        return getTarget().addToStereotype((Stereotype) value);
+        return getTarget().getStereotype().add((Stereotype) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -1063,7 +1119,7 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.EXTENSIONFAMILY_STEREOTYPE_FEATURE_ID:
-        return getTarget().removeFromStereotype((Stereotype) value);
+        return getTarget().getStereotype().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -1096,6 +1152,13 @@ public class KdmModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return KdmModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Segment.class;
     }
 
     /**
@@ -1160,10 +1223,10 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.SEGMENT_SEGMENT_FEATURE_ID:
-        return getTarget().addToSegment((Segment) value);
+        return getTarget().getSegment().add((Segment) value);
 
       case KdmModelPackage.SEGMENT_MODEL_FEATURE_ID:
-        return getTarget().addToModel((KDMModel) value);
+        return getTarget().getModel().add((KDMModel) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1178,10 +1241,10 @@ public class KdmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case KdmModelPackage.SEGMENT_SEGMENT_FEATURE_ID:
-        return getTarget().removeFromSegment((Segment) value);
+        return getTarget().getSegment().remove(value);
 
       case KdmModelPackage.SEGMENT_MODEL_FEATURE_ID:
-        return getTarget().removeFromModel((KDMModel) value);
+        return getTarget().getModel().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1213,6 +1276,13 @@ public class KdmModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return KdmModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return TagDefinition.class;
     }
 
     /**
@@ -1314,6 +1384,13 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return TaggedValue.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1402,6 +1479,13 @@ public class KdmModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return KdmModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return TaggedRef.class;
     }
 
     /**

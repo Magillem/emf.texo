@@ -71,7 +71,7 @@ public class WorkflowModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case WorkflowModelPackage.CONDITIONALOUTPUTPORT_CLASSIFIER_ID:
@@ -123,7 +123,7 @@ public class WorkflowModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -338,6 +338,13 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ConditionalOutputPort.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -443,6 +450,13 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Workflow.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -507,13 +521,13 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.WORKFLOW_NODES_FEATURE_ID:
-        return getTarget().addToNodes((WorkflowNode) value);
+        return getTarget().getNodes().add((WorkflowNode) value);
 
       case WorkflowModelPackage.WORKFLOW_EDGES_FEATURE_ID:
-        return getTarget().addToEdges((Edge) value);
+        return getTarget().getEdges().add((Edge) value);
 
       case WorkflowModelPackage.WORKFLOW_COMMENTS_FEATURE_ID:
-        return getTarget().addToComments((Comment) value);
+        return getTarget().getComments().add((Comment) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -528,13 +542,13 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.WORKFLOW_NODES_FEATURE_ID:
-        return getTarget().removeFromNodes((WorkflowNode) value);
+        return getTarget().getNodes().remove(value);
 
       case WorkflowModelPackage.WORKFLOW_EDGES_FEATURE_ID:
-        return getTarget().removeFromEdges((Edge) value);
+        return getTarget().getEdges().remove(value);
 
       case WorkflowModelPackage.WORKFLOW_COMMENTS_FEATURE_ID:
-        return getTarget().removeFromComments((Comment) value);
+        return getTarget().getComments().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -567,6 +581,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return WorkflowElement.class;
     }
 
     /**
@@ -689,6 +710,13 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return WorkflowNode.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -763,10 +791,10 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.WORKFLOWNODE_OUTPUTS_FEATURE_ID:
-        return getTarget().addToOutputs((OutputPort) value);
+        return getTarget().getOutputs().add((OutputPort) value);
 
       case WorkflowModelPackage.WORKFLOWNODE_INPUTS_FEATURE_ID:
-        return getTarget().addToInputs((InputPort) value);
+        return getTarget().getInputs().add((InputPort) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -782,10 +810,10 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.WORKFLOWNODE_OUTPUTS_FEATURE_ID:
-        return getTarget().removeFromOutputs((OutputPort) value);
+        return getTarget().getOutputs().remove(value);
 
       case WorkflowModelPackage.WORKFLOWNODE_INPUTS_FEATURE_ID:
-        return getTarget().removeFromInputs((InputPort) value);
+        return getTarget().getInputs().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -818,6 +846,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Edge.class;
     }
 
     /**
@@ -934,6 +969,13 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Comment.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1035,6 +1077,13 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return OutputPort.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1094,7 +1143,7 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.OUTPUTPORT_EDGES_FEATURE_ID:
-        return getTarget().addToEdges((Edge) value);
+        return getTarget().getEdges().add((Edge) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1109,7 +1158,7 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.OUTPUTPORT_EDGES_FEATURE_ID:
-        return getTarget().removeFromEdges((Edge) value);
+        return getTarget().getEdges().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1141,6 +1190,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Port.class;
     }
 
     /**
@@ -1240,6 +1296,13 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return InputPort.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1299,7 +1362,7 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.INPUTPORT_EDGES_FEATURE_ID:
-        return getTarget().addToEdges((Edge) value);
+        return getTarget().getEdges().add((Edge) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1314,7 +1377,7 @@ public class WorkflowModelFactory implements ModelFactory {
       switch (featureID) {
 
       case WorkflowModelPackage.INPUTPORT_EDGES_FEATURE_ID:
-        return getTarget().removeFromEdges((Edge) value);
+        return getTarget().getEdges().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1346,6 +1409,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Fault.class;
     }
 
     /**
@@ -1444,6 +1514,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CompoundTask.class;
     }
 
     /**
@@ -1554,6 +1631,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return TransformationTask.class;
     }
 
     /**
@@ -1670,6 +1754,13 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ConditionalTask.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1769,6 +1860,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return LoopTask.class;
     }
 
     /**
@@ -1882,6 +1980,13 @@ public class WorkflowModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return WorkflowModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Task.class;
     }
 
     /**

@@ -109,7 +109,7 @@ public class ModelModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ModelModelPackage.SIMCARD_CLASSIFIER_ID:
@@ -215,7 +215,7 @@ public class ModelModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -882,6 +882,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SimCard.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -970,6 +977,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SimContract.class;
     }
 
     /**
@@ -1078,6 +1092,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PaymentInfo.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1162,6 +1183,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SimCardXSimContract.class;
     }
 
     /**
@@ -1259,6 +1287,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SimTariff.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1346,6 +1381,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Tariff.class;
     }
 
     /**
@@ -1447,6 +1489,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return PaymentItem.class;
     }
 
     /**
@@ -1559,6 +1608,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return VolumePayment.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1665,6 +1721,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PeriodicalPayment.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1762,6 +1825,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return OneTimePayment.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1847,6 +1917,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Service.class;
     }
 
     /**
@@ -1959,6 +2036,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Units.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2046,6 +2130,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Price.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2122,6 +2213,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CarProducer.class;
     }
 
     /**
@@ -2215,6 +2313,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return CarModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2303,6 +2408,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CarRegInfo.class;
     }
 
     /**
@@ -2448,6 +2560,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Document.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2541,6 +2660,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Person.class;
     }
 
     /**
@@ -2670,6 +2796,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Car.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2763,6 +2896,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CarPassport.class;
     }
 
     /**
@@ -2870,6 +3010,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Phone.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2957,6 +3104,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Address.class;
     }
 
     /**
@@ -3080,6 +3234,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Passport.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3183,6 +3344,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DrivingLicense.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3281,6 +3449,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Contract.class;
     }
 
     /**
@@ -3396,6 +3571,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SecretQuestion.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3503,6 +3685,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ClientTariff.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3591,6 +3780,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ContractPackage.class;
     }
 
     /**
@@ -3685,6 +3881,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return User.class;
     }
 
     /**
@@ -3788,6 +3991,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return UserGroup.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -3863,6 +4073,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Message.class;
     }
 
     /**
@@ -3975,6 +4192,13 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Event.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -4068,6 +4292,13 @@ public class ModelModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ModelModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Coordinates.class;
     }
 
     /**

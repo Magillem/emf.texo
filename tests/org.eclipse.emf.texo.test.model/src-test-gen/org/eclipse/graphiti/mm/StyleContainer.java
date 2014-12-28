@@ -29,7 +29,7 @@ public abstract class StyleContainer extends Identifiable {
    * 
    * @generated
    */
-  @OneToMany(cascade = { CascadeType.ALL }, mappedBy = "styleContainer")
+  @OneToMany(cascade = { CascadeType.ALL })
   private Set<Style> styles = new HashSet<Style>();
 
   /**
@@ -42,51 +42,6 @@ public abstract class StyleContainer extends Identifiable {
    */
   public Set<Style> getStyles() {
     return styles;
-  }
-
-  /**
-   * Adds to the <em>styles</em> feature.
-   * 
-   * @param stylesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToStyles(Style stylesValue) {
-    if (!styles.contains(stylesValue)) {
-      boolean result = styles.add(stylesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>styles</em> feature.
-   * 
-   * @param stylesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromStyles(Style stylesValue) {
-    if (styles.contains(stylesValue)) {
-      boolean result = styles.remove(stylesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>styles</em> feature.
-   * 
-   * @generated
-   */
-  public void clearStyles() {
-    while (!styles.isEmpty()) {
-      removeFromStyles(styles.iterator().next());
-    }
   }
 
   /**

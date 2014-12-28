@@ -53,6 +53,70 @@ public abstract class KDMModel extends KDMFramework {
   }
 
   /**
+   * Adds to the <em>ownedElement</em> feature.
+   *
+   * @param ownedElementValue
+   *          the value to add
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
+   * @generated
+   */
+  public boolean addToOwnedElement(KDMEntity ownedElementValue) {
+    if (!ownedElement.contains(ownedElementValue)) {
+      boolean result = ownedElement.add(ownedElementValue);
+      ownedElementValue.setModel(this);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Removes from the <em>ownedElement</em> feature.
+   *
+   * @param ownedElementValue
+   *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
+   *
+   * @generated
+   */
+  public boolean removeFromOwnedElement(KDMEntity ownedElementValue) {
+    if (ownedElement.contains(ownedElementValue)) {
+      boolean result = ownedElement.remove(ownedElementValue);
+      ownedElementValue.setModel(null);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Clears the <em>ownedElement</em> feature.
+   * 
+   * @generated
+   */
+  public void clearOwnedElement() {
+    while (!ownedElement.isEmpty()) {
+      removeFromOwnedElement(ownedElement.iterator().next());
+    }
+  }
+
+  /**
+   * Sets the '{@link KDMModel#getOwnedElement() <em>ownedElement</em>}' feature.
+   *
+   * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> Instances of KDM entities owned by the
+   * model. Each KDM model defines specific subclasses of KDMEntity class. <!-- end-model-doc -->
+   * 
+   * @param newOwnedElement
+   *          the new value of the '{@link KDMModel#getOwnedElement() ownedElement}' feature.
+   * @generated
+   */
+  public void setOwnedElement(List<KDMEntity> newOwnedElement) {
+    clearOwnedElement();
+    for (KDMEntity value : newOwnedElement) {
+      addToOwnedElement(value);
+    }
+  }
+
+  /**
    * A toString method which prints the values of all EAttributes of this instance. <!-- begin-user-doc --> <!--
    * end-user-doc -->
    * 

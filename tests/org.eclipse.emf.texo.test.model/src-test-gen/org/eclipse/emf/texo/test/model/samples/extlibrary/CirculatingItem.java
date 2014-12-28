@@ -75,51 +75,6 @@ public abstract class CirculatingItem extends Item implements Lendable {
   }
 
   /**
-   * Adds to the <em>borrowers</em> feature.
-   * 
-   * @param borrowersValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBorrowers(Borrower borrowersValue) {
-    if (!borrowers.contains(borrowersValue)) {
-      boolean result = borrowers.add(borrowersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>borrowers</em> feature.
-   * 
-   * @param borrowersValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBorrowers(Borrower borrowersValue) {
-    if (borrowers.contains(borrowersValue)) {
-      boolean result = borrowers.remove(borrowersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>borrowers</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBorrowers() {
-    while (!borrowers.isEmpty()) {
-      removeFromBorrowers(borrowers.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link CirculatingItem#getBorrowers() <em>borrowers</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

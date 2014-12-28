@@ -89,51 +89,6 @@ public class Supplier extends Identifiable {
   }
 
   /**
-   * Adds to the <em>customers</em> feature.
-   * 
-   * @param customersValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToCustomers(Customer customersValue) {
-    if (!customers.contains(customersValue)) {
-      boolean result = customers.add(customersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>customers</em> feature.
-   * 
-   * @param customersValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromCustomers(Customer customersValue) {
-    if (customers.contains(customersValue)) {
-      boolean result = customers.remove(customersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>customers</em> feature.
-   * 
-   * @generated
-   */
-  public void clearCustomers() {
-    while (!customers.isEmpty()) {
-      removeFromCustomers(customers.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Supplier#getCustomers() <em>customers</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -156,51 +111,6 @@ public class Supplier extends Identifiable {
    */
   public List<PurchaseOrder> getOrders() {
     return orders;
-  }
-
-  /**
-   * Adds to the <em>orders</em> feature.
-   * 
-   * @param ordersValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToOrders(PurchaseOrder ordersValue) {
-    if (!orders.contains(ordersValue)) {
-      boolean result = orders.add(ordersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>orders</em> feature.
-   * 
-   * @param ordersValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromOrders(PurchaseOrder ordersValue) {
-    if (orders.contains(ordersValue)) {
-      boolean result = orders.remove(ordersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>orders</em> feature.
-   * 
-   * @generated
-   */
-  public void clearOrders() {
-    while (!orders.isEmpty()) {
-      removeFromOrders(orders.iterator().next());
-    }
   }
 
   /**

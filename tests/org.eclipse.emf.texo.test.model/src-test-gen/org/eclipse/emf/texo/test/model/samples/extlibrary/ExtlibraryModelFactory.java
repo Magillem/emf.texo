@@ -66,7 +66,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ExtlibraryModelPackage.BOOK_CLASSIFIER_ID:
@@ -115,7 +115,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -331,6 +331,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Book.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -439,6 +446,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Item.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -524,6 +538,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Lendable.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -565,7 +586,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.LENDABLE_BORROWERS_FEATURE_ID:
-        return getTarget().addToBorrowers((Borrower) value);
+        return getTarget().getBorrowers().add((Borrower) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -580,7 +601,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.LENDABLE_BORROWERS_FEATURE_ID:
-        return getTarget().removeFromBorrowers((Borrower) value);
+        return getTarget().getBorrowers().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -612,6 +633,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return CirculatingItem.class;
     }
 
     /**
@@ -664,7 +692,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.CIRCULATINGITEM_BORROWERS_FEATURE_ID:
-        return getTarget().addToBorrowers((Borrower) value);
+        return getTarget().getBorrowers().add((Borrower) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -679,7 +707,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.CIRCULATINGITEM_BORROWERS_FEATURE_ID:
-        return getTarget().removeFromBorrowers((Borrower) value);
+        return getTarget().getBorrowers().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -711,6 +739,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Writer.class;
     }
 
     /**
@@ -767,7 +802,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        return getTarget().addToBooks((Book) value);
+        return getTarget().getBooks().add((Book) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -782,7 +817,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        return getTarget().removeFromBooks((Book) value);
+        return getTarget().getBooks().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -812,6 +847,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
      */
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Addressable.class;
     }
 
     /**
@@ -895,6 +937,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Person.class;
     }
 
     /**
@@ -997,6 +1046,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Library.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1091,13 +1147,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
         return getTarget().getBorrowers().add((Borrower) value);
 
       case ExtlibraryModelPackage.LIBRARY_STOCK_FEATURE_ID:
-        return getTarget().addToStock((Item) value);
+        return getTarget().getStock().add((Item) value);
 
       case ExtlibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        return getTarget().addToBooks((Book) value);
+        return getTarget().getBooks().add((Book) value);
 
       case ExtlibraryModelPackage.LIBRARY_BRANCHES_FEATURE_ID:
-        return getTarget().addToBranches((Library) value);
+        return getTarget().getBranches().add((Library) value);
 
       case ExtlibraryModelPackage.LIBRARY_PEOPLE_FEATURE_ID:
         return getTarget().getPeople().add((LibraryPeopleFeatureGroup) value);
@@ -1125,13 +1181,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
         return getTarget().getBorrowers().remove(value);
 
       case ExtlibraryModelPackage.LIBRARY_STOCK_FEATURE_ID:
-        return getTarget().removeFromStock((Item) value);
+        return getTarget().getStock().remove(value);
 
       case ExtlibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        return getTarget().removeFromBooks((Book) value);
+        return getTarget().getBooks().remove(value);
 
       case ExtlibraryModelPackage.LIBRARY_BRANCHES_FEATURE_ID:
-        return getTarget().removeFromBranches((Library) value);
+        return getTarget().getBranches().remove(value);
 
       case ExtlibraryModelPackage.LIBRARY_PEOPLE_FEATURE_ID:
         return getTarget().getPeople().remove(value);
@@ -1167,6 +1223,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Employee.class;
     }
 
     /**
@@ -1265,6 +1328,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Borrower.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1311,7 +1381,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.BORROWER_BORROWED_FEATURE_ID:
-        return getTarget().addToBorrowed((Lendable) value);
+        return getTarget().getBorrowed().add((Lendable) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1326,7 +1396,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.BORROWER_BORROWED_FEATURE_ID:
-        return getTarget().removeFromBorrowed((Lendable) value);
+        return getTarget().getBorrowed().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1358,6 +1428,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Periodical.class;
     }
 
     /**
@@ -1452,6 +1529,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AudioVisualItem.class;
     }
 
     /**
@@ -1555,6 +1639,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ExtlibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BookOnTape.class;
     }
 
     /**
@@ -1664,6 +1755,13 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return VideoCassette.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1716,7 +1814,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.VIDEOCASSETTE_CAST_FEATURE_ID:
-        return getTarget().addToCast((Person) value);
+        return getTarget().getCast().add((Person) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1731,7 +1829,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ExtlibraryModelPackage.VIDEOCASSETTE_CAST_FEATURE_ID:
-        return getTarget().removeFromCast((Person) value);
+        return getTarget().getCast().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }

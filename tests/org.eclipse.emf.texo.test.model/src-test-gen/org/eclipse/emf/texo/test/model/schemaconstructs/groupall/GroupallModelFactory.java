@@ -62,7 +62,7 @@ public class GroupallModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case GroupallModelPackage.ADDRESSGROUPTYPE_CLASSIFIER_ID:
@@ -87,7 +87,7 @@ public class GroupallModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -273,6 +273,13 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AddressGroupType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -371,6 +378,13 @@ public class GroupallModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return GroupallModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AddressType.class;
     }
 
     /**
@@ -491,6 +505,13 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AddressList.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -606,6 +627,13 @@ public class GroupallModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return GroupallModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DocumentRoot.class;
     }
 
     /**
@@ -736,6 +764,13 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SimpleAllType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -828,6 +863,13 @@ public class GroupallModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return GroupallModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SimpleAllMapType.class;
     }
 
     /**

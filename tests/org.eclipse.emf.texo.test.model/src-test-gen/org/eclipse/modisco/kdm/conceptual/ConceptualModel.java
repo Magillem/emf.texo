@@ -42,51 +42,6 @@ public class ConceptualModel extends KDMModel {
   }
 
   /**
-   * Adds to the <em>conceptualElement</em> feature.
-   * 
-   * @param conceptualElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToConceptualElement(AbstractConceptualElement conceptualElementValue) {
-    if (!conceptualElement.contains(conceptualElementValue)) {
-      boolean result = conceptualElement.add(conceptualElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>conceptualElement</em> feature.
-   * 
-   * @param conceptualElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromConceptualElement(AbstractConceptualElement conceptualElementValue) {
-    if (conceptualElement.contains(conceptualElementValue)) {
-      boolean result = conceptualElement.remove(conceptualElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>conceptualElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearConceptualElement() {
-    while (!conceptualElement.isEmpty()) {
-      removeFromConceptualElement(conceptualElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ConceptualModel#getConceptualElement() <em>conceptualElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

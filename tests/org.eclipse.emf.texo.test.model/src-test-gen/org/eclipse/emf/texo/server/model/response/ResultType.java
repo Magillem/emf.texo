@@ -67,51 +67,6 @@ public class ResultType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>updated</em> feature.
-   * 
-   * @param updatedValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToUpdated(Object updatedValue) {
-    if (!updated.contains(updatedValue)) {
-      boolean result = updated.add(updatedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>updated</em> feature.
-   * 
-   * @param updatedValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromUpdated(Object updatedValue) {
-    if (updated.contains(updatedValue)) {
-      boolean result = updated.remove(updatedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>updated</em> feature.
-   * 
-   * @generated
-   */
-  public void clearUpdated() {
-    while (!updated.isEmpty()) {
-      removeFromUpdated(updated.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ResultType#getUpdated() <em>updated</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -137,51 +92,6 @@ public class ResultType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>inserted</em> feature.
-   * 
-   * @param insertedValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToInserted(Object insertedValue) {
-    if (!inserted.contains(insertedValue)) {
-      boolean result = inserted.add(insertedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>inserted</em> feature.
-   * 
-   * @param insertedValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromInserted(Object insertedValue) {
-    if (inserted.contains(insertedValue)) {
-      boolean result = inserted.remove(insertedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>inserted</em> feature.
-   * 
-   * @generated
-   */
-  public void clearInserted() {
-    while (!inserted.isEmpty()) {
-      removeFromInserted(inserted.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ResultType#getInserted() <em>inserted</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -204,51 +114,6 @@ public class ResultType extends Identifiable {
    */
   public List<Object> getDeleted() {
     return deleted;
-  }
-
-  /**
-   * Adds to the <em>deleted</em> feature.
-   * 
-   * @param deletedValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToDeleted(Object deletedValue) {
-    if (!deleted.contains(deletedValue)) {
-      boolean result = deleted.add(deletedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>deleted</em> feature.
-   * 
-   * @param deletedValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromDeleted(Object deletedValue) {
-    if (deleted.contains(deletedValue)) {
-      boolean result = deleted.remove(deletedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>deleted</em> feature.
-   * 
-   * @generated
-   */
-  public void clearDeleted() {
-    while (!deleted.isEmpty()) {
-      removeFromDeleted(deleted.iterator().next());
-    }
   }
 
   /**

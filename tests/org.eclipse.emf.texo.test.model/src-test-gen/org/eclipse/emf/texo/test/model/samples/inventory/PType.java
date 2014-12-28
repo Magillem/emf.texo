@@ -160,7 +160,15 @@ public class PType extends Identifiable {
    * @generated
    */
   public void setBase(PType newBase) {
-    base = newBase;
+    if (base != newBase) {
+      if (base != null) {
+        base.removeFromSubTypes(this);
+      }
+      base = newBase;
+      if (base != null) {
+        base.addToSubTypes(this);
+      }
+    }
   }
 
   /**
@@ -186,6 +194,7 @@ public class PType extends Identifiable {
   public boolean addToSubTypes(PType subTypesValue) {
     if (!subTypes.contains(subTypesValue)) {
       boolean result = subTypes.add(subTypesValue);
+      subTypesValue.setBase(this);
       return result;
     }
     return false;
@@ -204,6 +213,7 @@ public class PType extends Identifiable {
   public boolean removeFromSubTypes(PType subTypesValue) {
     if (subTypes.contains(subTypesValue)) {
       boolean result = subTypes.remove(subTypesValue);
+      subTypesValue.setBase(null);
       return result;
     }
     return false;
@@ -230,7 +240,10 @@ public class PType extends Identifiable {
    * @generated
    */
   public void setSubTypes(Set<PType> newSubTypes) {
-    subTypes = newSubTypes;
+    clearSubTypes();
+    for (PType value : newSubTypes) {
+      addToSubTypes(value);
+    }
   }
 
   /**
@@ -243,48 +256,6 @@ public class PType extends Identifiable {
    */
   public Set<PType> getSubNOTypes() {
     return subNOTypes;
-  }
-
-  /**
-   * Adds to the <em>subNOTypes</em> feature.
-   * 
-   * @param subNOTypesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToSubNOTypes(PType subNOTypesValue) {
-    boolean result = subNOTypes.add(subNOTypesValue);
-    return result;
-  }
-
-  /**
-   * Removes from the <em>subNOTypes</em> feature.
-   * 
-   * @param subNOTypesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromSubNOTypes(PType subNOTypesValue) {
-    if (subNOTypes.contains(subNOTypesValue)) {
-      boolean result = subNOTypes.remove(subNOTypesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>subNOTypes</em> feature.
-   * 
-   * @generated
-   */
-  public void clearSubNOTypes() {
-    while (!subNOTypes.isEmpty()) {
-      removeFromSubNOTypes(subNOTypes.iterator().next());
-    }
   }
 
   /**
@@ -310,48 +281,6 @@ public class PType extends Identifiable {
    */
   public List<PDeclaration> getInfoReferences() {
     return infoReferences;
-  }
-
-  /**
-   * Adds to the <em>infoReferences</em> feature.
-   * 
-   * @param infoReferencesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToInfoReferences(PDeclaration infoReferencesValue) {
-    boolean result = infoReferences.add(infoReferencesValue);
-    return result;
-  }
-
-  /**
-   * Removes from the <em>infoReferences</em> feature.
-   * 
-   * @param infoReferencesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromInfoReferences(PDeclaration infoReferencesValue) {
-    if (infoReferences.contains(infoReferencesValue)) {
-      boolean result = infoReferences.remove(infoReferencesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>infoReferences</em> feature.
-   * 
-   * @generated
-   */
-  public void clearInfoReferences() {
-    while (!infoReferences.isEmpty()) {
-      removeFromInfoReferences(infoReferences.iterator().next());
-    }
   }
 
   /**

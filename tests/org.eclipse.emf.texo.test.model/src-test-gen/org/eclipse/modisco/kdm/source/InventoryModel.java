@@ -48,51 +48,6 @@ public class InventoryModel extends KDMModel {
   }
 
   /**
-   * Adds to the <em>inventoryElement</em> feature.
-   * 
-   * @param inventoryElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToInventoryElement(AbstractInventoryElement inventoryElementValue) {
-    if (!inventoryElement.contains(inventoryElementValue)) {
-      boolean result = inventoryElement.add(inventoryElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>inventoryElement</em> feature.
-   * 
-   * @param inventoryElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromInventoryElement(AbstractInventoryElement inventoryElementValue) {
-    if (inventoryElement.contains(inventoryElementValue)) {
-      boolean result = inventoryElement.remove(inventoryElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>inventoryElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearInventoryElement() {
-    while (!inventoryElement.isEmpty()) {
-      removeFromInventoryElement(inventoryElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link InventoryModel#getInventoryElement() <em>inventoryElement</em>}' feature.
    * 
    * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> The set of inventory elements owned by the

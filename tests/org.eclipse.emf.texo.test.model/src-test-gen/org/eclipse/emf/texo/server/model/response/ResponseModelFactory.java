@@ -57,7 +57,7 @@ public class ResponseModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ResponseModelPackage.DOCUMENTROOT_CLASSIFIER_ID:
@@ -76,7 +76,7 @@ public class ResponseModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -219,6 +219,13 @@ public class ResponseModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DocumentRoot.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -339,6 +346,13 @@ public class ResponseModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ErrorType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -442,6 +456,13 @@ public class ResponseModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return ResponseType.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -502,7 +523,7 @@ public class ResponseModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ResponseModelPackage.RESPONSETYPE_DATA_FEATURE_ID:
-        return getTarget().addToData(value);
+        return getTarget().getData().add(value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -517,7 +538,7 @@ public class ResponseModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ResponseModelPackage.RESPONSETYPE_DATA_FEATURE_ID:
-        return getTarget().removeFromData((Object) value);
+        return getTarget().getData().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -550,6 +571,13 @@ public class ResponseModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ResponseModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return ResultType.class;
     }
 
     /**
@@ -605,13 +633,13 @@ public class ResponseModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ResponseModelPackage.RESULTTYPE_UPDATED_FEATURE_ID:
-        return getTarget().addToUpdated(value);
+        return getTarget().getUpdated().add(value);
 
       case ResponseModelPackage.RESULTTYPE_INSERTED_FEATURE_ID:
-        return getTarget().addToInserted(value);
+        return getTarget().getInserted().add(value);
 
       case ResponseModelPackage.RESULTTYPE_DELETED_FEATURE_ID:
-        return getTarget().addToDeleted(value);
+        return getTarget().getDeleted().add(value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -626,13 +654,13 @@ public class ResponseModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ResponseModelPackage.RESULTTYPE_UPDATED_FEATURE_ID:
-        return getTarget().removeFromUpdated((Object) value);
+        return getTarget().getUpdated().remove(value);
 
       case ResponseModelPackage.RESULTTYPE_INSERTED_FEATURE_ID:
-        return getTarget().removeFromInserted((Object) value);
+        return getTarget().getInserted().remove(value);
 
       case ResponseModelPackage.RESULTTYPE_DELETED_FEATURE_ID:
-        return getTarget().removeFromDeleted((Object) value);
+        return getTarget().getDeleted().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }

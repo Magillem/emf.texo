@@ -101,7 +101,17 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
    * @generated
    */
   public void setGraphicsAlgorithm(GraphicsAlgorithm newGraphicsAlgorithm) {
-    graphicsAlgorithm = newGraphicsAlgorithm;
+    if (graphicsAlgorithm != newGraphicsAlgorithm) {
+      if (graphicsAlgorithm != null) {
+        GraphicsAlgorithm tempGraphicsAlgorithm = graphicsAlgorithm;
+        graphicsAlgorithm = null;
+        tempGraphicsAlgorithm.setPictogramElement(null);
+      }
+      graphicsAlgorithm = newGraphicsAlgorithm;
+      if (graphicsAlgorithm != null) {
+        graphicsAlgorithm.setPictogramElement(this);
+      }
+    }
   }
 
   /**
@@ -151,7 +161,17 @@ public abstract class PictogramElement extends GraphicsAlgorithmContainer {
    * @generated
    */
   public void setLink(PictogramLink newLink) {
-    link = newLink;
+    if (link != newLink) {
+      if (link != null) {
+        PictogramLink tempLink = link;
+        link = null;
+        tempLink.setPictogramElement(null);
+      }
+      link = newLink;
+      if (link != null) {
+        link.setPictogramElement(this);
+      }
+    }
   }
 
   /**

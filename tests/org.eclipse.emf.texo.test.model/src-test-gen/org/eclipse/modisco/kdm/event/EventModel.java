@@ -42,51 +42,6 @@ public class EventModel extends KDMModel {
   }
 
   /**
-   * Adds to the <em>eventElement</em> feature.
-   * 
-   * @param eventElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToEventElement(AbstractEventElement eventElementValue) {
-    if (!eventElement.contains(eventElementValue)) {
-      boolean result = eventElement.add(eventElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>eventElement</em> feature.
-   * 
-   * @param eventElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromEventElement(AbstractEventElement eventElementValue) {
-    if (eventElement.contains(eventElementValue)) {
-      boolean result = eventElement.remove(eventElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>eventElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearEventElement() {
-    while (!eventElement.isEmpty()) {
-      removeFromEventElement(eventElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link EventModel#getEventElement() <em>eventElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

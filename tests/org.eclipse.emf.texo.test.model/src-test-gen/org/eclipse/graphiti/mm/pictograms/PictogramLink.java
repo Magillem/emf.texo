@@ -64,7 +64,17 @@ public class PictogramLink extends PropertyContainer {
    * @generated
    */
   public void setPictogramElement(PictogramElement newPictogramElement) {
-    pictogramElement = newPictogramElement;
+    if (pictogramElement != newPictogramElement) {
+      if (pictogramElement != null) {
+        PictogramElement tempPictogramElement = pictogramElement;
+        pictogramElement = null;
+        tempPictogramElement.setLink(null);
+      }
+      pictogramElement = newPictogramElement;
+      if (pictogramElement != null) {
+        pictogramElement.setLink(this);
+      }
+    }
   }
 
   /**
@@ -77,51 +87,6 @@ public class PictogramLink extends PropertyContainer {
    */
   public List<Object> getBusinessObjects() {
     return businessObjects;
-  }
-
-  /**
-   * Adds to the <em>businessObjects</em> feature.
-   * 
-   * @param businessObjectsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBusinessObjects(Object businessObjectsValue) {
-    if (!businessObjects.contains(businessObjectsValue)) {
-      boolean result = businessObjects.add(businessObjectsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>businessObjects</em> feature.
-   * 
-   * @param businessObjectsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBusinessObjects(Object businessObjectsValue) {
-    if (businessObjects.contains(businessObjectsValue)) {
-      boolean result = businessObjects.remove(businessObjectsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>businessObjects</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBusinessObjects() {
-    while (!businessObjects.isEmpty()) {
-      removeFromBusinessObjects(businessObjects.iterator().next());
-    }
   }
 
   /**

@@ -51,51 +51,6 @@ public class SimpleContentType extends ComplexContentType {
   }
 
   /**
-   * Adds to the <em>type</em> feature.
-   * 
-   * @param typeValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToType(ComplexContentType typeValue) {
-    if (!type.contains(typeValue)) {
-      boolean result = type.add(typeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>type</em> feature.
-   * 
-   * @param typeValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromType(ComplexContentType typeValue) {
-    if (type.contains(typeValue)) {
-      boolean result = type.remove(typeValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>type</em> feature.
-   * 
-   * @generated
-   */
-  public void clearType() {
-    while (!type.isEmpty()) {
-      removeFromType(type.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link SimpleContentType#getType() <em>type</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

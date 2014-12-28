@@ -121,51 +121,6 @@ public class MySerializableClass extends Identifiable implements Serializable {
   }
 
   /**
-   * Adds to the <em>nonEMFs</em> feature.
-   * 
-   * @param nonEMFsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToNonEMFs(NonEMF nonEMFsValue) {
-    if (!nonEMFs.contains(nonEMFsValue)) {
-      boolean result = nonEMFs.add(nonEMFsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>nonEMFs</em> feature.
-   * 
-   * @param nonEMFsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromNonEMFs(NonEMF nonEMFsValue) {
-    if (nonEMFs.contains(nonEMFsValue)) {
-      boolean result = nonEMFs.remove(nonEMFsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>nonEMFs</em> feature.
-   * 
-   * @generated
-   */
-  public void clearNonEMFs() {
-    while (!nonEMFs.isEmpty()) {
-      removeFromNonEMFs(nonEMFs.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link MySerializableClass#getNonEMFs() <em>nonEMFs</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

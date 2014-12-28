@@ -74,51 +74,6 @@ public abstract class AbstractCodeElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToSource(SourceRef sourceValue) {
-    if (!source.contains(sourceValue)) {
-      boolean result = source.add(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>source</em> feature.
-   * 
-   * @param sourceValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromSource(SourceRef sourceValue) {
-    if (source.contains(sourceValue)) {
-      boolean result = source.remove(sourceValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>source</em> feature.
-   * 
-   * @generated
-   */
-  public void clearSource() {
-    while (!source.isEmpty()) {
-      removeFromSource(source.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractCodeElement#getSource() <em>source</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -141,51 +96,6 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public Set<CommentUnit> getComment() {
     return comment;
-  }
-
-  /**
-   * Adds to the <em>comment</em> feature.
-   * 
-   * @param commentValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToComment(CommentUnit commentValue) {
-    if (!comment.contains(commentValue)) {
-      boolean result = comment.add(commentValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>comment</em> feature.
-   * 
-   * @param commentValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromComment(CommentUnit commentValue) {
-    if (comment.contains(commentValue)) {
-      boolean result = comment.remove(commentValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>comment</em> feature.
-   * 
-   * @generated
-   */
-  public void clearComment() {
-    while (!comment.isEmpty()) {
-      removeFromComment(comment.iterator().next());
-    }
   }
 
   /**
@@ -214,51 +124,6 @@ public abstract class AbstractCodeElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>codeRelation</em> feature.
-   * 
-   * @param codeRelationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToCodeRelation(AbstractCodeRelationship codeRelationValue) {
-    if (!codeRelation.contains(codeRelationValue)) {
-      boolean result = codeRelation.add(codeRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>codeRelation</em> feature.
-   * 
-   * @param codeRelationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromCodeRelation(AbstractCodeRelationship codeRelationValue) {
-    if (codeRelation.contains(codeRelationValue)) {
-      boolean result = codeRelation.remove(codeRelationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>codeRelation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearCodeRelation() {
-    while (!codeRelation.isEmpty()) {
-      removeFromCodeRelation(codeRelation.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractCodeElement#getCodeRelation() <em>codeRelation</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -281,51 +146,6 @@ public abstract class AbstractCodeElement extends KDMEntity {
    */
   public List<EntryFlow> getEntryFlow() {
     return entryFlow;
-  }
-
-  /**
-   * Adds to the <em>entryFlow</em> feature.
-   * 
-   * @param entryFlowValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToEntryFlow(EntryFlow entryFlowValue) {
-    if (!entryFlow.contains(entryFlowValue)) {
-      boolean result = entryFlow.add(entryFlowValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>entryFlow</em> feature.
-   * 
-   * @param entryFlowValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromEntryFlow(EntryFlow entryFlowValue) {
-    if (entryFlow.contains(entryFlowValue)) {
-      boolean result = entryFlow.remove(entryFlowValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>entryFlow</em> feature.
-   * 
-   * @generated
-   */
-  public void clearEntryFlow() {
-    while (!entryFlow.isEmpty()) {
-      removeFromEntryFlow(entryFlow.iterator().next());
-    }
   }
 
   /**

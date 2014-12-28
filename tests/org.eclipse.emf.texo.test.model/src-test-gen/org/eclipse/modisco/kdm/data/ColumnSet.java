@@ -44,51 +44,6 @@ public class ColumnSet extends DataContainer {
   }
 
   /**
-   * Adds to the <em>itemUnit</em> feature.
-   * 
-   * @param itemUnitValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToItemUnit(ItemUnit itemUnitValue) {
-    if (!itemUnit.contains(itemUnitValue)) {
-      boolean result = itemUnit.add(itemUnitValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>itemUnit</em> feature.
-   * 
-   * @param itemUnitValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromItemUnit(ItemUnit itemUnitValue) {
-    if (itemUnit.contains(itemUnitValue)) {
-      boolean result = itemUnit.remove(itemUnitValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>itemUnit</em> feature.
-   * 
-   * @generated
-   */
-  public void clearItemUnit() {
-    while (!itemUnit.isEmpty()) {
-      removeFromItemUnit(itemUnit.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ColumnSet#getItemUnit() <em>itemUnit</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

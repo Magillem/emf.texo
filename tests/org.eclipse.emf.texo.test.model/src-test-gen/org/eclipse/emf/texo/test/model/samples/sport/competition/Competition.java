@@ -81,51 +81,6 @@ public class Competition extends Identifiable {
   }
 
   /**
-   * Adds to the <em>teams</em> feature.
-   * 
-   * @param teamsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToTeams(Team teamsValue) {
-    if (!teams.contains(teamsValue)) {
-      boolean result = teams.add(teamsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>teams</em> feature.
-   * 
-   * @param teamsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromTeams(Team teamsValue) {
-    if (teams.contains(teamsValue)) {
-      boolean result = teams.remove(teamsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>teams</em> feature.
-   * 
-   * @generated
-   */
-  public void clearTeams() {
-    while (!teams.isEmpty()) {
-      removeFromTeams(teams.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Competition#getTeams() <em>teams</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

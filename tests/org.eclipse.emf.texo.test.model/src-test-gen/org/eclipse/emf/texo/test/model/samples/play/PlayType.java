@@ -213,51 +213,6 @@ public class PlayType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>act</em> feature.
-   * 
-   * @param actValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAct(ActType actValue) {
-    if (!act.contains(actValue)) {
-      boolean result = act.add(actValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>act</em> feature.
-   * 
-   * @param actValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAct(ActType actValue) {
-    if (act.contains(actValue)) {
-      boolean result = act.remove(actValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>act</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAct() {
-    while (!act.isEmpty()) {
-      removeFromAct(act.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link PlayType#getAct() <em>act</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

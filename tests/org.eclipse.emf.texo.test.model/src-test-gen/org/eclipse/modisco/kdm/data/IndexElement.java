@@ -42,51 +42,6 @@ public class IndexElement extends DataResource {
   }
 
   /**
-   * Adds to the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToImplementation(ItemUnit implementationValue) {
-    if (!implementation.contains(implementationValue)) {
-      boolean result = implementation.add(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromImplementation(ItemUnit implementationValue) {
-    if (implementation.contains(implementationValue)) {
-      boolean result = implementation.remove(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>implementation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearImplementation() {
-    while (!implementation.isEmpty()) {
-      removeFromImplementation(implementation.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link IndexElement#getImplementation() <em>implementation</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

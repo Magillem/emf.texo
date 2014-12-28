@@ -53,6 +53,7 @@ public class ContainerShape extends Shape {
   public boolean addToChildren(Shape childrenValue) {
     if (!children.contains(childrenValue)) {
       boolean result = children.add(childrenValue);
+      childrenValue.setContainer(this);
       return result;
     }
     return false;
@@ -71,6 +72,7 @@ public class ContainerShape extends Shape {
   public boolean removeFromChildren(Shape childrenValue) {
     if (children.contains(childrenValue)) {
       boolean result = children.remove(childrenValue);
+      childrenValue.setContainer(null);
       return result;
     }
     return false;
@@ -97,7 +99,10 @@ public class ContainerShape extends Shape {
    * @generated
    */
   public void setChildren(List<Shape> newChildren) {
-    children = newChildren;
+    clearChildren();
+    for (Shape value : newChildren) {
+      addToChildren(value);
+    }
   }
 
   /**

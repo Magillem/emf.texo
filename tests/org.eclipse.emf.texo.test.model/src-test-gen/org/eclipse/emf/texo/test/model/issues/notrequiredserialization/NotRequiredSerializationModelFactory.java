@@ -48,7 +48,7 @@ public class NotRequiredSerializationModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case NotRequiredSerializationModelPackage.SERIALIZATIONTEST_CLASSIFIER_ID:
@@ -58,7 +58,7 @@ public class NotRequiredSerializationModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -157,6 +157,13 @@ public class NotRequiredSerializationModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return NotRequiredSerializationModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SerializationTest.class;
     }
 
     /**

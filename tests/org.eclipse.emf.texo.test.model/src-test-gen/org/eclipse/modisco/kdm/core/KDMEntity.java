@@ -207,6 +207,28 @@ public abstract class KDMEntity extends ModelElement {
   }
 
   /**
+   * Sets the '{@link KDMEntity#getModel() <em>model</em>}' feature.
+   *
+   * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> the KDM model that owns the current KDM
+   * Entity <!-- end-model-doc -->
+   * 
+   * @param newModel
+   *          the new value of the '{@link KDMEntity#getModel() model}' feature.
+   * @generated
+   */
+  public void setModel(KDMModel newModel) {
+    if (model != newModel) {
+      if (model != null) {
+        model.removeFromOwnedElement(this);
+      }
+      model = newModel;
+      if (model != null) {
+        model.addToOwnedElement(this);
+      }
+    }
+  }
+
+  /**
    * Returns the value of '<em><b>owner</b></em>' feature.
    * 
    * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> KDM entity that owns the current element.
@@ -224,6 +246,32 @@ public abstract class KDMEntity extends ModelElement {
   }
 
   /**
+   * Sets the '{@link KDMEntity#getOwner() <em>owner</em>}' feature.
+   *
+   * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> KDM entity that owns the current element.
+   * This property determines a meta-level interface to KDM entities. This property is a derived union. Some KDM
+   * entities define a concrete set of owned elements that are subtypes of KDMEntity. In KDM this is represented by the
+   * CMOF “derived union” mechanism. Concrete properties subset the “union” properties of the parent classes, defined in
+   * the Core package. The owner of a KDM entity is defined as the container for which the given entity is an owned
+   * entity. <!-- end-model-doc -->
+   * 
+   * @param newOwner
+   *          the new value of the '{@link KDMEntity#getOwner() owner}' feature.
+   * @generated
+   */
+  public void setOwner(KDMEntity newOwner) {
+    if (owner != newOwner) {
+      if (owner != null) {
+        owner.removeFromOwnedElement(this);
+      }
+      owner = newOwner;
+      if (owner != null) {
+        owner.addToOwnedElement(this);
+      }
+    }
+  }
+
+  /**
    * Returns the value of '<em><b>ownedElement</b></em>' feature.
    * 
    * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> the set of KDM entities that are owned by
@@ -234,6 +282,70 @@ public abstract class KDMEntity extends ModelElement {
    */
   public List<KDMEntity> getOwnedElement() {
     return ownedElement;
+  }
+
+  /**
+   * Adds to the <em>ownedElement</em> feature.
+   *
+   * @param ownedElementValue
+   *          the value to add
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
+   * @generated
+   */
+  public boolean addToOwnedElement(KDMEntity ownedElementValue) {
+    if (!ownedElement.contains(ownedElementValue)) {
+      boolean result = ownedElement.add(ownedElementValue);
+      ownedElementValue.setOwner(this);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Removes from the <em>ownedElement</em> feature.
+   *
+   * @param ownedElementValue
+   *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
+   *
+   * @generated
+   */
+  public boolean removeFromOwnedElement(KDMEntity ownedElementValue) {
+    if (ownedElement.contains(ownedElementValue)) {
+      boolean result = ownedElement.remove(ownedElementValue);
+      ownedElementValue.setOwner(null);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Clears the <em>ownedElement</em> feature.
+   * 
+   * @generated
+   */
+  public void clearOwnedElement() {
+    while (!ownedElement.isEmpty()) {
+      removeFromOwnedElement(ownedElement.iterator().next());
+    }
+  }
+
+  /**
+   * Sets the '{@link KDMEntity#getOwnedElement() <em>ownedElement</em>}' feature.
+   *
+   * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> the set of KDM entities that are owned by
+   * the current KDM Entity. Only KDM containers can own other entities. <!-- end-model-doc -->
+   * 
+   * @param newOwnedElement
+   *          the new value of the '{@link KDMEntity#getOwnedElement() ownedElement}' feature.
+   * @generated
+   */
+  public void setOwnedElement(List<KDMEntity> newOwnedElement) {
+    clearOwnedElement();
+    for (KDMEntity value : newOwnedElement) {
+      addToOwnedElement(value);
+    }
   }
 
   /**
@@ -319,6 +431,70 @@ public abstract class KDMEntity extends ModelElement {
   }
 
   /**
+   * Adds to the <em>inAggregated</em> feature.
+   *
+   * @param inAggregatedValue
+   *          the value to add
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
+   * @generated
+   */
+  public boolean addToInAggregated(AggregatedRelationship inAggregatedValue) {
+    if (!inAggregated.contains(inAggregatedValue)) {
+      boolean result = inAggregated.add(inAggregatedValue);
+      inAggregatedValue.setTo(this);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Removes from the <em>inAggregated</em> feature.
+   *
+   * @param inAggregatedValue
+   *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
+   *
+   * @generated
+   */
+  public boolean removeFromInAggregated(AggregatedRelationship inAggregatedValue) {
+    if (inAggregated.contains(inAggregatedValue)) {
+      boolean result = inAggregated.remove(inAggregatedValue);
+      inAggregatedValue.setTo(null);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Clears the <em>inAggregated</em> feature.
+   * 
+   * @generated
+   */
+  public void clearInAggregated() {
+    while (!inAggregated.isEmpty()) {
+      removeFromInAggregated(inAggregated.iterator().next());
+    }
+  }
+
+  /**
+   * Sets the '{@link KDMEntity#getInAggregated() <em>inAggregated</em>}' feature.
+   *
+   * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> the set of AggregatedRelationship for which
+   * the target is the current KDM Entity. <!-- end-model-doc -->
+   * 
+   * @param newInAggregated
+   *          the new value of the '{@link KDMEntity#getInAggregated() inAggregated}' feature.
+   * @generated
+   */
+  public void setInAggregated(List<AggregatedRelationship> newInAggregated) {
+    clearInAggregated();
+    for (AggregatedRelationship value : newInAggregated) {
+      addToInAggregated(value);
+    }
+  }
+
+  /**
    * Returns the value of '<em><b>outAggregated</b></em>' feature.
    * 
    * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> the set of AggregatedRelationship for which
@@ -329,6 +505,70 @@ public abstract class KDMEntity extends ModelElement {
    */
   public List<AggregatedRelationship> getOutAggregated() {
     return outAggregated;
+  }
+
+  /**
+   * Adds to the <em>outAggregated</em> feature.
+   *
+   * @param outAggregatedValue
+   *          the value to add
+   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
+   * @generated
+   */
+  public boolean addToOutAggregated(AggregatedRelationship outAggregatedValue) {
+    if (!outAggregated.contains(outAggregatedValue)) {
+      boolean result = outAggregated.add(outAggregatedValue);
+      outAggregatedValue.setFrom(this);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Removes from the <em>outAggregated</em> feature.
+   *
+   * @param outAggregatedValue
+   *          the value to remove
+   * @return true if the value is removed from the collection (it existed in the collection before removing), false
+   *         otherwise
+   *
+   * @generated
+   */
+  public boolean removeFromOutAggregated(AggregatedRelationship outAggregatedValue) {
+    if (outAggregated.contains(outAggregatedValue)) {
+      boolean result = outAggregated.remove(outAggregatedValue);
+      outAggregatedValue.setFrom(null);
+      return result;
+    }
+    return false;
+  }
+
+  /**
+   * Clears the <em>outAggregated</em> feature.
+   * 
+   * @generated
+   */
+  public void clearOutAggregated() {
+    while (!outAggregated.isEmpty()) {
+      removeFromOutAggregated(outAggregated.iterator().next());
+    }
+  }
+
+  /**
+   * Sets the '{@link KDMEntity#getOutAggregated() <em>outAggregated</em>}' feature.
+   *
+   * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> the set of AggregatedRelationship for which
+   * the origin is the current KDM Entity. <!-- end-model-doc -->
+   * 
+   * @param newOutAggregated
+   *          the new value of the '{@link KDMEntity#getOutAggregated() outAggregated}' feature.
+   * @generated
+   */
+  public void setOutAggregated(List<AggregatedRelationship> newOutAggregated) {
+    clearOutAggregated();
+    for (AggregatedRelationship value : newOutAggregated) {
+      addToOutAggregated(value);
+    }
   }
 
   /**

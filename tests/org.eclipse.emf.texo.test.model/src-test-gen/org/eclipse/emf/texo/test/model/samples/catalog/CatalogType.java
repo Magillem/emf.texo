@@ -123,51 +123,6 @@ public class CatalogType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>subCatalog</em> feature.
-   * 
-   * @param subCatalogValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToSubCatalog(CatalogType subCatalogValue) {
-    if (!subCatalog.contains(subCatalogValue)) {
-      boolean result = subCatalog.add(subCatalogValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>subCatalog</em> feature.
-   * 
-   * @param subCatalogValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromSubCatalog(CatalogType subCatalogValue) {
-    if (subCatalog.contains(subCatalogValue)) {
-      boolean result = subCatalog.remove(subCatalogValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>subCatalog</em> feature.
-   * 
-   * @generated
-   */
-  public void clearSubCatalog() {
-    while (!subCatalog.isEmpty()) {
-      removeFromSubCatalog(subCatalog.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link CatalogType#getSubCatalog() <em>subCatalog</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -191,51 +146,6 @@ public class CatalogType extends Identifiable {
    */
   public List<ProductType> getProduct() {
     return product;
-  }
-
-  /**
-   * Adds to the <em>product</em> feature.
-   * 
-   * @param productValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToProduct(ProductType productValue) {
-    if (!product.contains(productValue)) {
-      boolean result = product.add(productValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>product</em> feature.
-   * 
-   * @param productValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromProduct(ProductType productValue) {
-    if (product.contains(productValue)) {
-      boolean result = product.remove(productValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>product</em> feature.
-   * 
-   * @generated
-   */
-  public void clearProduct() {
-    while (!product.isEmpty()) {
-      removeFromProduct(product.iterator().next());
-    }
   }
 
   /**

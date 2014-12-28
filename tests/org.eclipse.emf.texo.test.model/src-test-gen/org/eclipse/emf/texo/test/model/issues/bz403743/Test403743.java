@@ -80,51 +80,6 @@ public class Test403743 extends Identifiable {
   }
 
   /**
-   * Adds to the <em>children</em> feature.
-   * 
-   * @param childrenValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToChildren(Test403743 childrenValue) {
-    if (!children.contains(childrenValue)) {
-      boolean result = children.add(childrenValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>children</em> feature.
-   * 
-   * @param childrenValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromChildren(Test403743 childrenValue) {
-    if (children.contains(childrenValue)) {
-      boolean result = children.remove(childrenValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>children</em> feature.
-   * 
-   * @generated
-   */
-  public void clearChildren() {
-    while (!children.isEmpty()) {
-      removeFromChildren(children.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Test403743#getChildren() <em>children</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

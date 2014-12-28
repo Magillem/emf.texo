@@ -51,7 +51,7 @@ public class Bz403743ModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case Bz403743ModelPackage.TEST403743_MAIN_CLASSIFIER_ID:
@@ -64,7 +64,7 @@ public class Bz403743ModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -179,6 +179,13 @@ public class Bz403743ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Test403743_Main.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -224,7 +231,7 @@ public class Bz403743ModelFactory implements ModelFactory {
       switch (featureID) {
 
       case Bz403743ModelPackage.TEST403743_MAIN_CHILDREN_FEATURE_ID:
-        return getTarget().addToChildren((Test403743) value);
+        return getTarget().getChildren().add((Test403743) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -239,7 +246,7 @@ public class Bz403743ModelFactory implements ModelFactory {
       switch (featureID) {
 
       case Bz403743ModelPackage.TEST403743_MAIN_CHILDREN_FEATURE_ID:
-        return getTarget().removeFromChildren((Test403743) value);
+        return getTarget().getChildren().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -272,6 +279,13 @@ public class Bz403743ModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return Bz403743ModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Test403743.class;
     }
 
     /**
@@ -322,7 +336,7 @@ public class Bz403743ModelFactory implements ModelFactory {
       switch (featureID) {
 
       case Bz403743ModelPackage.TEST403743_CHILDREN_FEATURE_ID:
-        return getTarget().addToChildren((Test403743) value);
+        return getTarget().getChildren().add((Test403743) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -337,7 +351,7 @@ public class Bz403743ModelFactory implements ModelFactory {
       switch (featureID) {
 
       case Bz403743ModelPackage.TEST403743_CHILDREN_FEATURE_ID:
-        return getTarget().removeFromChildren((Test403743) value);
+        return getTarget().getChildren().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }

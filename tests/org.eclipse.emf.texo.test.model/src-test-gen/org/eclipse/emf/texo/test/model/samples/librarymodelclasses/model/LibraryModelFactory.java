@@ -58,7 +58,7 @@ public class LibraryModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case LibraryModelPackage.BOOK_CLASSIFIER_ID:
@@ -74,7 +74,7 @@ public class LibraryModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -232,6 +232,13 @@ public class LibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Book.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -334,6 +341,13 @@ public class LibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Library.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -384,10 +398,10 @@ public class LibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case LibraryModelPackage.LIBRARY_WRITERS_FEATURE_ID:
-        return getTarget().addToWriters((Writer) value);
+        return getTarget().getWriters().add((Writer) value);
 
       case LibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        return getTarget().addToBooks((Book) value);
+        return getTarget().getBooks().add((Book) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -402,10 +416,10 @@ public class LibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case LibraryModelPackage.LIBRARY_WRITERS_FEATURE_ID:
-        return getTarget().removeFromWriters((Writer) value);
+        return getTarget().getWriters().remove(value);
 
       case LibraryModelPackage.LIBRARY_BOOKS_FEATURE_ID:
-        return getTarget().removeFromBooks((Book) value);
+        return getTarget().getBooks().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -437,6 +451,13 @@ public class LibraryModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return LibraryModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Writer.class;
     }
 
     /**
@@ -487,7 +508,7 @@ public class LibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case LibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        return getTarget().addToBooks((Book) value);
+        return getTarget().getBooks().add((Book) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -502,7 +523,7 @@ public class LibraryModelFactory implements ModelFactory {
       switch (featureID) {
 
       case LibraryModelPackage.WRITER_BOOKS_FEATURE_ID:
-        return getTarget().removeFromBooks((Book) value);
+        return getTarget().getBooks().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }

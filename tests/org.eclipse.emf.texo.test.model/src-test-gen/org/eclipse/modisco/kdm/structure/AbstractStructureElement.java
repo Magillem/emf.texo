@@ -69,51 +69,6 @@ public abstract class AbstractStructureElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>aggregated</em> feature.
-   * 
-   * @param aggregatedValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAggregated(AggregatedRelationship aggregatedValue) {
-    if (!aggregated.contains(aggregatedValue)) {
-      boolean result = aggregated.add(aggregatedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>aggregated</em> feature.
-   * 
-   * @param aggregatedValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAggregated(AggregatedRelationship aggregatedValue) {
-    if (aggregated.contains(aggregatedValue)) {
-      boolean result = aggregated.remove(aggregatedValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>aggregated</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAggregated() {
-    while (!aggregated.isEmpty()) {
-      removeFromAggregated(aggregated.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractStructureElement#getAggregated() <em>aggregated</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -136,51 +91,6 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public Set<KDMEntity> getImplementation() {
     return implementation;
-  }
-
-  /**
-   * Adds to the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToImplementation(KDMEntity implementationValue) {
-    if (!implementation.contains(implementationValue)) {
-      boolean result = implementation.add(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromImplementation(KDMEntity implementationValue) {
-    if (implementation.contains(implementationValue)) {
-      boolean result = implementation.remove(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>implementation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearImplementation() {
-    while (!implementation.isEmpty()) {
-      removeFromImplementation(implementation.iterator().next());
-    }
   }
 
   /**
@@ -209,51 +119,6 @@ public abstract class AbstractStructureElement extends KDMEntity {
   }
 
   /**
-   * Adds to the <em>structureElement</em> feature.
-   * 
-   * @param structureElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToStructureElement(AbstractStructureElement structureElementValue) {
-    if (!structureElement.contains(structureElementValue)) {
-      boolean result = structureElement.add(structureElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>structureElement</em> feature.
-   * 
-   * @param structureElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromStructureElement(AbstractStructureElement structureElementValue) {
-    if (structureElement.contains(structureElementValue)) {
-      boolean result = structureElement.remove(structureElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>structureElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearStructureElement() {
-    while (!structureElement.isEmpty()) {
-      removeFromStructureElement(structureElement.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AbstractStructureElement#getStructureElement() <em>structureElement</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -276,51 +141,6 @@ public abstract class AbstractStructureElement extends KDMEntity {
    */
   public Set<AbstractStructureRelationship> getStructureRelationship() {
     return structureRelationship;
-  }
-
-  /**
-   * Adds to the <em>structureRelationship</em> feature.
-   * 
-   * @param structureRelationshipValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
-    if (!structureRelationship.contains(structureRelationshipValue)) {
-      boolean result = structureRelationship.add(structureRelationshipValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>structureRelationship</em> feature.
-   * 
-   * @param structureRelationshipValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromStructureRelationship(AbstractStructureRelationship structureRelationshipValue) {
-    if (structureRelationship.contains(structureRelationshipValue)) {
-      boolean result = structureRelationship.remove(structureRelationshipValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>structureRelationship</em> feature.
-   * 
-   * @generated
-   */
-  public void clearStructureRelationship() {
-    while (!structureRelationship.isEmpty()) {
-      removeFromStructureRelationship(structureRelationship.iterator().next());
-    }
   }
 
   /**

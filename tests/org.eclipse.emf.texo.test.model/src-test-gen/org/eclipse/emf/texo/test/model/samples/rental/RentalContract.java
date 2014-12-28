@@ -194,6 +194,7 @@ public class RentalContract extends Identifiable {
   public boolean addToRentalContractLines(RentalContractLine rentalContractLinesValue) {
     if (!rentalContractLines.contains(rentalContractLinesValue)) {
       boolean result = rentalContractLines.add(rentalContractLinesValue);
+      rentalContractLinesValue.setRentalContract(this);
       return result;
     }
     return false;
@@ -212,6 +213,7 @@ public class RentalContract extends Identifiable {
   public boolean removeFromRentalContractLines(RentalContractLine rentalContractLinesValue) {
     if (rentalContractLines.contains(rentalContractLinesValue)) {
       boolean result = rentalContractLines.remove(rentalContractLinesValue);
+      rentalContractLinesValue.setRentalContract(null);
       return result;
     }
     return false;
@@ -238,7 +240,10 @@ public class RentalContract extends Identifiable {
    * @generated
    */
   public void setRentalContractLines(List<RentalContractLine> newRentalContractLines) {
-    rentalContractLines = newRentalContractLines;
+    clearRentalContractLines();
+    for (RentalContractLine value : newRentalContractLines) {
+      addToRentalContractLines(value);
+    }
   }
 
   /**

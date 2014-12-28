@@ -47,51 +47,6 @@ public class Book extends Identifiable {
   }
 
   /**
-   * Adds to the <em>authors</em> feature.
-   * 
-   * @param authorsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAuthors(Author authorsValue) {
-    if (!authors.contains(authorsValue)) {
-      boolean result = authors.add(authorsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>authors</em> feature.
-   * 
-   * @param authorsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAuthors(Author authorsValue) {
-    if (authors.contains(authorsValue)) {
-      boolean result = authors.remove(authorsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>authors</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAuthors() {
-    while (!authors.isEmpty()) {
-      removeFromAuthors(authors.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Book#getAuthors() <em>authors</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

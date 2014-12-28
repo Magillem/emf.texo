@@ -97,51 +97,6 @@ public class JournalGroup extends Identifiable {
   }
 
   /**
-   * Adds to the <em>journalGroups</em> feature.
-   * 
-   * @param journalGroupsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToJournalGroups(JournalGroup journalGroupsValue) {
-    if (!journalGroups.contains(journalGroupsValue)) {
-      boolean result = journalGroups.add(journalGroupsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>journalGroups</em> feature.
-   * 
-   * @param journalGroupsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromJournalGroups(JournalGroup journalGroupsValue) {
-    if (journalGroups.contains(journalGroupsValue)) {
-      boolean result = journalGroups.remove(journalGroupsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>journalGroups</em> feature.
-   * 
-   * @generated
-   */
-  public void clearJournalGroups() {
-    while (!journalGroups.isEmpty()) {
-      removeFromJournalGroups(journalGroups.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link JournalGroup#getJournalGroups() <em>journalGroups</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -164,51 +119,6 @@ public class JournalGroup extends Identifiable {
    */
   public List<JournalStatement> getJournalStatements() {
     return journalStatements;
-  }
-
-  /**
-   * Adds to the <em>journalStatements</em> feature.
-   * 
-   * @param journalStatementsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToJournalStatements(JournalStatement journalStatementsValue) {
-    if (!journalStatements.contains(journalStatementsValue)) {
-      boolean result = journalStatements.add(journalStatementsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>journalStatements</em> feature.
-   * 
-   * @param journalStatementsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromJournalStatements(JournalStatement journalStatementsValue) {
-    if (journalStatements.contains(journalStatementsValue)) {
-      boolean result = journalStatements.remove(journalStatementsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>journalStatements</em> feature.
-   * 
-   * @generated
-   */
-  public void clearJournalStatements() {
-    while (!journalStatements.isEmpty()) {
-      removeFromJournalStatements(journalStatements.iterator().next());
-    }
   }
 
   /**

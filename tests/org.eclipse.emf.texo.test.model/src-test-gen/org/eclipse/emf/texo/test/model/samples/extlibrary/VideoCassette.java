@@ -43,51 +43,6 @@ public class VideoCassette extends AudioVisualItem {
   }
 
   /**
-   * Adds to the <em>cast</em> feature.
-   * 
-   * @param castValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToCast(Person castValue) {
-    if (!cast.contains(castValue)) {
-      boolean result = cast.add(castValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>cast</em> feature.
-   * 
-   * @param castValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromCast(Person castValue) {
-    if (cast.contains(castValue)) {
-      boolean result = cast.remove(castValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>cast</em> feature.
-   * 
-   * @generated
-   */
-  public void clearCast() {
-    while (!cast.isEmpty()) {
-      removeFromCast(cast.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link VideoCassette#getCast() <em>cast</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

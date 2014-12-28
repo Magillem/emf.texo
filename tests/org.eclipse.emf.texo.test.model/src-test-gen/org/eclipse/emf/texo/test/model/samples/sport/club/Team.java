@@ -80,51 +80,6 @@ public class Team extends Identifiable {
   }
 
   /**
-   * Adds to the <em>members</em> feature.
-   *
-   * @param membersValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToMembers(Member membersValue) {
-    if (!members.contains(membersValue)) {
-      boolean result = members.add(membersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>members</em> feature.
-   *
-   * @param membersValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   *
-   * @generated
-   */
-  public boolean removeFromMembers(Member membersValue) {
-    if (members.contains(membersValue)) {
-      boolean result = members.remove(membersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>members</em> feature.
-   * 
-   * @generated
-   */
-  public void clearMembers() {
-    while (!members.isEmpty()) {
-      removeFromMembers(members.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Team#getMembers() <em>members</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

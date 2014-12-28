@@ -61,51 +61,6 @@ public class SourceRef extends Element {
   }
 
   /**
-   * Adds to the <em>region</em> feature.
-   * 
-   * @param regionValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToRegion(SourceRegion regionValue) {
-    if (!region.contains(regionValue)) {
-      boolean result = region.add(regionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>region</em> feature.
-   * 
-   * @param regionValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromRegion(SourceRegion regionValue) {
-    if (region.contains(regionValue)) {
-      boolean result = region.remove(regionValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>region</em> feature.
-   * 
-   * @generated
-   */
-  public void clearRegion() {
-    while (!region.isEmpty()) {
-      removeFromRegion(region.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link SourceRef#getRegion() <em>region</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

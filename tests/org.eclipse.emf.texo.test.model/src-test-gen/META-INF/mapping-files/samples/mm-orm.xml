@@ -45,7 +45,8 @@
     <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
     <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
     <orm:attributes>
-      <orm:one-to-many mapped-by="styleContainer" name="styles">
+      <orm:one-to-many name="styles">
+        <orm:join-column name="mm_StyleContainer_styles"/>
         <orm:cascade>
           <orm:cascade-all/>
         </orm:cascade>

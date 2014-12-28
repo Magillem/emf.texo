@@ -59,51 +59,6 @@ public class BuildResource extends AbstractBuildElement {
   }
 
   /**
-   * Adds to the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToImplementation(KDMEntity implementationValue) {
-    if (!implementation.contains(implementationValue)) {
-      boolean result = implementation.add(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromImplementation(KDMEntity implementationValue) {
-    if (implementation.contains(implementationValue)) {
-      boolean result = implementation.remove(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>implementation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearImplementation() {
-    while (!implementation.isEmpty()) {
-      removeFromImplementation(implementation.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link BuildResource#getImplementation() <em>implementation</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -129,51 +84,6 @@ public class BuildResource extends AbstractBuildElement {
   }
 
   /**
-   * Adds to the <em>groupedBuild</em> feature.
-   * 
-   * @param groupedBuildValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToGroupedBuild(AbstractBuildElement groupedBuildValue) {
-    if (!groupedBuild.contains(groupedBuildValue)) {
-      boolean result = groupedBuild.add(groupedBuildValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>groupedBuild</em> feature.
-   * 
-   * @param groupedBuildValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromGroupedBuild(AbstractBuildElement groupedBuildValue) {
-    if (groupedBuild.contains(groupedBuildValue)) {
-      boolean result = groupedBuild.remove(groupedBuildValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>groupedBuild</em> feature.
-   * 
-   * @generated
-   */
-  public void clearGroupedBuild() {
-    while (!groupedBuild.isEmpty()) {
-      removeFromGroupedBuild(groupedBuild.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link BuildResource#getGroupedBuild() <em>groupedBuild</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -196,51 +106,6 @@ public class BuildResource extends AbstractBuildElement {
    */
   public Set<AbstractBuildElement> getBuildElement() {
     return buildElement;
-  }
-
-  /**
-   * Adds to the <em>buildElement</em> feature.
-   * 
-   * @param buildElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToBuildElement(AbstractBuildElement buildElementValue) {
-    if (!buildElement.contains(buildElementValue)) {
-      boolean result = buildElement.add(buildElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>buildElement</em> feature.
-   * 
-   * @param buildElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromBuildElement(AbstractBuildElement buildElementValue) {
-    if (buildElement.contains(buildElementValue)) {
-      boolean result = buildElement.remove(buildElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>buildElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearBuildElement() {
-    while (!buildElement.isEmpty()) {
-      removeFromBuildElement(buildElement.iterator().next());
-    }
   }
 
   /**

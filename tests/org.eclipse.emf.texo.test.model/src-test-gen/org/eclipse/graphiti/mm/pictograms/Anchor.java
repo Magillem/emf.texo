@@ -76,7 +76,15 @@ public abstract class Anchor extends PictogramElement {
    * @generated
    */
   public void setParent(AnchorContainer newParent) {
-    parent = newParent;
+    if (parent != newParent) {
+      if (parent != null) {
+        parent.removeFromAnchors(this);
+      }
+      parent = newParent;
+      if (parent != null) {
+        parent.addToAnchors(this);
+      }
+    }
   }
 
   /**
@@ -102,6 +110,7 @@ public abstract class Anchor extends PictogramElement {
   public boolean addToOutgoingConnections(Connection outgoingConnectionsValue) {
     if (!outgoingConnections.contains(outgoingConnectionsValue)) {
       boolean result = outgoingConnections.add(outgoingConnectionsValue);
+      outgoingConnectionsValue.setStart(this);
       return result;
     }
     return false;
@@ -120,6 +129,7 @@ public abstract class Anchor extends PictogramElement {
   public boolean removeFromOutgoingConnections(Connection outgoingConnectionsValue) {
     if (outgoingConnections.contains(outgoingConnectionsValue)) {
       boolean result = outgoingConnections.remove(outgoingConnectionsValue);
+      outgoingConnectionsValue.setStart(null);
       return result;
     }
     return false;
@@ -146,7 +156,10 @@ public abstract class Anchor extends PictogramElement {
    * @generated
    */
   public void setOutgoingConnections(Set<Connection> newOutgoingConnections) {
-    outgoingConnections = newOutgoingConnections;
+    clearOutgoingConnections();
+    for (Connection value : newOutgoingConnections) {
+      addToOutgoingConnections(value);
+    }
   }
 
   /**
@@ -172,6 +185,7 @@ public abstract class Anchor extends PictogramElement {
   public boolean addToIncomingConnections(Connection incomingConnectionsValue) {
     if (!incomingConnections.contains(incomingConnectionsValue)) {
       boolean result = incomingConnections.add(incomingConnectionsValue);
+      incomingConnectionsValue.setEnd(this);
       return result;
     }
     return false;
@@ -190,6 +204,7 @@ public abstract class Anchor extends PictogramElement {
   public boolean removeFromIncomingConnections(Connection incomingConnectionsValue) {
     if (incomingConnections.contains(incomingConnectionsValue)) {
       boolean result = incomingConnections.remove(incomingConnectionsValue);
+      incomingConnectionsValue.setEnd(null);
       return result;
     }
     return false;
@@ -216,7 +231,10 @@ public abstract class Anchor extends PictogramElement {
    * @generated
    */
   public void setIncomingConnections(Set<Connection> newIncomingConnections) {
-    incomingConnections = newIncomingConnections;
+    clearIncomingConnections();
+    for (Connection value : newIncomingConnections) {
+      addToIncomingConnections(value);
+    }
   }
 
   /**

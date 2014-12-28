@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orm:entity-mappings xmlns:orm="http://www.eclipse.org/eclipselink/xsds/persistence/orm" version="2.3">
+  <orm:persistence-unit-metadata>
+    <orm:persistence-unit-defaults>
+      <orm:delimited-identifiers/>
+    </orm:persistence-unit-defaults>
+  </orm:persistence-unit-metadata>
+  <orm:access>FIELD</orm:access>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz420913.Bz420913_O" name="Bz420913_Bz420913_O">
+    <orm:table name="Bz420913_Bz420913_O"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:one-to-many name="multiBidirectional">
+        <orm:order-column name="Bz420913_Bz420913_O_multiBidirectional_ind"/>
+        <orm:join-table name="Bz420913_Bz420913_O_multiBidirectional">
+          <orm:join-column name="Bz420913_Bz420913_O_multiBidirectional"/>
+          <orm:inverse-join-column name="multiBidirectional_Bz420913_Bz420913_T"/>
+        </orm:join-table>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-many>
+      <orm:one-to-one mapped-by="singleBidirectional" name="singleBidirectional">
+        <orm:join-column name="Bz420913_Bz420913_O_singleBidirectional"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-one>
+      <orm:many-to-many name="multiMultiBidirectional">
+        <orm:order-column name="Bz420913_Bz420913_O_multiMultiBidirectional_ind"/>
+        <orm:join-table name="Bz420913_Bz420913_O_multiMultiBidirectional">
+          <orm:join-column name="Bz420913_Bz420913_O_multiMultiBidirectional"/>
+          <orm:inverse-join-column name="multiMultiBidirectional_Bz420913_Bz420913_T"/>
+        </orm:join-table>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-many>
+    </orm:attributes>
+  </orm:entity>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz420913.Bz420913_T" name="Bz420913_Bz420913_T">
+    <orm:table name="Bz420913_Bz420913_T"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:many-to-one name="multiBidirectional">
+        <orm:join-column name="Bz420913_Bz420913_T_multiBidirectional"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+      <orm:one-to-one name="singleBidirectional">
+        <orm:join-column name="Bz420913_Bz420913_T_singleBidirectional"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-one>
+      <orm:many-to-many name="multiMultiBidirectional">
+        <orm:order-column name="Bz420913_Bz420913_T_multiMultiBidirectional_ind"/>
+        <orm:join-table name="Bz420913_Bz420913_T_multiMultiBidirectional">
+          <orm:join-column name="Bz420913_Bz420913_T_multiMultiBidirectional"/>
+          <orm:inverse-join-column name="multiMultiBidirectional_Bz420913_Bz420913_O"/>
+        </orm:join-table>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-many>
+    </orm:attributes>
+  </orm:entity>
+</orm:entity-mappings>

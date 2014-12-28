@@ -54,7 +54,7 @@ public class ClubModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ClubModelPackage.CLUB_CLASSIFIER_ID:
@@ -70,7 +70,7 @@ public class ClubModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -228,6 +228,13 @@ public class ClubModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Club.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -270,7 +277,7 @@ public class ClubModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ClubModelPackage.CLUB_TEAMS_FEATURE_ID:
-        return getTarget().addToTeams((Team) value);
+        return getTarget().getTeams().add((Team) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -285,7 +292,7 @@ public class ClubModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ClubModelPackage.CLUB_TEAMS_FEATURE_ID:
-        return getTarget().removeFromTeams((Team) value);
+        return getTarget().getTeams().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -317,6 +324,13 @@ public class ClubModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ClubModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Team.class;
     }
 
     /**
@@ -367,7 +381,7 @@ public class ClubModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ClubModelPackage.TEAM_MEMBERS_FEATURE_ID:
-        return getTarget().addToMembers((Member) value);
+        return getTarget().getMembers().add((Member) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -382,7 +396,7 @@ public class ClubModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ClubModelPackage.TEAM_MEMBERS_FEATURE_ID:
-        return getTarget().removeFromMembers((Member) value);
+        return getTarget().getMembers().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -414,6 +428,13 @@ public class ClubModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ClubModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Member.class;
     }
 
     /**

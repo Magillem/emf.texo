@@ -145,51 +145,6 @@ public class QueryType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>parameters</em> feature.
-   * 
-   * @param parametersValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToParameters(Parameter parametersValue) {
-    if (!parameters.contains(parametersValue)) {
-      boolean result = parameters.add(parametersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>parameters</em> feature.
-   * 
-   * @param parametersValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromParameters(Parameter parametersValue) {
-    if (parameters.contains(parametersValue)) {
-      boolean result = parameters.remove(parametersValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>parameters</em> feature.
-   * 
-   * @generated
-   */
-  public void clearParameters() {
-    while (!parameters.isEmpty()) {
-      removeFromParameters(parameters.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link QueryType#getParameters() <em>parameters</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

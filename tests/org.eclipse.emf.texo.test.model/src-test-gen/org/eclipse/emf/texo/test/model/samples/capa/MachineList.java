@@ -46,51 +46,6 @@ public class MachineList extends Identifiable {
   }
 
   /**
-   * Adds to the <em>machines</em> feature.
-   * 
-   * @param machinesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToMachines(Machine machinesValue) {
-    if (!machines.contains(machinesValue)) {
-      boolean result = machines.add(machinesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>machines</em> feature.
-   * 
-   * @param machinesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromMachines(Machine machinesValue) {
-    if (machines.contains(machinesValue)) {
-      boolean result = machines.remove(machinesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>machines</em> feature.
-   * 
-   * @generated
-   */
-  public void clearMachines() {
-    while (!machines.isEmpty()) {
-      removeFromMachines(machines.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link MachineList#getMachines() <em>machines</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

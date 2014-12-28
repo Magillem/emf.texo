@@ -25,7 +25,7 @@
       eSuperTypes="#//PropertyContainer"/>
   <eClassifiers xsi:type="ecore:EClass" name="StyleContainer" abstract="true" eSuperTypes="http://www.eclipse.org/emf/texo/test/model/base/identifiable#//Identifiable">
     <eStructuralFeatures xsi:type="ecore:EReference" name="styles" ordered="false"
-        upperBound="-1" eType="#//algorithms/styles/Style" containment="true" eOpposite="#//algorithms/styles/Style/styleContainer">
+        upperBound="-1" eType="#//algorithms/styles/Style" containment="true">
       <eAnnotations source="org.eclipse.emf.texo">
         <details key="java.member" value="styles"/>
       </eAnnotations>
@@ -527,7 +527,7 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="styleContainer" ordered="false"
-            unique="false" lowerBound="1" eType="#//StyleContainer" eOpposite="#//StyleContainer/styles">
+            unique="false" lowerBound="1" eType="#//StyleContainer">
           <eAnnotations source="org.eclipse.emf.texo">
             <details key="java.member" value="styleContainer"/>
           </eAnnotations>

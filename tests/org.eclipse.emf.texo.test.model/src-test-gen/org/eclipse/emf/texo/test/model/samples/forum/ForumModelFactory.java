@@ -55,7 +55,7 @@ public class ForumModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case ForumModelPackage.FORUM_CLASSIFIER_ID:
@@ -74,7 +74,7 @@ public class ForumModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -278,6 +278,14 @@ public class ForumModelFactory implements ModelFactory {
      * @generated
      */
     @Override
+    public Class<?> getTargetClass() {
+      return Forum.class;
+    }
+
+    /**
+     * @generated
+     */
+    @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
@@ -327,10 +335,10 @@ public class ForumModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ForumModelPackage.FORUM_MEMBERS_FEATURE_ID:
-        return getTarget().addToMembers((Member) value);
+        return getTarget().getMembers().add((Member) value);
 
       case ForumModelPackage.FORUM_TOPICS_FEATURE_ID:
-        return getTarget().addToTopics((Topic) value);
+        return getTarget().getTopics().add((Topic) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -345,10 +353,10 @@ public class ForumModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ForumModelPackage.FORUM_MEMBERS_FEATURE_ID:
-        return getTarget().removeFromMembers((Member) value);
+        return getTarget().getMembers().remove(value);
 
       case ForumModelPackage.FORUM_TOPICS_FEATURE_ID:
-        return getTarget().removeFromTopics((Topic) value);
+        return getTarget().getTopics().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -380,6 +388,14 @@ public class ForumModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ForumModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public Class<?> getTargetClass() {
+      return Member.class;
     }
 
     /**
@@ -435,10 +451,10 @@ public class ForumModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ForumModelPackage.MEMBER_POSTS_FEATURE_ID:
-        return getTarget().addToPosts((Post) value);
+        return getTarget().getPosts().add((Post) value);
 
       case ForumModelPackage.MEMBER_CREATED_FEATURE_ID:
-        return getTarget().addToCreated((Topic) value);
+        return getTarget().getCreated().add((Topic) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -453,10 +469,10 @@ public class ForumModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ForumModelPackage.MEMBER_POSTS_FEATURE_ID:
-        return getTarget().removeFromPosts((Post) value);
+        return getTarget().getPosts().remove(value);
 
       case ForumModelPackage.MEMBER_CREATED_FEATURE_ID:
-        return getTarget().removeFromCreated((Topic) value);
+        return getTarget().getCreated().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -488,6 +504,14 @@ public class ForumModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ForumModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public Class<?> getTargetClass() {
+      return Topic.class;
     }
 
     /**
@@ -548,7 +572,7 @@ public class ForumModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ForumModelPackage.TOPIC_POSTS_FEATURE_ID:
-        return getTarget().addToPosts((Post) value);
+        return getTarget().getPosts().add((Post) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -563,7 +587,7 @@ public class ForumModelFactory implements ModelFactory {
       switch (featureID) {
 
       case ForumModelPackage.TOPIC_POSTS_FEATURE_ID:
-        return getTarget().removeFromPosts((Post) value);
+        return getTarget().getPosts().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -595,6 +619,14 @@ public class ForumModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return ForumModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    @Override
+    public Class<?> getTargetClass() {
+      return Post.class;
     }
 
     /**

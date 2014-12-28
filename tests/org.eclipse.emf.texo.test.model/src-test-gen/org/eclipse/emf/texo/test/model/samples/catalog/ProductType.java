@@ -126,51 +126,6 @@ public class ProductType extends Identifiable {
   }
 
   /**
-   * Adds to the <em>remark</em> feature.
-   * 
-   * @param remarkValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToRemark(StringType remarkValue) {
-    if (!remark.contains(remarkValue)) {
-      boolean result = remark.add(remarkValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>remark</em> feature.
-   * 
-   * @param remarkValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromRemark(StringType remarkValue) {
-    if (remark.contains(remarkValue)) {
-      boolean result = remark.remove(remarkValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>remark</em> feature.
-   * 
-   * @generated
-   */
-  public void clearRemark() {
-    while (!remark.isEmpty()) {
-      removeFromRemark(remark.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link ProductType#getRemark() <em>remark</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

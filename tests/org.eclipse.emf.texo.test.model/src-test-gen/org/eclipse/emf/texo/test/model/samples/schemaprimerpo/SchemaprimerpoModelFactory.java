@@ -60,7 +60,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case SchemaprimerpoModelPackage.DOCUMENTROOT_CLASSIFIER_ID:
@@ -79,7 +79,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -290,6 +290,13 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return DocumentRoot.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -405,6 +412,13 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PurchaseOrder.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -465,7 +479,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
       switch (featureID) {
 
       case SchemaprimerpoModelPackage.PURCHASEORDER_ITEMS_FEATURE_ID:
-        return getTarget().addToItems((Item) value);
+        return getTarget().getItems().add((Item) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -481,7 +495,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
       switch (featureID) {
 
       case SchemaprimerpoModelPackage.PURCHASEORDER_ITEMS_FEATURE_ID:
-        return getTarget().removeFromItems((Item) value);
+        return getTarget().getItems().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -514,6 +528,13 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return SchemaprimerpoModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Item.class;
     }
 
     /**
@@ -627,6 +648,13 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return SchemaprimerpoModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return USAddress.class;
     }
 
     /**

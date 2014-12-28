@@ -87,51 +87,6 @@ public class AccountGroup extends Identifiable {
   }
 
   /**
-   * Adds to the <em>account</em> feature.
-   * 
-   * @param accountValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToAccount(Account accountValue) {
-    if (!account.contains(accountValue)) {
-      boolean result = account.add(accountValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>account</em> feature.
-   * 
-   * @param accountValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromAccount(Account accountValue) {
-    if (account.contains(accountValue)) {
-      boolean result = account.remove(accountValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>account</em> feature.
-   * 
-   * @generated
-   */
-  public void clearAccount() {
-    while (!account.isEmpty()) {
-      removeFromAccount(account.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link AccountGroup#getAccount() <em>account</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -85,51 +85,6 @@ public class DataAction extends AbstractDataElement {
   }
 
   /**
-   * Adds to the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToImplementation(ActionElement implementationValue) {
-    if (!implementation.contains(implementationValue)) {
-      boolean result = implementation.add(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>implementation</em> feature.
-   * 
-   * @param implementationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromImplementation(ActionElement implementationValue) {
-    if (implementation.contains(implementationValue)) {
-      boolean result = implementation.remove(implementationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>implementation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearImplementation() {
-    while (!implementation.isEmpty()) {
-      removeFromImplementation(implementation.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link DataAction#getImplementation() <em>implementation</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -152,51 +107,6 @@ public class DataAction extends AbstractDataElement {
    */
   public Set<DataEvent> getDataElement() {
     return dataElement;
-  }
-
-  /**
-   * Adds to the <em>dataElement</em> feature.
-   * 
-   * @param dataElementValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToDataElement(DataEvent dataElementValue) {
-    if (!dataElement.contains(dataElementValue)) {
-      boolean result = dataElement.add(dataElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>dataElement</em> feature.
-   * 
-   * @param dataElementValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromDataElement(DataEvent dataElementValue) {
-    if (dataElement.contains(dataElementValue)) {
-      boolean result = dataElement.remove(dataElementValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>dataElement</em> feature.
-   * 
-   * @generated
-   */
-  public void clearDataElement() {
-    while (!dataElement.isEmpty()) {
-      removeFromDataElement(dataElement.iterator().next());
-    }
   }
 
   /**

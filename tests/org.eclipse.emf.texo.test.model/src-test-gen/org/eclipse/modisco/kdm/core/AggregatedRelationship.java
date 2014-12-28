@@ -95,7 +95,15 @@ public class AggregatedRelationship extends ModelElement {
    * @generated
    */
   public void setFrom(KDMEntity newFrom) {
-    from = newFrom;
+    if (from != newFrom) {
+      if (from != null) {
+        from.removeFromOutAggregated(this);
+      }
+      from = newFrom;
+      if (from != null) {
+        from.addToOutAggregated(this);
+      }
+    }
   }
 
   /**
@@ -124,7 +132,15 @@ public class AggregatedRelationship extends ModelElement {
    * @generated
    */
   public void setTo(KDMEntity newTo) {
-    to = newTo;
+    if (to != newTo) {
+      if (to != null) {
+        to.removeFromInAggregated(this);
+      }
+      to = newTo;
+      if (to != null) {
+        to.addToInAggregated(this);
+      }
+    }
   }
 
   /**
@@ -138,51 +154,6 @@ public class AggregatedRelationship extends ModelElement {
    */
   public Set<KDMRelationship> getRelation() {
     return relation;
-  }
-
-  /**
-   * Adds to the <em>relation</em> feature.
-   * 
-   * @param relationValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToRelation(KDMRelationship relationValue) {
-    if (!relation.contains(relationValue)) {
-      boolean result = relation.add(relationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>relation</em> feature.
-   * 
-   * @param relationValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromRelation(KDMRelationship relationValue) {
-    if (relation.contains(relationValue)) {
-      boolean result = relation.remove(relationValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>relation</em> feature.
-   * 
-   * @generated
-   */
-  public void clearRelation() {
-    while (!relation.isEmpty()) {
-      removeFromRelation(relation.iterator().next());
-    }
   }
 
   /**

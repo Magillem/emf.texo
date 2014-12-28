@@ -86,7 +86,7 @@ public class BuildModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case BuildModelPackage.ABSTRACTBUILDELEMENT_CLASSIFIER_ID:
@@ -153,7 +153,7 @@ public class BuildModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -428,6 +428,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return AbstractBuildElement.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -498,7 +505,7 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.ABSTRACTBUILDELEMENT_BUILDRELATION_FEATURE_ID:
-        return getTarget().addToBuildRelation((AbstractBuildRelationship) value);
+        return getTarget().getBuildRelation().add((AbstractBuildRelationship) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -513,7 +520,7 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.ABSTRACTBUILDELEMENT_BUILDRELATION_FEATURE_ID:
-        return getTarget().removeFromBuildRelation((AbstractBuildRelationship) value);
+        return getTarget().getBuildRelation().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -546,6 +553,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return AbstractBuildRelationship.class;
     }
 
     /**
@@ -639,6 +653,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BuildResource.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -721,13 +742,13 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.BUILDRESOURCE_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().addToImplementation((KDMEntity) value);
+        return getTarget().getImplementation().add((KDMEntity) value);
 
       case BuildModelPackage.BUILDRESOURCE_GROUPEDBUILD_FEATURE_ID:
-        return getTarget().addToGroupedBuild((AbstractBuildElement) value);
+        return getTarget().getGroupedBuild().add((AbstractBuildElement) value);
 
       case BuildModelPackage.BUILDRESOURCE_BUILDELEMENT_FEATURE_ID:
-        return getTarget().addToBuildElement((AbstractBuildElement) value);
+        return getTarget().getBuildElement().add((AbstractBuildElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -742,13 +763,13 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.BUILDRESOURCE_IMPLEMENTATION_FEATURE_ID:
-        return getTarget().removeFromImplementation((KDMEntity) value);
+        return getTarget().getImplementation().remove(value);
 
       case BuildModelPackage.BUILDRESOURCE_GROUPEDBUILD_FEATURE_ID:
-        return getTarget().removeFromGroupedBuild((AbstractBuildElement) value);
+        return getTarget().getGroupedBuild().remove(value);
 
       case BuildModelPackage.BUILDRESOURCE_BUILDELEMENT_FEATURE_ID:
-        return getTarget().removeFromBuildElement((AbstractBuildElement) value);
+        return getTarget().getBuildElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -780,6 +801,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BuildDescription.class;
     }
 
     /**
@@ -868,7 +896,7 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.BUILDDESCRIPTION_SOURCE_FEATURE_ID:
-        return getTarget().addToSource((SourceRef) value);
+        return getTarget().getSource().add((SourceRef) value);
 
       default:
         return super.eAddTo(eStructuralFeature, value);
@@ -884,7 +912,7 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.BUILDDESCRIPTION_SOURCE_FEATURE_ID:
-        return getTarget().removeFromSource((SourceRef) value);
+        return getTarget().getSource().remove(value);
 
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
@@ -917,6 +945,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return SymbolicLink.class;
     }
 
     /**
@@ -1034,6 +1069,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return LinksTo.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1134,6 +1176,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Consumes.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1229,6 +1278,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BuildStep.class;
     }
 
     /**
@@ -1352,6 +1408,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BuildModel.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1408,7 +1471,7 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.BUILDMODEL_BUILDELEMENT_FEATURE_ID:
-        return getTarget().addToBuildElement((AbstractBuildElement) value);
+        return getTarget().getBuildElement().add((AbstractBuildElement) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -1423,7 +1486,7 @@ public class BuildModelFactory implements ModelFactory {
       switch (featureID) {
 
       case BuildModelPackage.BUILDMODEL_BUILDELEMENT_FEATURE_ID:
-        return getTarget().removeFromBuildElement((AbstractBuildElement) value);
+        return getTarget().getBuildElement().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -1455,6 +1518,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BuildComponent.class;
     }
 
     /**
@@ -1578,6 +1648,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Supplier.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1690,6 +1767,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Tool.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -1797,6 +1881,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BuildElement.class;
     }
 
     /**
@@ -1915,6 +2006,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return BuildRelationship.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2015,6 +2113,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SuppliedBy.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2110,6 +2215,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return Library.class;
     }
 
     /**
@@ -2233,6 +2345,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Produces.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2333,6 +2452,13 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return SupportedBy.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -2428,6 +2554,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return BuildProduct.class;
     }
 
     /**
@@ -2546,6 +2679,13 @@ public class BuildModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return BuildModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return DescribedBy.class;
     }
 
     /**

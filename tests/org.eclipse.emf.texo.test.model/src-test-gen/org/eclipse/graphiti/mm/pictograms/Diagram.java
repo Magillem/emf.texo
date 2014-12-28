@@ -121,7 +121,7 @@ public class Diagram extends ContainerShape {
    * 
    * @generated
    */
-  @OneToMany(cascade = { CascadeType.ALL }, mappedBy = "styleContainer")
+  @OneToMany(cascade = { CascadeType.ALL })
   private Set<Style> styles = new HashSet<Style>();
 
   /**
@@ -197,6 +197,7 @@ public class Diagram extends ContainerShape {
   public boolean addToConnections(Connection connectionsValue) {
     if (!connections.contains(connectionsValue)) {
       boolean result = connections.add(connectionsValue);
+      connectionsValue.setParent(this);
       return result;
     }
     return false;
@@ -215,6 +216,7 @@ public class Diagram extends ContainerShape {
   public boolean removeFromConnections(Connection connectionsValue) {
     if (connections.contains(connectionsValue)) {
       boolean result = connections.remove(connectionsValue);
+      connectionsValue.setParent(null);
       return result;
     }
     return false;
@@ -241,7 +243,10 @@ public class Diagram extends ContainerShape {
    * @generated
    */
   public void setConnections(Set<Connection> newConnections) {
-    connections = newConnections;
+    clearConnections();
+    for (Connection value : newConnections) {
+      addToConnections(value);
+    }
   }
 
   /**
@@ -338,51 +343,6 @@ public class Diagram extends ContainerShape {
   }
 
   /**
-   * Adds to the <em>colors</em> feature.
-   * 
-   * @param colorsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToColors(Color colorsValue) {
-    if (!colors.contains(colorsValue)) {
-      boolean result = colors.add(colorsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>colors</em> feature.
-   * 
-   * @param colorsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromColors(Color colorsValue) {
-    if (colors.contains(colorsValue)) {
-      boolean result = colors.remove(colorsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>colors</em> feature.
-   * 
-   * @generated
-   */
-  public void clearColors() {
-    while (!colors.isEmpty()) {
-      removeFromColors(colors.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Diagram#getColors() <em>colors</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -408,51 +368,6 @@ public class Diagram extends ContainerShape {
   }
 
   /**
-   * Adds to the <em>fonts</em> feature.
-   * 
-   * @param fontsValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToFonts(Font fontsValue) {
-    if (!fonts.contains(fontsValue)) {
-      boolean result = fonts.add(fontsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>fonts</em> feature.
-   * 
-   * @param fontsValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromFonts(Font fontsValue) {
-    if (fonts.contains(fontsValue)) {
-      boolean result = fonts.remove(fontsValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>fonts</em> feature.
-   * 
-   * @generated
-   */
-  public void clearFonts() {
-    while (!fonts.isEmpty()) {
-      removeFromFonts(fonts.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Diagram#getFonts() <em>fonts</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -475,51 +390,6 @@ public class Diagram extends ContainerShape {
    */
   public Set<PictogramLink> getPictogramLinks() {
     return pictogramLinks;
-  }
-
-  /**
-   * Adds to the <em>pictogramLinks</em> feature.
-   * 
-   * @param pictogramLinksValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToPictogramLinks(PictogramLink pictogramLinksValue) {
-    if (!pictogramLinks.contains(pictogramLinksValue)) {
-      boolean result = pictogramLinks.add(pictogramLinksValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>pictogramLinks</em> feature.
-   * 
-   * @param pictogramLinksValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromPictogramLinks(PictogramLink pictogramLinksValue) {
-    if (pictogramLinks.contains(pictogramLinksValue)) {
-      boolean result = pictogramLinks.remove(pictogramLinksValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>pictogramLinks</em> feature.
-   * 
-   * @generated
-   */
-  public void clearPictogramLinks() {
-    while (!pictogramLinks.isEmpty()) {
-      removeFromPictogramLinks(pictogramLinks.iterator().next());
-    }
   }
 
   /**
@@ -595,51 +465,6 @@ public class Diagram extends ContainerShape {
    */
   public Set<Style> getStyles() {
     return styles;
-  }
-
-  /**
-   * Adds to the <em>styles</em> feature.
-   * 
-   * @param stylesValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToStyles(Style stylesValue) {
-    if (!styles.contains(stylesValue)) {
-      boolean result = styles.add(stylesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>styles</em> feature.
-   * 
-   * @param stylesValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromStyles(Style stylesValue) {
-    if (styles.contains(stylesValue)) {
-      boolean result = styles.remove(stylesValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>styles</em> feature.
-   * 
-   * @generated
-   */
-  public void clearStyles() {
-    while (!styles.isEmpty()) {
-      removeFromStyles(styles.iterator().next());
-    }
   }
 
   /**

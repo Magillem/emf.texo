@@ -50,7 +50,7 @@ public class MmModelFactory implements ModelFactory {
    * @generated
    */
   @SuppressWarnings({ "unchecked", "rawtypes" })
-  public ModelObject createModelObject(EClass eClass, Object adaptee) {
+  public <T> ModelObject<T> createModelObject(EClass eClass, T adaptee) {
     ModelObject<Object> modelObject = null;
     switch (eClass.getClassifierID()) {
     case MmModelPackage.PROPERTY_CLASSIFIER_ID:
@@ -69,7 +69,7 @@ public class MmModelFactory implements ModelFactory {
       throw new IllegalArgumentException("The EClass '" + eClass + "' is not defined in this EPackage");
     }
     modelObject.setTarget(adaptee);
-    return modelObject;
+    return (ModelObject<T>) modelObject;
   }
 
   /**
@@ -174,6 +174,13 @@ public class MmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return Property.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -266,6 +273,13 @@ public class MmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return PropertyContainer.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -306,7 +320,7 @@ public class MmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case MmModelPackage.PROPERTYCONTAINER_PROPERTIES_FEATURE_ID:
-        return getTarget().addToProperties((Property) value);
+        return getTarget().getProperties().add((Property) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -321,7 +335,7 @@ public class MmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case MmModelPackage.PROPERTYCONTAINER_PROPERTIES_FEATURE_ID:
-        return getTarget().removeFromProperties((Property) value);
+        return getTarget().getProperties().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }
@@ -354,6 +368,13 @@ public class MmModelFactory implements ModelFactory {
     @Override
     public ModelPackage getModelPackage() {
       return MmModelPackage.INSTANCE;
+    }
+
+    /**
+     * @generated
+     */
+    public Class<?> getTargetClass() {
+      return GraphicsAlgorithmContainer.class;
     }
 
     /**
@@ -442,6 +463,13 @@ public class MmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    public Class<?> getTargetClass() {
+      return StyleContainer.class;
+    }
+
+    /**
+     * @generated
+     */
     @Override
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
@@ -482,7 +510,7 @@ public class MmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case MmModelPackage.STYLECONTAINER_STYLES_FEATURE_ID:
-        return getTarget().addToStyles((Style) value);
+        return getTarget().getStyles().add((Style) value);
       default:
         return super.eAddTo(eStructuralFeature, value);
       }
@@ -497,7 +525,7 @@ public class MmModelFactory implements ModelFactory {
       switch (featureID) {
 
       case MmModelPackage.STYLECONTAINER_STYLES_FEATURE_ID:
-        return getTarget().removeFromStyles((Style) value);
+        return getTarget().getStyles().remove(value);
       default:
         return super.eRemoveFrom(eStructuralFeature, value);
       }

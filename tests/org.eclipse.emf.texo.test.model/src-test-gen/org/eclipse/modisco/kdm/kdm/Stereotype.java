@@ -59,51 +59,6 @@ public class Stereotype extends Element {
   }
 
   /**
-   * Adds to the <em>tag</em> feature.
-   * 
-   * @param tagValue
-   *          the value to add
-   * @return true if the value is added to the collection (it was not yet present in the collection), false otherwise
-   * @generated
-   */
-  public boolean addToTag(TagDefinition tagValue) {
-    if (!tag.contains(tagValue)) {
-      boolean result = tag.add(tagValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Removes from the <em>tag</em> feature.
-   * 
-   * @param tagValue
-   *          the value to remove
-   * @return true if the value is removed from the collection (it existed in the collection before removing), false
-   *         otherwise
-   * 
-   * @generated
-   */
-  public boolean removeFromTag(TagDefinition tagValue) {
-    if (tag.contains(tagValue)) {
-      boolean result = tag.remove(tagValue);
-      return result;
-    }
-    return false;
-  }
-
-  /**
-   * Clears the <em>tag</em> feature.
-   * 
-   * @generated
-   */
-  public void clearTag() {
-    while (!tag.isEmpty()) {
-      removeFromTag(tag.iterator().next());
-    }
-  }
-
-  /**
    * Sets the '{@link Stereotype#getTag() <em>tag</em>}' feature.
    *
    * <!-- begin-user-doc --> <!-- end-user-doc -->

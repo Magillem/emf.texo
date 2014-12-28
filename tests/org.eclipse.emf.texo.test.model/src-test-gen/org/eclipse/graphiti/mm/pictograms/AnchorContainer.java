@@ -51,6 +51,7 @@ public abstract class AnchorContainer extends PictogramElement {
   public boolean addToAnchors(Anchor anchorsValue) {
     if (!anchors.contains(anchorsValue)) {
       boolean result = anchors.add(anchorsValue);
+      anchorsValue.setParent(this);
       return result;
     }
     return false;
@@ -69,6 +70,7 @@ public abstract class AnchorContainer extends PictogramElement {
   public boolean removeFromAnchors(Anchor anchorsValue) {
     if (anchors.contains(anchorsValue)) {
       boolean result = anchors.remove(anchorsValue);
+      anchorsValue.setParent(null);
       return result;
     }
     return false;
@@ -95,7 +97,10 @@ public abstract class AnchorContainer extends PictogramElement {
    * @generated
    */
   public void setAnchors(Set<Anchor> newAnchors) {
-    anchors = newAnchors;
+    clearAnchors();
+    for (Anchor value : newAnchors) {
+      addToAnchors(value);
+    }
   }
 
   /**
