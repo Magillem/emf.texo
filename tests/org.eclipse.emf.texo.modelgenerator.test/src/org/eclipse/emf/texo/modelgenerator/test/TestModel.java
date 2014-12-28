@@ -136,6 +136,9 @@ public class TestModel {
     urls.add("issues/bz404132.ecore"); //$NON-NLS-1$
     urls.add("issues/bz409157.ecore"); //$NON-NLS-1$
     urls.add("issues/bz411874.ecore"); //$NON-NLS-1$
+    urls.add("issues/bz415716.ecore"); //$NON-NLS-1$
+    urls.add("issues/bz420913.ecore"); //$NON-NLS-1$
+    urls.add("issues/bz420913_NotBiDirectional.ecore"); //$NON-NLS-1$
     urls.add("issues/bz422811.ecore"); //$NON-NLS-1$
     urls.add("issues/bz423760.ecore"); //$NON-NLS-1$
     urls.add("issues/interface_abstract_class_wrong_featureid.ecore"); //$NON-NLS-1$
