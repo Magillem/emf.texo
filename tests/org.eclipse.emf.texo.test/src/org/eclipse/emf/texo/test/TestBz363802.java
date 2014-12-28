@@ -43,7 +43,7 @@ public class TestBz363802 extends TestCase {
     }
     Assert.assertFalse(l.getWriters().isEmpty());
     // fails in the bugzilla
-    l.clearWriters();
+    l.getWriters().clear();
     Assert.assertTrue(l.getWriters().isEmpty());
   }
 }

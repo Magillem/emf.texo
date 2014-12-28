@@ -1,7 +1,7 @@
 /**
  * <copyright>
  *
- * Copyright (c) 2013 Springsite BV (The Netherlands) and others
+ * Copyright (c) 2013-2014 Springsite BV (The Netherlands) and others
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -31,10 +31,10 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({ TestXMIMixed.class, TestXMLMixed.class, TestBz325427.class,
-  TestBidirectionalAssociationSupport.class, TestBz363802.class, TestBz379796.class, TestBz380279.class,
-  TestBz393240.class, TestBz411874.class, TestBz415716.class, TestBz422811.class, TestDirectJavaAnnotations.class,
-  TestIdTitleProvider.class, TestMerge.class, TestModelAccess.class, TestNotRequiredSerialization.class,
-  TestSubpackage.class, TestTemplateOverride.class, TestWrongFeatureId.class, TestBz325427.class })
+    TestBidirectionalAssociationSupport.class, TestBz363802.class, TestBz379796.class, TestBz380279.class,
+    TestBz393240.class, TestBz411874.class, TestBz415716.class, TestBz422811.class, TestDirectJavaAnnotations.class,
+    TestIdTitleProvider.class, TestMerge.class, TestModelAccess.class, TestNotRequiredSerialization.class,
+    TestSubpackage.class, TestTemplateOverride.class, TestWrongFeatureId.class, TestBz325427.class, TestBz420913.class })
 public class AllTestsTests extends TestSuite {
 
   // these test cases pass fine when run individually:
