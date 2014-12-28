@@ -1,5 +1,6 @@
-package org.eclipse.emf.texo.test.model.issues.bz377606;
+package org.eclipse.emf.texo.test.model.issues.bz420913;
 
+import java.util.List;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -11,14 +12,14 @@ import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 
 /**
- * The <b>{@link ModelFactory}</b> for the types of this model: Order. It
+ * The <b>{@link ModelFactory}</b> for the types of this model: Bz420913. It
  * contains code to create instances {@link ModelObject} wrappers and instances
  * for EClasses and convert objects back and forth from their String (XML)
  * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
  */
-public class OrderModelFactory implements ModelFactory {
+public class Bz420913ModelFactory implements ModelFactory {
 
 	/**
 	 * Creates an instance for an {@link EClass} <!-- begin-user-doc --> <!--
@@ -31,10 +32,10 @@ public class OrderModelFactory implements ModelFactory {
 	 */
 	public Object create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case OrderModelPackage.CUSTOMER_CLASSIFIER_ID:
-			return createCustomer();
-		case OrderModelPackage.ADDRESS_CLASSIFIER_ID:
-			return createAddress();
+		case Bz420913ModelPackage.BZ420913_O_CLASSIFIER_ID:
+			return createBz420913_O();
+		case Bz420913ModelPackage.BZ420913_T_CLASSIFIER_ID:
+			return createBz420913_T();
 		default:
 			throw new IllegalArgumentException("The EClass '"
 					+ eClass.getName()
@@ -57,11 +58,11 @@ public class OrderModelFactory implements ModelFactory {
 	public ModelObject createModelObject(EClass eClass, Object adaptee) {
 		ModelObject<Object> modelObject = null;
 		switch (eClass.getClassifierID()) {
-		case OrderModelPackage.CUSTOMER_CLASSIFIER_ID:
-			modelObject = new CustomerModelObject();
+		case Bz420913ModelPackage.BZ420913_O_CLASSIFIER_ID:
+			modelObject = new Bz420913_OModelObject();
 			break;
-		case OrderModelPackage.ADDRESS_CLASSIFIER_ID:
-			modelObject = new AddressModelObject();
+		case Bz420913ModelPackage.BZ420913_T_CLASSIFIER_ID:
+			modelObject = new Bz420913_TModelObject();
 			break;
 		default:
 			throw new IllegalArgumentException("The EClass '" + eClass
@@ -73,8 +74,8 @@ public class OrderModelFactory implements ModelFactory {
 
 	/**
 	 * Creates a feature map entry instance for a certain EStructuralFeature.
-	 * 
-	 * @param eStructuralFeature
+	 *
+	 * @param eFeature
 	 *            the feature map feature
 	 * @return the pojo feature map entry
 	 * @generated
@@ -88,8 +89,8 @@ public class OrderModelFactory implements ModelFactory {
 	 * Wraps a feature map entry pojo in a {@link AbstractModelFeatureMapEntry}.
 	 * If the feature map entry is null then a new one is created and <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @param eStructuralFeature
+	 *
+	 * @param eFeature
 	 *            the feature map feature of the object
 	 * @param adaptee
 	 *            the pojo feature map entry being wrapped/adapted
@@ -105,21 +106,23 @@ public class OrderModelFactory implements ModelFactory {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @return an instance of the model object representing the EClass Customer
+	 * @return an instance of the model object representing the EClass
+	 *         Bz420913_O
 	 * @generated
 	 */
-	public Customer createCustomer() {
-		return new Customer();
+	public Bz420913_O createBz420913_O() {
+		return new Bz420913_O();
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @return an instance of the model object representing the EClass Address
+	 * @return an instance of the model object representing the EClass
+	 *         Bz420913_T
 	 * @generated
 	 */
-	public Address createAddress() {
-		return new Address();
+	public Bz420913_T createBz420913_T() {
+		return new Bz420913_T();
 	}
 
 	/**
@@ -160,25 +163,29 @@ public class OrderModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * The adapter/wrapper for the EClass '<em><b>Customer</b></em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The adapter/wrapper for the EClass '<em><b>Bz420913_O</b></em>'.
+	 *
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param <E>
+	 *            the domain model java class
+	 *
 	 * @generated
 	 */
-	public static class CustomerModelObject<E extends Customer> extends
+	public static class Bz420913_OModelObject<E extends Bz420913_O> extends
 			AbstractModelObject<E> {
 		/**
 		 * @generated
 		 */
 		public EClass eClass() {
-			return OrderModelPackage.INSTANCE.getCustomerEClass();
+			return Bz420913ModelPackage.INSTANCE.getBz420913_OEClass();
 		}
 
 		/**
 		 * @generated
 		 */
 		public ModelPackage getModelPackage() {
-			return OrderModelPackage.INSTANCE;
+			return Bz420913ModelPackage.INSTANCE;
 		}
 
 		/**
@@ -188,14 +195,10 @@ public class OrderModelFactory implements ModelFactory {
 		public Object eGet(EStructuralFeature eStructuralFeature) {
 			final int featureID = eClass().getFeatureID(eStructuralFeature);
 			switch (featureID) {
-			case OrderModelPackage.CUSTOMER_FIRSTNAME_FEATURE_ID:
-				return getTarget().getFirstName();
-			case OrderModelPackage.CUSTOMER_LASTNAME_FEATURE_ID:
-				return getTarget().getLastName();
-			case OrderModelPackage.CUSTOMER_ADDRESS_FEATURE_ID:
-				return getTarget().getAddress();
-			case OrderModelPackage.CUSTOMER_ID_FEATURE_ID:
-				return getTarget().getId();
+			case Bz420913ModelPackage.BZ420913_O_SINGLEBIDIRECTIONAL_FEATURE_ID:
+				return getTarget().getSingleBidirectional();
+			case Bz420913ModelPackage.BZ420913_O_MULTIBIDIRECTIONAL_FEATURE_ID:
+				return getTarget().getMultiBidirectional();
 			default:
 				return super.eGet(eStructuralFeature);
 			}
@@ -204,21 +207,16 @@ public class OrderModelFactory implements ModelFactory {
 		/**
 		 * @generated
 		 */
+		@SuppressWarnings("unchecked")
 		@Override
 		public void eSet(EStructuralFeature eStructuralFeature, Object value) {
 			final int featureID = eClass().getFeatureID(eStructuralFeature);
 			switch (featureID) {
-			case OrderModelPackage.CUSTOMER_FIRSTNAME_FEATURE_ID:
-				getTarget().setFirstName((String) value);
+			case Bz420913ModelPackage.BZ420913_O_SINGLEBIDIRECTIONAL_FEATURE_ID:
+				getTarget().setSingleBidirectional((Bz420913_T) value);
 				return;
-			case OrderModelPackage.CUSTOMER_LASTNAME_FEATURE_ID:
-				getTarget().setLastName((String) value);
-				return;
-			case OrderModelPackage.CUSTOMER_ADDRESS_FEATURE_ID:
-				getTarget().setAddress((Address) value);
-				return;
-			case OrderModelPackage.CUSTOMER_ID_FEATURE_ID:
-				getTarget().setId((Double) value);
+			case Bz420913ModelPackage.BZ420913_O_MULTIBIDIRECTIONAL_FEATURE_ID:
+				getTarget().setMultiBidirectional((List<Bz420913_T>) value);
 				return;
 			default:
 				super.eSet(eStructuralFeature, value);
@@ -234,6 +232,8 @@ public class OrderModelFactory implements ModelFactory {
 			final int featureID = eClass().getFeatureID(eStructuralFeature);
 			switch (featureID) {
 
+			case Bz420913ModelPackage.BZ420913_O_MULTIBIDIRECTIONAL_FEATURE_ID:
+				return getTarget().addToMultiBidirectional((Bz420913_T) value);
 			default:
 				return super.eAddTo(eStructuralFeature, value);
 			}
@@ -248,6 +248,9 @@ public class OrderModelFactory implements ModelFactory {
 			final int featureID = eClass().getFeatureID(eStructuralFeature);
 			switch (featureID) {
 
+			case Bz420913ModelPackage.BZ420913_O_MULTIBIDIRECTIONAL_FEATURE_ID:
+				return getTarget().removeFromMultiBidirectional(
+						(Bz420913_T) value);
 			default:
 				return super.eRemoveFrom(eStructuralFeature, value);
 			}
@@ -255,25 +258,29 @@ public class OrderModelFactory implements ModelFactory {
 	}
 
 	/**
-	 * The adapter/wrapper for the EClass '<em><b>Address</b></em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The adapter/wrapper for the EClass '<em><b>Bz420913_T</b></em>'.
+	 *
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @param <E>
+	 *            the domain model java class
+	 *
 	 * @generated
 	 */
-	public static class AddressModelObject<E extends Address> extends
+	public static class Bz420913_TModelObject<E extends Bz420913_T> extends
 			AbstractModelObject<E> {
 		/**
 		 * @generated
 		 */
 		public EClass eClass() {
-			return OrderModelPackage.INSTANCE.getAddressEClass();
+			return Bz420913ModelPackage.INSTANCE.getBz420913_TEClass();
 		}
 
 		/**
 		 * @generated
 		 */
 		public ModelPackage getModelPackage() {
-			return OrderModelPackage.INSTANCE;
+			return Bz420913ModelPackage.INSTANCE;
 		}
 
 		/**
@@ -283,10 +290,10 @@ public class OrderModelFactory implements ModelFactory {
 		public Object eGet(EStructuralFeature eStructuralFeature) {
 			final int featureID = eClass().getFeatureID(eStructuralFeature);
 			switch (featureID) {
-			case OrderModelPackage.ADDRESS_CITY_FEATURE_ID:
-				return getTarget().getCity();
-			case OrderModelPackage.ADDRESS_STREET_FEATURE_ID:
-				return getTarget().getStreet();
+			case Bz420913ModelPackage.BZ420913_T_SINGLEBIDIRECTIONAL_FEATURE_ID:
+				return getTarget().getSingleBidirectional();
+			case Bz420913ModelPackage.BZ420913_T_MULTIBIDIRECTIONAL_FEATURE_ID:
+				return getTarget().getMultiBidirectional();
 			default:
 				return super.eGet(eStructuralFeature);
 			}
@@ -299,11 +306,11 @@ public class OrderModelFactory implements ModelFactory {
 		public void eSet(EStructuralFeature eStructuralFeature, Object value) {
 			final int featureID = eClass().getFeatureID(eStructuralFeature);
 			switch (featureID) {
-			case OrderModelPackage.ADDRESS_CITY_FEATURE_ID:
-				getTarget().setCity((String) value);
+			case Bz420913ModelPackage.BZ420913_T_SINGLEBIDIRECTIONAL_FEATURE_ID:
+				getTarget().setSingleBidirectional((Bz420913_O) value);
 				return;
-			case OrderModelPackage.ADDRESS_STREET_FEATURE_ID:
-				getTarget().setStreet((String) value);
+			case Bz420913ModelPackage.BZ420913_T_MULTIBIDIRECTIONAL_FEATURE_ID:
+				getTarget().setMultiBidirectional((Bz420913_O) value);
 				return;
 			default:
 				super.eSet(eStructuralFeature, value);
@@ -338,5 +345,4 @@ public class OrderModelFactory implements ModelFactory {
 			}
 		}
 	}
-
 }

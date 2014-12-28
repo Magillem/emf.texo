@@ -1,11 +1,15 @@
 package org.eclipse.emf.texo.test.model.issues.bz377606;
 
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+
 /**
  * A representation of the model object '<em><b>Address</b></em>'. <!--
  * begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
  */
+@Entity(name = "Order_Address")
 public class Address {
 
 	/**
@@ -13,6 +17,7 @@ public class Address {
 	 * 
 	 * @generated
 	 */
+	@Basic()
 	private String city = null;
 
 	/**
@@ -20,11 +25,12 @@ public class Address {
 	 * 
 	 * @generated
 	 */
+	@Basic()
 	private String street = null;
 
 	/**
 	 * Returns the value of '<em><b>city</b></em>' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the value of '<em><b>city</b></em>' feature
@@ -36,11 +42,11 @@ public class Address {
 
 	/**
 	 * Sets the '{@link Address#getCity() <em>city</em>}' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param the
-	 *            new value of the '{@link Address#getCity() city}' feature.
+	 * @param newCity
+	 *            the new value of the '{@link Address#getCity() city}' feature.
 	 * @generated
 	 */
 	public void setCity(String newCity) {
@@ -49,7 +55,7 @@ public class Address {
 
 	/**
 	 * Returns the value of '<em><b>street</b></em>' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the value of '<em><b>street</b></em>' feature
@@ -61,11 +67,12 @@ public class Address {
 
 	/**
 	 * Sets the '{@link Address#getStreet() <em>street</em>}' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param the
-	 *            new value of the '{@link Address#getStreet() street}' feature.
+	 * @param newStreet
+	 *            the new value of the '{@link Address#getStreet() street}'
+	 *            feature.
 	 * @generated
 	 */
 	public void setStreet(String newStreet) {

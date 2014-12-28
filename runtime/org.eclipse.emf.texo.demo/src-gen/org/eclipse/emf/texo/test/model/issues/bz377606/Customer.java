@@ -1,11 +1,17 @@
 package org.eclipse.emf.texo.test.model.issues.bz377606;
 
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+
 /**
  * A representation of the model object '<em><b>Customer</b></em>'. <!--
  * begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
  */
+@Entity(name = "Order_Customer")
 public class Customer {
 
 	/**
@@ -13,6 +19,7 @@ public class Customer {
 	 * 
 	 * @generated
 	 */
+	@Basic()
 	private String firstName = null;
 
 	/**
@@ -20,6 +27,7 @@ public class Customer {
 	 * 
 	 * @generated
 	 */
+	@Basic()
 	private String lastName = null;
 
 	/**
@@ -27,6 +35,7 @@ public class Customer {
 	 * 
 	 * @generated
 	 */
+	@ManyToOne(cascade = { CascadeType.ALL })
 	private Address address = null;
 
 	/**
@@ -34,11 +43,12 @@ public class Customer {
 	 * 
 	 * @generated
 	 */
+	@Basic()
 	private Double id = null;
 
 	/**
 	 * Returns the value of '<em><b>firstName</b></em>' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the value of '<em><b>firstName</b></em>' feature
@@ -50,12 +60,12 @@ public class Customer {
 
 	/**
 	 * Sets the '{@link Customer#getFirstName() <em>firstName</em>}' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param the
-	 *            new value of the '{@link Customer#getFirstName() firstName}'
-	 *            feature.
+	 * @param newFirstName
+	 *            the new value of the '{@link Customer#getFirstName()
+	 *            firstName}' feature.
 	 * @generated
 	 */
 	public void setFirstName(String newFirstName) {
@@ -64,7 +74,7 @@ public class Customer {
 
 	/**
 	 * Returns the value of '<em><b>lastName</b></em>' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the value of '<em><b>lastName</b></em>' feature
@@ -76,11 +86,11 @@ public class Customer {
 
 	/**
 	 * Sets the '{@link Customer#getLastName() <em>lastName</em>}' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param the
-	 *            new value of the '{@link Customer#getLastName() lastName}'
+	 * @param newLastName
+	 *            the new value of the '{@link Customer#getLastName() lastName}'
 	 *            feature.
 	 * @generated
 	 */
@@ -90,7 +100,7 @@ public class Customer {
 
 	/**
 	 * Returns the value of '<em><b>address</b></em>' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the value of '<em><b>address</b></em>' feature
@@ -102,11 +112,11 @@ public class Customer {
 
 	/**
 	 * Sets the '{@link Customer#getAddress() <em>address</em>}' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param the
-	 *            new value of the '{@link Customer#getAddress() address}'
+	 * @param newAddress
+	 *            the new value of the '{@link Customer#getAddress() address}'
 	 *            feature.
 	 * @generated
 	 */
@@ -116,7 +126,7 @@ public class Customer {
 
 	/**
 	 * Returns the value of '<em><b>id</b></em>' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the value of '<em><b>id</b></em>' feature
@@ -128,11 +138,11 @@ public class Customer {
 
 	/**
 	 * Sets the '{@link Customer#getId() <em>id</em>}' feature.
-	 * 
+	 *
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @param the
-	 *            new value of the '{@link Customer#getId() id}' feature.
+	 * @param newId
+	 *            the new value of the '{@link Customer#getId() id}' feature.
 	 * @generated
 	 */
 	public void setId(Double newId) {

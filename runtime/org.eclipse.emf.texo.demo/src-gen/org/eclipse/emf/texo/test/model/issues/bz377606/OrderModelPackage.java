@@ -9,13 +9,16 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.texo.model.ModelFactory;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.model.ModelResolver;
+import org.eclipse.emf.texo.server.store.DaoRegistry;
+import org.eclipse.emf.texo.test.model.issues.bz377606.dao.AddressDao;
+import org.eclipse.emf.texo.test.model.issues.bz377606.dao.CustomerDao;
 import org.eclipse.emf.texo.utils.ModelUtils;
 
 /**
  * The <b>Package</b> for the model '<em><b>Order</b></em>'. It contains
  * initialization code and access to the Factory to instantiate types of this
  * package.
- * 
+ *
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
  * @generated
@@ -111,7 +114,9 @@ public class OrderModelPackage extends ModelPackage {
 	/**
 	 * Initializes this {@link ModelPackage}. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
+	 * @return an initialized instance of this class
+	 *
 	 * @generated
 	 */
 	public static OrderModelPackage initialize() {
@@ -141,6 +146,10 @@ public class OrderModelPackage extends ModelPackage {
 		ModelResolver.getInstance().registerClassModelMapping(Address.class,
 				modelPackage.getAddressEClass(), modelPackage);
 
+		DaoRegistry.getInstance()
+				.registerDao(Customer.class, CustomerDao.class);
+		DaoRegistry.getInstance().registerDao(Address.class, AddressDao.class);
+
 		// and return ourselves
 		return modelPackage;
 	}
@@ -160,7 +169,7 @@ public class OrderModelPackage extends ModelPackage {
 	/**
 	 * Returns the nsUri of the {@link EPackage} managed by this Package
 	 * instance. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return the nsUri of the EPackage
 	 * @generated
 	 */
@@ -300,8 +309,9 @@ public class OrderModelPackage extends ModelPackage {
 			return Customer.class;
 		case ADDRESS_CLASSIFIER_ID:
 			return Address.class;
+		default:
+			throw new IllegalArgumentException("The EClassifier '"
+					+ eClassifier + "' is not defined in this EPackage");
 		}
-		throw new IllegalArgumentException("The EClassifier '" + eClassifier
-				+ "' is not defined in this EPackage");
 	}
 }
