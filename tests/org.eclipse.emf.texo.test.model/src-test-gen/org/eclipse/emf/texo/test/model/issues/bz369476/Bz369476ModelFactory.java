@@ -162,6 +162,7 @@ public class Bz369476ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Test.class;
     }

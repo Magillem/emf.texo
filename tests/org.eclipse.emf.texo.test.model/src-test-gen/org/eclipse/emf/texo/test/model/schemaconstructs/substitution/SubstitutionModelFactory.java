@@ -445,6 +445,7 @@ public class SubstitutionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ComplexNumber.class;
     }
@@ -545,6 +546,7 @@ public class SubstitutionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -691,6 +693,7 @@ public class SubstitutionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EvenComplexNumberType.class;
     }
@@ -783,6 +786,7 @@ public class SubstitutionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MultiNumberType.class;
     }
@@ -892,6 +896,7 @@ public class SubstitutionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return NumberType.class;
     }
@@ -1014,6 +1019,7 @@ public class SubstitutionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return OddComplexNumberType.class;
     }

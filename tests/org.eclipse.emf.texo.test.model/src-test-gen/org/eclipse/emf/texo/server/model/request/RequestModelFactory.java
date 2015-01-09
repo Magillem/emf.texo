@@ -234,6 +234,7 @@ public class RequestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ActionType.class;
     }
@@ -356,6 +357,7 @@ public class RequestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -483,6 +485,7 @@ public class RequestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return QueryType.class;
     }
@@ -615,6 +618,7 @@ public class RequestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return QueryReferingObjectsType.class;
     }
@@ -720,6 +724,7 @@ public class RequestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Parameter.class;
     }

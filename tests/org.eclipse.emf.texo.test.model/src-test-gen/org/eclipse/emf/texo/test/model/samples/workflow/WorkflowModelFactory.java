@@ -338,6 +338,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConditionalOutputPort.class;
     }
@@ -450,6 +451,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Workflow.class;
     }
@@ -586,6 +588,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return WorkflowElement.class;
     }
@@ -710,6 +713,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return WorkflowNode.class;
     }
@@ -851,6 +855,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Edge.class;
     }
@@ -969,6 +974,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Comment.class;
     }
@@ -1077,6 +1083,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return OutputPort.class;
     }
@@ -1195,6 +1202,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Port.class;
     }
@@ -1296,6 +1304,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return InputPort.class;
     }
@@ -1414,6 +1423,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Fault.class;
     }
@@ -1519,6 +1529,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CompoundTask.class;
     }
@@ -1636,6 +1647,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TransformationTask.class;
     }
@@ -1754,6 +1766,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConditionalTask.class;
     }
@@ -1865,6 +1878,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return LoopTask.class;
     }
@@ -1985,6 +1999,7 @@ public class WorkflowModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Task.class;
     }

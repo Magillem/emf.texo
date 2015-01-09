@@ -179,6 +179,7 @@ public class Bz420913_NotBiDirectionalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Bz420913_NotBiDirectional_O.class;
     }
@@ -284,6 +285,7 @@ public class Bz420913_NotBiDirectionalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Bz420913_NotBiDirectional_T.class;
     }

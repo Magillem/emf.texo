@@ -258,6 +258,7 @@ public class MusicModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Artist.class;
     }
@@ -382,6 +383,7 @@ public class MusicModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Country.class;
     }
@@ -486,6 +488,7 @@ public class MusicModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Genre.class;
     }
@@ -590,6 +593,7 @@ public class MusicModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Album.class;
     }
@@ -736,6 +740,7 @@ public class MusicModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Song.class;
     }

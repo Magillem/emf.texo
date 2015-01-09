@@ -370,6 +370,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ActType.class;
     }
@@ -482,6 +483,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SceneType.class;
     }
@@ -616,6 +618,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -807,6 +810,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return FmType.class;
     }
@@ -907,6 +911,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PersonaeType.class;
     }
@@ -1039,6 +1044,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PersonaGroupType.class;
     }
@@ -1146,6 +1152,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PlayType.class;
     }
@@ -1271,6 +1278,7 @@ public class PlayModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SpeechType.class;
     }

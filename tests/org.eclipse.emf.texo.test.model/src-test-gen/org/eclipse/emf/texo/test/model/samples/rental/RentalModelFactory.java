@@ -416,6 +416,7 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RentalBicycle.class;
     }
@@ -518,6 +519,7 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RentalUnit.class;
     }
@@ -612,6 +614,7 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RentalCar.class;
     }
@@ -714,6 +717,7 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RentalBusiness.class;
     }
@@ -809,6 +813,7 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RentalCarDriver.class;
     }
@@ -909,6 +914,7 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RentalContract.class;
     }
@@ -1028,6 +1034,7 @@ public class RentalModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RentalContractLine.class;
     }

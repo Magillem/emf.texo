@@ -200,6 +200,7 @@ public class InterfacesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DescribableIdentifiableConcrete.class;
     }
@@ -302,6 +303,7 @@ public class InterfacesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Describable.class;
     }
@@ -390,6 +392,7 @@ public class InterfacesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return IdentifiedType.class;
     }
@@ -480,6 +483,7 @@ public class InterfacesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DescribableConcrete.class;
     }
@@ -580,6 +584,7 @@ public class InterfacesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return IdentifiableConcrete.class;
     }

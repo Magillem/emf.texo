@@ -174,6 +174,7 @@ public class TexoExtensionsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }

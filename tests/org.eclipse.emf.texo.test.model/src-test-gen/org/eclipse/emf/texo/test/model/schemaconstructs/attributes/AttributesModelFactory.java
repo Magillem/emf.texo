@@ -204,6 +204,7 @@ public class AttributesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AType.class;
     }
@@ -324,6 +325,7 @@ public class AttributesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -445,6 +447,7 @@ public class AttributesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RType.class;
     }

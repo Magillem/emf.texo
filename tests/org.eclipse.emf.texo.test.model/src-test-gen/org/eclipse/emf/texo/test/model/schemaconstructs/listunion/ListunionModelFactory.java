@@ -686,6 +686,7 @@ public class ListunionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StatesByCountry.class;
     }

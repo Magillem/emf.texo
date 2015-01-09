@@ -162,6 +162,7 @@ public class NotRequiredSerializationModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SerializationTest.class;
     }

@@ -191,6 +191,7 @@ public class DatetimeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -308,6 +309,7 @@ public class DatetimeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TestDate.class;
     }

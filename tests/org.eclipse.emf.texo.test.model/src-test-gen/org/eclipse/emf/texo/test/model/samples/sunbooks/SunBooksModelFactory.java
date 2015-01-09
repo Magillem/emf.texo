@@ -389,6 +389,7 @@ public class SunBooksModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AuthorsType.class;
     }
@@ -489,6 +490,7 @@ public class SunBooksModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BooksType.class;
     }
@@ -589,6 +591,7 @@ public class SunBooksModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BookType.class;
     }
@@ -724,6 +727,7 @@ public class SunBooksModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PromotionType.class;
     }
@@ -824,6 +828,7 @@ public class SunBooksModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CollectionType.class;
     }
@@ -919,6 +924,7 @@ public class SunBooksModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }

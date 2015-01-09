@@ -189,6 +189,7 @@ public class Bz393240ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Application.class;
     }
@@ -284,6 +285,7 @@ public class Bz393240ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }

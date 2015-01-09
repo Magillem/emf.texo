@@ -179,6 +179,7 @@ public class IncludeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Include1.class;
     }
@@ -279,6 +280,7 @@ public class IncludeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Include2.class;
     }

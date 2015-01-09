@@ -188,6 +188,7 @@ public class SimplefeaturemapModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PurchaseOrder.class;
     }
@@ -283,6 +284,7 @@ public class SimplefeaturemapModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Supplier.class;
     }

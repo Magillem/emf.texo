@@ -278,6 +278,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractStructureElement.class;
     }
@@ -441,6 +442,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractStructureRelationship.class;
     }
@@ -536,6 +538,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Subsystem.class;
     }
@@ -661,6 +664,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Layer.class;
     }
@@ -787,6 +791,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StructureModel.class;
     }
@@ -902,6 +907,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Component.class;
     }
@@ -1028,6 +1034,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SoftwareSystem.class;
     }
@@ -1154,6 +1161,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StructureRelationship.class;
     }
@@ -1262,6 +1270,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ArchitectureView.class;
     }
@@ -1388,6 +1397,7 @@ public class StructureModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StructureElement.class;
     }

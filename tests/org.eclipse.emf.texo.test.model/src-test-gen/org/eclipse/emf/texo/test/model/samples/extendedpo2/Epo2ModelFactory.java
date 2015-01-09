@@ -360,6 +360,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Item.class;
     }
@@ -485,6 +486,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PurchaseOrder.class;
     }
@@ -623,6 +625,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return USAddress.class;
     }
@@ -736,6 +739,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Address.class;
     }
@@ -836,6 +840,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Customer.class;
     }
@@ -941,6 +946,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Supplier.class;
     }
@@ -1062,6 +1068,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GlobalAddress.class;
     }
@@ -1173,6 +1180,7 @@ public class Epo2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GlobalLocation.class;
     }

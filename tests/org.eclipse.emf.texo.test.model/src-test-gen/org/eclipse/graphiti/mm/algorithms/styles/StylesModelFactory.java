@@ -469,6 +469,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Style.class;
     }
@@ -651,6 +652,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractStyle.class;
     }
@@ -780,6 +782,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Color.class;
     }
@@ -884,6 +887,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Font.class;
     }
@@ -993,6 +997,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Point.class;
     }
@@ -1103,6 +1108,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PrecisionPoint.class;
     }
@@ -1203,6 +1209,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TextStyleRegion.class;
     }
@@ -1308,6 +1315,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RenderingStyle.class;
     }
@@ -1403,6 +1411,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AdaptedGradientColoredAreas.class;
     }
@@ -1515,6 +1524,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GradientColoredLocation.class;
     }
@@ -1620,6 +1630,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GradientColoredArea.class;
     }
@@ -1720,6 +1731,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GradientColoredAreas.class;
     }
@@ -1827,6 +1839,7 @@ public class StylesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TextStyle.class;
     }

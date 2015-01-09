@@ -170,6 +170,7 @@ public class BzWrongFeatureIdModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractClass.class;
     }
@@ -262,6 +263,7 @@ public class BzWrongFeatureIdModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TheInterface.class;
     }
@@ -352,6 +354,7 @@ public class BzWrongFeatureIdModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConcreteClass.class;
     }

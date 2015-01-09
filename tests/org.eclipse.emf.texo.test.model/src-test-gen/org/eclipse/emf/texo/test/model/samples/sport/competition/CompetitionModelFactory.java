@@ -165,6 +165,7 @@ public class CompetitionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Competition.class;
     }

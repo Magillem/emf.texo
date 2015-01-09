@@ -172,6 +172,7 @@ public class SimplechoiceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Person.class;
     }

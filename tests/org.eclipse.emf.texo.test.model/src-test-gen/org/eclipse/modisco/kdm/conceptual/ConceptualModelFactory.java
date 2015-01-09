@@ -324,6 +324,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConceptualModel.class;
     }
@@ -440,6 +441,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractConceptualElement.class;
     }
@@ -603,6 +605,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractConceptualRelationship.class;
     }
@@ -698,6 +701,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TermUnit.class;
     }
@@ -824,6 +828,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConceptualContainer.class;
     }
@@ -961,6 +966,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return FactUnit.class;
     }
@@ -1089,6 +1095,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConceptualRelationship.class;
     }
@@ -1196,6 +1203,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BehaviorUnit.class;
     }
@@ -1323,6 +1331,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RuleUnit.class;
     }
@@ -1450,6 +1459,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ScenarioUnit.class;
     }
@@ -1578,6 +1588,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConceptualFlow.class;
     }
@@ -1686,6 +1697,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConceptualElement.class;
     }
@@ -1812,6 +1824,7 @@ public class ConceptualModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConceptualRole.class;
     }

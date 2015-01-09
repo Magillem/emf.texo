@@ -372,6 +372,7 @@ public class ListModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StatesByCountry.class;
     }

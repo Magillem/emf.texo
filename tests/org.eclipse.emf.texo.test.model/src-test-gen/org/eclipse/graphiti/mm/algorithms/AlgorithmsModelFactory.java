@@ -299,6 +299,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GraphicsAlgorithm.class;
     }
@@ -477,6 +478,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Polyline.class;
     }
@@ -610,6 +612,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Ellipse.class;
     }
@@ -731,6 +734,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Text.class;
     }
@@ -864,6 +868,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractText.class;
     }
@@ -1022,6 +1027,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Polygon.class;
     }
@@ -1145,6 +1151,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Rectangle.class;
     }
@@ -1266,6 +1273,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RoundedRectangle.class;
     }
@@ -1399,6 +1407,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Image.class;
     }
@@ -1543,6 +1552,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PlatformGraphicsAlgorithm.class;
     }
@@ -1671,6 +1681,7 @@ public class AlgorithmsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MultiText.class;
     }

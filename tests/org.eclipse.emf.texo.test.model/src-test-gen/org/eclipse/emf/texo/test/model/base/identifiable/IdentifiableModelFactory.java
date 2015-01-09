@@ -166,6 +166,7 @@ public class IdentifiableModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Identifiable.class;
     }
@@ -259,6 +260,7 @@ public class IdentifiableModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return NotIdentifiable.class;
     }
@@ -340,6 +342,7 @@ public class IdentifiableModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return IdentifiableInterface.class;
     }

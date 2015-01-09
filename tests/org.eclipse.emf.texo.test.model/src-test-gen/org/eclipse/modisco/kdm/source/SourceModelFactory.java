@@ -398,6 +398,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return InventoryModel.class;
     }
@@ -514,6 +515,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractInventoryElement.class;
     }
@@ -644,6 +646,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractInventoryRelationship.class;
     }
@@ -739,6 +742,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return InventoryItem.class;
     }
@@ -870,6 +874,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SourceFile.class;
     }
@@ -1005,6 +1010,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Image.class;
     }
@@ -1128,6 +1134,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Configuration.class;
     }
@@ -1251,6 +1258,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ResourceDescription.class;
     }
@@ -1374,6 +1382,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BinaryFile.class;
     }
@@ -1497,6 +1506,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ExecutableFile.class;
     }
@@ -1621,6 +1631,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return InventoryContainer.class;
     }
@@ -1752,6 +1763,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Directory.class;
     }
@@ -1880,6 +1892,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Project.class;
     }
@@ -2001,6 +2014,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DependsOn.class;
     }
@@ -2108,6 +2122,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SourceRef.class;
     }
@@ -2223,6 +2238,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SourceRegion.class;
     }
@@ -2352,6 +2368,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return InventoryElement.class;
     }
@@ -2472,6 +2489,7 @@ public class SourceModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return InventoryRelationship.class;
     }

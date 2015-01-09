@@ -180,6 +180,7 @@ public class RestrictionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Member.class;
     }
@@ -278,6 +279,7 @@ public class RestrictionModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return XMLDeviant.class;
     }

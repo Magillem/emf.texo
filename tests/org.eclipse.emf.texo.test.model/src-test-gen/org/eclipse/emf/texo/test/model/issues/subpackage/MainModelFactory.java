@@ -163,6 +163,7 @@ public class MainModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MainType.class;
     }

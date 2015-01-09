@@ -323,6 +323,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AccountingClass.class;
     }
@@ -459,6 +460,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Account.class;
     }
@@ -554,6 +556,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AccountGroup.class;
     }
@@ -658,6 +661,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Vat.class;
     }
@@ -757,6 +761,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BalanceAccount.class;
     }
@@ -858,6 +863,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Report.class;
     }
@@ -963,6 +969,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return JournalGroup.class;
     }
@@ -1079,6 +1086,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ReportGroup.class;
     }
@@ -1194,6 +1202,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return JournalStatement.class;
     }
@@ -1313,6 +1322,7 @@ public class AccountingModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PLAccount.class;
     }

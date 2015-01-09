@@ -428,6 +428,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractBuildElement.class;
     }
@@ -558,6 +559,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractBuildRelationship.class;
     }
@@ -653,6 +655,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildResource.class;
     }
@@ -806,6 +809,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildDescription.class;
     }
@@ -950,6 +954,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SymbolicLink.class;
     }
@@ -1069,6 +1074,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return LinksTo.class;
     }
@@ -1176,6 +1182,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Consumes.class;
     }
@@ -1283,6 +1290,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildStep.class;
     }
@@ -1408,6 +1416,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildModel.class;
     }
@@ -1523,6 +1532,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildComponent.class;
     }
@@ -1648,6 +1658,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Supplier.class;
     }
@@ -1767,6 +1778,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Tool.class;
     }
@@ -1886,6 +1898,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildElement.class;
     }
@@ -2006,6 +2019,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildRelationship.class;
     }
@@ -2113,6 +2127,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SuppliedBy.class;
     }
@@ -2220,6 +2235,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Library.class;
     }
@@ -2345,6 +2361,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Produces.class;
     }
@@ -2452,6 +2469,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SupportedBy.class;
     }
@@ -2559,6 +2577,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BuildProduct.class;
     }
@@ -2684,6 +2703,7 @@ public class BuildModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DescribedBy.class;
     }

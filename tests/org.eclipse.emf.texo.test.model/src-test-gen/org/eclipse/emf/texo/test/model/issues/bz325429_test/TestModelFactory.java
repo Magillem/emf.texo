@@ -227,6 +227,7 @@ public class TestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Person.class;
     }
@@ -341,6 +342,7 @@ public class TestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Address.class;
     }
@@ -440,6 +442,7 @@ public class TestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Contact.class;
     }

@@ -164,6 +164,7 @@ public class Bz306546ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MySerializableClass.class;
     }

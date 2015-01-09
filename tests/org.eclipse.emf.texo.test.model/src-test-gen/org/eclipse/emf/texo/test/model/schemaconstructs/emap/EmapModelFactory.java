@@ -193,6 +193,7 @@ public class EmapModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Book.class;
     }
@@ -293,6 +294,7 @@ public class EmapModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Writer.class;
     }
@@ -388,6 +390,7 @@ public class EmapModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BookStore.class;
     }

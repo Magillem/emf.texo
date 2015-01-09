@@ -261,6 +261,7 @@ public class Bz379815ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return VarInputType.class;
     }
@@ -360,6 +361,7 @@ public class Bz379815ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return VarConditionType.class;
     }
@@ -454,6 +456,7 @@ public class Bz379815ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return VarPolicyTypeType.class;
     }

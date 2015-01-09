@@ -163,6 +163,7 @@ public class Sub2ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Sub2Type.class;
     }

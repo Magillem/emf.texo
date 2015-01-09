@@ -882,6 +882,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimCard.class;
     }
@@ -982,6 +983,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimContract.class;
     }
@@ -1092,6 +1094,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PaymentInfo.class;
     }
@@ -1188,6 +1191,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimCardXSimContract.class;
     }
@@ -1287,6 +1291,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimTariff.class;
     }
@@ -1386,6 +1391,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Tariff.class;
     }
@@ -1494,6 +1500,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PaymentItem.class;
     }
@@ -1608,6 +1615,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return VolumePayment.class;
     }
@@ -1721,6 +1729,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PeriodicalPayment.class;
     }
@@ -1825,6 +1834,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return OneTimePayment.class;
     }
@@ -1922,6 +1932,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Service.class;
     }
@@ -2036,6 +2047,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Units.class;
     }
@@ -2130,6 +2142,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Price.class;
     }
@@ -2218,6 +2231,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CarProducer.class;
     }
@@ -2313,6 +2327,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CarModel.class;
     }
@@ -2413,6 +2428,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CarRegInfo.class;
     }
@@ -2560,6 +2576,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Document.class;
     }
@@ -2665,6 +2682,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Person.class;
     }
@@ -2796,6 +2814,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Car.class;
     }
@@ -2901,6 +2920,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CarPassport.class;
     }
@@ -3010,6 +3030,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Phone.class;
     }
@@ -3109,6 +3130,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Address.class;
     }
@@ -3234,6 +3256,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Passport.class;
     }
@@ -3344,6 +3367,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DrivingLicense.class;
     }
@@ -3454,6 +3478,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Contract.class;
     }
@@ -3571,6 +3596,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SecretQuestion.class;
     }
@@ -3685,6 +3711,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ClientTariff.class;
     }
@@ -3785,6 +3812,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ContractPackage.class;
     }
@@ -3886,6 +3914,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return User.class;
     }
@@ -3991,6 +4020,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UserGroup.class;
     }
@@ -4078,6 +4108,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Message.class;
     }
@@ -4192,6 +4223,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Event.class;
     }
@@ -4297,6 +4329,7 @@ public class ModelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Coordinates.class;
     }

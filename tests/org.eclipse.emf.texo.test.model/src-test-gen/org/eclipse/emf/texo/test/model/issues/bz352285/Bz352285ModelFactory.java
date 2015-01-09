@@ -163,6 +163,7 @@ public class Bz352285ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Abstract.class;
     }

@@ -222,6 +222,7 @@ public class JpamixedModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -339,6 +340,7 @@ public class JpamixedModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return LetterBodyType.class;
     }
@@ -461,6 +463,7 @@ public class JpamixedModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SalutationType.class;
     }

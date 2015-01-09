@@ -196,6 +196,7 @@ public class Bz369931ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Formula.class;
     }

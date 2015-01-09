@@ -179,6 +179,7 @@ public class Bz399086ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MapElement.class;
     }
@@ -273,6 +274,7 @@ public class Bz399086ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TheMap.class;
     }

@@ -339,6 +339,7 @@ public class TypesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ManyTypes.class;
     }
@@ -571,6 +572,7 @@ public class TypesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SingleTypes.class;
     }

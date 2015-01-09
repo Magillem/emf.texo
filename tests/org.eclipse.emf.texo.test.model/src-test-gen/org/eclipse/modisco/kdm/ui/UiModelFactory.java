@@ -418,6 +418,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractUIElement.class;
     }
@@ -581,6 +582,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractUIRelationship.class;
     }
@@ -676,6 +678,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIResource.class;
     }
@@ -813,6 +816,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIDisplay.class;
     }
@@ -940,6 +944,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Screen.class;
     }
@@ -1067,6 +1072,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Report.class;
     }
@@ -1194,6 +1200,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIModel.class;
     }
@@ -1309,6 +1316,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UILayout.class;
     }
@@ -1416,6 +1424,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIField.class;
     }
@@ -1543,6 +1552,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DisplaysImage.class;
     }
@@ -1650,6 +1660,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Displays.class;
     }
@@ -1757,6 +1768,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIFlow.class;
     }
@@ -1864,6 +1876,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIElement.class;
     }
@@ -1989,6 +2002,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIRelationship.class;
     }
@@ -2096,6 +2110,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIAction.class;
     }
@@ -2238,6 +2253,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UIEvent.class;
     }
@@ -2371,6 +2387,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ReadsUI.class;
     }
@@ -2479,6 +2496,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return WritesUI.class;
     }
@@ -2587,6 +2605,7 @@ public class UiModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ManagesUI.class;
     }

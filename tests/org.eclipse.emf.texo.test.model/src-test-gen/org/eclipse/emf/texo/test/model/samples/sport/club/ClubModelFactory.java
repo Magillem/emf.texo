@@ -228,6 +228,7 @@ public class ClubModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Club.class;
     }
@@ -329,6 +330,7 @@ public class ClubModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Team.class;
     }
@@ -433,6 +435,7 @@ public class ClubModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Member.class;
     }

@@ -225,6 +225,7 @@ public class AnytypeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return A.class;
     }
@@ -334,6 +335,7 @@ public class AnytypeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return B.class;
     }
@@ -428,6 +430,7 @@ public class AnytypeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return C.class;
     }
@@ -515,6 +518,7 @@ public class AnytypeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TestAny.class;
     }

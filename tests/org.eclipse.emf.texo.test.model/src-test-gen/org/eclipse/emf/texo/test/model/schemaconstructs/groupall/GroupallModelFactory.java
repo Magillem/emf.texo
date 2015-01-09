@@ -273,6 +273,7 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AddressGroupType.class;
     }
@@ -383,6 +384,7 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AddressType.class;
     }
@@ -505,6 +507,7 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AddressList.class;
     }
@@ -632,6 +635,7 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -764,6 +768,7 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimpleAllType.class;
     }
@@ -868,6 +873,7 @@ public class GroupallModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimpleAllMapType.class;
     }

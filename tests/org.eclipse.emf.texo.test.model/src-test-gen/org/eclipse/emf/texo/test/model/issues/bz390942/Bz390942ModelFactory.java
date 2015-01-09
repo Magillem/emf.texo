@@ -163,6 +163,7 @@ public class Bz390942ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BZ390942.class;
     }

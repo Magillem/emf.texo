@@ -284,6 +284,7 @@ public class CoreModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Element.class;
     }
@@ -394,6 +395,7 @@ public class CoreModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ModelElement.class;
     }
@@ -508,6 +510,7 @@ public class CoreModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return KDMEntity.class;
     }
@@ -630,6 +633,7 @@ public class CoreModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return KDMRelationship.class;
     }
@@ -726,6 +730,7 @@ public class CoreModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AggregatedRelationship.class;
     }

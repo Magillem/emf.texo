@@ -290,6 +290,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -412,6 +413,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PurchaseOrder.class;
     }
@@ -533,6 +535,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Item.class;
     }
@@ -653,6 +656,7 @@ public class SchemaprimerpoModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return USAddress.class;
     }

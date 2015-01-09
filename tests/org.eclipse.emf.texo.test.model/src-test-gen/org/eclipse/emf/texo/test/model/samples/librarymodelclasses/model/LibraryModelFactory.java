@@ -232,6 +232,7 @@ public class LibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Book.class;
     }
@@ -341,6 +342,7 @@ public class LibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Library.class;
     }
@@ -456,6 +458,7 @@ public class LibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Writer.class;
     }

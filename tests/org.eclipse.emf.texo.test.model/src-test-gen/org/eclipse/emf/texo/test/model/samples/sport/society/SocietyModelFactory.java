@@ -162,6 +162,7 @@ public class SocietyModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Society.class;
     }

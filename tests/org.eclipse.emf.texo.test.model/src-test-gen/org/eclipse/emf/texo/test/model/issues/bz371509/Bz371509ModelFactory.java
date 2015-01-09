@@ -179,6 +179,7 @@ public class Bz371509ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EClass0.class;
     }
@@ -283,6 +284,7 @@ public class Bz371509ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EClass1.class;
     }

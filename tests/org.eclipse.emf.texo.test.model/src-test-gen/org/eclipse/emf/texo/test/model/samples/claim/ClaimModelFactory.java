@@ -209,6 +209,7 @@ public class ClaimModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Claim.class;
     }
@@ -328,6 +329,7 @@ public class ClaimModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ClaimCompositeKey.class;
     }
@@ -428,6 +430,7 @@ public class ClaimModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ClaimLine.class;
     }
@@ -543,6 +546,7 @@ public class ClaimModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ClaimLineCompositeKey.class;
     }

@@ -331,6 +331,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Book.class;
     }
@@ -446,6 +447,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Item.class;
     }
@@ -538,6 +540,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Lendable.class;
     }
@@ -638,6 +641,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CirculatingItem.class;
     }
@@ -744,6 +748,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Writer.class;
     }
@@ -852,6 +857,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Addressable.class;
     }
@@ -942,6 +948,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Person.class;
     }
@@ -1046,6 +1053,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Library.class;
     }
@@ -1228,6 +1236,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Employee.class;
     }
@@ -1328,6 +1337,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Borrower.class;
     }
@@ -1433,6 +1443,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Periodical.class;
     }
@@ -1534,6 +1545,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AudioVisualItem.class;
     }
@@ -1644,6 +1656,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BookOnTape.class;
     }
@@ -1755,6 +1768,7 @@ public class ExtlibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return VideoCassette.class;
     }

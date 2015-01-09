@@ -179,6 +179,7 @@ public class SchoollibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Asset.class;
     }
@@ -269,6 +270,7 @@ public class SchoollibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SchoolBook.class;
     }
@@ -372,6 +374,7 @@ public class SchoollibraryModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SchoolLibrary.class;
     }

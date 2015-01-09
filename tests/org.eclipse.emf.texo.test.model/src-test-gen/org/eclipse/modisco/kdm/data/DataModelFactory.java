@@ -796,6 +796,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataModel.class;
     }
@@ -912,6 +913,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractDataElement.class;
     }
@@ -1064,6 +1066,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractDataRelationship.class;
     }
@@ -1159,6 +1162,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataResource.class;
     }
@@ -1282,6 +1286,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return IndexElement.class;
     }
@@ -1417,6 +1422,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return UniqueKey.class;
     }
@@ -1542,6 +1548,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Index.class;
     }
@@ -1667,6 +1674,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return KeyRelation.class;
     }
@@ -1774,6 +1782,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ReferenceKey.class;
     }
@@ -1899,6 +1908,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataContainer.class;
     }
@@ -2034,6 +2044,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Catalog.class;
     }
@@ -2159,6 +2170,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RelationalSchema.class;
     }
@@ -2296,6 +2308,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ColumnSet.class;
     }
@@ -2433,6 +2446,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RelationalTable.class;
     }
@@ -2560,6 +2574,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RelationalView.class;
     }
@@ -2687,6 +2702,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RecordFile.class;
     }
@@ -2814,6 +2830,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataEvent.class;
     }
@@ -2944,6 +2961,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return XMLSchema.class;
     }
@@ -3080,6 +3098,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractContentElement.class;
     }
@@ -3204,6 +3223,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ComplexContentType.class;
     }
@@ -3339,6 +3359,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AllContent.class;
     }
@@ -3464,6 +3485,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SeqContent.class;
     }
@@ -3589,6 +3611,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ChoiceContent.class;
     }
@@ -3714,6 +3737,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ContentItem.class;
     }
@@ -3854,6 +3878,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GroupContent.class;
     }
@@ -3982,6 +4007,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ContentRestriction.class;
     }
@@ -4118,6 +4144,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimpleContentType.class;
     }
@@ -4263,6 +4290,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ExtendedDataElement.class;
     }
@@ -4387,6 +4415,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataRelationship.class;
     }
@@ -4494,6 +4523,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MixedContent.class;
     }
@@ -4619,6 +4649,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ContentReference.class;
     }
@@ -4746,6 +4777,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataAction.class;
     }
@@ -4898,6 +4930,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ReadsColumnSet.class;
     }
@@ -5005,6 +5038,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ContentAttribute.class;
     }
@@ -5132,6 +5166,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TypedBy.class;
     }
@@ -5239,6 +5274,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ReferenceTo.class;
     }
@@ -5346,6 +5382,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RestrictionOf.class;
     }
@@ -5453,6 +5490,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ExtensionTo.class;
     }
@@ -5560,6 +5598,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DatatypeOf.class;
     }
@@ -5668,6 +5707,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return HasContent.class;
     }
@@ -5776,6 +5816,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return WritesColumnSet.class;
     }
@@ -5884,6 +5925,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ProducesDataEvent.class;
     }
@@ -5991,6 +6033,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataSegment.class;
     }
@@ -6118,6 +6161,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ContentElement.class;
     }
@@ -6246,6 +6290,7 @@ public class DataModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ManagesData.class;
     }

@@ -401,6 +401,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EventModel.class;
     }
@@ -517,6 +518,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractEventElement.class;
     }
@@ -680,6 +682,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractEventRelationship.class;
     }
@@ -775,6 +778,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Event.class;
     }
@@ -908,6 +912,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EventRelationship.class;
     }
@@ -1015,6 +1020,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EventResource.class;
     }
@@ -1152,6 +1158,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return State.class;
     }
@@ -1279,6 +1286,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Transition.class;
     }
@@ -1406,6 +1414,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return OnEntry.class;
     }
@@ -1533,6 +1542,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return OnExit.class;
     }
@@ -1660,6 +1670,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EventAction.class;
     }
@@ -1803,6 +1814,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ReadsState.class;
     }
@@ -1911,6 +1923,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ProducesEvent.class;
     }
@@ -2018,6 +2031,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConsumesEvent.class;
     }
@@ -2125,6 +2139,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return NextState.class;
     }
@@ -2232,6 +2247,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return InitialState.class;
     }
@@ -2359,6 +2375,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return EventElement.class;
     }
@@ -2485,6 +2502,7 @@ public class EventModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return HasState.class;
     }

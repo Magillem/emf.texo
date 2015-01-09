@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orm:entity-mappings xmlns:orm="http://www.eclipse.org/eclipselink/xsds/persistence/orm" version="2.3">
+  <orm:persistence-unit-metadata>
+    <orm:persistence-unit-defaults>
+      <orm:delimited-identifiers/>
+    </orm:persistence-unit-defaults>
+  </orm:persistence-unit-metadata>
+  <orm:access>FIELD</orm:access>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz415716.TestBz415716_One" name="bz415716_TestBz415716_One">
+    <orm:table name="bz415716_TestBz415716_One"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:one-to-many name="two">
+        <orm:order-column name="bz415716_TestBz415716_One_two_ind"/>
+        <orm:join-table name="bz415716_TestBz415716_One_two">
+          <orm:join-column name="bz415716_TestBz415716_One_two"/>
+          <orm:inverse-join-column name="two_bz415716_TestBz415716_Two"/>
+        </orm:join-table>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-many>
+    </orm:attributes>
+  </orm:entity>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz415716.TestBz415716_Two" name="bz415716_TestBz415716_Two">
+    <orm:table name="bz415716_TestBz415716_Two"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:many-to-one name="one">
+        <orm:join-column name="bz415716_TestBz415716_Two_one"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+    </orm:attributes>
+  </orm:entity>
+</orm:entity-mappings>

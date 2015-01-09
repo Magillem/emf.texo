@@ -293,6 +293,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Attribute.class;
     }
@@ -396,6 +397,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Annotation.class;
     }
@@ -494,6 +496,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Stereotype.class;
     }
@@ -609,6 +612,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ExtendedValue.class;
     }
@@ -707,6 +711,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return KDMModel.class;
     }
@@ -813,6 +818,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return KDMFramework.class;
     }
@@ -938,6 +944,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Audit.class;
     }
@@ -1047,6 +1054,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ExtensionFamily.class;
     }
@@ -1157,6 +1165,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Segment.class;
     }
@@ -1281,6 +1290,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TagDefinition.class;
     }
@@ -1384,6 +1394,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TaggedValue.class;
     }
@@ -1484,6 +1495,7 @@ public class KdmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TaggedRef.class;
     }

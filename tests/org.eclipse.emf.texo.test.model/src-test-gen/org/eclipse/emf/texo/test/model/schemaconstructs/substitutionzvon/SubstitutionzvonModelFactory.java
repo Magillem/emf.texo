@@ -422,6 +422,7 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ComplexAAA.class;
     }
@@ -516,6 +517,7 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ComplexEvenType.class;
     }
@@ -605,6 +607,7 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ComplexOddType.class;
     }
@@ -695,6 +698,7 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -836,6 +840,7 @@ public class SubstitutionzvonModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RootType.class;
     }

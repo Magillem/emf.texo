@@ -234,6 +234,7 @@ public class EcoreattrsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Element.class;
     }
@@ -341,6 +342,7 @@ public class EcoreattrsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return NameList.class;
     }
@@ -445,6 +447,7 @@ public class EcoreattrsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Feature.class;
     }
@@ -556,6 +559,7 @@ public class EcoreattrsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Mixed.class;
     }

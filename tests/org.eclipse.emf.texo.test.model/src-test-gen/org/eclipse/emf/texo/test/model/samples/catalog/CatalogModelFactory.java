@@ -224,6 +224,7 @@ public class CatalogModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CatalogType.class;
     }
@@ -345,6 +346,7 @@ public class CatalogModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ProductType.class;
     }
@@ -462,6 +464,7 @@ public class CatalogModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PriceType.class;
     }
@@ -567,6 +570,7 @@ public class CatalogModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SupplierType.class;
     }
@@ -667,6 +671,7 @@ public class CatalogModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StringType.class;
     }

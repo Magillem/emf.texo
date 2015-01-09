@@ -179,6 +179,7 @@ public class InvModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PType.class;
     }
@@ -316,6 +317,7 @@ public class InvModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PDeclaration.class;
     }

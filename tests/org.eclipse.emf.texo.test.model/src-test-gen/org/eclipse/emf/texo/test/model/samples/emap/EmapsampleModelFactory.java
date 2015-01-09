@@ -193,6 +193,7 @@ public class EmapsampleModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Book.class;
     }
@@ -294,6 +295,7 @@ public class EmapsampleModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BookStore.class;
     }
@@ -404,6 +406,7 @@ public class EmapsampleModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Writer.class;
     }

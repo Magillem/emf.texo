@@ -215,6 +215,7 @@ public class EmployeeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Department.class;
     }
@@ -320,6 +321,7 @@ public class EmployeeModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Employee.class;
     }

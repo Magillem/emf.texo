@@ -193,6 +193,7 @@ public class TravelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Journey.class;
     }
@@ -297,6 +298,7 @@ public class TravelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Trip.class;
     }
@@ -396,6 +398,7 @@ public class TravelModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return City.class;
     }

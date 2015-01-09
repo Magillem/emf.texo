@@ -179,6 +179,7 @@ public class Bz403743ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Test403743_Main.class;
     }
@@ -284,6 +285,7 @@ public class Bz403743ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Test403743.class;
     }

@@ -165,6 +165,7 @@ public class DurationModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DurationTest.class;
     }

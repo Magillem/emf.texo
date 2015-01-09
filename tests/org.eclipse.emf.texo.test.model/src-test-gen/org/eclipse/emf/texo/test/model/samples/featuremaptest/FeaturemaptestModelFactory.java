@@ -187,6 +187,7 @@ public class FeaturemaptestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PurchaseOrder.class;
     }
@@ -282,6 +283,7 @@ public class FeaturemaptestModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Supplier.class;
     }

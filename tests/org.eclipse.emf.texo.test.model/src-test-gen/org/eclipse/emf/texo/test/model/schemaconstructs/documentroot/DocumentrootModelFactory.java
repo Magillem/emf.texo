@@ -190,6 +190,7 @@ public class DocumentrootModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ComplexType.class;
     }
@@ -285,6 +286,7 @@ public class DocumentrootModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }

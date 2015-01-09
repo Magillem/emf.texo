@@ -174,6 +174,7 @@ public class MmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Property.class;
     }
@@ -273,6 +274,7 @@ public class MmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PropertyContainer.class;
     }
@@ -373,6 +375,7 @@ public class MmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return GraphicsAlgorithmContainer.class;
     }
@@ -463,6 +466,7 @@ public class MmModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StyleContainer.class;
     }

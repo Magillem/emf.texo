@@ -255,6 +255,7 @@ public class CapaModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CapacityEntry.class;
     }
@@ -354,6 +355,7 @@ public class CapaModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Machine.class;
     }
@@ -481,6 +483,7 @@ public class CapaModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return WorkWeek.class;
     }
@@ -587,6 +590,7 @@ public class CapaModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Task.class;
     }
@@ -707,6 +711,7 @@ public class CapaModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MachineList.class;
     }
@@ -807,6 +812,7 @@ public class CapaModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Production.class;
     }
@@ -926,6 +932,7 @@ public class CapaModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return WorkDay.class;
     }

@@ -219,6 +219,7 @@ public class NestedgroupModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return A.class;
     }
@@ -345,6 +346,7 @@ public class NestedgroupModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CType.class;
     }
@@ -444,6 +446,7 @@ public class NestedgroupModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Element.class;
     }

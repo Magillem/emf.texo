@@ -232,6 +232,7 @@ public class Bz379796ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PriceType.class;
     }

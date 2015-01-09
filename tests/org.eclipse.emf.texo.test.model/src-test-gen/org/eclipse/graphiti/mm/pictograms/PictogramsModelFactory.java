@@ -362,6 +362,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Shape.class;
     }
@@ -469,6 +470,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PictogramElement.class;
     }
@@ -580,6 +582,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AnchorContainer.class;
     }
@@ -689,6 +692,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ContainerShape.class;
     }
@@ -802,6 +806,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Diagram.class;
     }
@@ -996,6 +1001,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Connection.class;
     }
@@ -1123,6 +1129,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PictogramLink.class;
     }
@@ -1229,6 +1236,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Anchor.class;
     }
@@ -1361,6 +1369,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ConnectionDecorator.class;
     }
@@ -1479,6 +1488,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return FixPointAnchor.class;
     }
@@ -1593,6 +1603,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AdvancedAnchor.class;
     }
@@ -1705,6 +1716,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BoxRelativeAnchor.class;
     }
@@ -1824,6 +1836,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ChopboxAnchor.class;
     }
@@ -1929,6 +1942,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return FreeFormConnection.class;
     }
@@ -2048,6 +2062,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ManhattanConnection.class;
     }
@@ -2155,6 +2170,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CurvedConnection.class;
     }
@@ -2274,6 +2290,7 @@ public class PictogramsModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return CompositeConnection.class;
     }

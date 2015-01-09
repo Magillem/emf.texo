@@ -613,6 +613,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PlatformModel.class;
     }
@@ -729,6 +730,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractPlatformElement.class;
     }
@@ -892,6 +894,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return AbstractPlatformRelationship.class;
     }
@@ -987,6 +990,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ResourceType.class;
     }
@@ -1124,6 +1128,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return NamingResource.class;
     }
@@ -1251,6 +1256,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MarshalledResource.class;
     }
@@ -1378,6 +1384,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return MessagingResource.class;
     }
@@ -1505,6 +1512,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return FileResource.class;
     }
@@ -1632,6 +1640,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ExecutionResource.class;
     }
@@ -1759,6 +1768,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return LockResource.class;
     }
@@ -1886,6 +1896,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return StreamResource.class;
     }
@@ -2013,6 +2024,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DataManager.class;
     }
@@ -2140,6 +2152,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PlatformEvent.class;
     }
@@ -2274,6 +2287,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PlatformAction.class;
     }
@@ -2416,6 +2430,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ExternalActor.class;
     }
@@ -2545,6 +2560,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return BindsTo.class;
     }
@@ -2652,6 +2668,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Requires.class;
     }
@@ -2760,6 +2777,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DeployedComponent.class;
     }
@@ -2898,6 +2916,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ManagesResource.class;
     }
@@ -3006,6 +3025,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ReadsResource.class;
     }
@@ -3114,6 +3134,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return WritesResource.class;
     }
@@ -3222,6 +3243,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DefinedBy.class;
     }
@@ -3330,6 +3352,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DeployedSoftwareSystem.class;
     }
@@ -3467,6 +3490,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Machine.class;
     }
@@ -3616,6 +3640,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DeployedResource.class;
     }
@@ -3753,6 +3778,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return RuntimeResource.class;
     }
@@ -3880,6 +3906,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Process.class;
     }
@@ -4007,6 +4034,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Thread.class;
     }
@@ -4134,6 +4162,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Loads.class;
     }
@@ -4241,6 +4270,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Spawns.class;
     }
@@ -4349,6 +4379,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PlatformElement.class;
     }
@@ -4475,6 +4506,7 @@ public class PlatformModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return PlatformRelationship.class;
     }

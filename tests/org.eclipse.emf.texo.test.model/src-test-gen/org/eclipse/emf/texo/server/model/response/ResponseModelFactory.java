@@ -219,6 +219,7 @@ public class ResponseModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return DocumentRoot.class;
     }
@@ -346,6 +347,7 @@ public class ResponseModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ErrorType.class;
     }
@@ -456,6 +458,7 @@ public class ResponseModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ResponseType.class;
     }
@@ -576,6 +579,7 @@ public class ResponseModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return ResultType.class;
     }

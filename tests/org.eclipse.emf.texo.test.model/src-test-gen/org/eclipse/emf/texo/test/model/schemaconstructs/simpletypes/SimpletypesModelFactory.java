@@ -294,6 +294,7 @@ public class SimpletypesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimpleList.class;
     }
@@ -531,6 +532,7 @@ public class SimpletypesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimpleType.class;
     }
@@ -684,6 +686,7 @@ public class SimpletypesModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return SimpleTypeObject.class;
     }

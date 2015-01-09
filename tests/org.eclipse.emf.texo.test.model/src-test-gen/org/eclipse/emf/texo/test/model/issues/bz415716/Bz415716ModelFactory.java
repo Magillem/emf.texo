@@ -179,6 +179,7 @@ public class Bz415716ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TestBz415716_One.class;
     }
@@ -279,6 +280,7 @@ public class Bz415716ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return TestBz415716_Two.class;
     }

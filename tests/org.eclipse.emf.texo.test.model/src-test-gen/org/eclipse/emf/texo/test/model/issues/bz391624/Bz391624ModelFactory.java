@@ -178,6 +178,7 @@ public class Bz391624ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Book.class;
     }
@@ -278,6 +279,7 @@ public class Bz391624ModelFactory implements ModelFactory {
     /**
      * @generated
      */
+    @Override
     public Class<?> getTargetClass() {
       return Author.class;
     }
