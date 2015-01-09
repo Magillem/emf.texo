@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orm:entity-mappings xmlns:orm="http://www.eclipse.org/eclipselink/xsds/persistence/orm" version="2.3">
+  <orm:persistence-unit-metadata>
+    <orm:persistence-unit-defaults>
+      <orm:delimited-identifiers/>
+    </orm:persistence-unit-defaults>
+  </orm:persistence-unit-metadata>
+  <orm:access>FIELD</orm:access>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz444321.MainElement" name="bz444321_MainElement">
+    <orm:table name="bz444321_MainElement"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:many-to-one name="single">
+        <orm:join-column name="bz444321_MainElement_single"/>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-one>
+      <orm:one-to-many name="multi" orphan-removal="true">
+        <orm:order-column name="bz444321_MainElement_multi_ind"/>
+        <orm:join-table name="bz444321_MainElement_multi">
+          <orm:join-column name="bz444321_MainElement_multi"/>
+          <orm:inverse-join-column name="multi_bz444321_SubElement"/>
+        </orm:join-table>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:one-to-many>
+      <orm:one-to-many name="multiContainment" orphan-removal="true">
+        <orm:order-column name="bz444321_MainElement_multiContainment_ind"/>
+        <orm:join-column name="bz444321_MainElement_multiContainment"/>
+        <orm:cascade>
+          <orm:cascade-all/>
+        </orm:cascade>
+      </orm:one-to-many>
+      <orm:one-to-many name="multiContainmentNoOrphanRemoval">
+        <orm:order-column name="bz444321_MainElement_multiContainmentNoOrphanRemoval_ind"/>
+        <orm:join-column name="bz444321_MainElement_multiContainmentNoOrphanRemoval"/>
+        <orm:cascade>
+          <orm:cascade-all/>
+        </orm:cascade>
+      </orm:one-to-many>
+      <orm:many-to-many name="multiNoOrphanRemoval">
+        <orm:order-column name="bz444321_MainElement_multiNoOrphanRemoval_ind"/>
+        <orm:join-table name="bz444321_MainElement_multiNoOrphanRemoval">
+          <orm:join-column name="bz444321_MainElement_multiNoOrphanRemoval"/>
+          <orm:inverse-join-column name="multiNoOrphanRemoval_bz444321_SubElement"/>
+        </orm:join-table>
+        <orm:cascade>
+          <orm:cascade-persist/>
+          <orm:cascade-merge/>
+          <orm:cascade-refresh/>
+        </orm:cascade>
+      </orm:many-to-many>
+    </orm:attributes>
+  </orm:entity>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz444321.SubElement" name="bz444321_SubElement">
+    <orm:table name="bz444321_SubElement"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes/>
+  </orm:entity>
+</orm:entity-mappings>
