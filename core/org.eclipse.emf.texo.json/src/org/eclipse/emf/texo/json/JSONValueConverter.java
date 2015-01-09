@@ -96,17 +96,23 @@ public class JSONValueConverter implements TexoComponent {
       return XMLTypeFactory.eINSTANCE.convertToString(eDataType, value);
     }
 
-    if (eDataType.getEPackage() == EcorePackage.eINSTANCE) {
-      // encode bytearrays using base64
-      if (eDataType == EcorePackage.eINSTANCE.getEByteArray()) {
-        return XMLTypeFactory.eINSTANCE.convertBase64Binary((byte[]) value);
-      }
-
-      return EcoreFactory.eINSTANCE.convertToString(eDataType, value);
-    }
-
     if (value == null) {
       return JSONObject.NULL;
+    }
+
+    if (eDataType.getEPackage() == EcorePackage.eINSTANCE) {
+      Object localValue = null;
+      // encode bytearrays using base64
+      if (eDataType == EcorePackage.eINSTANCE.getEByteArray()) {
+        localValue = XMLTypeFactory.eINSTANCE.convertBase64Binary((byte[]) value);
+      } else {
+        localValue = EcoreFactory.eINSTANCE.convertToString(eDataType, value);
+      }
+
+      if (localValue == null) {
+        return JSONObject.NULL;
+      }
+      return localValue;
     }
 
     return value;
