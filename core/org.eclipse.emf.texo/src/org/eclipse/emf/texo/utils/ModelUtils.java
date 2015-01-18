@@ -28,7 +28,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.InternalEObject;
-import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
@@ -410,11 +409,6 @@ public class ModelUtils {
         // new XcoreResourceFactory());
         rs.setPackageRegistry(ModelResolver.getInstance().getEPackageRegistry());
 
-        // trick to make resolving of the ecore package referenced from xcore packages work
-        rs.getPackageRegistry().put("platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore",
-            EcorePackage.eINSTANCE);
-        rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
-
         // note the resource uri is the same as by which it is saved in the
         // GenEPackage.getECoreFileContent
         final Resource res = new EcoreResourceFactoryImpl().createResource(URI.createURI(modelPackage.getNsURI()));
@@ -658,7 +652,7 @@ public class ModelUtils {
         if (fragment == null || fragment.trim().length() == 0) {
           throw new IllegalArgumentException(
               "No fragment, is the object URL maybe in webservice format? Consider setting the property useWebServiceFormat " //$NON-NLS-1$
-                  + "to true on the ObjectResolver (of the converter)"); //$NON-NLS-1$
+              + "to true on the ObjectResolver (of the converter)"); //$NON-NLS-1$
         }
         throw new IllegalArgumentException("Fragment format not supported for fragment: " + fragment); //$NON-NLS-1$
       }
