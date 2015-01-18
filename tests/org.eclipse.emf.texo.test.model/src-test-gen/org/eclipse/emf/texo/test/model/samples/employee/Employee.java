@@ -59,7 +59,7 @@ public class Employee extends Identifiable {
   private Date hireDate = null;
 
   /**
-   * @return the value of helloworld
+   * @return the hello string
    * @generated
    */
   public String helloWorld() {
@@ -182,7 +182,7 @@ public class Employee extends Identifiable {
   }
 
   /**
-   * @return the return value
+   * @return the boolean value
    * @generated
    */
   public boolean templateIsOverridden() {
