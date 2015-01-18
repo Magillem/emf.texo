@@ -409,6 +409,11 @@ public class ModelUtils {
         // new XcoreResourceFactory());
         rs.setPackageRegistry(ModelResolver.getInstance().getEPackageRegistry());
 
+        // trick to make resolving of the ecore package referenced from xcore packages work
+        rs.getPackageRegistry().put("platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore", //$NON-NLS-1$
+            EcorePackage.eINSTANCE);
+        // rs.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
+
         // note the resource uri is the same as by which it is saved in the
         // GenEPackage.getECoreFileContent
         final Resource res = new EcoreResourceFactoryImpl().createResource(URI.createURI(modelPackage.getNsURI()));
