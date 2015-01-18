@@ -55,7 +55,7 @@ public class ArtifactGenerator {
   private IProgressMonitor monitor = new org.eclipse.core.runtime.NullProgressMonitor();
   private TexoResourceManager resourceManager = ComponentProvider.getInstance().newInstance(TexoResourceManager.class);
   private String projectName;
-  private String sourceProjectName;
+  private String templateProjectName;
   private ModelController modelController;
   private String outputFolder;
   private String expand = "org::eclipse::emf::texo::modelgenerator::templates::model::root(modelController, doDao) FOREACH modelController.EPackages"; //$NON-NLS-1$
@@ -176,14 +176,17 @@ public class ArtifactGenerator {
    */
   public void setProjectName(final String projectName) {
     this.projectName = projectName;
+    if (templateProjectName == null) {
+      setTemplateProjectName(projectName);
+    }
   }
 
   /**
    * @param sourceProjectName
    *          the name of the source project containing the models and templates to set
    */
-  public void setSourceProjectName(final String projectName) {
-    this.sourceProjectName = projectName;
+  public void setTemplateProjectName(final String projectName) {
+    this.templateProjectName = projectName;
     resourceManager.setProjectName(projectName);
   }
 

@@ -200,6 +200,7 @@ public class EclipseModelGeneratorTest extends TestCase {
         artifactGenerator.setModelController(modelController);
         artifactGenerator.setOutputFolder("src-test-gen"); //$NON-NLS-1$
         artifactGenerator.setProjectName(TEST_MODEL_PROJECT);
+        artifactGenerator.setTemplateProjectName(TEST_MODEL_PROJECT);
         if (!isGenerateTexoModels()) {
           artifactGenerator.setDoDao(true);
         }

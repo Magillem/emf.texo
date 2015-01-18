@@ -84,7 +84,7 @@ public class GenerateCode extends BaseGenerateAction {
       artifactGenerator.setOutputFolder(ProjectPropertyUtil.getGenOutputFolder(project));
       artifactGenerator.setModelController(modelController);
       artifactGenerator.setProjectName(ProjectPropertyUtil.getTargetProject(project).getName());
-      artifactGenerator.setSourceProjectName(project.getName());
+      artifactGenerator.setTemplateProjectName(project.getName());
       artifactGenerator.setDoDao(isDoDao());
       artifactGenerator.setXTendTemplate(new ModelTemplate());
 
