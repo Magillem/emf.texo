@@ -55,7 +55,7 @@ import org.eclipse.emf.texo.utils.ModelUtils;
  */
 
 public class EReferenceORMAnnotator extends EStructuralFeatureORMAnnotator implements
-    Annotator<EReferenceORMAnnotation> {
+Annotator<EReferenceORMAnnotation> {
 
   /*
    * (non-Javadoc)
@@ -91,7 +91,7 @@ public class EReferenceORMAnnotator extends EStructuralFeatureORMAnnotator imple
     final EReference eOpposite = eReference.getEOpposite();
     if (!isPartOfFeatureMap && eReference.isMany()) {
 
-      if (doAddConverter(eReferenceModelGenAnnotation)) {
+      if (doAddConverter(eReferenceModelGenAnnotation) || annotation.getEmbedded() != null) {
         addElementCollection(annotation);
       } else if (annotation.getElementCollection() != null) {
         annotateElementCollection(annotation);
@@ -142,6 +142,15 @@ public class EReferenceORMAnnotator extends EStructuralFeatureORMAnnotator imple
     final ORMNamingStrategy namingStrategy = getOrmNamingStrategy(ePackage);
     final EReferenceModelGenAnnotation eReferenceModelGenAnnotation = (EReferenceModelGenAnnotation) getAnnotationManager()
         .getAnnotation(eReference, ModelcodegeneratorPackage.eINSTANCE.getEReferenceModelGenAnnotation());
+
+    // clear the embedded, we can only have one of the two...
+    if (annotation.getEmbedded() != null) {
+      annotation.getElementCollection().getAttributeOverride().addAll(annotation.getEmbedded().getAttributeOverride());
+      annotation.getElementCollection().getAssociationOverride()
+      .addAll(annotation.getEmbedded().getAssociationOverride());
+      annotation.getElementCollection().setAttributeType(annotation.getEmbedded().getAttributeType());
+      annotation.setEmbedded(null);
+    }
 
     final ElementCollection elementCollection = annotation.getElementCollection();
 

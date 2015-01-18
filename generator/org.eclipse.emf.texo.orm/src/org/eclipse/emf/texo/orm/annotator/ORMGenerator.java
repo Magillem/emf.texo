@@ -120,7 +120,9 @@ public class ORMGenerator extends BaseGenerateAction {
       }
 
       final Object value = annotationOwner.eGet(eReference);
-      if (value instanceof BaseOrmAnnotation) {
+      if (value instanceof Collection<?>) {
+        sb.append(getAnnotationArray((EClass) eReference.getEType(), identifier, (Collection<?>) value));
+      } else if (value instanceof BaseOrmAnnotation) {
         if (sb.length() > 0) {
           sb.append("\n"); //$NON-NLS-1$
         }
@@ -128,6 +130,30 @@ public class ORMGenerator extends BaseGenerateAction {
       }
     }
 
+    return sb.toString();
+  }
+
+  // handle a list of annotations
+  private static String getAnnotationArray(EClass eClassifier, String identifier, Collection<?> annotations) {
+    final StringBuffer sb = new StringBuffer();
+    sb.append("\n@" + ORMJavaAnnotationGenerator.getInstance().getJavaPackage(eClassifier) + "."
+        + eClassifier.getName() + "s({");
+    boolean validContent = false;
+    for (Object value : annotations) {
+      if (value instanceof BaseOrmAnnotation) {
+        if (validContent) {
+          sb.append(", ");
+        }
+        sb.append("\n"); //$NON-NLS-1$
+        sb.append(((BaseOrmAnnotation) value).getJavaAnnotation(identifier));
+        validContent = true;
+      }
+    }
+
+    if (!validContent) {
+      return "";
+    }
+    sb.append("\n})");
     return sb.toString();
   }
 

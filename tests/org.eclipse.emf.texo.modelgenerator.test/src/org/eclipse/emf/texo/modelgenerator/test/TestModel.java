@@ -140,6 +140,7 @@ public class TestModel {
     urls.add("issues/bz420913.ecore"); //$NON-NLS-1$
     urls.add("issues/bz420913_NotBiDirectional.ecore"); //$NON-NLS-1$
     urls.add("issues/bz422811.ecore"); //$NON-NLS-1$
+    urls.add("issues/bz423155.ecore"); //$NON-NLS-1$
     urls.add("issues/bz423760.ecore"); //$NON-NLS-1$
     urls.add("issues/bz424797.ecore"); //$NON-NLS-1$
     urls.add("issues/bz444321.ecore"); //$NON-NLS-1$

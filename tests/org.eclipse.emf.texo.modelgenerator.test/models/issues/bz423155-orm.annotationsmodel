@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationsmodel:AnnotatedModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:annotationsmodel="http://www.eclipse.org/emf/texo/annotations/model" xmlns:ormannotations="http://www.eclipse.org/emf/texo/orm/ormannotations">
+  <annotatedEPackages>
+    <ePackage href="bz423155.ecore#/"/>
+    <ePackageAnnotations xsi:type="ormannotations:EPackageORMAnnotation" generateFullDbSchemaNames="false" maximumSqlNameLength="255" lowerCasedNames="false" upperCasedNames="false" enforceUniqueNames="false" useJoinTablesForContainment="false" useJoinTablesForNonContainment="true" generateJavaAnnotations="false" addOrderColumnToListMappings="false" renameSQLReservedNames="false" uniqueEntityNames="true" setDelimitedIdentifierTagInORM="true"/>
+    <annotatedEClassifiers xsi:type="annotationsmodel:AnnotatedEClass">
+      <eClass href="bz423155.ecore#//Embedded423155"/>
+      <eClassAnnotations xsi:type="ormannotations:EClassORMAnnotation">
+        <embeddable/>
+      </eClassAnnotations>
+    </annotatedEClassifiers>
+    <annotatedEClassifiers xsi:type="annotationsmodel:AnnotatedEClass">
+      <eClass href="bz423155.ecore#//Main423155"/>
+      <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEReference">
+        <eReference href="bz423155.ecore#//Main423155/embedded1"/>
+        <eReferenceAnnotations xsi:type="ormannotations:EReferenceORMAnnotation" attributeOverride="">
+          <embedded>
+            <attributeOverride description="" name="name1">
+              <column name="nameOne"/>
+            </attributeOverride>
+            <attributeOverride description="" name="name2">
+              <column name="nameTwo"/>
+            </attributeOverride>
+          </embedded>
+        </eReferenceAnnotations>
+      </annotatedEStructuralFeatures>
+      <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEReference">
+        <eReference href="bz423155.ecore#//Main423155/embedded2"/>
+        <eReferenceAnnotations xsi:type="ormannotations:EReferenceORMAnnotation" attributeOverride="">
+          <elementCollection>
+            <attributeOverride name="name1">
+              <column name="nameOne"/>
+            </attributeOverride>
+            <attributeOverride name="name2">
+              <column name="nameTwo"/>
+            </attributeOverride>
+          </elementCollection>
+        </eReferenceAnnotations>
+      </annotatedEStructuralFeatures>
+      <annotatedEStructuralFeatures xsi:type="annotationsmodel:AnnotatedEReference">
+        <eReference href="bz423155.ecore#//Main423155/embedded3"/>
+        <eReferenceAnnotations xsi:type="ormannotations:EReferenceORMAnnotation">
+          <embedded name="embedded3"/>
+          <attributeOverride description="" name="name1">
+            <column name="nameOne"/>
+          </attributeOverride>
+          <attributeOverride description="" name="name2">
+            <column name="nameTwo"/>
+          </attributeOverride>
+        </eReferenceAnnotations>
+      </annotatedEStructuralFeatures>
+    </annotatedEClassifiers>
+  </annotatedEPackages>
+</annotationsmodel:AnnotatedModel>

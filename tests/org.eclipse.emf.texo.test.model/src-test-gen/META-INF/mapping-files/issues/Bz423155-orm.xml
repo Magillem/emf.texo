@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orm:entity-mappings xmlns:orm="http://www.eclipse.org/eclipselink/xsds/persistence/orm" version="2.3">
+  <orm:persistence-unit-metadata>
+    <orm:persistence-unit-defaults>
+      <orm:delimited-identifiers/>
+    </orm:persistence-unit-defaults>
+  </orm:persistence-unit-metadata>
+  <orm:access>FIELD</orm:access>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz423155.Main423155" name="Bz423155_Main423155">
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes>
+      <orm:element-collection name="embedded1">
+        <orm:order-column/>
+        <orm:attribute-override name="name1">
+          <orm:description></orm:description>
+          <orm:column name="nameOne"/>
+        </orm:attribute-override>
+        <orm:attribute-override name="name2">
+          <orm:description></orm:description>
+          <orm:column name="nameTwo"/>
+        </orm:attribute-override>
+      </orm:element-collection>
+      <orm:element-collection name="embedded2">
+        <orm:order-column/>
+        <orm:attribute-override name="name1">
+          <orm:column name="nameOne"/>
+        </orm:attribute-override>
+        <orm:attribute-override name="name2">
+          <orm:column name="nameTwo"/>
+        </orm:attribute-override>
+      </orm:element-collection>
+      <orm:element-collection name="embedded3">
+        <orm:order-column/>
+      </orm:element-collection>
+    </orm:attributes>
+  </orm:entity>
+  <orm:embeddable class="org.eclipse.emf.texo.test.model.issues.bz423155.Embedded423155">
+    <orm:attributes>
+      <orm:basic name="name1"/>
+      <orm:basic name="name2"/>
+    </orm:attributes>
+  </orm:embeddable>
+</orm:entity-mappings>

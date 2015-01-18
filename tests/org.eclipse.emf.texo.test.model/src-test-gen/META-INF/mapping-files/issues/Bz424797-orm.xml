@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orm:entity-mappings xmlns:orm="http://www.eclipse.org/eclipselink/xsds/persistence/orm" version="2.3">
+  <orm:persistence-unit-metadata>
+    <orm:persistence-unit-defaults>
+      <orm:delimited-identifiers/>
+    </orm:persistence-unit-defaults>
+  </orm:persistence-unit-metadata>
+  <orm:access>FIELD</orm:access>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz424797.AbstractSuper424797" name="Bz424797_AbstractSuper424797">
+    <orm:table name="FKT_Bz424797_AbstractSuper424797"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes/>
+  </orm:entity>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz424797.Sub4242797" name="Bz424797_Sub4242797">
+    <orm:table name="FKT_Bz424797_Sub4242797"/>
+    <orm:primary-key-join-column name="Bz424797_Sub4242797_parent_id"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes/>
+  </orm:entity>
+  <orm:entity class="org.eclipse.emf.texo.test.model.issues.bz424797.Other4242797" name="Bz424797_Other4242797">
+    <orm:table name="FKT_Bz424797_Other4242797"/>
+    <orm:discriminator-column length="255"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestObjectConverter" name="TexoTestObjectConverter"/>
+    <orm:converter class="org.eclipse.emf.texo.test.TexoTestQNameConverter" name="TexoTestQNameConverter"/>
+    <orm:attributes/>
+  </orm:entity>
+</orm:entity-mappings>

@@ -210,7 +210,7 @@ public class ORMJavaAnnotationGenerator {
             continue;
           }
           separateAnnotation
-              .append("@" + getJavaPackage(eFeature.getEType()) + "." + pluralize(upperCaseFirst(getName(eFeature))) + "({"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+          .append("@" + getJavaPackage(eFeature.getEType()) + "." + pluralize(upperCaseFirst(getName(eFeature))) + "({"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
           boolean addArrayComma = false;
           for (Object val : values) {
             if (val instanceof BaseOrmAnnotation) {
@@ -327,7 +327,7 @@ public class ORMJavaAnnotationGenerator {
         + "." + enumerator.getLiteral() + ")"; //$NON-NLS-1$ //$NON-NLS-2$
   }
 
-  private String getJavaPackage(EClassifier eClassifier) {
+  public String getJavaPackage(EClassifier eClassifier) {
 
     for (EClassifier chkEClassifier : eclipseLinkEClassifiers) {
       if (chkEClassifier == eClassifier) {
