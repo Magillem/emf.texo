@@ -58,28 +58,14 @@ public class Bz423155ModelPackage extends ModelPackage {
    * 
    * @generated
    */
-  public static final int EMBEDDED423155_DB_ID_FEATURE_ID = 0;
+  public static final int EMBEDDED423155_NAME1_FEATURE_ID = 0;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
    * @generated
    */
-  public static final int EMBEDDED423155_DB_VERSION_FEATURE_ID = 1;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int EMBEDDED423155_NAME1_FEATURE_ID = 2;
-
-  /**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
-   * @generated
-   */
-  public static final int EMBEDDED423155_NAME2_FEATURE_ID = 3;
+  public static final int EMBEDDED423155_NAME2_FEATURE_ID = 1;
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->

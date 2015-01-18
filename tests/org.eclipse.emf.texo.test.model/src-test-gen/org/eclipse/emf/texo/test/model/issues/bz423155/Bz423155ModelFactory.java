@@ -5,6 +5,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.texo.model.AbstractModelFeatureMapEntry;
+import org.eclipse.emf.texo.model.AbstractModelObject;
 import org.eclipse.emf.texo.model.ModelFactory;
 import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.model.ModelObject;
@@ -158,12 +159,10 @@ public class Bz423155ModelFactory implements ModelFactory {
    *
    * @generated
    */
-  public static class Embedded423155ModelObject<E extends Embedded423155> extends
-      IdentifiableModelFactory.IdentifiableModelObject<E> {
+  public static class Embedded423155ModelObject<E extends Embedded423155> extends AbstractModelObject<E> {
     /**
      * @generated
      */
-    @Override
     public EClass eClass() {
       return Bz423155ModelPackage.INSTANCE.getEmbedded423155EClass();
     }
@@ -171,7 +170,6 @@ public class Bz423155ModelFactory implements ModelFactory {
     /**
      * @generated
      */
-    @Override
     public ModelPackage getModelPackage() {
       return Bz423155ModelPackage.INSTANCE;
     }
@@ -191,10 +189,6 @@ public class Bz423155ModelFactory implements ModelFactory {
     public Object eGet(EStructuralFeature eStructuralFeature) {
       final int featureID = eClass().getFeatureID(eStructuralFeature);
       switch (featureID) {
-      case Bz423155ModelPackage.EMBEDDED423155_DB_ID_FEATURE_ID:
-        return getTarget().getDb_Id();
-      case Bz423155ModelPackage.EMBEDDED423155_DB_VERSION_FEATURE_ID:
-        return getTarget().getDb_version();
       case Bz423155ModelPackage.EMBEDDED423155_NAME1_FEATURE_ID:
         return getTarget().getName1();
       case Bz423155ModelPackage.EMBEDDED423155_NAME2_FEATURE_ID:

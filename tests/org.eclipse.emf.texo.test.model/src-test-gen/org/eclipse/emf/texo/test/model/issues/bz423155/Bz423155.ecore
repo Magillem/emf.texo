@@ -2,7 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Bz423155" nsURI="http://www.eclipse.org/emf/texo/test/model/issues/bz423155"
     nsPrefix="Bz423155">
-  <eClassifiers xsi:type="ecore:EClass" name="Embedded423155" eSuperTypes="http://www.eclipse.org/emf/texo/test/model/base/identifiable#//Identifiable">
+  <eClassifiers xsi:type="ecore:EClass" name="Embedded423155">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="org.eclipse.emf.texo">
         <details key="java.member" value="name1"/>

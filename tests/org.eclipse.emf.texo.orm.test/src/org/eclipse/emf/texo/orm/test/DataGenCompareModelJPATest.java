@@ -469,6 +469,11 @@ public class DataGenCompareModelJPATest extends JPATest {
       return;
     }
 
+    if (ModelResolver.getInstance().isModelEnabled(v1) && ModelResolver.getInstance().isModelEnabled(v2)) {
+      compare(v1, v2);
+      return;
+    }
+
     if (!v1.equals(v2)) {
       fail("Different values " + v1 + " " + v2); //$NON-NLS-1$ //$NON-NLS-2$
     }

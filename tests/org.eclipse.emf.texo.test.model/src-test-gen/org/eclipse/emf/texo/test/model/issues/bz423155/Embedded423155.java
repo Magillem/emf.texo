@@ -2,7 +2,6 @@ package org.eclipse.emf.texo.test.model.issues.bz423155;
 
 import javax.persistence.Basic;
 import javax.persistence.Embeddable;
-import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
 
 /**
  * A representation of the model object '<em><b>Embedded423155</b></em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -10,7 +9,7 @@ import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
  * @generated
  */
 @Embeddable()
-public class Embedded423155 extends Identifiable {
+public class Embedded423155 {
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -86,7 +85,6 @@ public class Embedded423155 extends Identifiable {
    */
   @Override
   public String toString() {
-    return "Embedded423155 " + " [name1: " + getName1() + "]" + " [name2: " + getName2() + "]" + "{extends: "
-        + super.toString() + "} ";
+    return "Embedded423155 " + " [name1: " + getName1() + "]" + " [name2: " + getName2() + "]";
   }
 }

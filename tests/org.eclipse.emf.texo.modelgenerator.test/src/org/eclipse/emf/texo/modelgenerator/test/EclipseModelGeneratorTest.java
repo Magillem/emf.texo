@@ -172,6 +172,7 @@ public class EclipseModelGeneratorTest extends TestCase {
         // also reads the identifiable.xcore in memory
         addSuperType(resourceSet, ePackages, packageRegistry);
 
+        boolean dontSetDefaultExtends = false;
         boolean hasIdentifiable = false;
         for (EPackage ePackage : ePackages) {
           hasIdentifiable = hasIdentifiable
@@ -179,11 +180,13 @@ public class EclipseModelGeneratorTest extends TestCase {
           if (ePackage.eResource() != null) {
             EcoreUtil2.resolveLazyCrossReferences(ePackage.eResource(), CancelIndicator.NullImpl);
           }
+          dontSetDefaultExtends |= hasIdentifiable
+              || ePackage.getNsURI().equals("http://www.eclipse.org/emf/texo/test/model/issues/bz423155");
         }
 
         // give everyone the identifiable as super, except the identifiable
-        // package
-        if (hasIdentifiable) {
+        // package and some other packages
+        if (dontSetDefaultExtends) {
           EPackageModelGenAnnotation.setDefaultExtends(null);
         } else {
           EPackageModelGenAnnotation.setDefaultExtends(DEFAULT_EXTENDS);
@@ -290,7 +293,7 @@ public class EclipseModelGeneratorTest extends TestCase {
     for (EClassifier eClassifier : ePackage.getEClassifiers()) {
       if (eClassifier instanceof EClass) {
         final EClass eClass = (EClass) eClassifier;
-        if (eClass.isInterface() || ModelUtils.isEMap(eClass)) {
+        if (eClass.isInterface() || ModelUtils.isEMap(eClass) || eClass.getName().contains("Embedded")) { //$NON-NLS-1$
           continue;
         }
         addSuperType(eClass, identifiableEClass);
