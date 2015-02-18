@@ -4,6 +4,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -44,6 +45,7 @@ import org.eclipse.emf.texo.annotations.annotationsmodel.AnnotationsmodelPackage
 import org.eclipse.emf.texo.model.ModelFeatureMapEntry;
 import org.eclipse.emf.texo.utils.Check;
 import org.eclipse.emf.texo.utils.ModelUtils;
+import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.xsd.XSDDiagnostic;
 import org.eclipse.xsd.XSDDiagnosticSeverity;
 import org.eclipse.xsd.XSDPackage;
@@ -62,6 +64,26 @@ import com.google.inject.Injector;
  * @author <a href="mtaal@elver.org">Martin Taal</a>
  */
 public class GeneratorUtils {
+
+  private static int ASTLEVEL = -1;
+
+  /**
+   * Get the latest AST parser, on Kepler this is AST4, on Luna it is AST8.
+   */
+  public static int getASTLevel() {
+    if (ASTLEVEL == -1) {
+      Field[] declaredFields = AST.class.getDeclaredFields();
+      for (Field field : declaredFields) {
+        if (field.getName().equals("JLS8")) { //$NON-NLS-1$
+          ASTLEVEL = 8;
+        }
+      }
+      if (ASTLEVEL == -1) {
+        ASTLEVEL = 4;
+      }
+    }
+    return ASTLEVEL;
+  }
 
   /**
    * Determine if a property should be optional or not, if it is part of a featuremap then it may not be optional.

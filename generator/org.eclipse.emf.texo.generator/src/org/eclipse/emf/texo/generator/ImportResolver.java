@@ -479,7 +479,7 @@ public class ImportResolver {
 
   public void setSource(final String source) {
 
-    final ASTParser parser = ASTParser.newParser(AST.JLS8);
+    final ASTParser parser = ASTParser.newParser(GeneratorUtils.getASTLevel());
     parser.setKind(ASTParser.K_COMPILATION_UNIT);
     parser.setSource(source.toCharArray());
     compilationUnit = (CompilationUnit) parser.createAST(null);

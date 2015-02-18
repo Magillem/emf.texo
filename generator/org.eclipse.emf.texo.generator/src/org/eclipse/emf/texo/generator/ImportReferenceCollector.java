@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.ArrayType;
@@ -164,7 +163,7 @@ public class ImportReferenceCollector extends ASTVisitor {
   @Override
   public boolean visit(final PackageDeclaration node) {
     packageName = node.getName().getFullyQualifiedName();
-    if (node.getAST().apiLevel() >= AST.JLS8) {
+    if (node.getAST().apiLevel() >= GeneratorUtils.getASTLevel()) {
       doVisitNode(node.getJavadoc());
       doVisitChildren(node.annotations());
     }
@@ -279,7 +278,7 @@ public class ImportReferenceCollector extends ASTVisitor {
   public boolean visit(final MethodDeclaration node) {
     doVisitNode(node.getJavadoc());
 
-    if (node.getAST().apiLevel() >= AST.JLS8) {
+    if (node.getAST().apiLevel() >= GeneratorUtils.getASTLevel()) {
       doVisitChildren(node.modifiers());
       doVisitChildren(node.typeParameters());
     }
@@ -288,12 +287,33 @@ public class ImportReferenceCollector extends ASTVisitor {
       doVisitNode(node.getReturnType2());
     }
     doVisitChildren(node.parameters());
+    if (GeneratorUtils.getASTLevel() == 4) {
+      visitExceptionsFor4(node);
+    } else {
+      visitExceptions(node);
+    }
+    doVisitNode(node.getBody());
+    return false;
+  }
+
+  /**
+   * This method is called in Kepler
+   */
+  private void visitExceptionsFor4(MethodDeclaration node) {
+    Iterator<?> iter = node.thrownExceptions().iterator();
+    while (iter.hasNext()) {
+      typeRefFound((Name) iter.next());
+    }
+  }
+
+  /**
+   * This method is called in Luna, gives error in Kepler.
+   */
+  private void visitExceptions(MethodDeclaration node) {
     Iterator<?> iter = node.thrownExceptionTypes().iterator();
     while (iter.hasNext()) {
       typeRefFound((Name) iter.next());
     }
-    doVisitNode(node.getBody());
-    return false;
   }
 
   @Override
