@@ -63,7 +63,7 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
    */
   private ObjectResolver objectResolver = ComponentProvider.getInstance().newInstance(DefaultObjectResolver.class);
 
-  protected void doBaseActions(List<T> objects) {
+  protected void doBaseActions(Collection<T> objects) {
     if (objectResolver != null
         && (!convertNonContainedReferencedObjects || maxChildLevelsToConvert < Integer.MAX_VALUE)) {
       computeProxyObjects(objects);
@@ -72,7 +72,7 @@ public abstract class BaseModelConverter<T extends Object> implements TexoCompon
     proxyObjects.removeAll(nonProxiedObjects);
   }
 
-  protected void computeProxyObjects(final List<T> objects) {
+  protected void computeProxyObjects(final Collection<T> objects) {
     for (T o : objects) {
       traverseEReferencesForProxyDetermination(o, 0);
     }

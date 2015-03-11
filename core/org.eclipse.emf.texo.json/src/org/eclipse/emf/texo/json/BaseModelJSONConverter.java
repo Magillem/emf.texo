@@ -69,7 +69,10 @@ public abstract class BaseModelJSONConverter<T extends Object> extends BaseModel
   private boolean serializeTitleProperty = true;
 
   /**
-   * Converts an object to a json object.
+   * Converts an object to a json object. The parameter can be a collection, an array of a single model or EObject.
+   * 
+   * When an array or collection are passed then a JSONArray is returned. When a single Model/EObject is passed in then
+   * a JSONObject is returned.
    * 
    * @param the
    *          {@link ModelObject} to convert

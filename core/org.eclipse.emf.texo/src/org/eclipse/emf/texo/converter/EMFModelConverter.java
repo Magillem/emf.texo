@@ -27,6 +27,7 @@ import java.util.Map;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
@@ -68,6 +69,10 @@ public class EMFModelConverter implements TexoComponent {
   // keeps track of all objects which have been converted
   private final List<EObject> allConvertedEObjects = new ArrayList<EObject>();
 
+  // keeps track of all many-to-many associations, for these the order of
+  // elements has to be repaired
+  private List<ManyToMany> toRepairManyToMany = new ArrayList<ManyToMany>();
+
   /**
    * Converts a set of EObjects and all the objects they reference to a a collection of model managed objects.
    * 
@@ -90,6 +95,12 @@ public class EMFModelConverter implements TexoComponent {
         convertContent(eObject);
       }
     }
+
+    // now repair the ManyToMany
+    for (ManyToMany mtm : toRepairManyToMany) {
+      mtm.repair();
+    }
+    toRepairManyToMany.clear();
 
     return result;
   }
@@ -227,6 +238,15 @@ public class EMFModelConverter implements TexoComponent {
         mValues.put(key, value);
       }
     } else {
+
+      // a many to many
+      if (eReference.getEOpposite() != null && eReference.getEOpposite().isMany()) {
+        final ManyToMany mtm = new ManyToMany();
+        mtm.setOwner(eObject);
+        mtm.setEReference(eReference);
+        toRepairManyToMany.add(mtm);
+      }
+
       final Collection<?> mValues = (Collection<?>) modelObject.eGet(eReference);
 
       // clear as there can be current values if the target is read from the db
@@ -417,5 +437,53 @@ public class EMFModelConverter implements TexoComponent {
 
   public Collection<Object> getAllConvertedObjects() {
     return objectMapping.values();
+  }
+
+  /**
+   * Class is used to keep track of all the many to many for which the order has to be repaired.
+   * 
+   * @author mtaal
+   */
+  private class ManyToMany {
+    private EObject owner;
+    private EReference eReference;
+
+    public void repair() {
+      final Object target = objectMapping.get(owner);
+      final ModelObject<?> modelObject = ModelResolver.getInstance().getModelObject(target);
+      final Object listObject = modelObject.eGet(eReference);
+      if (!(listObject instanceof List<?>)) {
+        // no order maintained anyway
+        return;
+      }
+      final EList<?> eList = (EList<?>) owner.eGet(eReference);
+      @SuppressWarnings("unchecked")
+      final List<Object> list = (List<Object>) listObject;
+      int correctIndex = 0;
+      for (Object objectElement : eList) {
+        final EObject eObjectElement = (EObject) objectElement;
+        final Object element = objectMapping.get(eObjectElement);
+        final int newIndex = list.indexOf(element);
+        if (newIndex != correctIndex) {
+          try {
+            list.remove(element);
+            list.add(correctIndex, element);
+          } catch (UnsupportedOperationException ignore) {
+            // unmodifiable collection, can't handle those, go away
+            return;
+          }
+        }
+        correctIndex++;
+      }
+    }
+
+    public void setOwner(EObject owner) {
+      this.owner = owner;
+    }
+
+    public void setEReference(EReference eReference) {
+      this.eReference = eReference;
+    }
+
   }
 }

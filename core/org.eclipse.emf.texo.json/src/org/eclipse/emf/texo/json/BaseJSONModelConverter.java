@@ -24,6 +24,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -59,6 +60,13 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
   private JSONValueConverter jsonValueConverter = (JSONValueConverter) ComponentProvider.getInstance().newInstance(
       getValueConversionClass());
 
+  /**
+   * Many to many handling, as many-to-many is bidirectional it is possible that the when resolving relations that the
+   * order in the many-to-many changes as the order in which objects get resolved can be different than the order in the
+   * many-to-many. Therefore afterwards a repair of many-to-many needs to happen.
+   */
+  private List<ManyToMany> toRepairManyToMany = new ArrayList<ManyToMany>();
+
   protected Class<?> getValueConversionClass() {
     return JSONValueConverter.class;
   }
@@ -88,6 +96,7 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
           result.add(doConvert((JSONObject) o));
         }
       }
+      repairManyToMany();
       return result;
     } catch (JSONException e) {
       throw new RuntimeException(e);
@@ -105,7 +114,9 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
     resolvedObjects.clear();
     newObjects.clear();
     doClearInternalDataStructures();
-    return doConvert(jsonObject);
+    final T result = doConvert(jsonObject);
+    repairManyToMany();
+    return result;
   }
 
   protected void doClearInternalDataStructures() {
@@ -344,6 +355,15 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
         throw new RuntimeException(e);
       }
     } else {
+
+      // a many to many
+      if (eReference.getEOpposite() != null && eReference.getEOpposite().isMany()) {
+        final ManyToMany mtm = new ManyToMany();
+        mtm.setSource(source);
+        mtm.setEReference(eReference);
+        toRepairManyToMany.add(mtm);
+      }
+
       final Collection<?> mValues = (Collection<?>) eGet(target, eReference);
 
       // clear as there can be current values if the target is read from the db
@@ -543,5 +563,64 @@ public abstract class BaseJSONModelConverter<T extends Object> implements TexoCo
    */
   protected JSONValueConverter getJSONValueConverter() {
     return jsonValueConverter;
+  }
+
+  private void repairManyToMany() {
+    for (ManyToMany mtm : toRepairManyToMany) {
+      mtm.repair();
+    }
+    toRepairManyToMany.clear();
+  }
+
+  /**
+   * Class is used to keep track of all the many to many for which the order has to be repaired.
+   * 
+   * @author mtaal
+   */
+  private class ManyToMany {
+    private JSONObject source;
+    private EReference eReference;
+
+    public void repair() {
+      final T target = resolveObject(source);
+      final Object listObject = eGet(target, eReference);
+      if (!(listObject instanceof List<?>)) {
+        // no order maintained anyway
+        return;
+      }
+      try {
+        final JSONArray jsonArray = (JSONArray) source.getJSONArray(eReference.getName());
+        @SuppressWarnings("unchecked")
+        final List<Object> list = (List<Object>) listObject;
+        for (int correctIndex = 0; correctIndex < jsonArray.length(); correctIndex++) {
+          final JSONObject jsonElement = (JSONObject) jsonArray.getJSONObject(correctIndex);
+          final T element = resolveObject(jsonElement);
+          final int newIndex = list.indexOf(element);
+          if (newIndex != correctIndex) {
+            if (list instanceof EList) {
+              ((EList<?>) list).move(correctIndex, newIndex);
+            } else {
+              try {
+                list.remove(element);
+                list.add(correctIndex, element);
+              } catch (UnsupportedOperationException ignore) {
+                // unmodifiable collection, can't handle those, go away
+                return;
+              }
+            }
+          }
+        }
+      } catch (JSONException jsonEx) {
+        throw new IllegalStateException("Exception " + source, jsonEx);
+      }
+    }
+
+    protected void setSource(JSONObject source) {
+      this.source = source;
+    }
+
+    protected void setEReference(EReference eReference) {
+      this.eReference = eReference;
+    }
   }
 }

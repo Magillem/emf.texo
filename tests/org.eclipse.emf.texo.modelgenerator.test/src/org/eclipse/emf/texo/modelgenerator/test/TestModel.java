@@ -144,6 +144,7 @@ public class TestModel {
     urls.add("issues/bz423760.ecore"); //$NON-NLS-1$
     urls.add("issues/bz424797.ecore"); //$NON-NLS-1$
     urls.add("issues/bz444321.ecore"); //$NON-NLS-1$
+    urls.add("issues/bz461726.ecore"); //$NON-NLS-1$
     urls.add("issues/interface_abstract_class_wrong_featureid.ecore"); //$NON-NLS-1$
 
     urls.add("texo/TexoDataRequest.xsd");//$NON-NLS-1$

@@ -128,6 +128,7 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
     for (ManyToMany mtm : toRepairManyToMany) {
       mtm.repair();
     }
+    toRepairManyToMany.clear();
 
     return result;
   }
@@ -532,14 +533,14 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
       }
       final EList<?> eList = (EList<?>) eObjectOwner.eGet(eReference);
       final List<?> list = (List<?>) listObject;
-      int currentIndex = 0;
+      int correctIndex = 0;
       for (Object objectElement : list) {
         final EObject eObjectElement = objectMapping.get(objectElement);
         final int newIndex = eList.indexOf(eObjectElement);
-        if (newIndex != currentIndex) {
-          eList.move(currentIndex, newIndex);
+        if (newIndex != correctIndex) {
+          eList.move(correctIndex, newIndex);
         }
-        currentIndex++;
+        correctIndex++;
       }
     }
 
