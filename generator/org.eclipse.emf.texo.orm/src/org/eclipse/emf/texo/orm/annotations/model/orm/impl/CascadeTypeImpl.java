@@ -21,12 +21,17 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeAll <em>Cascade All</em>}</li>
- *   <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadePersist <em>Cascade Persist</em>}</li>
- *   <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeMerge <em>Cascade Merge</em>}</li>
- *   <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeRemove <em>Cascade Remove</em>}</li>
- *   <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeRefresh <em>Cascade Refresh</em>}</li>
- *   <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeDetach <em>Cascade Detach</em>}</li>
+ * <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeAll <em>Cascade All</em>}</li>
+ * <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadePersist <em>Cascade Persist
+ * </em>}</li>
+ * <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeMerge <em>Cascade Merge
+ * </em>}</li>
+ * <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeRemove <em>Cascade Remove
+ * </em>}</li>
+ * <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeRefresh <em>Cascade Refresh
+ * </em>}</li>
+ * <li>{@link org.eclipse.emf.texo.orm.annotations.model.orm.impl.CascadeTypeImpl#getCascadeDetach <em>Cascade Detach
+ * </em>}</li>
  * </ul>
  * </p>
  *
@@ -34,9 +39,9 @@ import org.eclipse.emf.texo.orm.annotator.BaseOrmAnnotationImpl;
  */
 public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeType {
   /**
-   * The cached value of the '{@link #getCascadeAll() <em>Cascade All</em>}' containment reference.
-   * <!-- begin-user-doc
+   * The cached value of the '{@link #getCascadeAll() <em>Cascade All</em>}' containment reference. <!-- begin-user-doc
    * --> <!-- end-user-doc -->
+   * 
    * @see #getCascadeAll()
    * @generated
    * @ordered
@@ -84,17 +89,18 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
   protected EmptyType cascadeRefresh;
 
   /**
-   * The cached value of the '{@link #getCascadeDetach() <em>Cascade Detach</em>}' containment reference.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * The cached value of the '{@link #getCascadeDetach() <em>Cascade Detach</em>}' containment reference. <!--
+   * begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @see #getCascadeDetach()
    * @generated
    * @ordered
    */
-	protected EmptyType cascadeDetach;
+  protected EmptyType cascadeDetach;
 
-		/**
+  /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   protected CascadeTypeImpl() {
@@ -103,6 +109,7 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -112,6 +119,7 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public EmptyType getCascadeAll() {
@@ -120,38 +128,53 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public NotificationChain basicSetCascadeAll(EmptyType newCascadeAll, NotificationChain msgs) {
     EmptyType oldCascadeAll = cascadeAll;
     cascadeAll = newCascadeAll;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_ALL, oldCascadeAll, newCascadeAll);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+          OrmPackage.CASCADE_TYPE__CASCADE_ALL, oldCascadeAll, newCascadeAll);
+      if (msgs == null) {
+        msgs = notification;
+      } else {
+        msgs.add(notification);
+      }
     }
     return msgs;
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public void setCascadeAll(EmptyType newCascadeAll) {
     if (newCascadeAll != cascadeAll) {
       NotificationChain msgs = null;
-      if (cascadeAll != null)
-        msgs = ((InternalEObject)cascadeAll).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_ALL, null, msgs);
-      if (newCascadeAll != null)
-        msgs = ((InternalEObject)newCascadeAll).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_ALL, null, msgs);
+      if (cascadeAll != null) {
+        msgs = ((InternalEObject) cascadeAll).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_ALL, null, msgs);
+      }
+      if (newCascadeAll != null) {
+        msgs = ((InternalEObject) newCascadeAll).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_ALL, null, msgs);
+      }
       msgs = basicSetCascadeAll(newCascadeAll, msgs);
-      if (msgs != null) msgs.dispatch();
+      if (msgs != null) {
+        msgs.dispatch();
+      }
+    } else if (eNotificationRequired()) {
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_ALL, newCascadeAll,
+          newCascadeAll));
     }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_ALL, newCascadeAll, newCascadeAll));
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public EmptyType getCascadePersist() {
@@ -160,38 +183,53 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public NotificationChain basicSetCascadePersist(EmptyType newCascadePersist, NotificationChain msgs) {
     EmptyType oldCascadePersist = cascadePersist;
     cascadePersist = newCascadePersist;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_PERSIST, oldCascadePersist, newCascadePersist);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+          OrmPackage.CASCADE_TYPE__CASCADE_PERSIST, oldCascadePersist, newCascadePersist);
+      if (msgs == null) {
+        msgs = notification;
+      } else {
+        msgs.add(notification);
+      }
     }
     return msgs;
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public void setCascadePersist(EmptyType newCascadePersist) {
     if (newCascadePersist != cascadePersist) {
       NotificationChain msgs = null;
-      if (cascadePersist != null)
-        msgs = ((InternalEObject)cascadePersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_PERSIST, null, msgs);
-      if (newCascadePersist != null)
-        msgs = ((InternalEObject)newCascadePersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_PERSIST, null, msgs);
+      if (cascadePersist != null) {
+        msgs = ((InternalEObject) cascadePersist).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_PERSIST, null, msgs);
+      }
+      if (newCascadePersist != null) {
+        msgs = ((InternalEObject) newCascadePersist).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_PERSIST, null, msgs);
+      }
       msgs = basicSetCascadePersist(newCascadePersist, msgs);
-      if (msgs != null) msgs.dispatch();
+      if (msgs != null) {
+        msgs.dispatch();
+      }
+    } else if (eNotificationRequired()) {
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_PERSIST,
+          newCascadePersist, newCascadePersist));
     }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_PERSIST, newCascadePersist, newCascadePersist));
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public EmptyType getCascadeMerge() {
@@ -200,38 +238,53 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public NotificationChain basicSetCascadeMerge(EmptyType newCascadeMerge, NotificationChain msgs) {
     EmptyType oldCascadeMerge = cascadeMerge;
     cascadeMerge = newCascadeMerge;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_MERGE, oldCascadeMerge, newCascadeMerge);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+          OrmPackage.CASCADE_TYPE__CASCADE_MERGE, oldCascadeMerge, newCascadeMerge);
+      if (msgs == null) {
+        msgs = notification;
+      } else {
+        msgs.add(notification);
+      }
     }
     return msgs;
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public void setCascadeMerge(EmptyType newCascadeMerge) {
     if (newCascadeMerge != cascadeMerge) {
       NotificationChain msgs = null;
-      if (cascadeMerge != null)
-        msgs = ((InternalEObject)cascadeMerge).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_MERGE, null, msgs);
-      if (newCascadeMerge != null)
-        msgs = ((InternalEObject)newCascadeMerge).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_MERGE, null, msgs);
+      if (cascadeMerge != null) {
+        msgs = ((InternalEObject) cascadeMerge).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_MERGE, null, msgs);
+      }
+      if (newCascadeMerge != null) {
+        msgs = ((InternalEObject) newCascadeMerge).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_MERGE, null, msgs);
+      }
       msgs = basicSetCascadeMerge(newCascadeMerge, msgs);
-      if (msgs != null) msgs.dispatch();
+      if (msgs != null) {
+        msgs.dispatch();
+      }
+    } else if (eNotificationRequired()) {
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_MERGE, newCascadeMerge,
+          newCascadeMerge));
     }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_MERGE, newCascadeMerge, newCascadeMerge));
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public EmptyType getCascadeRemove() {
@@ -240,38 +293,53 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public NotificationChain basicSetCascadeRemove(EmptyType newCascadeRemove, NotificationChain msgs) {
     EmptyType oldCascadeRemove = cascadeRemove;
     cascadeRemove = newCascadeRemove;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, oldCascadeRemove, newCascadeRemove);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+          OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, oldCascadeRemove, newCascadeRemove);
+      if (msgs == null) {
+        msgs = notification;
+      } else {
+        msgs.add(notification);
+      }
     }
     return msgs;
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public void setCascadeRemove(EmptyType newCascadeRemove) {
     if (newCascadeRemove != cascadeRemove) {
       NotificationChain msgs = null;
-      if (cascadeRemove != null)
-        msgs = ((InternalEObject)cascadeRemove).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, null, msgs);
-      if (newCascadeRemove != null)
-        msgs = ((InternalEObject)newCascadeRemove).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, null, msgs);
+      if (cascadeRemove != null) {
+        msgs = ((InternalEObject) cascadeRemove).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, null, msgs);
+      }
+      if (newCascadeRemove != null) {
+        msgs = ((InternalEObject) newCascadeRemove).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, null, msgs);
+      }
       msgs = basicSetCascadeRemove(newCascadeRemove, msgs);
-      if (msgs != null) msgs.dispatch();
+      if (msgs != null) {
+        msgs.dispatch();
+      }
+    } else if (eNotificationRequired()) {
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, newCascadeRemove,
+          newCascadeRemove));
     }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_REMOVE, newCascadeRemove, newCascadeRemove));
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public EmptyType getCascadeRefresh() {
@@ -280,202 +348,233 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public NotificationChain basicSetCascadeRefresh(EmptyType newCascadeRefresh, NotificationChain msgs) {
     EmptyType oldCascadeRefresh = cascadeRefresh;
     cascadeRefresh = newCascadeRefresh;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_REFRESH, oldCascadeRefresh, newCascadeRefresh);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+          OrmPackage.CASCADE_TYPE__CASCADE_REFRESH, oldCascadeRefresh, newCascadeRefresh);
+      if (msgs == null) {
+        msgs = notification;
+      } else {
+        msgs.add(notification);
+      }
     }
     return msgs;
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public void setCascadeRefresh(EmptyType newCascadeRefresh) {
     if (newCascadeRefresh != cascadeRefresh) {
       NotificationChain msgs = null;
-      if (cascadeRefresh != null)
-        msgs = ((InternalEObject)cascadeRefresh).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_REFRESH, null, msgs);
-      if (newCascadeRefresh != null)
-        msgs = ((InternalEObject)newCascadeRefresh).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_REFRESH, null, msgs);
+      if (cascadeRefresh != null) {
+        msgs = ((InternalEObject) cascadeRefresh).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_REFRESH, null, msgs);
+      }
+      if (newCascadeRefresh != null) {
+        msgs = ((InternalEObject) newCascadeRefresh).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_REFRESH, null, msgs);
+      }
       msgs = basicSetCascadeRefresh(newCascadeRefresh, msgs);
-      if (msgs != null) msgs.dispatch();
+      if (msgs != null) {
+        msgs.dispatch();
+      }
+    } else if (eNotificationRequired()) {
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_REFRESH,
+          newCascadeRefresh, newCascadeRefresh));
     }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_REFRESH, newCascadeRefresh, newCascadeRefresh));
   }
 
   /**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
-	public EmptyType getCascadeDetach() {
+  public EmptyType getCascadeDetach() {
     return cascadeDetach;
   }
 
-		/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
-	public NotificationChain basicSetCascadeDetach(EmptyType newCascadeDetach, NotificationChain msgs) {
+  public NotificationChain basicSetCascadeDetach(EmptyType newCascadeDetach, NotificationChain msgs) {
     EmptyType oldCascadeDetach = cascadeDetach;
     cascadeDetach = newCascadeDetach;
     if (eNotificationRequired()) {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_DETACH, oldCascadeDetach, newCascadeDetach);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+          OrmPackage.CASCADE_TYPE__CASCADE_DETACH, oldCascadeDetach, newCascadeDetach);
+      if (msgs == null) {
+        msgs = notification;
+      } else {
+        msgs.add(notification);
+      }
     }
     return msgs;
   }
 
-		/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
-	public void setCascadeDetach(EmptyType newCascadeDetach) {
+  public void setCascadeDetach(EmptyType newCascadeDetach) {
     if (newCascadeDetach != cascadeDetach) {
       NotificationChain msgs = null;
-      if (cascadeDetach != null)
-        msgs = ((InternalEObject)cascadeDetach).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_DETACH, null, msgs);
-      if (newCascadeDetach != null)
-        msgs = ((InternalEObject)newCascadeDetach).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - OrmPackage.CASCADE_TYPE__CASCADE_DETACH, null, msgs);
+      if (cascadeDetach != null) {
+        msgs = ((InternalEObject) cascadeDetach).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_DETACH, null, msgs);
+      }
+      if (newCascadeDetach != null) {
+        msgs = ((InternalEObject) newCascadeDetach).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+            - OrmPackage.CASCADE_TYPE__CASCADE_DETACH, null, msgs);
+      }
       msgs = basicSetCascadeDetach(newCascadeDetach, msgs);
-      if (msgs != null) msgs.dispatch();
+      if (msgs != null) {
+        msgs.dispatch();
+      }
+    } else if (eNotificationRequired()) {
+      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_DETACH, newCascadeDetach,
+          newCascadeDetach));
     }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, OrmPackage.CASCADE_TYPE__CASCADE_DETACH, newCascadeDetach, newCascadeDetach));
   }
 
-		/**
+  /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
     switch (featureID) {
-      case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
-        return basicSetCascadeAll(null, msgs);
-      case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
-        return basicSetCascadePersist(null, msgs);
-      case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
-        return basicSetCascadeMerge(null, msgs);
-      case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
-        return basicSetCascadeRemove(null, msgs);
-      case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
-        return basicSetCascadeRefresh(null, msgs);
-      case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
-        return basicSetCascadeDetach(null, msgs);
+    case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
+      return basicSetCascadeAll(null, msgs);
+    case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
+      return basicSetCascadePersist(null, msgs);
+    case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
+      return basicSetCascadeMerge(null, msgs);
+    case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
+      return basicSetCascadeRemove(null, msgs);
+    case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
+      return basicSetCascadeRefresh(null, msgs);
+    case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
+      return basicSetCascadeDetach(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType) {
     switch (featureID) {
-      case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
-        return getCascadeAll();
-      case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
-        return getCascadePersist();
-      case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
-        return getCascadeMerge();
-      case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
-        return getCascadeRemove();
-      case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
-        return getCascadeRefresh();
-      case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
-        return getCascadeDetach();
+    case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
+      return getCascadeAll();
+    case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
+      return getCascadePersist();
+    case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
+      return getCascadeMerge();
+    case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
+      return getCascadeRemove();
+    case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
+      return getCascadeRefresh();
+    case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
+      return getCascadeDetach();
     }
     return super.eGet(featureID, resolve, coreType);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
   public void eSet(int featureID, Object newValue) {
     switch (featureID) {
-      case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
-        setCascadeAll((EmptyType)newValue);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
-        setCascadePersist((EmptyType)newValue);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
-        setCascadeMerge((EmptyType)newValue);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
-        setCascadeRemove((EmptyType)newValue);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
-        setCascadeRefresh((EmptyType)newValue);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
-        setCascadeDetach((EmptyType)newValue);
-        return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
+      setCascadeAll((EmptyType) newValue);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
+      setCascadePersist((EmptyType) newValue);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
+      setCascadeMerge((EmptyType) newValue);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
+      setCascadeRemove((EmptyType) newValue);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
+      setCascadeRefresh((EmptyType) newValue);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
+      setCascadeDetach((EmptyType) newValue);
+      return;
     }
     super.eSet(featureID, newValue);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
   public void eUnset(int featureID) {
     switch (featureID) {
-      case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
-        setCascadeAll((EmptyType)null);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
-        setCascadePersist((EmptyType)null);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
-        setCascadeMerge((EmptyType)null);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
-        setCascadeRemove((EmptyType)null);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
-        setCascadeRefresh((EmptyType)null);
-        return;
-      case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
-        setCascadeDetach((EmptyType)null);
-        return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
+      setCascadeAll((EmptyType) null);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
+      setCascadePersist((EmptyType) null);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
+      setCascadeMerge((EmptyType) null);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
+      setCascadeRemove((EmptyType) null);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
+      setCascadeRefresh((EmptyType) null);
+      return;
+    case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
+      setCascadeDetach((EmptyType) null);
+      return;
     }
     super.eUnset(featureID);
   }
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
   public boolean eIsSet(int featureID) {
     switch (featureID) {
-      case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
-        return cascadeAll != null;
-      case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
-        return cascadePersist != null;
-      case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
-        return cascadeMerge != null;
-      case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
-        return cascadeRemove != null;
-      case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
-        return cascadeRefresh != null;
-      case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
-        return cascadeDetach != null;
+    case OrmPackage.CASCADE_TYPE__CASCADE_ALL:
+      return cascadeAll != null;
+    case OrmPackage.CASCADE_TYPE__CASCADE_PERSIST:
+      return cascadePersist != null;
+    case OrmPackage.CASCADE_TYPE__CASCADE_MERGE:
+      return cascadeMerge != null;
+    case OrmPackage.CASCADE_TYPE__CASCADE_REMOVE:
+      return cascadeRemove != null;
+    case OrmPackage.CASCADE_TYPE__CASCADE_REFRESH:
+      return cascadeRefresh != null;
+    case OrmPackage.CASCADE_TYPE__CASCADE_DETACH:
+      return cascadeDetach != null;
     }
     return super.eIsSet(featureID);
   }
@@ -514,7 +613,7 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
       }
     }
     if (sb.length() == 1) {
-      return ""; //$NON-NLS-1$
+      return null;
     }
     return sb + "}"; //$NON-NLS-1$
   }

@@ -210,7 +210,7 @@ public class ORMJavaAnnotationGenerator {
             continue;
           }
           separateAnnotation
-          .append("@" + getJavaPackage(eFeature.getEType()) + "." + pluralize(upperCaseFirst(getName(eFeature))) + "({"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+              .append("@" + getJavaPackage(eFeature.getEType()) + "." + pluralize(upperCaseFirst(getName(eFeature))) + "({"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
           boolean addArrayComma = false;
           for (Object val : values) {
             if (val instanceof BaseOrmAnnotation) {
@@ -253,13 +253,17 @@ public class ORMJavaAnnotationGenerator {
         }
         sb.append("}"); //$NON-NLS-1$
       } else {
+        final StringBuilder featureAnnotation = new StringBuilder();
         // special case to rename, make more generic
         if (eFeature == OrmPackage.eINSTANCE.getConverter_Class()) {
-          sb.append("converterClass=");
+          featureAnnotation.append("converterClass=");
         } else {
-          sb.append(getName(eFeature) + "="); //$NON-NLS-1$
+          featureAnnotation.append(getName(eFeature) + "="); //$NON-NLS-1$
         }
-        sb.append(generateJavaAnnotation(eFeature, value, identifier));
+        final String javaAnnotation = generateJavaAnnotation(eFeature, value, identifier);
+        if (javaAnnotation != null) {
+          sb.append(featureAnnotation.toString() + javaAnnotation);
+        }
       }
     }
     sb.append(")"); //$NON-NLS-1$
