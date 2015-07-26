@@ -32,6 +32,7 @@ import org.eclipse.emf.texo.modelgenerator.xtend.ModelPackageTemplate;
 
 @SuppressWarnings("all")
 public class ModelTemplate extends BaseMainTemplate {
+  @Override
   public void generate(final EPackage ePackage, final ModelController modelController, final boolean doDao) {
     ENamedElementAnnotation _annotation = modelController.getAnnotation(ePackage, ModelcodegeneratorPackage.eNS_URI);
     EPackageModelGenAnnotation ePackageAnnotation = ((EPackageModelGenAnnotation) _annotation);

@@ -44,6 +44,7 @@ public class ModelObjectTemplate extends BaseTemplate {
    * this template is not overrideable at this point as the
    * override assumes that the overrider will generate a file
    */
+  @Override
   public List<String> getTemplateOverrides() {
     List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::modelobject");
@@ -302,6 +303,7 @@ public class ModelObjectTemplate extends BaseTemplate {
       } else {
         EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
         final Function1<EStructuralFeatureModelGenAnnotation, Boolean> _function = new Function1<EStructuralFeatureModelGenAnnotation, Boolean>() {
+          @Override
           public Boolean apply(final EStructuralFeatureModelGenAnnotation e) {
             boolean _and = false;
             EStructuralFeature _eStructuralFeature = e.getEStructuralFeature();

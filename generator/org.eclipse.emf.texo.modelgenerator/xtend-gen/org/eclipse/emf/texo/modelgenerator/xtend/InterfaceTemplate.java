@@ -41,6 +41,7 @@ public class InterfaceTemplate extends BaseTemplate {
     }
   }
   
+  @Override
   public List<String> getTemplateOverrides() {
     List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::interface");

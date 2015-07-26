@@ -50,6 +50,7 @@ public class ModelFactoryTemplate extends BaseTemplate {
     this.addFile(fileName, content);
   }
   
+  @Override
   public List<String> getTemplateOverrides() {
     List<String> list = new ArrayList<String>();
     list.add("org::eclipse::emf::texo::modelgenerator::templates::modelfactory");
