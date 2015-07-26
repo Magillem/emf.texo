@@ -182,6 +182,11 @@
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
 		</provider>
+		<provider readerType="p2" componentTypes="osgi.bundle" mutable="false" source="false" resolutionFilter="(build.type=Luna)">
+			<uri format="{0}/tools/orbit/downloads/drops/R20150519210750/repository/">
+				<bc:propertyRef key="eclipse.download"/>
+      		</uri>
+		</provider>
 		<provider readerType="p2" componentTypes="osgi.bundle" mutable="false" source="false">
 			<uri format="{0}/tools/orbit/downloads/drops/R20140525021250/repository/">
 				<bc:propertyRef key="eclipse.download"/>
