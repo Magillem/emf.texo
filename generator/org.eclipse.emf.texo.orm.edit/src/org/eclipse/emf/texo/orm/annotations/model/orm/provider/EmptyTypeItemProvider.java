@@ -28,7 +28,7 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
  * @generated
  */
 public class EmptyTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+    IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
   /**
    * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
@@ -70,8 +70,7 @@ IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, II
   @Override
   public String getText(Object object) {
     final EObject eObject = (EObject) object;
-    // return getString("_UI_" + eObject.eContainingFeature().getName());
-    return getString("_UI_EmptyType_type");
+    return getString("_UI_" + eObject.eContainingFeature().getName());
   }
 
   /**

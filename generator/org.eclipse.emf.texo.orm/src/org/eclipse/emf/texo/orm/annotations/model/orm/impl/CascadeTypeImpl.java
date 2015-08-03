@@ -586,6 +586,10 @@ public class CascadeTypeImpl extends BaseOrmAnnotationImpl implements CascadeTyp
       sb.append("javax.persistence.CascadeType.ALL"); //$NON-NLS-1$
     } else {
       boolean addComma = false;
+      if (getCascadeDetach() != null) {
+        sb.append("javax.persistence.CascadeType.DETACH"); //$NON-NLS-1$
+        addComma = true;
+      }
       if (getCascadeMerge() != null) {
         sb.append("javax.persistence.CascadeType.MERGE"); //$NON-NLS-1$
         addComma = true;
