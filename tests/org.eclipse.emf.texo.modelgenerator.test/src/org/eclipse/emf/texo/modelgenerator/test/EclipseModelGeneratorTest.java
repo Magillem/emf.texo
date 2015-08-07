@@ -48,8 +48,6 @@ import org.eclipse.emf.texo.utils.ModelUtils;
 import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.util.CancelIndicator;
 
-import com.google.inject.Injector;
-
 /**
  * Test the generation of model code through the Eclipse plugin. Needs to be run as a junit plugin test.
  * 
@@ -77,7 +75,11 @@ public class EclipseModelGeneratorTest extends TestCase {
   private ORMMappingOptions safeORMOptions = new ORMMappingOptions();
 
   private XcoreStandaloneSetup xcoreStandaloneSetup = new XcoreStandaloneSetup();
-  private Injector injector = xcoreStandaloneSetup.createInjectorAndDoEMFRegistration();
+
+  public EclipseModelGeneratorTest() {
+    // do some initialization
+    xcoreStandaloneSetup.createInjectorAndDoEMFRegistration();
+  }
 
   public void testGenerateModels() throws Exception {
     final IProject testProject = EclipseGeneratorUtils.getProject(TEST_MODEL_PROJECT);
@@ -132,7 +134,7 @@ public class EclipseModelGeneratorTest extends TestCase {
 
       final EPackage.Registry packageRegistry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
           .createEPackageRegistry();
-      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(injector, packageRegistry);
+      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(packageRegistry);
 
       final List<URI> uris = new ArrayList<URI>();
       for (final String ecoreFileName : ecoreFileNames) {

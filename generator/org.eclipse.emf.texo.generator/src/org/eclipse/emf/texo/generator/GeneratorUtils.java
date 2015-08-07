@@ -56,8 +56,6 @@ import org.eclipse.xsd.util.XSDResourceImpl;
 import org.eclipse.xtext.common.types.TypesPackage;
 import org.eclipse.xtext.xbase.XbasePackage;
 
-import com.google.inject.Injector;
-
 /**
  * Model/Ecore related convenience methods to for example read ecore and xsd's.
  * 
@@ -288,7 +286,7 @@ public class GeneratorUtils {
   public static List<EPackage> readEPackages(final List<java.net.URI> uris, EPackage.Registry registry,
       boolean useWsUris) {
 
-    final ResourceSet resourceSet = createGenerationResourceSet(null, registry);
+    final ResourceSet resourceSet = createGenerationResourceSet(registry);
 
     return readEPackages(uris, resourceSet, registry, useWsUris);
   }
@@ -328,7 +326,8 @@ public class GeneratorUtils {
    * @return the EPackages
    */
   public static List<EPackage> readEPackagesUsingEMFURI(final List<URI> uris, EPackage.Registry registry) {
-    return readEPackagesUsingEMFURI(uris, null, registry);
+    final ResourceSet rs = createGenerationResourceSet(registry);
+    return readEPackagesUsingEMFURI(uris, rs, registry);
   }
 
   /**
@@ -423,7 +422,7 @@ public class GeneratorUtils {
    * @param registry
    * @return a new {@link ResourceSet}
    */
-  public static ResourceSet createGenerationResourceSet(Injector injector, EPackage.Registry registry) {
+  public static ResourceSet createGenerationResourceSet(EPackage.Registry registry) {
     final ResourceSet rs = new ResourceSetImpl();
     rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
         new EcoreResourceFactoryImpl());

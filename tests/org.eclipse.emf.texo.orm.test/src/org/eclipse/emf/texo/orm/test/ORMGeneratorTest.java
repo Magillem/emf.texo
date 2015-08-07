@@ -50,8 +50,6 @@ import org.eclipse.emf.texo.orm.annotator.ORMMappingOptions;
 import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.util.CancelIndicator;
 
-import com.google.inject.Injector;
-
 /**
  * Generates the ORM for specified models. The generated orm files are stored in the src/META-INF folder.
  * 
@@ -77,9 +75,13 @@ public class ORMGeneratorTest extends TestCase {
   private static final String CLASS_PARAM = "{class}"; //$NON-NLS-1$
 
   private static final EPackage.Registry SHARED_REGISTRY = GeneratorUtils.createEPackageRegistry();
-  private ORMMappingOptions testORMOptions = new ORMMappingOptions();
 
-  private Injector injector = new XcoreStandaloneSetup().createInjectorAndDoEMFRegistration();
+  static {
+    // note creating the injector also registers services
+    new XcoreStandaloneSetup().createInjectorAndDoEMFRegistration();
+  }
+
+  private ORMMappingOptions testORMOptions = new ORMMappingOptions();
 
   public void testGenerateModels() throws Exception {
 
@@ -126,7 +128,7 @@ public class ORMGeneratorTest extends TestCase {
 
       final EPackage.Registry registry = useSharedEPackageRegistry() ? SHARED_REGISTRY : GeneratorUtils
           .createEPackageRegistry();
-      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(injector, registry);
+      final ResourceSet resourceSet = GeneratorUtils.createGenerationResourceSet(registry);
 
       // read the deps
       final List<String> deps = TestModel.getModelDependencies(modelFilePath);
