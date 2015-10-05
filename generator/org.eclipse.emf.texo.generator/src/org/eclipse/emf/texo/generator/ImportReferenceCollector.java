@@ -312,7 +312,12 @@ public class ImportReferenceCollector extends ASTVisitor {
   private void visitExceptions(MethodDeclaration node) {
     Iterator<?> iter = node.thrownExceptionTypes().iterator();
     while (iter.hasNext()) {
-      typeRefFound((Name) iter.next());
+      Object typeRef = iter.next();
+      if (Name.class.isInstance(iter)) {
+        typeRefFound((Name) typeRef);
+      } else if (SimpleType.class.isInstance(typeRef)) {
+        typeRefFound(((SimpleType) typeRef).getName());
+      }
     }
   }
 
