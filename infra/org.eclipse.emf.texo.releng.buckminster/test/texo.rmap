@@ -85,6 +85,11 @@
 
   	<searchPath name="target.platform">
     	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Mars)">
+      		<uri format="{0}/jetty/updates/jetty-bundles-9.x/9.2.6.v20141205">
+				<bc:propertyRef key="eclipse.download"/>
+      		</uri>
+    	</provider>
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Mars)">
       		<uri format="{0}/releases/mars">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
@@ -94,7 +99,7 @@
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
     	</provider>
-    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Mars)">
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Luna)">
       		<uri format="{0}/jetty/updates/jetty-bundles-9.x/9.2.6.v20141205">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
@@ -106,11 +111,6 @@
     	</provider>
     	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Luna)">
       		<uri format="{0}/eclipse/updates/4.4/">
-				<bc:propertyRef key="eclipse.download"/>
-      		</uri>
-    	</provider>
-    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Luna)">
-      		<uri format="{0}/jetty/updates/jetty-bundles-9.x/9.2.6.v20141205">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
     	</provider>
