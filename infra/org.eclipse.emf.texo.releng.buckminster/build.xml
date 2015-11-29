@@ -94,6 +94,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 	<import file="maven/ant_maven.xml" />
 
 	<target name="publish">
+		<mkdir dir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}"/>
 		<move todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}">
 		    <fileset dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
 		</move>
