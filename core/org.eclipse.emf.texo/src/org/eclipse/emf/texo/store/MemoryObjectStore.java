@@ -29,6 +29,10 @@ public class MemoryObjectStore extends ObjectStore {
 
   private final Map<EClass, List<Object>> data = new HashMap<EClass, List<Object>>();
 
+  protected Map<EClass, List<Object>> getData() {
+    return data;
+  }
+
   public void addData(Collection<Object> objects) {
     for (Object object : objects) {
       @SuppressWarnings("unchecked")
