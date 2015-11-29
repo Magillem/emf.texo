@@ -35,8 +35,4 @@
          id="org.eclipse.emf.texo.runtime.core"
          version="0.0.0"/>
 
-   <includes
-         id="org.eclipse.emf.texo.license"
-         version="0.0.0"/>
-
 </feature>
