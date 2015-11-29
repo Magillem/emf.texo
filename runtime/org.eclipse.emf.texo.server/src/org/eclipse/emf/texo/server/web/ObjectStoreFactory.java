@@ -64,7 +64,6 @@ public class ObjectStoreFactory implements TexoComponent {
         params.put(key, vals);
       }
     }
-    objectStore.setParameters(params);
     return objectStore;
   }
 
