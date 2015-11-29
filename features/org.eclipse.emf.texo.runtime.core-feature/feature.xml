@@ -3,7 +3,9 @@
       id="org.eclipse.emf.texo.runtime.core"
       label="%featureName"
       version="0.9.0.qualifier"
-      provider-name="%featureProvider">
+      provider-name="%featureProvider"
+      license-feature="org.eclipse.emf.texo.license"
+      license-feature-version="0.9.0.qualifier">
 
    <description url="http://wiki.eclipse.org/Texo">
       %description
