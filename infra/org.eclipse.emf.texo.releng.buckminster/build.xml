@@ -96,7 +96,8 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		<move todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}">
 		    <fileset dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
 		</move>
-		<copy todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/">
+		<mkdir dir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim"/>
+		<copy todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim">
 			<fileset dir="${buildSitePath}/*"/>
 		</copy>
 	</target>
