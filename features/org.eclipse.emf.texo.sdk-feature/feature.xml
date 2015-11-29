@@ -31,4 +31,10 @@
          id="org.eclipse.emf.texo.source"
          version="0.0.0"/>
 
+   <plugin
+         id="org.eclipse.emf.texo.sdk"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
 </feature>
