@@ -58,6 +58,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 	</condition>
 
 	<property name="buildsPath" location="${hudsonWorkSpacePath}/build" />
+	<property name="lastSuccessArtifacts" location="${hudsonWorkSpacePath}/lastSuccessfulBuild/artifact" />	
 	<property name="gitPath" location="${hudsonWorkSpacePath}/git" />
 
 	<!--property name="rootPath" location="${buildsPath}/${build.type}${buildTimestamp}"/-->
@@ -98,7 +99,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		</move>
 		<mkdir dir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim"/>
 		<copy todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim">
-			<fileset dir="${buildSitePath}/*"/>
+			<fileset dir="${lastSuccessArtifacts}/build/result/p2site/*"/>
 		</copy>
 	</target>
 
