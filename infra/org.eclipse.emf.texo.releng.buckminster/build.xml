@@ -92,6 +92,15 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 
 	<import file="maven/ant_maven.xml" />
 
+	<target name="publish">
+		<move todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}">
+		    <fileset dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
+		</move>
+		<copy todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/">
+			<fileset dir="${buildSitePath}/*"/>
+		</copy>
+	</target>
+
 	<target name="build.and.test" depends="init, get.thirdparty, init.checks, install.buckminster">
 		<ant dir="${basedir}/build" antfile="texo_build.xml" target="run" inheritRefs="true" />
 
