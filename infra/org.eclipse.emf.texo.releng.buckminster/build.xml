@@ -95,6 +95,8 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 
 	<target name="publish">
 		<mkdir dir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}"/>
+		<!-- if previous copy failed it is possible that interim build has been removed -->
+		<mkdir dir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim"/>
 		<move todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}">
 		    <fileset dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
 		</move>
