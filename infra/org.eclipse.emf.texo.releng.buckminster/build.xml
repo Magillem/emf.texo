@@ -102,7 +102,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		</move>
 		<mkdir dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
 		<copy todir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim">
-			<fileset dir="${resultP2Site}/*"/>
+			<fileset dir="${resultP2Site}/"/>
 		</copy>
 	</target>
 
