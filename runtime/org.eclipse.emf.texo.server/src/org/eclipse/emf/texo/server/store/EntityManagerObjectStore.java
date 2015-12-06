@@ -282,7 +282,7 @@ public class EntityManagerObjectStore extends ObjectStore {
    */
   @Override
   public void close() {
-    getEntityManager().close();
+    EntityManagerProvider.getInstance().releaseEntityManager(getEntityManager());
   }
 
   /**
@@ -300,7 +300,8 @@ public class EntityManagerObjectStore extends ObjectStore {
    */
   @SuppressWarnings("unchecked")
   @Override
-  public <T extends Object> List<Object> getReferingObjects(T target, int maxResult, boolean includeContainerReferences) {
+  public <T extends Object> List<Object> getReferingObjects(T target, int maxResult,
+      boolean includeContainerReferences) {
     return ((BaseDao<T>) getDao(target.getClass())).getReferingObjects(target, maxResult, includeContainerReferences);
   }
 

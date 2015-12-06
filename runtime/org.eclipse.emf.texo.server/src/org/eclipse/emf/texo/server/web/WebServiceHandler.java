@@ -42,6 +42,7 @@ import org.eclipse.emf.texo.server.service.ServiceUtils;
 import org.eclipse.emf.texo.server.service.UpdateInsertModelOperation;
 import org.eclipse.emf.texo.server.store.EntityManagerObjectStore;
 import org.eclipse.emf.texo.server.store.EntityManagerProvider;
+import org.eclipse.emf.texo.store.ObjectStore;
 
 /**
  * The base implementation of a CRUD Rest WS. It is the basis of the XML and JSON CRUD REST functions.
@@ -58,8 +59,8 @@ import org.eclipse.emf.texo.server.store.EntityManagerProvider;
  */
 public abstract class WebServiceHandler implements TexoComponent {
   private String uri = null;
-  private ServiceContextResultProcessor serviceContextResultProcessor = ComponentProvider.getInstance().newInstance(
-      ServiceContextResultProcessor.class);
+  private ServiceContextResultProcessor serviceContextResultProcessor = ComponentProvider.getInstance()
+      .newInstance(ServiceContextResultProcessor.class);
 
   public void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     final ServiceContext serviceContext = createServiceContext(req);
@@ -74,7 +75,7 @@ public abstract class WebServiceHandler implements TexoComponent {
 
       operation.close();
     } finally {
-      releaseEntityManager((EntityManager) serviceContext.getObjectStore().getDelegate());
+      serviceContext.getObjectStore().close();
     }
   }
 
@@ -82,8 +83,8 @@ public abstract class WebServiceHandler implements TexoComponent {
     final ServiceContext serviceContext = createServiceContext(req);
 
     try {
-      final RetrieveModelOperation retrieveModelOperation = ComponentProvider.getInstance().newInstance(
-          RetrieveModelOperation.class);
+      final RetrieveModelOperation retrieveModelOperation = ComponentProvider.getInstance()
+          .newInstance(RetrieveModelOperation.class);
       retrieveModelOperation.setServiceContext(serviceContext);
 
       retrieveModelOperation.execute();
@@ -92,7 +93,7 @@ public abstract class WebServiceHandler implements TexoComponent {
 
       retrieveModelOperation.close();
     } finally {
-      releaseEntityManager((EntityManager) serviceContext.getObjectStore().getDelegate());
+      serviceContext.getObjectStore().close();
     }
   }
 
@@ -104,8 +105,8 @@ public abstract class WebServiceHandler implements TexoComponent {
       return;
     }
     try {
-      final UpdateInsertModelOperation operation = ComponentProvider.getInstance().newInstance(
-          UpdateInsertModelOperation.class);
+      final UpdateInsertModelOperation operation = ComponentProvider.getInstance()
+          .newInstance(UpdateInsertModelOperation.class);
       operation.setServiceContext(serviceContext);
 
       operation.execute();
@@ -114,7 +115,7 @@ public abstract class WebServiceHandler implements TexoComponent {
 
       operation.close();
     } finally {
-      releaseEntityManager((EntityManager) serviceContext.getObjectStore().getDelegate());
+      serviceContext.getObjectStore().close();
     }
   }
 
@@ -132,30 +133,25 @@ public abstract class WebServiceHandler implements TexoComponent {
    */
   protected ServiceContext createServiceContext(HttpServletRequest request) {
     final String requestUrl = request.getRequestURL().toString();
-    EntityManager entityManager = null;
     ServiceContext serviceContext = null;
 
     try {
       serviceContext = createServiceContext();
 
-      entityManager = createEntityManager();
       serviceContext.setRequestURI(requestUrl);
 
       serviceContext.setServiceRequestURI(request.getPathInfo());
 
-      final EntityManagerObjectStore emObjectStore = ComponentProvider.getInstance().newInstance(
-          EntityManagerObjectStore.class);
-      emObjectStore.setEntityManager(entityManager);
-
       // find the uri on the basis of the request uri
       String objectStoreUri = getUri() == null ? request.getContextPath() : getUri();
       if (getUri() == null) {
-        final int contextIndex = requestUrl.indexOf(request.getContextPath() + "/"); //$NON-NLS-1$ 
+        final int contextIndex = requestUrl.indexOf(request.getContextPath() + "/"); //$NON-NLS-1$
         objectStoreUri = requestUrl.substring(0, contextIndex) + request.getContextPath() + request.getServletPath();
       } else {
         objectStoreUri = getUri();
       }
-      emObjectStore.setUri(objectStoreUri);
+
+      final ObjectStore objectStore = ObjectStoreFactory.getInstance().createObjectStore(request, objectStoreUri);
 
       final Map<String, Object> params = new HashMap<String, Object>();
       for (Enumeration<String> enumeration = request.getParameterNames(); enumeration.hasMoreElements();) {
@@ -167,18 +163,16 @@ public abstract class WebServiceHandler implements TexoComponent {
           params.put(name, vals);
         }
       }
-      serviceContext.setObjectStore(emObjectStore);
+      serviceContext.setObjectStore(objectStore);
       serviceContext.setRequestParameters(params);
 
       serviceContext.setRequestContent(ServiceUtils.toString(request.getInputStream(), request.getCharacterEncoding()));
 
       return serviceContext;
     } catch (Throwable t) {
-      if (entityManager != null) {
-        releaseEntityManager(entityManager);
-      }
-
       if (serviceContext != null) {
+        serviceContext.getObjectStore().close();
+
         serviceContext.createErrorResult(t);
         return serviceContext;
       }
@@ -223,8 +217,11 @@ public abstract class WebServiceHandler implements TexoComponent {
    * As a default calls {@link EntityManagerProvider#createEntityManager()}.
    * 
    * Can be overridden for specific logic to get the entity manager. In that case also override the
-   * {@link #releaseEntityManager(EntityManager)}.
+   * {@link #releaseEntityManager(EntityManager)}.createEntityManager
+   * 
+   * @deprecated is moved to the {@link EntityManagerObjectStore}
    */
+  @Deprecated
   protected EntityManager createEntityManager() {
     return EntityManagerProvider.getInstance().createEntityManager();
   }
@@ -233,7 +230,10 @@ public abstract class WebServiceHandler implements TexoComponent {
    * Is called once at the end of the processing of a request.
    * 
    * As a default calls {@link EntityManagerProvider#releaseEntityManager(EntityManager)}.
+   * 
+   * @deprecated is not used anymore actively, instead {@link ObjectStore#close()} is called.
    */
+  @Deprecated
   protected void releaseEntityManager(EntityManager entityManager) {
     EntityManagerProvider.getInstance().releaseEntityManager(entityManager);
   }
@@ -305,7 +305,7 @@ public abstract class WebServiceHandler implements TexoComponent {
   }
 
   /**
-   * A subclass of the {@link ServletContextResultWrapper} which processes the result through a XSLT template.
+   * A subclass of the {@link ServiceContextResultProcessor} which processes the result through a XSLT template.
    * 
    * @author mtaal
    */

@@ -24,8 +24,16 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.texo.component.ComponentProvider;
+import org.eclipse.emf.texo.json.JSONModelConverter;
+import org.eclipse.emf.texo.json.JSONWebServiceObjectResolver;
+import org.eclipse.emf.texo.json.ModelJSONConverter;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelResolver;
+import org.eclipse.emf.texo.resolver.ObjectResolver;
+import org.eclipse.emf.texo.server.model.request.ActionType;
+import org.eclipse.emf.texo.server.model.request.RequestModelPackage;
 import org.eclipse.emf.texo.server.model.response.ErrorType;
 import org.eclipse.emf.texo.server.service.ServiceContext;
 import org.eclipse.emf.texo.server.test.BaseTest;
@@ -39,6 +47,8 @@ import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.util.BytesContentProvider;
 import org.eclipse.jetty.http.HttpMethod;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -56,9 +66,7 @@ public abstract class BaseWSWebTest extends BaseTest {
 
   public BaseWSWebTest(String name) {
     super(name);
-
     ServiceContext.setInTexoTestRun();
-
   }
 
   protected void startClient() throws Exception {
@@ -204,31 +212,73 @@ public abstract class BaseWSWebTest extends BaseTest {
   }
 
   protected List<Object> deserialize(String content) {
-    final ModelXMLLoader xmlLoader = new ModelXMLLoader();
-    xmlLoader.getEMFModelConverter().setUriResolver(new XMLWebServiceObjectResolver());
-    xmlLoader.setReader(new StringReader(content));
-    final List<Object> result = xmlLoader.read();
-    return result;
+    if (isXmlTest()) {
+      final ModelXMLLoader xmlLoader = new ModelXMLLoader();
+      xmlLoader.getEMFModelConverter().setUriResolver(getUriResolver());
+      xmlLoader.setReader(new StringReader(content));
+      final List<Object> result = xmlLoader.read();
+      return result;
+    } else {
+      try {
+        final JSONModelConverter jsonModelConverter = ComponentProvider.getInstance()
+            .newInstance(JSONModelConverter.class);
+        jsonModelConverter.setObjectResolver(getUriResolver());
+        return Collections.singletonList(jsonModelConverter.convert(new JSONObject(content)));
+      } catch (JSONException e) {
+        throw new RuntimeException(content, e);
+      }
+    }
   }
 
   protected String serialize(Object object) {
-    final ModelXMLSaver xmlSaver = new ModelXMLSaver();
-    xmlSaver.setObjects(Collections.singletonList(object));
-    final StringWriter sw = new StringWriter();
-    xmlSaver.setWriter(sw);
-    xmlSaver.getModelEMFConverter().getObjectResolver().setUseWebServiceUriFormat(true);
-    xmlSaver.write();
-    return sw.toString();
+    if (isXmlTest()) {
+      final ModelXMLSaver xmlSaver = new ModelXMLSaver();
+      xmlSaver.setObjects(Collections.singletonList(object));
+      final StringWriter sw = new StringWriter();
+      xmlSaver.setWriter(sw);
+      xmlSaver.getModelEMFConverter().getObjectResolver().setUseWebServiceUriFormat(true);
+      xmlSaver.write();
+      return sw.toString();
+    } else {
+      final ModelJSONConverter modelJSONConverter = ComponentProvider.getInstance()
+          .newInstance(ModelJSONConverter.class);
+      modelJSONConverter.setObjectResolver(getUriResolver());
+      return modelJSONConverter.convert(object).toString();
+    }
   }
 
   protected String serialize(List<Object> objects) {
-    final ModelXMLSaver xmlSaver = new ModelXMLSaver();
-    xmlSaver.setObjects(objects);
-    final StringWriter sw = new StringWriter();
-    xmlSaver.setWriter(sw);
-    xmlSaver.getModelEMFConverter().getObjectResolver().setUseWebServiceUriFormat(true);
-    xmlSaver.write();
-    return sw.toString();
+    ActionType actionType = RequestModelPackage.MODELFACTORY.createActionType();
+    actionType.getUpdate().addAll(objects);
+    if (isXmlTest()) {
+      final ModelXMLSaver xmlSaver = new ModelXMLSaver();
+      xmlSaver.setObjects(Collections.singletonList((Object) actionType));
+      final StringWriter sw = new StringWriter();
+      xmlSaver.setWriter(sw);
+      xmlSaver.getModelEMFConverter().getObjectResolver().setUseWebServiceUriFormat(true);
+      xmlSaver.write();
+      return sw.toString();
+    } else {
+      final ModelJSONConverter modelJSONConverter = ComponentProvider.getInstance()
+          .newInstance(ModelJSONConverter.class);
+      modelJSONConverter.setObjectResolver(getUriResolver());
+      return modelJSONConverter.convert(actionType).toString();
+    }
+  }
+
+  private ObjectResolver getUriResolver() {
+    ObjectResolver or;
+    if (isXmlTest()) {
+      or = new XMLWebServiceObjectResolver();
+    } else {
+      or = new JSONWebServiceObjectResolver();
+    }
+    or.setUri(URI.createURI(getURL()));
+    return or;
+  }
+
+  protected boolean isXmlTest() {
+    return true;
   }
 
   protected String doGetRequest(String wsPart, String testContent, int responseCode) {
@@ -263,5 +313,11 @@ public abstract class BaseWSWebTest extends BaseTest {
     }
   }
 
-  protected abstract String getURL();
+  protected String getURL() {
+    if (isXmlTest()) {
+      return super.getBaseURL() + "/" + XMLWS; //$NON-NLS-1$
+    } else {
+      return super.getBaseURL() + "/" + JSONWS; //$NON-NLS-1$
+    }
+  }
 }

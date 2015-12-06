@@ -185,10 +185,11 @@ public class EMFModelConverter implements TexoComponent {
   protected void convertSingleEReference(final EObject eObject, final ModelObject<?> modelObject,
       final EReference eReference) {
     // bidirectional one-to-many are always set from the many side to preserve the order
-    if (!eReference.isMany() && eReference.getEOpposite() != null && eReference.getEOpposite().isMany()) {
+    final EObject value = (EObject) eObject.eGet(eReference);
+    if (!eReference.isMany() && value != null && eReference.getEOpposite() != null
+        && eReference.getEOpposite().isMany()) {
       return;
     }
-    final EObject value = (EObject) eObject.eGet(eReference);
     if (value == null) {
       modelObject.eSet(eReference, null);
     } else {
@@ -249,10 +250,23 @@ public class EMFModelConverter implements TexoComponent {
 
       final Collection<?> mValues = (Collection<?>) modelObject.eGet(eReference);
 
+      // make a copy
+      final List<Object> copiedMValues = new ArrayList<Object>(mValues);
+
       // clear as there can be current values if the target is read from the db
       // use forloop as the collection can be unmodifiable
       for (Object o : new ArrayList<Object>(mValues)) {
         modelObject.eRemoveFrom(eReference, o);
+      }
+
+      // check that the eopposite is indeed cleared, this is not the case if
+      // there is no bi-directional code generated
+      final EReference eOpposite = eReference.getEOpposite();
+      if (eOpposite != null && !eOpposite.isMany()) {
+        for (Object mValue : copiedMValues) {
+          final ModelObject<?> modelMValue = ModelResolver.getInstance().getModelObject(mValue);
+          modelMValue.eSet(eOpposite, null);
+        }
       }
 
       for (final EObject eValue : eValues) {
@@ -262,16 +276,9 @@ public class EMFModelConverter implements TexoComponent {
 
         // add to the other side, this is needed because the bi-directional
         // api is not always generated
-        if (eReference.getEOpposite() != null && !eReference.getEOpposite().isMany()) {
+        if (eOpposite != null && !eOpposite.isMany()) {
           final ModelObject<?> modelObjectTarget = ModelResolver.getInstance().getModelObject(target);
-          if (eReference.getEOpposite().isMany()) {
-            final Collection<?> oppositeCollection = (Collection<?>) modelObjectTarget.eGet(eReference.getEOpposite());
-            if (!oppositeCollection.contains(modelObject.getTarget())) {
-              modelObjectTarget.eAddTo(eReference.getEOpposite(), modelObject.getTarget());
-            }
-          } else if (modelObjectTarget.eGet(eReference.getEOpposite()) != modelObject.getTarget()) {
-            modelObjectTarget.eSet(eReference.getEOpposite(), modelObject.getTarget());
-          }
+          modelObjectTarget.eSet(eReference.getEOpposite(), modelObject.getTarget());
         }
       }
     }
@@ -381,16 +388,16 @@ public class EMFModelConverter implements TexoComponent {
     if (value instanceof Enum<?>) {
       final EDataType enumDataType = getDataTypeOrBaseType(eDataType);
       Check.isInstanceOf(enumDataType, EEnum.class);
-      final ModelPackage modelPackage = ModelResolver.getInstance().getModelPackage(
-          enumDataType.getEPackage().getNsURI());
+      final ModelPackage modelPackage = ModelResolver.getInstance()
+          .getModelPackage(enumDataType.getEPackage().getNsURI());
       final Class<? extends Enum> enumClass = (Class<? extends Enum>) modelPackage.getEClassifierClass(enumDataType);
       return Enum.valueOf(enumClass, ((Enum<?>) value).name().toUpperCase(Locale.ENGLISH));
     } else if (value instanceof EEnumLiteral) {
       final EDataType enumDataType = getDataTypeOrBaseType(eDataType);
       Check.isInstanceOf(enumDataType, EEnum.class);
       final EEnumLiteral eeNumLiteral = (EEnumLiteral) value;
-      final ModelPackage modelPackage = ModelResolver.getInstance().getModelPackage(
-          enumDataType.getEPackage().getNsURI());
+      final ModelPackage modelPackage = ModelResolver.getInstance()
+          .getModelPackage(enumDataType.getEPackage().getNsURI());
       if (modelPackage == null) {
         // dynamic model
         return eeNumLiteral;

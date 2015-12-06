@@ -36,7 +36,7 @@
         <details key="java.member" value="category"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="author" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="author" unsettable="true" lowerBound="1"
         eType="#//Writer" eOpposite="#//Writer/books">
       <eAnnotations source="texo.java.annotation">
         <details key="setter" value="@org.eclipse.emf.texo.test.models.annotations.TestAnnotationOne(&quot;setter&quot;)"/>

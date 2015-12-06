@@ -136,8 +136,8 @@ public class GeneratorUtils {
   public static boolean isPartOfGroup(EStructuralFeature eFeature) {
     // if the containing eclass is mixed then all efeatures are part
     // of a group
-    return null != ExtendedMetaData.INSTANCE.getGroup(eFeature) || !ModelUtils.isMixed(eFeature)
-        && ModelUtils.hasMixedEFeature(eFeature.getEContainingClass());
+    return null != ExtendedMetaData.INSTANCE.getGroup(eFeature)
+        || !ModelUtils.isMixed(eFeature) && ModelUtils.hasMixedEFeature(eFeature.getEContainingClass());
   }
 
   /**
@@ -715,7 +715,8 @@ public class GeneratorUtils {
    *          {@link ModelManager#getPackageRegistry()}.
    * @return a new EPackage or the one already registered in the packageRegistry.
    */
-  public static EPackage createEPackage(final String nsUri, final byte[] bytes, final EPackage.Registry packageRegistry) {
+  public static EPackage createEPackage(final String nsUri, final byte[] bytes,
+      final EPackage.Registry packageRegistry) {
     if (packageRegistry.getEPackage(nsUri) != null) {
       return packageRegistry.getEPackage(nsUri);
     }
@@ -755,7 +756,7 @@ public class GeneratorUtils {
     resourceSet.setPackageRegistry(packageRegistry);
 
     final Resource.Factory resourceFactory = new EcoreResourceFactoryImpl();
-    resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", resourceFactory); //$NON-NLS-1$ 
+    resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", resourceFactory); //$NON-NLS-1$
     resourceSet.getResourceFactoryRegistry().getProtocolToFactoryMap().put("*", resourceFactory); //$NON-NLS-1$
 
     return resourceSet.createResource(URI.createURI(uri));

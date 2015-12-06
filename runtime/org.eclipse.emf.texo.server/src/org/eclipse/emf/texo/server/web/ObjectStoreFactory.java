@@ -16,16 +16,11 @@
  */
 package org.eclipse.emf.texo.server.web;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.persistence.EntityManager;
 import javax.servlet.http.HttpServletRequest;
 
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.component.TexoComponent;
 import org.eclipse.emf.texo.server.store.EntityManagerObjectStore;
-import org.eclipse.emf.texo.server.store.EntityManagerProvider;
 import org.eclipse.emf.texo.store.EMFResourceObjectStore;
 import org.eclipse.emf.texo.store.MemoryObjectStore;
 import org.eclipse.emf.texo.store.ObjectStore;
@@ -52,19 +47,17 @@ public class ObjectStoreFactory implements TexoComponent {
   }
 
   public ObjectStore createObjectStore(HttpServletRequest request, String objectStoreUri) {
-    final ObjectStore objectStore = createEntityManagerObjectStore();
+    final ObjectStore objectStore = createObjectStoreLocal(request, objectStoreUri);
     objectStore.setUri(objectStoreUri);
-    Map<String, Object> params = new HashMap<String, Object>();
-    Map<String, String[]> reqParams = request.getParameterMap();
-    for (String key : reqParams.keySet()) {
-      final String[] vals = reqParams.get(key);
-      if (vals.length == 1) {
-        params.put(key, vals[0]);
-      } else {
-        params.put(key, vals);
-      }
-    }
     return objectStore;
+  }
+
+  /**
+   * Override point if you want to create another type of objectstore. As a default calls this
+   * {@link #createEntityManagerObjectStore()}
+   */
+  protected ObjectStore createObjectStoreLocal(HttpServletRequest request, String objectStoreUri) {
+    return createEntityManagerObjectStore();
   }
 
   protected ObjectStore createEMFResourceObjectStore() {
@@ -77,9 +70,5 @@ public class ObjectStoreFactory implements TexoComponent {
 
   protected ObjectStore createEntityManagerObjectStore() {
     return ComponentProvider.getInstance().newInstance(EntityManagerObjectStore.class);
-  }
-
-  protected EntityManager createEntityManager() {
-    return EntityManagerProvider.getInstance().createEntityManager();
   }
 }

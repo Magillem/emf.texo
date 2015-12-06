@@ -106,8 +106,9 @@ public class WSMainTest extends BaseWSWebTest {
       }
 
       {
-        final String content = doGetRequest("model/eclassifier?name=BookCategory&epackage="
-            + LibraryModelPackage.NS_URI, null, HttpServletResponse.SC_OK);
+        final String content = doGetRequest(
+            "model/eclassifier?name=BookCategory&epackage=" + LibraryModelPackage.NS_URI, null,
+            HttpServletResponse.SC_OK);
         final List<Object> objects = deserialize(content);
         Assert.assertEquals(1, objects.size());
         Assert.assertTrue(objects.get(0) instanceof DynamicModelObject);
@@ -156,12 +157,13 @@ public class WSMainTest extends BaseWSWebTest {
     }
 
     // now delete the library
-    doDeleteRequest(
-        LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), HttpServletResponse.SC_OK); //$NON-NLS-1$
+    doDeleteRequest(LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), //$NON-NLS-1$
+        HttpServletResponse.SC_OK);
     // this should fail
     {
       final String content = doGetRequest(
-          LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), null, HttpServletResponse.SC_NOT_FOUND); //$NON-NLS-1$
+          LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), null, //$NON-NLS-1$
+          HttpServletResponse.SC_NOT_FOUND);
       final List<Object> objects = deserialize(content);
       Assert.assertEquals(1, objects.size());
       final ErrorType errorType = (ErrorType) objects.get(0);
@@ -298,7 +300,8 @@ public class WSMainTest extends BaseWSWebTest {
     if (!isXmlTest()) {
       final String wsPartUrl = ModelUtils.getQualifiedNameFromEClass(LibraryModelPackage.INSTANCE.getWriterEClass())
           + "?query=" //$NON-NLS-1$
-          + URLEncoder.encode("select e, e.name from library_Writer e where e.name like :name", "UTF-8") + "&firstResult=0" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+          + URLEncoder.encode("select e, e.name from library_Writer e where e.name like :name", "UTF-8") //$NON-NLS-1$ //$NON-NLS-2$
+          + "&firstResult=0" //$NON-NLS-1$
           + "&maxResults=5&childLevels=3&qp.name=" + URLEncoder.encode("name2%", "UTF-8"); //$NON-NLS-1$
       final String content = doGetRequest(wsPartUrl, null, HttpServletResponse.SC_OK);
       final ResponseType result = (ResponseType) deserialize(content).get(0);
@@ -369,7 +372,7 @@ public class WSMainTest extends BaseWSWebTest {
     // named query with get
     if (!isXmlTest()) {
       final String wsPartUrl = LibraryModelPackage.INSTANCE.getWriterEClass().getName()
-          + "?namedQuery=testWriter&firstResult=0" //$NON-NLS-1$ 
+          + "?namedQuery=testWriter&firstResult=0" //$NON-NLS-1$
           + "&maxResults=5&noCount=true&qp.name=" + URLEncoder.encode("name3%", "UTF-8"); //$NON-NLS-1$
       final String content = doGetRequest(wsPartUrl, null, HttpServletResponse.SC_OK);
       final ResponseType result = (ResponseType) deserialize(content).get(0);
@@ -387,8 +390,8 @@ public class WSMainTest extends BaseWSWebTest {
     // get all the writers which start with name2, in total there are 11
     // do not do the count, so the total rows should be equal to the maxResults
     {
-      final String wsPartUrl = LibraryModelPackage.INSTANCE.getWriterEClass().getName()
-          + "?query=" + URLEncoder.encode("select e from library_Writer e where e.name like :name", "UTF-8") + "&firstResult=0" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
+      final String wsPartUrl = LibraryModelPackage.INSTANCE.getWriterEClass().getName() + "?query=" //$NON-NLS-1$
+          + URLEncoder.encode("select e from library_Writer e where e.name like :name", "UTF-8") + "&firstResult=0" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
           + "&maxResults=5&noCount=true&qp.name=" + URLEncoder.encode("name3%", "UTF-8"); //$NON-NLS-1$
       final String content = doGetRequest(wsPartUrl, null, HttpServletResponse.SC_OK);
       final ResponseType result = (ResponseType) deserialize(content).get(0);
@@ -513,10 +516,6 @@ public class WSMainTest extends BaseWSWebTest {
   }
 
   @Override
-  protected String getURL() {
-    return super.getBaseURL() + "/" + XMLWS; //$NON-NLS-1$ 
-  }
-
   protected boolean isXmlTest() {
     return true;
   }

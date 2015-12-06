@@ -20,7 +20,6 @@ package org.eclipse.emf.texo.server.test.ws;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -50,7 +49,6 @@ import org.eclipse.jetty.http.HttpMethod;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -65,13 +63,13 @@ import org.junit.runners.Parameterized;
 public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
 
   @Parameterized.Parameters
-  public static List<TexoEMFResourceURIConverter.ResourceType> getParameters() {
-    return Arrays.asList(new TexoEMFResourceURIConverter.ResourceType[] { // TexoEMFResourceURIConverter.ResourceType.XML,
-        TexoEMFResourceURIConverter.ResourceType.XMI });
-  }
-
-  @BeforeClass
-  public static void beforeClass() {
+  public static List<Object[]> getParameters() {
+    final List<Object[]> params = new ArrayList<Object[]>();
+    params.add(new Object[] { TexoEMFResourceURIConverter.ResourceType.XML, true });
+    params.add(new Object[] { TexoEMFResourceURIConverter.ResourceType.XML, false });
+    params.add(new Object[] { TexoEMFResourceURIConverter.ResourceType.XMI, true });
+    params.add(new Object[] { TexoEMFResourceURIConverter.ResourceType.XMI, false });
+    return params;
   }
 
   @Before
@@ -88,6 +86,18 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
         xmlFile.delete();
       }
     }
+    {
+      File xmiFile = new File(getTemporaryDirectoryPath(), "texo_jsonws.xmi");
+      if (xmiFile.exists()) {
+        xmiFile.delete();
+      }
+    }
+    {
+      File xmlFile = new File(getTemporaryDirectoryPath(), "texo_jsonws.xml");
+      if (xmlFile.exists()) {
+        xmlFile.delete();
+      }
+    }
     ObjectStoreFactory.setInstance(new ObjectStoreFactory() {
 
       @Override
@@ -98,7 +108,7 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
           ((TexoEMFResourceURIConverter) eos.getURIConverter())
               .setResourceType(TexoEMFResourceURIConverter.ResourceType.XML);
         }
-        return super.createEMFResourceObjectStore();
+        return os;
       }
     });
   }
@@ -109,11 +119,18 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
   }
 
   private TexoEMFResourceURIConverter.ResourceType resourceType = null;
+  private boolean isXmlTest = false;
 
-  public EMFResourceObjectStoreWSTest(TexoEMFResourceURIConverter.ResourceType resourceType) {
+  public EMFResourceObjectStoreWSTest(TexoEMFResourceURIConverter.ResourceType resourceType, boolean isXmlTest) {
     super("library"); //$NON-NLS-1$
     this.resourceType = resourceType;
     ServiceModelPackageRegistry.getInstance().register(LibraryModelPackage.INSTANCE);
+    this.isXmlTest = isXmlTest;
+  }
+
+  @Override
+  protected boolean isXmlTest() {
+    return isXmlTest;
   }
 
   @Override
@@ -310,11 +327,15 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
 
   @Test
   public void insertComplexStructureTest() throws Exception {
+    // does not work in case of json
+    if (!isXmlTest()) {
+      return;
+    }
     Library lib = null;
     {
       final String content = serialize(createTestDataInstance());
       final String resultStr = doContentRequest(
-          ModelUtils.getQualifiedNameFromEClass(LibraryModelPackage.INSTANCE.getWriterEClass()), content,
+          ModelUtils.getQualifiedNameFromEClass(LibraryModelPackage.INSTANCE.getLibraryEClass()), content,
           HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResultType result = (ResultType) deserialize(resultStr).get(0);
       lib = (Library) result.getInserted().get(0);
@@ -338,7 +359,13 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
     os.add(w);
     os.addAll(w.getBooks());
 
+    // save for later test
     final Book bk = w.getBooks().get(0);
+
+    // clear the references
+    for (Book book : w.getBooks()) {
+      book.setAuthor(null);
+    }
     w.getBooks().clear();
 
     {
@@ -430,15 +457,6 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
       }
     }
     return lib;
-  }
-
-  @Override
-  protected String getURL() {
-    return super.getBaseURL() + "/" + XMLWS; //$NON-NLS-1$
-  }
-
-  protected boolean isXmlTest() {
-    return true;
   }
 
   protected String getTemporaryDirectoryPath() {
