@@ -8,8 +8,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelResolver;
@@ -58,7 +60,7 @@ public class MemoryObjectStore extends ObjectStore {
         }
       }
     }
-    return super.get(eClass, id);
+    return null;
   }
 
   @Override
@@ -92,10 +94,32 @@ public class MemoryObjectStore extends ObjectStore {
 
   @Override
   public <T extends Object> void remove(T object) {
+    if (object == null) {
+      return;
+    }
     final ModelObject<?> modelObject = ModelResolver.getInstance().getModelObject(object);
     final List<Object> dataList = data.get(modelObject.eClass());
+    boolean removed = false;
     if (dataList != null) {
-      dataList.remove(object);
+      removed = dataList.remove(object);
+    }
+    if (!removed) {
+      return;
+    }
+
+    // remove all contained children
+    for (EReference eref : modelObject.eClass().getEAllReferences()) {
+      if (!eref.isContainment()) {
+        continue;
+      }
+      if (eref.isMany()) {
+        final Collection<?> collection = (Collection<?>) modelObject.eGet(eref);
+        for (Object o : collection) {
+          remove(o);
+        }
+      } else {
+        remove(modelObject.eGet(eref));
+      }
     }
   }
 
@@ -108,24 +132,74 @@ public class MemoryObjectStore extends ObjectStore {
   public <T extends Object> void insert(T object) {
     final ModelObject<?> modelObject = ModelResolver.getInstance().getModelObject(object);
     List<Object> dataList = data.get(modelObject.eClass());
-    if (dataList != null && !dataList.contains(object)) {
-      dataList.add(object);
-    } else if (dataList == null) {
+    if (dataList == null) {
       dataList = new ArrayList<Object>();
-      dataList.add(object);
+      data.put(modelObject.eClass(), dataList);
+    }
+
+    if (dataList.contains(object)) {
+      // already inserted go away
+      return;
+    }
+
+    // set the id
+    setIdAttributeOnInsert(modelObject);
+
+    // add it
+    dataList.add(object);
+
+    // insert all contained children
+    for (EReference eref : modelObject.eClass().getEAllReferences()) {
+      if (!eref.isContainment()) {
+        continue;
+      }
+      if (eref.isMany()) {
+        final Collection<?> collection = (Collection<?>) modelObject.eGet(eref);
+        for (Object o : collection) {
+          insert(o);
+        }
+      } else {
+        insert(modelObject.eGet(eref));
+      }
+    }
+  }
+
+  protected void setIdAttributeOnInsert(ModelObject<?> modelObject) {
+    final EAttribute idEAttribute = IdProvider.getInstance().getIdEAttribute(modelObject.eClass());
+    if (modelObject.eGet(idEAttribute) == null) {
+      // always wait a few milliseconds to make sure id is unique, is not good for production code
+      // but production code should not use the MemoryObjectStore or its derivatives
+      try {
+        Thread.sleep(2);
+      } catch (Exception ignore) {
+      }
+      if (idEAttribute.getEAttributeType().getInstanceClass() == String.class) {
+        modelObject.eSet(idEAttribute, "" + System.currentTimeMillis()); //$NON-NLS-1$
+      } else if (Long.class.isAssignableFrom(idEAttribute.getEAttributeType().getInstanceClass())) {
+        modelObject.eSet(idEAttribute, System.currentTimeMillis());
+      } else if (long.class.isAssignableFrom(idEAttribute.getEAttributeType().getInstanceClass())) {
+        modelObject.eSet(idEAttribute, System.currentTimeMillis());
+      } else if (Integer.class.isAssignableFrom(idEAttribute.getEAttributeType().getInstanceClass())) {
+        modelObject.eSet(idEAttribute, new Integer((int) System.currentTimeMillis()));
+      } else if (Integer.class.isAssignableFrom(idEAttribute.getEAttributeType().getInstanceClass())) {
+        modelObject.eSet(idEAttribute, new Integer((int) System.currentTimeMillis()));
+      }
     }
   }
 
   @Override
   public List<?> query(String qryStr, Map<String, Object> namedParameters, int firstResult, int maxResults) {
-    final int index = qryStr.indexOf(FROM);
+    final int index = qryStr.toLowerCase().indexOf(FROM);
     if (index != -1) {
-      final String eClassName = qryStr.substring(index + FROM_LENGTH);
-      for (EClass eClass : data.keySet()) {
-        if (eClass.getName().equals(eClassName)) {
-          return data.get(eClass);
-        }
+      String eClassName = qryStr.substring(index + FROM_LENGTH).trim();
+      if (eClassName.indexOf(" ") != -1) { //$NON-NLS-1$
+        eClassName = eClassName.substring(0, eClassName.indexOf(" ")); //$NON-NLS-1$
       }
+      final EClass eClass = ModelUtils.getEClassFromQualifiedName(eClassName);
+      if (eClass == null) {
+        return Collections.emptyList();
+      }
+      return query(eClass, firstResult, maxResults);
     }
     return Collections.emptyList();
   }
@@ -137,16 +211,8 @@ public class MemoryObjectStore extends ObjectStore {
 
   @Override
   public long count(String qryStr, Map<String, Object> namedParameters) {
-    final int index = qryStr.indexOf(FROM);
-    if (index != -1) {
-      final String eClassName = qryStr.substring(index + FROM_LENGTH);
-      for (EClass eClass : data.keySet()) {
-        if (eClass.getName().equals(eClassName)) {
-          return data.size();
-        }
-      }
-    }
-    return 0;
+    final List<?> list = query(qryStr, namedParameters, 0, -1);
+    return list.size();
   }
 
   /*

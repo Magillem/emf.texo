@@ -98,7 +98,7 @@ public abstract class BaseWSWebTest extends BaseTest {
       startClient();
     }
 
-    final Request request = httpClient.newRequest(getURL() + "/" + encodeWsPart(wsPartOfUrl)); //$NON-NLS-1$ 
+    final Request request = httpClient.newRequest(getURL() + "/" + encodeWsPart(wsPartOfUrl)); //$NON-NLS-1$
     request.method(method);
 
     if (content != null) {
@@ -121,7 +121,8 @@ public abstract class BaseWSWebTest extends BaseTest {
 
     // test with empty query param
     // https://bugs.eclipse.org/bugs/show_bug.cgi?id=387555
-    return URLEncoder.encode(wsPart.substring(0, qIndex), "UTF-8") + wsPart.substring(qIndex) + (!hasQueryParam ? "&query=" : ""); //$NON-NLS-1$
+    return URLEncoder.encode(wsPart.substring(0, qIndex), "UTF-8") + wsPart.substring(qIndex) //$NON-NLS-1$
+        + (!hasQueryParam ? "&query=" : "");
   }
 
   protected void doDeleteRequest(String wsPart, int expectedResponse) {
@@ -213,6 +214,16 @@ public abstract class BaseWSWebTest extends BaseTest {
   protected String serialize(Object object) {
     final ModelXMLSaver xmlSaver = new ModelXMLSaver();
     xmlSaver.setObjects(Collections.singletonList(object));
+    final StringWriter sw = new StringWriter();
+    xmlSaver.setWriter(sw);
+    xmlSaver.getModelEMFConverter().getObjectResolver().setUseWebServiceUriFormat(true);
+    xmlSaver.write();
+    return sw.toString();
+  }
+
+  protected String serialize(List<Object> objects) {
+    final ModelXMLSaver xmlSaver = new ModelXMLSaver();
+    xmlSaver.setObjects(objects);
     final StringWriter sw = new StringWriter();
     xmlSaver.setWriter(sw);
     xmlSaver.getModelEMFConverter().getObjectResolver().setUseWebServiceUriFormat(true);

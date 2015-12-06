@@ -117,7 +117,7 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
     // final Collection<?> coll1 = (Collection<?>) modelObject.eGet(eReference);
     // final Collection<?> coll2 = (Collection<?>) eObject.eGet(eReference);
     // if (coll1.size() != coll2.size()) {
-    //            throw new IllegalStateException("Unequal sizes of collection for EReference " //$NON-NLS-1$
+    // throw new IllegalStateException("Unequal sizes of collection for EReference " //$NON-NLS-1$
     // + eReference);
     // }
     // }
@@ -147,7 +147,7 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
       eObject = (InternalEObject) getObjectResolver().resolveToEObject(target);
       objectMapping.put(target, eObject);
     }
-    if (!converted.contains(target)) {
+    if (!converted.contains(target) && !toConvert.contains(target)) {
       toConvert.add(target);
     }
     return eObject;
@@ -219,8 +219,8 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
       // EMF uses a flattened api, while Texo builds this actual tree of
       // featuremaps, the findFeature and findValue find the deepest featureMap entry
       if (FeatureMapUtil.isFeatureMap(entryFeature)) {
-        final ModelFeatureMapEntry<?> modelFeatureMapEntry = ModelResolver.getInstance().getModelFeatureMapEntry(
-            entryFeature, entryValue);
+        final ModelFeatureMapEntry<?> modelFeatureMapEntry = ModelResolver.getInstance()
+            .getModelFeatureMapEntry(entryFeature, entryValue);
         entryFeature = ModelUtils.findFeature(modelFeatureMapEntry);
         entryValue = ModelUtils.findValue(modelFeatureMapEntry);
       }
@@ -365,15 +365,14 @@ public class ModelEMFConverter extends BaseModelConverter<Object> {
           if (valueFeature instanceof EReference) {
             updateList = oldMapValue == newMapValue;
           } else {
-            updateList = oldMapValue != null ? !oldMapValue.equals(newMapValue) : newMapValue != null ? !newMapValue
-                .equals(oldMapValue) : false;
+            updateList = oldMapValue != null ? !oldMapValue.equals(newMapValue)
+                : newMapValue != null ? !newMapValue.equals(oldMapValue) : false;
           }
           if (keyFeature instanceof EReference) {
             updateList = updateList || oldMapKey == newMapKey;
           } else {
-            updateList = updateList
-                || (oldMapKey != null ? !oldMapKey.equals(newMapKey) : newMapKey != null ? !newMapKey.equals(oldMapKey)
-                    : false);
+            updateList = updateList || (oldMapKey != null ? !oldMapKey.equals(newMapKey)
+                : newMapKey != null ? !newMapKey.equals(oldMapKey) : false);
           }
         } else {
           updateList = oldValue != newValue;

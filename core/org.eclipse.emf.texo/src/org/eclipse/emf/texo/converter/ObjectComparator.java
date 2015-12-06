@@ -298,7 +298,6 @@ public class ObjectComparator implements TexoComponent {
     if (v1 == v2) {
       return;
     }
-    System.err.println(v1);
     if (v1 != null && v1.getClass().isArray()) {
       checkEqualArrays(v1, v2, eAttribute);
     } else if (v1 != null && !v1.equals(v2)) {
