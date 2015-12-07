@@ -47,6 +47,7 @@ import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.Library
 import org.eclipse.emf.texo.utils.ModelUtils;
 import org.eclipse.jetty.http.HttpMethod;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -70,6 +71,11 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
     params.add(new Object[] { TexoEMFResourceURIConverter.ResourceType.XMI, true });
     params.add(new Object[] { TexoEMFResourceURIConverter.ResourceType.XMI, false });
     return params;
+  }
+
+  @AfterClass
+  public static void afterClass() {
+    ObjectStoreFactory.setInstance(new ObjectStoreFactory());
   }
 
   @Before
@@ -461,15 +467,9 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
 
   protected String getTemporaryDirectoryPath() {
     try {
-      if (System.getProperty("texo.temp.directory") != null) { //$NON-NLS-1$
-        System.err.println("Texo jvm arg temp " + System.getProperty("texo.temp.directory"));
-        return System.getProperty("texo.temp.directory");//$NON-NLS-1$
-      }
-
       final File f = File.createTempFile("test" + System.currentTimeMillis(), null); //$NON-NLS-1$
       String tempDirectory = f.getParentFile().getAbsolutePath();
       f.delete();
-      System.err.println("Texo temp " + tempDirectory);
       return tempDirectory;
     } catch (IOException e) {
       throw new IllegalStateException(e);

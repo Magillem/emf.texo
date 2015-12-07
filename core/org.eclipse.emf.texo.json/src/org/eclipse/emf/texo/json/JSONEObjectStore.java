@@ -62,11 +62,15 @@ public class JSONEObjectStore extends EObjectStore {
   private static final String POST_METHOD = "POST"; //$NON-NLS-1$
   private static final String GET_METHOD = "GET"; //$NON-NLS-1$
 
-  public JSONEObjectStore() {
-    setUseWebServiceUriFormat(true);
+  public static void initEPackages() {
     // dummy calls to initialize
     RequestPackage.eINSTANCE.getActionType();
     ResponsePackage.eINSTANCE.getDocumentRoot();
+  }
+
+  public JSONEObjectStore() {
+    setUseWebServiceUriFormat(true);
+    initEPackages();
   }
 
   protected String doHTTPRequest(String urlStr, String method, String content) throws Exception {

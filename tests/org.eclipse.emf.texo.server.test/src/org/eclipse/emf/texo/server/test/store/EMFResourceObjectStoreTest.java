@@ -16,21 +16,30 @@
  */
 package org.eclipse.emf.texo.server.test.store;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.server.store.EPersistenceService;
+import org.eclipse.emf.texo.server.web.ObjectStoreFactory;
 import org.eclipse.emf.texo.store.EMFResourceObjectStore;
 import org.eclipse.emf.texo.store.ObjectStore;
+import org.eclipse.emf.texo.store.TexoEMFResourceURIConverter;
 import org.eclipse.emf.texo.test.model.samples.library.Book;
 import org.eclipse.emf.texo.test.model.samples.library.Library;
 import org.eclipse.emf.texo.test.model.samples.library.Writer;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelFactory;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -49,6 +58,45 @@ public class EMFResourceObjectStoreTest {
   @Parameterized.Parameters
   public static List<String> getParameters() {
     return Arrays.asList(new String[] { "xml", "xmi" });
+  }
+
+  @AfterClass
+  public static void afterClass() {
+    ObjectStoreFactory.setInstance(new ObjectStoreFactory());
+  }
+
+  @Before
+  public void before() {
+    {
+      File xmiFile = new File(getTemporaryDirectoryPath(), "texo_data.xmi");
+      if (xmiFile.exists()) {
+        xmiFile.delete();
+      }
+    }
+    {
+      File xmlFile = new File(getTemporaryDirectoryPath(), "texo_data.xml");
+      if (xmlFile.exists()) {
+        xmlFile.delete();
+      }
+    }
+    ObjectStoreFactory.setInstance(new ObjectStoreFactory() {
+
+      @Override
+      protected ObjectStore createObjectStoreLocal(HttpServletRequest request, String objectStoreUri) {
+        ObjectStore os = super.createEMFResourceObjectStore();
+        if ("xml".equals(fileExtension)) {
+          final EMFResourceObjectStore eos = (EMFResourceObjectStore) os;
+          ((TexoEMFResourceURIConverter) eos.getURIConverter())
+              .setResourceType(TexoEMFResourceURIConverter.ResourceType.XML);
+        }
+        return os;
+      }
+    });
+  }
+
+  @After
+  public void after() {
+    ObjectStoreFactory.setInstance(new ObjectStoreFactory());
   }
 
   private String fileExtension;
@@ -158,7 +206,7 @@ public class EMFResourceObjectStoreTest {
       final EMFResourceObjectStore objectStore = ComponentProvider.getInstance()
           .newInstance(EMFResourceObjectStore.class);
       if (uriStr == null) {
-        uriStr = "http://localhost:8080/texo/data" + System.currentTimeMillis() + "." + fileExtension;
+        uriStr = "http://localhost:8080/texo/data";
       }
       objectStore.setUri(URI.createURI(uriStr));
       objectStore.setChildLevels(1);
@@ -167,4 +215,16 @@ public class EMFResourceObjectStoreTest {
       throw new RuntimeException(e);
     }
   }
+
+  protected String getTemporaryDirectoryPath() {
+    try {
+      final File f = File.createTempFile("test" + System.currentTimeMillis(), null); //$NON-NLS-1$
+      String tempDirectory = f.getParentFile().getAbsolutePath();
+      f.delete();
+      return tempDirectory;
+    } catch (IOException e) {
+      throw new IllegalStateException(e);
+    }
+  }
+
 }

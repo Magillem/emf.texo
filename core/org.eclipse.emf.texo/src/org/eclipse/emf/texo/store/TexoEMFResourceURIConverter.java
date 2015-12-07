@@ -41,9 +41,6 @@ public class TexoEMFResourceURIConverter extends ExtensibleURIConverterImpl impl
     String[] segments = uri.segments();
     String fileName = segments[0] + "_" + segments[1] + "." + getFileExtension(); //$NON-NLS-1$ //$NON-NLS-2$
     String dir = getTemporaryDirectoryPath();
-
-    System.err.println("Normalized " + URI.createFileURI(dir + File.separator + fileName));
-
     return URI.createFileURI(dir + File.separator + fileName);
   }
 
@@ -63,14 +60,9 @@ public class TexoEMFResourceURIConverter extends ExtensibleURIConverterImpl impl
    */
   protected String getTemporaryDirectoryPath() {
     try {
-      if (System.getProperty("texo.temp.directory") != null) { //$NON-NLS-1$
-        System.err.println("Texo temp " + System.getProperty("texo.temp.directory"));
-        return System.getProperty("texo.temp.directory");//$NON-NLS-1$
-      }
       final File f = File.createTempFile("test" + System.currentTimeMillis(), null); //$NON-NLS-1$
       String tempDirectory = f.getParentFile().getAbsolutePath();
       f.delete();
-      System.err.println("Texo temp " + tempDirectory);
       return tempDirectory;
     } catch (IOException e) {
       throw new IllegalStateException(e);

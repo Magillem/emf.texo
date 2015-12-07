@@ -40,7 +40,7 @@ public class MemoryObjectStore extends ObjectStore {
       @SuppressWarnings("unchecked")
       final ModelObject<Object> modelObject = (ModelObject<Object>) ModelResolver.getInstance().getModelObject(object);
       final EClass eClass = modelObject.eClass();
-      List<Object> dataList = data.get(eClass);
+      List<Object> dataList = data.get(resolveEClass(eClass));
       if (dataList == null) {
         dataList = new ArrayList<Object>();
         data.put(eClass, dataList);
@@ -51,7 +51,7 @@ public class MemoryObjectStore extends ObjectStore {
 
   @Override
   public Object get(EClass eClass, Object id) {
-    final List<Object> dataList = data.get(eClass);
+    final List<Object> dataList = data.get(resolveEClass(eClass));
     if (dataList != null) {
       for (Object o : dataList) {
         final Object objectId = IdProvider.getInstance().getId(o);
@@ -98,7 +98,7 @@ public class MemoryObjectStore extends ObjectStore {
       return;
     }
     final ModelObject<?> modelObject = ModelResolver.getInstance().getModelObject(object);
-    final List<Object> dataList = data.get(modelObject.eClass());
+    final List<Object> dataList = data.get(resolveEClass(modelObject.eClass()));
     boolean removed = false;
     if (dataList != null) {
       removed = dataList.remove(object);
@@ -123,6 +123,19 @@ public class MemoryObjectStore extends ObjectStore {
     }
   }
 
+  protected EClass resolveEClass(EClass eClass) {
+    if (data.containsKey(eClass)) {
+      return eClass;
+    }
+    for (EClass key : data.keySet()) {
+      if (key.getName().equals(eClass.getName())
+          && key.getEPackage().getNsURI().equals(eClass.getEPackage().getNsURI())) {
+        return key;
+      }
+    }
+    return eClass;
+  }
+
   @Override
   public <T extends Object> void refresh(T object) {
     // don't do anything
@@ -131,7 +144,7 @@ public class MemoryObjectStore extends ObjectStore {
   @Override
   public <T extends Object> void insert(T object) {
     final ModelObject<?> modelObject = ModelResolver.getInstance().getModelObject(object);
-    List<Object> dataList = data.get(modelObject.eClass());
+    List<Object> dataList = data.get(resolveEClass(modelObject.eClass()));
     if (dataList == null) {
       dataList = new ArrayList<Object>();
       data.put(modelObject.eClass(), dataList);
@@ -222,7 +235,7 @@ public class MemoryObjectStore extends ObjectStore {
    */
   @Override
   public List<?> query(EClass eClass, int firstResult, int maxResults) {
-    List<?> result = data.get(eClass);
+    List<?> result = data.get(resolveEClass(eClass));
     if (result == null) {
       return Collections.emptyList();
     }

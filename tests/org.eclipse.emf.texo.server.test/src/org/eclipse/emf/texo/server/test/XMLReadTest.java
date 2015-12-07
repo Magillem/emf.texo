@@ -22,9 +22,11 @@ import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.texo.json.JSONEObjectStore;
 import org.eclipse.emf.texo.model.ModelObject;
 import org.eclipse.emf.texo.model.ModelPackage;
 import org.eclipse.emf.texo.model.ModelResolver;
+import org.eclipse.emf.texo.server.model.request.RequestModelPackage;
 import org.eclipse.emf.texo.server.model.response.ResponseType;
 import org.eclipse.emf.texo.server.service.RetrieveModelOperation;
 import org.eclipse.emf.texo.server.service.ServiceContext;
@@ -54,6 +56,7 @@ public class XMLReadTest extends ModelPackageBaseTest {
     // this is to prevent clashes in epackage loading
     // of the library epackage
     LibraryPackageImpl.init();
+    JSONEObjectStore.initEPackages();
 
     return Arrays.asList(new Object[][] { { LibraryModelPackage.INSTANCE, new XMLServiceContext() },
         { RentalModelPackage.INSTANCE, new XMLServiceContext() } });

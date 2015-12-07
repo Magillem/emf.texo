@@ -132,7 +132,6 @@ public class EMFModelConverter implements TexoComponent {
     final Object target = objectMapping.get(eObject);
 
     final ModelObject<?> modelObject = ModelResolver.getInstance().getModelObject(target);
-
     for (final EStructuralFeature eStructuralFeature : modelObject.eClass().getEAllStructuralFeatures()) {
       if (!eStructuralFeature.isChangeable() || eStructuralFeature.isVolatile()) {
         continue;

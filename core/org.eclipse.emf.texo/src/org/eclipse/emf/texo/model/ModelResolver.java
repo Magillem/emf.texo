@@ -52,9 +52,9 @@ import org.eclipse.emf.texo.utils.Check;
  * {@link ModelPackage}.
  * 
  * The ModelResolver is maintained in a static member (which can be overwritten with your own implementation). It is
- * also maintainable by thread. If you want a specific thread to use a different ModelResolver then call {@;ink
- * #setThreadInstance(ModelResolver)}. Note that you should take care to call this method with a null value (to clear
- * the {@link ThreadLocal}) at the end of the thread to clean up the thread ModelResolver (some environments, for
+ * also maintainable by thread. If you want a specific thread to use a different ModelResolver then call
+ * {@;ink #setThreadInstance(ModelResolver)}. Note that you should take care to call this method with a null value (to
+ * clear the {@link ThreadLocal}) at the end of the thread to clean up the thread ModelResolver (some environments, for
  * example Tomcat, re-uses Thread objects!).
  * 
  * @author <a href="mtaal@elver.org">Martin Taal</a>
@@ -106,13 +106,23 @@ public class ModelResolver implements TexoStaticSingleton {
   /**
    * Registers a {@link ModelPackage} in this registry.
    * 
-   * @param ecoreModelPackage
+   * @param modelPackage
    *          to register, not <code>NULL</code>
    */
   public void registerModelPackage(final ModelPackage modelPackage) {
     Check.isNull(nsuriToModelPackages.get(modelPackage.getNsURI()), "The EcoreModelPackage with NsUri " //$NON-NLS-1$
         + modelPackage.getNsURI() + " has already been registered!");//$NON-NLS-1$
     nsuriToModelPackages.put(modelPackage.getNsURI(), modelPackage);
+  }
+
+  /**
+   * Should be called after a modelPackage was deregistered and needs to be reregistered.
+   */
+  public void registerModelPackageContent(final ModelPackage modelPackage) {
+    for (EClassifier eClassifier : modelPackage.getEPackage().getEClassifiers()) {
+      final Class<?> clz = modelPackage.getEClassifierClass(eClassifier);
+      registerClassModelMapping(clz, eClassifier, modelPackage);
+    }
   }
 
   /**
@@ -312,8 +322,8 @@ public class ModelResolver implements TexoStaticSingleton {
     final String nsuri = eFeature.getEContainingClass().getEPackage().getNsURI();
     final ModelPackage modelPackage = getModelPackage(nsuri);
     if (modelPackage == null) {
-      final DynamicModelFeatureMapEntry fmEntry = ComponentProvider.getInstance().newInstance(
-          DynamicModelFeatureMapEntry.class);
+      final DynamicModelFeatureMapEntry fmEntry = ComponentProvider.getInstance()
+          .newInstance(DynamicModelFeatureMapEntry.class);
       fmEntry.setEStructuralFeature(eFeature);
       return fmEntry;
     }
@@ -332,8 +342,8 @@ public class ModelResolver implements TexoStaticSingleton {
     final String nsuri = eFeature.getEContainingClass().getEPackage().getNsURI();
     final ModelPackage modelPackage = getModelPackage(nsuri);
     if (modelPackage == null) {
-      final DynamicModelFeatureMapEntry fmEntry = ComponentProvider.getInstance().newInstance(
-          DynamicModelFeatureMapEntry.class);
+      final DynamicModelFeatureMapEntry fmEntry = ComponentProvider.getInstance()
+          .newInstance(DynamicModelFeatureMapEntry.class);
       fmEntry.setEStructuralFeature(eFeature);
       return fmEntry;
     }

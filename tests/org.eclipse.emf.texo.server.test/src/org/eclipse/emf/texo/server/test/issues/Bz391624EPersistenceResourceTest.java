@@ -34,16 +34,16 @@ public class Bz391624EPersistenceResourceTest extends Bz391624Test {
   @Override
   protected TexoResource createResource(String uriString) {
     final ResourceSetImpl resourceSet = new ResourceSetImpl();
-    resourceSet.getResourceFactoryRegistry().getProtocolToFactoryMap()
-        .put("http", new EPersistenceTexoResourceFactory());
+    resourceSet.getResourceFactoryRegistry().getProtocolToFactoryMap().put("http",
+        new EPersistenceTexoResourceFactory());
     return (TexoResource) resourceSet.createResource(URI.createURI(uriString));
   }
 
   private static class EPersistenceTexoResourceFactory implements Resource.Factory {
 
     public Resource createResource(URI uri) {
-      final EPersistenceTexoResource resource = ComponentProvider.getInstance().newInstance(
-          EPersistenceTexoResource.class);
+      final EPersistenceTexoResource resource = ComponentProvider.getInstance()
+          .newInstance(EPersistenceTexoResource.class);
       resource.setURI(uri);
       return resource;
     }
