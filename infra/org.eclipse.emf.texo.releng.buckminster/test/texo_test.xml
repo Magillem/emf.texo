@@ -75,6 +75,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 				<arg value="--stderr" />
 				<arg value="${testResultsPath}/stderr.txt" />
 				<arg value="--flatXML"/>
+				<arg value="-Dtexo.temp.directory=${tempPath}"/>
 			</cmdargs>
 		</buckminster>		
 	</target>

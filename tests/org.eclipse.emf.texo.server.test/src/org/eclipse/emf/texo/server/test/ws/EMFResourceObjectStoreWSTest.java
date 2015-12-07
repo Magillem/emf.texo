@@ -461,6 +461,10 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
 
   protected String getTemporaryDirectoryPath() {
     try {
+      if (System.getProperty("texo.temp.directory") != null) { //$NON-NLS-1$
+        return System.getProperty("texo.temp.directory");//$NON-NLS-1$
+      }
+
       final File f = File.createTempFile("test" + System.currentTimeMillis(), null); //$NON-NLS-1$
       String tempDirectory = f.getParentFile().getAbsolutePath();
       f.delete();

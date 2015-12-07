@@ -58,6 +58,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 	</condition>
 
 	<property name="buildsPath" location="${hudsonWorkSpacePath}/build" />
+	<property name="tempPath" location="${buildsPath}/temp" />
 	<property name="resultP2Site" location="/jobs/genie.texo/emft-texo-nightly/lastSuccessful/archive/build/result/p2site" />	
 	<property name="gitPath" location="${hudsonWorkSpacePath}/git" />
 
@@ -144,6 +145,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 	<target name="init">
 		<echo message="Removing old build" />
 		<delete dir="${testPath}" quiet="true" />
+		<delete dir="${tempPath}" quiet="true" />
 		<delete dir="${buildPath}" quiet="true" />
 		<delete dir="${generatePath}" quiet="true" />
 		<delete dir="${promotePath}" quiet="true" />
@@ -154,6 +156,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		<echo message="Creating main directories" />
 		<echo message="rootPath: ${rootPath}" />
 		<echo message="buildPath: ${buildPath}" />
+		<echo message="tempPath: ${tempPath}" />
 		<echo message="testPath: ${testPath}" />
 		<echo message="buildSitePath: ${buildSitePath}" />
 		<echo message="buildZipsPath: ${buildZipsPath}" />
@@ -161,6 +164,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		<echo message="mavenPath: ${mavenPath}" />
 		<mkdir dir="${rootPath}" />
 		<mkdir dir="${buildPath}" />
+		<mkdir dir="${tempPath}" />
 		<mkdir dir="${promotePath}" />
 		<mkdir dir="${mavenPath}" />
 		<mkdir dir="${testPath}" />
