@@ -58,7 +58,7 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 	</condition>
 
 	<property name="buildsPath" location="${hudsonWorkSpacePath}/build" />
-	<property name="tempPath" location="${buildsPath}/temp" />
+	<property name="tempPath" location="${buildsPath}/temp-files" />
 	<property name="resultP2Site" location="/jobs/genie.texo/emft-texo-nightly/lastSuccessful/archive/build/result/p2site" />	
 	<property name="gitPath" location="${hudsonWorkSpacePath}/git" />
 
