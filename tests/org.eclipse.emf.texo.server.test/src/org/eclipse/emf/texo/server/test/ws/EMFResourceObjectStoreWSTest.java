@@ -462,7 +462,7 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
   protected String getTemporaryDirectoryPath() {
     try {
       if (System.getProperty("texo.temp.directory") != null) { //$NON-NLS-1$
-        System.err.println("Texo temp " + System.getProperty("texo.temp.directory"));
+        System.err.println("Texo jvm arg temp " + System.getProperty("texo.temp.directory"));
         return System.getProperty("texo.temp.directory");//$NON-NLS-1$
       }
 
