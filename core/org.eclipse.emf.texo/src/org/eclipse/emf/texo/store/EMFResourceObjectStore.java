@@ -40,6 +40,7 @@ public class EMFResourceObjectStore extends MemoryObjectStore {
     try {
       final boolean loadFile = resource.getResourceSet().getURIConverter().exists(resource.getURI(),
           Collections.emptyMap());
+      System.err.println("Loading file " + loadFile);
       if (loadFile) {
         resource.load(getResourceLoadOptions());
         final List<EObject> eObjects = new ArrayList<EObject>();
