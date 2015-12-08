@@ -42,6 +42,7 @@ import org.eclipse.emf.texo.server.service.ServiceUtils;
 import org.eclipse.emf.texo.server.service.UpdateInsertModelOperation;
 import org.eclipse.emf.texo.server.store.EntityManagerObjectStore;
 import org.eclipse.emf.texo.server.store.EntityManagerProvider;
+import org.eclipse.emf.texo.server.store.ObjectStoreFactory;
 import org.eclipse.emf.texo.store.ObjectStore;
 
 /**

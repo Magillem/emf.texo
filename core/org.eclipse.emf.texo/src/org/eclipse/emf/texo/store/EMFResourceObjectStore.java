@@ -74,15 +74,20 @@ public class EMFResourceObjectStore extends MemoryObjectStore {
     if (resource != null) {
       return resource;
     }
-    resourceSet = new ResourceSetImpl();
-    resourceSet.setURIConverter(getURIConverter());
-    resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml", //$NON-NLS-1$
-        new XMLResourceFactoryImpl());
-    resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xmi", //$NON-NLS-1$
-        new XMIResourceFactoryImpl());
-    resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", //$NON-NLS-1$
-        new XMIResourceFactoryImpl());
+    resourceSet = createResourceSet();
     return resourceSet.createResource(getUri());
+  }
+
+  protected ResourceSet createResourceSet() {
+    ResourceSet rs = new ResourceSetImpl();
+    rs.setURIConverter(getURIConverter());
+    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml", //$NON-NLS-1$
+        new XMLResourceFactoryImpl());
+    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xmi", //$NON-NLS-1$
+        new XMIResourceFactoryImpl());
+    rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", //$NON-NLS-1$
+        new XMIResourceFactoryImpl());
+    return rs;
   }
 
   /**

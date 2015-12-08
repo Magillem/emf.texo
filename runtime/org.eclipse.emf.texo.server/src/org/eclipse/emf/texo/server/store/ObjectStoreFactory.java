@@ -14,13 +14,13 @@
  *
  * $Id: WebServiceHandler.java,v 1.8 2011/09/14 15:35:48 mtaal Exp $
  */
-package org.eclipse.emf.texo.server.web;
+package org.eclipse.emf.texo.server.store;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.component.TexoComponent;
-import org.eclipse.emf.texo.server.store.EntityManagerObjectStore;
+import org.eclipse.emf.texo.server.web.WebServiceHandler;
 import org.eclipse.emf.texo.store.EMFResourceObjectStore;
 import org.eclipse.emf.texo.store.MemoryObjectStore;
 import org.eclipse.emf.texo.store.ObjectStore;

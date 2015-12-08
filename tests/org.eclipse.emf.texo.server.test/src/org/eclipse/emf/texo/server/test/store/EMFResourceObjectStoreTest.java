@@ -28,7 +28,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.texo.component.ComponentProvider;
 import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.server.store.EPersistenceService;
-import org.eclipse.emf.texo.server.web.ObjectStoreFactory;
+import org.eclipse.emf.texo.server.store.ObjectStoreFactory;
 import org.eclipse.emf.texo.store.EMFResourceObjectStore;
 import org.eclipse.emf.texo.store.ObjectStore;
 import org.eclipse.emf.texo.store.TexoEMFResourceURIConverter;

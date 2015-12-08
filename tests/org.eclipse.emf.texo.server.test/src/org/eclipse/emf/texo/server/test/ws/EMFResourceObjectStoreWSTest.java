@@ -34,7 +34,7 @@ import org.eclipse.emf.texo.server.model.response.ErrorType;
 import org.eclipse.emf.texo.server.model.response.ResponseType;
 import org.eclipse.emf.texo.server.model.response.ResultType;
 import org.eclipse.emf.texo.server.service.ServiceModelPackageRegistry;
-import org.eclipse.emf.texo.server.web.ObjectStoreFactory;
+import org.eclipse.emf.texo.server.store.ObjectStoreFactory;
 import org.eclipse.emf.texo.store.EMFResourceObjectStore;
 import org.eclipse.emf.texo.store.ObjectStore;
 import org.eclipse.emf.texo.store.TexoEMFResourceURIConverter;
