@@ -42,7 +42,9 @@ public abstract class ModelPackage {
   public EPackage getEPackage() {
     if (ePackage == null) {
       ePackage = ModelUtils.getEPackage(getNsURI());
-      ModelUtils.setEFactoryProxy(this, ePackage);
+      if (ePackage != null) {
+        ModelUtils.setEFactoryProxy(this, ePackage);
+      }
     }
     return ePackage;
   }

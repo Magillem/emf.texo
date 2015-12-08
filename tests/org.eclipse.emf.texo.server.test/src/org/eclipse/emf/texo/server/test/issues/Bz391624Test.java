@@ -19,7 +19,6 @@ package org.eclipse.emf.texo.server.test.issues;
 import java.io.IOException;
 import java.util.Collections;
 
-import org.eclipse.emf.texo.model.ModelResolver;
 import org.eclipse.emf.texo.server.test.store.TexoResourceTest;
 import org.eclipse.emf.texo.store.TexoResource;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Author;
@@ -27,9 +26,7 @@ import org.eclipse.emf.texo.test.emfmodel.bz391624.Book;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.Bz391624Factory;
 import org.eclipse.emf.texo.test.emfmodel.bz391624.impl.Bz391624PackageImpl;
 import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
-import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
@@ -39,19 +36,6 @@ import org.junit.Test;
  * @version $Revision: 1.4 $
  */
 public abstract class Bz391624Test extends TexoResourceTest {
-
-  @BeforeClass
-  public static void beforeClass() {
-    // deregister before register to prevent registration error
-    ModelResolver.getInstance().deregister(Bz391624ModelPackage.INSTANCE);
-    ModelResolver.getInstance().registerModelPackage(Bz391624ModelPackage.INSTANCE);
-    ModelResolver.getInstance().registerModelPackageContent(Bz391624ModelPackage.INSTANCE);
-  }
-
-  @AfterClass
-  public static void afterClass() {
-    ModelResolver.getInstance().deregister(Bz391624ModelPackage.INSTANCE);
-  }
 
   public Bz391624Test() {
     super("bz391624");

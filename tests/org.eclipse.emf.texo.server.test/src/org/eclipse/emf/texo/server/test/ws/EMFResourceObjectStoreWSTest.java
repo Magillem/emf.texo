@@ -39,17 +39,20 @@ import org.eclipse.emf.texo.store.EMFResourceObjectStore;
 import org.eclipse.emf.texo.store.ObjectStore;
 import org.eclipse.emf.texo.store.TexoEMFResourceURIConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
+import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
 import org.eclipse.emf.texo.test.model.samples.library.Book;
 import org.eclipse.emf.texo.test.model.samples.library.Library;
 import org.eclipse.emf.texo.test.model.samples.library.Writer;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelFactory;
 import org.eclipse.emf.texo.test.model.samples.librarymodelclasses.model.LibraryModelPackage;
+import org.eclipse.emf.texo.test.model.schemaconstructs.emap.EmapModelPackage;
 import org.eclipse.emf.texo.utils.ModelUtils;
 import org.eclipse.jetty.http.HttpMethod;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -73,9 +76,17 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
     return params;
   }
 
+  @BeforeClass
+  public static void beforeClass() {
+    ModelResolver.getInstance().deregister(Bz391624ModelPackage.INSTANCE);
+    ModelResolver.getInstance().deregister(EmapModelPackage.INSTANCE);
+  }
+
   @AfterClass
   public static void afterClass() {
     ObjectStoreFactory.setInstance(new ObjectStoreFactory());
+    ModelResolver.getInstance().reRegisterModelPackage(Bz391624ModelPackage.INSTANCE);
+    ModelResolver.getInstance().reRegisterModelPackage(EmapModelPackage.INSTANCE);
   }
 
   @Before

@@ -240,7 +240,7 @@ public class EntityManagerObjectStore extends ObjectStore {
   }
 
   /**
-   * Calls {@link EntityManager#getTransaction()#begin()}.
+   * Calls EntityManager#getTransaction#begin}.
    */
   @Override
   public void begin() {
@@ -252,7 +252,7 @@ public class EntityManagerObjectStore extends ObjectStore {
   }
 
   /**
-   * Calls {@link EntityManager#getTransaction()#commit()}.
+   * Calls EntityManager#getTransaction#commit.
    */
   @Override
   public void commit() {
@@ -268,7 +268,7 @@ public class EntityManagerObjectStore extends ObjectStore {
   }
 
   /**
-   * Calls {@link EntityManager#getTransaction()#rollback()}.
+   * Calls EntityManager#getTransaction#rollback.
    */
   @Override
   public void rollback() {
