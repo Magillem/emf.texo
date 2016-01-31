@@ -39,28 +39,28 @@ public class EclipseModelGeneratorSingleModelTest extends EclipseModelGeneratorT
   @Override
   protected List<String> getModelFileRelativePaths() {
     final List<String> modelFiles = new ArrayList<String>();
-    //    modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/extlibrary.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/library.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("issues/bz422811.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/forum.xsd"); //$NON-NLS-1$
-    //    modelFiles.add("samples/library.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/sport-society.xcore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/sport-competition.xcore"); //$NON-NLS-1$
-    //modelFiles.add("base/identifiable-xcore.xcore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/sport-society.xcore"); //$NON-NLS-1$
-    //    modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("texo/TexoDataRequest.xsd"); //$NON-NLS-1$
-    //    modelFiles.add("texo/TexoDataResponse.xsd"); //$NON-NLS-1$
-    //    modelFiles.add("samples/graphiti.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("schemaconstructs/List.xsd");//$NON-NLS-1$
-    //    modelFiles.add("issues/bz423155.ecore"); //$NON-NLS-1$
-    modelFiles.add("issues/bz461726.ecore"); //$NON-NLS-1$
+    // modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
+    // modelFiles.add("samples/extlibrary.ecore"); //$NON-NLS-1$
+    // modelFiles.add("samples/library.ecore"); //$NON-NLS-1$
+    // modelFiles.add("issues/bz422811.ecore"); //$NON-NLS-1$
+    // modelFiles.add("samples/forum.xsd"); //$NON-NLS-1$
+    // modelFiles.add("samples/library.ecore"); //$NON-NLS-1$
+    // modelFiles.add("samples/sport-society.xcore"); //$NON-NLS-1$
+    // modelFiles.add("samples/sport-competition.xcore"); //$NON-NLS-1$
+    // modelFiles.add("base/identifiable-xcore.xcore"); //$NON-NLS-1$
+    // modelFiles.add("samples/sport-society.xcore"); //$NON-NLS-1$
+    // modelFiles.add("issues/bz423760.ecore"); //$NON-NLS-1$
+    // modelFiles.add("texo/TexoDataRequest.xsd"); //$NON-NLS-1$
+    // modelFiles.add("texo/TexoDataResponse.xsd"); //$NON-NLS-1$
+    // modelFiles.add("samples/graphiti.ecore"); //$NON-NLS-1$
+    // modelFiles.add("schemaconstructs/List.xsd");//$NON-NLS-1$
+    // modelFiles.add("issues/bz423155.ecore"); //$NON-NLS-1$
+    modelFiles.add("issues/bz486803.ecore"); //$NON-NLS-1$
 
-    //    modelFiles.add("samples/forum.xsd"); //$NON-NLS-1$
-    //    modelFiles.add("base/identifiable.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("samples/kdm.ecore"); //$NON-NLS-1$
-    //    modelFiles.add("schemaconstructs/ListUnion.xsd"); //$NON-NLS-1$
+    // modelFiles.add("samples/forum.xsd"); //$NON-NLS-1$
+    // modelFiles.add("base/identifiable.ecore"); //$NON-NLS-1$
+    // modelFiles.add("samples/kdm.ecore"); //$NON-NLS-1$
+    // modelFiles.add("schemaconstructs/ListUnion.xsd"); //$NON-NLS-1$
     return modelFiles;
   }
 

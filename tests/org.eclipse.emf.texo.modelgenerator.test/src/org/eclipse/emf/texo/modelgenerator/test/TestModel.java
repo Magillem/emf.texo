@@ -83,7 +83,7 @@ public class TestModel {
     urls.add("samples/jpamixed.ecore");//$NON-NLS-1$
     urls.add("samples/types.ecore");//$NON-NLS-1$
     urls.add("samples/Workflow.ecore");//$NON-NLS-1$
-    urls.add("samples/FeatureMapTest.ecore");//$NON-NLS-1$ 
+    urls.add("samples/FeatureMapTest.ecore");//$NON-NLS-1$
     urls.add("samples/sport-society.xcore");//$NON-NLS-1$
     urls.add("samples/sport-club.xcore");//$NON-NLS-1$
     urls.add("samples/sport-competition.xcore");//$NON-NLS-1$
@@ -145,6 +145,7 @@ public class TestModel {
     urls.add("issues/bz424797.ecore"); //$NON-NLS-1$
     urls.add("issues/bz444321.ecore"); //$NON-NLS-1$
     urls.add("issues/bz461726.ecore"); //$NON-NLS-1$
+    urls.add("issues/bz486803.ecore"); //$NON-NLS-1$
     urls.add("issues/interface_abstract_class_wrong_featureid.ecore"); //$NON-NLS-1$
 
     urls.add("texo/TexoDataRequest.xsd");//$NON-NLS-1$

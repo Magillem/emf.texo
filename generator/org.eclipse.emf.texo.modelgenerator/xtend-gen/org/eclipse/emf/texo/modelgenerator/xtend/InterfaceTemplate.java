@@ -108,12 +108,22 @@ public class InterfaceTemplate extends BaseTemplate {
       boolean _greaterThan = (_size > 0);
       if (_greaterThan) {
         _builder.append(" extends ");
-        EList<String> _classExtends_1 = eClassModelGenAnnotation.getClassExtends();
-        String _get = _classExtends_1.get(0);
-        _builder.append(_get, "");
+        _builder.newLineIfNotEmpty();
+        {
+          EList<String> _classExtends_1 = eClassModelGenAnnotation.getClassExtends();
+          boolean _hasElements = false;
+          for(final String ext : _classExtends_1) {
+            if (!_hasElements) {
+              _hasElements = true;
+            } else {
+              _builder.appendImmediate(",", "");
+            }
+            _builder.append(ext, "");
+            _builder.newLineIfNotEmpty();
+          }
+        }
       }
     }
-    _builder.newLineIfNotEmpty();
     _builder.append("{");
     _builder.newLine();
     {

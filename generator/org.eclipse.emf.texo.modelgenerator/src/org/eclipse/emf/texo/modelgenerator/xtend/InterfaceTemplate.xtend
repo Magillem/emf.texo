@@ -63,7 +63,11 @@ package «ePackageAnnotation.packagePath»;
 */
 «modelController.getJavaAnnotations(eClassModelGenAnnotation.EClass, "type", eClassModelGenAnnotation.EClass)»
 public interface «eClassModelGenAnnotation.simpleClassName»
-«IF eClassModelGenAnnotation.classExtends.size > 0» extends «eClassModelGenAnnotation.classExtends.get(0)»«ENDIF»
+«IF eClassModelGenAnnotation.classExtends.size > 0» extends 
+«FOR ext : eClassModelGenAnnotation.classExtends SEPARATOR ','»
+«ext»
+«ENDFOR»
+«ENDIF»
 {
 «FOR featureAnnotation : eClassModelGenAnnotation.EStructuralFeatureModelGenAnnotations»
 	«IF featureAnnotation.generateCode»
