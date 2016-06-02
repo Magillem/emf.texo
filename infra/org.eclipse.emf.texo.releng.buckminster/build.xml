@@ -97,11 +97,11 @@ http://dev.eclipse.org/viewsvn/index.cgi/trunk/org.eclipse.buckminster.releng/bu
 		<mkdir dir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}"/>
 		<!-- if previous copy failed it is possible that interim build has been removed -->
 		<mkdir dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
-		<move todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}">
+		<move verbose="true" todir="/home/data/httpd/archive.eclipse.org/modeling/emft/texo/updates/interim/${buildTimestamp}">
 		    <fileset dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
 		</move>
 		<mkdir dir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim"/>
-		<copy todir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim">
+		<copy verbose="true" todir="/home/data/httpd/download.eclipse.org/modeling/emft/texo/updates/interim">
 			<fileset dir="${resultP2Site}/"/>
 		</copy>
 	</target>
