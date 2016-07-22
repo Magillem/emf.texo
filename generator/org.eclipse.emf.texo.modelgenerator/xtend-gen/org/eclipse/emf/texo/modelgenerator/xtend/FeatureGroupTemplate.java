@@ -105,22 +105,10 @@ public class FeatureGroupTemplate extends BaseTemplate {
     _builder.append(_featureMapSimpleClassName, "");
     _builder.newLineIfNotEmpty();
     {
-      boolean _and = false;
-      String _featureMapClassExtends = ePackageAnnotation.getFeatureMapClassExtends();
-      boolean _notEquals_1 = (!Objects.equal(_featureMapClassExtends, null));
-      if (!_notEquals_1) {
-        _and = false;
-      } else {
-        String _featureMapClassExtends_1 = ePackageAnnotation.getFeatureMapClassExtends();
-        String _trim = _featureMapClassExtends_1.trim();
-        int _length = _trim.length();
-        boolean _greaterThan = (_length > 0);
-        _and = _greaterThan;
-      }
-      if (_and) {
+      if (((!Objects.equal(ePackageAnnotation.getFeatureMapClassExtends(), null)) && (ePackageAnnotation.getFeatureMapClassExtends().trim().length() > 0))) {
         _builder.append(" extends ");
-        String _featureMapClassExtends_2 = ePackageAnnotation.getFeatureMapClassExtends();
-        _builder.append(_featureMapClassExtends_2, "");
+        String _featureMapClassExtends = ePackageAnnotation.getFeatureMapClassExtends();
+        _builder.append(_featureMapClassExtends, "");
       }
     }
     _builder.newLineIfNotEmpty();
@@ -157,8 +145,8 @@ public class FeatureGroupTemplate extends BaseTemplate {
         {
           List<EStructuralFeatureModelGenAnnotation> _allMemberFeatureMapFeatures = eStructuralFeatureModelGenAnnotation.getAllMemberFeatureMapFeatures();
           int _size = _allMemberFeatureMapFeatures.size();
-          boolean _greaterThan_1 = (_size > 0);
-          if (_greaterThan_1) {
+          boolean _greaterThan = (_size > 0);
+          if (_greaterThan) {
             _builder.append(",");
           }
         }
@@ -575,16 +563,7 @@ public class FeatureGroupTemplate extends BaseTemplate {
       for(final EStructuralFeatureModelGenAnnotation memberFeatureAnnotation_1 : _memberFeatureMapFeatures) {
         _builder.newLine();
         {
-          boolean _and_1 = false;
-          boolean _isGenerateCode_1 = memberFeatureAnnotation_1.isGenerateCode();
-          if (!_isGenerateCode_1) {
-            _and_1 = false;
-          } else {
-            EStructuralFeatureModelGenAnnotation _featureMapFeature = memberFeatureAnnotation_1.getFeatureMapFeature();
-            boolean _equals = Objects.equal(_featureMapFeature, eStructuralFeatureModelGenAnnotation);
-            _and_1 = _equals;
-          }
-          if (_and_1) {
+          if ((memberFeatureAnnotation_1.isGenerateCode() && Objects.equal(memberFeatureAnnotation_1.getFeatureMapFeature(), eStructuralFeatureModelGenAnnotation))) {
             _builder.append("    ");
             _builder.append("/**");
             _builder.newLine();
@@ -871,8 +850,8 @@ public class FeatureGroupTemplate extends BaseTemplate {
       for(final EStructuralFeatureModelGenAnnotation memberFeatureAnnotation_2 : _allMemberFeatureMapFeatures_2) {
         _builder.newLine();
         {
-          boolean _isGenerateCode_2 = memberFeatureAnnotation_2.isGenerateCode();
-          if (_isGenerateCode_2) {
+          boolean _isGenerateCode_1 = memberFeatureAnnotation_2.isGenerateCode();
+          if (_isGenerateCode_1) {
             _builder.append("/**");
             _builder.newLine();
             _builder.append(" ");
@@ -917,9 +896,9 @@ public class FeatureGroupTemplate extends BaseTemplate {
             _builder.append("() {");
             _builder.newLineIfNotEmpty();
             {
-              EStructuralFeatureModelGenAnnotation _featureMapFeature_1 = memberFeatureAnnotation_2.getFeatureMapFeature();
-              boolean _equals_1 = Objects.equal(_featureMapFeature_1, eStructuralFeatureModelGenAnnotation);
-              if (_equals_1) {
+              EStructuralFeatureModelGenAnnotation _featureMapFeature = memberFeatureAnnotation_2.getFeatureMapFeature();
+              boolean _equals = Objects.equal(_featureMapFeature, eStructuralFeatureModelGenAnnotation);
+              if (_equals) {
                 _builder.append("return ");
                 String _validJavaMemberName_1 = memberFeatureAnnotation_2.getValidJavaMemberName();
                 _builder.append(_validJavaMemberName_1, "");
@@ -927,8 +906,8 @@ public class FeatureGroupTemplate extends BaseTemplate {
                 _builder.newLineIfNotEmpty();
               } else {
                 _builder.append("if (");
-                EStructuralFeatureModelGenAnnotation _featureMapFeature_2 = memberFeatureAnnotation_2.getFeatureMapFeature();
-                String _getter_1 = _featureMapFeature_2.getGetter();
+                EStructuralFeatureModelGenAnnotation _featureMapFeature_1 = memberFeatureAnnotation_2.getFeatureMapFeature();
+                String _getter_1 = _featureMapFeature_1.getGetter();
                 _builder.append(_getter_1, "");
                 _builder.append("() == null) {");
                 _builder.newLineIfNotEmpty();
@@ -938,8 +917,8 @@ public class FeatureGroupTemplate extends BaseTemplate {
                 _builder.append("}");
                 _builder.newLine();
                 _builder.append("return ");
-                EStructuralFeatureModelGenAnnotation _featureMapFeature_3 = memberFeatureAnnotation_2.getFeatureMapFeature();
-                String _getter_2 = _featureMapFeature_3.getGetter();
+                EStructuralFeatureModelGenAnnotation _featureMapFeature_2 = memberFeatureAnnotation_2.getFeatureMapFeature();
+                String _getter_2 = _featureMapFeature_2.getGetter();
                 _builder.append(_getter_2, "");
                 _builder.append("().");
                 String _getter_3 = memberFeatureAnnotation_2.getGetter();
@@ -1015,9 +994,9 @@ public class FeatureGroupTemplate extends BaseTemplate {
             _builder.append(") {");
             _builder.newLineIfNotEmpty();
             {
-              EStructuralFeatureModelGenAnnotation _featureMapFeature_4 = memberFeatureAnnotation_2.getFeatureMapFeature();
-              boolean _equals_2 = Objects.equal(_featureMapFeature_4, eStructuralFeatureModelGenAnnotation);
-              if (_equals_2) {
+              EStructuralFeatureModelGenAnnotation _featureMapFeature_3 = memberFeatureAnnotation_2.getFeatureMapFeature();
+              boolean _equals_1 = Objects.equal(_featureMapFeature_3, eStructuralFeatureModelGenAnnotation);
+              if (_equals_1) {
                 _builder.append("    ");
                 String _validJavaMemberName_2 = memberFeatureAnnotation_2.getValidJavaMemberName();
                 _builder.append(_validJavaMemberName_2, "    ");
@@ -1037,19 +1016,19 @@ public class FeatureGroupTemplate extends BaseTemplate {
               } else {
                 _builder.append("    ");
                 _builder.append("if (");
-                EStructuralFeatureModelGenAnnotation _featureMapFeature_5 = memberFeatureAnnotation_2.getFeatureMapFeature();
-                String _getter_6 = _featureMapFeature_5.getGetter();
+                EStructuralFeatureModelGenAnnotation _featureMapFeature_4 = memberFeatureAnnotation_2.getFeatureMapFeature();
+                String _getter_6 = _featureMapFeature_4.getGetter();
                 _builder.append(_getter_6, "    ");
                 _builder.append("() == null) {");
                 _builder.newLineIfNotEmpty();
                 _builder.append("    ");
                 _builder.append("    ");
-                EStructuralFeatureModelGenAnnotation _featureMapFeature_6 = memberFeatureAnnotation_2.getFeatureMapFeature();
-                String _setter_1 = _featureMapFeature_6.getSetter();
+                EStructuralFeatureModelGenAnnotation _featureMapFeature_5 = memberFeatureAnnotation_2.getFeatureMapFeature();
+                String _setter_1 = _featureMapFeature_5.getSetter();
                 _builder.append(_setter_1, "        ");
                 _builder.append("(new ");
-                EStructuralFeatureModelGenAnnotation _featureMapFeature_7 = memberFeatureAnnotation_2.getFeatureMapFeature();
-                String _featureMapQualifiedClassName = _featureMapFeature_7.getFeatureMapQualifiedClassName();
+                EStructuralFeatureModelGenAnnotation _featureMapFeature_6 = memberFeatureAnnotation_2.getFeatureMapFeature();
+                String _featureMapQualifiedClassName = _featureMapFeature_6.getFeatureMapQualifiedClassName();
                 _builder.append(_featureMapQualifiedClassName, "        ");
                 _builder.append("());");
                 _builder.newLineIfNotEmpty();
@@ -1057,8 +1036,8 @@ public class FeatureGroupTemplate extends BaseTemplate {
                 _builder.append("}");
                 _builder.newLine();
                 _builder.append("    ");
-                EStructuralFeatureModelGenAnnotation _featureMapFeature_8 = memberFeatureAnnotation_2.getFeatureMapFeature();
-                String _getter_7 = _featureMapFeature_8.getGetter();
+                EStructuralFeatureModelGenAnnotation _featureMapFeature_7 = memberFeatureAnnotation_2.getFeatureMapFeature();
+                String _getter_7 = _featureMapFeature_7.getGetter();
                 _builder.append(_getter_7, "    ");
                 _builder.append("().");
                 String _setter_2 = memberFeatureAnnotation_2.getSetter();
@@ -1222,8 +1201,8 @@ public class FeatureGroupTemplate extends BaseTemplate {
       List<EStructuralFeatureModelGenAnnotation> _allMemberFeatureMapFeatures_4 = eStructuralFeatureModelGenAnnotation.getAllMemberFeatureMapFeatures();
       for(final EStructuralFeatureModelGenAnnotation memberFeatureAnnotation_4 : _allMemberFeatureMapFeatures_4) {
         {
-          boolean _isGenerateCode_3 = memberFeatureAnnotation_4.isGenerateCode();
-          if (_isGenerateCode_3) {
+          boolean _isGenerateCode_2 = memberFeatureAnnotation_4.isGenerateCode();
+          if (_isGenerateCode_2) {
             _builder.append("case ");
             String _name_13 = memberFeatureAnnotation_4.getName();
             String _upperCase_3 = TemplateUtil.toUpperCase(_name_13);

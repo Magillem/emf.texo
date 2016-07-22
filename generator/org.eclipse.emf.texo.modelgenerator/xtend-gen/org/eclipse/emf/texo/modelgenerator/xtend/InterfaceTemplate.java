@@ -178,62 +178,15 @@ public class InterfaceTemplate extends BaseTemplate {
             _builder.newLineIfNotEmpty();
             _builder.newLine();
             {
-              boolean _or = false;
-              EStructuralFeature _eStructuralFeature_3 = featureAnnotation.getEStructuralFeature();
-              boolean _isChangeable = _eStructuralFeature_3.isChangeable();
-              if (_isChangeable) {
-                _or = true;
-              } else {
-                boolean _and = false;
-                boolean _isReference = featureAnnotation.isReference();
-                if (!_isReference) {
-                  _and = false;
-                } else {
-                  EReferenceModelGenAnnotation _oppositeModelGenAnnotation = ((EReferenceModelGenAnnotation) featureAnnotation).getOppositeModelGenAnnotation();
-                  boolean _notEquals_1 = (!Objects.equal(_oppositeModelGenAnnotation, null));
-                  _and = _notEquals_1;
-                }
-                _or = _and;
-              }
-              if (_or) {
+              if ((featureAnnotation.getEStructuralFeature().isChangeable() || (featureAnnotation.isReference() && (!Objects.equal(((EReferenceModelGenAnnotation) featureAnnotation).getOppositeModelGenAnnotation(), null))))) {
                 {
-                  boolean _and_1 = false;
-                  boolean _and_2 = false;
-                  boolean _and_3 = false;
-                  EStructuralFeatureModelGenAnnotation _featureMapFeature = featureAnnotation.getFeatureMapFeature();
-                  boolean _equals = Objects.equal(_featureMapFeature, null);
-                  if (!_equals) {
-                    _and_3 = false;
-                  } else {
-                    boolean _isMany = featureAnnotation.isMany();
-                    _and_3 = _isMany;
-                  }
-                  if (!_and_3) {
-                    _and_2 = false;
-                  } else {
-                    boolean _isReference_1 = featureAnnotation.isReference();
-                    _and_2 = _isReference_1;
-                  }
-                  if (!_and_2) {
-                    _and_1 = false;
-                  } else {
-                    boolean _or_1 = false;
-                    boolean _isGenerateBidirectionalAssociationSupport = ((EReferenceModelGenAnnotation) featureAnnotation).isGenerateBidirectionalAssociationSupport();
-                    if (_isGenerateBidirectionalAssociationSupport) {
-                      _or_1 = true;
-                    } else {
-                      boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation).isGenerateSafeManyAccess();
-                      _or_1 = _isGenerateSafeManyAccess;
-                    }
-                    _and_1 = _or_1;
-                  }
-                  if (_and_1) {
+                  if ((((Objects.equal(featureAnnotation.getFeatureMapFeature(), null) && featureAnnotation.isMany()) && featureAnnotation.isReference()) && (((EReferenceModelGenAnnotation) featureAnnotation).isGenerateBidirectionalAssociationSupport() || ((EReferenceModelGenAnnotation) featureAnnotation).isGenerateSafeManyAccess()))) {
                     _builder.append("/**");
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* Adds to the <em>");
-                    EStructuralFeature _eStructuralFeature_4 = featureAnnotation.getEStructuralFeature();
-                    String _name_3 = _eStructuralFeature_4.getName();
+                    EStructuralFeature _eStructuralFeature_3 = featureAnnotation.getEStructuralFeature();
+                    String _name_3 = _eStructuralFeature_3.getName();
                     _builder.append(_name_3, " ");
                     _builder.append("</em> feature.");
                     _builder.newLineIfNotEmpty();
@@ -269,8 +222,8 @@ public class InterfaceTemplate extends BaseTemplate {
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* Removes from the <em>");
-                    EStructuralFeature _eStructuralFeature_5 = featureAnnotation.getEStructuralFeature();
-                    String _name_4 = _eStructuralFeature_5.getName();
+                    EStructuralFeature _eStructuralFeature_4 = featureAnnotation.getEStructuralFeature();
+                    String _name_4 = _eStructuralFeature_4.getName();
                     _builder.append(_name_4, " ");
                     _builder.append("</em> feature.");
                     _builder.newLineIfNotEmpty();
@@ -306,8 +259,8 @@ public class InterfaceTemplate extends BaseTemplate {
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* Clears the <em>");
-                    EStructuralFeature _eStructuralFeature_6 = featureAnnotation.getEStructuralFeature();
-                    String _name_5 = _eStructuralFeature_6.getName();
+                    EStructuralFeature _eStructuralFeature_5 = featureAnnotation.getEStructuralFeature();
+                    String _name_5 = _eStructuralFeature_5.getName();
                     _builder.append(_name_5, " ");
                     _builder.append("</em> feature.");
                     _builder.newLineIfNotEmpty();
@@ -335,8 +288,8 @@ public class InterfaceTemplate extends BaseTemplate {
                 String _getter_1 = featureAnnotation.getGetter();
                 _builder.append(_getter_1, " ");
                 _builder.append("() <em>");
-                EStructuralFeature _eStructuralFeature_7 = featureAnnotation.getEStructuralFeature();
-                String _name_6 = _eStructuralFeature_7.getName();
+                EStructuralFeature _eStructuralFeature_6 = featureAnnotation.getEStructuralFeature();
+                String _name_6 = _eStructuralFeature_6.getName();
                 _builder.append(_name_6, " ");
                 _builder.append("</em>}\' feature.");
                 _builder.newLineIfNotEmpty();
@@ -361,8 +314,8 @@ public class InterfaceTemplate extends BaseTemplate {
                 String _getter_2 = featureAnnotation.getGetter();
                 _builder.append(_getter_2, " ");
                 _builder.append("() <em>");
-                EStructuralFeature _eStructuralFeature_8 = featureAnnotation.getEStructuralFeature();
-                String _name_8 = _eStructuralFeature_8.getName();
+                EStructuralFeature _eStructuralFeature_7 = featureAnnotation.getEStructuralFeature();
+                String _name_8 = _eStructuralFeature_7.getName();
                 _builder.append(_name_8, " ");
                 _builder.append("</em>}\' feature.");
                 _builder.newLineIfNotEmpty();
@@ -372,9 +325,9 @@ public class InterfaceTemplate extends BaseTemplate {
                 _builder.append(" ");
                 _builder.append("*/");
                 _builder.newLine();
-                EStructuralFeature _eStructuralFeature_9 = featureAnnotation.getEStructuralFeature();
+                EStructuralFeature _eStructuralFeature_8 = featureAnnotation.getEStructuralFeature();
                 EClass _eClass_3 = eClassModelGenAnnotation.getEClass();
-                String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_9, "getter", _eClass_3);
+                String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_8, "getter", _eClass_3);
                 _builder.append(_javaAnnotations_2, "");
                 _builder.newLineIfNotEmpty();
                 _builder.append("public void ");

@@ -15,7 +15,6 @@ import java.util.List;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.texo.generator.BaseTemplate;
 import org.eclipse.emf.texo.generator.ModelController;
 import org.eclipse.emf.texo.modelgenerator.modelannotations.EClassModelGenAnnotation;
@@ -296,32 +295,12 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("*/");
     _builder.newLine();
     {
-      boolean _or = false;
-      boolean _addSuppressUnchecked = eClassModelGenAnnotation.getAddSuppressUnchecked();
-      if (_addSuppressUnchecked) {
-        _or = true;
-      } else {
-        EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
-        final Function1<EStructuralFeatureModelGenAnnotation, Boolean> _function = new Function1<EStructuralFeatureModelGenAnnotation, Boolean>() {
-          @Override
-          public Boolean apply(final EStructuralFeatureModelGenAnnotation e) {
-            boolean _and = false;
-            EStructuralFeature _eStructuralFeature = e.getEStructuralFeature();
-            boolean _isMany = _eStructuralFeature.isMany();
-            if (!_isMany) {
-              _and = false;
-            } else {
-              EStructuralFeature _eStructuralFeature_1 = e.getEStructuralFeature();
-              boolean _isChangeable = _eStructuralFeature_1.isChangeable();
-              _and = _isChangeable;
-            }
-            return Boolean.valueOf(_and);
-          }
-        };
-        boolean _exists = IterableExtensions.<EStructuralFeatureModelGenAnnotation>exists(_eStructuralFeatureModelGenAnnotations, _function);
-        _or = _exists;
-      }
-      if (_or) {
+      if ((eClassModelGenAnnotation.getAddSuppressUnchecked() || IterableExtensions.<EStructuralFeatureModelGenAnnotation>exists(eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations(), new Function1<EStructuralFeatureModelGenAnnotation, Boolean>() {
+        @Override
+        public Boolean apply(final EStructuralFeatureModelGenAnnotation e) {
+          return Boolean.valueOf((e.getEStructuralFeature().isMany() && e.getEStructuralFeature().isChangeable()));
+        }
+      }))) {
         _builder.append("    ");
         _builder.append("@SuppressWarnings(\"unchecked\")");
         _builder.newLine();
@@ -340,19 +319,10 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("switch (featureID) {");
     _builder.newLine();
     {
-      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_1 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
-      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_1 : _eStructuralFeatureModelGenAnnotations_1) {
+      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
+      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_1 : _eStructuralFeatureModelGenAnnotations) {
         {
-          boolean _and = false;
-          boolean _isGenerateCode_1 = featureAnnotation_1.isGenerateCode();
-          if (!_isGenerateCode_1) {
-            _and = false;
-          } else {
-            EStructuralFeature _eStructuralFeature = featureAnnotation_1.getEStructuralFeature();
-            boolean _isChangeable = _eStructuralFeature.isChangeable();
-            _and = _isChangeable;
-          }
-          if (_and) {
+          if ((featureAnnotation_1.isGenerateCode() && featureAnnotation_1.getEStructuralFeature().isChangeable())) {
             _builder.append("        ");
             _builder.append("case ");
             String _qualifiedClassName_5 = ePackageAnnotation.getQualifiedClassName();
@@ -421,55 +391,14 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("switch (featureID) {");
     _builder.newLine();
     {
-      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_2 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
-      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_2 : _eStructuralFeatureModelGenAnnotations_2) {
+      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_1 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
+      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_2 : _eStructuralFeatureModelGenAnnotations_1) {
         _builder.append("        ");
         _builder.newLine();
         {
-          boolean _and_1 = false;
-          boolean _and_2 = false;
-          EStructuralFeature _eStructuralFeature_1 = featureAnnotation_2.getEStructuralFeature();
-          boolean _isChangeable_1 = _eStructuralFeature_1.isChangeable();
-          if (!_isChangeable_1) {
-            _and_2 = false;
-          } else {
-            boolean _isMany = featureAnnotation_2.isMany();
-            _and_2 = _isMany;
-          }
-          if (!_and_2) {
-            _and_1 = false;
-          } else {
-            String _itemType = featureAnnotation_2.getItemType();
-            boolean _contains = _itemType.contains(",");
-            boolean _not = (!_contains);
-            _and_1 = _not;
-          }
-          if (_and_1) {
+          if (((featureAnnotation_2.getEStructuralFeature().isChangeable() && featureAnnotation_2.isMany()) && (!featureAnnotation_2.getItemType().contains(",")))) {
             {
-              boolean _and_3 = false;
-              boolean _and_4 = false;
-              boolean _isReference = featureAnnotation_2.isReference();
-              if (!_isReference) {
-                _and_4 = false;
-              } else {
-                EStructuralFeatureModelGenAnnotation _featureMapFeature = featureAnnotation_2.getFeatureMapFeature();
-                boolean _equals = Objects.equal(_featureMapFeature, null);
-                _and_4 = _equals;
-              }
-              if (!_and_4) {
-                _and_3 = false;
-              } else {
-                boolean _or_1 = false;
-                boolean _isGenerateBidirectionalAssociationSupport = ((EReferenceModelGenAnnotation) featureAnnotation_2).isGenerateBidirectionalAssociationSupport();
-                if (_isGenerateBidirectionalAssociationSupport) {
-                  _or_1 = true;
-                } else {
-                  boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation_2).isGenerateSafeManyAccess();
-                  _or_1 = _isGenerateSafeManyAccess;
-                }
-                _and_3 = _or_1;
-              }
-              if (_and_3) {
+              if (((featureAnnotation_2.isReference() && Objects.equal(featureAnnotation_2.getFeatureMapFeature(), null)) && (((EReferenceModelGenAnnotation) featureAnnotation_2).isGenerateBidirectionalAssociationSupport() || ((EReferenceModelGenAnnotation) featureAnnotation_2).isGenerateSafeManyAccess()))) {
                 _builder.append("        ");
                 _builder.append("case ");
                 String _qualifiedClassName_6 = ePackageAnnotation.getQualifiedClassName();
@@ -491,8 +420,8 @@ public class ModelObjectTemplate extends BaseTemplate {
                 String _firstUpper_1 = TemplateUtil.toFirstUpper(_validJavaMemberName);
                 _builder.append(_firstUpper_1, "            ");
                 _builder.append("(");
-                String _itemType_1 = featureAnnotation_2.getItemType();
-                String _cast_1 = TemplateUtil.cast(_itemType_1);
+                String _itemType = featureAnnotation_2.getItemType();
+                String _cast_1 = TemplateUtil.cast(_itemType);
                 _builder.append(_cast_1, "            ");
                 _builder.append("value);");
                 _builder.newLineIfNotEmpty();
@@ -517,8 +446,8 @@ public class ModelObjectTemplate extends BaseTemplate {
                 String _getter_1 = featureAnnotation_2.getGetter();
                 _builder.append(_getter_1, "            ");
                 _builder.append("().add(");
-                String _itemType_2 = featureAnnotation_2.getItemType();
-                String _cast_2 = TemplateUtil.cast(_itemType_2);
+                String _itemType_1 = featureAnnotation_2.getItemType();
+                String _cast_2 = TemplateUtil.cast(_itemType_1);
                 _builder.append(_cast_2, "            ");
                 _builder.append("value);");
                 _builder.newLineIfNotEmpty();
@@ -563,55 +492,14 @@ public class ModelObjectTemplate extends BaseTemplate {
     _builder.append("switch (featureID) {");
     _builder.newLine();
     {
-      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_3 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
-      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_3 : _eStructuralFeatureModelGenAnnotations_3) {
+      EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_2 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
+      for(final EStructuralFeatureModelGenAnnotation featureAnnotation_3 : _eStructuralFeatureModelGenAnnotations_2) {
         _builder.append("        ");
         _builder.newLine();
         {
-          boolean _and_5 = false;
-          boolean _and_6 = false;
-          EStructuralFeature _eStructuralFeature_2 = featureAnnotation_3.getEStructuralFeature();
-          boolean _isChangeable_2 = _eStructuralFeature_2.isChangeable();
-          if (!_isChangeable_2) {
-            _and_6 = false;
-          } else {
-            boolean _isMany_1 = featureAnnotation_3.isMany();
-            _and_6 = _isMany_1;
-          }
-          if (!_and_6) {
-            _and_5 = false;
-          } else {
-            String _itemType_3 = featureAnnotation_3.getItemType();
-            boolean _contains_1 = _itemType_3.contains(",");
-            boolean _not_1 = (!_contains_1);
-            _and_5 = _not_1;
-          }
-          if (_and_5) {
+          if (((featureAnnotation_3.getEStructuralFeature().isChangeable() && featureAnnotation_3.isMany()) && (!featureAnnotation_3.getItemType().contains(",")))) {
             {
-              boolean _and_7 = false;
-              boolean _and_8 = false;
-              boolean _isReference_1 = featureAnnotation_3.isReference();
-              if (!_isReference_1) {
-                _and_8 = false;
-              } else {
-                EStructuralFeatureModelGenAnnotation _featureMapFeature_1 = featureAnnotation_3.getFeatureMapFeature();
-                boolean _equals_1 = Objects.equal(_featureMapFeature_1, null);
-                _and_8 = _equals_1;
-              }
-              if (!_and_8) {
-                _and_7 = false;
-              } else {
-                boolean _or_2 = false;
-                boolean _isGenerateBidirectionalAssociationSupport_1 = ((EReferenceModelGenAnnotation) featureAnnotation_3).isGenerateBidirectionalAssociationSupport();
-                if (_isGenerateBidirectionalAssociationSupport_1) {
-                  _or_2 = true;
-                } else {
-                  boolean _isGenerateSafeManyAccess_1 = ((EReferenceModelGenAnnotation) featureAnnotation_3).isGenerateSafeManyAccess();
-                  _or_2 = _isGenerateSafeManyAccess_1;
-                }
-                _and_7 = _or_2;
-              }
-              if (_and_7) {
+              if (((featureAnnotation_3.isReference() && Objects.equal(featureAnnotation_3.getFeatureMapFeature(), null)) && (((EReferenceModelGenAnnotation) featureAnnotation_3).isGenerateBidirectionalAssociationSupport() || ((EReferenceModelGenAnnotation) featureAnnotation_3).isGenerateSafeManyAccess()))) {
                 _builder.append("        ");
                 _builder.append("case ");
                 String _qualifiedClassName_8 = ePackageAnnotation.getQualifiedClassName();
@@ -633,8 +521,8 @@ public class ModelObjectTemplate extends BaseTemplate {
                 String _firstUpper_2 = TemplateUtil.toFirstUpper(_validJavaMemberName_1);
                 _builder.append(_firstUpper_2, "            ");
                 _builder.append("((");
-                String _itemType_4 = featureAnnotation_3.getItemType();
-                _builder.append(_itemType_4, "            ");
+                String _itemType_2 = featureAnnotation_3.getItemType();
+                _builder.append(_itemType_2, "            ");
                 _builder.append(")value);");
                 _builder.newLineIfNotEmpty();
               } else {

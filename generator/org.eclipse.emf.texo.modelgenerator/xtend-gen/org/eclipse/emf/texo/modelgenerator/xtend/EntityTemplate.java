@@ -31,24 +31,7 @@ import org.eclipse.xtend2.lib.StringConcatenation;
 public class EntityTemplate extends BaseTemplate {
   public void generate(final EClassModelGenAnnotation eClassModelGenAnnotation) {
     EPackageModelGenAnnotation ePackageModelGenAnnotation = eClassModelGenAnnotation.getOwnerEPackageAnnotation();
-    boolean _and = false;
-    boolean _isGenerateCode = eClassModelGenAnnotation.isGenerateCode();
-    if (!_isGenerateCode) {
-      _and = false;
-    } else {
-      boolean _or = false;
-      boolean _isAddRuntimeModelBehavior = ePackageModelGenAnnotation.isAddRuntimeModelBehavior();
-      if (_isAddRuntimeModelBehavior) {
-        _or = true;
-      } else {
-        EClass _eClass = eClassModelGenAnnotation.getEClass();
-        boolean _isDocumentRoot = TemplateUtil.isDocumentRoot(_eClass);
-        boolean _not = (!_isDocumentRoot);
-        _or = _not;
-      }
-      _and = _or;
-    }
-    if (_and) {
+    if ((eClassModelGenAnnotation.isGenerateCode() && (ePackageModelGenAnnotation.isAddRuntimeModelBehavior() || (!TemplateUtil.isDocumentRoot(eClassModelGenAnnotation.getEClass()))))) {
       boolean _executeOverrides = this.executeOverrides(eClassModelGenAnnotation);
       if (_executeOverrides) {
         return;
@@ -185,17 +168,7 @@ public class EntityTemplate extends BaseTemplate {
       for(final EStructuralFeatureModelGenAnnotation featureAnnotation : _eStructuralFeatureModelGenAnnotations) {
         _builder.newLine();
         {
-          boolean _and = false;
-          boolean _isGenerateCode = featureAnnotation.isGenerateCode();
-          if (!_isGenerateCode) {
-            _and = false;
-          } else {
-            EStructuralFeature _eStructuralFeature = featureAnnotation.getEStructuralFeature();
-            boolean _isVolatile = _eStructuralFeature.isVolatile();
-            boolean _not = (!_isVolatile);
-            _and = _not;
-          }
-          if (_and) {
+          if ((featureAnnotation.isGenerateCode() && (!featureAnnotation.getEStructuralFeature().isVolatile()))) {
             _builder.newLine();
             _builder.append("/**");
             _builder.newLine();
@@ -225,9 +198,9 @@ public class EntityTemplate extends BaseTemplate {
             _builder.append(" ");
             _builder.append("*/");
             _builder.newLine();
-            EStructuralFeature _eStructuralFeature_1 = featureAnnotation.getEStructuralFeature();
+            EStructuralFeature _eStructuralFeature = featureAnnotation.getEStructuralFeature();
             EClass _eClass_2 = eClassModelGenAnnotation.getEClass();
-            String _javaAnnotations_1 = modelController.getJavaAnnotations(_eStructuralFeature_1, "field", _eClass_2);
+            String _javaAnnotations_1 = modelController.getJavaAnnotations(_eStructuralFeature, "field", _eClass_2);
             _builder.append(_javaAnnotations_1, "");
             _builder.newLineIfNotEmpty();
             _builder.append("private ");
@@ -254,43 +227,19 @@ public class EntityTemplate extends BaseTemplate {
       EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_1 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
       for(final EStructuralFeatureModelGenAnnotation featureAnnotation_1 : _eStructuralFeatureModelGenAnnotations_1) {
         {
-          boolean _isGenerateCode_1 = featureAnnotation_1.isGenerateCode();
-          if (_isGenerateCode_1) {
+          boolean _isGenerateCode = featureAnnotation_1.isGenerateCode();
+          if (_isGenerateCode) {
             _builder.append("/**");
             _builder.newLine();
             _builder.append(" ");
             _builder.append("* Returns the value of \'<em><b>");
-            EStructuralFeature _eStructuralFeature_2 = featureAnnotation_1.getEStructuralFeature();
-            String _name_1 = _eStructuralFeature_2.getName();
+            EStructuralFeature _eStructuralFeature_1 = featureAnnotation_1.getEStructuralFeature();
+            String _name_1 = _eStructuralFeature_1.getName();
             _builder.append(_name_1, " ");
             _builder.append("</b></em>\' feature.");
             _builder.newLineIfNotEmpty();
             {
-              boolean _and_1 = false;
-              boolean _and_2 = false;
-              boolean _and_3 = false;
-              EStructuralFeature _eStructuralFeature_3 = featureAnnotation_1.getEStructuralFeature();
-              boolean _isVolatile_1 = _eStructuralFeature_3.isVolatile();
-              boolean _not_1 = (!_isVolatile_1);
-              if (!_not_1) {
-                _and_3 = false;
-              } else {
-                boolean _isMany = featureAnnotation_1.isMany();
-                _and_3 = _isMany;
-              }
-              if (!_and_3) {
-                _and_2 = false;
-              } else {
-                boolean _isReference = featureAnnotation_1.isReference();
-                _and_2 = _isReference;
-              }
-              if (!_and_2) {
-                _and_1 = false;
-              } else {
-                boolean _isGenerateSafeManyAccess = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                _and_1 = _isGenerateSafeManyAccess;
-              }
-              if (_and_1) {
+              if (((((!featureAnnotation_1.getEStructuralFeature().isVolatile()) && featureAnnotation_1.isMany()) && featureAnnotation_1.isReference()) && ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess())) {
                 _builder.append("* Note: the returned collection is Unmodifiable use the {#addTo");
                 String _validJavaMemberName_1 = featureAnnotation_1.getValidJavaMemberName();
                 String _firstUpper = TemplateUtil.toFirstUpper(_validJavaMemberName_1);
@@ -338,8 +287,8 @@ public class EntityTemplate extends BaseTemplate {
             }
             _builder.append(" ");
             _builder.append("* @return the value of \'<em><b>");
-            EStructuralFeature _eStructuralFeature_4 = featureAnnotation_1.getEStructuralFeature();
-            String _name_2 = _eStructuralFeature_4.getName();
+            EStructuralFeature _eStructuralFeature_2 = featureAnnotation_1.getEStructuralFeature();
+            String _name_2 = _eStructuralFeature_2.getName();
             _builder.append(_name_2, " ");
             _builder.append("</b></em>\' feature");
             _builder.newLineIfNotEmpty();
@@ -349,9 +298,9 @@ public class EntityTemplate extends BaseTemplate {
             _builder.append(" ");
             _builder.append("*/");
             _builder.newLine();
-            EStructuralFeature _eStructuralFeature_5 = featureAnnotation_1.getEStructuralFeature();
+            EStructuralFeature _eStructuralFeature_3 = featureAnnotation_1.getEStructuralFeature();
             EClass _eClass_3 = eClassModelGenAnnotation.getEClass();
-            String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_5, "getter", _eClass_3);
+            String _javaAnnotations_2 = modelController.getJavaAnnotations(_eStructuralFeature_3, "getter", _eClass_3);
             _builder.append(_javaAnnotations_2, "");
             _builder.newLineIfNotEmpty();
             _builder.append("public ");
@@ -363,27 +312,12 @@ public class EntityTemplate extends BaseTemplate {
             _builder.append("() {");
             _builder.newLineIfNotEmpty();
             {
-              EStructuralFeature _eStructuralFeature_6 = featureAnnotation_1.getEStructuralFeature();
-              boolean _isVolatile_2 = _eStructuralFeature_6.isVolatile();
-              boolean _not_2 = (!_isVolatile_2);
-              if (_not_2) {
+              EStructuralFeature _eStructuralFeature_4 = featureAnnotation_1.getEStructuralFeature();
+              boolean _isVolatile = _eStructuralFeature_4.isVolatile();
+              boolean _not = (!_isVolatile);
+              if (_not) {
                 {
-                  boolean _and_4 = false;
-                  boolean _and_5 = false;
-                  boolean _isMany_1 = featureAnnotation_1.isMany();
-                  if (!_isMany_1) {
-                    _and_5 = false;
-                  } else {
-                    boolean _isReference_1 = featureAnnotation_1.isReference();
-                    _and_5 = _isReference_1;
-                  }
-                  if (!_and_5) {
-                    _and_4 = false;
-                  } else {
-                    boolean _isGenerateSafeManyAccess_1 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                    _and_4 = _isGenerateSafeManyAccess_1;
-                  }
-                  if (_and_4) {
+                  if (((featureAnnotation_1.isMany() && featureAnnotation_1.isReference()) && ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess())) {
                     {
                       boolean _isUseList = ((EReferenceModelGenAnnotation) featureAnnotation_1).isUseList();
                       if (_isUseList) {
@@ -413,8 +347,8 @@ public class EntityTemplate extends BaseTemplate {
                 boolean _notEquals_3 = (!Objects.equal(_featureMapFeature, null));
                 if (_notEquals_3) {
                   {
-                    boolean _isMany_2 = featureAnnotation_1.isMany();
-                    if (_isMany_2) {
+                    boolean _isMany = featureAnnotation_1.isMany();
+                    if (_isMany) {
                       _builder.append("return ");
                       EStructuralFeatureModelGenAnnotation _featureMapFeature_1 = featureAnnotation_1.getFeatureMapFeature();
                       String _featureMapQualifiedClassName = _featureMapFeature_1.getFeatureMapQualifiedClassName();
@@ -458,8 +392,8 @@ public class EntityTemplate extends BaseTemplate {
                   _builder.append("// Volatile feature");
                   _builder.newLine();
                   _builder.append("// TODO: implement this method to return the \'");
-                  EStructuralFeature _eStructuralFeature_7 = featureAnnotation_1.getEStructuralFeature();
-                  String _name_5 = _eStructuralFeature_7.getName();
+                  EStructuralFeature _eStructuralFeature_5 = featureAnnotation_1.getEStructuralFeature();
+                  String _name_5 = _eStructuralFeature_5.getName();
                   _builder.append(_name_5, "");
                   _builder.append("\'");
                   _builder.newLineIfNotEmpty();
@@ -474,62 +408,15 @@ public class EntityTemplate extends BaseTemplate {
             _builder.newLine();
             _builder.newLine();
             {
-              boolean _or = false;
-              EStructuralFeature _eStructuralFeature_8 = featureAnnotation_1.getEStructuralFeature();
-              boolean _isChangeable = _eStructuralFeature_8.isChangeable();
-              if (_isChangeable) {
-                _or = true;
-              } else {
-                boolean _and_6 = false;
-                boolean _isReference_2 = featureAnnotation_1.isReference();
-                if (!_isReference_2) {
-                  _and_6 = false;
-                } else {
-                  EReferenceModelGenAnnotation _oppositeModelGenAnnotation = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
-                  boolean _notEquals_4 = (!Objects.equal(_oppositeModelGenAnnotation, null));
-                  _and_6 = _notEquals_4;
-                }
-                _or = _and_6;
-              }
-              if (_or) {
+              if ((featureAnnotation_1.getEStructuralFeature().isChangeable() || (featureAnnotation_1.isReference() && (!Objects.equal(((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation(), null))))) {
                 {
-                  boolean _and_7 = false;
-                  boolean _and_8 = false;
-                  boolean _and_9 = false;
-                  EStructuralFeatureModelGenAnnotation _featureMapFeature_7 = featureAnnotation_1.getFeatureMapFeature();
-                  boolean _equals = Objects.equal(_featureMapFeature_7, null);
-                  if (!_equals) {
-                    _and_9 = false;
-                  } else {
-                    boolean _isMany_3 = featureAnnotation_1.isMany();
-                    _and_9 = _isMany_3;
-                  }
-                  if (!_and_9) {
-                    _and_8 = false;
-                  } else {
-                    boolean _isReference_3 = featureAnnotation_1.isReference();
-                    _and_8 = _isReference_3;
-                  }
-                  if (!_and_8) {
-                    _and_7 = false;
-                  } else {
-                    boolean _or_1 = false;
-                    boolean _isGenerateBidirectionalAssociationSupport = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                    if (_isGenerateBidirectionalAssociationSupport) {
-                      _or_1 = true;
-                    } else {
-                      boolean _isGenerateSafeManyAccess_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                      _or_1 = _isGenerateSafeManyAccess_2;
-                    }
-                    _and_7 = _or_1;
-                  }
-                  if (_and_7) {
+                  if ((((Objects.equal(featureAnnotation_1.getFeatureMapFeature(), null) && featureAnnotation_1.isMany()) && featureAnnotation_1.isReference()) && (((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport() || ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess()))) {
                     _builder.append("/**");
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* Adds to the <em>");
-                    EStructuralFeature _eStructuralFeature_9 = featureAnnotation_1.getEStructuralFeature();
-                    String _name_6 = _eStructuralFeature_9.getName();
+                    EStructuralFeature _eStructuralFeature_6 = featureAnnotation_1.getEStructuralFeature();
+                    String _name_6 = _eStructuralFeature_6.getName();
                     _builder.append(_name_6, " ");
                     _builder.append("</em> feature.");
                     _builder.newLineIfNotEmpty();
@@ -564,13 +451,13 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append("Value) {");
                     _builder.newLineIfNotEmpty();
                     {
-                      EStructuralFeature _eStructuralFeature_10 = featureAnnotation_1.getEStructuralFeature();
-                      boolean _isVolatile_3 = _eStructuralFeature_10.isVolatile();
-                      boolean _not_3 = (!_isVolatile_3);
-                      if (_not_3) {
+                      EStructuralFeature _eStructuralFeature_7 = featureAnnotation_1.getEStructuralFeature();
+                      boolean _isVolatile_1 = _eStructuralFeature_7.isVolatile();
+                      boolean _not_1 = (!_isVolatile_1);
+                      if (_not_1) {
                         {
-                          EStructuralFeature _eStructuralFeature_11 = featureAnnotation_1.getEStructuralFeature();
-                          boolean _isUnique = _eStructuralFeature_11.isUnique();
+                          EStructuralFeature _eStructuralFeature_8 = featureAnnotation_1.getEStructuralFeature();
+                          boolean _isUnique = _eStructuralFeature_8.isUnique();
                           if (_isUnique) {
                             _builder.append("    ");
                             _builder.append("if (!");
@@ -594,23 +481,14 @@ public class EntityTemplate extends BaseTemplate {
                         _builder.append("Value);");
                         _builder.newLineIfNotEmpty();
                         {
-                          boolean _and_10 = false;
-                          EReferenceModelGenAnnotation _oppositeModelGenAnnotation_1 = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
-                          boolean _notEquals_5 = (!Objects.equal(_oppositeModelGenAnnotation_1, null));
-                          if (!_notEquals_5) {
-                            _and_10 = false;
-                          } else {
-                            boolean _isGenerateBidirectionalAssociationSupport_1 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                            _and_10 = _isGenerateBidirectionalAssociationSupport_1;
-                          }
-                          if (_and_10) {
+                          if (((!Objects.equal(((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation(), null)) && ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport())) {
                             _builder.append("    ");
                             _builder.append("    ");
                             EReferenceModelGenAnnotation oppositeAnnotation = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
                             _builder.newLineIfNotEmpty();
                             {
-                              boolean _isMany_4 = oppositeAnnotation.isMany();
-                              if (_isMany_4) {
+                              boolean _isMany_1 = oppositeAnnotation.isMany();
+                              if (_isMany_1) {
                                 _builder.append("    ");
                                 _builder.append("    ");
                                 String _validJavaMemberName_13 = featureAnnotation_1.getValidJavaMemberName();
@@ -640,8 +518,8 @@ public class EntityTemplate extends BaseTemplate {
                         _builder.append("return result;");
                         _builder.newLine();
                         {
-                          EStructuralFeature _eStructuralFeature_12 = featureAnnotation_1.getEStructuralFeature();
-                          boolean _isUnique_1 = _eStructuralFeature_12.isUnique();
+                          EStructuralFeature _eStructuralFeature_9 = featureAnnotation_1.getEStructuralFeature();
+                          boolean _isUnique_1 = _eStructuralFeature_9.isUnique();
                           if (_isUnique_1) {
                             _builder.append("    ");
                             _builder.append("}");
@@ -670,8 +548,8 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* Removes from the <em>");
-                    EStructuralFeature _eStructuralFeature_13 = featureAnnotation_1.getEStructuralFeature();
-                    String _name_7 = _eStructuralFeature_13.getName();
+                    EStructuralFeature _eStructuralFeature_10 = featureAnnotation_1.getEStructuralFeature();
+                    String _name_7 = _eStructuralFeature_10.getName();
                     _builder.append(_name_7, " ");
                     _builder.append("</em> feature.");
                     _builder.newLineIfNotEmpty();
@@ -709,10 +587,10 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append("Value) {");
                     _builder.newLineIfNotEmpty();
                     {
-                      EStructuralFeature _eStructuralFeature_14 = featureAnnotation_1.getEStructuralFeature();
-                      boolean _isVolatile_4 = _eStructuralFeature_14.isVolatile();
-                      boolean _not_4 = (!_isVolatile_4);
-                      if (_not_4) {
+                      EStructuralFeature _eStructuralFeature_11 = featureAnnotation_1.getEStructuralFeature();
+                      boolean _isVolatile_2 = _eStructuralFeature_11.isVolatile();
+                      boolean _not_2 = (!_isVolatile_2);
+                      if (_not_2) {
                         _builder.append("    ");
                         _builder.append("if (");
                         String _validJavaMemberName_19 = featureAnnotation_1.getValidJavaMemberName();
@@ -733,23 +611,14 @@ public class EntityTemplate extends BaseTemplate {
                         _builder.append("Value);");
                         _builder.newLineIfNotEmpty();
                         {
-                          boolean _and_11 = false;
-                          EReferenceModelGenAnnotation _oppositeModelGenAnnotation_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
-                          boolean _notEquals_6 = (!Objects.equal(_oppositeModelGenAnnotation_2, null));
-                          if (!_notEquals_6) {
-                            _and_11 = false;
-                          } else {
-                            boolean _isGenerateBidirectionalAssociationSupport_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                            _and_11 = _isGenerateBidirectionalAssociationSupport_2;
-                          }
-                          if (_and_11) {
+                          if (((!Objects.equal(((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation(), null)) && ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport())) {
                             _builder.append("    ");
                             _builder.append("    ");
                             EReferenceModelGenAnnotation oppositeAnnotation_1 = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
                             _builder.newLineIfNotEmpty();
                             {
-                              boolean _isMany_5 = oppositeAnnotation_1.isMany();
-                              if (_isMany_5) {
+                              boolean _isMany_2 = oppositeAnnotation_1.isMany();
+                              if (_isMany_2) {
                                 _builder.append("    ");
                                 _builder.append("    ");
                                 String _validJavaMemberName_23 = featureAnnotation_1.getValidJavaMemberName();
@@ -803,8 +672,8 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.newLine();
                     _builder.append(" ");
                     _builder.append("* Clears the <em>");
-                    EStructuralFeature _eStructuralFeature_15 = featureAnnotation_1.getEStructuralFeature();
-                    String _name_8 = _eStructuralFeature_15.getName();
+                    EStructuralFeature _eStructuralFeature_12 = featureAnnotation_1.getEStructuralFeature();
+                    String _name_8 = _eStructuralFeature_12.getName();
                     _builder.append(_name_8, " ");
                     _builder.append("</em> feature.");
                     _builder.newLineIfNotEmpty();
@@ -821,10 +690,10 @@ public class EntityTemplate extends BaseTemplate {
                     _builder.append("() {");
                     _builder.newLineIfNotEmpty();
                     {
-                      EStructuralFeature _eStructuralFeature_16 = featureAnnotation_1.getEStructuralFeature();
-                      boolean _isVolatile_5 = _eStructuralFeature_16.isVolatile();
-                      boolean _not_5 = (!_isVolatile_5);
-                      if (_not_5) {
+                      EStructuralFeature _eStructuralFeature_13 = featureAnnotation_1.getEStructuralFeature();
+                      boolean _isVolatile_3 = _eStructuralFeature_13.isVolatile();
+                      boolean _not_3 = (!_isVolatile_3);
+                      if (_not_3) {
                         _builder.append("    ");
                         _builder.append("while (!");
                         String _validJavaMemberName_27 = featureAnnotation_1.getValidJavaMemberName();
@@ -871,8 +740,8 @@ public class EntityTemplate extends BaseTemplate {
                 String _getter_3 = featureAnnotation_1.getGetter();
                 _builder.append(_getter_3, " ");
                 _builder.append("() <em>");
-                EStructuralFeature _eStructuralFeature_17 = featureAnnotation_1.getEStructuralFeature();
-                String _name_9 = _eStructuralFeature_17.getName();
+                EStructuralFeature _eStructuralFeature_14 = featureAnnotation_1.getEStructuralFeature();
+                String _name_9 = _eStructuralFeature_14.getName();
                 _builder.append(_name_9, " ");
                 _builder.append("</em>}\' feature.");
                 _builder.newLineIfNotEmpty();
@@ -887,8 +756,8 @@ public class EntityTemplate extends BaseTemplate {
                 _builder.newLine();
                 {
                   String _documentation_6 = featureAnnotation_1.getDocumentation();
-                  boolean _notEquals_7 = (!Objects.equal(_documentation_6, null));
-                  if (_notEquals_7) {
+                  boolean _notEquals_4 = (!Objects.equal(_documentation_6, null));
+                  if (_notEquals_4) {
                     _builder.append("* <!-- begin-model-doc -->");
                     _builder.newLine();
                     _builder.append("* ");
@@ -911,8 +780,8 @@ public class EntityTemplate extends BaseTemplate {
                 String _getter_4 = featureAnnotation_1.getGetter();
                 _builder.append(_getter_4, " ");
                 _builder.append("() ");
-                EStructuralFeature _eStructuralFeature_18 = featureAnnotation_1.getEStructuralFeature();
-                String _name_10 = _eStructuralFeature_18.getName();
+                EStructuralFeature _eStructuralFeature_15 = featureAnnotation_1.getEStructuralFeature();
+                String _name_10 = _eStructuralFeature_15.getName();
                 _builder.append(_name_10, " ");
                 _builder.append("}\' feature.");
                 _builder.newLineIfNotEmpty();
@@ -922,9 +791,9 @@ public class EntityTemplate extends BaseTemplate {
                 _builder.append(" ");
                 _builder.append("*/");
                 _builder.newLine();
-                EStructuralFeature _eStructuralFeature_19 = featureAnnotation_1.getEStructuralFeature();
+                EStructuralFeature _eStructuralFeature_16 = featureAnnotation_1.getEStructuralFeature();
                 EClass _eClass_4 = eClassModelGenAnnotation.getEClass();
-                String _javaAnnotations_3 = modelController.getJavaAnnotations(_eStructuralFeature_19, "setter", _eClass_4);
+                String _javaAnnotations_3 = modelController.getJavaAnnotations(_eStructuralFeature_16, "setter", _eClass_4);
                 _builder.append(_javaAnnotations_3, "");
                 _builder.newLineIfNotEmpty();
                 _builder.append("public void ");
@@ -940,30 +809,15 @@ public class EntityTemplate extends BaseTemplate {
                 _builder.append(") {");
                 _builder.newLineIfNotEmpty();
                 {
-                  EStructuralFeature _eStructuralFeature_20 = featureAnnotation_1.getEStructuralFeature();
-                  boolean _isVolatile_6 = _eStructuralFeature_20.isVolatile();
-                  boolean _not_6 = (!_isVolatile_6);
-                  if (_not_6) {
+                  EStructuralFeature _eStructuralFeature_17 = featureAnnotation_1.getEStructuralFeature();
+                  boolean _isVolatile_4 = _eStructuralFeature_17.isVolatile();
+                  boolean _not_4 = (!_isVolatile_4);
+                  if (_not_4) {
                     {
-                      boolean _and_12 = false;
-                      boolean _isReference_4 = featureAnnotation_1.isReference();
-                      if (!_isReference_4) {
-                        _and_12 = false;
-                      } else {
-                        boolean _or_2 = false;
-                        boolean _isGenerateBidirectionalAssociationSupport_3 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                        if (_isGenerateBidirectionalAssociationSupport_3) {
-                          _or_2 = true;
-                        } else {
-                          boolean _isGenerateSafeManyAccess_3 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess();
-                          _or_2 = _isGenerateSafeManyAccess_3;
-                        }
-                        _and_12 = _or_2;
-                      }
-                      if (_and_12) {
+                      if ((featureAnnotation_1.isReference() && (((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport() || ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateSafeManyAccess()))) {
                         {
-                          boolean _isMany_6 = featureAnnotation_1.isMany();
-                          if (_isMany_6) {
+                          boolean _isMany_3 = featureAnnotation_1.isMany();
+                          if (_isMany_3) {
                             _builder.append("clear");
                             String _validJavaMemberName_32 = featureAnnotation_1.getValidJavaMemberName();
                             String _firstUpper_10 = TemplateUtil.toFirstUpper(_validJavaMemberName_32);
@@ -990,16 +844,7 @@ public class EntityTemplate extends BaseTemplate {
                             _builder.newLine();
                           } else {
                             {
-                              boolean _and_13 = false;
-                              EReferenceModelGenAnnotation _oppositeModelGenAnnotation_3 = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
-                              boolean _notEquals_8 = (!Objects.equal(_oppositeModelGenAnnotation_3, null));
-                              if (!_notEquals_8) {
-                                _and_13 = false;
-                              } else {
-                                boolean _isGenerateBidirectionalAssociationSupport_4 = ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport();
-                                _and_13 = _isGenerateBidirectionalAssociationSupport_4;
-                              }
-                              if (_and_13) {
+                              if (((!Objects.equal(((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation(), null)) && ((EReferenceModelGenAnnotation) featureAnnotation_1).isGenerateBidirectionalAssociationSupport())) {
                                 EReferenceModelGenAnnotation oppositeAnnotation_2 = ((EReferenceModelGenAnnotation) featureAnnotation_1).getOppositeModelGenAnnotation();
                                 _builder.newLineIfNotEmpty();
                                 _builder.append("if (");
@@ -1018,8 +863,8 @@ public class EntityTemplate extends BaseTemplate {
                                 _builder.append(" != null) {");
                                 _builder.newLineIfNotEmpty();
                                 {
-                                  boolean _isMany_7 = oppositeAnnotation_2.isMany();
-                                  if (_isMany_7) {
+                                  boolean _isMany_4 = oppositeAnnotation_2.isMany();
+                                  if (_isMany_4) {
                                     _builder.append("        ");
                                     String _validJavaMemberName_38 = featureAnnotation_1.getValidJavaMemberName();
                                     _builder.append(_validJavaMemberName_38, "        ");
@@ -1078,8 +923,8 @@ public class EntityTemplate extends BaseTemplate {
                                 _builder.append(" != null) {");
                                 _builder.newLineIfNotEmpty();
                                 {
-                                  boolean _isMany_8 = oppositeAnnotation_2.isMany();
-                                  if (_isMany_8) {
+                                  boolean _isMany_5 = oppositeAnnotation_2.isMany();
+                                  if (_isMany_5) {
                                     _builder.append("        ");
                                     String _validJavaMemberName_47 = featureAnnotation_1.getValidJavaMemberName();
                                     _builder.append(_validJavaMemberName_47, "        ");
@@ -1130,22 +975,22 @@ public class EntityTemplate extends BaseTemplate {
                       }
                     }
                   } else {
-                    EStructuralFeatureModelGenAnnotation _featureMapFeature_8 = featureAnnotation_1.getFeatureMapFeature();
-                    boolean _notEquals_9 = (!Objects.equal(_featureMapFeature_8, null));
-                    if (_notEquals_9) {
+                    EStructuralFeatureModelGenAnnotation _featureMapFeature_7 = featureAnnotation_1.getFeatureMapFeature();
+                    boolean _notEquals_5 = (!Objects.equal(_featureMapFeature_7, null));
+                    if (_notEquals_5) {
                       {
-                        boolean _isMany_9 = featureAnnotation_1.isMany();
-                        if (_isMany_9) {
-                          EStructuralFeatureModelGenAnnotation _featureMapFeature_9 = featureAnnotation_1.getFeatureMapFeature();
-                          String _setter_5 = _featureMapFeature_9.getSetter();
+                        boolean _isMany_6 = featureAnnotation_1.isMany();
+                        if (_isMany_6) {
+                          EStructuralFeatureModelGenAnnotation _featureMapFeature_8 = featureAnnotation_1.getFeatureMapFeature();
+                          String _setter_5 = _featureMapFeature_8.getSetter();
                           _builder.append(_setter_5, "");
                           _builder.append("(");
-                          EStructuralFeatureModelGenAnnotation _featureMapFeature_10 = featureAnnotation_1.getFeatureMapFeature();
-                          String _featureMapQualifiedClassName_4 = _featureMapFeature_10.getFeatureMapQualifiedClassName();
+                          EStructuralFeatureModelGenAnnotation _featureMapFeature_9 = featureAnnotation_1.getFeatureMapFeature();
+                          String _featureMapQualifiedClassName_4 = _featureMapFeature_9.getFeatureMapQualifiedClassName();
                           _builder.append(_featureMapQualifiedClassName_4, "");
                           _builder.append(".createFeatureGroupList(");
-                          EStructuralFeatureModelGenAnnotation _featureMapFeature_11 = featureAnnotation_1.getFeatureMapFeature();
-                          String _featureMapQualifiedClassName_5 = _featureMapFeature_11.getFeatureMapQualifiedClassName();
+                          EStructuralFeatureModelGenAnnotation _featureMapFeature_10 = featureAnnotation_1.getFeatureMapFeature();
+                          String _featureMapQualifiedClassName_5 = _featureMapFeature_10.getFeatureMapQualifiedClassName();
                           _builder.append(_featureMapQualifiedClassName_5, "");
                           _builder.append(".Feature.");
                           String _name_11 = featureAnnotation_1.getName();
@@ -1158,16 +1003,16 @@ public class EntityTemplate extends BaseTemplate {
                           _builder.append("));");
                           _builder.newLineIfNotEmpty();
                         } else {
-                          EStructuralFeatureModelGenAnnotation _featureMapFeature_12 = featureAnnotation_1.getFeatureMapFeature();
-                          String _featureMapQualifiedClassName_6 = _featureMapFeature_12.getFeatureMapQualifiedClassName();
+                          EStructuralFeatureModelGenAnnotation _featureMapFeature_11 = featureAnnotation_1.getFeatureMapFeature();
+                          String _featureMapQualifiedClassName_6 = _featureMapFeature_11.getFeatureMapQualifiedClassName();
                           _builder.append(_featureMapQualifiedClassName_6, "");
                           _builder.append(".setSingleFeatureMapValue(");
-                          EStructuralFeatureModelGenAnnotation _featureMapFeature_13 = featureAnnotation_1.getFeatureMapFeature();
-                          String _getter_5 = _featureMapFeature_13.getGetter();
+                          EStructuralFeatureModelGenAnnotation _featureMapFeature_12 = featureAnnotation_1.getFeatureMapFeature();
+                          String _getter_5 = _featureMapFeature_12.getGetter();
                           _builder.append(_getter_5, "");
                           _builder.append("(), ");
-                          EStructuralFeatureModelGenAnnotation _featureMapFeature_14 = featureAnnotation_1.getFeatureMapFeature();
-                          String _featureMapQualifiedClassName_7 = _featureMapFeature_14.getFeatureMapQualifiedClassName();
+                          EStructuralFeatureModelGenAnnotation _featureMapFeature_13 = featureAnnotation_1.getFeatureMapFeature();
+                          String _featureMapQualifiedClassName_7 = _featureMapFeature_13.getFeatureMapQualifiedClassName();
                           _builder.append(_featureMapQualifiedClassName_7, "");
                           _builder.append(".Feature.");
                           String _name_12 = featureAnnotation_1.getName();
@@ -1185,8 +1030,8 @@ public class EntityTemplate extends BaseTemplate {
                       _builder.append("// Volatile feature");
                       _builder.newLine();
                       _builder.append("// TODO: implement this method to set the \'");
-                      EStructuralFeature _eStructuralFeature_21 = featureAnnotation_1.getEStructuralFeature();
-                      String _name_13 = _eStructuralFeature_21.getName();
+                      EStructuralFeature _eStructuralFeature_18 = featureAnnotation_1.getEStructuralFeature();
+                      String _name_13 = _eStructuralFeature_18.getName();
                       _builder.append(_name_13, "");
                       _builder.append("\'");
                       _builder.newLineIfNotEmpty();
@@ -1240,25 +1085,7 @@ public class EntityTemplate extends BaseTemplate {
       EList<EStructuralFeatureModelGenAnnotation> _eStructuralFeatureModelGenAnnotations_2 = eClassModelGenAnnotation.getEStructuralFeatureModelGenAnnotations();
       for(final EStructuralFeatureModelGenAnnotation featureAnnotation_2 : _eStructuralFeatureModelGenAnnotations_2) {
         {
-          boolean _and_14 = false;
-          boolean _and_15 = false;
-          boolean _isGenerateCode_2 = featureAnnotation_2.isGenerateCode();
-          if (!_isGenerateCode_2) {
-            _and_15 = false;
-          } else {
-            boolean _isReference_5 = featureAnnotation_2.isReference();
-            boolean _not_7 = (!_isReference_5);
-            _and_15 = _not_7;
-          }
-          if (!_and_15) {
-            _and_14 = false;
-          } else {
-            EStructuralFeature _eStructuralFeature_22 = featureAnnotation_2.getEStructuralFeature();
-            boolean _isMany_10 = _eStructuralFeature_22.isMany();
-            boolean _not_8 = (!_isMany_10);
-            _and_14 = _not_8;
-          }
-          if (_and_14) {
+          if (((featureAnnotation_2.isGenerateCode() && (!featureAnnotation_2.isReference())) && (!featureAnnotation_2.getEStructuralFeature().isMany()))) {
             _builder.append("         ");
             _builder.append("+ \" [");
             String _name_15 = featureAnnotation_2.getName();
