@@ -79,7 +79,7 @@ public abstract class BaseWSWebTest extends BaseTest {
 
   protected void stopClient() throws Exception {
     if (httpClient != null) {
-      // httpClient.stop();
+      httpClient.stop();
       httpClient = null;
     }
   }
@@ -220,8 +220,8 @@ public abstract class BaseWSWebTest extends BaseTest {
       return result;
     } else {
       try {
-        final JSONModelConverter jsonModelConverter = ComponentProvider.getInstance()
-            .newInstance(JSONModelConverter.class);
+        final JSONModelConverter jsonModelConverter = ComponentProvider.getInstance().newInstance(
+            JSONModelConverter.class);
         jsonModelConverter.setObjectResolver(getUriResolver());
         return Collections.singletonList(jsonModelConverter.convert(new JSONObject(content)));
       } catch (JSONException e) {
@@ -240,8 +240,8 @@ public abstract class BaseWSWebTest extends BaseTest {
       xmlSaver.write();
       return sw.toString();
     } else {
-      final ModelJSONConverter modelJSONConverter = ComponentProvider.getInstance()
-          .newInstance(ModelJSONConverter.class);
+      final ModelJSONConverter modelJSONConverter = ComponentProvider.getInstance().newInstance(
+          ModelJSONConverter.class);
       modelJSONConverter.setObjectResolver(getUriResolver());
       return modelJSONConverter.convert(object).toString();
     }
@@ -259,8 +259,8 @@ public abstract class BaseWSWebTest extends BaseTest {
       xmlSaver.write();
       return sw.toString();
     } else {
-      final ModelJSONConverter modelJSONConverter = ComponentProvider.getInstance()
-          .newInstance(ModelJSONConverter.class);
+      final ModelJSONConverter modelJSONConverter = ComponentProvider.getInstance().newInstance(
+          ModelJSONConverter.class);
       modelJSONConverter.setObjectResolver(getUriResolver());
       return modelJSONConverter.convert(actionType).toString();
     }
