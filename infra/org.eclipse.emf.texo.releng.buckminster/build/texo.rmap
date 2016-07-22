@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	(c) 2010
+	(c) 2010-2016
 	Martin Taal
 	The code, documentation and other materials contained herein have been
 	licensed under the Eclipse Public License - v 1.0 by the individual
@@ -52,6 +52,9 @@
   	</searchPath>
 
   	<searchPath name="updates.platform">
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Neon)">
+      		<uri format="http://download.eclipse.org/eclipse/updates/4.6"/>
+    	</provider>
     	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Mars)">
       		<uri format="http://download.eclipse.org/eclipse/updates/4.5"/>
     	</provider>
@@ -76,13 +79,28 @@
   	</searchPath>
 
   	<searchPath name="target.platform">
-    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Mars)">
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Neon)">
       		<uri format="{0}/jetty/updates/jetty-bundles-9.x/9.2.6.v20141205">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
     	</provider>
     	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Mars)">
+      		<uri format="{0}/jetty/updates/jetty-bundles-9.x/9.2.6.v20141205">
+				<bc:propertyRef key="eclipse.download"/>
+      		</uri>
+    	</provider>
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Neon)">
+      		<uri format="{0}/releases/neon">
+				<bc:propertyRef key="eclipse.download"/>
+      		</uri>
+    	</provider>
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Mars)">
       		<uri format="{0}/releases/mars">
+				<bc:propertyRef key="eclipse.download"/>
+      		</uri>
+    	</provider>
+    	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Neon)">
+      		<uri format="{0}/eclipse/updates/4.6/">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
     	</provider>
@@ -177,8 +195,8 @@
 	      		<bc:propertyRef key="thirdPartyPath"/>
       		</uri>
     	</provider>
-		<provider readerType="p2" componentTypes="osgi.bundle" mutable="false" source="false" resolutionFilter="(build.type=Mars)">
-			<uri format="{0}/tools/orbit/downloads/drops/R20150519210750/repository/">
+		<provider readerType="p2" componentTypes="osgi.bundle" mutable="false" source="false" resolutionFilter="(build.type=Neon)">
+			<uri format="{0}/tools/orbit/downloads/drops/R20160520211859/repository/">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
 		</provider>
