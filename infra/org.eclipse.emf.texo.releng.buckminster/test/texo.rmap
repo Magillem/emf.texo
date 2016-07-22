@@ -88,7 +88,7 @@
 
   	<searchPath name="target.platform">
     	<provider componentTypes="eclipse.feature,osgi.bundle" readerType="p2" source="false" mutable="false" resolutionFilter="(build.type=Neon)">
-      		<uri format="{0}/jetty/updates/jetty-bundles-9.x/9.2.6.v20141205">
+      		<uri format="{0}/jetty/updates/jetty-bundles-9.x/9.2.13.v20150730">
 				<bc:propertyRef key="eclipse.download"/>
       		</uri>
     	</provider>

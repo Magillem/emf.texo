@@ -79,7 +79,7 @@ public abstract class BaseWSWebTest extends BaseTest {
 
   protected void stopClient() throws Exception {
     if (httpClient != null) {
-      httpClient.stop();
+      // httpClient.stop();
       httpClient = null;
     }
   }
