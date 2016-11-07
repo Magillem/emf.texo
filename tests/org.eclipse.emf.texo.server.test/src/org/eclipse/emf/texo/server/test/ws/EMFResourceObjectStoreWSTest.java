@@ -40,6 +40,8 @@ import org.eclipse.emf.texo.store.ObjectStore;
 import org.eclipse.emf.texo.store.TexoEMFResourceURIConverter;
 import org.eclipse.emf.texo.test.model.base.identifiable.Identifiable;
 import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
+import org.eclipse.emf.texo.test.model.samples.emap.EmapsampleModelPackage;
+import org.eclipse.emf.texo.test.model.samples.extlibrary.ExtlibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.library.Book;
 import org.eclipse.emf.texo.test.model.samples.library.Library;
 import org.eclipse.emf.texo.test.model.samples.library.Writer;
@@ -80,6 +82,8 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
   public static void beforeClass() {
     ModelResolver.getInstance().deregister(Bz391624ModelPackage.INSTANCE);
     ModelResolver.getInstance().deregister(EmapModelPackage.INSTANCE);
+    ModelResolver.getInstance().deregister(EmapsampleModelPackage.INSTANCE);
+    ModelResolver.getInstance().deregister(ExtlibraryModelPackage.INSTANCE);
   }
 
   @AfterClass
@@ -87,6 +91,8 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
     ObjectStoreFactory.setInstance(new ObjectStoreFactory());
     ModelResolver.getInstance().reRegisterModelPackage(Bz391624ModelPackage.INSTANCE);
     ModelResolver.getInstance().reRegisterModelPackage(EmapModelPackage.INSTANCE);
+    ModelResolver.getInstance().reRegisterModelPackage(EmapsampleModelPackage.INSTANCE);
+    ModelResolver.getInstance().reRegisterModelPackage(ExtlibraryModelPackage.INSTANCE);
   }
 
   @Before
@@ -153,8 +159,8 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
   @Override
   protected ObjectStore getNewObjectStore() {
     try {
-      final EMFResourceObjectStore objectStore = ComponentProvider.getInstance()
-          .newInstance(EMFResourceObjectStore.class);
+      final EMFResourceObjectStore objectStore = ComponentProvider.getInstance().newInstance(
+          EMFResourceObjectStore.class);
       objectStore.setUri(URI.createURI(getURL()));
       ((TexoEMFResourceURIConverter) objectStore.getURIConverter()).setResourceType(resourceType);
       objectStore.setChildLevels(3);
@@ -234,7 +240,7 @@ public class EMFResourceObjectStoreWSTest extends BaseWSWebTest {
   public void testUpdateAndDeleteOfChildren() {
     final Library lib = createTestData();
     {
-      String content = doGetRequest(LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
+      String content = doGetRequest("library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
           HttpServletResponse.SC_OK);
       final List<Object> objects = deserialize(content);
       Assert.assertEquals(1, objects.size());

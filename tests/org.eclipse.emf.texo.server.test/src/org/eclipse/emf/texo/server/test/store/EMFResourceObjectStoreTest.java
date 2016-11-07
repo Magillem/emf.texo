@@ -33,6 +33,8 @@ import org.eclipse.emf.texo.store.EMFResourceObjectStore;
 import org.eclipse.emf.texo.store.ObjectStore;
 import org.eclipse.emf.texo.store.TexoEMFResourceURIConverter;
 import org.eclipse.emf.texo.test.model.issues.bz391624.Bz391624ModelPackage;
+import org.eclipse.emf.texo.test.model.samples.emap.EmapsampleModelPackage;
+import org.eclipse.emf.texo.test.model.samples.extlibrary.ExtlibraryModelPackage;
 import org.eclipse.emf.texo.test.model.samples.library.Book;
 import org.eclipse.emf.texo.test.model.samples.library.Library;
 import org.eclipse.emf.texo.test.model.samples.library.Writer;
@@ -68,6 +70,8 @@ public class EMFResourceObjectStoreTest {
   public static void beforeClass() {
     ModelResolver.getInstance().deregister(Bz391624ModelPackage.INSTANCE);
     ModelResolver.getInstance().deregister(EmapModelPackage.INSTANCE);
+    ModelResolver.getInstance().deregister(EmapsampleModelPackage.INSTANCE);
+    ModelResolver.getInstance().deregister(ExtlibraryModelPackage.INSTANCE);
   }
 
   @AfterClass
@@ -75,6 +79,8 @@ public class EMFResourceObjectStoreTest {
     ObjectStoreFactory.setInstance(new ObjectStoreFactory());
     ModelResolver.getInstance().reRegisterModelPackage(Bz391624ModelPackage.INSTANCE);
     ModelResolver.getInstance().reRegisterModelPackage(EmapModelPackage.INSTANCE);
+    ModelResolver.getInstance().reRegisterModelPackage(EmapsampleModelPackage.INSTANCE);
+    ModelResolver.getInstance().reRegisterModelPackage(ExtlibraryModelPackage.INSTANCE);
   }
 
   @Before
@@ -130,10 +136,10 @@ public class EMFResourceObjectStoreTest {
   private void readAdd() {
     ObjectStore os = getObjectStore();
     os.begin();
-    Assert.assertEquals(1,
-        os.count("FROM " + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), new HashMap<String, Object>()));
-    Assert.assertEquals(COUNT,
-        os.count("FROM " + LibraryModelPackage.INSTANCE.getBookEClass().getName(), new HashMap<String, Object>()));
+    Assert.assertEquals(1, os.count("FROM library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(),
+        new HashMap<String, Object>()));
+    Assert.assertEquals(COUNT, os.count("FROM library|" + LibraryModelPackage.INSTANCE.getBookEClass().getName(),
+        new HashMap<String, Object>()));
     Library lib = (Library) os.query(LibraryModelPackage.INSTANCE.getLibraryEClass(), 0, 100).get(0);
     Book bk = LibraryModelPackage.INSTANCE.getModelFactory().createBook();
     bk.setTitle("Title " + 11);
@@ -146,10 +152,10 @@ public class EMFResourceObjectStoreTest {
   private void readRemove() {
     ObjectStore os = getObjectStore();
     os.begin();
-    Assert.assertEquals(1,
-        os.count("FROM " + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), new HashMap<String, Object>()));
-    Assert.assertEquals(COUNT + 1,
-        os.count("FROM " + LibraryModelPackage.INSTANCE.getBookEClass().getName(), new HashMap<String, Object>()));
+    Assert.assertEquals(1, os.count("FROM library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(),
+        new HashMap<String, Object>()));
+    Assert.assertEquals(COUNT + 1, os.count("FROM library|" + LibraryModelPackage.INSTANCE.getBookEClass().getName(),
+        new HashMap<String, Object>()));
     Library lib = (Library) os.query(LibraryModelPackage.INSTANCE.getLibraryEClass(), 0, 100).get(0);
     {
       os.remove(lib.getBooks().get(0));
@@ -173,10 +179,10 @@ public class EMFResourceObjectStoreTest {
     {
       ObjectStore os = getObjectStore();
       os.begin();
-      Assert.assertEquals(1,
-          os.count("FROM " + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), new HashMap<String, Object>()));
-      Assert.assertEquals(COUNT - 1,
-          os.count("FROM " + LibraryModelPackage.INSTANCE.getBookEClass().getName(), new HashMap<String, Object>()));
+      Assert.assertEquals(1, os.count("FROM library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(),
+          new HashMap<String, Object>()));
+      Assert.assertEquals(COUNT - 1, os.count("FROM library|" + LibraryModelPackage.INSTANCE.getBookEClass().getName(),
+          new HashMap<String, Object>()));
       Library lib = (Library) os.query(LibraryModelPackage.INSTANCE.getLibraryEClass(), 0, 100).get(0);
       lib.getBooks().get(5).setTitle(newTitle);
       os.commit();
@@ -215,8 +221,8 @@ public class EMFResourceObjectStoreTest {
 
   protected ObjectStore getObjectStore() {
     try {
-      final EMFResourceObjectStore objectStore = ComponentProvider.getInstance()
-          .newInstance(EMFResourceObjectStore.class);
+      final EMFResourceObjectStore objectStore = ComponentProvider.getInstance().newInstance(
+          EMFResourceObjectStore.class);
       if (uriStr == null) {
         uriStr = "http://localhost:8080/texo/data";
       }

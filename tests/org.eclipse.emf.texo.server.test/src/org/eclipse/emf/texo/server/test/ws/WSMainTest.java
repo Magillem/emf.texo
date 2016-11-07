@@ -106,9 +106,8 @@ public class WSMainTest extends BaseWSWebTest {
       }
 
       {
-        final String content = doGetRequest(
-            "model/eclassifier?name=BookCategory&epackage=" + LibraryModelPackage.NS_URI, null,
-            HttpServletResponse.SC_OK);
+        final String content = doGetRequest("model/eclassifier?name=BookCategory&epackage="
+            + LibraryModelPackage.NS_URI, null, HttpServletResponse.SC_OK);
         final List<Object> objects = deserialize(content);
         Assert.assertEquals(1, objects.size());
         Assert.assertTrue(objects.get(0) instanceof DynamicModelObject);
@@ -119,7 +118,7 @@ public class WSMainTest extends BaseWSWebTest {
     }
     // get all libraries
     {
-      final String content = doGetRequest(LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
+      final String content = doGetRequest("library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
           HttpServletResponse.SC_OK);
       final List<Object> objects = deserialize(content);
       Assert.assertEquals(1, objects.size());
@@ -157,12 +156,12 @@ public class WSMainTest extends BaseWSWebTest {
     }
 
     // now delete the library
-    doDeleteRequest(LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), //$NON-NLS-1$
+    doDeleteRequest("library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), //$NON-NLS-1$
         HttpServletResponse.SC_OK);
     // this should fail
     {
       final String content = doGetRequest(
-          LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), null, //$NON-NLS-1$
+          "library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName() + "/" + lib.getDb_Id(), null, //$NON-NLS-1$
           HttpServletResponse.SC_NOT_FOUND);
       final List<Object> objects = deserialize(content);
       Assert.assertEquals(1, objects.size());
@@ -179,7 +178,7 @@ public class WSMainTest extends BaseWSWebTest {
   public void testUpdateAndDeleteOfChildren() {
     final Library lib = createTestData();
     {
-      String content = doGetRequest(LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
+      String content = doGetRequest("library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
           HttpServletResponse.SC_OK);
       final List<Object> objects = deserialize(content);
       Assert.assertEquals(1, objects.size());
@@ -203,7 +202,7 @@ public class WSMainTest extends BaseWSWebTest {
 
     // check that the name of the library got updated
     {
-      String content = doGetRequest(LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
+      String content = doGetRequest("library|" + LibraryModelPackage.INSTANCE.getLibraryEClass().getName(), null,
           HttpServletResponse.SC_OK);
       final List<Object> objects = deserialize(content);
       Assert.assertEquals(1, objects.size());
@@ -221,8 +220,8 @@ public class WSMainTest extends BaseWSWebTest {
       final Writer w = LibraryModelPackage.MODELFACTORY.createWriter();
       w.setName("name" + i); //$NON-NLS-1$
       final String content = serialize(w);
-      final String resultStr = doContentRequest(LibraryModelPackage.INSTANCE.getWriterEClass().getName(), content,
-          HttpServletResponse.SC_OK, null, HttpMethod.POST);
+      final String resultStr = doContentRequest("library|" + LibraryModelPackage.INSTANCE.getWriterEClass().getName(),
+          content, HttpServletResponse.SC_OK, null, HttpMethod.POST);
       final ResultType result = (ResultType) deserialize(resultStr).get(0);
       Assert.assertEquals(1, result.getInserted().size());
       Assert.assertEquals(0, result.getUpdated().size());
